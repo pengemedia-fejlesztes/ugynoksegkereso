@@ -87,3 +87,37 @@
   if (ft && panel) ft.addEventListener('click', function () { panel.classList.toggle('open'); });
   render();
 })();
+
+// Blog: széles asztali nézetben oldalsó, követő tartalomjegyzék a kártya alapján, az aktuális fejezet kiemelésével
+(function () {
+  var toc = document.getElementById('toc'), art = document.getElementById('cikk');
+  if (!toc || !art) return;
+  var links = toc.querySelectorAll('.toc-item > a');
+  if (links.length < 3) return;
+  var side = document.createElement('nav');
+  side.className = 'sidetoc';
+  side.setAttribute('aria-label', 'Tartalomjegyzék');
+  side.innerHTML = '<div class="sidetoc-title">Tartalom</div>';
+  var targets = [];
+  links.forEach(function (l) {
+    var a = document.createElement('a');
+    a.href = l.getAttribute('href');
+    a.textContent = l.textContent.replace(/^\d+/, '').trim();
+    side.appendChild(a);
+    var t = document.getElementById(decodeURIComponent(a.hash.slice(1)));
+    if (t) targets.push([t, a]);
+  });
+  document.body.appendChild(side);
+  // Mobilon a kártyán belüli fejezetre kattintás után a kártya bezárul
+  toc.querySelectorAll('.toc-body a').forEach(function (a) { a.addEventListener('click', function () { if (window.innerWidth < 1280) toc.removeAttribute('open'); }); });
+  function onScroll() {
+    var r = toc.getBoundingClientRect(), end = art.getBoundingClientRect();
+    side.classList.toggle('is-visible', r.bottom < 0 && end.bottom > 120 + side.offsetHeight + 24 && r.left > side.offsetLeft + side.offsetWidth + 16);
+    var cur = null;
+    targets.forEach(function (p) { if (p[0].getBoundingClientRect().top < 160) cur = p[1]; });
+    targets.forEach(function (p) { p[1].classList.toggle('is-active', p[1] === cur); });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  onScroll();
+})();

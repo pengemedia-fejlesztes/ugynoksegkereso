@@ -29,6 +29,7 @@ $around = $list ? array_slice($list, max(0, min($pos - 3, count($list) - 5)), 5,
           ?></div>
           <h1><?php echo esc_html($a['name']); ?></h1>
           <?php echo kompasz_rating_html($a, true); ?>
+          <?php if ($a['intro']) printf('<p class="ph-intro">%s</p>', esc_html($a['intro'])); ?>
           <div class="ph-act"><?php echo kompasz_contact_btn($a, 'btn lg'); ?><?php if ($a['domain']) printf('<a class="ph-web" href="%s" target="_blank" rel="nofollow noopener">%s</a>', esc_url($a['website']), esc_html($a['domain'])); ?></div>
         </div>
       </section>
@@ -37,13 +38,31 @@ $around = $list ? array_slice($list, max(0, min($pos - 3, count($list) - 5)), 5,
         <h2>Bemutatkozás</h2>
         <div class="pdesc"><?php echo wpautop(esc_html($a['desc'])); ?></div>
         <div class="facts">
-          <?php foreach (['HELYSZÍN' => $a['city'], 'CSAPAT' => $a['team'], 'ALAPÍTVA' => $a['founded']] as $l => $v): if (!$v) continue; ?>
-            <div class="fact"><span><?php echo esc_html($l); ?></span><b><?php echo esc_html($v); ?></b></div>
+          <?php
+          $place = trim(implode(', ', array_unique(array_filter([$a['city'], $a['county'] !== $a['city'] ? $a['county'] : '']))));
+          $facts = ['HELYSZÍN' => $place, 'CSAPAT' => $a['team'], 'ALAPÍTVA' => $a['founded'], 'ÁRSZINT' => $a['price_min'], 'ÁRAZÁS' => $a['price_model'],
+              'MUNKAVÉGZÉS' => $a['work_mode'], 'TELEFON' => $a['phone'], 'E-MAIL' => $a['email']];
+          foreach ($facts as $l => $v): if (!$v) continue;
+            if ($l === 'TELEFON') $v = sprintf('<a href="tel:%s">%s</a>', esc_attr(preg_replace('/[^0-9+]/', '', $v)), esc_html($v));
+            elseif ($l === 'E-MAIL') $v = sprintf('<a href="mailto:%1$s">%1$s</a>', esc_html($v));
+            else $v = esc_html($v); ?>
+            <div class="fact"><span><?php echo esc_html($l); ?></span><b><?php echo $v; ?></b></div>
           <?php endforeach; ?>
         </div>
         <?php if ($a['services']): ?>
           <h3>Szolgáltatások</h3>
           <div class="svc"><?php foreach ($a['services'] as $s) echo '<span>' . esc_html($s) . '</span>'; ?></div>
+        <?php endif; ?>
+        <?php foreach (['Minősítések' => $a['certs'], 'Iparági tapasztalat' => $a['industries'], 'Munkanyelvek' => $a['languages']] as $h => $items): if (!$items) continue; ?>
+          <h3><?php echo esc_html($h); ?></h3>
+          <div class="svc"><?php foreach ($items as $s) echo '<span>' . esc_html($s) . '</span>'; ?></div>
+        <?php endforeach; ?>
+        <?php if ($a['references']): ?>
+          <h3>Referenciák</h3>
+          <div class="svc"><?php foreach ($a['references'] as $r) {
+            $parts = array_map('trim', explode('|', $r, 2));
+            echo !empty($parts[1]) && wp_http_validate_url($parts[1]) ? sprintf('<a href="%s" target="_blank" rel="nofollow noopener">%s</a>', esc_url($parts[1]), esc_html($parts[0])) : '<span>' . esc_html($parts[0]) . '</span>';
+          } ?></div>
         <?php endif; ?>
         <?php if ($a['tags']): ?>
           <h3>Szolgáltatás szerinti listák</h3>

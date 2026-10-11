@@ -30,6 +30,7 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 
 require_once get_theme_file_path('inc/components.php');
 require_once get_theme_file_path('inc/seo.php');
+require_once get_theme_file_path('inc/toc.php');
 
 // A téma a Kompasz bővítmény nélkül nem működik: admin figyelmeztetés + egyszerű nyilvános üzenet
 add_action('admin_notices', function () {

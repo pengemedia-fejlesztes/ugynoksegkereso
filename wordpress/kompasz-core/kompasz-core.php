@@ -19,9 +19,12 @@ require_once KOMPASZ_CORE_DIR . 'inc/fields.php';
 require_once KOMPASZ_CORE_DIR . 'inc/data.php';
 require_once KOMPASZ_CORE_DIR . 'inc/settings.php';
 require_once KOMPASZ_CORE_DIR . 'inc/import.php';
+require_once KOMPASZ_CORE_DIR . 'inc/accounts.php';
+require_once KOMPASZ_CORE_DIR . 'inc/pages-content.php';
 
 register_activation_hook(__FILE__, function () {
     kompasz_register_types();
+    kompasz_register_partner_role();
     flush_rewrite_rules();
 });
 register_deactivation_hook(__FILE__, 'flush_rewrite_rules');

@@ -9,6 +9,17 @@ function kompasz_agency_fields() {
         'kompasz_city'          => ['Város', 'text', ''],
         'kompasz_founded'       => ['Alapítás éve', 'number', ''],
         'kompasz_team'          => ['Csapatméret', 'text', 'Pl. „15 fő” vagy „50+ fő”.'],
+        'kompasz_county'        => ['Megye', 'text', ''],
+        'kompasz_phone'         => ['Telefonszám', 'text', 'Nyilvános céges telefonszám, pl. +36 1 234 5678.'],
+        'kompasz_email'         => ['E-mail cím', 'text', 'Nyilvános céges e-mail cím.'],
+        'kompasz_intro'         => ['Rövid bevezető', 'textarea', '1–2 mondat; a profil tetején jelenik meg. A részletes bemutatkozást a fenti szerkesztőben írod.'],
+        'kompasz_industries'    => ['Iparági tapasztalat', 'lines', 'Soronként egy, pl. webáruház, egészségügy, B2B.'],
+        'kompasz_price_min'     => ['Árszint (minimum)', 'text', 'Pl. „havi 150 000 Ft-tól” vagy „projekt 500 000 Ft-tól”.'],
+        'kompasz_price_model'   => ['Árazás módja', 'text', 'Havidíj, projektalapú vagy teljesítményalapú.'],
+        'kompasz_certs'         => ['Minősítések', 'lines', 'Soronként egy, pl. Google Partner, Meta Business Partner.'],
+        'kompasz_work_mode'     => ['Munkavégzés', 'text', 'Helyben, távolról vagy mindkettő; külföldi ügyfelekkel is.'],
+        'kompasz_languages'     => ['Munkanyelvek', 'lines', 'Soronként egy, pl. magyar, angol.'],
+        'kompasz_references'    => ['Referenciák', 'lines', 'Soronként egy ügyfél vagy esettanulmány; linkkel így: Név | https://…'],
         'kompasz_services'      => ['Szolgáltatások', 'lines', 'Soronként egy. A profiloldalon jelenik meg; a kattintható címkéket jobb oldalt, a Szolgáltatás-címkék dobozban állítod.'],
         'kompasz_rank'          => ['Sorrend a toplistákon', 'number', 'Kisebb szám = előrébb. Üresen a lista végére kerül, ábécérendben.'],
         'kompasz_rating'        => ['Értékelés (lista)', 'decimal', '0–5. Akkor jelenik meg, ha nincs Google-értékelés.'],
@@ -113,7 +124,8 @@ add_action('add_meta_boxes', function () {
     add_meta_box('kompasz_agency', 'Ügynökség adatai', function ($post) {
         wp_nonce_field('kompasz_agency', 'kompasz_agency_nonce');
         echo '<p class="description">A bemutatkozást a fenti szerkesztőben írod. A logó a jobb oldali „Logó” dobozban állítható.</p>';
-        foreach (kompasz_agency_fields() as $key => $def) echo kompasz_render_field($key, $def, get_post_meta($post->ID, $key, true));
+        $skip = function_exists('kompasz_is_partner') && kompasz_is_partner() ? kompasz_partner_protected_fields() : [];
+        foreach (kompasz_agency_fields() as $key => $def) { if (in_array($key, $skip, true)) continue; echo kompasz_render_field($key, $def, get_post_meta($post->ID, $key, true)); }
     }, 'ugynokseg', 'normal', 'high');
 });
 
@@ -121,7 +133,9 @@ add_action('save_post_ugynokseg', function ($post_id) {
     if (!isset($_POST['kompasz_agency_nonce']) || !wp_verify_nonce($_POST['kompasz_agency_nonce'], 'kompasz_agency')) return;
     if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return;
     if (!current_user_can('edit_post', $post_id)) return;
+    $skip = function_exists('kompasz_is_partner') && kompasz_is_partner() ? kompasz_partner_protected_fields() : [];
     foreach (kompasz_agency_fields() as $key => [, $type]) {
+        if (in_array($key, $skip, true)) continue;
         update_post_meta($post_id, $key, kompasz_sanitize_field($type, wp_unslash($_POST[$key] ?? '')));
     }
 });

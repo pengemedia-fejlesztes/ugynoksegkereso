@@ -144,7 +144,7 @@ function kompasz_filters($list, $skip_tag = null) {
     arsort($tags); arsort($cities);
     $tags = array_slice($tags, 0, 8, true);
     $cities = array_slice(array_filter($cities, function ($n) { return $n >= 2; }), 0, 6, true);
-    $order = ['1–5 fő', '6–15 fő', '16–50 fő', '50+ fő'];
+    $order = ['1–10 fő', '11–50 fő', '51–200 fő', '200+ fő'];
     $teams = array_filter(array_replace(array_fill_keys($order, 0), $teams));
     $group = function ($title, $key, $items, $labels = []) {
         if (!$items) return '';

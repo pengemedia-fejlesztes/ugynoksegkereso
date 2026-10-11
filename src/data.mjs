@@ -94,8 +94,8 @@ export const AGENCIES = [
 
 // Fizetett kiemelt partnerek: cégnév (src/ugynoksegek.json) → toplisták, ahol a lista tetején kiemelve jelenik meg
 export const PARTNERS = {
-  '360 Marketing ügynökség': ['Tartalomgyártó ügynökségek', 'Online marketing ügynökségek', 'Facebook hirdetés ügynökségek',
-    'Google Ads ügynökségek', 'AI SEO ügynökségek', 'AI agent fejlesztő cégek', 'Keresőoptimalizáló ügynökségek'],
+  // Csak azok a toplisták, amelyeken a cég maga is szerepel (különben a kártyáján nincs helyezés)
+  '360 Marketing ügynökség': ['Online marketing ügynökségek', 'Facebook hirdetés ügynökségek', 'Google Ads ügynökségek', 'AI SEO ügynökségek'],
 };
 
 // Kezdőlap „A lista eleje” blokk, ebben a sorrendben

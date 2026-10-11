@@ -46,6 +46,7 @@ function kompasz_import_base(array $data) {
         if (!get_page_by_path($slug)) wp_insert_post(['post_type' => 'page', 'post_status' => 'publish', 'post_name' => $slug, 'post_title' => $title, 'post_content' => $content]);
     }
     if ($blog = get_page_by_path('blog')) update_option('page_for_posts', $blog->ID);
+    kompasz_apply_page_contents();
 
     update_option('blogname', $data['site']['name']);
     update_option('blogdescription', $data['site']['tagline']);
@@ -88,9 +89,18 @@ function kompasz_import_agencies(array $data, $offset, $limit) {
         }
         $id = $existing ? wp_update_post($post, true) : wp_insert_post($post, true);
         if (is_wp_error($id)) continue;
-        $meta = ['kompasz_website' => $a['website'], 'kompasz_city' => $a['city'] ?? '', 'kompasz_founded' => $a['founded'] ?? '',
-            'kompasz_team' => $a['team'] ?? '', 'kompasz_services' => implode("\n", $a['services']), 'kompasz_rank' => $a['rank'] ?? '',
-            'kompasz_rating' => $a['rating'] ?? '', 'kompasz_logo_dark' => $a['logo_dark'] ? '1' : '', 'kompasz_source_url' => $a['source_url'] ?? ''];
+        // Rendszeradatok: mindig a repó az igazság (sorrend, értékelés, belső jegyzet)
+        $meta = ['kompasz_rank' => $a['rank'] ?? '', 'kompasz_rating' => $a['rating'] ?? '', 'kompasz_logo_dark' => $a['logo_dark'] ? '1' : '',
+            'kompasz_source_url' => $a['source_url'] ?? ''];
+        // Profiladatok: csak üres mezőbe írunk, hogy a WP adminban vagy a cégfiókban szerkesztett adat megmaradjon
+        $join = function ($v) { return is_array($v) ? implode("\n", $v) : (string) ($v ?? ''); };
+        $profile = ['kompasz_website' => $a['website'], 'kompasz_city' => $a['city'] ?? '', 'kompasz_county' => $a['county'] ?? '',
+            'kompasz_founded' => $a['founded'] ?? '', 'kompasz_team' => $a['team'] ?? '', 'kompasz_services' => $join($a['services']),
+            'kompasz_phone' => $a['phone'] ?? '', 'kompasz_email' => $a['email'] ?? '', 'kompasz_intro' => $a['intro'] ?? '',
+            'kompasz_industries' => $join($a['industries'] ?? []), 'kompasz_certs' => $join($a['certs'] ?? []),
+            'kompasz_languages' => $join($a['languages'] ?? []), 'kompasz_work_mode' => $a['work_mode'] ?? '',
+            'kompasz_references' => $join($a['references'] ?? [])];
+        foreach ($profile as $k => $v) { if ((string) $v !== '' && (string) get_post_meta($id, $k, true) === '') update_post_meta($id, $k, (string) $v); }
         if ($a['google']) {
             $meta += ['kompasz_google_rating' => $a['google']['rating'], 'kompasz_google_count' => $a['google']['count'],
                 'kompasz_google_source' => trim(($a['google']['source'] ?? '') . ' (' . ($a['google']['checked'] ?? '') . ')')];

@@ -3,6 +3,7 @@
 // Az importálást a WP adminban a Kompasz → Importálás oldal (vagy `wp kompasz import`) végzi.
 import { readFile, writeFile, mkdir, rm, copyFile } from 'node:fs/promises';
 import { CATS, AGENCIES, PARTNERS, HOME_TOP } from '../src/data.mjs';
+import { MEGYE } from '../src/megyek.mjs';
 import { TAGS } from '../src/tags.mjs';
 
 const OUT = 'wordpress/kompasz-core/import';
@@ -55,6 +56,11 @@ const categories = NAV_ORDER.map((n, i) => {
 const tags = TAGS.map(t => ({ slug: t.slug, name: t.label, kw: t.kw, h1: t.h1, title: t.title, desc: t.desc, intro: t.intro, seo: t.seo.map(([h, p]) => ({ h, p })) }));
 
 await rm(OUT, { recursive: true, force: true });
+// Rövid bevezető: a bemutatkozás első mondata (legfeljebb ~220 karakter)
+function firstSentence(t) {
+  const m = (t || '').match(/^.{40,220}?[.!?](?=\s|$)/s);
+  return m ? m[0].trim() : '';
+}
 await mkdir(`${OUT}/logos`, { recursive: true });
 const agencies = [];
 for (const c of db.companies) {
@@ -71,6 +77,9 @@ for (const c of db.companies) {
     rank: old ? old.rank : null, rating: old ? old.r : null,
     google: g ? { rating: g.rating, count: g.count, source: g.source, checked: g.checked } : null,
     logo: logoFile, logo_dark: !!lg?.dark, source_url: c.source_url || null,
+    county: MEGYE[c.city] || '', intro: firstSentence(desc),
+    phone: c.phone || '', email: c.email || '', certs: c.certifications || [], industries: c.industries || [],
+    languages: c.languages || [], work_mode: c.work_mode || '', references: c.references || [],
   });
 }
 const bySlugName = Object.fromEntries(agencies.map(a => [a.name, a.slug]));

@@ -55,6 +55,11 @@
   "src": "https://aisquad.hu/favicon.svg",
   "via": "icon"
  },
+ "ai-strategia": {
+  "file": "ai-strategia.svg",
+  "src": "https://aistrategia.hu/",
+  "via": "icon"
+ },
  "ai-visibility-lab": {
   "file": "ai-visibility-lab.png",
   "src": "https://aivisibility.hu/assets/logo-DzPm9Gzd.png",
@@ -285,6 +290,11 @@
   "src": "https://evobrands.hu/wp-content/uploads/design/evo-logo.svg",
   "via": "header-logo"
  },
+ "exact-match": {
+  "file": "exact-match.png",
+  "src": "https://exactmatch.hu/wp-content/uploads/2020/05/logo-2x.png",
+  "via": "logo-own"
+ },
  "exaline": {
   "file": "exaline.png",
   "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/05/Exaline-I-Logo.png",
@@ -326,6 +336,11 @@
   "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/01/ugynoksegek-logoi-1-1024x1024.png",
   "via": "ugynoksegkereso.hu"
  },
+ "future-marketing": {
+  "file": "future-marketing.png",
+  "src": "https://futuremarketing.hu/wp-content/uploads/2022/04/13.png",
+  "via": "header-logo"
+ },
  "futuremanagement": {
   "file": "futuremanagement.png",
   "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/Kfuturemanagement-1024x1024.png",
@@ -346,6 +361,11 @@
   "file": "gold-communications.png",
   "src": "https://www.goldcomm.hu/images/pr-ugynokseg-header-logo.png",
   "via": "logo-own"
+ },
+ "google-marketing-kft-google-ads-hirdetes-hu": {
+  "file": "google-marketing-kft-google-ads-hirdetes-hu.png",
+  "src": "https://google-ads-hirdetes.hu/images/google-ads-hirdetes-logo.png",
+  "via": "header-own"
  },
  "green-edge": {
   "file": "green-edge.png",
@@ -563,6 +583,11 @@
   "via": "logo-top",
   "dark": true
  },
+ "melkweg": {
+  "file": "melkweg.svg",
+  "src": "https://melkweg.hu/images/icons/logo.svg",
+  "via": "header-logo"
+ },
  "micron-digital": {
   "file": "micron-digital.webp",
   "src": "https://www.microndigital.hu/wp-content/uploads/2024/12/logo-1.webp",
@@ -627,6 +652,12 @@
   "src": "https://oloren.hu/oloren_logo.png",
   "via": "logo-own"
  },
+ "online-marketing-wings-digitalis-ugynokseg-kft": {
+  "file": "online-marketing-wings-digitalis-ugynokseg-kft.png",
+  "src": "https://online-marketing-wings.hu/img/logo_light.png",
+  "via": "header-own",
+  "dark": true
+ },
  "openonline": {
   "file": "openonline.png",
   "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/10/ugynoksegek-logoi-33-1024x1024.png",
@@ -662,11 +693,21 @@
   "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/02/ugynoksegek-logoi-5-1024x1024.png",
   "via": "ugynoksegkereso.hu"
  },
+ "ppc-smart": {
+  "file": "ppc-smart.png",
+  "src": "https://ppc-smart.hu/wp-content/uploads/2017/07/logo-uj2.png",
+  "via": "header-own"
+ },
  "prbk-kommunikacio": {
   "file": "prbk-kommunikacio.svg",
   "src": "https://prbk.hu/wp-content/uploads/2025/02/prbk-hu-white.svg",
   "via": "header-own",
   "dark": true
+ },
+ "presston-pr": {
+  "file": "presston-pr.jpg",
+  "src": "https://presstonpr.hu/presstonpr.jpg",
+  "via": "logo-top"
  },
  "prioris": {
   "file": "prioris.png",
@@ -678,6 +719,11 @@
   "src": "https://www.probusiness.hu/wp-content/uploads/2025/05/probusiness-consulting-10-years-logo-feher-2.png",
   "via": "header-own",
   "dark": true
+ },
+ "produkcios-reszleg": {
+  "file": "produkcios-reszleg.png",
+  "src": "https://www.pr-reszleg.hu/system/logo.png",
+  "via": "header-logo"
  },
  "profelis": {
   "file": "profelis.webp",
@@ -703,6 +749,11 @@
   "file": "radelit-media.png",
   "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/01/ugynoksegek-logoi-1024x1024.png",
   "via": "ugynoksegkereso.hu"
+ },
+ "relevat-digital": {
+  "file": "relevat-digital.svg",
+  "src": "https://relevatdigital.com/relevat-logo.svg",
+  "via": "header-own"
  },
  "rg-studio-kft": {
   "file": "rg-studio-kft.png",
@@ -802,6 +853,11 @@
   "src": "https://cdn.prod.website-files.com/63d28050af0cad664b50fd2c/678e643d6fc079ddeee65dc4_logo-dark.svg",
   "via": "logo-own"
  },
+ "the-palm-group": {
+  "file": "the-palm-group.png",
+  "src": "https://www.thepalmgroup.eu/images/PALM-Logo-fekete.png",
+  "via": "logo-own"
+ },
  "the-pitch": {
   "file": "the-pitch.svg",
   "src": "https://thepitch.hu/favicon.svg",
@@ -838,10 +894,20 @@
   "via": "logo-top",
   "dark": true
  },
+ "urban-communications": {
+  "file": "urban-communications.png",
+  "src": "https://static.wixstatic.com/media/b91b6b_6fdbdb1081914219b1d82a5e276ad239~mv2.png",
+  "via": "header-own"
+ },
  "usernet": {
   "file": "usernet.webp",
   "src": "https://www.usernet.hu/resources/images/logo.webp",
   "via": "header-own"
+ },
+ "vamosoft": {
+  "file": "vamosoft.svg",
+  "src": "https://vamosoft.net/assets/icons/header-logo.svg",
+  "via": "logo-own"
  },
  "vantgard-digital": {
   "file": "vantgard-digital.png",
@@ -872,6 +938,11 @@
   "file": "weboldal-keszites-most.png",
   "src": "https://weboldalkeszitesmost.hu/images/ow-logo.png",
   "via": "header-own"
+ },
+ "weboptim": {
+  "file": "weboptim.png",
+  "src": "https://weboptim.hu/weboptim-content/themes/weboptim/images/logo.png",
+  "via": "header-logo"
  },
  "welovedigital": {
   "file": "welovedigital.png",

@@ -15,14 +15,20 @@ function kompasz_initials($name) {
     return mb_strtoupper(mb_substr($ini, 0, 2));
 }
 
+/** Soronkénti meta mező tömbként */
+function kompasz_meta_lines($id, $key) {
+    return array_values(array_filter(array_map('trim', preg_split('/\r?\n/', (string) get_post_meta($id, $key, true)))));
+}
+
 /** Csapatméret → szűrőkategória */
 function kompasz_team_bucket($team) {
-    if (!$team || !preg_match('/(\d+)/', $team, $m)) return '';
-    $n = (int) $m[1];
-    if ($n <= 5) return '1–5 fő';
-    if ($n <= 15) return '6–15 fő';
-    if ($n <= 50) return '16–50 fő';
-    return '50+ fő';
+    // Sávok a LinkedIn céges létszámkategóriáihoz igazítva; tartománynál („11–50”) a felső érték dönt
+    if (!$team || !preg_match_all('/\d+/', $team, $m)) return '';
+    $n = (int) end($m[0]);
+    if ($n <= 10) return '1–10 fő';
+    if ($n <= 50) return '11–50 fő';
+    if ($n <= 200) return '51–200 fő';
+    return '200+ fő';
 }
 
 function kompasz_stars($r) {
@@ -65,6 +71,17 @@ function kompasz_agency($post) {
         'team' => $m('kompasz_team'),
         'team_bucket' => kompasz_team_bucket($m('kompasz_team')),
         'services' => array_values(array_filter(preg_split('/\r?\n/', (string) $m('kompasz_services')))),
+        'county' => $m('kompasz_county'),
+        'phone' => $m('kompasz_phone'),
+        'email' => $m('kompasz_email'),
+        'intro' => $m('kompasz_intro'),
+        'industries' => kompasz_meta_lines($id, 'kompasz_industries'),
+        'price_min' => $m('kompasz_price_min'),
+        'price_model' => $m('kompasz_price_model'),
+        'certs' => kompasz_meta_lines($id, 'kompasz_certs'),
+        'work_mode' => $m('kompasz_work_mode'),
+        'languages' => kompasz_meta_lines($id, 'kompasz_languages'),
+        'references' => kompasz_meta_lines($id, 'kompasz_references'),
         'rank' => $rank === '' ? PHP_INT_MAX : (int) $rank,
         'rating' => $rating,
         'rating_src' => $google !== '' ? 'google' : ($list !== '' ? 'list' : ''),
@@ -129,5 +146,6 @@ function kompasz_featured() {
 
 function kompasz_is_featured_in($term) {
     $f = kompasz_featured();
-    return $f && $term && in_array((int) $term->term_id, $f['featured_in'], true) ? $f : null;
+    // Csak ott jelenik meg kiemeltként, ahol maga is szerepel a toplistán – különben nincs helyezése
+    return $f && $term && in_array((int) $term->term_id, $f['featured_in'], true) && has_term((int) $term->term_id, 'toplista', $f['id']) ? $f : null;
 }
