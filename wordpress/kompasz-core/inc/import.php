@@ -33,6 +33,15 @@ function kompasz_import_base(array $data) {
         foreach ($meta as $k => $v) update_term_meta($id, $k, $v);
     }
 
+    // Referencia-ügyfél és minősítés oldalak
+    foreach (['clients' => 'ugyfel', 'certs' => 'minosites'] as $key => $tax) {
+        foreach ($data['ref_pages'][$key] ?? [] as $t) {
+            $ex = get_term_by('slug', $t['slug'], $tax);
+            if ($ex) wp_update_term($ex->term_id, $tax, ['name' => $t['name']]);
+            else wp_insert_term($t['name'], $tax, ['slug' => $t['slug']]);
+        }
+    }
+
     $pages = [
         'rolunk' => ['Rólunk', '<p>A Kompasz független magyar oldal, ahol szolgáltatás szerint bontott toplistákban találod a hazai ügynökségeket.</p>'],
         'blog' => ['Blog', ''],
@@ -41,6 +50,8 @@ function kompasz_import_base(array $data) {
         'aszf' => ['Általános szerződési feltételek', '<p>Az ÁSZF szövege hamarosan elérhető.</p>'],
         'adatvedelem' => ['Adatvédelmi tájékoztató', '<p>Az adatvédelmi tájékoztató szövege hamarosan elérhető.</p>'],
         'cimkek' => ['Ügynökségek szolgáltatás szerint', ''],
+        'ugyfelek' => ['Ügynökségek referencia-ügyfél szerint', ''],
+        'minositesek' => ['Minősített ügynökségek', ''],
     ];
     foreach ($pages as $slug => [$title, $content]) {
         if (!get_page_by_path($slug)) wp_insert_post(['post_type' => 'page', 'post_status' => 'publish', 'post_name' => $slug, 'post_title' => $title, 'post_content' => $content]);
@@ -110,6 +121,8 @@ function kompasz_import_agencies(array $data, $offset, $limit) {
         foreach ($meta as $k => $v) { if ($v === null) $v = ''; update_post_meta($id, $k, (string) $v); }
         wp_set_object_terms($id, $a['categories'], 'toplista');
         wp_set_object_terms($id, $a['tags'], 'szolgaltatas');
+        wp_set_object_terms($id, $a['client_terms'] ?? [], 'ugyfel');
+        wp_set_object_terms($id, $a['cert_terms'] ?? [], 'minosites');
         if ($a['logo'] && !has_post_thumbnail($id)) {
             $att = kompasz_import_logo($a['logo'], $id, $a['name']);
             if ($att) set_post_thumbnail($id, $att);

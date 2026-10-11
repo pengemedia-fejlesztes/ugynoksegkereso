@@ -4,6 +4,7 @@
 import { readFile, writeFile, mkdir, rm, copyFile } from 'node:fs/promises';
 import { CATS, AGENCIES, PARTNERS, HOME_TOP } from '../src/data.mjs';
 import { MEGYE } from '../src/megyek.mjs';
+import { buildRefPages } from '../src/ugyfelek-minositesek.mjs';
 import { TAGS } from '../src/tags.mjs';
 
 const OUT = 'wordpress/kompasz-core/import';
@@ -82,11 +83,16 @@ for (const c of db.companies) {
     languages: c.languages || [], work_mode: c.work_mode || '', references: c.references || [],
   });
 }
+// Ügyfél- és minősítés-oldalak (legalább 2 cégnél szereplő ügyfelek és minősítések)
+const shownSlugs = new Set(agencies.map(a => a.slug));
+const refPages = buildRefPages(db.companies.filter(c => shownSlugs.has(c.slug)));
+for (const a of agencies) { const r = refPages.byAgency[a.slug] || {}; a.client_terms = r.clients || []; a.cert_terms = r.certs || []; }
 const bySlugName = Object.fromEntries(agencies.map(a => [a.name, a.slug]));
 const featured = Object.keys(PARTNERS)[0];
 const data = {
   version: new Date().toISOString().slice(0, 10),
   site: { name: 'Kompasz', tagline: 'A legjobb magyar ügynökségek, kategóriánként rangsorolva.', email: 'hello@kompasz.hu' },
+  ref_pages: { clients: refPages.clients, certs: refPages.certs },
   settings: {
     featured: bySlugName[featured] || null,
     featured_categories: (PARTNERS[featured] || []).map(n => SLUGS[n]),

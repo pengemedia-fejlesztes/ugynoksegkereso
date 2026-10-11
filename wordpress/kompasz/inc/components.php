@@ -163,7 +163,7 @@ function kompasz_filters($list, $skip_tag = null) {
 /** A teljes lista-oldal törzse (toplista és címke) */
 function kompasz_listing($term, $args) {
     $list = kompasz_list($term);
-    $is_tag = $term->taxonomy === 'szolgaltatas';
+    $is_tag = $term->taxonomy !== 'toplista';
     $featured = $is_tag ? null : kompasz_is_featured_in($term);
     if ($featured) {
         $list = array_values(array_filter($list, function ($a) use ($featured) { return $a['id'] !== $featured['id']; }));

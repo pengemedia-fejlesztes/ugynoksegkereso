@@ -44,6 +44,22 @@ function kompasz_register_types() {
         'show_in_rest' => true,
         'rewrite' => ['slug' => 'cimke', 'with_front' => false],
     ]);
+
+    // Referencia-ügyfelek (pl. SPAR, Tesco) – /ugyfel/spar/: azok az ügynökségek, amelyek ennek a cégnek dolgoztak
+    register_taxonomy('ugyfel', ['ugynokseg'], [
+        'labels' => ['name' => 'Referencia-ügyfelek', 'singular_name' => 'Referencia-ügyfél', 'add_new_item' => 'Új ügyfél',
+            'edit_item' => 'Ügyfél szerkesztése', 'all_items' => 'Összes ügyfél', 'menu_name' => 'Referencia-ügyfelek'],
+        'hierarchical' => false, 'public' => true, 'show_admin_column' => false, 'show_in_rest' => true,
+        'rewrite' => ['slug' => 'ugyfel', 'with_front' => false],
+    ]);
+
+    // Minősítések (pl. Google Partner) – /minosites/google-partner/
+    register_taxonomy('minosites', ['ugynokseg'], [
+        'labels' => ['name' => 'Minősítések', 'singular_name' => 'Minősítés', 'add_new_item' => 'Új minősítés',
+            'edit_item' => 'Minősítés szerkesztése', 'all_items' => 'Összes minősítés', 'menu_name' => 'Minősítések'],
+        'hierarchical' => false, 'public' => true, 'show_admin_column' => false, 'show_in_rest' => true,
+        'rewrite' => ['slug' => 'minosites', 'with_front' => false],
+    ]);
 }
 add_action('init', 'kompasz_register_types');
 

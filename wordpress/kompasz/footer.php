@@ -16,7 +16,7 @@
       </div>
       <div>
         <div class="flbl">OLDALAK</div>
-        <div class="fcol"><a href="<?php echo esc_url(home_url('/')); ?>">Kezdőlap</a><a href="<?php echo esc_url(home_url('/cimkek/')); ?>">Szolgáltatások</a><a href="<?php echo esc_url(home_url('/rolunk/')); ?>">Rólunk</a><a href="<?php echo esc_url(home_url('/blog/')); ?>">Blog</a><a href="<?php echo esc_url(home_url('/kapcsolat/')); ?>">Kapcsolat</a></div>
+        <div class="fcol"><a href="<?php echo esc_url(home_url('/')); ?>">Kezdőlap</a><a href="<?php echo esc_url(home_url('/cimkek/')); ?>">Szolgáltatások</a><a href="<?php echo esc_url(home_url('/ugyfelek/')); ?>">Referencia-ügyfelek</a><a href="<?php echo esc_url(home_url('/minositesek/')); ?>">Minősítések</a><a href="<?php echo esc_url(home_url('/rolunk/')); ?>">Rólunk</a><a href="<?php echo esc_url(home_url('/blog/')); ?>">Blog</a><a href="<?php echo esc_url(home_url('/kapcsolat/')); ?>">Kapcsolat</a></div>
       </div>
       <div>
         <div class="flbl">INFORMÁCIÓ</div>

@@ -53,10 +53,18 @@ $around = $list ? array_slice($list, max(0, min($pos - 3, count($list) - 5)), 5,
           <h3>Szolgáltatások</h3>
           <div class="svc"><?php foreach ($a['services'] as $s) echo '<span>' . esc_html($s) . '</span>'; ?></div>
         <?php endif; ?>
+        <?php $cert_terms = get_the_terms($a['id'], 'minosites'); if ($cert_terms && !is_wp_error($cert_terms)): ?>
+          <h3>Minősítések szerinti listák</h3>
+          <div class="svc links"><?php foreach ($cert_terms as $t) printf('<a href="%s">%s →</a>', esc_url(get_term_link($t)), esc_html($t->name)); ?></div>
+        <?php endif; ?>
         <?php foreach (['Minősítések' => $a['certs'], 'Iparági tapasztalat' => $a['industries'], 'Munkanyelvek' => $a['languages']] as $h => $items): if (!$items) continue; ?>
           <h3><?php echo esc_html($h); ?></h3>
           <div class="svc"><?php foreach ($items as $s) echo '<span>' . esc_html($s) . '</span>'; ?></div>
         <?php endforeach; ?>
+        <?php $client_terms = get_the_terms($a['id'], 'ugyfel'); if ($client_terms && !is_wp_error($client_terms)): ?>
+          <h3>Akiknek még más ügynökség is dolgozott</h3>
+          <div class="svc links"><?php foreach ($client_terms as $t) printf('<a href="%s">%s →</a>', esc_url(get_term_link($t)), esc_html($t->name)); ?></div>
+        <?php endif; ?>
         <?php if ($a['references']): ?>
           <h3>Referenciák</h3>
           <div class="svc"><?php foreach ($a['references'] as $r) {
