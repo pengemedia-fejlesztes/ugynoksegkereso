@@ -380,6 +380,11 @@
   "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/klikkmarketing-1024x1024.png",
   "via": "ugynoksegkereso.hu"
  },
+ "kmu-marketing": {
+  "file": "kmu-marketing.png",
+  "src": "https://kmumarketing.hu/wp-content/uploads/2019/05/cropped-KMU-logo-mini.png",
+  "via": "header-logo"
+ },
  "ko-online-ugynokseg": {
   "file": "ko-online-ugynokseg.svg",
   "src": "https://onlineugynokseg.hu/wp-content/uploads/2022/12/ou_logo_white.svg",
@@ -649,10 +654,9 @@
   "via": "header-logo"
  },
  "suhajda-tamas-ppc-webdesign-automatizaciok": {
-  "file": "suhajda-tamas-ppc-webdesign-automatizaciok.webp",
-  "src": "https://www.suhajdatamas.hu/wp-content/uploads/2026/05/aquamaxx-logo.webp",
-  "via": "logo-own",
-  "dark": true
+  "file": "suhajda-tamas-ppc-webdesign-automatizaciok.png",
+  "src": "https://www.suhajdatamas.hu/wp-content/uploads/2026/02/cropped-2000x1000_v2_feher-192x192.png",
+  "via": "icon"
  },
  "sybell-informatika-kft": {
   "file": "sybell-informatika-kft.png",
@@ -670,9 +674,9 @@
   "via": "logo-own"
  },
  "the-pitch": {
-  "file": "the-pitch.png",
-  "src": "https://cdn.thepitch.hu/media/40dc134a-4a4a-4211-865b-ccae6767faae.png",
-  "via": "header-own"
+  "file": "the-pitch.svg",
+  "src": "https://thepitch.hu/favicon.svg",
+  "via": "icon"
  },
  "timesaver": {
   "file": "timesaver.avif",
