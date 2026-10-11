@@ -25,6 +25,11 @@
   "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/360.png",
   "via": "ugynoksegkereso.hu"
  },
+ "6clickz": {
+  "file": "6clickz.png",
+  "src": "https://s3.eu-central-1.amazonaws.com/uploads.mangoweb.org/shared-prod/6clickz.com/uploads/2024/10/dedoles-logo-green-yellow-500x153.png",
+  "via": "logo-own"
+ },
  "7digits-seven-digits-media-zrt": {
   "file": "7digits-seven-digits-media-zrt.png",
   "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/09/7digits.png",
@@ -159,7 +164,7 @@
  },
  "bako-krisztian": {
   "file": "bako-krisztian.png",
-  "src": "https://bakokrisztian.hu/wp-content/uploads/2021/03/cropped-android-chrome-512x512-1-1.png",
+  "src": "https://bakokrisztian.hu/wp-content/uploads/2021/03/cropped-android-chrome-512x512-1-1-300x300.png",
   "via": "icon"
  },
  "barex-iparmuvesz-kft-basa-janos-fotomuvesz": {
@@ -189,7 +194,7 @@
  },
  "berenyisoft": {
   "file": "berenyisoft.jpg",
-  "src": "https://berenyisoft.com/wp-content/uploads/2018/12/cropped-berenyisoft_logo.jpg",
+  "src": "https://berenyisoft.com/wp-content/uploads/2018/12/cropped-berenyisoft_logo-192x192.jpg",
   "via": "icon"
  },
  "berry-art-a-webshop-szakerto": {
@@ -310,7 +315,7 @@
  },
  "corrad-design": {
   "file": "corrad-design.png",
-  "src": "https://keresooptimalizalunk.hu/wp-content/uploads/2024/10/cropped-favicon.png",
+  "src": "https://keresooptimalizalunk.hu/wp-content/uploads/2024/10/cropped-favicon-192x192.png",
   "via": "icon"
  },
  "crs-ai-marketing-seo-ugynokseg-kft": {
@@ -592,7 +597,7 @@
  "intren": {
   "file": "intren.png",
   "src": "https://intren.hu/wp-content/uploads/2025/07/logo_blue2.png",
-  "via": "kezi"
+  "via": "override"
  },
  "introweb-kft": {
   "file": "introweb-kft.svg",
@@ -905,7 +910,7 @@
  },
  "pixon-design": {
   "file": "pixon-design.png",
-  "src": "https://pixon.hu/wp-content/uploads/2026/09/cropped-pixon-favicon2.png",
+  "src": "https://pixon.hu/wp-content/uploads/2026/09/cropped-pixon-favicon2-192x192.png",
   "via": "icon"
  },
  "plus-creative-agency": {
@@ -1100,7 +1105,7 @@
  },
  "suhajda-tamas-ppc-webdesign-automatizaciok": {
   "file": "suhajda-tamas-ppc-webdesign-automatizaciok.png",
-  "src": "https://www.suhajdatamas.hu/wp-content/uploads/2026/02/cropped-2000x1000_v2_feher.png",
+  "src": "https://www.suhajdatamas.hu/wp-content/uploads/2026/02/cropped-2000x1000_v2_feher-192x192.png",
   "via": "icon"
  },
  "sybell-informatika-kft": {
@@ -1180,7 +1185,7 @@
  },
  "unidome-studio-creative": {
   "file": "unidome-studio-creative.png",
-  "src": "https://unidome.studio/wp-content/uploads/2025/03/android-chrome-512x512-1.png",
+  "src": "https://unidome.studio/wp-content/uploads/2025/03/android-chrome-512x512-1-268x268.png",
   "via": "icon"
  },
  "uniomedia": {
