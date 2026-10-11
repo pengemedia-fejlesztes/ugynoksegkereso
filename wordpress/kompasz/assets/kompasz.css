@@ -365,3 +365,5 @@ a.chip:hover{background:var(--ink);color:#fff}
 }
 /* Mobil: rácselemek ne lógjanak ki a hosszú, nem törő szövegek miatt */
 .sgrid>*,.scard,.posts>*,.taggrid>*,.facts>*{min-width:0}
+.pside{min-width:0}
+.profile h1,.pcard-hero .ph-body,.around a .an,.fside,.sn{overflow-wrap:anywhere;min-width:0}
