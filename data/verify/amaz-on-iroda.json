@@ -1,0 +1,18 @@
+{
+ "slug": "amaz-on-iroda",
+ "website": "https://www.amazoniroda.hu/",
+ "final_url": "https://www.amazoniroda.hu/",
+ "status": 0,
+ "error": "ENOTFOUND",
+ "title": "",
+ "description": "",
+ "checked": "2026-10-11",
+ "pages": [
+  {
+   "url": "https://www.amazoniroda.hu/",
+   "status": 0,
+   "error": "ENOTFOUND",
+   "text": ""
+  }
+ ]
+}

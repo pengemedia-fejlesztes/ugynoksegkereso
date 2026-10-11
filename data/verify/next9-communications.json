@@ -1,0 +1,18 @@
+{
+ "slug": "next9-communications",
+ "website": "https://www.next9.hu/",
+ "final_url": "https://www.next9.hu/",
+ "status": 0,
+ "error": "UND_ERR_CONNECT_TIMEOUT",
+ "title": "",
+ "description": "",
+ "checked": "2026-10-11",
+ "pages": [
+  {
+   "url": "https://www.next9.hu/",
+   "status": 0,
+   "error": "UND_ERR_CONNECT_TIMEOUT",
+   "text": ""
+  }
+ ]
+}

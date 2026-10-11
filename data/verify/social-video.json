@@ -1,0 +1,18 @@
+{
+ "slug": "social-video",
+ "website": "https://socialvideo.hu/",
+ "final_url": "https://socialvideo.hu/",
+ "status": 0,
+ "error": "AbortError",
+ "title": "",
+ "description": "",
+ "checked": "2026-10-11",
+ "pages": [
+  {
+   "url": "https://socialvideo.hu/",
+   "status": 0,
+   "error": "AbortError",
+   "text": ""
+  }
+ ]
+}

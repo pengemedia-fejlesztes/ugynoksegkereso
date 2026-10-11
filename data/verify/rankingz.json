@@ -1,0 +1,18 @@
+{
+ "slug": "rankingz",
+ "website": "https://rankingz.hu/",
+ "final_url": "https://rankingz.hu/",
+ "status": 0,
+ "error": "DEPTH_ZERO_SELF_SIGNED_CERT",
+ "title": "",
+ "description": "",
+ "checked": "2026-10-11",
+ "pages": [
+  {
+   "url": "https://rankingz.hu/",
+   "status": 0,
+   "error": "DEPTH_ZERO_SELF_SIGNED_CERT",
+   "text": ""
+  }
+ ]
+}

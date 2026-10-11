@@ -1,0 +1,18 @@
+{
+ "slug": "spindoc",
+ "website": "https://www.spindoc.hu/",
+ "final_url": "https://www.spindoc.hu/",
+ "status": 0,
+ "error": "UND_ERR_CONNECT_TIMEOUT",
+ "title": "",
+ "description": "",
+ "checked": "2026-10-11",
+ "pages": [
+  {
+   "url": "https://www.spindoc.hu/",
+   "status": 0,
+   "error": "UND_ERR_CONNECT_TIMEOUT",
+   "text": ""
+  }
+ ]
+}

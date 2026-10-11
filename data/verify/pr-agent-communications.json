@@ -1,0 +1,18 @@
+{
+ "slug": "pr-agent-communications",
+ "website": "https://pragent.hu/",
+ "final_url": "https://pragent.hu/",
+ "status": 0,
+ "error": "AbortError",
+ "title": "",
+ "description": "",
+ "checked": "2026-10-11",
+ "pages": [
+  {
+   "url": "https://pragent.hu/",
+   "status": 0,
+   "error": "AbortError",
+   "text": ""
+  }
+ ]
+}
