@@ -1,6 +1,6 @@
 # Ügynökségkereső – fejlesztés és élesítés
 
-Statikus oldal, függőségek nélkül. A tartalom a `src/data.mjs`-ben van, a sablonok a `build.mjs`-ben.
+Statikus oldal, függőségek nélkül. Az ügynökségadatok forrása a `src/ugynoksegek.json` (165 cég, 2026-10-11-i export). Csak a `kész` státuszú cégek jelennek meg, illetve az `ellenőrizendő` státuszúak közül azok, amelyekhez a régi listából van leírás. A kategóriaszövegek a `src/data.mjs`-ben vannak; onnan jön a régi toplista sorrendje, az értékelések és a logók is. A sablonok a `build.mjs`-ben vannak.
 
 ```
 npm run build   # → public/

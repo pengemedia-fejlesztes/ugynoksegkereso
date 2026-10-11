@@ -1,6 +1,10 @@
 // Statikus oldalgenerátor: node build.mjs → public/
-import { mkdir, writeFile, copyFile, rm } from 'node:fs/promises';
+import { mkdir, writeFile, copyFile, rm, readFile } from 'node:fs/promises';
 import { CATS, AGENCIES, PARTNERS, HOME_SEO, LOGO_BASE } from './src/data.mjs';
+
+// Az ügynökségadatok forrása: src/ugynoksegek.json (export: 2026-10-11).
+// A design régi listájából (data.mjs → AGENCIES) csak a sorrend, az értékelés és a logó jön.
+const DB = JSON.parse(await readFile('src/ugynoksegek.json', 'utf8'));
 
 const OUT = 'public';
 const SLUGS = {
@@ -15,8 +19,6 @@ const SLUGS = {
   'Weboldal készítés': 'weboldal-keszites',
   'Tartalomgyártó ügynökségek': 'tartalomgyarto-ugynoksegek',
 };
-// Melyik kategóriához van már valódi ügynökséglista
-const LISTS = { 'Online marketing ügynökségek': AGENCIES };
 const PAGES = {
   rolunk: ['Rólunk', 'Az Ügynökségkereső független magyar oldal, ahol szolgáltatás szerint bontott toplistákban találod a hazai ügynökségeket. Ez az oldal hamarosan bővül.'],
   blog: ['Blog', 'Hamarosan itt olvashatod cikkeinket ügynökségválasztásról, online marketingről és AI-megoldásokról.'],
@@ -30,14 +32,30 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
 const href = c => `/${SLUGS[c.n]}/`;
 const stars = r => '★'.repeat(Math.floor(r)) + (r % 1 ? '½' : '');
 const ini = n => n.replace(/[^A-Za-zÁÉÍÓÖŐÚÜŰ0-9 ]/g, '').split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
-const agencies = AGENCIES.map(([n, r, logo, url, tags, d], i) => ({
-  n, url, d, logo: LOGO_BASE + logo, tags: tags.split('|'), partner: PARTNERS.includes(n),
-  rank: String(i + 1).padStart(2, '0'), ini: ini(n), stars: stars(r), r: r.toFixed(1).replace('.', ','),
-}));
-LISTS['Online marketing ügynökségek'] = agencies;
+const domain = u => u.replace(/^(https?:\/\/)?(www\.)?/i, '').split('/')[0].toLowerCase();
+const legacy = new Map(AGENCIES.map(([n, r, logo, url, tags, d], i) => [domain(url), { order: i, r, logo, tags: tags.split('|'), d }]));
+const companies = DB.companies.map(c => {
+  const old = legacy.get(domain(c.website));
+  const d = c.description || old?.d || '';
+  const meta = [c.city, c.founded_year && `alapítva ${c.founded_year}`, c.team_size].filter(Boolean).join(' · ');
+  return {
+    n: c.name, href: c.website, url: domain(c.website), d, meta, cats: c.categories,
+    ok: c.status === 'kész' || !!(old && d), order: old ? old.order : Infinity,
+    tags: (c.services?.length ? c.services : old?.tags || []).slice(0, 4), services: c.services || [],
+    logo: old ? LOGO_BASE + old.logo : null, ini: ini(c.name), partner: PARTNERS.includes(c.name),
+    stars: old ? stars(old.r) : '', r: old ? old.r.toFixed(1).replace('.', ',') : '',
+  };
+}).filter(c => c.ok);
+// Kategórialisták: előbb a régi toplista sorrendje, utána ábécérendben
+const LISTS = Object.fromEntries(CATS.map(cat => [cat.n, companies
+  .filter(c => c.cats.includes(cat.n))
+  .sort((a, b) => a.order - b.order || a.n.localeCompare(b.n, 'hu'))
+  .map((c, i) => ({ ...c, rank: String(i + 1).padStart(2, '0') }))]));
+const agencies = LISTS['Online marketing ügynökségek'];
 const aiCats = CATS.filter(c => c.ai), otherCats = CATS.filter(c => !c.ai);
-const ext = a => `href="https://${esc(a.url)}" target="_blank" rel="nofollow noopener"`;
-const logo = (a, cls, size) => `<span class="logo ${cls}"><span>${esc(a.ini)}</span><img src="${esc(a.logo)}" alt="${esc(a.n)} logó" loading="lazy" decoding="async" width="${size}" height="${size}"></span>`;
+const ext = a => `href="${esc(a.href)}" target="_blank" rel="nofollow noopener"`;
+const logo = (a, cls, size) => `<span class="logo ${cls}"><span>${esc(a.ini)}</span>${a.logo ? `<img src="${esc(a.logo)}" alt="${esc(a.n)} logó" loading="lazy" decoding="async" width="${size}" height="${size}">` : ''}</span>`;
+const rating = (a, extra = '') => a.r ? `<span class="stars">${a.stars}</span><b>${a.r}/5${extra}</b>` : (extra ? `<b>${extra.replace(/^ · /, '')}</b>` : '');
 
 const head = (title, desc) => `<!doctype html>
 <html lang="hu">
@@ -148,7 +166,7 @@ ${featured.map(c => `<a class="fsm" href="${href(c)}"><span class="ar">↗</span
 <section class="wrap top5 d-only">
 <div class="sec-h"><div><div class="eyebrow">ONLINE MARKETING ÜGYNÖKSÉGEK · 2026</div><h2 class="h2">A lista eleje</h2></div><a class="btn-ghost" href="${href(om)}">Teljes lista →</a></div>
 <div class="t5">
-${agencies.slice(0, 5).map(a => `<div class="t5row"><span class="rank">${a.rank}</span>${logo(a, 'l52', 52)}<span class="nm">${esc(a.n)}</span><span class="ds">${esc(a.d.length > 140 ? a.d.slice(0, a.d.lastIndexOf(' ', 140)) + '…' : a.d)}</span><span class="rate"><span class="stars">${a.stars}</span><b>${a.r}/5</b></span><a class="btn" ${ext(a)}>Kapcsolat ↗</a></div>`).join('\n')}
+${agencies.slice(0, 5).map(a => `<div class="t5row"><span class="rank">${a.rank}</span>${logo(a, 'l52', 52)}<span class="nm">${esc(a.n)}</span><span class="ds">${esc(a.d.length > 140 ? a.d.slice(0, a.d.lastIndexOf(' ', 140)) + '…' : a.d)}</span><span class="rate">${rating(a)}</span><a class="btn" ${ext(a)}>Kapcsolat ↗</a></div>`).join('\n')}
 </div>
 </section>
 
@@ -171,7 +189,7 @@ function category(cat) {
 ${partners.length ? `<section class="partners" aria-label="Kiemelt partnerek">
 <div class="p-h"><span class="l">KIEMELT PARTNEREK</span><span class="paid">FIZETETT MEGJELENÉS</span><span class="n">A kiemelés nem befolyásolja a toplista sorrendjét. <a href="/kivalasztasi-elvek/">Részletek</a></span></div>
 <div class="p-grid">
-${partners.map(a => `<article class="pcard"><div class="top">${logo(a, 'l72', 72)}<div style="min-width:0"><span class="pbadge">★ KIEMELT PARTNER</span><h3>${esc(a.n)}</h3><div class="meta"><span class="stars">${a.stars}</span><b>${a.r}/5 · #${a.rank} a listán</b></div></div></div>
+${partners.map(a => `<article class="pcard"><div class="top">${logo(a, 'l72', 72)}<div style="min-width:0"><span class="pbadge">★ KIEMELT PARTNER</span><h3>${esc(a.n)}</h3><div class="meta">${rating(a, ` · #${a.rank} a listán`)}</div></div></div>
 <p>${esc(a.d)}</p>
 <div class="act"><a class="btn" ${ext(a)}>Kapcsolat ↗</a><a class="u" ${ext(a)}>${esc(a.url)}</a><span class="ad">Hirdetés</span></div></article>`).join('\n')}
 </div>
@@ -182,10 +200,10 @@ ${partners.map(a => `<article class="pcard"><div class="top">${logo(a, 'l72', 72
 <div class="seg" role="group" aria-label="Nézet"><button type="button" data-mode="detail" aria-pressed="true">Részletes</button><button type="button" data-mode="compact" aria-pressed="false">Tömör</button></div>
 </div>
 <div id="list" class="cat-main" style="gap:10px">
-${list.map((a, i) => `<article class="row" data-s="${esc((a.n + ' ' + a.tags.join(' ') + ' ' + a.d).toLowerCase())}"${i >= 10 ? ' hidden' : ''}>
+${list.map((a, i) => `<article class="row" data-s="${esc([a.n, a.url, a.meta, ...a.services, ...a.tags, a.d].join(' ').toLowerCase())}"${i >= 10 ? ' hidden' : ''}>
 <span class="rank">${a.rank}</span>${logo(a, '', 104)}
-<div style="min-width:0"><div class="hd"><h3>${esc(a.n)}</h3><span class="stars">${a.stars}</span><b>${a.r}/5</b>${a.partner ? '<span class="pbadge">★ KIEMELT PARTNER · FIZETETT</span>' : ''}</div>
-<div class="tags">${a.tags.map(t => `<span>${esc(t)}</span>`).join('')}</div>
+<div style="min-width:0"><div class="hd"><h3>${esc(a.n)}</h3>${rating(a)}${a.partner ? '<span class="pbadge">★ KIEMELT PARTNER · FIZETETT</span>' : ''}</div>
+${a.meta ? `<div class="meta">${esc(a.meta)}</div>` : ''}<div class="tags">${a.tags.map(t => `<span>${esc(t)}</span>`).join('')}</div>
 <p>${esc(a.d)}</p>${a.d.length > 190 ? '<button class="tog" type="button" aria-expanded="false">Teljes bemutatkozás</button>' : ''}</div>
 <div class="cta"><a class="btn" ${ext(a)}>Kapcsolat ↗</a><a class="u" ${ext(a)}>${esc(a.url)}</a></div>
 </article>`).join('\n')}
@@ -247,4 +265,5 @@ await out('_headers', HEADERS);
 await out('favicon.svg', FAVICON);
 await copyFile('src/styles.css', `${OUT}/styles.css`);
 await copyFile('src/app.js', `${OUT}/app.js`);
-console.log(`Kész: ${OUT}/ (${CATS.length} toplista, ${agencies.length} ügynökség)`);
+console.log(`Kész: ${OUT}/ (${CATS.length} toplista, ${companies.length} cég)`);
+for (const c of CATS) console.log(`  ${String(LISTS[c.n].length).padStart(3)}  ${c.n}`);

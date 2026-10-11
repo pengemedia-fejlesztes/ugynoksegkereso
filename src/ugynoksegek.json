@@ -1,0 +1,3905 @@
+{
+ "categories": [
+  {
+   "slug": "online-marketing-ugynoksegek",
+   "name": "Online marketing ügynökségek",
+   "origin": "forrásoldal"
+  },
+  {
+   "slug": "pr-ugynoksegek",
+   "name": "PR ügynökségek",
+   "origin": "forrásoldal"
+  },
+  {
+   "slug": "keresooptimalizalo-ugynoksegek",
+   "name": "Keresőoptimalizáló ügynökségek",
+   "origin": "forrásoldal"
+  },
+  {
+   "slug": "amazon-ugynoksegek",
+   "name": "Amazon ügynökségek",
+   "origin": "forrásoldal"
+  },
+  {
+   "slug": "weboldal-keszites",
+   "name": "Weboldal készítés",
+   "origin": "forrásoldal"
+  },
+  {
+   "slug": "tartalomgyarto-ugynoksegek",
+   "name": "Tartalomgyártó ügynökségek",
+   "origin": "forrásoldal"
+  },
+  {
+   "slug": "facebook-hirdetes-ugynoksegek",
+   "name": "Facebook hirdetés ügynökségek",
+   "origin": "új"
+  },
+  {
+   "slug": "google-ads-ugynoksegek",
+   "name": "Google Ads ügynökségek",
+   "origin": "új"
+  },
+  {
+   "slug": "ai-seo-ugynoksegek",
+   "name": "AI SEO ügynökségek",
+   "origin": "új"
+  },
+  {
+   "slug": "ai-agent-fejleszto-cegek",
+   "name": "AI agent fejlesztő cégek",
+   "origin": "új"
+  }
+ ],
+ "companies": [
+  {
+   "slug": "2100labs",
+   "name": "2100Labs",
+   "website": "https://2100labs.com/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": "15 fő",
+   "services": [
+    "Marketingstratégia",
+    "Értékesítési tölcsér építése",
+    "Facebook és Instagram hirdetések",
+    "Google Ads",
+    "Marketingpszichológiai szövegírás",
+    "E-mail marketing",
+    "Rövid videós tartalom",
+    "Értékesítési automatizáció"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Értékesítési rendszerek építésére szakosodott budapesti digitális ügynökség, tizenöt fős csapattal. Marketingstratégiát, értékesítési tölcsért és marketingpszichológiára épülő szövegeket készít, ezekhez Facebook-, Instagram- és Google Ads-kampányokat kezel, kiegészítve e-mail marketinggel és rövid videós tartalmak gyártásával. A folyamatokat automatizált utánkövetéssel, leadpontozással és időpontfoglalással támogatja, amelyekhez mesterséges intelligenciát is alkalmaz.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "2bseenstudio",
+   "name": "2BseenStudio",
+   "website": "https://2bseenstudio.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads kampánykezelés",
+    "Performance Max és Display kampányok",
+    "Landing oldal készítés",
+    "Google Ads konzultáció",
+    "Google Ads oktatás"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Kifejezetten Google Ads-re szakosodott vállalkozás, amelyet Petlyánszki Bence vezet, és amelynél a stratégiai kérdésekben az ügyfél közvetlenül vele egyeztet. Keresési, Display és Performance Max kampányokat kezel, ehhez landing oldalakat épít, továbbá konzultációt és oktatást tart. Főként szolgáltató kis- és középvállalkozásoknak dolgozik, ahol az ajánlatkérések, hívások és foglalások számának növelése a cél. A cég közlése szerint 270 millió forintnál több hirdetési költést kezelt.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "360-marketing-ugynokseg",
+   "name": "360 Marketing ügynökség",
+   "website": "https://360-marketing.hu/",
+   "city": "Budapest",
+   "founded_year": 2017,
+   "team_size": "16+ fő",
+   "services": [
+    "Marketingstratégia",
+    "SEO",
+    "AI SEO",
+    "Google Ads",
+    "Facebook hirdetéskezelés",
+    "Webfejlesztés",
+    "Online marketing oktatás",
+    "Iparági marketingcsomagok"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "A 2017-ben alapított budapesti ügynökség stratégiaalkotást, keresőoptimalizálást, Google- és Meta-hirdetéskezelést, valamint weboldal- és webáruház-fejlesztést vállal. Kínálatában iparágakra szabott csomagok is vannak, például egészségügyi, szépségipari, vendéglátós és Shoprenter- vagy UNAS-alapú webáruházak számára. AI SEO szolgáltatása a Google mellett a ChatGPT, a Perplexity és az AI Overviews találataira optimalizál. A kivitelezés mellett PPC-, SEO-, analitika- és AI-képzéseket is tart; a cég közlése szerint 16-nál több szakemberrel dolgozik.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "4-profit-marketing",
+   "name": "4 PROFIT MARKETING",
+   "website": "https://4profitmarketing.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [],
+   "categories": [
+    "Online marketing ügynökségek"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "7digits-seven-digits-media-zrt",
+   "name": "7Digits (Seven Digits Media Zrt.)",
+   "website": "https://7blog.hu/online-marketing-ugynokseg/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "PPC hirdetéskezelés",
+    "SEO / AEO / GEO",
+    "Webfejlesztés",
+    "Shopify webáruház",
+    "Marketing automatizáció és CRM",
+    "Konverzióoptimalizálás",
+    "Videógyártás",
+    "Egyedi AI fejlesztés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek",
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Budapesti teljesítménymarketing-ügynökség, amely a fizetett hirdetésektől (Google, Meta, TikTok, LinkedIn) a keresőoptimalizáláson és webfejlesztésen át a CRM- és automatizációs rendszerekig egyben kezeli az ügyfelek digitális jelenlétét. Elsősorban webáruházaknak és B2B cégeknek dolgozik, Shopify-fejlesztéssel és külföldi piacra lépéssel is foglalkozik. Külön szolgáltatásként kínál AI keresőkre szabott optimalizálást és egyedi, ügyfélszolgálati vagy belső folyamatokat támogató AI megoldásokat. A cég közlése szerint Google Premier Partner.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "abmg",
+   "name": "ABMG",
+   "website": "https://abmg.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [],
+   "categories": [
+    "Weboldal készítés"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "adops-digital",
+   "name": "AdOps Digital",
+   "website": "https://ad-ops.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "SEO",
+    "AI optimalizálás (GEO/AEO)",
+    "Hirdetéskezelés (PPC)",
+    "AI ügynök és chatbot készítés",
+    "KKV automatizálás",
+    "Weboldal- és UNAS webáruház-készítés",
+    "Szerveroldali mérés, analitika",
+    "Social media kezelés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek",
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Budapesti ügynökség, amely a keresőoptimalizálást és a fizetett hirdetések kezelését mesterséges intelligenciára épülő szolgáltatásokkal egészíti ki. Google, Meta, TikTok, LinkedIn és Pinterest kampányokat visz, emellett foglalkozik azzal is, hogy az ügyfelek megjelenjenek a ChatGPT és a Gemini válaszaiban. AI ügynököt és chatbotot is fejleszt, valamint weboldalt és UNAS webáruházat készít. Főként kis- és középvállalkozásoknak dolgozik, több iparágra szabott ajánlattal.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "adskezeles-hu",
+   "name": "AdsKezelés.hu",
+   "website": "https://adskezeles.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads kampánykezelés",
+    "Kampányépítés",
+    "Mentorált Google Ads kampány",
+    "Kulcsszó- és klaszterelemzés",
+    "Hirdetésszöveg-írás"
+   ],
+   "categories": [
+    "Google Ads ügynökségek"
+   ],
+   "description": "Kasza László vezetésével működő, kizárólag Google Ads kezelésre szakosodott szolgáltató, amely független egyéni vállalkozó fiókkezelők közösségeként dolgozik. Csomagjai az alapkampánytól a gyorsító és prémium kampányig terjednek, és van mentorált változat is azoknak, akik maguk szeretnék megtanulni a fiókkezelést. Az oldal szerint a vezető 2017 óta Google Partner; weboldalszöveg-írást és közösségimédia-hirdetést nem vállalnak.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "ai-lathatosagi-audit",
+   "name": "AI Láthatósági Audit",
+   "website": "https://ailathatosagiaudit.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": "1 fő",
+   "services": [
+    "GEO optimalizálás",
+    "AEO (válaszmotor-optimalizálás)",
+    "AI SEO",
+    "AI láthatósági audit",
+    "Entitás SEO és schema markup",
+    "Havi AI-menedzsment"
+   ],
+   "categories": [
+    "AI SEO ügynökségek"
+   ],
+   "description": "Bauman Raymond egyéni vállalkozó budapesti szakértői praxisa, amely kizárólag az AI keresőkben való megjelenéssel foglalkozik. Külön szolgáltatásként kínál GEO-t, válaszmotor-optimalizálást, AI SEO-t, entitás SEO-t és schema markupot. A belépő egy ingyenes láthatósági audit, erre épül a fizetős teljes audit, a megvalósítási csomag és a havidíjas menedzsment. Az oldal szerint alvállalkozók és account managerek nélkül dolgozik.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "ai-smart",
+   "name": "AI-Smart",
+   "website": "https://ai-smart.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "AI chatbot",
+    "Telefonos AI agent",
+    "Személyes AI asszisztens",
+    "Időpontfoglaló rendszer",
+    "Egyedi webalkalmazás",
+    "Weboldal és landing oldal",
+    "AI social media marketing",
+    "E-mail marketing"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Magyar vállalkozásoknak dolgozó, közvetlen kapcsolattartásra építő AI-automatizálási szolgáltató. AI chatbotot, telefonos AI agentet, személyes asszisztenst és időpontfoglaló rendszert készít, kész platformként vagy egyedi fejlesztésként, és webes, mobil- és asztali alkalmazásokat is vállal. A kínálatban Facebook- és Instagram-posztolást, kreatívkészítést és hirdetéskezelést lefedő közösségimédia-szolgáltatás is szerepel. Az oldalon megtérülési kalkulátor is elérhető.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "ai-squad",
+   "name": "AI Squad",
+   "website": "https://aisquad.hu/",
+   "city": "Pécs",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "AI hangügynök fejlesztés",
+    "Telefonos AI asszisztens",
+    "Chatbotok és web-asszisztensek",
+    "Dokumentum- és képfelismerő AI",
+    "CRM- és rendszerintegráció",
+    "Üzemeltetés és riportolás",
+    "Egyedi szoftverfejlesztés"
+   ],
+   "categories": [
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Pécsi csapat, amely hangalapú AI-rendszerek építésére és üzemeltetésére szakosodott: bejövő és kimenő hívásokat kezelő telefonos ügynököket készít ügyfélszolgálatra, időpontfoglalásra és érdeklődők minősítésére. Emellett tudásbázisra épülő chatbotokat, dokumentum- és képfeldolgozó megoldásokat, valamint CRM- és telefónia-integrációkat fejleszt. Kisvállalkozásoknak csomagokat, nagyvállalatoknak egyedi munkafolyamatokat kínál. A rendszereket havi riporttal maga üzemelteti is.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "ai-strategia",
+   "name": "AI Stratégia",
+   "website": "https://aistrategia.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "GEO optimalizálás",
+    "AEO optimalizálás",
+    "Strukturált adatok",
+    "Technikai SEO",
+    "Hangalapú keresés optimalizálása",
+    "Többnyelvű SEO"
+   ],
+   "categories": [
+    "AI SEO ügynökségek"
+   ],
+   "description": "Budapesti szolgáltató, amelynek teljes kínálata a generatív és válaszmotoros keresőkre épül. Három havidíjas csomagban (Starter, Growth, Premium) vállal GEO és AEO optimalizálást, ezen belül strukturált adatok beépítését, technikai beállításokat, E-E-A-T jelek erősítését és hangalapú keresésre való felkészítést. A munkát havi riport és konzultáció kíséri, az első egyeztetés az oldal szerint díjmentes.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "ai-visibility-lab",
+   "name": "AI Visibility Lab",
+   "website": "https://aivisibility.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "AI láthatósági audit",
+    "GEO stratégia és megvalósítás",
+    "Havi AI láthatósági riport",
+    "ChatGPT hirdetéskezelés"
+   ],
+   "categories": [
+    "AI SEO ügynökségek"
+   ],
+   "description": "A TwinTech Vision Kft. kifejezetten generatív keresőkre szakosodott márkája, amely nem kínál hagyományos teljes körű marketinget. Három egymásra épülő terméke van: fix áras AI láthatósági audit, egyedi árazású GEO stratégia és megvalósítás, valamint havidíjas riport arról, hogyan jelenik meg az ügyfél márkája az AI válaszokban. Újabb szolgáltatásként ChatGPT hirdetéskezelést is vállal. A weboldal két alapítót nevez meg.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "aiworks",
+   "name": "AIWORKS",
+   "website": "https://aiworks.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "AI agent fejlesztés",
+    "n8n folyamatautomatizáció",
+    "RAG tudásbázis-építés",
+    "API-integráció",
+    "Webfejlesztés és UI/UX",
+    "Webscraping és hírfigyelő rendszerek",
+    "SEO/GEO/AEO audit"
+   ],
+   "categories": [
+    "AI SEO ügynökségek",
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Magát mérnöki irodaként meghatározó részvénytársaság, amely AI agenteket, n8n-alapú folyamatautomatizációt, RAG tudásbázisokat és API-integrációkat épít megbízásra. A referenciák között tartalomkészítő, hírfigyelő és pályázatfigyelő agentek szerepelnek, több esetben a hozzájuk tartozó weboldallal együtt. A munkák között SEO-, GEO- és AEO-auditok is megjelennek, vagyis a fejlesztés mellett AI keresőkre optimalizálással is foglalkoznak.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "akcio-reklamugynokseg",
+   "name": "Akció Reklámügynökség",
+   "website": "https://akcioreklam.hu/",
+   "city": "Budapest",
+   "founded_year": 1988,
+   "team_size": null,
+   "services": [
+    "Kreatív és gyártás",
+    "PR és rendezvény",
+    "Narratíva stratégia",
+    "AI láthatóság audit (GEO/AEO)",
+    "Folyamatos ügynökségi megbízás"
+   ],
+   "categories": [
+    "AI SEO ügynökségek"
+   ],
+   "description": "Budapesti reklámügynökség, amely saját közlése szerint 1988 óta van jelen a hazai reklámpiacon, és kreatív munkával, gyártással, PR-ral, rendezvényekkel, valamint narratívastratégiával foglalkozik. Fix terjedelmű, kéthetes AI láthatóság auditot kínál: feltérképezi, hogyan szerepel a márka a ChatGPT, a Perplexity, a Claude és a Google AI Overviews válaszaiban, összeveti a versenytársakkal, és priorizált akciótervet ad át.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "alh-consulting-kft",
+   "name": "ALH Consulting Kft.",
+   "website": "https://alhconsulting.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Keresőoptimalizálás",
+    "Technikai SEO audit",
+    "Kulcsszókutatás",
+    "Tartalomfejlesztési stratégia",
+    "Linképítés",
+    "PR cikkek",
+    "Google-büntetés feloldása"
+   ],
+   "categories": [
+    "Keresőoptimalizáló ügynökségek"
+   ],
+   "description": "Kizárólag keresőoptimalizálásra szakosodott tanácsadó cég, fizetett hirdetéskezelést nem kínál. Munkája három pillérre épül: technikai és fejlesztési audit sebességoptimalizálással, on-site feladatok (kulcsszókutatás, versenytárselemzés, tartalomfejlesztési stratégia), valamint off-site tevékenység, vagyis linkmarketing, PR cikkek, a linkprofil tisztítása és a Google-büntetések megszüntetése. A megvalósítást felügyelettel és tanácsadással kíséri; a cég közlése szerint több mint tíz év tapasztalattal dolgozik.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "antikaotika-seo-antal-pap-judit",
+   "name": "Antikaotika-SEO (Antal-Pap Judit)",
+   "website": "https://seo.antikaotika-design.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "SEO audit",
+    "SEO stratégia",
+    "SEO szövegírás",
+    "SEO + AI (GEO) mentorprogram",
+    "GEO tanácsadás",
+    "Céges workshop és oktatás",
+    "Angol nyelvű SEO"
+   ],
+   "categories": [
+    "AI SEO ügynökségek"
+   ],
+   "description": "Antal-Pap Judit SEO-szakember vállalkozása, aki a weboldal szerint több mint tíz éve foglalkozik keresőoptimalizálással, és egy főállású munkatárssal, illetve külső alvállalkozókkal dolgozik. A GEO-t nem klasszikus ügynökségi formában, hanem konzultációként és árazott mentorprogramokként kínálja, amelyek nagyobb csomagja kivitelezést is tartalmaz: szövegírást, linképítést és Google Cégprofil-optimalizálást. Céges workshopokat és előadásokat is tart.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "arvalicom",
+   "name": "ArvaliCom",
+   "website": "https://arvali.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [],
+   "categories": [
+    "Online marketing ügynökségek"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "avanscript-kft",
+   "name": "Avanscript Kft.",
+   "website": "https://avanscript.com/",
+   "city": "Győr",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Weboldal készítés",
+    "Webáruház készítés",
+    "Egyedi szoftverfejlesztés",
+    "AI és automatizáció",
+    "Arculattervezés",
+    "Keresőoptimalizálás"
+   ],
+   "categories": [
+    "Weboldal készítés",
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Győri digitális műhely, amely weboldalakat és webáruházakat épít, emellett egyedi webalkalmazásokat, SaaS-rendszereket és belső vállalati szoftvereket fejleszt. A kínálat része az arculattervezés, a technikai és tartalmi keresőoptimalizálás, valamint az AI-alapú megoldások: chatbot, LLM-integráció és folyamatautomatizálás. Saját AI chatbot terméket is fejlesztettek Morsea néven, ügyfélnek készült AI-projektjük azonban saját közlésük szerint még nincs.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "axon-digital",
+   "name": "Axon Digital",
+   "website": "https://axondigital.io/",
+   "city": null,
+   "founded_year": 2020,
+   "team_size": null,
+   "services": [
+    "Meta Ads hirdetéskezelés",
+    "Google Ads hirdetéskezelés",
+    "Videós tartalomgyártás",
+    "Statikus kreatívkészítés",
+    "Weboldal fejlesztés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "A 2020 óta működő, távmunkában dolgozó csapat Meta- és Google Ads-kampányok kezelésével, videós és statikus hirdetési kreatívok gyártásával, valamint weboldalfejlesztéssel foglalkozik. Esettanulmányai jellemzően webáruházakról szólnak, például állateledel, kozmetikum és elektromos roller területéről. A honlapon Google Partner jelvény látható, az együttműködés egy ingyenes, harmincperces konzultációval indul.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "bako-krisztian",
+   "name": "Bakó Krisztián",
+   "website": "https://bakokrisztian.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Kereső- és AI-optimalizálás (SEO + GEO)",
+    "Google Ads hirdetéskezelés",
+    "Weboldal készítés",
+    "Webshop készítés",
+    "Weboldal karbantartás",
+    "SEO audit",
+    "Tartalommarketing"
+   ],
+   "categories": [
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Budapesti webes szakember, aki saját név alatt kínál weboldal- és webshopkészítést, karbantartást, Google Ads hirdetéskezelést és keresőoptimalizálást, főként budapesti és Pest megyei ügyfeleknek. A SEO szolgáltatást AI-optimalizálással együtt hirdeti (SEO, GEO, AEO): a cél a Google AI Mode és a ChatGPT válaszaiban való megjelenés. A weboldal szerint több mint 26 év tapasztalattal dolgozik, és saját AI-SEO tanúsítványt is ad ki.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "barna-design",
+   "name": "Barna Design",
+   "website": "https://barnadesign.eu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Weboldal készítés"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "bda",
+   "name": "BDA",
+   "website": "https://www.bda.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Weboldalkészítés",
+    "Webáruház-készítés",
+    "Grafikai tervezés",
+    "Online marketing",
+    "Keresőoptimalizálás",
+    "Közösségi média kezelés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Kisvállalatokra szakosodott digitális ügynökség, amely a honlap és a webáruház elkészítésétől a látogatószerzésig kíséri ügyfeleit. Kínálatában arculat- és grafikai tervezés, korlátlan grafikai előfizetés, keresőoptimalizálás, közösségimédia-kezelés, valamint Google Ads és Facebook hirdetésekre épülő online marketing szerepel. A webáruházakhoz automatizált számlázást és online bankkártyás fizetést is beállít.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "beonweb",
+   "name": "BeOnWeb",
+   "website": "https://beonweb.hu/",
+   "city": "Budapest",
+   "founded_year": 2014,
+   "team_size": "10 fő",
+   "services": [
+    "Teljes körű marketing kivitelezés",
+    "Google Ads",
+    "Meta Ads",
+    "Közösségimédia-marketing",
+    "SEO és szövegírás",
+    "TikTok tartalom és hirdetés",
+    "Webshop marketing",
+    "Étterem marketing"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "A 2014-ben indult BeOnWeb az első években egyszemélyes tanácsadó cégként működött, 2017 óta kivitelezéssel foglalkozik, ma tízfős csapattal a budapesti belvárosban. Google Ads- és Meta-hirdetéseket kezel, közösségimédia- és TikTok-tartalmat gyárt, keresőoptimalizálást és hírlevél-automatizálást vállal. Külön csomagjai vannak webáruházaknak és éttermeknek. Minden ügyfél munkáját egy projektmenedzser fogja össze, aki a szakterületi kollégákat koordinálja.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "berenyisoft",
+   "name": "BerényiSoft",
+   "website": "https://berenyisoft.com/",
+   "city": "Újlengyel",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Egyedi AI-szoftverfejlesztés",
+    "AI Call Center (voicebot)",
+    "AI ügyintéző asszisztens",
+    "AI e-mail ügyintéző",
+    "AI-tanácsadás",
+    "Egyedi szoftverfejlesztés",
+    "RPA",
+    "Vállalatirányítási rendszer"
+   ],
+   "categories": [
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Vállalati szoftverfejlesztő cég, amely a weboldala szerint több mint húsz év fejlesztői tapasztalatra épít. AI területen telefonos voicebotot, virtuális ügyintézőt, e-mail-feldolgozó és időpontfoglaló rendszert kínál, és egyedi AI-szoftverfejlesztést, tanácsadást, üzemeltetést is vállal. Hagyományos kínálata webes, mobil- és asztali alkalmazásokból, RPA-ból és a saját MikroMenedzser vállalatirányítási rendszerből áll.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "bestmarketing-kft",
+   "name": "BestMarketing Kft.",
+   "website": "https://bestmarketing.hu/",
+   "city": "Debrecen",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads hirdetéskezelés",
+    "Facebook hirdetéskezelés",
+    "Instagram hirdetéskezelés",
+    "Keresőoptimalizálás (SEO)",
+    "Weboldal készítés",
+    "Webshop marketing",
+    "Egészségügyi marketing",
+    "Éttermi marketing"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Keresőoptimalizáló ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Debreceni online marketing ügynökség, amelynek fő területe a Google Ads, a Facebook- és Instagram-hirdetések kezelése, a keresőoptimalizálás és a weboldalkészítés. Ágazati ajánlatai is vannak webáruházaknak, éttermeknek és egészségügyi szolgáltatóknak, továbbá pályázatokhoz kapcsolódó marketinget is vállal. A cég Google Partner és Meta Partner minősítést tüntet fel, és közlése szerint külső alvállalkozók helyett saját szakembereivel dolgozik.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "bolkodesign",
+   "name": "BolkoDesign",
+   "website": "https://bolkodesign.hu/",
+   "city": "Pécs",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Branding és arculattervezés",
+    "Marketingstratégia",
+    "Social tartalomgyártás",
+    "PPC kampánykezelés",
+    "Hírlevélmarketing",
+    "UI/UX és webfejlesztés",
+    "Fotó- és videókészítés",
+    "Standtervezés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Pécsi kreatív stúdió, amelynek súlypontja a dizájn: márkaépítő workshopok, arculattervezés, UI/UX és webfejlesztés, valamint kiállítási standok tervezése. Ehhez marketingstratégia, közösségimédia-tartalomgyártás, hírlevélmarketing, PPC kampánykezelés, továbbá fotózás és forgatás társul. A honlapon feltüntetett elismerések között szerepel Az év honlapja 2023 díj; a bemutatott ügyféllogók között nagyvállalati márkák is vannak.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "boom-marketing-agency",
+   "name": "BOOM Marketing Agency",
+   "website": "https://boommarketing.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Facebook hirdetések kezelése",
+    "Google Ads hirdetések kezelése",
+    "Vevőszerző folyamat audit",
+    "Email marketing automatizálás webshopoknak",
+    "Online marketing tanácsadás",
+    "Online marketing képzések"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Szűk, jól körülhatárolt kínálattal dolgozó ügynökség: Facebook- és Google Ads-hirdetéseket kezel, webshopoknak e-mail marketing automatizálást épít, emellett vevőszerzési auditot és tanácsadást nyújt. Az együttműködés háromféle lehet, az önálló munkát segítő útmutatástól a teljes kiszervezésig. A szolgáltatások mellett online tanfolyamokat is kínál, többek között ChatGPT-használatról, e-mail automatizálásról és hirdetéskezelésről.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "booster-marketing",
+   "name": "Booster Marketing",
+   "website": "https://boostermarketing.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Facebook hirdetéskezelés",
+    "Instagram hirdetéskezelés",
+    "Google hirdetéskezelés",
+    "ChatGPT hirdetéskezelés",
+    "Hirdetési audit",
+    "Szállás marketing",
+    "E-mail marketing",
+    "Weboldalkészítés"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Óbudai irodával működő hirdetéskezelő ügynökség, amelynek kínálata a fizetett kampányokra épül: Facebook-, Instagram- és Google-hirdetések, újabban ChatGPT-hirdetések kezelése. A Facebook-szolgáltatás három nyilvános árú csomagban érhető el, a csak hirdetéskezelést tartalmazó változat havi 99 900 Ft + áfától indul, és kérhető oldalkezeléssel együtt is. Ingyenes hirdetési auditot, szálláshelyeknek szóló marketinget, e-mail marketinget és weboldalkészítést is kínálnak.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "bp-digital",
+   "name": "BP Digital",
+   "website": "https://bpdigital.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "SEO tanácsadás",
+    "SEO elemzés és stratégia",
+    "Technikai SEO audit",
+    "Webshop SEO",
+    "Prémium linképítés",
+    "Online PR",
+    "PPC hirdetéskezelés",
+    "GEO audit"
+   ],
+   "categories": [
+    "Keresőoptimalizáló ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Keresőoptimalizálásra épülő ügynökség, amelynek kínálata a SEO elemzéstől és stratégiától a tanácsadáson, a technikai auditon és a webáruházak optimalizálásán át a linképítésig és az online PR-ig terjed. A hagyományos keresők mellett a mesterséges intelligenciára épülő keresésre is készít szolgáltatást: GEO audit keretében vizsgálja, hogyan jelenik meg egy márka az AI válaszaiban, és ehhez képzést is tart. PPC kampányokat szintén kezel.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "bpdata",
+   "name": "BPDATA",
+   "website": "https://bpdata.com/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "LLM- és AI-fejlesztés",
+    "RAG rendszerek és chatbotok",
+    "AI agentek",
+    "Gépi tanulási modellek",
+    "Egyedi szoftverfejlesztés",
+    "AI-stratégia és tanácsadás",
+    "AI due diligence",
+    "AI workshopok"
+   ],
+   "categories": [
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Budapesti, magát AI-first fejlesztő ügynökségként leíró csapat, amely éles üzemre szánt AI-rendszereket épít: RAG-alapú megoldásokat, chatbotokat, munkafolyamatot végrehajtó asszisztenseket és ágenseket, valamint árazó és előrejelző gépi tanulási modelleket. Mellettük egyedi backend- és frontendfejlesztést, AI-stratégiai tanácsadást, megfelelőségi átvilágítást és képzést is kínál. Két saját terméke a Prediqta és a Knowledgebase.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "budapest-marketing",
+   "name": "Budapest Marketing",
+   "website": "https://budapestmarketing.com/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads",
+    "Facebook és Instagram hirdetés",
+    "TikTok hirdetés",
+    "PPC kampánykezelés",
+    "Hirdetési kreatívok készítése",
+    "Hirdetési fiók audit"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Kizárólag fizetett hirdetések kezelésére szakosodott budapesti PPC ügynökség, amely elsősorban magyar webáruházaknak és kisvállalkozásoknak dolgozik. Google Ads, Facebook, Instagram és TikTok kampányokat kezel, a hirdetési kreatívokat és szövegeket is elkészíti, keresőoptimalizálást és webfejlesztést viszont nem vállal. A weboldalon Google Partner és Meta Business Partner jelvény látható; a cég közlése szerint több mint 50 hirdetési fiókot kezel.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "cegem-360",
+   "name": "Cégem 360",
+   "website": "https://cegem360.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Egyedi weboldal fejlesztés",
+    "Webshop készítés",
+    "SEO és GEO optimalizálás",
+    "Webgrafika és UI/UX",
+    "Weboldal üzemeltetés",
+    "Vállalati szoftverek (CRM)"
+   ],
+   "categories": [
+    "AI SEO ügynökségek"
+   ],
+   "description": "Elsősorban fejlesztőcég: Laravel alapú egyedi weboldalakat és webáruházakat épít, emellett saját vállalati szoftvereket (CRM, gyártás, logisztika) és marketingeszközöket is kínál. Az üzemeltetési ágon belül külön szolgáltatásoldala van a SEO és GEO optimalizálásnak, ahol a generatív keresőkben való megjelenést a hagyományos keresőoptimalizálás kiegészítéseként vállalja. A Cégem 360 Kft. székhelye Budapest belvárosában található.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "chiro-marketing",
+   "name": "Chiro Marketing",
+   "website": "https://chiro.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Online marketing stratégia",
+    "Komplex marketing kivitelezés",
+    "PPC",
+    "Közösségimédia-kezelés",
+    "Employer branding",
+    "B2B marketing",
+    "Videós tartalomgyártás",
+    "Podcast marketing"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "A budapesti Chiro Marketing hazai vállalatoknak nyújt komplex online marketing szolgáltatást a stratégiától és audittól a kivitelezésig. Kínálatában PPC-kampánykezelés, közösségimédia-kezelés, médiavásárlás, videós tartalomgyártás és podcast marketing szerepel, külön területként foglalkozik B2B marketinggel és munkáltatói márkaépítéssel. Az együttműködés rögzített lépésekben zajlik: ajánlat és szerződés után stratégia, kreatívok, kampányoptimalizálás, majd havi beszámoló következik. Magát etikus ügynökségként határozza meg, etikai kódexe nyilvános.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "city-marketing",
+   "name": "City Marketing",
+   "website": "https://www.citymarketing.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Social media marketing",
+    "Facebook hirdetés",
+    "Instagram hirdetés",
+    "Google hirdetés",
+    "Lokális hirdetés",
+    "Hírlevélmarketing",
+    "Grafikai tervezés",
+    "Weboldalkészítés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Budapesti online marketing ügynökség, amely a közösségi média és a fizetett hirdetések köré szervezi szolgáltatásait. Facebook-, Instagram- és Google-hirdetéseket kezel, külön megoldást kínál helyi célzású kampányokra, emellett hírlevélmarketinget, grafikai tervezést és weboldalkészítést vállal. Referenciái között jellemzően helyi és kisebb vállalkozások találhatók, például élelmiszerbolt, edzőterem, szépségszalon és lakópark.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "company-365",
+   "name": "Company 365",
+   "website": "https://company-365.com/",
+   "city": "Dunaharaszti",
+   "founded_year": 2019,
+   "team_size": null,
+   "services": [
+    "Google Ads kampánykezelés",
+    "Facebook és Instagram hirdetés",
+    "TikTok, Pinterest és LinkedIn hirdetés",
+    "Marketingstratégia",
+    "Márkaépítés",
+    "Grafikai tervezés",
+    "Webfejlesztés",
+    "Videókészítés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Fizetett online kampányok kezelésére szakosodott ügynökség, amely Google, Facebook, Instagram, TikTok, Pinterest és LinkedIn hirdetéseket visz, mellette márkaépítést, grafikai tervezést, webfejlesztést és videókészítést is vállal. A Company 365 Online Kft. 2019-ben jött létre, az elődje 2011-ben indult Vállalkozás-OK néven; vezetője Rózsahegyi László. Google Partner címmel rendelkezik, és a cég közlése szerint eddig több mint 100 millió forint hirdetési költést kezelt.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "corrad-design",
+   "name": "Corrad Design",
+   "website": "https://keresooptimalizalunk.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [],
+   "categories": [
+    "Online marketing ügynökségek"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "crs-ai-marketing-seo-ugynokseg-kft",
+   "name": "CRS AI Marketing & SEO Ügynökség Kft.",
+   "website": "https://aimarketingugynokseg.hu/",
+   "city": "Budapest",
+   "founded_year": 2007,
+   "team_size": null,
+   "services": [
+    "Keresőoptimalizálás",
+    "AI-SEO / GEO / AEO",
+    "Linképítés",
+    "SEO szövegírás és tartalomgyártás",
+    "WordPress weboldal készítés",
+    "AI tanácsadás",
+    "AI és SEO tanfolyamok",
+    "AI videó készítés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Keresőoptimalizálásra és AI-keresőkben való láthatóságra (GEO, AEO) építő budapesti ügynökség, amely a weboldal közlése szerint 2007 óta működik. Technikai SEO-t, linképítést, tartalomgyártást és WordPress-fejlesztést vállal, emellett AI-tanácsadást, valamint AI- és SEO-tanfolyamokat tart. Főként B2B cégeknek, webáruházaknak és kkv-knak dolgozik; a munkát jellemzően audittal kezdi, helyezési garanciát kifejezetten nem vállal.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "csabai-online-marketing",
+   "name": "Csabai Online Marketing",
+   "website": "https://csabaionlinemarketing.hu/",
+   "city": "Békéscsaba",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads kampánykezelés",
+    "Google Shopping",
+    "Performance Max",
+    "Meta hirdetések",
+    "TikTok hirdetések",
+    "Google Ads tanfolyam",
+    "Weboldal- és webshopkészítés"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Békéscsabai székhelyű kis ügynökség, amely főként webáruházak Google Ads kampányait kezeli: keresési, Shopping, Performance Max és remarketing hirdetéseket. Többplatformos csomagjában Meta- és TikTok-hirdetéskezelés is szerepel, a webshoposoknak pedig Google Ads tanfolyamot is tart. Az alapító saját közlése szerint több mint öt éve foglalkozik online ügyfélszerzéssel; országosan vállalnak megbízást.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "dlx-media",
+   "name": "DLX MEDIA",
+   "website": "https://dlxmedia.hu/",
+   "city": "Budapest",
+   "founded_year": 2019,
+   "team_size": "10 fő",
+   "services": [
+    "Videókészítés",
+    "Podcastkészítés és stúdióbérlés",
+    "YouTube-csatorna kezelés",
+    "Közösségi média marketing",
+    "PR és sajtómegjelenés",
+    "Szövegírás",
+    "Email marketing"
+   ],
+   "categories": [
+    "Online marketing ügynökségek"
+   ],
+   "description": "A 2019 júniusában alapított budapesti cég a tartalomgyártásra összpontosít: imázs-, termék- és rendezvényvideókat, podcastokat és YouTube-csatornákat készít és kezel, saját zuglói stúdiója bérelhető is. Ehhez közösségimédia-kezelés, sajtómegjelenések szervezése, szövegírás és e-mail marketing társul. A cég közlése szerint tízfős belső csapattal és több mint harminc alvállalkozóval dolgozik.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "dog-pony",
+   "name": "Dog & Pony",
+   "website": "https://marketingtanacsado.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Facebook és Instagram hirdetés",
+    "Google Ads / PPC",
+    "TikTok és YouTube hirdetés",
+    "SEO és linképítés",
+    "Webfejlesztés",
+    "PR és sajtóközlemény",
+    "Arculat és grafika",
+    "Influenszer marketing"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Budapesti digitális marketing- és reklámügynökség, amely a teljesítményalapú hirdetéseket kreatív és PR-munkával kapcsolja össze. Közösségimédia-kampányokat futtat Facebookon, Instagramon, TikTokon és YouTube-on, kezel Google Ads fiókokat, végez keresőoptimalizálást és webfejlesztést, emellett arculatot tervez, reklámfilmet készít, és köztéri megjelenéseket, eseményeket, influenszer-együttműködéseket is szervez. B2C és B2B ügyfeleknek egyaránt dolgozik; a cég közlése szerint több mint 200 projektet teljesített.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "doppio",
+   "name": "DOPPIO",
+   "website": "https://doppio.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [],
+   "categories": [
+    "Weboldal készítés"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "drive-online-marketing-kft",
+   "name": "Drive Online Marketing Kft.",
+   "website": "https://driveonline.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads",
+    "Facebook és Instagram hirdetés",
+    "LinkedIn és TikTok hirdetés",
+    "ChatGPT hirdetéskezelés",
+    "AI keresőoptimalizálás",
+    "Tartalommarketing",
+    "Marketing oktatás és tanácsadás",
+    "Weboldalkészítés és arculat"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Hirdetéskezelésre épülő budapesti ügynökség: Google, Facebook és Instagram, YouTube, LinkedIn, Bing, TikTok és ChatGPT felületeken futtat kampányokat ügyfélszerzési, webáruházas, márkaépítési és toborzási célokra. Ezt tartalomgyártás, arculat- és weboldalkészítés, valamint marketingképzések és tanácsadás egészíti ki. Külön csomagban kínál AI keresőoptimalizálást, amelyben havonta mérik, hogyan szerepel a márka a ChatGPT, a Perplexity és a Google AI válaszaiban.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "elite-vision",
+   "name": "Elite Vision",
+   "website": "https://profiweboldalkeszites.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Céges weboldal készítés",
+    "Webáruház készítés",
+    "Arculattervezés",
+    "Logótervezés",
+    "SEO",
+    "Karbantartás és support",
+    "Egyedi szoftverfejlesztés"
+   ],
+   "categories": [
+    "Weboldal készítés"
+   ],
+   "description": "Egyedi, nem sablonra épülő céges weboldalakat és webáruházakat készít saját adminfelülettel, reszponzív kivitelben, főként kis- és középvállalkozásoknak. A fejlesztést arculat- és logótervezés, keresőoptimalizálás, valamint karbantartás és tartalomfeltöltési segítség egészíti ki. Irodája Budapest XVI. kerületében van, de távmunkában országszerte és külföldi megrendelőknek is dolgozik. A cég közlése szerint több mint tíz év szakmai tapasztalattal rendelkezik.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "emlitve-hu",
+   "name": "emlitve.hu",
+   "website": "https://emlitve.hu/",
+   "city": "Sopron",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Weboldalkészítés",
+    "SEO",
+    "AI SEO és GEO",
+    "Konverzióoptimalizálás (CRO)",
+    "Online jelenlét felmérés"
+   ],
+   "categories": [
+    "AI SEO ügynökségek"
+   ],
+   "description": "Soproni egyéni vállalkozás, amely kisebb cégek online jelenlétét építi fel: weboldalt készít, Google-keresőre optimalizál, konverziót javít, és külön megnevezett szolgáltatásként AI SEO-t és GEO-t is kínál. Utóbbi célja, hogy az ügyfél márkája releváns forrásként jelenjen meg az AI-alapú keresők válaszaiban. Az ajánlat három csomagra tagolódik, a felméréstől a teljes online jelenlétig.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "evobrands-marketing-ugynokseg",
+   "name": "Evobrands Marketing Ügynökség",
+   "website": "https://evobrands.hu/",
+   "city": "Békéscsaba",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Facebook hirdetéskezelés",
+    "Facebook oldal kezelés",
+    "Google Ads kampánykezelés",
+    "TikTok marketing",
+    "ChatGPT hirdetéskezelés",
+    "Weblapkészítés",
+    "Videókészítés",
+    "Arculattervezés"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Békéscsabai székhelyű marketingügynökség, amely a Facebook- és Instagram-hirdetések kezelését külön, fix havidíjas csomagban kínálja: a weboldalon közzétett ár 149 000 Ft + áfa havonta, legfeljebb 600 000 forintos hirdetési keretig. A fizetett kampányok mellett oldalkezelést, Google Ads és TikTok kampányokat, weboldalkészítést, videós és grafikai munkákat is vállal. A cég közlése szerint több mint egy évtizede van a piacon.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "exact-match",
+   "name": "Exact Match",
+   "website": "https://exactmatch.hu",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads",
+    "Facebook és Instagram hirdetés",
+    "LinkedIn hirdetés",
+    "PPC tanácsadás",
+    "Webanalitika",
+    "GA4 bevezetés és audit",
+    "Képzések és workshopok"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "PPC-re és webanalitikára szakosodott budapesti ügynökség. Google Ads kampányokat tervez és kezel keresési, Shopping, display, YouTube és alkalmazáskampány formában, mellette Facebook-, Instagram- és LinkedIn-hirdetéseket is visz. Másik fő területe a mérés: GA4 beállítás, audit, mérési terv és riportok. Óradíjas vagy havidíjas PPC-tanácsadást, valamint online, tantermi és céges képzéseket is tart.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "exaline",
+   "name": "Exaline",
+   "website": "https://www.exaline.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads kampánykezelés",
+    "Facebook és Instagram hirdetés",
+    "SEO és linképítés",
+    "Marketingstratégia",
+    "WordPress weboldal készítés",
+    "Shoprenter / Unas webshop",
+    "Tartalommarketing",
+    "LLMS.txt készítés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Keresőoptimalizáló ügynökségek",
+    "Weboldal készítés",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Budapesti online marketing ügynökség, amely vállalkozásoknak kezel Google Ads-, valamint Facebook- és Instagram-kampányokat, emellett marketingstratégiát, keresőoptimalizálást és tartalommarketinget is vállal. A hirdetések mellett WordPress weboldalakat, illetve Shoprenter és Unas alapú webáruházakat épít. Külön szolgáltatásként kínál LLMS.txt fájl készítést, amely a weboldalak AI keresőkben és a ChatGPT-ben való megjelenését célozza. Az oldalon Google Partner jelvény szerepel.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "fatfox-creative",
+   "name": "FatFox Creative",
+   "website": "https://fatfoxcreative.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [],
+   "categories": [
+    "Online marketing ügynökségek"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "fdagent",
+   "name": "FDagent",
+   "website": "https://fdagent.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Agentic workflow tervezés",
+    "AI agent fejlesztés",
+    "n8n integráció",
+    "Agentic workflow workshop"
+   ],
+   "categories": [
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Budapesti szolgáltató, amely kifejezetten agentic workflow rendszerekre, vagyis több lépésben önállóan dolgozó AI agentekre szakosodott. Egyedi árazású tervezési és fejlesztési munkát vállal magyar vállalkozásoknak, a megvalósításban n8n-integrációra is épít. A fejlesztés mellett fix díjas, alkalmanként 150 000 forintos workshopot is tart a témában. Jogi cégadatokat a weboldal nem közöl.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "follow-marketing",
+   "name": "Follow Marketing",
+   "website": "https://followmarketing.eu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Meta hirdetések",
+    "Google hirdetések",
+    "Tartalomgyártás",
+    "Lead generálás",
+    "Online stratégia",
+    "Marketing tanácsadás"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Teljes körű marketingügynökségként mutatkozik be, amelynek kínálatában Meta- és Google-hirdetések, tartalomgyártás, lead generálás és online stratégia szerepel. Az oldaltérkép alapján külön aloldala van a teljes körű marketingnek, a profil- és hirdetéskezelésnek, a tanácsadásnak, egy AI auditnak és a ChatGPT-hirdetésnek, emellett esettanulmányokat és megtérülés-kalkulátort is közzétesz. Székhelyről, alapítási évről és csapatméretről a beolvasható tartalom nem ad tájékoztatást.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "forweb",
+   "name": "FORWEB",
+   "website": "https://forweb.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [],
+   "categories": [
+    "Online marketing ügynökségek"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "fusion-4",
+   "name": "Fusion 4",
+   "website": "https://fusion4.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [],
+   "categories": [
+    "Online marketing ügynökségek"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "future-marketing",
+   "name": "Future Marketing",
+   "website": "https://futuremarketing.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Facebook és Instagram hirdetéskezelés",
+    "Google Ads hirdetéskezelés",
+    "TikTok és Pinterest hirdetés",
+    "SEO",
+    "E-mail marketing",
+    "Webanalitika, szerveroldali mérés",
+    "WordPress weboldalkészítés",
+    "Hirdetési audit"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Elsősorban webáruházak hirdetéseivel foglalkozó online marketing ügynökség, amelyet Tóth Márk vezet. Facebook, Instagram, Google Ads, TikTok és Pinterest kampányokat kezel, ezt webanalitika, szerveroldali mérés, e-mail marketing, keresőoptimalizálás és WordPress alapú weboldalkészítés egészíti ki. Webshopok mellett egészségügyi, építőipari, logisztikai és utazási cégeknek is dolgozik. Hirdetési fiókok átvilágítását és marketingstratégia készítését szintén vállalja.",
+   "status": "ellenőrizendő",
+   "review_note": "Az oldal forrásában spam tartalom van, valószínűleg feltörték."
+  },
+  {
+   "slug": "futuremanagement",
+   "name": "FutureManagement",
+   "website": "https://futuremanagement.hu/",
+   "city": "Debrecen",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webshop marketing",
+    "Egészségügyi marketing",
+    "Szolgáltatás marketing",
+    "Weboldalkészítés",
+    "Logó- és arculattervezés",
+    "Employer branding",
+    "Konverzióoptimalizálás",
+    "PPC audit"
+   ],
+   "categories": [
+    "Online marketing ügynökségek"
+   ],
+   "description": "Debreceni központú ügynökség, amelynek Balatonfüreden is van irodája. Szolgáltatásait jellemzően havidíjas, ügyféltípusra szabott csomagokban kínálja: külön ajánlata van egészségügyi szolgáltatóknak, szolgáltató cégeknek és webáruházaknak, emellett videós tartalommal bővített csomagot is árul. A hirdetéskezelés és a közösségimédia-tartalom mellett weboldalakat készít, logót és arculatot tervez, valamint munkáltatói márkaépítéssel foglalkozik. A csomagok induló nettó árai a weboldalon nyilvánosak.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "fws-online-zrt",
+   "name": "fws online Zrt.",
+   "website": "https://www.fws.hu/",
+   "city": "Fertőszentmiklós",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Egyedi weboldal fejlesztés",
+    "Egyedi webshop fejlesztés",
+    "Domain, tárhely, üzemeltetés",
+    "Webszövegírás",
+    "Weboldal audit",
+    "Fotó- és videókészítés",
+    "GDPR megfelelés",
+    "Szakértői konzultáció"
+   ],
+   "categories": [
+    "Weboldal készítés"
+   ],
+   "description": "Fertőszentmiklósi webstúdió, amely sablonok helyett egyedi tervezésű weboldalakat és webáruházakat fejleszt saját adminfelülettel. A fejlesztéshez domain-, tárhely- és üzemeltetési szolgáltatás, üzleti levelezés, GDPR-megfelelési támogatás és szakértői konzultáció társul. Marketing oldalon webszövegírást, weboldal-auditot, valamint fotó- és videókészítést vállal. A cég közlése szerint több mint 18 éves tapasztalattal dolgozik, ügyfelei között szálloda, önkormányzat és tőzsdei vállalat is van.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "garand-design",
+   "name": "Garand Design",
+   "website": "https://garanddesign.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Meta hirdetéskezelés",
+    "Google Ads kezelés",
+    "TikTok hirdetés",
+    "ChatGPT hirdetés",
+    "SEO és AI SEO (GEO)",
+    "Social media kezelés",
+    "Szoftverfejlesztés",
+    "AI-stratégia"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Budapesti szoftverfejlesztő és online marketing cég, amely webáruházaknak és leadgyűjtő vállalkozásoknak tervez Facebook- és Instagram-kampányokat. A Meta-hirdetéskezelés része a Pixel és a Conversions API beállítása, a célközönségek megtervezése, a kreatívok A/B tesztelése és a riportolás. A fizetett csatornák közül Google Ads, TikTok és ChatGPT hirdetéseket is kezelnek, emellett SEO és AI SEO szolgáltatást, AI-bevezetési tanácsadást és egyedi szoftverfejlesztést kínálnak.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "gbh-media-marketing",
+   "name": "GBH Média Marketing",
+   "website": "https://gbh.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [],
+   "categories": [
+    "Online marketing ügynökségek"
+   ],
+   "description": "A gbhmedia.hu cím a gbh.hu oldalra irányít át, ahol az adatgyűjtés idején csak egy fejlesztés alatt álló oldalról szóló tájékoztatás és egy e-mail-cím volt látható. A cégről ezért a GBH Média Marketing néven túl semmi nem ellenőrizhető: szolgáltatások, székhely, alapítási év és csapatméret nem szerepel a weboldalon. Az adatlap az oldal elkészülte után frissítendő.",
+   "status": "ellenőrizendő",
+   "review_note": "Az oldal fejlesztés alatt áll, szolgáltatás nem ellenőrizhető."
+  },
+  {
+   "slug": "gold-communications",
+   "name": "Gold Communications",
+   "website": "https://www.goldcomm.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "PR és sajtókapcsolatok",
+    "Marketingtanácsadás",
+    "Média- és kampánytervezés",
+    "Google Ads",
+    "Közösségi média",
+    "Rendezvényszervezés",
+    "Piackutatás",
+    "Uniós pályázatok kommunikációja"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Tartalomgyártó ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Budapesti székhelyű, teljes körű kommunikációs ügynökség, amely a PR-t és a sajtómunkát marketingtanácsadással, médiavásárlással és rendezvényszervezéssel kapcsolja össze. A kínálatban a klasszikus felületek (tévé- és rádiószpot, citylight, újsághirdetés) mellett Google Ads és közösségimédia-hirdetés is szerepel. Külön területként foglalkozik piackutatással és uniós pályázatok kommunikációjával; a cég közlése szerint több mint húsz éve működik.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "google-marketing-kft-google-ads-hirdetes-hu",
+   "name": "Google Marketing Kft. (google-ads-hirdetes.hu)",
+   "website": "https://google-ads-hirdetes.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads kampánykészítés",
+    "Google Ads kampánykezelés",
+    "Fiókbeállítás",
+    "Kulcsszókutatás",
+    "Versenytárselemzés",
+    "Weboldal-audit",
+    "Marketing tanácsadás"
+   ],
+   "categories": [
+    "Google Ads ügynökségek"
+   ],
+   "description": "Sándor Benjámin Google Ads szakértő egyszemélyes szolgáltatása, amely mögött a lábléc szerint a Google Marketing Kft. áll. Keresési kampányok felépítésével és folyamatos kezelésével foglalkozik: fiókbeállítás, kulcsszókutatás, versenytárselemzés, optimalizálás és havi riport tartozik a munkához, kiegészítve weboldal-audittal és tanácsadással. Az oldal Google Partnerként mutatja be, és a Google partnerprofiljára is hivatkozik.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "green-edge",
+   "name": "Green Edge",
+   "website": "https://greenedge.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads hirdetéskezelés",
+    "Facebook hirdetéskezelés",
+    "Közösségimédia-menedzsment",
+    "Videógyártás",
+    "Weboldal- és webshopkészítés",
+    "Grafikai tervezés",
+    "Rendezvényszervezés"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Marketingügynökség, amely önálló szolgáltatásként kínál Google Ads hirdetéskezelést, és az oldala szerint hivatalos Google Partner. A fizetett kampányokat közösségimédia-kommunikációval, Facebook-hirdetéssel, videógyártással és weboldal-fejlesztéssel egészíti ki. Az online munkán túl offline feladatokat is vállal, például grafikai tervezést, kiállítási stand építését és rendezvényszervezést, ami a tisztán PPC-s cégektől megkülönbözteti.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "grepton",
+   "name": "Grepton",
+   "website": "https://grepton.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "AI-bevezetés és tanácsadás",
+    "AI agentek és copilotok",
+    "Folyamatautomatizálás",
+    "Microsoft Dynamics 365",
+    "Salesforce tanácsadás",
+    "Üzleti intelligencia (Power BI)",
+    "IT-infrastruktúra és biztonság",
+    "Egyedi alkalmazásfejlesztés"
+   ],
+   "categories": [
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Több mint húsz éve működő informatikai részvénytársaság, amely főként hazai nagyvállalatoknak és intézményeknek szállít üzleti rendszereket. Microsoft Solution Partnerként Dynamics 365, Power BI és Salesforce bevezetésekkel foglalkozik, AI területen pedig tanácsadást, folyamatautomatizálást, valamint üzleti folyamatokra szabott agenteket és copilotokat kínál, jellemzően Microsoft Copilot és Azure AI alapokon.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "growth-craft",
+   "name": "Growth Craft",
+   "website": "https://growthcraft.agency/hu/",
+   "city": "Jászárokszállás",
+   "founded_year": null,
+   "team_size": "8 fő",
+   "services": [
+    "PPC hirdetés",
+    "SEO",
+    "Weboldalkészítés",
+    "Növekedési stratégia",
+    "Webanalitika",
+    "Közösségimédia-marketing",
+    "E-mail marketing",
+    "Marketing tanácsadás"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Adatvezérelt szemléletű growth marketing ügynökség, amelyet Buza Patrik alapított; az üzemeltető Growth Craft Kft. székhelye Jászárokszállás. PPC kampányokat, keresőoptimalizálást, weboldalkészítést, analitikát, e-mail és közösségimédia-marketinget, valamint növekedési stratégiát kínál főként kis- és középvállalkozásoknak és startupoknak. A weboldalon nyolc csapattag szerepel, köztük több senior PPC specialista; személyes egyeztetést jellemzően Szegeden, Budapesten és Gyöngyös környékén tartanak.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "growww-digital",
+   "name": "Growww Digital",
+   "website": "https://www.growwwdigital.com/hu/",
+   "city": "Budapest",
+   "founded_year": 2013,
+   "team_size": "50 fő",
+   "services": [
+    "PPC-kampányok",
+    "Google Shopping",
+    "SEO",
+    "Digitális analitika",
+    "Programmatic médiavásárlás",
+    "TikTok marketing",
+    "Tartalommarketing",
+    "E-mail marketing és automatizáció"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "A 2013-ban alapított budapesti ügynökség performance marketingre szakosodott, főként webáruházak és online szolgáltatók számára. Mintegy ötvenfős csapata PPC- és Shopping-kampányokat, keresőoptimalizálást, analitikát, programmatic médiavásárlást és közösségimédia-kommunikációt végez, emellett a közép-kelet-európai piacra lépést is támogatja. Google Premier Partner és Microsoft Advertising Partner minősítéssel rendelkezik, saját fejlesztésű eszközei közé tartozik a ROIminer és a ROIshopper.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "hd-marketing",
+   "name": "HD marketing",
+   "website": "https://hdmarketing.hu/",
+   "city": "Budapest",
+   "founded_year": 2011,
+   "team_size": null,
+   "services": [
+    "Google Ads kampánykezelés",
+    "Google Shopping",
+    "SEO",
+    "AI Visibility / GEO",
+    "Közösségi média marketing",
+    "Webanalitika és CRO",
+    "Hírlevél és automatizálás",
+    "Videókészítés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "A 2011 márciusában indult budapesti ügynökség teljesítményalapú és márkaépítő online marketinggel foglalkozik: Google Ads és Shopping kampányokat, közösségi hirdetéseket, keresőoptimalizálást, webanalitikát és hírlevél-automatizálást kínál. Külön szolgáltatásként szerepel az AI-láthatóság felmérése és javítása ChatGPT-ben és Geminiben. A cég közlése szerint Google Premier Partner, és évente mintegy 2,8 milliárd forint Google Ads költést kezel.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "honlapbirodalom",
+   "name": "HonlapBirodalom",
+   "website": "https://www.honlapbirodalom.hu",
+   "city": "Debrecen",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads kampánykezelés",
+    "Facebook és Instagram hirdetés",
+    "Honlapkészítés",
+    "Webáruház-készítés",
+    "Keresőoptimalizálás",
+    "AI-optimalizálás (GEO)",
+    "Egyedi szoftverfejlesztés"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Debreceni webes cég, amely a honlap- és webáruház-készítés mellett 2011 óta kezel Google Ads és Facebook kampányokat. Hirdetéskezelése Shopping, remarketing és YouTube kampányokra is kiterjed, és Google Partner jelvényt tüntet fel. A kínálatban keresőoptimalizálás, AI-keresőkre optimalizálás, TikTok-hirdetés, egyedi szoftver- és API-fejlesztés is szerepel, így a kampány és a mögötte álló weboldal egy helyről rendelhető.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "honlapseo-burai-barbi",
+   "name": "HonlapSEO (Burai Barbi)",
+   "website": "https://honlapseo.hu/",
+   "city": "Dömös",
+   "founded_year": null,
+   "team_size": "1 fő",
+   "services": [
+    "Keresőoptimalizálás",
+    "SEO audit",
+    "Havidíjas SEO",
+    "SEO szövegírás",
+    "GEO és AI optimalizálás (mentorálás)",
+    "Kulcsszókutatás",
+    "SEO tanácsadás és oktatás"
+   ],
+   "categories": [
+    "AI SEO ügynökségek"
+   ],
+   "description": "Burai Barbi egyéni vállalkozó SEO-szakértő, aki saját közlése szerint 2016 óta dolgozik a területen, Dömös székhellyel. Egyszeri auditot, havidíjas keresőoptimalizálást, szövegírást, kulcsszókutatást és tanácsadást vállal. A menüben külön pontként szerepel a GEO és AI optimalizálás, amelyet elsősorban mentorálásként nyújt: állapotfelméréssel indul, és arra tanítja meg az ügyfelet, hogyan jelenjen meg a ChatGPT, a Gemini, a Perplexity és az AI Overviews találataiban.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "hrenko-digital-agency-kft",
+   "name": "Hrenko Digital Agency Kft.",
+   "website": "https://www.hrenko.hu/",
+   "city": "Budapest",
+   "founded_year": 2009,
+   "team_size": null,
+   "services": [
+    "Webfejlesztés",
+    "Webáruház készítés",
+    "Google Ads kampánykezelés",
+    "SEO",
+    "UX és UI tervezés",
+    "Arculattervezés",
+    "Szövegírás",
+    "Social media management"
+   ],
+   "categories": [
+    "Weboldal készítés",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Budapesti digitális ügynökség, amely a webes fejlesztést és a marketinget egy helyen kínálja: egyedi WordPress-oldalak, WooCommerce és egyedi webáruházak, UX- és UI-tervezés, mellette Google Ads kampánykezelés, SEO, szövegírás és arculattervezés. Külön megoldásokat ajánl turisztikai szereplőknek és toborzókampányokhoz, valamint tárhelyet is biztosít. Tagja a Magyar Reklámszövetségnek és az IAB Hungarynek.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "hypin",
+   "name": "Hypin",
+   "website": "https://hypin.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Social media kezelés",
+    "TikTok és Reels videók",
+    "Hirdetéskezelés",
+    "Gasztromarketing",
+    "Szállásmarketing",
+    "Webshop marketing",
+    "Tartalomgyártás"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Budapesti marketingügynökség, amely a közösségi médiára és a rövid videós tartalmakra épít, saját gyártócsapattal. Külön szolgáltatáscsomagot kínál éttermeknek, kávézóknak és szálláshelyeknek, emellett webáruházaknak és nagyobb, összetett kommunikációs projektekhez is dolgozik. Hirdetéskezelése a Meta, a Google és a TikTok mellett a ChatGPT hirdetési felületére is kiterjed. A cég közlése szerint 2020 óta működik Budapesten.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "innowa-marketing",
+   "name": "Innowa Marketing",
+   "website": "https://www.innowa.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": "10+ fő",
+   "services": [
+    "Influencer marketing",
+    "Közösségimédia-tartalomkezelés",
+    "Google Ads és Facebook Ads kezelés",
+    "TikTok tartalomgyártás és hirdetés",
+    "SEO",
+    "PR és sajtómarketing",
+    "Videómarketing",
+    "Weboldal- és webshopfejlesztés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Az Andrássy úti székhelyű budapesti ügynökség profiljában a közösségi média áll a középpontban: influencer kampányokat szervez, Instagram- és Facebook-oldalakat kezel, TikTok tartalmat gyárt. Emellett konverzióalapú Google Ads és Meta hirdetéskezelést, keresőoptimalizálást, sajtómarketinget, videókészítést, valamint weboldal- és webshopfejlesztést is kínál. A weboldalon feltüntetett adatok szerint a csapat több mint tíz főből áll, és ötszáznál több projektet teljesített.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "interactic-media",
+   "name": "Interactic Media",
+   "website": "https://interacticmedia.com/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Meta hirdetéskezelés",
+    "Google Ads hirdetéskezelés",
+    "Hirdetési kreatívok készítése",
+    "Leadgenerálás",
+    "Profitabilitási audit",
+    "E-kereskedelmi növekedési tanácsadás",
+    "Magyar piacra lépés támogatása"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Budapesti székhelyű, fizetett hirdetésekre szakosodott ügynökség, amely főként Shopify- és UNAS-alapú webáruházaknak kezel Meta- és Google-kampányokat, a hirdetési kreatívokkal és a méréssel együtt. A döntéseket a rendelésenkénti profitra alapozza, nem pusztán a ROAS mutatóra; ehhez saját, Margyn nevű elemzőplatformot használ. Külön szolgáltatásként leadgeneráló kampányokat és a magyar piacra belépő cégek támogatását is kínálja.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "interword-web-social",
+   "name": "interword web & social",
+   "website": "https://www.interword.hu/",
+   "city": "Veszprém",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webdesign és webfejlesztés",
+    "Közösségi média menedzsment",
+    "Fizetett kampányok (Google, Meta, TikTok)",
+    "Email marketing",
+    "Tartalommarketing",
+    "SEO"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Veszprémi webes és közösségimédia-ügynökség, amely weboldalak tervezését és fejlesztését kapcsolja össze a közösségi csatornák kezelésével, Google Ads, Meta és TikTok kampányokkal, e-mail és tartalommarketinggel, valamint keresőoptimalizálással. Referenciái között helyi kulturális intézmények és szállodák is szerepelnek, például a Veszprémi Petőfi Színház. Havidíjas weboldal-konstrukciót és ingyenes honlapauditot is kínál.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "intren",
+   "name": "INTREN",
+   "website": "https://intren.hu/",
+   "city": "Budapest",
+   "founded_year": 2008,
+   "team_size": "70+ fő",
+   "services": [
+    "META Ads hirdetéskezelés",
+    "Google Ads",
+    "Shopping Ads",
+    "LinkedIn Ads",
+    "Webanalitika és CRO",
+    "SEO és AI-keresőoptimalizálás",
+    "Social media",
+    "Webfejlesztés"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Budapesti digitális ügynökség széles szolgáltatási körrel, amelyen belül a Meta Ads külön, teljes körű hirdetéskezelési szolgáltatás: célközönség-kutatás, kreatívok és szövegek, A/B tesztelés, riportok, Pixel, Conversions API és Commerce Manager használatával. A díjazás havi alapdíjból és/vagy a hirdetési költés százalékából áll. Google, Shopping, LinkedIn és programmatic kampányokat, webanalitikát, konverzióoptimalizálást, SEO-t és AI-keresésekre történő optimalizálást is végeznek.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "introweb-kft",
+   "name": "Introweb Kft.",
+   "website": "https://www.introweb.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "META hirdetéskezelés",
+    "Google Ads hirdetésmenedzsment",
+    "SEO",
+    "GEO - generatív keresőoptimalizálás",
+    "Webfejlesztés",
+    "Üzemeltetés",
+    "Hírlevél menedzsment",
+    "Tartalomgyártás"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Webfejlesztéssel, üzemeltetéssel és webmarketinggel egyaránt foglalkozó cég, amelynél a Meta-hirdetéskezelés önálló szolgáltatás: az Instagram- és Facebook-kampányok tervezését, célzási struktúráját, folyamatos optimalizálását és a profilok menedzselését vállalják. A cég közlése szerint közel tíz éve kezel Meta-hirdetéseket. A marketingkínálatban Google Ads menedzsment, keresőoptimalizálás, generatív keresőoptimalizálás (GEO), hírlevélkezelés és tartalomgyártás is szerepel.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "itzen",
+   "name": "ITZen",
+   "website": "https://itzen.hu/",
+   "city": "Orgovány",
+   "founded_year": 2016,
+   "team_size": null,
+   "services": [
+    "SEO",
+    "PPC menedzsment",
+    "Weboldal- és webshopkészítés",
+    "WordPress karbantartás",
+    "Online marketing stratégia",
+    "Tartalomfejlesztés",
+    "Webanalitika"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Informatikai háttérből induló, 2016 óta működő online marketing vállalkozás, amelynek címe a Bács-Kiskun megyei Orgoványban található. Havidíjas keresőoptimalizálást, SEO auditot, WordPress és egyedi (Laravel) alapú weboldalkészítést, honlapkarbantartást, valamint Google Ads és Meta hirdetéseket lefedő PPC menedzsmentet kínál, jellemzően kisvállalkozásoknak. A munkát szabályozott folyamatokra és havi riportokra építi; a cég közlése szerint több mint 70 ügyfele volt.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "just-bee-digital",
+   "name": "Just Bee Digital",
+   "website": "https://justbeedigital.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "AI keresőoptimalizálás audit és stratégia",
+    "Céges AI képzés",
+    "AI workshop és előadás",
+    "AI marketing mentorálás",
+    "AI videókészítés",
+    "Online kurzusok"
+   ],
+   "categories": [
+    "AI SEO ügynökségek"
+   ],
+   "description": "Pásti Edina digitális marketing szakértő cége, amelynek súlypontja az oktatás: céges AI képzéseket, workshopokat, marketingcsapatoknak szóló mentorálást és online kurzusokat tart, továbbá AI-val készít márka- és ingatlanvideókat. Tanácsadási ágon AIO és SEO auditot, illetve stratégiát kínál, amelynek célja, hogy az ügyfél weboldala a ChatGPT, a Perplexity és a Gemini számára is látható legyen.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "kalu-creative",
+   "name": "KALU Creative",
+   "website": "https://kalucreative.com/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "TikTok menedzsment",
+    "Tartalomgyártás",
+    "Hirdetéskezelés",
+    "Social media kezelés",
+    "Influencer marketing",
+    "Képzés (KALU Academy)"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Közösségi médiára, azon belül elsősorban a TikTokra összpontosító budapesti kreatív ügynökség. Csatornamenedzsmentet, videós és képi tartalomgyártást, influenszerkampányokat, valamint Facebook-, Instagram-, TikTok- és Google-hirdetések kezelését vállalja. Személyes márkáknak, webáruházaknak és nagyobb cégeknek egyaránt dolgozik; a honlapon bemutatott esettanulmányok között többek között a DPD, az Otthon Centrum és a Játéknet szerepel. KALU Academy néven képzést is kínál.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "kanga-design",
+   "name": "Kanga Design",
+   "website": "https://kangadesign.hu",
+   "city": "Leányfalu",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads hirdetéskezelés",
+    "Remarketing hirdetés",
+    "Keresőoptimalizálás",
+    "Linképítés",
+    "SEO szövegírás",
+    "Honlapkészítés",
+    "Webshopkészítés"
+   ],
+   "categories": [
+    "Google Ads ügynökségek"
+   ],
+   "description": "Leányfalui online marketing és SEO vállalkozás, amely a keresőoptimalizálás mellett külön szolgáltatásként kezeli ügyfelei Google Ads és remarketing kampányait. A kínálat a keresőből érkező forgalomra épül: kulcsszókutatás, SEO elemzés, linképítés és SEO szövegírás tartozik hozzá. WordPress alapú honlapokat, valamint UNAS és WooCommerce webáruházakat is készít, így kisebb cégeknek teljes webes jelenlétet tud összerakni.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "kiszervezett-marketing",
+   "name": "Kiszervezett Marketing",
+   "website": "https://kiszervezettmarketing.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Facebook hirdetéskezelés",
+    "Instagram hirdetések",
+    "Weboldalkészítés",
+    "Weboldal-karbantartás"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek"
+   ],
+   "description": "A Kiszervezett Marketing Kft. kínálatában a Facebook-hirdetéskezelés a weboldalkészítés és -karbantartás mellett az egyetlen megnevezett marketingszolgáltatás. Három havidíjas csomagot hirdet, havi 98 900 Ft + áfától; mindegyik tartalmazza a Business Manager, a Pixel és a Conversions API beállítását, az A/B tesztelést, az Instagram-hirdetéseket és a heti e-mailes riportot. Esettanulmányai B2B és B2C leadgyűjtésről, valamint webshopos értékesítésről szólnak.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "klikkmania",
+   "name": "Klikkmánia",
+   "website": "https://www.klikkmania.hu/",
+   "city": "Budapest",
+   "founded_year": 2007,
+   "team_size": null,
+   "services": [
+    "Google Ads",
+    "Facebook és Instagram hirdetés",
+    "SEO",
+    "AI SEO és AI Overviews SEO",
+    "Linképítés",
+    "Közösségi média kezelés",
+    "Email marketing és automatizálás",
+    "Online marketing tanácsadás és audit"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "A 2007-ben alapított budapesti keresőmarketing ügynökség két fő területe a fizetett hirdetések kezelése és a keresőoptimalizálás. Hirdetési oldalon a Google Ads és a Meta mellett TikTok, YouTube, Microsoft Advertising és Pinterest kampányokat is visz, a SEO-kínálatban pedig külön szerepel az AI SEO és a Google AI Overviews optimalizálás. Honlapján Google Premier Partner jelvény látható.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "kmu-marketing",
+   "name": "KMÜ Marketing",
+   "website": "https://kmumarketing.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": "6 fő (kampánykezelők)",
+   "services": [
+    "Google Ads kampánykezelés",
+    "Google Shopping",
+    "Performance Max",
+    "Remarketing",
+    "Display hirdetések",
+    "YouTube hirdetések",
+    "Webanalitikai tanácsadás"
+   ],
+   "categories": [
+    "Google Ads ügynökségek"
+   ],
+   "description": "Kizárólag Google hirdetésekre szakosodott ügynökség: keresési, Shopping, Performance Max, display, Discovery és YouTube kampányokat kezel, elsősorban kis- és középvállalkozásoknak, webáruházaknak. A kampánykezelést webshop-optimalizálási és webanalitikai tanácsokkal egészíti ki. A cég közlése szerint 2022-ben, 2023-ban és 2024-ben is Google Premier Partner minősítést kapott, a munkát hatfős kampánykezelő csapat végzi.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "ko-online-ugynokseg",
+   "name": "KO Online Ügynökség",
+   "website": "https://onlineugynokseg.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads hirdetéskezelés",
+    "Facebook és Instagram hirdetéskezelés",
+    "SEO",
+    "Unas, Shoprenter és WooCommerce marketing",
+    "Webáruház- és weboldalkészítés",
+    "Google Ads képzés",
+    "CRM rendszerek"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "A Kőrösi Ödön által alapított budapesti ügynökség Google és Meta hirdetéskezeléssel, keresőoptimalizálással, valamint weboldalak és webáruházak készítésével foglalkozik. Ügyfelei jellemzően kis- és középvállalkozások, ajánlatkérésre építő szolgáltatók és Unas, Shoprenter vagy WooCommerce alapú webshopok. A weboldal minősített Google Partner státuszt tüntet fel, és Google Ads képzést is kínál. A cég közlése szerint 2016 óta működik ezen a területen.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "konverziomester",
+   "name": "KonverzióMester",
+   "website": "https://konverziomester.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Konverzióoptimalizálás (CRO)",
+    "PPC kampánymenedzsment",
+    "Google Ads"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Webáruházakra szakosodott szolgáltató, amelynek két fő területe a konverzióoptimalizálás és a PPC kampányok kezelése. A weboldal saját megfogalmazása szerint a konverziós arány javításán mesterséges intelligenciára támaszkodó módszerekkel dolgozik, a hirdetési oldalon pedig Google Ads kampányokat említ. A cég székhelyéről, alapítási évéről és csapatáról az oldal elérhető részei nem közölnek adatot, ezért ezek itt nem szerepelnek.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "langmar-kommunikacio",
+   "name": "Langmár Kommunikáció",
+   "website": "https://langmar.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "PR szolgáltatások",
+    "Szövegírás",
+    "Válságkommunikáció"
+   ],
+   "categories": [
+    "PR ügynökségek"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "lead",
+   "name": "LEAD+",
+   "website": "https://leadplus.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "B2B leadgenerálás",
+    "Weboldal és landing oldal",
+    "SEO és AI láthatóság",
+    "Google Ads",
+    "Meta hirdetések",
+    "LinkedIn megkeresések",
+    "AI chatbot készítés",
+    "CRM és értékesítéstámogatás"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek",
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Kifejezetten B2B cégek érdeklődőszerzésére épülő ügynökség, amelyet a Golden Brothers Zrt. működtet. A stratégiától a vevőszerző weboldalon, Google Ads és Meta kampányokon, LinkedIn-megkereséseken át a CRM-es utánkövetésig egy rendszerben kezeli az értékesítési tölcsért. Kínálatában szerepel a ChatGPT-hez hasonló AI-eszközökben való megjelenés javítása és weboldalra telepíthető AI chatbot készítése is.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "loginet-systems",
+   "name": "LogiNet Systems",
+   "website": "https://www.loginet.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": "100+ fő",
+   "services": [
+    "Egyedi szoftverfejlesztés",
+    "AI voice agent fejlesztés",
+    "AI integráció",
+    "Webshop-fejlesztés",
+    "Mobilalkalmazás-fejlesztés",
+    "Rendszerintegráció",
+    "UX design",
+    "IT-üzemeltetés"
+   ],
+   "categories": [
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Budapesti szoftverház, amely a weboldala szerint több mint száz informatikai szakemberrel dolgozik egyedi webes, mobil- és e-kereskedelmi rendszereken, valamint rendszerintegráción. Mesterséges intelligencia területén hangalapú ügyfélszolgálati agenteket és AI-integrációt fejleszt megbízásra. Saját AI-termékei is vannak, köztük egy magyar nyelvű beszédszintézis-megoldás, a Logitalk. A fejlesztés mellett rendszerauditot, specifikációkészítést és üzemeltetést is vállal.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "madarasz-gabor-it-e-business",
+   "name": "Madarász Gábor | IT & E-Business",
+   "website": "https://www.madaraszgabor.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google és Bing Ads kampánykezelés",
+    "Keresőoptimalizálás",
+    "E-mail marketing és marketingautomatizáció",
+    "Közösségimédia-kezelés",
+    "Webáruház- és weboldalfejlesztés",
+    "ERP- és CRM-bevezetés",
+    "Rendszerintegráció",
+    "IT üzleti elemzés és projektmenedzsment"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Egyéni tanácsadó, aki az informatikai fejlesztést és az online marketinget egyetlen üzletfejlesztési stratégiában kapcsolja össze. Az IT-oldalon webáruházak és B2B/B2C weboldalak építését, ERP- és CRM-bevezetést, rendszerintegrációt és folyamatautomatizálást vállal, marketingben pedig Google és Bing Ads-kampányokat, SEO-t, e-mail marketinget és közösségimédia-kezelést. Mikrovállalkozásoktól nagyvállalatokig dolgozik ügyfeleknek, egyes projekteken partnerekkel együtt.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "madic",
+   "name": "MADIC",
+   "website": "https://madic.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Marketing stratégia",
+    "Branding és arculattervezés",
+    "Social media marketing",
+    "Tartalomgyártás",
+    "Event marketing",
+    "PPC hirdetéskezelés",
+    "Weboldal tervezés és fejlesztés",
+    "Tanácsadás és audit"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Márkaépítésre összpontosító marketingügynökség, amely a stratégiától az arculattervezésen és a tartalomgyártáson át a weboldalfejlesztésig kíséri a vállalkozásokat. A PPC szolgáltatás keretében Meta (Facebook, Instagram) és Google Ads rendszerekben is futtat kampányokat, emellett rendezvénymarketinggel, közösségimédia-kezeléssel és auditokkal foglalkozik. A működtető cég a MADIC Group Kft., a bemutatkozó oldalon öt munkatárs szerepel.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "maon",
+   "name": "MAON",
+   "website": "https://maon.hu/",
+   "city": "Mátészalka",
+   "founded_year": null,
+   "team_size": "7 fő",
+   "services": [
+    "Google Ads hirdetéskezelés",
+    "Meta (Facebook, Instagram) hirdetés",
+    "LinkedIn és TikTok hirdetés",
+    "Social media kezelés",
+    "Hírlevélkészítés",
+    "Weboldalkészítés",
+    "Grafikai tervezés",
+    "Videókészítés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "A mátészalkai székhelyű MAON hétfős online marketing csapat, amely Google Ads, Meta, LinkedIn és TikTok hirdetéseket kezel, mellette közösségimédia-kezelést, hírlevelezést, weboldal- és webáruház-készítést, grafikai tervezést és videógyártást is vállal. Külön iparági csomagjai vannak egészségügyi, építőipari, szolgáltató és B2B cégeknek. Havidíjas csomagjait nyilvános árakkal hirdeti, és csak olyan partnerrel dolgozik, aki havonta legalább egy személyes találkozót vállal.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "markcon",
+   "name": "Markcon",
+   "website": "https://markcon.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads",
+    "Közösségimédia-hirdetéskezelés",
+    "SEO",
+    "Weboldalkészítés",
+    "E-kereskedelem",
+    "Tartalomgyártás",
+    "Employer branding",
+    "Marketingstratégia"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Teljes körű marketingügynökség stratégákból, kreatívokból, designerekből és fejlesztőkből álló csapattal. Külön szolgáltatásként vállalja a PPC-kampányok teljes kezelését Google Ads-ben, a közösségi oldalon pedig Facebook-, Instagram-, LinkedIn- és TikTok-hirdetéseket visz. Emellett weboldalakat és webáruházakat készít, SEO-val, tartalomgyártással, arculattervezéssel, employer brandinggel és marketingtanácsadással foglalkozik, a hirdetés tehát egy szélesebb kínálat része.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "markestic",
+   "name": "Markestic",
+   "website": "https://markestic.com/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": "20+ fő",
+   "services": [
+    "Google Ads",
+    "Közösségimédia-hirdetés (Meta, TikTok, LinkedIn)",
+    "SEO és AI SEO",
+    "Tartalommarketing",
+    "Konverzióoptimalizálás (CRO)",
+    "Webanalitika",
+    "E-mail marketing és automatizáció",
+    "Árösszehasonlító oldalak kezelése"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Több mint húszfős, budapesti irodából dolgozó digitális marketing ügynökség, amely a fizetett hirdetéseket, a tartalmat és a mérést egy kézben kezeli. Google, Meta, TikTok, LinkedIn és Microsoft kampányokat visz, árösszehasonlító oldalakat menedzsel, SEO-t és konverzióoptimalizálást végez. Külön szolgáltatásként kínálja, hogy az ügyfél oldala megjelenjen a ChatGPT válaszaiban és a Google AI-összefoglalóiban. Google Partner és IAB Hungary tag, e-kereskedelmi és egészségügyi ügyfelekkel.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "marketing-consulting",
+   "name": "Marketing Consulting",
+   "website": "https://marketing-consulting.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Full service marketing",
+    "Google hirdetéskezelés",
+    "Meta hirdetéskezelés",
+    "TikTok hirdetéskezelés",
+    "SEO és linképítés",
+    "AI keresőoptimalizálás (GEO, AEO)",
+    "Webshop marketing",
+    "Marketingstratégia"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Keresőoptimalizáló ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Budapesti és debreceni irodával működő online marketing ügynökség, amely teljes körű marketingkiszolgálást, Google-, Meta- és TikTok-hirdetéskezelést, keresőoptimalizálást, linképítést és webshop marketinget kínál. Külön szolgáltatásként hirdeti az AI keresőkre való optimalizálást (GEO és AEO). Honlapja Google Partner jelvényt, Shoprenter és UNAS partnerséget, valamint a Magyar Marketing Szövetség Marketing Gyémánt díjait tünteti fel.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "marketing-kalkulator",
+   "name": "Marketing Kalkulátor",
+   "website": "https://marketingkalkulator.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads kampánykezelés",
+    "Keresőoptimalizálás",
+    "GEO / AI SEO",
+    "Linképítés",
+    "Facebook kampánykezelés",
+    "Google Shopping",
+    "YouTube hirdetés"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Budapesti keresőmarketing-cég, amelyet Kovács Endre SEO- és GEO-szakember vezet; ő a weboldal szerint 2007 óta foglalkozik keresőoptimalizálással. A fő profil a Google Ads és Facebook kampánykezelés, a SEO és a linképítés. A GEO szolgáltatás auditból, technikai és tartalmi javításokból, hitelességépítésből és annak folyamatos méréséből áll, hogyan szerepel az ügyfél a ChatGPT, a Gemini és a Google AI Overviews válaszaiban.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "marketing-most",
+   "name": "Marketing Most",
+   "website": "https://marketingmost.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Videógyártás",
+    "Online hirdetéskezelés (PPC)",
+    "Weboldal- és webshopkészítés",
+    "Keresőoptimalizálás",
+    "Egyedi fejlesztésű weboldal",
+    "CRM és egyedi rendszerek",
+    "Marketing tanácsadás",
+    "Marketing stratégia"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Budapesti online marketinges csapat, amelynek kínálatában a videógyártás (márka-, termék- és hirdetési videók) ugyanúgy megtalálható, mint a Google-, Facebook- és Instagram-hirdetések kezelése és a keresőoptimalizálás. Sablonok helyett egyedi fejlesztésű weboldalakat és webáruházakat készít, ezen felül CRM-et és egyedi belső rendszereket, mobilalkalmazásokat is fejleszt. Marketingstratégiát és tanácsadást szintén vállal.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "marketing-professzorok",
+   "name": "Marketing Professzorok",
+   "website": "https://marketingprofesszorok.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": "14 fő",
+   "services": [
+    "Google Ads hirdetéskezelés",
+    "Meta hirdetéskezelés",
+    "Keresőoptimalizálás",
+    "Tartalommarketing",
+    "Online PR",
+    "Honlapkészítés",
+    "Marketing tanácsadás",
+    "Képzések"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Tizennégy fős online marketing csapat, amely nyilvános árú csomagokban kínál hirdetésmenedzsmentet: külön Google-, külön közösségimédia- és kombinált Google–Meta csomagja is van. A kampánykezeléshez landing oldal készítése és optimalizálás is tartozik. A cég emellett keresőoptimalizálással, tartalommarketinggel, online PR-ral, honlapkészítéssel, marketing audittal és tanfolyamokkal foglalkozik, vagyis nem kizárólag PPC-re épül a profilja.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "marketing21",
+   "name": "Marketing21",
+   "website": "https://marketing21.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "PPC",
+    "SEO",
+    "Közösségi média",
+    "Leadgenerálás"
+   ],
+   "categories": [
+    "Online marketing ügynökségek"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "marketinges-erika-es-csapata",
+   "name": "Marketinges Erika és csapata",
+   "website": "https://marketingeserika.hu/",
+   "city": "Tatabánya",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Hirdetéskezelés",
+    "Közösségi média oldalkezelés",
+    "Weboldal- és webshopkészítés",
+    "Grafikai tervezés",
+    "Szövegírás",
+    "Film és animáció",
+    "Audit és webanalitika",
+    "Marketingstratégia"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Tatabányai székhelyű integrált marketingügynökség, amelyet Kovács Erika marketingstratéga vezet, és főként kis- és középvállalkozásoknak dolgozik. A stratégiaalkotástól a kivitelezésig egy kézben tartja a munkát: Google Ads, YouTube, Facebook és Instagram hirdetések kezelése, közösségi oldalak gondozása, weboldal- és webshopkészítés, grafika, szövegírás, videó és webanalitika. Google Partner jelvényt, valamint Shoprenter és UNAS szakértői minősítést tüntet fel.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "marketingprezident",
+   "name": "MarketingPrezident",
+   "website": "https://marketingprezident.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": "6+ fő",
+   "services": [
+    "Google Ads",
+    "Facebook és Instagram hirdetés",
+    "TikTok és LinkedIn hirdetés",
+    "Webanalitika",
+    "Hírlevél (EDM)",
+    "Grafika",
+    "Közösségimédia-marketing",
+    "Weboldalkészítés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Fizetett online hirdetésekre épülő ügynökség, amelyet a Marketing Prezident Kft. üzemeltet. Google Ads, Google Shopping, YouTube, Facebook, Instagram, TikTok, Microsoft Ads és LinkedIn kampányokat kezel, ezt webanalitika, hírlevélküldés, grafika, közösségimédia-kezelés és weboldalkészítés egészíti ki. Havidíjas csomagjait nyilvánosan árazza, a kezelt csatornák száma szerint. A láblécben Google Partner jelvény látható; a cég közlése szerint több mint hattagú csapattal dolgozik.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "maximum-business",
+   "name": "Maximum Business",
+   "website": "https://maximumbusiness.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Növekedési stratégia",
+    "Márkaépítés és pozicionálás",
+    "Performance marketing",
+    "Tartalom, social media és e-mail",
+    "SEO és AI-keresési láthatóság",
+    "Web, funnel, CRM és automatizáció",
+    "Videó, podcast és PR"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "A Maximum Business a marketinget cégépítési feladatként kezeli: hét területből álló saját rendszerében a növekedési stratégia és a márkapozicionálás mellett Meta-, Google-, YouTube- és TikTok-kampányokat, tartalomgyártást, keresőoptimalizálást, weboldal- és CRM-fejlesztést, valamint videós és PR-munkát vállal. Szolgáltatásai között a Google mellett az AI-keresőkben való láthatóság is szerepel. A cég közlése szerint budapesti és dubaji irodával működik.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "melkweg",
+   "name": "Melkweg",
+   "website": "https://melkweg.hu/",
+   "city": "Budapest",
+   "founded_year": 2015,
+   "team_size": null,
+   "services": [
+    "Tanácsadás",
+    "Arculattervezés",
+    "Weboldal készítés",
+    "Webshop és e-kereskedelem",
+    "Digitális termékfejlesztés",
+    "Mobilalkalmazás fejlesztés"
+   ],
+   "categories": [
+    "Weboldal készítés"
+   ],
+   "description": "A 2015-ben Budapesten alapított stúdió élménytervezéssel és szoftverfejlesztéssel foglalkozik: arculatot, egyszerű és összetett weboldalakat, webshopokat, mobilalkalmazásokat és digitális termékeket készít. Ügyfelei között cégek, startupok és innovációs csapatok egyaránt megtalálhatók, a munkát stratégiai tanácsadás egészíti ki. Hirdetéskezelést nem kínál, a hangsúly a tervezésen és a fejlesztésen van. Referenciái között szerepel az Alma Gyógyszertárak és a Liget Budapest.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "micron-digital",
+   "name": "Micron Digital",
+   "website": "https://www.microndigital.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "AI agent fejlesztés",
+    "Weboldalkészítés",
+    "Webshop-fejlesztés",
+    "Weboldal-menedzsment",
+    "Weboldal-hibajavítás",
+    "Mobilalkalmazás-fejlesztés"
+   ],
+   "categories": [
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Webfejlesztő műhely, amely weboldalak, webáruházak és mobilalkalmazások készítése mellett önálló szolgáltatásként kínál AI agent fejlesztést. A megrendelő folyamataira szabott, célorientált agenteket, telefonos hangasszisztenst és a weboldalon éjjel-nappal működő ügyféltámogató asszisztenst épít. Saját webáruház-platformja a Sellvio, emellett meglévő weboldalak üzemeltetését és hibajavítását is vállalja. A weboldal budapesti elérhetőséget ad meg.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "mobuen-digital-agency-kft",
+   "name": "Mobuen Digital Agency Kft.",
+   "website": "https://mobuen.com/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Amazon regisztráció",
+    "Amazon fiókkezelés",
+    "Amazon FBA",
+    "A+ tartalom",
+    "Brand Registry és védjegy",
+    "Amazon Storefront",
+    "Amazon PPC"
+   ],
+   "categories": [
+    "Amazon ügynökségek"
+   ],
+   "description": "Amazon-értékesítésre szakosodott ügynökség, amely havidíjas konstrukcióban építi és kezeli a kereskedők eladói fiókját. A díj a regisztrációt, az FBA beállítását, az A+ tartalmat, a márkaregisztrációt, a Storefront kialakítását, a Buy Box megszerzését és az Amazonon belüli PPC kampányokat is lefedi. A csapat előbb saját termékekkel kereskedett a piactéren, ügyfeleknek 2020 óta dolgozik; a cég közlése szerint hivatalos Amazon Ads és Amazon SPN partner.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "morgens",
+   "name": "MORGENS",
+   "website": "https://morgens.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads kampányok",
+    "Microsoft hirdetések",
+    "Közösségimédia-kampányok",
+    "E-mail marketing",
+    "Szállodai webfejlesztés",
+    "Foglalómotor (RoomSome)",
+    "Revenue management"
+   ],
+   "categories": [
+    "Google Ads ügynökségek"
+   ],
+   "description": "Szállodákra és vendéglátóhelyekre szakosodott digitális cég, amely saját foglalómotort, hűségprogram- és utalványrendszert, valamint szállodai weboldalakat fejleszt. Marketing üzletága többnyelvű PPC-kampányokat épít és kezel Google Ads, Microsoft és Yandex felületeken, mellette közösségimédia-kampányokat, e-mail marketinget és elemzést is végez. Az oldal Google Premier Partnerként tünteti fel, 2012-től 2026-ig jelölve az időszakot.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "ndmarketing",
+   "name": "NDMARKETING",
+   "website": "https://ndmarketing.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [],
+   "categories": [
+    "Online marketing ügynökségek"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "net-position-kft",
+   "name": "net-Position Kft.",
+   "website": "https://www.net-position.hu/",
+   "city": "Budapest",
+   "founded_year": 2006,
+   "team_size": null,
+   "services": [
+    "Keresőoptimalizálás",
+    "SEO audit",
+    "Google Ads kezelés",
+    "Facebook- és Instagram-hirdetés",
+    "Szövegírás",
+    "Webfejlesztés",
+    "Tárhely"
+   ],
+   "categories": [
+    "Keresőoptimalizáló ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "A 2006 óta működő budapesti online marketing cég keresőoptimalizálást kétféle díjazással vállal: havidíjas és eredményalapú konstrukcióban, külön Joomla- és WordPress-oldalakra szabott megoldással. Google Partnerként keresési és Shopping kampányokat kezel és auditál, emellett Facebook- és Instagram-hirdetéseket is futtat. A szövegírási szolgáltatás SEO-szövegekre, landing oldalakra, blogra és termékleírásokra terjed ki, és a cég közlése szerint mesterséges intelligencia nélkül készül.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "netmarketing-online-reklamugynokseg-kft",
+   "name": "Netmarketing Online Reklámügynökség Kft.",
+   "website": "https://netmarketing.hu/",
+   "city": "Dabas",
+   "founded_year": 2011,
+   "team_size": null,
+   "services": [
+    "Marketingstratégia",
+    "Honlapkészítés",
+    "PPC",
+    "Google Ads hirdetéskezelés",
+    "Facebook hirdetéskezelés",
+    "Social media menedzsment",
+    "Termékfeed-menedzsment"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "A 2011-ben létrejött, dabasi székhelyű ügynökség ügyfélkörének zömét webáruházak adják, mellettük szolgáltatóknak és gyártóknak is dolgozik. Google Ads- és Facebook-hirdetéseket kezel, közösségimédia-felületeket gondoz, honlapot készít és marketingstratégiát tervez. Az e-kereskedelmi fókuszt jelzi, hogy önálló szolgáltatásként kínál termékfeed-menedzsmentet. Google Partner; a cég közlése szerint eddig 790 webáruházzal dolgozott.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "nexen-it",
+   "name": "NEXEN IT",
+   "website": "https://nexenit.hu/",
+   "city": "Újlengyel",
+   "founded_year": null,
+   "team_size": "12+ fő",
+   "services": [
+    "AI-alapú üzleti automatizálás",
+    "Egyedi szoftverfejlesztés",
+    "ERP/CRM rendszerek",
+    "Weboldal- és webshopkészítés",
+    "Mobilalkalmazás-fejlesztés",
+    "IT-tanácsadás",
+    "Alkalmazáskorszerűsítés"
+   ],
+   "categories": [
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Egyedi szoftvereket, ügyviteli és CRM-rendszereket, weboldalakat és mobilalkalmazásokat fejlesztő cég, amely külön szolgáltatásként kínál AI-alapú üzleti automatizálást. Ennek keretében hideghívó, ügyfélszolgálati, értékesítési és e-mail-feldolgozó AI agenteket épít, főként kis- és középvállalkozásoknak. A folyamatfeltárást saját, EVOLUTIQ nevű módszertan szerint végzi; a weboldal több mint tizenkét csapattagot említ.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "nexly",
+   "name": "Nexly",
+   "website": "https://nexly.digital/",
+   "city": "Balatonalmádi",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "AI ügyfélszolgálat",
+    "Hangalapú AI asszisztens",
+    "Írásos AI asszisztens",
+    "Ajánlat- és rendelésfelvétel automatizálása",
+    "Belső tudásbázis-rendszerek",
+    "Felmérés és megtérüléstervezés",
+    "AI-rendszerek üzemeltetése"
+   ],
+   "categories": [
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Egyéni vállalkozásként működő, balatonalmádi székhelyű fejlesztő, amely cégre szabott AI-rendszereket tervez, épít és üzemeltet. Fő területe a hangalapú és írásos ügyfélszolgálati asszisztens, amely a megrendelő saját adataiból válaszol és az ügyeket CRM-be rögzíti, emellett ajánlat- és rendelésfelvételt, belső tudásbázist is automatizál. A munka fizetős felméréssel indul, a kód és a dokumentáció átadásra kerül.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "oloren",
+   "name": "Oloren",
+   "website": "https://www.oloren.hu/",
+   "city": "Budapest",
+   "founded_year": 2014,
+   "team_size": null,
+   "services": [
+    "Filmkészítés és Reels",
+    "Fotózás",
+    "Google Ads és Meta hirdetéskezelés",
+    "SEO és GEO",
+    "Szövegírás",
+    "Arculattervezés",
+    "Webfejlesztés"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Hajdúszoboszlón alakult 2014-ben, Horizont Records néven, ma budapesti irodából dolgozik. Eredeti profilja a film- és fotógyártás: reklám- és márkafilm, online sorozat, videoklip, animáció, termék-, ingatlan- és drónfotó. Erre épült rá a marketing: Google Ads és Meta hirdetéskezelés, havidíjas SEO és GEO csomagok, szövegírás, arculattervezés és webfejlesztés webáruházzal, CRM- és foglalási integrációval. Az oldalon Google Partner jelvény látható.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "online-marketing-wings-digitalis-ugynokseg-kft",
+   "name": "Online Marketing Wings Digitális Ügynökség Kft.",
+   "website": "https://online-marketing-wings.hu/",
+   "city": "Szeged",
+   "founded_year": 2011,
+   "team_size": null,
+   "services": [
+    "Egyedi webfejlesztés",
+    "Google Ads hirdetéskezelés",
+    "SEO",
+    "Facebook és Instagram marketing",
+    "E-mail marketing",
+    "Üzleti videógyártás",
+    "Online marketing képzések",
+    "Tanácsadás, webaudit"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Szegedi teljes körű digitális ügynökség, amely 2011 óta kínálja szolgáltatásait vállalkozásoknak. Egyedi weboldalakat fejleszt, Google Ads kampányokat kezel, keresőoptimalizálással, Facebook- és Instagram-kampányokkal, valamint e-mail marketinggel foglalkozik, és a teljes online marketing kiszervezését is vállalja. Sajátossága a céges videók gyártása és a kezdőknek szóló képzési kínálat, amely Google Ads, SEO és közösségimédia-tanfolyamokat foglal magában.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "openonline",
+   "name": "OpenOnline",
+   "website": "https://openonline.hu/",
+   "city": "Győr",
+   "founded_year": 2013,
+   "team_size": null,
+   "services": [
+    "Online marketing terv",
+    "PPC kampánykezelés",
+    "Keresőoptimalizálás",
+    "Közösségi média",
+    "Weboldal- és webáruház-fejlesztés",
+    "Grafikai tervezés",
+    "Szövegírás",
+    "Online PR és hírlevél"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Győri székhelyű online marketing ügynökség, amely 2013-ban indult. Tevékenysége a marketingterv készítésétől a kattintásalapú kampányok kezelésén, a keresőoptimalizáláson és a közösségimédia-kezelésen át a weboldal- és webáruház-fejlesztésig, valamint a grafikai és arculattervezésig terjed. Honlapja szerint Google Partner, emellett HubSpot- és Shoprenter-minősítést is feltüntet, és külön csomagot kínál induló vállalkozásoknak.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "optimalizalt-online-marketing-kft",
+   "name": "Optimalizált Online Marketing Kft.",
+   "website": "https://optimalizalt.hu/",
+   "city": "Budakeszi",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads hirdetéskezelés",
+    "Meta hirdetéskezelés",
+    "TikTok hirdetéskezelés",
+    "Videós tartalomgyártás",
+    "Tartalommarketing",
+    "Marketing tanácsadás",
+    "Munkaerő-toborzás"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Budakeszi székhelyű, PPC-re szakosodott ügynökség, amelynek fő tevékenysége a Google Ads-, a Meta- (Facebook és Instagram) és a TikTok-kampányok kezelése. Ezt videós tartalomgyártás, tartalommarketing, tanácsadás és toborzási kampányok egészítik ki, a meglévő hirdetési fiókokra díjmentes auditot kínálnak. Projektalapon és folyamatos megbízásban is dolgoznak, hűségidő nélkül. Google Partner minősítéssel rendelkezik, a cég közlése szerint évente több mint 320 millió forintnyi hirdetési költést kezel.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "optimalnet",
+   "name": "Optimalnet",
+   "website": "https://optimalnet.hu/",
+   "city": "Budapest",
+   "founded_year": 2005,
+   "team_size": null,
+   "services": [
+    "SEO",
+    "Google Ads (PPC)",
+    "Közösségi média",
+    "Facebook hirdetéskezelés",
+    "AI-láthatóság (AEO/GEO)",
+    "Tartalommarketing",
+    "Linképítés",
+    "Marketing kiszervezés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Budapesti, XIII. kerületi SEO- és digitális marketing ügynökség, amely 2005 óta van a piacon, és weboldala szerint Google Partner minősítéssel rendelkezik. Keresőoptimalizálás, Google Ads, közösségimédia-stratégia és Facebook hirdetéskezelés mellett külön szolgáltatásként kínál AI-láthatóságot (AEO/GEO) és ChatGPT hirdetést is. Több iparágra, köztük fogászatra, ingatlanra, szálláshelyekre és webáruházakra szabott marketingcsomagot tart, emellett képzéseket és marketingkiszervezést is vállal.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "optimeyes",
+   "name": "OPTIMEYES",
+   "website": "https://www.optimeyes.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": "2 fő",
+   "services": [
+    "AI chatbot",
+    "Workflow-automatizáció (Make, Zapier, n8n)",
+    "Egyedi AI asszisztens fejlesztés",
+    "CRM-integráció",
+    "Belső tudásbázis",
+    "AI tartalomgenerálás",
+    "Webdesign és webfejlesztés"
+   ],
+   "categories": [
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Kétfős budapesti csapat, amely AI-automatizációt és webdesignt kínál vállalkozásoknak. Ügyfélkommunikációs chatbotokat, Make-, Zapier- és n8n-alapú munkafolyamatokat, értékesítési és CRM-automatizálást, valamint belső tudásbázisra épülő asszisztenseket készít; a legnagyobb csomag egyedi AI asszisztens fejlesztését is tartalmazza. Weboldalakat, webalkalmazásokat és online foglalási rendszereket is fejlesztenek. Az árazás csomagokra épül, projektmérettől függően.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "peakbit-technologies-kft",
+   "name": "PeakBit Technologies Kft",
+   "website": "https://peakbit.tech/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Mobilalkalmazás-fejlesztés",
+    "Webfejlesztés",
+    "Egyedi üzleti szoftver",
+    "E-kereskedelmi fejlesztés",
+    "Webshop mobilalkalmazás",
+    "UI/UX tervezés",
+    "Üzemeltetés és támogatás"
+   ],
+   "categories": [
+    "Weboldal készítés"
+   ],
+   "description": "Budapesti szoftverfejlesztő cég, amelynek fő profilja az iOS- és Android-alkalmazások készítése, emellett webfejlesztést, e-kereskedelmi megoldásokat és egyedi üzleti szoftvereket (back-office rendszerek, adminfelületek, integrációk) is vállal. Kész konstrukciói közé tartozik a webshopokhoz készülő mobilalkalmazás és a tartalommonetizációs app. A fejlesztés mellett UI/UX-tervezést, tárhelyet, monitorozást és karbantartást is nyújt.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "pixon-design",
+   "name": "Pixon Design",
+   "website": "https://pixon.hu/",
+   "city": "Tatabánya",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "SEO és LLM optimalizálás",
+    "Helyi SEO és GEO",
+    "AI chatbot fejlesztés",
+    "Egyedi weboldal készítés",
+    "Webshop készítés",
+    "Egyedi szoftverfejlesztés",
+    "Applikációfejlesztés",
+    "Grafikai tervezés"
+   ],
+   "categories": [
+    "AI SEO ügynökségek",
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Tatabányai webes stúdió, amely egyedi weboldalak, webáruházak, szoftverek és mobilalkalmazások fejlesztése mellett keresőoptimalizálást is vállal. A SEO szolgáltatást kifejezetten LLM optimalizálással együtt kínálja: a tartalmat úgy építi fel, hogy a ChatGPT, a Gemini és a Perplexity is olvasni és idézni tudja. Külön szolgáltatása az egyedi AI chatbot, amely weboldalra, Messengerre és WhatsAppra telepíthető.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "plus-creative-agency",
+   "name": "Plus Creative Agency",
+   "website": "https://plus-kreativ.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Médiavásárlás",
+    "Marketingkampányok",
+    "Grafikai tervezés",
+    "Webfejlesztés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "ppc-media",
+   "name": "PPC Média",
+   "website": "https://ppcmedia.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads kampánykezelés",
+    "Google Ads fiók audit",
+    "Meta hirdetések kezelése",
+    "Microsoft, LinkedIn, Criteo kampányok",
+    "CSS / Shopping webáruházaknak",
+    "Online marketing tanácsadás",
+    "Social media management"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Google Ads kampányokra szakosodott budapesti ügynökség, amely saját közlése szerint 2006 óta dolgozik az online marketingben, és Premier Google Partner minősítéssel rendelkezik. A Google-fiókok kezelése és auditja mellett Meta-, Microsoft Ads-, LinkedIn-, Criteo- és Pinterest-kampányokat is visz, webáruházaknak pedig CSS-alapú Shopping megoldást ad. Elsősorban nagyobb költésű hirdetőket céloz: havi 500 ezer forint feletti PPC-büdzsétől ajánlja magát.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "ppc-online-webmarketing",
+   "name": "PPC Online Webmarketing",
+   "website": "https://ppconline.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [],
+   "categories": [
+    "Online marketing ügynökségek"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "ppc-smart",
+   "name": "PPC Smart",
+   "website": "https://ppc-smart.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Keresőoptimalizálás",
+    "Sikerdíjas keresőoptimalizálás"
+   ],
+   "categories": [
+    "Keresőoptimalizáló ügynökségek"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "prioris",
+   "name": "Prioris",
+   "website": "https://prioris.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": "18 fő",
+   "services": [
+    "Marketingstratégia és tanácsadás",
+    "Google Ads kampánykezelés",
+    "Meta (Facebook) hirdetéskezelés",
+    "TikTok hirdetéskezelés",
+    "Email marketing",
+    "CRO",
+    "SEO",
+    "Márkaépítés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Tizennyolc fős budapesti online marketing ügynökség, amelynek fő területe a fizetett hirdetések kezelése Google, Meta és TikTok felületeken, kiegészítve stratégiai tanácsadással, e-mail marketinggel, konverzióoptimalizálással és weboldal-, illetve PPC-audittal. Honlapja Google Partner és Meta Business Partner státuszt tüntet fel. A cég közlése szerint ügyfeleinek mintegy 70 százaléka több éve dolgozik velük.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "profelis",
+   "name": "Profelis",
+   "website": "https://profelis.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [],
+   "categories": [
+    "Online marketing ügynökségek"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "psa-consulting-kft",
+   "name": "PSA Consulting Kft.",
+   "website": "https://psa.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Amazon eladói fiók regisztráció",
+    "Amazon fiókkezelés",
+    "Terméklisting készítés",
+    "Amazon hirdetéskezelés",
+    "FBA bevezetés",
+    "Adóügyi és adószám-ügyintézés támogatása",
+    "Amazon tanácsadás"
+   ],
+   "categories": [
+    "Amazon ügynökségek"
+   ],
+   "description": "Teljes körű Amazon ügynökség, amely az eladói fiók regisztrációjától a termékoldalak elkészítésén és az FBA-logisztika beindításán át az Amazonon belüli hirdetések kezeléséig kíséri a kereskedőket. Segít a külföldi adószámok és adóügyi megfelelés intézésében is, a piacterek nyelvén anyanyelvi munkatársak dolgoznak. Irodája Budapest IX. kerületében van, emellett Németországban, a stuttgarti repülőtér közelében is jelen van.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "r-szoft",
+   "name": "R-Szoft",
+   "website": "https://r-szoft.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Generatív AI fejlesztés",
+    "AI ügynök fejlesztés",
+    "AI chatbot fejlesztés",
+    "AI-tanácsadás",
+    "Egyedi szoftverfejlesztés",
+    "Outsourcing",
+    "Legacy szoftvermodernizáció"
+   ],
+   "categories": [
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Budapesti szoftverfejlesztő cég, amely a weboldala szerint 2018 óta készít szoftvereket, és mára a generatív AI-ra helyezte a hangsúlyt. LLM-bevezetést, AI ügynököket, chatbotokat, belső tudásbázisra épülő asszisztenseket és e-mail-elemző megoldásokat fejleszt megbízásra, távközlési, HR- és ajánlatadási területre szabott megoldásokkal. Saját termékei is vannak, köztük a SmartAIChat és az Athene AI.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "radelit-media",
+   "name": "Radelit Média",
+   "website": "https://radelitmedia.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "PPC hirdetések",
+    "SEO",
+    "Webfejlesztés",
+    "Influenszer marketing",
+    "Videó- és fotógyártás",
+    "Médiavásárlás és -értékesítés",
+    "Rendezvényszervezés",
+    "E-mail marketing"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Négy üzletágra épülő, teljes körű marketingügynökség: a marketing (PPC, SEO, e-mail, influenszer kampányok, webfejlesztés) mellett saját tartalomgyártással, médiaértékesítéssel és -vásárlással foglalkozó sales house-zal, valamint rendezvényszervezéssel is rendelkezik. A PPC szolgáltatás Google Ads és Meta Ads felületeken futó kampányok teljes kezelését fedi le. Referenciái között feltűnően sok a szálloda. A honlapon Google Partner, IAB Hungary és Magyar Marketing Szövetség logó látható.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "relevat-digital",
+   "name": "Relevat Digital",
+   "website": "https://relevatdigital.com/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "AI rendszerek és agentek",
+    "WordPress fejlesztés",
+    "Egyedi webáruház fejlesztés",
+    "Automatizálás és belső eszközök",
+    "Karbantartás",
+    "Audit és tanácsadás"
+   ],
+   "categories": [
+    "Weboldal készítés",
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Budapesti fejlesztőcég, amely távmunkában nemzetközi megbízásokat is vállal. Hat szolgáltatási területe van: AI-rendszerek és agentek építése, WordPress- és egyedi webes megoldások, egyedi webáruház-fejlesztés, folyamatautomatizálás és belső eszközök, folyamatos karbantartás, valamint audit és stratégiai tanácsadás. Jellemzően olyan csapatoknak dolgozik, amelyek kinőtték a sablonos webáruházat, vagy sok ismétlődő kézi munkát váltanának ki.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "rg-studio-kft",
+   "name": "RG-STÚDIÓ Kft.",
+   "website": "https://rgstudio.hu/",
+   "city": "Pécs",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google hirdetéskezelés",
+    "Facebook és Instagram hirdetés",
+    "TikTok és LinkedIn hirdetés",
+    "SEO audit és optimalizálás",
+    "Webshop marketing",
+    "Weboldal- és webshopfejlesztés",
+    "Marketingstratégia és audit",
+    "Messenger chatbot"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Pécsi online marketing ügynökség, amely elsősorban webáruházaknak és növekedni kívánó cégeknek dolgozik. Kezel Google-, Facebook-, Instagram-, TikTok- és LinkedIn-hirdetéseket, készít marketingstratégiát és auditot, végez keresőoptimalizálást, tartalommarketinget, valamint weboldal- és webshopfejlesztést. Digitalizációs pályázatokhoz kapcsolódó támogatást és Manychat alapú Messenger chatbot építést is kínál. A cég közlése szerint 2025-ben ünnepelte 25 éves fennállását.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "rm-webstudio",
+   "name": "RM Webstudio",
+   "website": "https://rmwebstudio.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [],
+   "categories": [
+    "Weboldal készítés"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "rollout-it",
+   "name": "Rollout IT",
+   "website": "https://rolloutit.net/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Egyedi szoftverfejlesztés",
+    "Dedikált fejlesztőcsapatok",
+    "Staff augmentation",
+    "Rust fejlesztés",
+    "AI fejlesztés",
+    "AI transzformáció",
+    "Piacra lépés támogatása"
+   ],
+   "categories": [
+    "Weboldal készítés",
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "A Rollout IT a magyarországi bejegyzésű Runios IT Ltd. márkaneve, amely egyedi szoftverfejlesztéssel, dedikált fejlesztőcsapatok kihelyezésével és staff augmentationnel foglalkozik, magyar és amerikai elérhetőséggel. Kiemelt területei az AI, az EdTech és a FinTech, külön Rust-fejlesztési gyakorlattal. AI-vonalon chatbotokat, saját tudásbázisra épülő asszisztenseket és agentikus munkafolyamatokat épít, startupoknak és nagyvállalatoknak egyaránt.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "scl-media-marketing",
+   "name": "SCL Media Marketing",
+   "website": "https://sclmedia.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [],
+   "categories": [
+    "Online marketing ügynökségek"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "selector-online-marketing-ugynokseg",
+   "name": "Selector Online Marketing Ügynökség",
+   "website": "https://www.selector.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "PPC kampánykezelés",
+    "Google Ads",
+    "Facebook és Instagram hirdetés",
+    "SEO",
+    "AI SEO tanácsadás",
+    "Webanalitika",
+    "Konverzióoptimalizálás",
+    "Webfejlesztés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "A budapesti Selector külön szakcsapatokkal viszi a kampánykezelést, a keresőoptimalizálást, a webfejlesztést és a közösségi médiát. Hirdetési oldalon a Google Ads és a Meta mellett LinkedIn-, TikTok-, Pinterest- és ChatGPT-hirdetéseket is kezel, emellett auditokat, webanalitikát és konverzióoptimalizálást kínál. AI SEO szolgáltatása azt vizsgálja és javítja, hogyan jelenik meg egy márka a ChatGPT, a Perplexity és a Google AI válaszaiban. A cég közlése szerint Google Partner.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "seoads-online-marketing",
+   "name": "SeoAds Online Marketing",
+   "website": "https://seoads.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Facebook hirdetéskezelés",
+    "Instagram hirdetéskezelés",
+    "Google Ads hirdetéskezelés",
+    "SEO",
+    "AI SEO (AEO)",
+    "PPC és SEO audit",
+    "Weboldalkészítés",
+    "Egyedi chatbot fejlesztés"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek",
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Tóth Tibor által alapított online marketing vállalkozás, amely a Facebook- és Instagram-hirdetéseket a kampányok számához és a hirdetési kerethez igazított, nyilvános árú csomagokban kezeli; a legkisebb csomag havi 45 000 Ft + áfa. Emellett Google Ads kampányokat, keresőoptimalizálást és weboldalfejlesztést vállal. A SEO-szolgáltatás része az AI-keresőkre (ChatGPT, Gemini, Perplexity) történő optimalizálás, a fejlesztési kínálatban pedig egyedi, nyelvi modellre épülő chatbotok is szerepelnek.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "seobox",
+   "name": "Seobox",
+   "website": "https://seobox.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Keresőoptimalizálás",
+    "AI SEO",
+    "SEO audit",
+    "SEO tanácsadás",
+    "Havidíjas SEO",
+    "Szövegírás",
+    "Prémium linképítés"
+   ],
+   "categories": [
+    "AI SEO ügynökségek"
+   ],
+   "description": "Koza Andrea SEO-szakértő nevéhez kötődő, kizárólag keresőoptimalizálásra szakosodott szolgáltató. Auditot, tanácsadást, havidíjas optimalizálást, szövegírást és linképítést vállal, emellett online szervezetfejlesztést is kínál. Önálló menüpontja az AI SEO, amelynek célja, hogy az ügyfél tartalma az AI-alapú keresők számára idézhető legyen. Fizetett hirdetésekkel a weboldal alapján nem foglalkozik.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "setler-alex-sa-marketing",
+   "name": "Setler Alex | SA Marketing",
+   "website": "https://setleralex.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Facebook hirdetéskezelés",
+    "Instagram hirdetések",
+    "Google hirdetéskezelés",
+    "PPC csomagok",
+    "Mérés és analitika beállítása",
+    "Digitális marketing kurzus"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Egyéni vállalkozóként dolgozó hirdetési szakember, aki Facebook-, Instagram- és Google-kampányok kezelését vállalja; az ügyfél projektmenedzser közbeiktatása nélkül, közvetlenül vele dolgozik. A havidíjas PPC-csomagok 89 000 forinttól indulnak, a nagyobb csomag 139 000 forinttól, és létezik egyszeri, csak beállítást tartalmazó változat is. A weboldal szerint hivatalos Google Partner. A kivitelezés mellett digitális marketing tananyagokat is kínál.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "sikerosveny-online-marketing-ugynokseg",
+   "name": "Sikerösvény online marketing ügynökség",
+   "website": "https://sikerosveny.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Facebook hirdetéskezelés",
+    "WordPress weboldalkészítés",
+    "WooCommerce webáruház-készítés",
+    "Online marketing tervezés"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek"
+   ],
+   "description": "Kisvállalkozásoknak dolgozó, szűk profilú online marketing műhely, amelynek három fő szolgáltatása a Facebook-hirdetéskezelés, a WordPress weboldalak és a WooCommerce webáruházak készítése. A hirdetéseknél a stratégiától a célközönségek beállításán, a kreatívok elkészítésén és a pixeles mérésen át a folyamatos optimalizálásig vállalja a munkát. Az oldal Válóczi Károlyt nevezi meg marketingrendszer-tervezőként és kivitelezőként.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "smartbotics",
+   "name": "SmartBotics",
+   "website": "https://smartbotics.ai/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Egyedi AI asszisztens fejlesztés",
+    "AI üzleti elemzés és stratégia",
+    "Bevezetés és integráció",
+    "Adatforrások egyesítése",
+    "Egyedi integrációk",
+    "Folyamatos optimalizálás"
+   ],
+   "categories": [
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Vállalkozások számára épít úgynevezett AI kollégákat: a megrendelő saját adataira és folyamataira tanított asszisztenseket, amelyeket a meglévő eszközökbe köt be. A munka üzleti elemzéssel és stratégiával indul, majd fejlesztés, bevezetés és folyamatos finomhangolás következik. A cég közlése szerint több mint ötszáz integrációt támogat, köztük hazai rendszereket, például a Billingót, a Számlázz.hu-t és a miniCRM-et.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "socialpro",
+   "name": "SocialPro",
+   "website": "https://www.socialpro.hu/",
+   "city": "Dombóvár",
+   "founded_year": 2020,
+   "team_size": null,
+   "services": [
+    "AI agent fejlesztés",
+    "AI telefonos asszisztens",
+    "Üzleti automatizáció",
+    "AI webapp fejlesztés",
+    "Weboldal- és webshopkészítés",
+    "Google Ads",
+    "Facebook- és Meta-hirdetések",
+    "GEO optimalizálás"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek",
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "A dombóvári székhelyű KG Creative Media Group Kft. márkája, amely 2020-ban indult, és a weboldal szerint 2024-ben fordult az AI-fejlesztés felé. Egyedi AI agenteket, telefonos asszisztenseket és üzleti automatizációkat épít hazai kis- és középvállalkozásoknak, emellett webes és mobilfejlesztést vállal. A fejlesztési munkát hirdetéskezelés egészíti ki: Google Ads, Meta-kampányok és AI keresőkre szabott tartalomoptimalizálás.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "socialwings",
+   "name": "SocialWings",
+   "website": "https://socialwings.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": "18 fő",
+   "services": [
+    "Google Ads hirdetéskezelés",
+    "Facebook és Instagram hirdetéskezelés",
+    "Social média management",
+    "Webfejlesztés",
+    "Email marketing",
+    "Online marketing audit",
+    "Fiókvédelem",
+    "Marketing mentorálás"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Budapesti online marketing ügynökség, amely a fizetett hirdetésekre épít: Google Ads, Facebook- és Instagram-kampányokat kezel, emellett közösségimédia-menedzsmentet, e-mail marketinget, egyedi és sablonalapú webfejlesztést, valamint online marketing auditot vállal. Kevésbé megszokott szolgáltatása a céges és influenszer közösségimédia-fiókok védelme. Google Partner minősítésű; a cég közlése szerint 18 szakemberrel dolgozik, hazai és külföldi kampányokon egyaránt.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "stilldesign",
+   "name": "Stilldesign",
+   "website": "https://stilldesign.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Weboldal készítés",
+    "Webáruház készítés",
+    "Google Ads",
+    "Facebook és Instagram hirdetés",
+    "SEO",
+    "Közösségi média kezelés",
+    "Szövegírás",
+    "AI chatbot fejlesztés"
+   ],
+   "categories": [
+    "Weboldal készítés",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "A budapesti webfejlesztő és online marketing csapat weboldalakat és webáruházakat épít, amelyeket hirdetéskezeléssel is kiegészít: Google Ads, Facebook, Instagram, LinkedIn és TikTok kampányokat egyaránt vállal. Emellett keresőoptimalizálással, közösségi oldalak kezelésével, szövegírással és AI chatbot fejlesztéssel is foglalkozik. A cég közlése szerint közel húsz év alatt több mint ezer honlapot és webshopot készített.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "suhajda-tamas-ppc-webdesign-automatizaciok",
+   "name": "Suhajda Tamás - PPC | Webdesign | Automatizációk",
+   "website": "https://www.suhajdatamas.hu/",
+   "city": "Szeged",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Facebook hirdetéskezelés",
+    "Google Ads hirdetéskezelés",
+    "ChatGPT Ads hirdetéskezelés",
+    "Weboldalkészítés",
+    "Social media tartalomgyártás",
+    "Blog automatizáció",
+    "Fotózás"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Szegedi szakértői vállalkozás, amely az SHJD Solutions Kft. keretében Facebook- és Instagram-hirdetéseket kezel: értékesítési kampányokat, dinamikus remarketinget és katalógushirdetéseket, űrlapos leadgyűjtést, pixelbeállítást és konverziómérést, havi riporttal. Az oldal a kezelési díjat jellemzően havi 40-100 ezer forint közé teszi. Google Ads és ChatGPT Ads kampányokat, weboldalkészítést, közösségimédia-tartalomgyártást és AI-val írt blogcikkek automatizált közzétételét is kínálja.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "sybell-informatika-kft",
+   "name": "Sybell Informatika Kft.",
+   "website": "https://sybell.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webtárhely",
+    "Domain regisztráció",
+    "Céges levelezés",
+    "Szerverbérlés és VPS",
+    "WordPress karbantartás",
+    "Weboldal költöztetés"
+   ],
+   "categories": [
+    "Weboldal készítés"
+   ],
+   "description": "Tárhelyszolgáltató, amely webtárhelyet, domain regisztrációt, céges levelezést, valamint bérelhető és virtuális szervereket kínál vállalkozásoknak, webáruházaknak és nagy forgalmú oldalaknak. Kiemelten a WordPress-alapú honlapok üzemeltetésére összpontosít: ingyenes költöztetést és karbantartási szolgáltatást is nyújt. A cég közlése szerint 17 éves tapasztalattal rendelkezik, szerverei budapesti szerverparkban működnek, viszonteladóknak pedig partnerprogramot tart fenn.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "tartalom-design-kft",
+   "name": "Tartalom Design Kft.",
+   "website": "https://tartalomdesign.hu/",
+   "city": null,
+   "founded_year": 2018,
+   "team_size": null,
+   "services": [
+    "Facebook és Instagram kampánykezelés",
+    "Google Ads kampánykezelés",
+    "TikTok és ChatGPT hirdetések",
+    "AI SEO / AEO / GEO",
+    "Keresőoptimalizálás",
+    "Weboldal- és webáruház-készítés",
+    "Szövegírás",
+    "Videó- és fotókészítés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "A 2018 óta működő ügynökség „AI-támogatott marketing rendszerként” írja le a munkamódszerét: minden területnek külön szakértője van, a projekteket pedig egy úgynevezett rendszermérnök hangolja össze. Kezel Facebook-, Instagram-, Google Ads-, TikTok- és ChatGPT-hirdetéseket, külön szolgáltatásként kínál AI keresőkre optimalizálást (AEO/GEO), továbbá weboldalakat és webáruházakat épít, szöveget ír, videót és fotót készít. Főként hazai kis- és középvállalkozásoknak dolgozik.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "tasnadi",
+   "name": "TASNADI",
+   "website": "https://www.tasnadi.co/hu",
+   "city": "Budapest",
+   "founded_year": 2018,
+   "team_size": null,
+   "services": [
+    "Branding",
+    "Weboldal készítés",
+    "Webshop készítés",
+    "Tanácsadás",
+    "Digitalizációs stratégia"
+   ],
+   "categories": [
+    "Weboldal készítés"
+   ],
+   "description": "Budapesti digitális ügynökség, amely 2018-ban tervezőstúdióként indult, ma pedig arculattervezéssel, weboldalak és webshopok készítésével, valamint tanácsadással foglalkozik. Elsősorban szolgáltató kkv-knak és startupoknak dolgozik, a honlapokat érdeklődőszerzésre és értékesítésre építve. Kínálatában újabb elemként digitalizációs stratégia is szerepel. A cég weboldala több szakmai elismerést sorol fel, köztük az Aranyrajzszög 2019 és a Magyar Tervezőgrafika 2023 díjat.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "the-palm-group",
+   "name": "The Palm Group",
+   "website": "https://www.thepalmgroup.eu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Növekedési stratégia",
+    "Performance marketing",
+    "Riporting",
+    "Weboldal- és webshopfejlesztés",
+    "Kreatívgyártás",
+    "Marketingautomatizálás"
+   ],
+   "categories": [
+    "Online marketing ügynökségek"
+   ],
+   "description": "Növekedésközpontú digitális marketing ügynökség, amely szolgáltatásait nem hirdetési platformok, hanem üzleti célok szerint csoportosítja: növekedési stratégia, bevételre optimalizált performance kampányok, döntéstámogató riportok, konverzióra tervezett weboldalak és webáruházak, valamint mesterséges intelligenciával támogatott kreatívgyártás. Belépő csomagként növekedési auditot kínál. A weboldal láblécében Google Partner jelvény szerepel, a referenciák között nagyvállalati logók láthatók.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "the-pitch",
+   "name": "The Pitch",
+   "website": "https://thepitch.hu/",
+   "city": "Budapest",
+   "founded_year": 2015,
+   "team_size": "12 fő",
+   "services": [
+    "SEO elemzés és stratégia",
+    "Technikai SEO audit",
+    "Linképítés",
+    "Tartalommarketing",
+    "AI láthatóság (GEO)",
+    "Hírnévmenedzsment",
+    "Weboldal-migráció",
+    "SEO képzések"
+   ],
+   "categories": [
+    "Keresőoptimalizáló ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Blogként indult 2013-ban, a mögötte álló céget 2015-ben jegyezték be, ügynökségi munkát pedig 2017 óta végez a budapesti SEO csapat, amely a saját közlése szerint tizenkét főből áll. Fizetett hirdetést nem kezel, a keresőoptimalizálás teljes folyamatát viszi: audit, stratégia, házon belüli szövegírás, linképítés, migráció és monitoring. Külön szolgáltatásban vizsgálja a nagy nyelvi modellekben elérhető láthatóságot, emellett tanfolyamokat és szakmai rendezvényeket szervez.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "timesaver",
+   "name": "TimeSaver",
+   "website": "https://timesaver.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": "1 fő",
+   "services": [
+    "AI láthatóság (AEO, GEO)",
+    "SEO",
+    "Weboldal- és webshopkészítés",
+    "Google Ads és Meta hirdetéskezelés",
+    "Közösségimédia-kezelés",
+    "Automatizálás (Make)",
+    "SEO/AEO diagnosztika"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Sinka Gabriella Tímea egyszemélyes tanácsadói vállalkozása, amely saját megfogalmazása szerint apparátus nélkül, szükség esetén külső szakemberek bevonásával dolgozik. Magyar márkáknak kínál GEO és AEO tartalomstratégiát, AI láthatósági diagnosztikát és átfogó SEO/AEO elemzést. Emellett weboldalt épít, Google Ads és Meta hirdetéseket kezel, közösségi médiát visz, és Make alapú üzleti automatizálást is vállal.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "toldi-marketing",
+   "name": "Toldi Marketing",
+   "website": "https://toldimarketing.hu/",
+   "city": "Budapest",
+   "founded_year": 2013,
+   "team_size": null,
+   "services": [
+    "PPC hirdetéskezelés",
+    "Konverzióoptimalizálás (CRO)",
+    "SEO",
+    "AI SEO és GEO",
+    "Közösségimédia-marketing",
+    "Marketing auditok",
+    "Oktatás és előadás"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Toldi Miklós 2013-ban indult, személyes márkára épülő budapesti vállalkozása, amelyet a Profit Digi Bt. üzemeltet. Hirdetéskezelést vállal a Google, a Facebook, az Instagram, a LinkedIn, a TikTok és a Pinterest felületein, mellette konverzióoptimalizálást, keresőoptimalizálást és közösségimédia-marketinget. Külön ajánlata az AI SEO és GEO, vagyis a ChatGPT-hez hasonló rendszerek ajánlásaiba kerülés. A honlap Google Premier Partner státuszt tüntet fel.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "toptarget",
+   "name": "Toptarget",
+   "website": "https://toptarget.hu/",
+   "city": null,
+   "founded_year": 2012,
+   "team_size": null,
+   "services": [
+    "Google Ads hirdetéskezelés",
+    "Facebook és Instagram hirdetések",
+    "YouTube hirdetések",
+    "ChatGPT hirdetéskezelés",
+    "Konverziómérés (GA4, GTM)",
+    "Tartalommarketing",
+    "SEO szövegírás",
+    "WordPress webfejlesztés"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "A 2012 januárjában alapított Toptarget Marketing Kft. webáruházak és szolgáltató cégek fizetett hirdetéseit kezeli: Google Ads (keresési, Shopping, Performance Max), Facebook, Instagram, YouTube, újabban ChatGPT-hirdetések is. Erős a mérési oldala, GA4, Google Tag Manager és Consent Mode beállítást vállal, ezekről tanfolyamot is tart. Hivatalos Google Partner minősítéssel rendelkezik; tartalommarketinget és WordPress-fejlesztést is végez.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "torok-balazs",
+   "name": "Török Balázs",
+   "website": "https://www.torokbalazs.com/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "CRM és hírlevélrendszerek",
+    "Facebook és Google Ads kampánykezelés",
+    "SEO / GEO / AEO",
+    "AI bevezetés és automatizálás",
+    "Céges képzések",
+    "Tanácsadás és mentorálás",
+    "Marketingautomatizáció"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek",
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Egyéni digitális marketing tanácsadó, aki a honlapja szerint több mint tíz év tapasztalattal épít CRM- és hírlevélrendszereket, automatizmusokat, valamint kezel Facebook- és Google Ads-kampányokat. SEO, GEO és AEO auditot és tanácsadást is végez, továbbá AI-bevezetést és automatizált munkafolyamatok kiépítését vállalja cégeknek. Marketing, értékesítési és AI témájú céges képzéseket tart, interim megoldásként is bevonható.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "unidome-studio-creative",
+   "name": "Unidome Studio & Creative",
+   "website": "https://unidome.studio/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Reklámfilm",
+    "Corporate és oktatófilm",
+    "Fotózás",
+    "Utómunka",
+    "Közösségimédia-kezelés",
+    "PPC és hirdetéskezelés",
+    "Influenszermarketing",
+    "Online stream"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Videós és fotós tartalomgyártásból kiinduló kreatív stúdió: reklámfilmet, vállalati, ipari és oktatófilmet, alkalmazásbemutató videót készít, utómunkával és élő közvetítéssel együtt. A gyártás mellé online marketinget is ad, vagyis a közösségi oldalak teljes körű kezelését, PPC kampányokat a Google Ads-től a Facebook-, Instagram- és TikTok-hirdetésekig, hírlevélkészítést, webáruház-támogatást és influenszermarketinget. Így a tartalom elkészítése és terjesztése egy csapatnál marad.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "urban-communications",
+   "name": "Urban Communications",
+   "website": "https://www.urbancomm.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "PR és médiakommunikáció",
+    "Márkaépítés és stratégia",
+    "Válságkommunikáció és public affairs",
+    "Közösségi média",
+    "Online hirdetés",
+    "Influenszermarketing",
+    "Kreatív szövegírás",
+    "Gerillamarketing"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Kommunikációs ügynökség, amely három területre összpontosít: turizmus és vendéglátás (desztinációk, szállodák, borászatok, éttermek), kkv-k és startupok, valamint a magyar piacra lépő nemzetközi márkák kommunikációja és tartalmainak lokalizálása. A PR és a stratégiai tanácsadás mellett közösségimédia-kezelést, influenszermarketinget, Wix-alapú weboldalépítést és Facebook-, Instagram-, illetve Google-hirdetések beállítását is vállalja. Sajátossága a CLEAN MEDIA néven futó kültéri gerillareklám.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "usernet",
+   "name": "Usernet",
+   "website": "https://www.usernet.hu/",
+   "city": "Budapest",
+   "founded_year": 2001,
+   "team_size": null,
+   "services": [
+    "Weboldal fejlesztés",
+    "Webshop fejlesztés",
+    "Egyedi webes szoftverek",
+    "Google Ads hirdetéskezelés és mérés",
+    "Weboldal üzemeltetés és support"
+   ],
+   "categories": [
+    "Weboldal készítés",
+    "Google Ads ügynökségek"
+   ],
+   "description": "2001-ben alapított, budapesti székhelyű webfejlesztő cég, amely egyedi weboldalakat, webshopokat és portálokat, valamint belső vállalati folyamatokat támogató webes szoftvereket készít. A fejlesztés mellett Google Ads kampánykezelést és mérést, illetve üzemeltetést és támogatást is vállal. Saját közlése szerint több mint 400 projektet zárt le; referenciái között a Michelin és az Audi neve is szerepel.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "vamosoft",
+   "name": "Vamosoft",
+   "website": "https://vamosoft.net/hu/",
+   "city": "Szigetszentmiklós",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Mobilalkalmazás-fejlesztés",
+    "Egyedi webes rendszerek",
+    "UX és grafikai tervezés",
+    "App Store és Google Play publikálás",
+    "Karbantartás és támogatás"
+   ],
+   "categories": [
+    "Weboldal készítés"
+   ],
+   "description": "Elsősorban iOS- és Android-alkalmazásokat fejlesztő csapat, amely egyedi webes rendszereket is készít. A munka az igényfelméréstől a tervezésen és az agilis fejlesztésen át az áruházi publikálásig és az indulás előkészítéséig tart, utána karbantartást és támogatást adnak. A cég közlése szerint több mint 60 alkalmazást fejlesztett, munkáira egy év hibajavítási garanciát vállal, a várható költség pedig online kalkulátorral becsülhető.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "vantgard-digital",
+   "name": "'Vantgard Digital",
+   "website": "https://www.vantgarddigital.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "SEO",
+    "AEO / GEO / AI SEO",
+    "Google Ads és közösségi hirdetések",
+    "Szövegírás és tartalomgyártás",
+    "PR és sajtómegjelenések",
+    "Linképítés",
+    "Webfejlesztés",
+    "Közösségi média kommunikáció"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Budapesti digitális marketing ügynökség, amelynek súlypontja a tartalom és a keresőláthatóság: keresőoptimalizálás, PR-cikkek és sajtómegjelenések, linképítés, szövegírás. Emellett Google Ads, valamint Facebook-, Instagram- és LinkedIn-kampányokat kezel, weboldalakat készít, és külön szolgáltatásként kínál AEO, GEO és AI-láthatósági auditot. Honlapja szerint Google Partner, továbbá Shoprenter és UNAS szakértő ügynökség.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "ventoora",
+   "name": "Ventoora",
+   "website": "https://ventoora.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Weboldalkészítés (Next.js)",
+    "SEO optimalizálás",
+    "GEO optimalizálás",
+    "Analitika",
+    "Tárhely és domain"
+   ],
+   "categories": [
+    "AI SEO ügynökségek"
+   ],
+   "description": "Webfejlesztéssel és keresőoptimalizálással foglalkozó ügynökség, amely Next.js alapú weboldalakat épít, technikai SEO-t, kulcsszókutatást, linképítést és analitikai beállítást vállal. A menüben önálló szolgáltatás a GEO optimalizálás, amelynek célja, hogy az ügyfél megjelenjen a ChatGPT, a Perplexity és a Gemini válaszaiban. Saját eszközt is említ, a keresési szándék elemzésére szolgáló Ventoora AI Search Intent Toolt.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "virus-media-keresomarketing-ugynokseg",
+   "name": "Vírus Média Keresőmarketing Ügynökség",
+   "website": "https://www.virusmedia.hu/",
+   "city": "Budapest",
+   "founded_year": 2009,
+   "team_size": null,
+   "services": [
+    "SEO",
+    "Google Ads",
+    "Facebook hirdetés",
+    "TikTok hirdetés",
+    "Bing hirdetés",
+    "Linképítés",
+    "Weboldalkészítés",
+    "Tartalomírás"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "A 2009 óta működő keresőmarketing ügynökséget Mészáros Ádám alapította. Fő területe a keresőoptimalizálás és a linképítés, emellett Google Ads, Facebook, TikTok, YouTube, Bing és Etarget hirdetéseket kezel, weboldalt készít, valamint Google Ads és Analytics oktatást tart. A SEO-munkában az AI-keresőkben való láthatóságot (GEO) is figyelembe veszi. A cég közlése szerint több mint egymilliárd forint Google Ads költést kezelt.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "webery",
+   "name": "Webery",
+   "website": "https://webery.com/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Weboldal készítés",
+    "Webdesign",
+    "Webfejlesztés",
+    "Szoftverfejlesztés",
+    "White label fejlesztés ügynökségeknek"
+   ],
+   "categories": [
+    "Weboldal készítés"
+   ],
+   "description": "Budapesti székhelyű webes gyártócég, amely elsősorban európai marketing- és médiaügynökségek technológiai beszállítójaként, szabványosított folyamat szerint készít weboldalakat. Saját fejlesztésű platformja (WWS) a projekt-előkészítést, a költségkalkulációt, a funkcionális specifikációt és az ajánlatadást automatizálja. A cég közlése szerint olyan márkáknak készültek náluk oldalak, mint a Coca-Cola, a Nestlé, a Logitech és a Suzuki.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "webgrow-digital-agency",
+   "name": "Webgrow Digital Agency",
+   "website": "https://webgrow.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": "5 fő",
+   "services": [
+    "Weboldalfejlesztés",
+    "Webshopkészítés",
+    "WordPress karbantartás",
+    "PPC kampánykezelés (Google, Meta)",
+    "SEO",
+    "Hírlevél marketing",
+    "Analitika",
+    "Fotó és videó"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Ötfős csapat, amely a webfejlesztést és az online marketinget egy kézben kínálja. Egyedi weboldalakat és webshopokat épít WooCommerce, Shopify, Shoptet, Shoprenter és UNAS rendszerre, WordPress-karbantartási csomagokat ad, mellette Google Ads és Meta kampányokat kezel, keresőoptimalizálással, hírlevél-marketinggel és GA4-alapú analitikával foglalkozik. Honlapján Google Partner jelvény szerepel; alapítója és vezetője Kovács Dorián.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "weboldal-keszites-most",
+   "name": "Weboldal Készítés Most",
+   "website": "https://weboldalkeszitesmost.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [],
+   "categories": [
+    "Weboldal készítés"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "weboptim",
+   "name": "Weboptim",
+   "website": "https://weboptim.hu",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads kampánymenedzsment",
+    "Facebook hirdetés",
+    "Keresőoptimalizálás",
+    "Konverzióoptimalizálás",
+    "Versenytárselemzés",
+    "Videómarketing",
+    "Online márkaépítés"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Budapesti online marketing cég, amelynek kiemelt szolgáltatása a Google Ads kampányok felépítése és folyamatos kezelése. Emellett keresőoptimalizálást, Facebook-hirdetést és profilépítést, konverzióoptimalizálást, online versenytárselemzést és videómarketinget vállal. Az oldalán Google Partner minősítést tüntet fel, és a cég közlése szerint több mint négyszáz ügyfélnek kétezernél több kampányt kezelt.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "welovedigital",
+   "name": "Welovedigital",
+   "website": "https://welovedigital.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [],
+   "categories": [
+    "Online marketing ügynökségek"
+   ],
+   "description": null,
+   "status": "ellenőrizendő",
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "win-winmarketing",
+   "name": "Win-WinMarketing",
+   "website": "https://win-winmarketing.hu/",
+   "city": "Gyöngyös",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Facebook hirdetéskezelés",
+    "Instagram hirdetéskezelés",
+    "TikTok hirdetéskezelés",
+    "Google Ads kampánykezelés",
+    "Fiókaudit",
+    "Stratégiai konzultáció"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Gyöngyösi hirdetéskezelő vállalkozás, amely kizárólag fizetett kampányokkal foglalkozik: Facebook-, Instagram- és TikTok-hirdetésekkel, Google Ads kampányokkal, valamint meglévő hirdetési fiókok auditjával. Az oldal szerint az optimalizálás nagy része kézzel, nem az algoritmusokra hagyva történik, és az ügyfelek közvetlenül a tulajdonossal dolgoznak. A vállalkozás saját közlése szerint több mint tíz év ügynökségi tapasztalatra épít.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "wise-digital",
+   "name": "Wise Digital",
+   "website": "https://wisedigital.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads",
+    "Meta Ads",
+    "Programmatic",
+    "Médiatervezés",
+    "SEO",
+    "GEO / AEO",
+    "Analitika",
+    "Performance kreatív"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Teljesítményalapú marketingre szakosodott budapesti csapat, amely Google Ads-, Meta- és programmatic kampányokat kezel, médiatervezést és analitikát végez. A keresőoptimalizálás mellett külön szolgáltatásként kínál GEO-t és AEO-t, vagyis AI-keresőkre történő optimalizálást. Elsősorban e-kereskedelmi, DTC, szolgáltató és FMCG cégeknek dolgozik; a honlap lábléce Google Premier Partner státuszt tüntet fel.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "wp-sprint",
+   "name": "WP Sprint",
+   "website": "https://wpsprint.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Google Ads kampánykezelés",
+    "Facebook kampánykezelés",
+    "WordPress weboldalkészítés",
+    "SEO audit",
+    "E-mail marketing",
+    "Chatbot készítés"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "Schaffer Gábor online marketing szakértő egyszemélyes vállalkozása, aki a kampányokat személyesen kezeli. Google Ads és Facebook kampánykezelést, céges WordPress weboldalak készítését és SEO auditot kínál, kiegészítő szolgáltatásként e-mail marketinget, felugróablak-rendszert és chatbotot is beállít. Az oldalán minősített Google Partnerként mutatkozik be, és a Google partnerjelvényére hivatkozik.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "yellowbird",
+   "name": "YellowBird",
+   "website": "https://yellowbird.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [],
+   "categories": [
+    "Online marketing ügynökségek"
+   ],
+   "description": "A yellowbird.hu címen jelenleg nem ügynökségi oldal, hanem egy magyar nyelvű tartalomoldal érhető el, amely Ember, Kultúra, Természet és Üzlet rovatokban közöl cikkeket. Marketingszolgáltatás, ügyféllista vagy árajánlatkérési lehetőség nem szerepel rajta. Az impresszum nem nevezi meg az üzemeltetőt, csak szerkesztőségi és értékesítési e-mail-címet, valamint a tárhelyszolgáltatót tünteti fel, így a korábbi ügynökség működése innen nem igazolható.",
+   "status": "ellenőrizendő",
+   "review_note": "A domainen ma nem ügynökségi oldal fut."
+  }
+ ]
+}
