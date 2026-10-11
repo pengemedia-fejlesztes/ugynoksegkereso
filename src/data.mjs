@@ -92,8 +92,8 @@ export const AGENCIES = [
       ['AdOps Digital', 3.5, '2024/04/ugynoksegek-logoi-10-1024x1024.png', 'ad-ops.hu', 'Budapest|Full stack', 'Budapesti full stack marketingügynökség átlátható működéssel: az eredményeink a referenciáink.']
 ];
 
-// Fizetett kiemelt partnerek (a designban példaként szereplő két cég)
-export const PARTNERS = ["Tartalom Design", "Klikkmánia"];
+// Fizetett kiemelt partnerek (a név az src/ugynoksegek.json szerint)
+export const PARTNERS = ['360 Marketing ügynökség'];
 
 export const HOME_SEO = [
       { h: 'Mi az Ügynökségkereső?', p: 'Független magyar oldal, ahol szolgáltatás szerint bontott toplistákban találod a hazai online marketing, Google Ads, Facebook hirdetés, AI SEO, AI agent fejlesztő, PR, SEO, Amazon, weboldal készítő és tartalomgyártó cégeket.' },

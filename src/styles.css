@@ -296,3 +296,21 @@ button{font-family:inherit}
 }
 @media (min-width:768px){.mlang{display:none}}
 .row .meta{margin-top:4px;font:500 12.5px var(--sans);color:var(--mut3)}
+.p-grid.one{grid-template-columns:1fr}
+.pcard .tags{margin-top:0}
+.tags a{font:500 11.5px var(--sans);padding:3px 8px;border-radius:6px;background:var(--soft2);color:var(--mut2)}
+.tags a:hover{background:var(--ink);color:#fff}
+.tags span.cur{background:var(--ink);color:#fff}
+.tagbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:16px}
+.tagbar>span{font:500 13px var(--sans);color:var(--mut);margin-right:4px}
+.tagbar a{font:500 13px var(--sans);padding:7px 12px;border:1px solid var(--line2);border-radius:999px;background:#fff}
+.tagbar a:hover{border-color:var(--ink);color:var(--ink)}
+.tagbar a i{font-style:normal;font:500 11.5px var(--mono);color:var(--mut3);margin-left:2px}
+.tagbar a.all{border-color:transparent;background:none;color:var(--mut2)}
+.page.wide{max-width:1280px}
+.taggrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;margin-top:24px}
+.taggrid a{display:flex;flex-direction:column;gap:4px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;text-decoration:none}
+.taggrid a:hover{border-color:var(--ink);color:var(--ink)}
+.taggrid b{font:700 18px/1.2 var(--display)}
+.taggrid span{font:500 12.5px var(--mono);color:var(--mut)}
+@media (max-width:767px){.tagbar{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch}.tagbar a,.tagbar>span{flex:none}}
