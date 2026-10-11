@@ -48,7 +48,7 @@ const companies = DB.companies.map(c => {
     ok: c.status === 'kész' || !!(old && d), order: old ? old.order : Infinity,
     tagSlugs: TAGS.filter(t => (c.services || []).some(t.m)).map(t => t.slug),
     rawTags: (c.services?.length ? c.services : old?.tags || []).slice(0, 3), services: c.services || [],
-    logo: LOGOS[c.slug] ? `/logos/${LOGOS[c.slug].file}` : old ? LOGO_BASE + old.logo : null, ini: ini(c.name),
+    logo: LOGOS[c.slug] ? `/logos/${LOGOS[c.slug].file}` : old ? LOGO_BASE + old.logo : null, ini: ini(c.name), logoDark: !!LOGOS[c.slug]?.dark,
     stars: old ? stars(old.r) : '', r: old ? old.r.toFixed(1).replace('.', ',') : '',
   };
 }).filter(c => c.ok);
@@ -73,7 +73,7 @@ const tagLinks = (a, cur) => {
 };
 const aiCats = CATS.filter(c => c.ai), otherCats = CATS.filter(c => !c.ai);
 const ext = a => `href="${esc(a.href)}" target="_blank" rel="nofollow noopener"`;
-const logo = (a, cls, size) => `<span class="logo ${cls}"><span>${esc(a.ini)}</span>${a.logo ? `<img src="${esc(a.logo)}" alt="${esc(a.n)} logó" loading="lazy" decoding="async" width="${size}" height="${size}">` : ''}</span>`;
+const logo = (a, cls, size) => `<span class="logo ${cls}${a.logoDark && a.logo ? ' dark' : ''}"><span>${esc(a.ini)}</span>${a.logo ? `<img src="${esc(a.logo)}" alt="${esc(a.n)} logó" loading="lazy" decoding="async" width="${size}" height="${size}">` : ''}</span>`;
 const rating = (a, extra = '') => a.r ? `<span class="stars">${a.stars}</span><b>${a.r}/5${extra}</b>` : (extra ? `<b>${extra.replace(/^ · /, '')}</b>` : '');
 
 const jsonld = o => `<script type="application/ld+json">${JSON.stringify(o).replace(/</g, '\\u003c')}</script>`;
