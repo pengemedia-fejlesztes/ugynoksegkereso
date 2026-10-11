@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><meta name="design_doc_mode" content="canvas"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap" rel="stylesheet"><style>body{margin:0;background:#e9e6df;font-family:Geist,system-ui,sans-serif;-webkit-font-smoothing:antialiased}a{color:#111318;text-decoration:none}a:hover{color:#FF5B2E}.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}.dv-tname{font:600 13px/1.2 system-ui,sans-serif;color:#1a1a1a}.dv-opts{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 system-ui,sans-serif;color:rgba(0,0,0,.55)}.dv-card{max-width:100%;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);overflow:hidden}.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}.dv-next{margin:22px 0 0;font:12px/1.5 system-ui,sans-serif;color:rgba(0,0,0,.5)}</style></helmet>
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Ügynökségkereső — kezdőlap, toplista oldal, mobil</span></div>
+<div style="max-width:1280px;margin:0 0 28px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;font:13px/1.55 Geist,system-ui,sans-serif;color:#3a3d44">
+<div><div style="font:600 11px 'Geist Mono',monospace;letter-spacing:.06em;color:#111318;margin-bottom:6px">FELTEVÉSEK</div>Ugyanaz a menü- és láblécszerkezet, mint az ugynoksegkereso.hu-n. Az Ügynökségek menüben 10 lista van: a 4 új és az Online marketing kiemelve, „AI &amp; performance” csoportban.</div>
+<div><div style="font:600 11px 'Geist Mono',monospace;letter-spacing:.06em;color:#111318;margin-bottom:6px">GYORSASÁG</div>Nincs hero fotó, se slider. Egy változtatható betűtípus, a logók 64px-es WebP-k, nagyjából 120 KB az első képernyő. Minden nehéz elem az első képernyő alatt van.</div>
+<div><div style="font:600 11px 'Geist Mono',monospace;letter-spacing:.06em;color:#111318;margin-bottom:6px">KONVERZIÓ</div>Minden képernyőn van egy ajánlatkérés-belépő: hero űrlap, ajánlatkérés soronként, „kérj ajánlatot több helyről” kosár, mobilon fix alsó gomb.</div>
+</div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1a"><div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Kezdőlap · desktop (nyitott Ügynökségek menüvel)</div>
+<div class="dv-card" style="width:1280px;background:#F6F4EF">
+<header style="position:relative;display:flex;align-items:center;gap:32px;padding:18px 48px;background:#F6F4EF;border-bottom:1px solid #E2DED5">
+<a href="#" style="display:flex;align-items:center;gap:10px;font:800 21px 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;color:#111318"><span style="width:28px;height:28px;border-radius:8px;background:#111318;display:grid;place-items:center"><span style="width:11px;height:11px;border-radius:50%;border:2.5px solid #FF5B2E"></span></span>Ügynökségkereső</a>
+<nav style="display:flex;gap:4px;font:500 14px Geist,sans-serif;margin-left:12px">
+<a href="#" style="padding:8px 12px;border-radius:8px">Kezdőlap</a>
+<a href="#" onMouseEnter="{{ openMega }}" onClick="{{ toggleMega }}" style="padding:8px 12px;border-radius:8px;background:#ECE8DF;display:flex;gap:6px;align-items:center">Ügynökségek <span style="font-size:10px">▾</span></a>
+<a href="#" style="padding:8px 12px;border-radius:8px">Rólunk</a>
+<a href="#" style="padding:8px 12px;border-radius:8px">Blog</a>
+<a href="#" style="padding:8px 12px;border-radius:8px">Kapcsolat</a>
+</nav>
+<div style="margin-left:auto;display:flex;align-items:center;gap:16px">
+<div style="display:flex;border:1px solid #D9D4C8;border-radius:999px;padding:3px;font:500 12px 'Geist Mono',monospace"><span style="padding:4px 9px;border-radius:999px;background:#111318;color:#fff">HU</span><a href="#" style="padding:4px 9px;color:#6B6E75">EN</a></div>
+<a href="#" style="background:#FF5B2E;color:#fff;font:600 14px Geist,sans-serif;padding:11px 18px;border-radius:10px" style-hover="background:#E84A1F;color:#fff">Ajánlatot kérek →</a>
+</div>
+<sc-if value="{{ megaOpen }}" hint-placeholder-val="{{ true }}">
+<div onMouseLeave="{{ closeMega }}" style="position:absolute;top:64px;left:200px;z-index:5;width:760px;background:#fff;border:1px solid #E2DED5;border-radius:16px;box-shadow:0 24px 60px -20px rgba(17,19,24,.25);display:grid;grid-template-columns:1.25fr 1fr;overflow:hidden">
+<div style="padding:22px 22px 18px;background:#111318;color:#fff;display:flex;flex-direction:column;gap:4px">
+<div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:#B9B3FF;margin-bottom:8px">AI &amp; PERFORMANCE</div>
+<sc-for list="{{ aiCats }}" as="c" hint-placeholder-count="5">
+<a href="#" style="display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:9px;color:#fff;font:500 14.5px Geist,sans-serif" style-hover="background:#23262E;color:#fff">{{ c.n }}<span style="margin-left:auto;font:600 10px 'Geist Mono',monospace;padding:3px 6px;border-radius:5px;background:{{ c.tagBg }};color:{{ c.tagFg }}">{{ c.tag }}</span></a>
+</sc-for>
+</div>
+<div style="padding:22px;display:flex;flex-direction:column;gap:2px">
+<div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:#8A8D94;margin-bottom:8px">TOVÁBBI TOPLISTÁK</div>
+<sc-for list="{{ otherCats }}" as="c" hint-placeholder-count="5">
+<a href="#" style="padding:9px 10px;border-radius:9px;font:500 14.5px Geist,sans-serif;color:#111318" style-hover="background:#F3F0EA">{{ c.n }}</a>
+</sc-for>
+<a href="#" style="margin-top:auto;padding:12px 10px 0;border-top:1px solid #EEE;font:500 13px Geist,sans-serif;color:#6B6E75">Hogyan rangsorolunk? →</a>
+</div>
+</div>
+</sc-if>
+</header>
+
+<section style="padding:72px 48px 56px;display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center">
+<div>
+<div style="display:inline-flex;align-items:center;gap:8px;font:500 12px 'Geist Mono',monospace;color:#4B3FE0;background:#ECEAFF;padding:6px 10px;border-radius:999px;margin-bottom:22px"><span style="width:6px;height:6px;border-radius:50%;background:#5B4BFF"></span>ÚJ: AI agent fejlesztő &amp; AI SEO toplisták</div>
+<h1 style="margin:0;font:800 68px/0.98 'Bricolage Grotesque',sans-serif;letter-spacing:-.035em;color:#111318;text-wrap:balance">Megtaláljuk az ügynökséget, amelyik <span style="color:#FF5B2E">hozza a számokat.</span></h1>
+<p style="margin:22px 0 0;font:400 19px/1.5 Geist,sans-serif;color:#4A4D55;max-width:520px;text-wrap:pretty">Független toplisták online marketing, Google Ads, Facebook hirdetés, AI SEO és AI agent fejlesztő cégekről. Egy űrlap, és akár 3 ügynökségtől is kapsz ajánlatot.</p>
+<div style="display:flex;gap:22px;margin-top:28px;font:500 13px Geist,sans-serif;color:#4A4D55">
+<span style="display:flex;gap:7px;align-items:center"><span style="color:#1E9E5A">✓</span>Ingyenes</span>
+<span style="display:flex;gap:7px;align-items:center"><span style="color:#1E9E5A">✓</span>Nem kötelez semmire</span>
+<span style="display:flex;gap:7px;align-items:center"><span style="color:#1E9E5A">✓</span>Válasz 1 munkanapon belül</span>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #E2DED5;border-radius:20px;padding:28px;box-shadow:0 30px 60px -40px rgba(17,19,24,.35)">
+<sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+<div style="font:700 22px 'Bricolage Grotesque',sans-serif;letter-spacing:-.01em;color:#111318">Mire keresel ügynökséget?</div>
+<div style="font:400 13px Geist,sans-serif;color:#6B6E75;margin-top:4px">Többet is választhatsz.</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:16px">
+<sc-for list="{{ chips }}" as="c" hint-placeholder-count="8">
+<button onClick="{{ c.toggle }}" style="font:500 13.5px Geist,sans-serif;padding:9px 13px;border-radius:999px;border:1px solid {{ c.bd }};background:{{ c.bg }};color:{{ c.fg }};cursor:pointer">{{ c.label }}</button>
+</sc-for>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px">
+<label style="display:flex;flex-direction:column;gap:6px;font:500 12px Geist,sans-serif;color:#4A4D55">Havi keret<div style="border:1px solid #D9D4C8;border-radius:10px;padding:12px;font:500 14px Geist,sans-serif;color:#111318;display:flex;justify-content:space-between">300 ezer – 1 M Ft <span style="color:#8A8D94">▾</span></div></label>
+<label style="display:flex;flex-direction:column;gap:6px;font:500 12px Geist,sans-serif;color:#4A4D55">E-mail cím<div style="border:1px solid #D9D4C8;border-radius:10px;padding:12px;font:400 14px Geist,sans-serif;color:#8A8D94">nev@ceged.hu</div></label>
+</div>
+<button onClick="{{ send }}" style="width:100%;margin-top:16px;background:#FF5B2E;color:#fff;border:0;border-radius:12px;padding:16px;font:600 16px Geist,sans-serif;cursor:pointer" style-hover="background:#E84A1F">{{ sendLabel }}</button>
+<div style="font:400 11.5px Geist,sans-serif;color:#8A8D94;margin-top:10px;text-align:center">Az adataidat csak a kiválasztott ügynökségek kapják meg. <a href="#" style="color:#6B6E75;text-decoration:underline">Adatvédelem</a></div>
+</sc-if>
+<sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+<div style="padding:30px 6px;text-align:center"><div style="width:52px;height:52px;border-radius:50%;background:#E3F5EB;color:#1E9E5A;display:grid;place-items:center;margin:0 auto 14px;font-size:24px">✓</div><div style="font:700 24px 'Bricolage Grotesque',sans-serif;color:#111318">Megkaptuk!</div><p style="font:400 14px/1.5 Geist,sans-serif;color:#4A4D55;margin:8px 0 18px">1 munkanapon belül jelentkezünk a hozzád illő ügynökségekkel.</p><button onClick="{{ reset }}" style="background:none;border:1px solid #D9D4C8;border-radius:10px;padding:10px 14px;font:500 13px Geist,sans-serif;cursor:pointer">Új ajánlatkérés</button></div>
+</sc-if>
+</div>
+</section>
+
+<section style="padding:24px 48px 64px">
+<div style="display:flex;align-items:end;justify-content:space-between;margin-bottom:22px"><h2 style="margin:0;font:800 36px/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.025em;color:#111318">Kiemelt toplisták 2026</h2><a href="#" style="font:500 14px Geist,sans-serif;color:#4A4D55">Hogyan rangsorolunk? →</a></div>
+<div style="display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:auto auto;gap:14px">
+<a href="#" style="grid-row:span 2;background:#111318;color:#fff;border-radius:18px;padding:30px;display:flex;flex-direction:column;min-height:300px" style-hover="color:#fff;background:#1B1E25">
+<span style="align-self:flex-start;font:600 10.5px 'Geist Mono',monospace;padding:4px 8px;border-radius:6px;background:#5B4BFF;color:#fff">ÚJ LISTA</span>
+<span style="margin-top:auto;font:800 40px/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em">AI agent fejlesztő cégek</span>
+<span style="margin-top:12px;font:400 15px/1.5 Geist,sans-serif;color:#B8BBC3;max-width:380px">Ügyfélszolgálati, sales- és back-office agentek. Szűrj iparágra és integrációra.</span>
+<span style="margin-top:22px;display:flex;gap:10px"><span style="background:#FF5B2E;color:#fff;font:600 14px Geist,sans-serif;padding:11px 16px;border-radius:10px">Lista megnyitása →</span><span style="border:1px solid #3A3D46;font:500 14px Geist,sans-serif;padding:11px 16px;border-radius:10px;color:#fff">Ajánlatkérés</span></span>
+</a>
+<sc-for list="{{ featured }}" as="c" hint-placeholder-count="4">
+<a href="#" style="background:#fff;border:1px solid #E2DED5;border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px;min-height:130px" style-hover="border-color:#111318;color:#111318">
+<span style="display:flex;justify-content:space-between;align-items:center"><span style="font:600 10.5px 'Geist Mono',monospace;padding:3px 7px;border-radius:5px;background:{{ c.tagBg }};color:{{ c.tagFg }}">{{ c.tag }}</span><span style="font:500 18px Geist,sans-serif;color:#8A8D94">↗</span></span>
+<span style="margin-top:auto;font:700 21px/1.1 'Bricolage Grotesque',sans-serif;letter-spacing:-.015em">{{ c.n }}</span>
+<span style="font:400 13px/1.45 Geist,sans-serif;color:#6B6E75">{{ c.d }}</span>
+</a>
+</sc-for>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;align-items:center"><span style="font:500 13px Geist,sans-serif;color:#6B6E75;margin-right:6px">További listák:</span>
+<sc-for list="{{ otherCats }}" as="c" hint-placeholder-count="5"><a href="#" style="font:500 13.5px Geist,sans-serif;padding:8px 13px;border:1px solid #D9D4C8;border-radius:999px;background:#fff" style-hover="border-color:#111318">{{ c.n }}</a></sc-for>
+</div>
+</section>
+
+<section style="padding:56px 48px;background:#fff;border-top:1px solid #E2DED5;border-bottom:1px solid #E2DED5;display:grid;grid-template-columns:1fr 2fr;gap:48px">
+<h2 style="margin:0;font:800 36px/1.02 'Bricolage Grotesque',sans-serif;letter-spacing:-.025em;color:#111318">Három lépés,<br>keresgélés nélkül.</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px">
+<div><div style="font:500 13px 'Geist Mono',monospace;color:#FF5B2E">01</div><div style="font:700 19px 'Bricolage Grotesque',sans-serif;margin:8px 0 6px;color:#111318">Megadod, mire van szükséged</div><div style="font:400 14px/1.5 Geist,sans-serif;color:#6B6E75">Szolgáltatás, keret, határidő. Kevesebb mint egy perc.</div></div>
+<div><div style="font:500 13px 'Geist Mono',monospace;color:#FF5B2E">02</div><div style="font:700 19px 'Bricolage Grotesque',sans-serif;margin:8px 0 6px;color:#111318">Mi párosítunk</div><div style="font:400 14px/1.5 Geist,sans-serif;color:#6B6E75">A toplistán szereplő cégek közül azokat, akik illenek hozzád.</div></div>
+<div><div style="font:500 13px 'Geist Mono',monospace;color:#FF5B2E">03</div><div style="font:700 19px 'Bricolage Grotesque',sans-serif;margin:8px 0 6px;color:#111318">Összehasonlítod az ajánlatokat</div><div style="font:400 14px/1.5 Geist,sans-serif;color:#6B6E75">Te döntöd el, kivel dolgozol. Díjat nem kérünk érte.</div></div>
+</div>
+</section>
+
+<section style="padding:64px 48px">
+<div style="display:flex;align-items:end;justify-content:space-between;margin-bottom:20px"><div><div style="font:500 12px 'Geist Mono',monospace;color:#6B6E75;margin-bottom:8px">TOP 10 · ONLINE MARKETING ÜGYNÖKSÉGEK · 2026</div><h2 style="margin:0;font:800 36px/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.025em;color:#111318">A lista eleje</h2></div><a href="#" style="font:600 14px Geist,sans-serif;padding:11px 16px;border:1px solid #111318;border-radius:10px">Teljes lista →</a></div>
+<div style="background:#fff;border:1px solid #E2DED5;border-radius:18px;overflow:hidden">
+<sc-for list="{{ topFive }}" as="a" hint-placeholder-count="5">
+<div style="display:grid;grid-template-columns:44px 52px 1.2fr 2fr 110px 150px;gap:18px;align-items:center;padding:16px 22px;border-bottom:1px solid #EFECE5">
+<span style="font:700 22px 'Bricolage Grotesque',sans-serif;color:#C9C4B8">{{ a.rank }}</span>
+<span style="width:52px;height:52px;border-radius:12px;background:#F3F0EA;border:1px dashed #D2CCBF;display:grid;place-items:center;font:600 13px 'Geist Mono',monospace;color:#8A8D94">{{ a.ini }}</span>
+<span style="font:700 18px 'Bricolage Grotesque',sans-serif;color:#111318">{{ a.n }}</span>
+<span style="font:400 13.5px/1.45 Geist,sans-serif;color:#6B6E75">{{ a.d }}</span>
+<span style="display:flex;flex-direction:column;gap:2px"><span style="color:#F2A400;letter-spacing:1px;font-size:13px">{{ a.stars }}</span><span style="font:600 13px 'Geist Mono',monospace;color:#111318">{{ a.r }}/5</span></span>
+<a href="#" style="justify-self:end;background:#FF5B2E;color:#fff;font:600 13.5px Geist,sans-serif;padding:10px 14px;border-radius:9px" style-hover="background:#E84A1F;color:#fff">Ajánlatot kérek</a>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section style="margin:0 48px 64px;background:#FF5B2E;border-radius:22px;padding:44px 48px;display:flex;align-items:center;gap:32px;color:#fff">
+<div style="flex:1"><div style="font:800 40px/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;color:#111318">Nincs időd 60 ügynökséget átnézni?</div><div style="font:500 17px Geist,sans-serif;margin-top:10px;color:#111318">Írd meg, mit keresel. Mi átnézzük helyetted.</div></div>
+<a href="#" style="background:#111318;color:#fff;font:600 16px Geist,sans-serif;padding:16px 22px;border-radius:12px" style-hover="color:#fff;background:#000">Ajánlatkérés 1 perc alatt →</a>
+</section>
+
+<footer style="background:#111318;color:#B8BBC3;padding:52px 48px 28px;font:400 14px Geist,sans-serif">
+<div style="display:grid;grid-template-columns:1.4fr 1.6fr 1fr 1fr;gap:40px">
+<div><div style="font:800 21px 'Bricolage Grotesque',sans-serif;color:#fff">Ügynökségkereső</div><div style="margin-top:10px;line-height:1.5">A legjobb magyar ügynökségek egy helyen.</div><div style="margin-top:18px">hello@ugynoksegkereso.hu</div><a href="#" style="display:inline-block;margin-top:18px;color:#fff;border:1px solid #3A3D46;padding:9px 13px;border-radius:9px;font-size:13px">Ügynökség vagy? Kerülj fel a listára →</a></div>
+<div><div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:#fff;margin-bottom:12px">TOPLISTÁK</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 16px"><sc-for list="{{ allCats }}" as="c" hint-placeholder-count="10"><a href="#" style="color:#B8BBC3" style-hover="color:#fff">{{ c.n }}</a></sc-for></div></div>
+<div><div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:#fff;margin-bottom:12px">OLDALAK</div><div style="display:flex;flex-direction:column;gap:8px"><a href="#" style="color:#B8BBC3">Kezdőlap</a><a href="#" style="color:#B8BBC3">Rólunk</a><a href="#" style="color:#B8BBC3">Blog</a><a href="#" style="color:#B8BBC3">Kapcsolat</a></div></div>
+<div><div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:#fff;margin-bottom:12px">INFORMÁCIÓ</div><div style="display:flex;flex-direction:column;gap:8px"><a href="#" style="color:#B8BBC3">A listák kiválasztási elvei</a><a href="#" style="color:#B8BBC3">ÁSZF</a><a href="#" style="color:#B8BBC3">Adatvédelmi tájékoztató</a></div></div>
+</div>
+<div style="margin-top:40px;padding-top:18px;border-top:1px solid #262930;display:flex;justify-content:space-between;font-size:12.5px;color:#7B7E86"><span>© 2026 Ügynökségkereső</span><span>Magyar · <a href="#" style="color:#7B7E86">English</a></span></div>
+</footer>
+</div></div>
+
+<div class="dv-opt" id="1b"><div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Toplista oldal · desktop · válassz ki több céget, egy kérés</div>
+<div class="dv-card" style="width:1280px;background:#F6F4EF;position:relative">
+<header style="display:flex;align-items:center;gap:32px;padding:18px 48px;border-bottom:1px solid #E2DED5">
+<span style="display:flex;align-items:center;gap:10px;font:800 21px 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;color:#111318"><span style="width:28px;height:28px;border-radius:8px;background:#111318;display:grid;place-items:center"><span style="width:11px;height:11px;border-radius:50%;border:2.5px solid #FF5B2E"></span></span>Ügynökségkereső</span>
+<nav style="display:flex;gap:4px;font:500 14px Geist,sans-serif;margin-left:12px"><a href="#" style="padding:8px 12px">Kezdőlap</a><a href="#" style="padding:8px 12px;border-radius:8px;background:#ECE8DF">Ügynökségek ▾</a><a href="#" style="padding:8px 12px">Rólunk</a><a href="#" style="padding:8px 12px">Blog</a><a href="#" style="padding:8px 12px">Kapcsolat</a></nav>
+<div style="margin-left:auto;display:flex;align-items:center;gap:16px"><div style="display:flex;border:1px solid #D9D4C8;border-radius:999px;padding:3px;font:500 12px 'Geist Mono',monospace"><span style="padding:4px 9px;border-radius:999px;background:#111318;color:#fff">HU</span><span style="padding:4px 9px;color:#6B6E75">EN</span></div><a href="#" style="background:#FF5B2E;color:#fff;font:600 14px Geist,sans-serif;padding:11px 18px;border-radius:10px">Ajánlatot kérek →</a></div>
+</header>
+<div style="padding:40px 48px 0">
+<div style="font:500 13px Geist,sans-serif;color:#8A8D94">Kezdőlap / Ügynökségek / <span style="color:#111318">Online marketing ügynökségek</span></div>
+<h1 style="margin:14px 0 0;font:800 54px/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;color:#111318">Magyarország top online marketing ügynökségei, 2026</h1>
+<p style="margin:16px 0 0;font:400 17px/1.55 Geist,sans-serif;color:#4A4D55;max-width:760px">A <a href="#" style="text-decoration:underline">kiválasztási elveink</a> alapján rangsorolva. Jelöld be, kik érdekelnek, és egyetlen űrlappal mindegyiktől kérhetsz ajánlatot.</p>
+<div style="display:flex;gap:8px;margin-top:22px;flex-wrap:wrap">
+<sc-for list="{{ filters }}" as="f" hint-placeholder-count="6"><button onClick="{{ f.pick }}" style="font:500 13.5px Geist,sans-serif;padding:8px 13px;border-radius:999px;border:1px solid {{ f.bd }};background:{{ f.bg }};color:{{ f.fg }};cursor:pointer">{{ f.label }}</button></sc-for>
+</div>
+</div>
+<div style="padding:28px 48px 120px;display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:28px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:10px">
+<sc-for list="{{ listRows }}" as="a" hint-placeholder-count="8">
+<div style="background:#fff;border:1.5px solid {{ a.bd }};border-radius:16px;padding:20px 22px;display:grid;grid-template-columns:34px 64px minmax(0,1fr) auto;gap:18px;align-items:center">
+<span style="font:700 22px 'Bricolage Grotesque',sans-serif;color:#C9C4B8">{{ a.rank }}</span>
+<span style="width:64px;height:64px;border-radius:14px;background:#F3F0EA;border:1px dashed #D2CCBF;display:grid;place-items:center;font:600 14px 'Geist Mono',monospace;color:#8A8D94">{{ a.ini }}</span>
+<div style="min-width:0"><div style="display:flex;align-items:center;gap:10px"><span style="font:700 20px 'Bricolage Grotesque',sans-serif;color:#111318">{{ a.n }}</span><span style="color:#F2A400;font-size:13px;letter-spacing:1px">{{ a.stars }}</span><span style="font:600 12.5px 'Geist Mono',monospace;color:#4A4D55">{{ a.r }}</span></div><div style="font:400 13.5px/1.5 Geist,sans-serif;color:#6B6E75;margin-top:5px;text-wrap:pretty">{{ a.d }}</div><div style="display:flex;gap:6px;margin-top:9px"><sc-for list="{{ a.tags }}" as="t" hint-placeholder-count="3"><span style="font:500 11.5px Geist,sans-serif;padding:3px 8px;border-radius:6px;background:#F3F0EA;color:#4A4D55">{{ t }}</span></sc-for></div></div>
+<div style="display:flex;flex-direction:column;gap:8px;align-items:stretch;width:150px">
+<button onClick="{{ a.toggle }}" style="font:600 13.5px Geist,sans-serif;padding:10px 12px;border-radius:9px;border:1.5px solid {{ a.btnBd }};background:{{ a.btnBg }};color:{{ a.btnFg }};cursor:pointer">{{ a.btnLabel }}</button>
+<a href="#" style="font:500 12.5px Geist,sans-serif;color:#6B6E75;text-align:center">Weboldal ↗</a>
+</div>
+</div>
+</sc-for>
+</div>
+<aside style="position:sticky;top:20px;background:#111318;color:#fff;border-radius:18px;padding:24px">
+<div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:#B9B3FF">AJÁNLATKÉRÉS</div>
+<div style="font:700 24px/1.1 'Bricolage Grotesque',sans-serif;margin-top:10px">{{ asideTitle }}</div>
+<div style="display:flex;flex-direction:column;gap:6px;margin-top:16px">
+<sc-for list="{{ picked }}" as="p" hint-placeholder-count="0"><div style="display:flex;align-items:center;gap:10px;background:#1E2128;border-radius:10px;padding:9px 10px;font:500 14px Geist,sans-serif"><span style="width:26px;height:26px;border-radius:7px;background:#2B2E36;display:grid;place-items:center;font:600 10px 'Geist Mono',monospace;color:#B8BBC3">{{ p.ini }}</span>{{ p.n }}<button onClick="{{ p.remove }}" style="margin-left:auto;background:none;border:0;color:#7B7E86;cursor:pointer;font-size:16px">×</button></div></sc-for>
+</div>
+<div style="font:400 13px/1.5 Geist,sans-serif;color:#9A9DA5;margin-top:12px">{{ asideHint }}</div>
+<div style="border:1px solid #33363F;border-radius:10px;padding:12px;font:400 14px Geist,sans-serif;color:#7B7E86;margin-top:14px">nev@ceged.hu</div>
+<div style="border:1px solid #33363F;border-radius:10px;padding:12px;font:400 14px Geist,sans-serif;color:#7B7E86;margin-top:8px;min-height:54px">Röviden: mit szeretnél elérni?</div>
+<button style="width:100%;margin-top:14px;background:#FF5B2E;color:#fff;border:0;border-radius:12px;padding:15px;font:600 15px Geist,sans-serif;cursor:pointer">Ajánlatkérés elküldése</button>
+<div style="font:400 11.5px Geist,sans-serif;color:#7B7E86;margin-top:10px;text-align:center">Ingyenes · Nem kötelez semmire</div>
+</aside>
+</div>
+<sc-if value="{{ hasPicked }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;left:48px;right:416px;bottom:24px;background:#111318;color:#fff;border-radius:14px;padding:14px 16px 14px 22px;display:flex;align-items:center;gap:16px;box-shadow:0 20px 40px -16px rgba(0,0,0,.45)"><span style="font:600 15px Geist,sans-serif">{{ pickedCount }} ügynökség kiválasztva</span><span style="font:400 13px Geist,sans-serif;color:#9A9DA5">Egy űrlap, mindegyik megkapja.</span><a href="#" style="margin-left:auto;background:#FF5B2E;color:#fff;font:600 14px Geist,sans-serif;padding:11px 16px;border-radius:10px">Ajánlatkérés →</a></div>
+</sc-if>
+</div></div>
+
+<div class="dv-opt" id="1c"><div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Kezdőlap · mobil · fix alsó ajánlatkérő gomb</div>
+<div class="dv-card" style="width:390px;background:#F6F4EF;position:relative">
+<header style="display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid #E2DED5"><span style="display:flex;align-items:center;gap:8px;font:800 18px 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;color:#111318"><span style="width:24px;height:24px;border-radius:7px;background:#111318;display:grid;place-items:center"><span style="width:9px;height:9px;border-radius:50%;border:2px solid #FF5B2E"></span></span>Ügynökségkereső</span><span style="margin-left:auto;font:500 12px 'Geist Mono',monospace;color:#6B6E75">HU</span><button onClick="{{ toggleMob }}" style="width:44px;height:44px;border-radius:10px;border:1px solid #D9D4C8;background:#fff;font-size:18px;cursor:pointer">{{ mobIcon }}</button></header>
+<sc-if value="{{ mobOpen }}" hint-placeholder-val="{{ false }}">
+<div style="background:#fff;border-bottom:1px solid #E2DED5;padding:10px 18px 18px;font:500 16px Geist,sans-serif">
+<a href="#" style="display:block;padding:12px 0;border-bottom:1px solid #F0EDE6">Kezdőlap</a>
+<div style="padding:12px 0 6px;font:500 11px 'Geist Mono',monospace;color:#8A8D94;letter-spacing:.06em">ÜGYNÖKSÉGEK</div>
+<sc-for list="{{ allCats }}" as="c" hint-placeholder-count="10"><a href="#" style="display:block;padding:10px 0 10px 12px;font-size:15px;border-left:2px solid #EAE6DD">{{ c.n }}</a></sc-for>
+<a href="#" style="display:block;padding:12px 0;border-bottom:1px solid #F0EDE6;margin-top:6px">Rólunk</a><a href="#" style="display:block;padding:12px 0;border-bottom:1px solid #F0EDE6">Blog</a><a href="#" style="display:block;padding:12px 0">Kapcsolat</a>
+</div>
+</sc-if>
+<section style="padding:30px 18px 24px">
+<div style="display:inline-flex;align-items:center;gap:7px;font:500 11px 'Geist Mono',monospace;color:#4B3FE0;background:#ECEAFF;padding:5px 9px;border-radius:999px;margin-bottom:16px"><span style="width:6px;height:6px;border-radius:50%;background:#5B4BFF"></span>ÚJ: AI toplisták</div>
+<h1 style="margin:0;font:800 40px/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;color:#111318">Megtaláljuk az ügynökséget, amelyik <span style="color:#FF5B2E">hozza a számokat.</span></h1>
+<p style="margin:14px 0 0;font:400 16px/1.5 Geist,sans-serif;color:#4A4D55">Független toplisták, és akár 3 ajánlat egyetlen űrlappal.</p>
+<div style="font:600 14px Geist,sans-serif;color:#111318;margin:22px 0 10px">Mire keresel ügynökséget?</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px"><sc-for list="{{ chips }}" as="c" hint-placeholder-count="8"><button onClick="{{ c.toggle }}" style="font:500 14px Geist,sans-serif;padding:11px 14px;min-height:44px;border-radius:999px;border:1px solid {{ c.bd }};background:{{ c.bg }};color:{{ c.fg }};cursor:pointer">{{ c.label }}</button></sc-for></div>
+</section>
+<section style="padding:8px 18px 28px">
+<div style="font:800 24px 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;color:#111318;margin-bottom:12px">Toplisták</div>
+<a href="#" style="display:block;background:#111318;color:#fff;border-radius:16px;padding:20px;margin-bottom:8px"><span style="font:600 10px 'Geist Mono',monospace;padding:3px 7px;border-radius:5px;background:#5B4BFF">ÚJ</span><div style="font:800 26px/1.05 'Bricolage Grotesque',sans-serif;margin-top:28px">AI agent fejlesztő cégek</div><div style="font:400 13.5px Geist,sans-serif;color:#B8BBC3;margin-top:6px">Ügyfélszolgálat, sales, back-office</div></a>
+<div style="background:#fff;border:1px solid #E2DED5;border-radius:16px;overflow:hidden">
+<sc-for list="{{ mobList }}" as="c" hint-placeholder-count="8"><a href="#" style="display:flex;align-items:center;gap:10px;padding:14px 16px;min-height:44px;box-sizing:border-box;border-bottom:1px solid #F0EDE6;font:500 15px Geist,sans-serif">{{ c.n }}<sc-if value="{{ c.isNew }}" hint-placeholder-val="{{ false }}"><span style="font:600 9.5px 'Geist Mono',monospace;padding:2px 6px;border-radius:4px;background:#ECEAFF;color:#4B3FE0">ÚJ</span></sc-if><span style="margin-left:auto;color:#B0ADA5">›</span></a></sc-for>
+</div>
+</section>
+<footer style="background:#111318;color:#B8BBC3;padding:28px 18px 110px;font:400 14px Geist,sans-serif;display:flex;flex-direction:column;gap:10px"><div style="font:800 18px 'Bricolage Grotesque',sans-serif;color:#fff">Ügynökségkereső</div><a href="#" style="color:#B8BBC3">A listák kiválasztási elvei</a><a href="#" style="color:#B8BBC3">ÁSZF</a><a href="#" style="color:#B8BBC3">Adatvédelmi tájékoztató</a><span style="font-size:12.5px;color:#7B7E86;margin-top:8px">© 2026 · hello@ugynoksegkereso.hu</span></footer>
+<sc-if value="{{ stickyCta }}" hint-placeholder-val="{{ true }}">
+<div style="position:sticky;bottom:0;margin-top:-86px;padding:12px 14px 18px;background:linear-gradient(to top,#F6F4EF 70%,rgba(246,244,239,0))"><a href="#" style="display:flex;justify-content:center;align-items:center;gap:8px;background:#FF5B2E;color:#fff;font:600 16px Geist,sans-serif;padding:16px;border-radius:14px;box-shadow:0 10px 24px -10px rgba(255,91,46,.7)">{{ mobCta }}</a></div>
+</sc-if>
+</div></div>
+
+</div>
+<p class="dv-next">Következő lehet: „<a class="dv-oid" href="#1b">1b</a> az AI agent fejlesztő cégek listával” · „Kapcsolat oldal és köszönő oldal” · „angol nyelvű változat <a class="dv-oid" href="#1a">1a</a> alapján”</p>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showMega&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Desktop&quot;},&quot;stickyCta&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Mobil&quot;}}">
+class Component extends DCLogic {
+  state = { mega: null, chips: ['AI agent fejlesztés'], sent: false, filter: 'Mind', picked: ['Exaline', 'MAON'], mob: false };
+  renderVals() {
+    const s = this.state, p = this.props;
+    const NEW = { tag: 'ÚJ', tagBg: '#5B4BFF', tagFg: '#fff' };
+    const aiCats = [
+      { n: 'AI agent fejlesztő cégek', ...NEW },
+      { n: 'AI SEO ügynökségek', ...NEW },
+      { n: 'Google Ads ügynökségek', ...NEW },
+      { n: 'Facebook hirdetés ügynökségek', ...NEW },
+      { n: 'Online marketing ügynökségek', tag: 'TOP 10', tagBg: '#FF5B2E', tagFg: '#fff' }
+    ];
+    const otherCats = ['PR ügynökségek', 'Keresőoptimalizáló ügynökségek', 'Amazon ügynökségek', 'Weboldal készítés', 'Tartalomgyártó ügynökségek'].map(n => ({ n }));
+    const lt = { tagBg: '#ECEAFF', tagFg: '#4B3FE0' };
+    const featured = [
+      { n: 'AI SEO ügynökségek', d: 'Láthatóság a ChatGPT, Gemini és Perplexity válaszaiban.', tag: 'ÚJ', ...lt },
+      { n: 'Google Ads ügynökségek', d: 'Keresési, Shopping és Performance Max kampányok.', tag: 'ÚJ', ...lt },
+      { n: 'Facebook hirdetés ügynökségek', d: 'Meta kampányok Facebookon és Instagramon.', tag: 'ÚJ', ...lt },
+      { n: 'Online marketing ügynökségek', d: 'Teljes körű online marketing egy kézben.', tag: 'TOP 10', tagBg: '#FFE7DF', tagFg: '#B8380F' }
+    ];
+    const chipLabels = ['AI agent fejlesztés', 'AI SEO', 'Google Ads', 'Facebook hirdetés', 'Online marketing', 'SEO', 'Weboldal', 'PR', 'Tartalomgyártás'];
+    const chips = chipLabels.map(label => {
+      const on = s.chips.includes(label);
+      return { label, bg: on ? '#111318' : '#fff', fg: on ? '#fff' : '#111318', bd: on ? '#111318' : '#D9D4C8',
+        toggle: () => this.setState(st => ({ chips: on ? st.chips.filter(x => x !== label) : [...st.chips, label] })) };
+    });
+    const n = s.chips.length;
+    const stars = r => '★'.repeat(Math.floor(r)) + (r % 1 ? '½' : '') ;
+    const ini = n => n.replace(/[^A-Za-zÁÉÍÓÖŐÚÜŰ0-9 ]/g, '').split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+    const agencies = [
+      { n: 'Exaline', r: 5, d: 'Teljes körű online marketing garanciával. Ők is felelnek az eredményért.', tags: ['PPC', 'Garancia'], f: 'PPC' },
+      { n: 'Bestmarketing', r: 5, d: 'Kreatív, eredményközpontú stratégiák, hogy kitűnj a digitális zajból.', tags: ['Google Partner', 'Meta'], f: 'Meta' },
+      { n: 'MAON', r: 5, d: 'Egyedi szolgáltatások és árazás piacvezetővé válni akaró döntéshozóknak.', tags: ['Stratégia', 'Full service'], f: 'Full service' },
+      { n: 'Dog and Pony', r: 5, d: 'Kreatív, professzionális marketing, ami valódi üzleti értéket ad.', tags: ['Kreatív', 'Online + offline'], f: 'Full service' },
+      { n: 'Follow Marketing', r: 5, d: 'Ügyfél- és vevőszerző gépezet, hogy a növekedésre fókuszálhass.', tags: ['Meta', 'Lead generálás'], f: 'Meta' },
+      { n: 'Barna Design', r: 4.5, d: 'Red Dot-díjas webshop és weboldal tervezés, forgalomszerzéssel együtt.', tags: ['Webshop', 'Design'], f: 'Webshop' },
+      { n: 'Drive Online', r: 4.5, d: '14 fős csapat, Google és Meta kampányok stratégiától a tartalomig.', tags: ['Google Ads', 'Meta'], f: 'PPC' },
+      { n: 'Tartalom Design', r: 4.5, d: 'Klasszikus online marketing AI-alapú láthatósággal kombinálva.', tags: ['AI SEO', 'Weboldal'], f: 'AI' }
+    ].map((a, i) => ({ ...a, rank: String(i + 1).padStart(2, '0'), ini: ini(a.n), stars: stars(a.r), r: a.r.toFixed(1).replace('.', ',') }));
+    const filters = ['Mind', 'PPC', 'Meta', 'AI', 'Full service', 'Webshop'].map(label => {
+      const on = s.filter === label;
+      return { label, bg: on ? '#111318' : '#fff', fg: on ? '#fff' : '#111318', bd: on ? '#111318' : '#D9D4C8', pick: () => this.setState({ filter: label }) };
+    });
+    const togglePick = nm => this.setState(st => ({ picked: st.picked.includes(nm) ? st.picked.filter(x => x !== nm) : [...st.picked, nm].slice(-5) }));
+    const listRows = agencies.filter(a => s.filter === 'Mind' || a.f === s.filter).map(a => {
+      const on = s.picked.includes(a.n);
+      return { ...a, bd: on ? '#111318' : '#E2DED5', btnBg: on ? '#111318' : '#FF5B2E', btnFg: '#fff', btnBd: on ? '#111318' : '#FF5B2E', btnLabel: on ? '✓ Kiválasztva' : '+ Ajánlatot kérek', toggle: () => togglePick(a.n) };
+    });
+    const picked = s.picked.map(nm => ({ n: nm, ini: ini(nm), remove: () => togglePick(nm) }));
+    const pc = picked.length;
+    const allCats = [...aiCats.slice(0, 4).reverse(), aiCats[4], ...otherCats].map(c => ({ n: c.n }));
+    const newSet = new Set(aiCats.slice(0, 4).map(c => c.n));
+    return {
+      megaOpen: s.mega ?? (p.showMega ?? true),
+      openMega: () => this.setState({ mega: true }),
+      closeMega: () => this.setState({ mega: false }),
+      toggleMega: e => { e.preventDefault(); this.setState(st => ({ mega: !(st.mega ?? (p.showMega ?? true)) })); },
+      aiCats, otherCats, featured, chips, allCats,
+      notSent: !s.sent, sent: s.sent,
+      sendLabel: n ? `Ajánlatkérés: ${n} terület →` : 'Ajánlatot kérek →',
+      send: () => this.setState({ sent: true }), reset: () => this.setState({ sent: false }),
+      topFive: agencies.slice(0, 5),
+      filters, listRows, picked, hasPicked: pc > 0, pickedCount: pc,
+      asideTitle: pc ? `${pc} ügynökségtől kérsz ajánlatot` : 'Válassz ki ügynökségeket a listából',
+      asideHint: pc ? 'Legfeljebb 5 céget jelölhetsz ki.' : 'Vagy hagyd üresen, és mi ajánlunk 3 illő céget.',
+      mobOpen: s.mob, mobIcon: s.mob ? '×' : '☰', toggleMob: () => this.setState(st => ({ mob: !st.mob })),
+      mobList: [...aiCats.slice(1, 4), aiCats[4], ...otherCats].map(c => ({ n: c.n, isNew: newSet.has(c.n) })),
+      stickyCta: p.stickyCta ?? true,
+      mobCta: n ? `Ajánlatkérés (${n} terület) →` : 'Ajánlatot kérek, ingyen →'
+    };
+  }
+}
+</script>
+</body>
+</html>

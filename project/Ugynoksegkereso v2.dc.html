@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><meta name="design_doc_mode" content="canvas"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap" rel="stylesheet"><style>body{margin:0;background:#e9e6df;font-family:Geist,system-ui,sans-serif;-webkit-font-smoothing:antialiased}a{color:#111318;text-decoration:none}a:hover{color:#0E6B4F}.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}.dv-tname{font:600 13px/1.2 system-ui,sans-serif;color:#1a1a1a}.dv-opts{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 system-ui,sans-serif;color:rgba(0,0,0,.55)}.dv-card{max-width:100%;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);overflow:hidden}.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}.dv-next{margin:22px 0 0;font:12px/1.5 system-ui,sans-serif;color:rgba(0,0,0,.5)}</style></helmet>
+<section class="dv-turn" id="t2">
+<div class="dv-thd"><a class="dv-tid" href="#t2">2</a><span class="dv-tname">Ajánlatkérés nélkül, ÚJ címkék nélkül, SEO-leírásokkal</span></div>
+<div style="max-width:1280px;margin:0 0 28px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;font:13px/1.55 Geist,system-ui,sans-serif;color:#3a3d44">
+<div><div style="font:600 11px 'Geist Mono',monospace;letter-spacing:.06em;color:#111318;margin-bottom:6px">KONVERZIÓ</div>Ajánlatkérő űrlap nincs. A látogatót a toplistán keresztül közvetlenül az ügynökségek felé tereljük: „Kapcsolat ↗” gomb és weboldal-link minden sorban.</div>
+<div><div style="font:600 11px 'Geist Mono',monospace;letter-spacing:.06em;color:#111318;margin-bottom:6px">KATEGÓRIA SEO</div>Minden toplista tetején rövid, 2–3 mondatos leírás arról, mi ez az oldal. Az <a class="dv-oid" href="#2b">2b</a> fejlécében kategóriát válthatsz: mind a 10 saját szöveget kap.</div>
+<div><div style="font:600 11px 'Geist Mono',monospace;letter-spacing:.06em;color:#111318;margin-bottom:6px">LÁBLÉC SEO</div>Hosszabb, tagolt szöveg közvetlenül a lábléc felett, H2/H3 címekkel és belső linkekkel. Mobilon lenyitható, hogy ne nyújtsa meg az oldalt.</div>
+</div>
+<div style="max-width:1280px;margin:0 0 28px;padding:18px 20px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:10px">
+<div style="font:600 11px 'Geist Mono',monospace;letter-spacing:.06em;color:#111318;margin-bottom:12px">GOMBSZÍN-JAVASLATOK · az „A” van alkalmazva, a többit kérésre átállítom</div>
+<div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px">
+<div style="display:flex;flex-direction:column;gap:8px;padding:14px;border:2px solid #0E6B4F;border-radius:10px;background:#F6F4EF"><span style="align-self:flex-start;font:600 13.5px Geist,sans-serif;padding:10px 14px;border-radius:9px;background:#0E6B4F;color:#fff">Kapcsolat ↗</span><span style="font:600 13px Geist,sans-serif;color:#111318">A · Erdőzöld #0E6B4F</span><span style="font:400 12px/1.45 Geist,sans-serif;color:#6B6E75">Megbízható, „menj tovább” jelentésű. Jól elválik a sárga partner-kiemeléstől.</span></div>
+<div style="display:flex;flex-direction:column;gap:8px;padding:14px;border:1px solid #E2DED5;border-radius:10px;background:#F6F4EF"><span style="align-self:flex-start;font:600 13.5px Geist,sans-serif;padding:10px 14px;border-radius:9px;background:#2340D9;color:#fff">Kapcsolat ↗</span><span style="font:600 13px Geist,sans-serif;color:#111318">B · Kobaltkék #2340D9</span><span style="font:400 12px/1.45 Geist,sans-serif;color:#6B6E75">Klasszikus link-szín, rögtön kattinthatónak tűnik. Tech/AI hangulat.</span></div>
+<div style="display:flex;flex-direction:column;gap:8px;padding:14px;border:1px solid #E2DED5;border-radius:10px;background:#F6F4EF"><span style="align-self:flex-start;font:600 13.5px Geist,sans-serif;padding:10px 14px;border-radius:9px;background:#5B3FD9;color:#fff">Kapcsolat ↗</span><span style="font:600 13px Geist,sans-serif;color:#111318">C · Mélylila #5B3FD9</span><span style="font:400 12px/1.45 Geist,sans-serif;color:#6B6E75">AI-fókuszú, modern. Kevésbé hagyományos, emlékezetesebb.</span></div>
+<div style="display:flex;flex-direction:column;gap:8px;padding:14px;border:1px solid #E2DED5;border-radius:10px;background:#F6F4EF"><span style="align-self:flex-start;font:600 13.5px Geist,sans-serif;padding:10px 14px;border-radius:9px;background:#111318;color:#fff">Kapcsolat ↗</span><span style="font:600 13px Geist,sans-serif;color:#111318">D · Grafit #111318</span><span style="font:400 12px/1.45 Geist,sans-serif;color:#6B6E75">Visszafogott, prémium. A színt teljesen a partner-kiemelés kapja.</span></div>
+</div>
+</div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="2a"><div class="dv-olabel"><a class="dv-oid" href="#2a">2a</a>Kezdőlap · desktop</div>
+<div class="dv-card" style="width:1280px;background:#F6F4EF">
+<header style="position:relative;display:flex;align-items:center;gap:32px;padding:18px 48px;border-bottom:1px solid #E2DED5">
+<a href="#" style="display:flex;align-items:center;gap:10px;font:800 21px 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;color:#111318"><span style="width:28px;height:28px;border-radius:8px;background:#111318;display:grid;place-items:center"><span style="width:11px;height:11px;border-radius:50%;border:2.5px solid #0E6B4F"></span></span>Ügynökségkereső</a>
+<nav style="display:flex;gap:4px;font:500 14px Geist,sans-serif;margin-left:12px">
+<a href="#" style="padding:8px 12px;border-radius:8px">Kezdőlap</a>
+<a href="#" onMouseEnter="{{ openMega }}" onClick="{{ toggleMega }}" style="padding:8px 12px;border-radius:8px;background:#ECE8DF;display:flex;gap:6px;align-items:center">Ügynökségek <span style="font-size:10px">▾</span></a>
+<a href="#" style="padding:8px 12px;border-radius:8px">Rólunk</a>
+<a href="#" style="padding:8px 12px;border-radius:8px">Blog</a>
+<a href="#" style="padding:8px 12px;border-radius:8px">Kapcsolat</a>
+</nav>
+<div style="margin-left:auto;display:flex;border:1px solid #D9D4C8;border-radius:999px;padding:3px;font:500 12px 'Geist Mono',monospace"><span style="padding:4px 9px;border-radius:999px;background:#111318;color:#fff">HU</span><a href="#" style="padding:4px 9px;color:#6B6E75">EN</a></div>
+<sc-if value="{{ megaOpen }}" hint-placeholder-val="{{ true }}">
+<div onMouseLeave="{{ closeMega }}" style="position:absolute;top:64px;left:200px;z-index:5;width:760px;background:#fff;border:1px solid #E2DED5;border-radius:16px;box-shadow:0 24px 60px -20px rgba(17,19,24,.25);display:grid;grid-template-columns:1.25fr 1fr;overflow:hidden">
+<div style="padding:22px 22px 18px;background:#111318;display:flex;flex-direction:column;gap:2px">
+<div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:#B9B3FF;margin-bottom:8px">AI &amp; ONLINE MARKETING</div>
+<sc-for list="{{ aiCats }}" as="c" hint-placeholder-count="5"><a href="#" style="display:flex;align-items:center;padding:10px;border-radius:9px;color:#fff;font:500 15px Geist,sans-serif" style-hover="background:#23262E;color:#fff">{{ c.n }}<span style="margin-left:auto;color:#6B6E75">→</span></a></sc-for>
+</div>
+<div style="padding:22px;display:flex;flex-direction:column;gap:2px">
+<div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:#8A8D94;margin-bottom:8px">TOVÁBBI TOPLISTÁK</div>
+<sc-for list="{{ otherCats }}" as="c" hint-placeholder-count="5"><a href="#" style="padding:9px 10px;border-radius:9px;font:500 14.5px Geist,sans-serif;color:#111318" style-hover="background:#F3F0EA">{{ c.n }}</a></sc-for>
+</div>
+</div>
+</sc-if>
+</header>
+
+<section style="padding:72px 48px 56px;display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center">
+<div>
+<div style="font:500 12px 'Geist Mono',monospace;letter-spacing:.06em;color:#6B6E75;margin-bottom:20px">FÜGGETLEN TOPLISTÁK · 2026</div>
+<h1 style="margin:0;font:800 66px/0.98 'Bricolage Grotesque',sans-serif;letter-spacing:-.035em;color:#111318;text-wrap:balance">A legjobb magyar ügynökségek, <span style="color:#0E6B4F">egy helyen.</span></h1>
+<p style="margin:22px 0 0;font:400 19px/1.5 Geist,sans-serif;color:#4A4D55;max-width:540px;text-wrap:pretty">Rangsorolt toplisták online marketing, Google Ads, Facebook hirdetés, AI SEO és AI agent fejlesztő cégekről. Hasonlítsd össze őket, és vedd fel a kapcsolatot közvetlenül azzal, aki tetszik.</p>
+</div>
+<div style="background:#fff;border:1px solid #E2DED5;border-radius:20px;padding:28px;box-shadow:0 30px 60px -40px rgba(17,19,24,.35)">
+<div style="font:700 22px 'Bricolage Grotesque',sans-serif;letter-spacing:-.01em;color:#111318">Milyen ügynökséget keresel?</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:16px">
+<sc-for list="{{ chips }}" as="c" hint-placeholder-count="10"><button onClick="{{ c.pick }}" style="font:500 13.5px Geist,sans-serif;padding:9px 13px;border-radius:999px;border:1px solid {{ c.bd }};background:{{ c.bg }};color:{{ c.fg }};cursor:pointer">{{ c.label }}</button></sc-for>
+</div>
+<a href="#" style="display:block;text-align:center;margin-top:20px;background:#0E6B4F;color:#fff;border-radius:12px;padding:16px;font:600 16px Geist,sans-serif" style-hover="background:#0A5540;color:#fff">{{ chipCta }}</a>
+</div>
+</section>
+
+<section style="padding:24px 48px 64px">
+<div style="display:flex;align-items:end;justify-content:space-between;margin-bottom:22px"><h2 style="margin:0;font:800 36px/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.025em;color:#111318">Kiemelt toplisták</h2><a href="#" style="font:500 14px Geist,sans-serif;color:#4A4D55">A listák kiválasztási elvei →</a></div>
+<div style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:14px">
+<a href="#" style="grid-row:span 2;background:#111318;color:#fff;border-radius:18px;padding:30px;display:flex;flex-direction:column;min-height:300px" style-hover="color:#fff;background:#1B1E25">
+<span style="font:500 12px 'Geist Mono',monospace;color:#B9B3FF;letter-spacing:.06em">TOPLISTA 2026</span>
+<span style="margin-top:auto;font:800 40px/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em">AI agent fejlesztő cégek</span>
+<span style="margin-top:12px;font:400 15px/1.5 Geist,sans-serif;color:#B8BBC3;max-width:380px">Ügyfélszolgálati, sales- és back-office agenteket építő hazai csapatok.</span>
+<span style="margin-top:22px;align-self:flex-start;background:#0E6B4F;color:#fff;font:600 14px Geist,sans-serif;padding:11px 16px;border-radius:10px">Lista megnyitása →</span>
+</a>
+<sc-for list="{{ featured }}" as="c" hint-placeholder-count="4">
+<a href="#" style="background:#fff;border:1px solid #E2DED5;border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px;min-height:130px" style-hover="border-color:#111318;color:#111318">
+<span style="align-self:flex-end;font:500 18px Geist,sans-serif;color:#8A8D94">↗</span>
+<span style="margin-top:auto;font:700 21px/1.1 'Bricolage Grotesque',sans-serif;letter-spacing:-.015em">{{ c.n }}</span>
+<span style="font:400 13px/1.45 Geist,sans-serif;color:#6B6E75">{{ c.d }}</span>
+</a>
+</sc-for>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;align-items:center"><span style="font:500 13px Geist,sans-serif;color:#6B6E75;margin-right:6px">További listák:</span>
+<sc-for list="{{ otherCats }}" as="c" hint-placeholder-count="5"><a href="#" style="font:500 13.5px Geist,sans-serif;padding:8px 13px;border:1px solid #D9D4C8;border-radius:999px;background:#fff" style-hover="border-color:#111318">{{ c.n }}</a></sc-for>
+</div>
+</section>
+
+<section style="padding:56px 48px;background:#fff;border-top:1px solid #E2DED5;border-bottom:1px solid #E2DED5;display:grid;grid-template-columns:1fr 2fr;gap:48px">
+<h2 style="margin:0;font:800 36px/1.02 'Bricolage Grotesque',sans-serif;letter-spacing:-.025em;color:#111318">Így találod meg<br>a partnered.</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px">
+<div><div style="font:500 13px 'Geist Mono',monospace;color:#0E6B4F">01</div><div style="font:700 19px 'Bricolage Grotesque',sans-serif;margin:8px 0 6px;color:#111318">Válassz kategóriát</div><div style="font:400 14px/1.5 Geist,sans-serif;color:#6B6E75">Tíz toplista, szolgáltatás szerint bontva.</div></div>
+<div><div style="font:500 13px 'Geist Mono',monospace;color:#0E6B4F">02</div><div style="font:700 19px 'Bricolage Grotesque',sans-serif;margin:8px 0 6px;color:#111318">Hasonlítsd össze</div><div style="font:400 14px/1.5 Geist,sans-serif;color:#6B6E75">Értékelés, fókuszterületek, rövid bemutatkozás.</div></div>
+<div><div style="font:500 13px 'Geist Mono',monospace;color:#0E6B4F">03</div><div style="font:700 19px 'Bricolage Grotesque',sans-serif;margin:8px 0 6px;color:#111318">Keresd meg őket közvetlenül</div><div style="font:400 14px/1.5 Geist,sans-serif;color:#6B6E75">Egy kattintás, és az ügynökség oldalán vagy.</div></div>
+</div>
+</section>
+
+<section style="padding:64px 48px">
+<div style="display:flex;align-items:end;justify-content:space-between;margin-bottom:20px"><div><div style="font:500 12px 'Geist Mono',monospace;color:#6B6E75;margin-bottom:8px">ONLINE MARKETING ÜGYNÖKSÉGEK · 2026</div><h2 style="margin:0;font:800 36px/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.025em;color:#111318">A lista eleje</h2></div><a href="#" style="font:600 14px Geist,sans-serif;padding:11px 16px;border:1px solid #111318;border-radius:10px">Teljes lista →</a></div>
+<div style="background:#fff;border:1px solid #E2DED5;border-radius:18px;overflow:hidden">
+<sc-for list="{{ topFive }}" as="a" hint-placeholder-count="5">
+<div style="display:grid;grid-template-columns:44px 52px 1.2fr 2fr 110px 130px;gap:18px;align-items:center;padding:16px 22px;border-bottom:1px solid #EFECE5">
+<span style="font:700 22px 'Bricolage Grotesque',sans-serif;color:#C9C4B8">{{ a.rank }}</span>
+<span style="position:relative;width:52px;height:52px;border-radius:12px;background:#fff;border:1px solid #ECE8DF;overflow:hidden;display:grid;place-items:center"><span style="position:absolute;font:600 13px 'Geist Mono',monospace;color:#B0ADA5">{{ a.ini }}</span><img src="{{ a.logo }}" alt="{{ a.alt }}" loading="lazy" width="52" height="52" onError="{{ hideImg }}" style="position:relative;width:100%;height:100%;object-fit:contain;background:#fff"></img></span>
+<span style="font:700 18px 'Bricolage Grotesque',sans-serif;color:#111318">{{ a.n }}</span>
+<span style="font:400 13.5px/1.45 Geist,sans-serif;color:#6B6E75">{{ a.d }}</span>
+<span style="display:flex;flex-direction:column;gap:2px"><span style="color:#F2A400;letter-spacing:1px;font-size:13px">{{ a.stars }}</span><span style="font:600 13px 'Geist Mono',monospace;color:#111318">{{ a.r }}/5</span></span>
+<a href="#" style="justify-self:end;background:#0E6B4F;color:#fff;font:600 13.5px Geist,sans-serif;padding:10px 14px;border-radius:9px" style-hover="background:#0A5540;color:#fff">Kapcsolat ↗</a>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section style="margin:0 48px 64px;background:#ECE8DF;border-radius:22px;padding:36px 44px;display:flex;align-items:center;gap:32px">
+<div style="flex:1"><div style="font:800 30px/1.05 'Bricolage Grotesque',sans-serif;letter-spacing:-.025em;color:#111318">Ügynökség vagy, és még nem szerepelsz a listán?</div><div style="font:400 16px Geist,sans-serif;margin-top:8px;color:#4A4D55">Írj nekünk, és kollégáink értékelik a cégedet.</div></div>
+<a href="#" style="background:#111318;color:#fff;font:600 15px Geist,sans-serif;padding:14px 20px;border-radius:12px" style-hover="color:#fff;background:#000">Kapcsolat →</a>
+</section>
+
+<section style="background:#fff;border-top:1px solid #E2DED5;padding:56px 48px">
+<h2 style="margin:0;font:800 30px/1.1 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;color:#111318;max-width:760px">Ügynökségkereső: így válassz online marketing és AI ügynökséget</h2>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;margin-top:28px;font:400 14.5px/1.65 Geist,sans-serif;color:#4A4D55">
+<sc-for list="{{ homeSeo }}" as="s" hint-placeholder-count="6"><div><h3 style="margin:0 0 8px;font:700 17px/1.25 'Bricolage Grotesque',sans-serif;color:#111318">{{ s.h }}</h3><p style="margin:0;text-wrap:pretty">{{ s.p }}</p></div></sc-for>
+</div>
+</section>
+
+<footer style="background:#111318;color:#B8BBC3;padding:52px 48px 28px;font:400 14px Geist,sans-serif">
+<div style="display:grid;grid-template-columns:1.4fr 1.6fr 1fr 1fr;gap:40px">
+<div><div style="font:800 21px 'Bricolage Grotesque',sans-serif;color:#fff">Ügynökségkereső</div><div style="margin-top:10px;line-height:1.5">A legjobb magyar ügynökségek egy helyen.</div><div style="margin-top:18px">hello@ugynoksegkereso.hu</div></div>
+<div><div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:#fff;margin-bottom:12px">TOPLISTÁK</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 16px"><sc-for list="{{ allCats }}" as="c" hint-placeholder-count="10"><a href="#" style="color:#B8BBC3" style-hover="color:#fff">{{ c.n }}</a></sc-for></div></div>
+<div><div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:#fff;margin-bottom:12px">OLDALAK</div><div style="display:flex;flex-direction:column;gap:8px"><a href="#" style="color:#B8BBC3">Kezdőlap</a><a href="#" style="color:#B8BBC3">Rólunk</a><a href="#" style="color:#B8BBC3">Blog</a><a href="#" style="color:#B8BBC3">Kapcsolat</a></div></div>
+<div><div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:#fff;margin-bottom:12px">INFORMÁCIÓ</div><div style="display:flex;flex-direction:column;gap:8px"><a href="#" style="color:#B8BBC3">A listák kiválasztási elvei</a><a href="#" style="color:#B8BBC3">ÁSZF</a><a href="#" style="color:#B8BBC3">Adatvédelmi tájékoztató</a></div></div>
+</div>
+<div style="margin-top:40px;padding-top:18px;border-top:1px solid #262930;display:flex;justify-content:space-between;font-size:12.5px;color:#7B7E86"><span>© 2026 Ügynökségkereső</span><span>Magyar · <a href="#" style="color:#7B7E86">English</a></span></div>
+</footer>
+</div></div>
+
+<div class="dv-opt" id="2b"><div class="dv-olabel"><a class="dv-oid" href="#2b">2b</a>Toplista oldal · desktop · váltható kategória (a rövid és a lábléc feletti SEO-szöveg is vált)</div>
+<div class="dv-card" style="width:1280px;background:#F6F4EF">
+<div style="background:#2a2a2a;padding:10px 16px;display:flex;gap:6px;flex-wrap:wrap;align-items:center"><span style="font:600 10.5px ui-monospace,Menlo,monospace;color:#9a9a9a;margin-right:6px">MOCKUP · KATEGÓRIA:</span><sc-for list="{{ catTabs }}" as="t" hint-placeholder-count="10"><button onClick="{{ t.pick }}" style="font:500 11.5px system-ui,sans-serif;padding:5px 9px;border-radius:6px;border:0;background:{{ t.bg }};color:{{ t.fg }};cursor:pointer">{{ t.n }}</button></sc-for></div>
+<header style="display:flex;align-items:center;gap:32px;padding:18px 48px;border-bottom:1px solid #E2DED5">
+<span style="display:flex;align-items:center;gap:10px;font:800 21px 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;color:#111318"><span style="width:28px;height:28px;border-radius:8px;background:#111318;display:grid;place-items:center"><span style="width:11px;height:11px;border-radius:50%;border:2.5px solid #0E6B4F"></span></span>Ügynökségkereső</span>
+<nav style="display:flex;gap:4px;font:500 14px Geist,sans-serif;margin-left:12px"><a href="#" style="padding:8px 12px">Kezdőlap</a><a href="#" style="padding:8px 12px;border-radius:8px;background:#ECE8DF">Ügynökségek ▾</a><a href="#" style="padding:8px 12px">Rólunk</a><a href="#" style="padding:8px 12px">Blog</a><a href="#" style="padding:8px 12px">Kapcsolat</a></nav>
+<div style="margin-left:auto;display:flex;border:1px solid #D9D4C8;border-radius:999px;padding:3px;font:500 12px 'Geist Mono',monospace"><span style="padding:4px 9px;border-radius:999px;background:#111318;color:#fff">HU</span><span style="padding:4px 9px;color:#6B6E75">EN</span></div>
+</header>
+<div style="padding:40px 48px 0;display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:28px;align-items:end">
+<div>
+<div style="font:500 13px Geist,sans-serif;color:#8A8D94">Kezdőlap / Ügynökségek / <span style="color:#111318">{{ cat.n }}</span></div>
+<h1 style="margin:14px 0 0;font:800 52px/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;color:#111318;text-wrap:balance">{{ cat.h1 }}</h1>
+</div>
+<div style="font:500 12.5px Geist,sans-serif;color:#6B6E75;text-align:right">Frissítve: 2026. október · <a href="#" style="text-decoration:underline">Kiválasztási elvek</a></div>
+</div>
+<div style="margin:24px 48px 0;background:#fff;border:1px solid #E2DED5;border-radius:16px;padding:22px 26px;display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px">
+<div style="font:700 17px/1.25 'Bricolage Grotesque',sans-serif;color:#111318">{{ cat.q }}</div>
+<p style="margin:0;font:400 15.5px/1.6 Geist,sans-serif;color:#4A4D55;text-wrap:pretty">{{ cat.intro }}</p>
+</div>
+<div style="padding:28px 48px 56px;display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:28px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:10px;min-width:0">
+<section style="background:#FFF9EC;border:1px solid #EBD9A8;border-radius:18px;padding:18px">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap"><span style="font:600 11px 'Geist Mono',monospace;letter-spacing:.08em;color:#6B4E00">KIEMELT PARTNEREK</span><span style="font:600 10.5px 'Geist Mono',monospace;letter-spacing:.04em;padding:3px 7px;border-radius:5px;background:#111318;color:#fff">FIZETETT MEGJELENÉS</span><span style="margin-left:auto;font:400 12.5px Geist,sans-serif;color:#6B5A33">A kiemelés nem befolyásolja a toplista sorrendjét. <a href="#" style="color:#6B5A33;text-decoration:underline">Részletek</a></span></div>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px">
+<sc-for list="{{ partnerRows }}" as="a" hint-placeholder-count="2">
+<article style="background:#fff;border:1px solid #EBD9A8;border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;gap:14px;align-items:center">
+<span style="position:relative;flex:none;width:72px;height:72px;border-radius:12px;border:1px solid #ECE8DF;overflow:hidden;display:grid;place-items:center;background:#fff"><span style="position:absolute;font:600 13px 'Geist Mono',monospace;color:#B0ADA5">{{ a.ini }}</span><img src="{{ a.logo }}" alt="{{ a.alt }}" loading="lazy" width="72" height="72" onError="{{ hideImg }}" style="position:relative;width:100%;height:100%;object-fit:contain;background:#fff"></img></span>
+<div style="min-width:0"><span style="display:inline-flex;gap:6px;align-items:center;font:600 10.5px 'Geist Mono',monospace;letter-spacing:.04em;padding:3px 7px;border-radius:5px;background:#FFF1CC;color:#6B4E00;border:1px solid #EBD9A8">★ KIEMELT PARTNER</span><h3 style="margin:7px 0 0;font:700 20px 'Bricolage Grotesque',sans-serif;color:#111318">{{ a.n }}</h3><div style="display:flex;gap:8px;align-items:center;margin-top:2px"><span style="color:#F2A400;font-size:12.5px;letter-spacing:1px">{{ a.stars }}</span><span style="font:600 12px 'Geist Mono',monospace;color:#4A4D55">{{ a.r }}/5 · #{{ a.rank }} a listán</span></div></div>
+</div>
+<p style="margin:0;font:400 14px/1.55 Geist,sans-serif;color:#4A4D55;display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden;-webkit-line-clamp:3">{{ a.d }}</p>
+<div style="display:flex;gap:8px;align-items:center;margin-top:auto"><a href="#" style="font:600 13.5px Geist,sans-serif;padding:10px 14px;border-radius:9px;background:#0E6B4F;color:#fff" style-hover="background:#0A5540;color:#fff">Kapcsolat ↗</a><a href="#" style="font:500 12.5px Geist,sans-serif;color:#6B6E75">{{ a.url }}</a><span style="margin-left:auto;font:500 11px Geist,sans-serif;color:#8A7A55">Hirdetés</span></div>
+</article>
+</sc-for>
+</div>
+</section>
+<div style="display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #E2DED5;border-radius:14px;padding:10px 10px 10px 18px">
+<span style="font:600 14px Geist,sans-serif;color:#111318;white-space:nowrap">{{ totalLabel }}</span>
+<input value="{{ q }}" onChange="{{ onQ }}" placeholder="Keresés név vagy szolgáltatás alapján…" style="flex:1;min-width:0;border:1px solid #E2DED5;border-radius:10px;padding:10px 12px;font:400 14px Geist,sans-serif;background:#F9F8F5;outline:none"></input>
+<div style="display:flex;border:1px solid #E2DED5;border-radius:10px;padding:3px;font:500 12.5px Geist,sans-serif"><button onClick="{{ setDetail }}" style="border:0;border-radius:7px;padding:7px 10px;cursor:pointer;background:{{ detailBg }};color:{{ detailFg }}">Részletes</button><button onClick="{{ setCompact }}" style="border:0;border-radius:7px;padding:7px 10px;cursor:pointer;background:{{ compactBg }};color:{{ compactFg }}">Tömör</button></div>
+</div>
+<sc-for list="{{ listRows }}" as="a" hint-placeholder-count="10">
+<article style="background:#fff;border:1px solid #E2DED5;border-radius:16px;padding:{{ rowPad }};display:grid;grid-template-columns:34px {{ logoCol }} minmax(0,1fr) 150px;gap:20px;align-items:start">
+<span style="font:700 22px/1 'Bricolage Grotesque',sans-serif;color:#C9C4B8;padding-top:6px">{{ a.rank }}</span>
+<span style="position:relative;width:{{ logoSize }};height:{{ logoSize }};border-radius:14px;background:#fff;border:1px solid #ECE8DF;overflow:hidden;display:grid;place-items:center"><span style="position:absolute;font:600 14px 'Geist Mono',monospace;color:#B0ADA5">{{ a.ini }}</span><img src="{{ a.logo }}" alt="{{ a.alt }}" loading="lazy" decoding="async" width="104" height="104" onError="{{ hideImg }}" style="position:relative;width:100%;height:100%;object-fit:contain;background:#fff"></img></span>
+<div style="min-width:0">
+<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><h3 style="margin:0;font:700 21px 'Bricolage Grotesque',sans-serif;color:#111318">{{ a.n }}</h3><span style="color:#F2A400;font-size:13px;letter-spacing:1px">{{ a.stars }}</span><span style="font:600 12.5px 'Geist Mono',monospace;color:#4A4D55">{{ a.r }}/5</span><sc-if value="{{ a.partner }}" hint-placeholder-val="{{ false }}"><span style="font:600 10.5px 'Geist Mono',monospace;letter-spacing:.04em;padding:3px 7px;border-radius:5px;background:#FFF1CC;color:#6B4E00;border:1px solid #EBD9A8">★ KIEMELT PARTNER · FIZETETT</span></sc-if></div>
+<div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap"><sc-for list="{{ a.tags }}" as="t" hint-placeholder-count="3"><span style="font:500 11.5px Geist,sans-serif;padding:3px 8px;border-radius:6px;background:#F3F0EA;color:#4A4D55">{{ t }}</span></sc-for></div>
+<sc-if value="{{ showIntro }}" hint-placeholder-val="{{ true }}">
+<p style="margin:12px 0 0;font:400 14.5px/1.6 Geist,sans-serif;color:#4A4D55;text-wrap:pretty;display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden;-webkit-line-clamp:{{ a.clamp }}">{{ a.d }}</p>
+<sc-if value="{{ a.long }}" hint-placeholder-val="{{ false }}"><button onClick="{{ a.toggle }}" style="margin-top:6px;padding:0;background:none;border:0;font:500 13px Geist,sans-serif;color:#111318;text-decoration:underline;cursor:pointer">{{ a.moreLabel }}</button></sc-if>
+</sc-if>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px"><a href="#" style="text-align:center;font:600 13.5px Geist,sans-serif;padding:11px 12px;border-radius:9px;background:#0E6B4F;color:#fff" style-hover="background:#0A5540;color:#fff">Kapcsolat ↗</a><a href="#" style="font:500 12.5px Geist,sans-serif;color:#6B6E75;text-align:center;overflow:hidden;text-overflow:ellipsis">{{ a.url }}</a></div>
+</article>
+</sc-for>
+<sc-if value="{{ hasMore }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;flex-direction:column;align-items:center;gap:10px;padding:14px 0 4px">
+<div style="width:240px;height:4px;border-radius:4px;background:#E2DED5;overflow:hidden"><div style="height:100%;background:#111318;width:{{ progress }}"></div></div>
+<span style="font:500 13px Geist,sans-serif;color:#6B6E75">{{ shownLabel }}</span>
+<button onClick="{{ loadMore }}" style="border:1px solid #111318;background:#fff;border-radius:10px;padding:12px 18px;font:600 14px Geist,sans-serif;cursor:pointer">{{ moreBtn }}</button>
+</div>
+</sc-if>
+</div>
+<aside style="position:sticky;top:20px;display:flex;flex-direction:column;gap:14px">
+<div style="background:#111318;color:#fff;border-radius:18px;padding:22px">
+<div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:#B9B3FF;margin-bottom:10px">AI &amp; ONLINE MARKETING</div>
+<sc-for list="{{ sideAi }}" as="c" hint-placeholder-count="5"><a href="#" style="display:flex;padding:9px 0;border-bottom:1px solid #262930;font:500 14.5px Geist,sans-serif;color:{{ c.fg }}" style-hover="color:#fff">{{ c.n }}<span style="margin-left:auto;color:#6B6E75">→</span></a></sc-for>
+</div>
+<div style="background:#fff;border:1px solid #E2DED5;border-radius:18px;padding:22px">
+<div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:#8A8D94;margin-bottom:10px">TOVÁBBI TOPLISTÁK</div>
+<sc-for list="{{ sideOther }}" as="c" hint-placeholder-count="5"><a href="#" style="display:block;padding:8px 0;font:500 14px Geist,sans-serif;color:{{ c.fg }}">{{ c.n }}</a></sc-for>
+</div>
+</aside>
+</div>
+<section style="background:#fff;border-top:1px solid #E2DED5;padding:52px 48px">
+<h2 style="margin:0;font:800 30px/1.1 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;color:#111318">{{ cat.seoH }}</h2>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;margin-top:26px;font:400 14.5px/1.65 Geist,sans-serif;color:#4A4D55">
+<sc-for list="{{ catSeo }}" as="s" hint-placeholder-count="3"><div><h3 style="margin:0 0 8px;font:700 17px/1.25 'Bricolage Grotesque',sans-serif;color:#111318">{{ s.h }}</h3><p style="margin:0;text-wrap:pretty">{{ s.p }}</p></div></sc-for>
+</div>
+</section>
+<footer style="background:#111318;color:#B8BBC3;padding:28px 48px;font:400 13.5px Geist,sans-serif;display:flex;gap:24px;align-items:center"><span style="font:800 18px 'Bricolage Grotesque',sans-serif;color:#fff">Ügynökségkereső</span><a href="#" style="color:#B8BBC3;margin-left:auto">A listák kiválasztási elvei</a><a href="#" style="color:#B8BBC3">ÁSZF</a><a href="#" style="color:#B8BBC3">Adatvédelmi tájékoztató</a><span style="color:#7B7E86">© 2026</span></footer>
+</div></div>
+
+<div class="dv-opt" id="2c"><div class="dv-olabel"><a class="dv-oid" href="#2c">2c</a>Kezdőlap · mobil · lenyitható SEO-szöveg</div>
+<div class="dv-card" style="width:390px;background:#F6F4EF">
+<header style="display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid #E2DED5"><span style="display:flex;align-items:center;gap:8px;font:800 18px 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;color:#111318"><span style="width:24px;height:24px;border-radius:7px;background:#111318;display:grid;place-items:center"><span style="width:9px;height:9px;border-radius:50%;border:2px solid #0E6B4F"></span></span>Ügynökségkereső</span><span style="margin-left:auto;font:500 12px 'Geist Mono',monospace;color:#6B6E75">HU</span><button onClick="{{ toggleMob }}" style="width:44px;height:44px;border-radius:10px;border:1px solid #D9D4C8;background:#fff;font-size:18px;cursor:pointer">{{ mobIcon }}</button></header>
+<sc-if value="{{ mobOpen }}" hint-placeholder-val="{{ false }}">
+<div style="background:#fff;border-bottom:1px solid #E2DED5;padding:10px 18px 18px;font:500 16px Geist,sans-serif">
+<a href="#" style="display:block;padding:12px 0;border-bottom:1px solid #F0EDE6">Kezdőlap</a>
+<div style="padding:12px 0 6px;font:500 11px 'Geist Mono',monospace;color:#8A8D94;letter-spacing:.06em">ÜGYNÖKSÉGEK</div>
+<sc-for list="{{ allCats }}" as="c" hint-placeholder-count="10"><a href="#" style="display:block;padding:10px 0 10px 12px;font-size:15px;border-left:2px solid #EAE6DD">{{ c.n }}</a></sc-for>
+<a href="#" style="display:block;padding:12px 0;border-bottom:1px solid #F0EDE6;margin-top:6px">Rólunk</a><a href="#" style="display:block;padding:12px 0;border-bottom:1px solid #F0EDE6">Blog</a><a href="#" style="display:block;padding:12px 0">Kapcsolat</a>
+</div>
+</sc-if>
+<section style="padding:30px 18px 24px">
+<div style="font:500 11px 'Geist Mono',monospace;letter-spacing:.06em;color:#6B6E75;margin-bottom:14px">FÜGGETLEN TOPLISTÁK · 2026</div>
+<h1 style="margin:0;font:800 40px/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;color:#111318">A legjobb magyar ügynökségek, <span style="color:#0E6B4F">egy helyen.</span></h1>
+<p style="margin:14px 0 0;font:400 16px/1.5 Geist,sans-serif;color:#4A4D55">Hasonlítsd össze őket, és keresd meg közvetlenül azt, aki tetszik.</p>
+</section>
+<section style="padding:0 18px 28px">
+<a href="#" style="display:block;background:#111318;color:#fff;border-radius:16px;padding:20px;margin-bottom:8px"><span style="font:500 11px 'Geist Mono',monospace;color:#B9B3FF;letter-spacing:.06em">TOPLISTA 2026</span><div style="font:800 26px/1.05 'Bricolage Grotesque',sans-serif;margin-top:24px">AI agent fejlesztő cégek</div><div style="font:400 13.5px Geist,sans-serif;color:#B8BBC3;margin-top:6px">Ügyfélszolgálat, sales, back-office</div></a>
+<div style="background:#fff;border:1px solid #E2DED5;border-radius:16px;overflow:hidden">
+<sc-for list="{{ mobList }}" as="c" hint-placeholder-count="9"><a href="#" style="display:flex;align-items:center;padding:14px 16px;min-height:48px;box-sizing:border-box;border-bottom:1px solid #F0EDE6;font:500 15px Geist,sans-serif">{{ c.n }}<span style="margin-left:auto;color:#B0ADA5">›</span></a></sc-for>
+</div>
+</section>
+<section style="background:#fff;border-top:1px solid #E2DED5;padding:26px 18px">
+<h2 style="margin:0;font:800 22px/1.15 'Bricolage Grotesque',sans-serif;letter-spacing:-.015em;color:#111318">Így válassz online marketing és AI ügynökséget</h2>
+<div style="display:flex;flex-direction:column;gap:16px;margin-top:16px;font:400 14.5px/1.6 Geist,sans-serif;color:#4A4D55">
+<sc-for list="{{ mobSeo }}" as="s" hint-placeholder-count="2"><div><h3 style="margin:0 0 6px;font:700 16px 'Bricolage Grotesque',sans-serif;color:#111318">{{ s.h }}</h3><p style="margin:0">{{ s.p }}</p></div></sc-for>
+</div>
+<button onClick="{{ toggleSeo }}" style="margin-top:16px;width:100%;min-height:44px;background:none;border:1px solid #D9D4C8;border-radius:10px;font:500 14px Geist,sans-serif;color:#111318;cursor:pointer">{{ seoBtn }}</button>
+</section>
+<footer style="background:#111318;color:#B8BBC3;padding:28px 18px;font:400 14px Geist,sans-serif;display:flex;flex-direction:column;gap:10px"><div style="font:800 18px 'Bricolage Grotesque',sans-serif;color:#fff">Ügynökségkereső</div><a href="#" style="color:#B8BBC3">A listák kiválasztási elvei</a><a href="#" style="color:#B8BBC3">ÁSZF</a><a href="#" style="color:#B8BBC3">Adatvédelmi tájékoztató</a><span style="font-size:12.5px;color:#7B7E86;margin-top:8px">© 2026 · hello@ugynoksegkereso.hu</span></footer>
+</div></div>
+
+</div>
+<p class="dv-next">Következő lehet: „a lábléc SEO-szövege legyen lenyitható desktopon is” · „<a class="dv-oid" href="#2b">2b</a> mobil nézete” · „angol változat”</p>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showMega&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Desktop&quot;},&quot;category&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Online marketing ügynökségek&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;AI agent fejlesztő cégek&quot;,&quot;AI SEO ügynökségek&quot;,&quot;Google Ads ügynökségek&quot;,&quot;Facebook hirdetés ügynökségek&quot;,&quot;Online marketing ügynökségek&quot;,&quot;PR ügynökségek&quot;,&quot;Keresőoptimalizáló ügynökségek&quot;,&quot;Amazon ügynökségek&quot;,&quot;Weboldal készítés&quot;,&quot;Tartalomgyártó ügynökségek&quot;],&quot;section&quot;:&quot;Toplista oldal&quot;}}">
+class Component extends DCLogic {
+  state = { mega: null, chip: 'AI agent fejlesztő cégek', cat: null, mob: false, seo: false };
+  renderVals() {
+    const s = this.state, p = this.props;
+    const CATS = [
+      { n: 'AI agent fejlesztő cégek', short: 'AI agent fejlesztés', ai: 1, d: '',
+        h1: 'Top AI agent fejlesztő cégek Magyarországon, 2026', q: 'Mit csinál egy AI agent fejlesztő cég?',
+        intro: 'Az AI agent fejlesztő cégek olyan mesterséges intelligencia alapú szoftvereket építenek, amelyek önállóan intéznek el feladatokat: válaszolnak az ügyfeleknek, minősítik a leadeket, vagy automatizálják a belső folyamatokat. Ezen a toplistán a hazai fejlesztőket rangsoroljuk referenciák, technológiai tudás és ügyfélértékelések alapján.',
+        seo: [['Mire jó egy AI agent?', 'Ügyfélszolgálat 0–24 órában, időpontfoglalás, ajánlatkészítés, CRM-frissítés vagy belső tudásbázis-kereső. Ott térül meg leggyorsabban, ahol sok az ismétlődő, szabályokkal leírható feladat.'], ['Mire figyelj a választáskor?', 'Kérdezd meg, milyen nyelvi modellel dolgoznak, hogyan kezelik az adataidat (GDPR), és mi történik, ha az agent nem tud válaszolni. Kérj működő demót a saját folyamatodra.'], ['Mennyibe kerül?', 'Egy egyszerű chat-agent néhány hét alatt elkészülhet, az összetett, több rendszerhez kapcsolódó megoldások hónapokig tartanak. Az ár a havi üzemeltetési költséggel együtt értelmezhető.']] },
+      { n: 'AI SEO ügynökségek', short: 'AI SEO', ai: 1, d: 'Láthatóság a ChatGPT, Gemini és Perplexity válaszaiban.',
+        h1: 'Top AI SEO ügynökségek Magyarországon, 2026', q: 'Mi az az AI SEO?',
+        intro: 'Az AI SEO (más néven GEO) azt jelenti, hogy a márkád megjelenik az AI keresők és asszisztensek, például a ChatGPT, a Gemini vagy a Perplexity válaszaiban. Itt azokat az ügynökségeket gyűjtöttük össze, amelyek a klasszikus keresőoptimalizálás mellett erre is specializálódtak.',
+        seo: [['Miben más, mint a hagyományos SEO?', 'A cél nem csak a 10 kék link közé kerülni, hanem forrásként szerepelni az AI által összerakott válaszban. Ehhez strukturált, hiteles, sokszor hivatkozott tartalom kell.'], ['Milyen munkát végez egy AI SEO ügynökség?', 'Tartalomauditot, entitás- és sémaoptimalizálást, említésszerzést releváns forrásokban, és méri, milyen kérdésekre hozzák elő a márkádat az AI-eszközök.'], ['Kinek érdemes most elkezdeni?', 'Annak, akinek a vevői már AI-eszközökkel kutatnak: B2B szolgáltatók, szoftvercégek, egészségügy, oktatás és prémium e-kereskedelem.']] },
+      { n: 'Google Ads ügynökségek', short: 'Google Ads', ai: 1, d: 'Keresési, Shopping és Performance Max kampányok.',
+        h1: 'Top Google Ads ügynökségek Magyarországon, 2026', q: 'Mit csinál egy Google Ads ügynökség?',
+        intro: 'A Google Ads ügynökségek tervezik, felépítik és folyamatosan optimalizálják a keresési, Shopping, YouTube és Performance Max kampányaidat, hogy a hirdetési kereted minél több vásárlást vagy érdeklődőt hozzon. A listán szereplő cégeket tapasztalat, partnerstátusz és értékelések alapján rangsoroljuk.',
+        seo: [['Mikor érdemes ügynökséget bízni meg?', 'Ha a havi hirdetési költés már érezhető tétel, vagy ha nincs belső kapacitásod a napi optimalizálásra, a mérés beállítására és a kreatívok tesztelésére.'], ['Mire figyelj?', 'A fiók maradjon a te tulajdonodban, legyen pontos konverziómérés, és kérj átlátható, üzleti mutatókra (ROAS, CPA) épülő riportot.'], ['Árazás', 'Jellemző a fix havi díj, a költés százalékos aránya vagy a kettő kombinációja. A legolcsóbb ajánlat ritkán hozza a legjobb megtérülést.']] },
+      { n: 'Facebook hirdetés ügynökségek', short: 'Facebook hirdetés', ai: 1, d: 'Meta kampányok Facebookon és Instagramon.',
+        h1: 'Top Facebook hirdetés ügynökségek Magyarországon, 2026', q: 'Mit csinál egy Facebook hirdetés ügynökség?',
+        intro: 'A Facebook hirdetés ügynökségek a Meta rendszerében, vagyis Facebookon és Instagramon futtatnak célzott kampányokat: márkaépítést, leadgyűjtést és webshop-értékesítést. Ezen a toplistán a legjobban teljesítő hazai Meta-specialistákat találod.',
+        seo: [['Kinek való a Meta hirdetés?', 'Szinte minden B2C vállalkozásnak, és egyre több B2B cégnek is. Akkor a legerősebb, ha a terméked vizuálisan jól bemutatható, vagy ha igényt kell teremteni.'], ['Mire figyelj a választáskor?', 'Kérdezz rá a kreatívgyártásra és a tesztelési folyamatra. A Meta algoritmusa ma elsősorban a kreatív minőségén keresztül céloz.'], ['Mérés', 'Pixel és Conversions API, helyesen beállított események, és a Google Analytics adataival összevetett riport. Enélkül a kampány vakon fut.']] },
+      { n: 'Online marketing ügynökségek', short: 'Online marketing', ai: 1, d: 'Teljes körű online marketing egy kézben.',
+        h1: 'Magyarország top online marketing ügynökségei, 2026', q: 'Mi az az online marketing ügynökség?',
+        intro: 'Az online marketing ügynökségek egy kézben kezelik a cég teljes digitális jelenlétét: a hirdetéseket, a keresőoptimalizálást, a közösségi médiát, a tartalmat és a mérést. Ezen a toplistán azokat a hazai ügynökségeket rangsoroljuk, amelyek több csatornán is bizonyítottak.',
+        seo: [['Milyen szolgáltatásokat kapsz?', 'Stratégiát, PPC-kampánykezelést (Google, Meta, TikTok), SEO-t, tartalomgyártást, e-mail marketinget és webanalitikát. A legtöbb ügynökségnek van egy-két erős fókusza.'], ['Budapesti vagy vidéki ügynökség?', 'Online munkánál a földrajzi közelség ritkán döntő. Fontosabb, hogy legyen tapasztalatuk a te iparágadban, és dedikált kapcsolattartót kapj.'], ['Hogyan indul az együttműködés?', 'Jellemzően egy auditkal és stratégiai megbeszéléssel. Ezután jön a csatornák kiválasztása, a mérés beállítása és a havi riportolási rend.']] },
+      { n: 'PR ügynökségek', short: 'PR', d: '', h1: 'Top PR ügynökségek Magyarországon, 2026', q: 'Mit csinál egy PR ügynökség?',
+        intro: 'A PR ügynökségek a cég hírnevét és sajtójelenlétét építik: médiakapcsolatokat ápolnak, sajtóközleményeket írnak, és krízishelyzetben kommunikációs támogatást adnak. Itt a legjobb hazai PR-cégeket találod.',
+        seo: [['Mikor kell PR?', 'Termékbevezetésnél, befektetési kör előtt, munkáltatói márkaépítésnél és krízisben.'], ['PR és online marketing', 'A jó PR ma már online is dolgozik: a megjelenések linkjei a SEO-t, a hiteles említések az AI-láthatóságot is erősítik.'], ['Mérés', 'Megjelenések száma és minősége, elért közönség, márkaemlítések és a hivatkozó forgalom.']] },
+      { n: 'Keresőoptimalizáló ügynökségek', short: 'SEO', d: '', h1: 'Top keresőoptimalizáló (SEO) ügynökségek, 2026', q: 'Mit csinál egy SEO ügynökség?',
+        intro: 'A keresőoptimalizáló ügynökségek azon dolgoznak, hogy a weboldalad a releváns kulcsszavakra minél előrébb jelenjen meg a Google-ben: kulcsszókutatással, technikai és tartalmi optimalizálással és linképítéssel.',
+        seo: [['Mennyi idő alatt hat?', 'Az első eredmények jellemzően 3–6 hónap után látszanak. A SEO hosszú távú befektetés.'], ['Mire figyelj?', 'Kerüld a garantált első helyet ígérő ajánlatokat. Kérj kulcsszóstratégiát és átlátható linképítési tervet.'], ['SEO vagy AI SEO?', 'A kettő egymásra épül: erős technikai és tartalmi alap nélkül az AI keresőkben sem leszel látható.']] },
+      { n: 'Amazon ügynökségek', short: 'Amazon', d: '', h1: 'Top Amazon ügynökségek Magyarországon, 2026', q: 'Mit csinál egy Amazon ügynökség?',
+        intro: 'Az Amazon ügynökségek segítenek a termékeid Amazonos bevezetésében és értékesítésében: listing-optimalizálást, hirdetéskezelést (Amazon PPC) és fiókmenedzsmentet végeznek.',
+        seo: [['Kinek érdemes?', 'Olyan magyar gyártóknak és márkáknak, akik nyugat-európai vagy amerikai piacra lépnének.'], ['Mit kapsz?', 'Kulcsszókutatást, termékoldal-szövegeket és képeket, A+ tartalmat, PPC-kampányokat és készletstratégiát.'], ['Mire figyelj?', 'Legyen tapasztalatuk a célpiacodon, és a márkaregisztrációban (Brand Registry) is tudjanak segíteni.']] },
+      { n: 'Weboldal készítés', short: 'Weboldal', d: '', h1: 'Top weboldal készítő cégek Magyarországon, 2026', q: 'Mire figyelj weboldal készítésnél?',
+        intro: 'A weboldal készítő cégek tervezik és fejlesztik a céges weboldalakat és webshopokat. A jó oldal gyors, mobilon is jól használható, és a marketingcélokra van építve. Ezen a listán a megbízható hazai fejlesztőket rangsoroljuk.',
+        seo: [['Egyedi vagy sablon?', 'Kisebb projektnél egy jól testreszabott sablon is elég lehet. Összetett funkcióknál az egyedi fejlesztés hosszú távon olcsóbb.'], ['Sebesség és SEO', 'Kérj Core Web Vitals-célokat a szerződésbe. A lassú oldal hirdetési pénzt és helyezéseket is veszít.'], ['Üzemeltetés', 'Tisztázd előre, ki frissít, ki ment, és mennyibe kerül a karbantartás.']] },
+      { n: 'Tartalomgyártó ügynökségek', short: 'Tartalomgyártás', d: '', h1: 'Top tartalomgyártó ügynökségek Magyarországon, 2026', q: 'Mit csinál egy tartalomgyártó ügynökség?',
+        intro: 'A tartalomgyártó ügynökségek blogcikkeket, közösségimédia-posztokat, videókat és podcastokat készítenek a marketingstratégiád alapján, a SEO, a márkaépítés és az értékesítés támogatására.',
+        seo: [['Milyen tartalom kell?', 'Ami a vevőid kérdéseire válaszol. A formátum (cikk, rövid videó, podcast) a közönségedhez igazodjon.'], ['AI-val vagy anélkül?', 'Az AI gyorsít, de a szakmai hitelességhez és az egyedi nézőponthoz emberi szakértő kell.'], ['Mérés', 'Organikus forgalom, elköteleződés, és hány érdeklődőt vagy vásárlást hozott a tartalom.']] }
+    ];
+    const aiCats = CATS.filter(c => c.ai), otherCats = CATS.filter(c => !c.ai);
+    const chips = CATS.map(c => {
+      const on = s.chip === c.n;
+      return { label: c.short, bg: on ? '#111318' : '#fff', fg: on ? '#fff' : '#111318', bd: on ? '#111318' : '#D9D4C8', pick: () => this.setState({ chip: c.n }) };
+    });
+    const stars = r => '★'.repeat(Math.floor(r)) + (r % 1 ? '½' : '');
+    const ini = n => n.replace(/[^A-Za-zÁÉÍÓÖŐÚÜŰ0-9 ]/g, '').split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+    const U = 'https://www.ugynoksegkereso.hu/wp-content/uploads/';
+    const RAW = [
+      ['Exaline', 5, '2023/05/Exaline-I-Logo.png', 'exaline.hu', 'PPC|Garancia|Full service', 'Teljes körű online marketing megvalósítás, eredménygaranciával. Fontos számunkra, hogy mindkét fél nyerjen az együttműködésen, és ez csak akkor lehetséges, ha mi is felelősséget vállalunk az eredményekért. Stratégiától a kampánykezelésen át a riportolásig mindent egy csapat visz, dedikált kapcsolattartóval.'],
+      ['Bestmarketing', 5, '2023/08/Kbestmarketing-1024x1024.png', 'bestmarketing.hu', 'Google Partner|Meta Partner|Debrecen', 'Szenvedélyesen és hatékonyan vezetjük ügyfeleinket a digitális siker felé. Tapasztalt csapatunk kreatív, eredményközpontú stratégiákkal segít kitűnni a digitális zajból. Hivatalos Google és Meta partnerként 14 éve dolgozunk hazai kis- és középvállalkozásokkal.'],
+      ['MAON', 5, '2024/08/ugynoksegek-logoi-26-1024x1024.png', 'maon.hu', 'Stratégia|Full service', 'Személyre szabott szolgáltatásainkkal és árazásunkkal olyan döntéshozókkal szeretnénk dolgozni, akik regionális vagy akár országos piacvezetővé akarják tenni a vállalkozásukat. Ehhez a szakértelmünket, a tapasztalatunkat és teljes marketing eszköztárunkat kínáljuk.'],
+      ['Dog and Pony', 5, '2025/08/ugynoksegek-logoi-42-1024x1024.png', 'marketingtanacsado.hu', 'Kreatív|Online + offline', 'Büszkék vagyunk rá, hogy egyedi szakértelmünkkel, munkamoralunkkal és magas minőségű munkánkkal vállalkozások növekedését segíthetjük. Ha kreatív és professzionális marketingmegoldást keresel, ami tényleg működik és értéket ad az üzletednek, megtaláltad az ügynökséged.'],
+      ['Follow Marketing', 5, '2024/11/ugynoksegek-logoi-2-1024x1024.png', 'followmarketing.eu', 'Meta|Leadgenerálás', 'Több ezer együttműködés után online ügyfél- és vevőszerző gépezetet építünk neked, hogy végre a skálázásra és a növekedésre koncentrálhass, ne a hirdetéseid miatt aggódj.'],
+      ['Barna Design', 4.5, '2026/02/ugynoksegek-logoi-1024x1024.png', 'barnadesign.eu', 'Webshop|Design|Red Dot', 'Többszörös Red Dot-díjas kreatív ügynökség, amely weboldalak és webshopok tervezésére, valamint online marketing rendszerek fejlesztésére specializálódott. A tervezéstől a megvalósításon át a forgalomszerzésig egységben gondolkodunk, hogy az online jelenlét valódi növekedést hozzon.'],
+      ['OpenOnline', 4.5, '2024/10/ugynoksegek-logoi-33-1024x1024.png', 'openonline.hu', 'Adatvezérelt|PPC', 'Dinamikus, adatvezérelt digitális marketing ügynökség innovatív megoldásokkal, egyedi stratégiákkal, csatornaspecifikus szakértelemmel és hibátlan kivitelezéssel, hogy maximalizáld a bevételed.'],
+      ['Maximum Business', 4.5, '2024/10/ugynoksegek-logoi-32-1024x1024.png', 'maximumbusiness.hu', 'Web|Marketing|MMSZ tag', '360 fokos web- és marketingügynökség, amely cégeket és márkákat juttat a legjobb 1% közé. Az elmúlt 12 évben több mint 1000 cég sikeréhez járultunk hozzá. A Magyar Marketing Szövetség tagjai vagyunk.'],
+      ['Drive Online', 4.5, '2025/07/ugynoksegek-logoi-41-1024x1024.png', 'driveonline.hu', 'Google Ads|Meta', 'A 14 fős Drive Online Marketing 10 éve segíti partnereit. Fő fókuszunk a Google és Meta kampánykezelés, de a stratégiától a tartalomig teljes körű online marketing támogatást adunk.'],
+      ['Tartalom Design', 4.5, '2026/05/Tartalom-design-1024x1024.png', 'tartalomdesign.hu', 'AI SEO|Weboldal|Hirdetés', 'Olyan marketingrendszereket építünk, amelyek az első naptól bevételt termelnek. A klasszikus online marketinget AI-alapú láthatósággal kombináljuk, teljes körű megvalósítással: weboldal, hirdetés, tartalom egy helyen, azonnal.'],
+      ['Plus Creative Agency', 4.5, '2023/08/ugynoksegek-logoil-1024x1024.png', 'plus-kreativ.hu', 'Branding|Leadgenerálás', 'Full service marketingügynökség extra kreativitással. 10 éves ügynökség egyedi design- és marketingcsapattal, amely márkaépítésben, értékesítésnövelésben és leadgenerálásban segít.'],
+      ['BeOnWeb', 3.5, '2024/12/ugynoksegek-logoi-16-1024x1024.png', 'beonweb.hu', 'Full service|Integrált', 'A full service nálunk nem divatszó, hanem az integrált megoldásaink alapja, ami hatékony marketinget és több bevételt eredményez.'],
+      ['Marketing21', 4.5, '2024/09/ugynoksegek-logoi-15-1024x1024.png', 'marketing21.hu', 'PPC|Webshop|Employer branding', '18 fős, 360 fokos digitális ügynökség 90+ elégedett ügyféllel. Az analitikus PPC-kampánykezelést kreatív ügynökségi képességekkel ötvözzük. Fő területeink a webshop marketing, a leadgenerálás és az employer branding.'],
+      ['Prioris', 4.5, '2025/09/ugynoksegek-logoi-47-1024x1024.png', 'prioris.hu', 'Stratégia|Adatvezérelt', 'Közel 10 év és több milliárd forint elköltött hirdetési keret után egyet biztosan tudunk: az online marketingben nincs B terv. Vagy nősz, vagy lemaradsz. Stratégiánk mindig adatalapú döntéseken nyugszik.'],
+      ['Optimalizált Online Marketing', 4.5, '2023/08/ugynoksegek-logoi-11-1024x1024.png', 'optimalizalt.hu', 'Google Partners|Meta', 'Google és Meta kampányok létrehozása és finomhangolása, valamint a hirdetett weboldalak teljesítményének javítása. Google Partners ügynökségként fiatalos lendülettel és szakértelemmel dolgozunk.'],
+      ['Radelit', 4.5, '2024/01/ugynoksegek-logoi-1024x1024.png', 'radelitmedia.hu', 'Full service|Videó|Influencer', 'Full service marketingügynökség: digitális marketing, influencer kampányok, kisfilmek, reklámfilmek, rendezvényfilmezés, grafika és nyomdai gyártás egy helyen.'],
+      ['PPC Media', 4.5, '2023/08/ppc-media-1024x1024.png', 'ppcmedia.hu', 'Google Ads|Nemzetközi', 'Nemzetközi online marketing ügynökség, Google Ads kampánykezelésre specializálódva, több mint 17 év tapasztalattal. Elsősorban performance és branding hirdetéskezelést végzünk.'],
+      ['PPC Online Webmarketing', 4.5, '2024/02/ugynoksegek-logoi-5-1024x1024.png', 'ppconline.hu', 'Google Ads|Meta|LinkedIn', 'Friss, fiatalos csapat 10+ év ügynökségi tapasztalattal rendelkező vezetővel. Google Ads, Facebook és Instagram hirdetések, LinkedIn, SEO és WordPress weboldalak.'],
+      ['SocialWings', 4.5, '2024/03/ugynoksegek-logoi-7-1024x1024.png', 'socialwings.hu', 'PPC|E-mail', 'Full stack digitális ügynökség erős PPC- és e-mail marketing fókusszal, grafikai, fejlesztési és tartalomgyártási háttérrel.'],
+      ['Seven Digits Media', 4.5, '2023/09/7digits-1024x1024.png', '7blog.hu', 'Senior csapat|Full stack', 'Full stack digitális ügynökség kizárólag tapasztalt, senior szakemberekkel és professzionális eszközökkel, mérhető eredményekért.'],
+      ['Selector', 4.5, '2023/05/Nevtelen-terv-6-1024x1024.png', 'selector.hu', 'Full service|MarTech', 'Full service digitális marketing ügynökségként azokat a megoldásokat, technológiákat és eszközöket kutatjuk és kombináljuk, amelyek a legtöbb értéket teremtik ügyfeleinknek.'],
+      ['RG-STÚDIÓ', 5, '2025/01/ugynoksegek-logoi-24-1024x1024.png', 'rgstudio.hu', '25 év|Full service', '25 éve dolgozunk azon, hogy partnereink kiaknázzák iparáguk teljes üzleti potenciálját. Széles tudásbázisú, naprakész szakértői csapatot kapsz.'],
+      ['LEAD+', 3.5, '2026/04/Lead-1024x1024.png', 'leadplus.hu', 'Leadgenerálás|Outreach', 'Olyan vállalkozóknak segítünk, akik kiválóak abban, amit csinálnak, mégsincs elég érdeklődőjük. Növeljük a láthatóságod, vagy célzott megkereső kampányokat indítunk.'],
+      ['Growww Digital', 4, '2024/10/ugynoksegek-logoi-35-1024x1024.png', 'growwwdigital.com', 'CEE|Performance', 'Közép-kelet-európai fókuszú, teljesítményorientált digitális ügynökség: PPC, SEO, analitika, közösségi média és tartalommarketing.'],
+      ['Webgrow', 4, '2024/10/ugynoksegek-logoi-31-1024x1024.png', 'webgrow.hu', 'PPC|Analitika|Web', 'PPC-hirdetéskezelők, analitikusok, webfejlesztők, tartalomgyártók és grafikusok, akik segítenek megtalálni és megnyerni a közönséged.'],
+      ['Klikkmánia', 4, '2023/08/klikkmarketing-1024x1024.png', 'klikkmania.hu', 'Premier Google Partner|Meta', 'Közel 20 éve nyújtunk minőségi online marketing szolgáltatást. Premier Google Partnerként a hazai ügynökségek legjobb 3%-ába tartozunk, emellett Meta minősített cég is vagyunk.'],
+      ['DLX MEDIA', 3.5, '2024/09/ugynoksegek-logoi-24-1024x1024.png', 'dlxmedia.hu', 'Videó|Podcast|PR', 'Szakértői márkákat építünk kkv-knak: videógyártás, YouTube-csatornakezelés, podcast, közösségi média, PR és szövegírás.'],
+      ['‘Vantgard Digital', 4, '2024/08/ugynoksegek-logoi-28-1024x1024.png', 'vantgarddigital.hu', 'SEO|PPC|Tartalom', 'Full service kreatív és digitális ügynökség a stratégiától a SEO-n, Google PPC-n, közösségi médián és e-mail kampányokon át a rendszeres tartalomgyártásig.'],
+      ['FORWEB', 4, '2024/08/ugynoksegek-logoi-27-1024x1024.png', 'forweb.hu', 'Google|Facebook|TikTok', 'Google és Facebook kampánykezelés, e-mail marketing, keresőoptimalizálás, tartalommarketing, TikTok marketing és márkaépítés.'],
+      ['HD marketing', 4, '2025/08/ugynoksegek-logoi-44-1024x1024.png', 'hdmarketing.hu', 'PPC|Hírlevél|Social', '2011 óta foglalkozunk PPC-kampánykezeléssel, közösségi kommunikációval, hírlevélküldéssel és tartalomgyártással, hazai piacvezetőkkel az e-kereskedelemtől az egészségügyig.'],
+      ['360 Marketing', 4, '2023/08/360-1024x1024.png', '360-marketing.hu', 'SEO|PPC|Stratégia', 'Növeld vállalkozásod online jelenlétét és eredményeit! Profi csapatunk megtervezi a márkaépítési stratégiát, és megvalósítja a célokhoz vezető feladatokat. Hatékony SEO és PPC megoldások.'],
+      ['Future Management', 4, '2023/08/Kfuturemanagement-1024x1024.png', 'futuremanagement.hu', 'Egészségügy|Webshop', '23 fős online marketing ügynökség 10+ év tapasztalattal. Fókuszterületeink az egészségügyi marketing, a webshop marketing, a szolgáltatásmarketing és az employer branding.'],
+      ['Netmarketing', 4, '2023/08/Knetmarketing-1024x1024.png', 'netmarketing.hu', 'Full service', 'Több mint 12 éve meghatározó szereplői vagyunk a hazai online marketingnek, eredményorientált, teljes körű digitális megoldásokkal.'],
+      ['Chiro', 4, '2024/05/ugynoksegek-logoi-14-1024x1024.png', 'chiro.hu', 'Social|PPC|Podcast', 'Több mint egy évtized tapasztalat: stratégia, közösségi média, PPC, employer branding, podcast, videómarketing, blog, hírlevél és tanácsadás.'],
+      ['Fusion 4', 4, '2024/01/ugynoksegek-logoi-1-1024x1024.png', 'fusion4.hu', 'Tanácsadás|Full service', 'Meghallgatunk, érthetően elmondjuk, mire van szükséged, és profin megcsináljuk. A marketinged nem feneketlen kút lesz, hanem pénzt és értéket teremtő befektetés.'],
+      ['InterWORD', 4, '2023/08/logo-1024x1024.png', 'interword.hu', 'Veszprém|Branding', 'Kreativitás és stratégiai szemlélet Veszprémből, a márkaépítéstől a célzott digitális hirdetésekig.'],
+      ['BOOM Marketing', 4, '2023/09/boom-1024x1024.png', 'boommarketing.hu', 'Rendszerépítés', 'Segítünk a következő szintre lépni: felépítjük az online marketing rendszered, cégmérettől függetlenül.'],
+      ['COMPANY 365', 3, '2025/02/ugynoksegek-logoi-27-1024x1024.png', 'company-365.com', 'Web|Nyomda', 'Mindent egy helyen: weboldal-kezelés, online marketing és nyomdai szolgáltatások.'],
+      ['BolkoDesign', 3.5, '2023/11/BD-1024x1024.png', 'bolkodesign.hu', 'Branding|Web|Social', 'Kreatív ügynökség extrákkal: branding, marketing, weboldal, közösségi média és gyártás, testreszabott, komplex szolgáltatásként.'],
+      ['KALU', 3.5, '2024/05/ugynoksegek-logoi-13-1024x1024.png', 'kalu.io', 'Rövid videó|TikTok', 'Eredményorientált ügynökség, fő fókuszban a rövid formátumú tartalomgyártás TikTokra, YouTube-ra, Instagramra és Facebookra.'],
+      ['Erika Integrált Marketing', 3.5, '2023/08/Kugynoksegek-logoi-1024x1024.png', 'marketingeserika.hu', 'Kkv|TikTok', 'All inclusive marketing kkv-knak: termékfotózástól a Google-, Facebook- és TikTok-hirdetésen át a webes szövegírásig.'],
+      ['Welovedigital', 3.5, '2023/08/Kwelovedigital-1024x1024.png', 'welovedigital.hu', 'Webshop|PPC|SEO', 'Webshopokra szabott PPC- és SEO-kampányokat tervezünk és optimalizálunk.'],
+      ['2100Labs', 3.5, '2023/12/2100lab.png', '2100labs.com', 'Kreatív|Piackutatás', 'Szinte visszautasíthatatlan online hirdetési ajánlatok pszichológiai triggerekkel, megállító kreatívokkal és piackutatással.'],
+      ['BDA', 3.5, '2024/05/ugynoksegek-logoi-15-1024x1024.png', 'bda.hu', 'Adatvezérelt', 'Adatvezérelt digitális marketing ügynökség csatornaspecifikus szakértelemmel és bevételfókuszú stratégiákkal.'],
+      ['Marketing Consulting', 3.5, '2023/08/marketing-consulting-1024x1024.png', 'marketing-consulting.hu', 'Ügyfélélmény', 'Hisszük, hogy semmi sem fontosabb a jó ügyfélélménynél, nemcsak ügyfeleink, hanem az ő vevőik és partnereik számára is.'],
+      ['Top Target', 3.5, '2023/06/ugynoksegek-logoi-1024x1024.png', 'toptarget.hu', '2009 óta|Senior', '2009 óta foglalkozunk online marketinggel, kizárólag 5–10 év tapasztalattal rendelkező munkatársakkal.'],
+      ['CityMarketing', 3.5, '2023/09/city-marketing-1024x1024.png', 'citymarketing.hu', 'Full service', 'Több mint ügynökség: full service online marketing, innovatív és egyedi megoldásokkal.'],
+      ['Toldi Marketing', 3.5, '2023/09/Toldilogo-1024x1024.png', 'toldimarketing.hu', 'PPC|AI SEO|GEO', 'Trendkövető, tudatos online marketing stratégiák és megoldások, kiváló értékelésekkel és nagy márkákkal a portfólióban.'],
+      ['AdOps Digital', 3.5, '2024/04/ugynoksegek-logoi-10-1024x1024.png', 'ad-ops.hu', 'Budapest|Full stack', 'Budapesti full stack marketingügynökség átlátható működéssel: az eredményeink a referenciáink.']
+    ];
+    const PARTNERS = new Set(['Tartalom Design', 'Klikkmánia']);
+    const agencies = RAW.map(([n, r, logo, url, tags, d], i) => ({ n, r, url, d, logo: U + logo, alt: n + ' logó', tags: tags.split('|'), partner: PARTNERS.has(n),
+      rank: String(i + 1).padStart(2, '0'), ini: ini(n), stars: stars(r), r: r.toFixed(1).replace('.', ',') }));
+    const curName = s.cat ?? p.category ?? 'Online marketing ügynökségek';
+    const cat = CATS.find(c => c.n === curName) || CATS[4];
+    const side = list => list.map(c => ({ n: c.n, fg: c.n === cat.n ? '#0E6B4F' : undefined }));
+    const homeSeo = [
+      { h: 'Mi az Ügynökségkereső?', p: 'Független magyar oldal, ahol szolgáltatás szerint bontott toplistákban találod a hazai online marketing, Google Ads, Facebook hirdetés, AI SEO, AI agent fejlesztő, PR, SEO, Amazon, weboldal készítő és tartalomgyártó cégeket.' },
+      { h: 'Hogyan rangsorolunk?', p: 'A sorrend ügyfélértékeléseken, referenciákon, szakmai tapasztalaton és a nyilvános cégadatokon alapul. A részletes szempontokat a kiválasztási elvek oldalon írjuk le.' },
+      { h: 'Online marketing ügynökség vagy specialista?', p: 'Ha több csatornára van szükséged, a teljes körű online marketing ügynökség a kényelmesebb. Ha egy csatornát akarsz kihozni a maximumra, válassz Google Ads vagy Facebook hirdetés specialistát.' },
+      { h: 'AI SEO és AI agentek: miért most?', p: 'A vásárlók egyre gyakrabban ChatGPT-ben és Geminiben keresnek. Az AI SEO ügynökségek ott tesznek láthatóvá, az AI agent fejlesztők pedig automatizálják az ügyfélszolgálatot és az értékesítést.' },
+      { h: 'Mire figyelj a választásnál?', p: 'Nézd meg a referenciákat a saját iparágadban, kérdezz rá a riportolásra, és tisztázd, kié a hirdetési fiók. A jó ügynökség üzleti célokban, nem kattintásokban gondolkodik.' },
+      { h: 'Hogyan veszed fel velük a kapcsolatot?', p: 'Minden toplistában közvetlenül az ügynökség weboldalára mutat a link. Nem vagyunk közvetítők, a tárgyalás és a megállapodás köztetek történik.' }
+    ];
+    return {
+      megaOpen: s.mega ?? (p.showMega ?? true),
+      openMega: () => this.setState({ mega: true }),
+      closeMega: () => this.setState({ mega: false }),
+      toggleMega: e => { e.preventDefault(); this.setState(st => ({ mega: !(st.mega ?? (p.showMega ?? true)) })); },
+      aiCats, otherCats, allCats: CATS, chips,
+      chipCta: `${s.chip}: toplista megnyitása →`,
+      featured: CATS.slice(1, 5),
+      topFive: agencies.slice(0, 5),
+      cat: { ...cat, seoH: `${cat.n}: amit érdemes tudni` }, catSeo: cat.seo.map(([h, p]) => ({ h, p })),
+      catTabs: CATS.map(c => ({ n: c.short, bg: c.n === cat.n ? '#fff' : '#3a3a3a', fg: c.n === cat.n ? '#111' : '#ddd', pick: () => this.setState({ cat: c.n }) })),
+      ...(() => {
+        const q = (s.q || '').toLowerCase();
+        const f = agencies.filter(a => !q || (a.n + ' ' + a.tags.join(' ') + ' ' + a.d).toLowerCase().includes(q));
+        const shown = Math.min(s.shown ?? 10, f.length), compact = !!s.compact, exp = s.exp || {};
+        return {
+          q: s.q || '', onQ: e => this.setState({ q: e.target.value, shown: 10 }),
+          partnerRows: agencies.filter(a => a.partner),
+          totalLabel: `${agencies.length} ügynökség`,
+          listRows: f.slice(0, shown).map(a => ({ ...a, long: a.d.length > 190, clamp: exp[a.n] ? 'unset' : 3,
+            moreLabel: exp[a.n] ? 'Kevesebb' : 'Teljes bemutatkozás', toggle: () => this.setState(st => ({ exp: { ...(st.exp || {}), [a.n]: !(st.exp || {})[a.n] } })) })),
+          hideImg: e => { e.currentTarget.style.display = 'none'; },
+          showIntro: !compact, rowPad: compact ? '14px 20px' : '22px 22px', logoCol: compact ? '56px' : '104px', logoSize: compact ? '56px' : '104px',
+          setDetail: () => this.setState({ compact: false }), setCompact: () => this.setState({ compact: true }),
+          detailBg: compact ? 'transparent' : '#111318', detailFg: compact ? '#111318' : '#fff', compactBg: compact ? '#111318' : 'transparent', compactFg: compact ? '#fff' : '#111318',
+          hasMore: shown < f.length, progress: `${Math.round(shown / Math.max(f.length, 1) * 100)}%`,
+          shownLabel: `${shown} / ${f.length} megjelenítve`,
+          moreBtn: `További ${Math.min(10, f.length - shown)} ügynökség (${shown + 1}–${Math.min(shown + 10, f.length)})`,
+          loadMore: () => this.setState({ shown: shown + 10 })
+        };
+      })(),
+      sideAi: side(aiCats), sideOther: side(otherCats),
+      homeSeo, mobSeo: s.seo ? homeSeo : homeSeo.slice(0, 1), seoBtn: s.seo ? 'Kevesebb' : 'Tovább olvasom', toggleSeo: () => this.setState(st => ({ seo: !st.seo })),
+      mobOpen: s.mob, mobIcon: s.mob ? '×' : '☰', toggleMob: () => this.setState(st => ({ mob: !st.mob })),
+      mobList: CATS.slice(1)
+    };
+  }
+}
+</script>
+</body>
+</html>
