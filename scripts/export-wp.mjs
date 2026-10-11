@@ -4,7 +4,7 @@
 import { readFile, writeFile, mkdir, rm, copyFile } from 'node:fs/promises';
 import { CATS, AGENCIES, PARTNERS, HOME_TOP } from '../src/data.mjs';
 import { MEGYE } from '../src/megyek.mjs';
-import { buildRefPages, buildIndustryPages } from '../src/ugyfelek-minositesek.mjs';
+import { buildRefPages, buildIndustryPages, industryName, certName, slugify } from '../src/ugyfelek-minositesek.mjs';
 import { TAGS } from '../src/tags.mjs';
 
 const OUT = 'wordpress/kompasz-core/import';
@@ -89,6 +89,14 @@ const refPages = buildRefPages(db.companies.filter(c => shownSlugs.has(c.slug)))
 for (const a of agencies) { const r = refPages.byAgency[a.slug] || {}; a.client_terms = r.clients || []; a.cert_terms = r.certs || []; }
 const indPages = buildIndustryPages(db.companies.filter(c => shownSlugs.has(c.slug)));
 for (const a of agencies) a.industry_terms = indPages.byAgency[a.slug] || [];
+// Az adatlapon megjelenő iparág- és minősítésnevek: ha van hozzájuk saját oldal, a slugjukkal (a sablon linkké teszi)
+const indSlugs = new Set(indPages.list.map(t => t.slug)), certSlugs = new Set(refPages.certs.map(t => t.slug));
+for (const a of agencies) {
+  const n = (s) => { const m = industryName(s); const k = m ? slugify(m) : ''; return { name: s, slug: indSlugs.has(k) ? k : '' }; };
+  const c = (s) => { const k = slugify(certName(s)); return { name: s, slug: certSlugs.has(k) ? k : '' }; };
+  a.industry_links = (a.industries || []).map(n);
+  a.cert_links = (a.certs || []).map(c);
+}
 const bySlugName = Object.fromEntries(agencies.map(a => [a.name, a.slug]));
 const featured = Object.keys(PARTNERS)[0];
 const data = {

@@ -53,17 +53,16 @@ $around = $list ? array_slice($list, max(0, min($pos - 3, count($list) - 5)), 5,
           <h3>Szolgáltatások</h3>
           <div class="svc"><?php foreach ($a['services'] as $s) echo '<span>' . esc_html($s) . '</span>'; ?></div>
         <?php endif; ?>
-        <?php $ind_terms = get_the_terms($a['id'], 'iparag'); if ($ind_terms && !is_wp_error($ind_terms)): ?>
-          <h3>Iparági listák</h3>
-          <div class="svc links"><?php foreach ($ind_terms as $t) printf('<a href="%s">%s →</a>', esc_url(get_term_link($t)), esc_html($t->name)); ?></div>
-        <?php endif; ?>
-        <?php $cert_terms = get_the_terms($a['id'], 'minosites'); if ($cert_terms && !is_wp_error($cert_terms)): ?>
-          <h3>Minősítések szerinti listák</h3>
-          <div class="svc links"><?php foreach ($cert_terms as $t) printf('<a href="%s">%s →</a>', esc_url(get_term_link($t)), esc_html($t->name)); ?></div>
-        <?php endif; ?>
-        <?php foreach (['Minősítések' => $a['certs'], 'Iparági tapasztalat' => $a['industries'], 'Munkanyelvek' => $a['languages']] as $h => $items): if (!$items) continue; ?>
+        <?php
+        // Ha egy iparágnak vagy minősítésnek saját oldala van (több cég is megnevezi), a címke oda linkel
+        $term_links = json_decode((string) get_post_meta($a['id'], 'kompasz_term_links', true), true) ?: [];
+        foreach (['Minősítések' => [$a['certs'], 'minosites'], 'Iparági tapasztalat' => [$a['industries'], 'iparag'], 'Munkanyelvek' => [$a['languages'], '']] as $h => [$items, $tax]): if (!$items) continue; ?>
           <h3><?php echo esc_html($h); ?></h3>
-          <div class="svc"><?php foreach ($items as $s) echo '<span>' . esc_html($s) . '</span>'; ?></div>
+          <div class="svc links"><?php foreach ($items as $s) {
+            $slug = $tax ? ($term_links[$tax][mb_strtolower(trim($s))] ?? '') : '';
+            $term = $slug ? get_term_by('slug', $slug, $tax) : null;
+            echo $term ? sprintf('<a href="%s">%s →</a>', esc_url(get_term_link($term)), esc_html($s)) : '<span>' . esc_html($s) . '</span>';
+          } ?></div>
         <?php endforeach; ?>
         <?php $client_terms = get_the_terms($a['id'], 'ugyfel'); if ($client_terms && !is_wp_error($client_terms)): ?>
           <h3>Akiknek még más ügynökség is dolgozott</h3>

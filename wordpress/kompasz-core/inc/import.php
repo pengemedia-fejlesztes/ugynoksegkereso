@@ -104,6 +104,10 @@ function kompasz_import_agencies(array $data, $offset, $limit) {
         $id = $existing ? wp_update_post($post, true) : wp_insert_post($post, true);
         if (is_wp_error($id)) continue;
         // Rendszeradatok: mindig a repó az igazság (sorrend, értékelés, belső jegyzet)
+        // Iparág/minősítés név → saját oldal slugja (az adatlapon linkké válik)
+        $links = [];
+        foreach (['industry_links' => 'iparag', 'cert_links' => 'minosites'] as $k => $tax) foreach ($a[$k] ?? [] as $l) if (!empty($l['slug'])) $links[$tax][mb_strtolower(trim($l['name']))] = $l['slug'];
+        update_post_meta($id, 'kompasz_term_links', wp_json_encode($links, JSON_UNESCAPED_UNICODE));
         $meta = ['kompasz_rank' => $a['rank'] ?? '', 'kompasz_rating' => $a['rating'] ?? '', 'kompasz_logo_dark' => $a['logo_dark'] ? '1' : '',
             'kompasz_source_url' => $a['source_url'] ?? ''];
         // Profiladatok: csak üres mezőbe írunk, hogy a WP adminban vagy a cégfiókban szerkesztett adat megmaradjon
