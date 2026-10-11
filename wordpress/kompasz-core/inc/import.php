@@ -67,6 +67,8 @@ function kompasz_import_logo($file, $post_id, $name) {
     $upload = wp_upload_bits('kompasz-' . $file, null, file_get_contents($src));
     if (!empty($upload['error'])) return 0;
     require_once ABSPATH . 'wp-admin/includes/image.php';
+    // JPG/PNG logó WebP-re (lásd inc/webp.php)
+    if (function_exists('kompasz_to_webp') && ($webp = kompasz_to_webp($upload['file']))) { @unlink($upload['file']); $upload['file'] = $webp; }
     $type = wp_check_filetype($upload['file']);
     $att = wp_insert_attachment(['post_mime_type' => $type['type'] ?: 'image/png', 'post_title' => $name . ' logó', 'post_status' => 'inherit'], $upload['file'], $post_id);
     if (is_wp_error($att) || !$att) return 0;

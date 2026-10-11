@@ -57,8 +57,8 @@
    "name": "'Vantgard Digital",
    "website": "https://www.vantgarddigital.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2021,
+   "team_size": "5 fő",
    "services": [
     "SEO",
     "AEO / GEO / AI SEO",
@@ -77,7 +77,24 @@
    ],
    "description": "Budapesti digitális marketing ügynökség, amelynek súlypontja a tartalom és a keresőláthatóság: keresőoptimalizálás, PR-cikkek és sajtómegjelenések, linképítés, szövegírás. Emellett Google Ads, valamint Facebook-, Instagram- és LinkedIn-kampányokat kezel, weboldalakat készít, és külön szolgáltatásként kínál AEO, GEO és AI-láthatósági auditot. Honlapja szerint Google Partner, továbbá Shoprenter és UNAS szakértő ügynökség.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 1 618 0290",
+   "email": "hello@vantgarddigital.hu",
+   "certifications": [
+    "Google Partner",
+    "Shoprenter szakértő",
+    "UNAS szakértő"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Steamhouse Cafe",
+    "Yuxta Energy Hungary",
+    "Brother",
+    "Cool Konyha",
+    "Csata TKK"
+   ]
   },
   {
    "slug": "2100labs",
@@ -103,15 +120,20 @@
    ],
    "description": "Értékesítési rendszerek építésére szakosodott budapesti digitális ügynökség, tizenöt fős csapattal. Marketingstratégiát, értékesítési tölcsért és marketingpszichológiára épülő szövegeket készít, ezekhez Facebook-, Instagram- és Google Ads-kampányokat kezel, kiegészítve e-mail marketinggel és rövid videós tartalmak gyártásával. A folyamatokat automatizált utánkövetéssel, leadpontozással és időpontfoglalással támogatja, amelyekhez mesterséges intelligenciát is alkalmaz.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 505 2100",
+   "email": "oliver@2100labs.com",
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "2bseenstudio",
    "name": "2BseenStudio",
    "website": "https://2bseenstudio.hu/",
    "city": null,
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2021,
+   "team_size": "1 fő",
    "services": [
     "Google Ads kampánykezelés",
     "Performance Max és Display kampányok",
@@ -125,7 +147,29 @@
    ],
    "description": "Kifejezetten Google Ads-re szakosodott vállalkozás, amelyet Petlyánszki Bence vezet, és amelynél a stratégiai kérdésekben az ügyfél közvetlenül vele egyeztet. Keresési, Display és Performance Max kampányokat kezel, ehhez landing oldalakat épít, továbbá konzultációt és oktatást tart. Főként szolgáltató kis- és középvállalkozásoknak dolgozik, ahol az ajánlatkérések, hívások és foglalások számának növelése a cél. A cég közlése szerint 270 millió forintnál több hirdetési költést kezelt.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 350 3119",
+   "email": "bence@2bseenstudio.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "mosoda",
+    "ügyvédi iroda",
+    "szakszerviz",
+    "kárszakértő",
+    "b2b takarítás",
+    "utazási iroda",
+    "nemzetközi b2b szolgáltatás",
+    "webshop",
+    "állateledel",
+    "matchmaking szolgáltatás"
+   ],
+   "references": [
+    "Káva Kft.",
+    "Door Metal Kft.",
+    "Darab Magdolna"
+   ]
   },
   {
    "slug": "360-marketing-ugynokseg",
@@ -152,7 +196,28 @@
    ],
    "description": "A 2017-ben alapított budapesti ügynökség stratégiaalkotást, keresőoptimalizálást, Google- és Meta-hirdetéskezelést, valamint weboldal- és webáruház-fejlesztést vállal. Kínálatában iparágakra szabott csomagok is vannak, például egészségügyi, szépségipari, vendéglátós és Shoprenter- vagy UNAS-alapú webáruházak számára. AI SEO szolgáltatása a Google mellett a ChatGPT, a Perplexity és az AI Overviews találataira optimalizál. A kivitelezés mellett PPC-, SEO-, analitika- és AI-képzéseket is tart; a cég közlése szerint 16-nál több szakemberrel dolgozik.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 404 4280",
+   "email": "hello@360-marketing.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "industries": [
+    "egészségügy",
+    "szépségipar",
+    "vendéglátóipar",
+    "webáruház",
+    "oktatás",
+    "kereskedelem"
+   ],
+   "references": [
+    "Douglas",
+    "Provident",
+    "Femina",
+    "Vichy",
+    "Bankmonitor"
+   ]
   },
   {
    "slug": "4-profit-marketing",
@@ -174,8 +239,8 @@
    "name": "7Digits (Seven Digits Media Zrt.)",
    "website": "https://7blog.hu/online-marketing-ugynokseg/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2019,
+   "team_size": "16 fő",
    "services": [
     "PPC hirdetéskezelés",
     "SEO / AEO / GEO",
@@ -195,7 +260,31 @@
    ],
    "description": "Budapesti teljesítménymarketing-ügynökség, amely a fizetett hirdetésektől (Google, Meta, TikTok, LinkedIn) a keresőoptimalizáláson és webfejlesztésen át a CRM- és automatizációs rendszerekig egyben kezeli az ügyfelek digitális jelenlétét. Elsősorban webáruházaknak és B2B cégeknek dolgozik, Shopify-fejlesztéssel és külföldi piacra lépéssel is foglalkozik. Külön szolgáltatásként kínál AI keresőkre szabott optimalizálást és egyedi, ügyfélszolgálati vagy belső folyamatokat támogató AI megoldásokat. A cég közlése szerint Google Premier Partner.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 579 6659",
+   "certifications": [
+    "Google Premier Partner",
+    "Meta Blueprint Certified",
+    "Shopify Partner",
+    "HubSpot Partner",
+    "Klaviyo Silver Partner",
+    "ActiveCampaign Partner",
+    "Pipedrive Premier Partner",
+    "Cloudways Gold Agency Partner",
+    "Customer.io Agency Partner",
+    "Databox Premier Partner",
+    "TikTok Marketing Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Lidl",
+    "Lindt",
+    "TritonLife",
+    "Plantart",
+    "XTB"
+   ]
   },
   {
    "slug": "a-piacteres",
@@ -220,29 +309,47 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://apiacteres.hu/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 20 320 1646",
+   "email": "info@apiacteres.hu",
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "abmg",
    "name": "ABMG",
    "website": "https://abmg.hu/",
    "city": "Sopron",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2024,
+   "team_size": "1 fő",
    "services": [],
    "categories": [
     "Weboldal készítés"
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 20 237 7495",
+   "email": "hello@abmg.hu",
+   "languages": [
+    "magyar"
+   ],
+   "work_mode": "mindkettő",
+   "references": [
+    "BSPlan",
+    "VK Audio",
+    "FromHome Autós-Motoros Iskola",
+    "RQ Hotel",
+    "3D Abakusz"
+   ]
   },
   {
    "slug": "adops-digital",
    "name": "AdOps Digital",
    "website": "https://ad-ops.hu/",
    "city": "Budapest",
-   "founded_year": null,
+   "founded_year": 2023,
    "team_size": null,
    "services": [
     "SEO",
@@ -263,14 +370,29 @@
    ],
    "description": "Budapesti ügynökség, amely a keresőoptimalizálást és a fizetett hirdetések kezelését mesterséges intelligenciára épülő szolgáltatásokkal egészíti ki. Google, Meta, TikTok, LinkedIn és Pinterest kampányokat visz, emellett foglalkozik azzal is, hogy az ügyfelek megjelenjenek a ChatGPT és a Gemini válaszaiban. AI ügynököt és chatbotot is fejleszt, valamint weboldalt és UNAS webáruházat készít. Főként kis- és középvállalkozásoknak dolgozik, több iparágra szabott ajánlattal.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 784 6000",
+   "email": "hello@ad-ops.hu",
+   "languages": [
+    "magyar",
+    "angol",
+    "szlovák"
+   ],
+   "industries": [
+    "étterem",
+    "egészségügy",
+    "szerviz",
+    "szépségipar",
+    "szállás",
+    "kertészet"
+   ]
   },
   {
    "slug": "adskezeles-hu",
    "name": "AdsKezelés.hu",
    "website": "https://adskezeles.hu/",
    "city": "Gödöllő",
-   "founded_year": null,
+   "founded_year": 2016,
    "team_size": null,
    "services": [
     "Google Ads kampánykezelés",
@@ -284,7 +406,15 @@
    ],
    "description": "Kasza László vezetésével működő, kizárólag Google Ads kezelésre szakosodott szolgáltató, amely független egyéni vállalkozó fiókkezelők közösségeként dolgozik. Csomagjai az alapkampánytól a gyorsító és prémium kampányig terjednek, és van mentorált változat is azoknak, akik maguk szeretnék megtanulni a fiókkezelést. Az oldal szerint a vezető 2017 óta Google Partner; weboldalszöveg-írást és közösségimédia-hirdetést nem vállalnak.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 677 2899",
+   "email": "adskezeles@gmail.com",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "ai-lathatosagi-audit",
@@ -306,15 +436,26 @@
    ],
    "description": "Bauman Raymond egyéni vállalkozó budapesti szakértői praxisa, amely kizárólag az AI keresőkben való megjelenéssel foglalkozik. Külön szolgáltatásként kínál GEO-t, válaszmotor-optimalizálást, AI SEO-t, entitás SEO-t és schema markupot. A belépő egy ingyenes láthatósági audit, erre épül a fizetős teljes audit, a megvalósítási csomag és a havidíjas menedzsment. Az oldal szerint alvállalkozók és account managerek nélkül dolgozik.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 808 6764",
+   "email": "iroda@ailathatosagiaudit.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Terkő / Terkőker",
+    "DELTAKO",
+    "Ildikó Kozmetika",
+    "keritesed.hu"
+   ]
   },
   {
    "slug": "ai-squad",
    "name": "AI Squad",
    "website": "https://aisquad.hu/",
    "city": "Pécs",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2011,
+   "team_size": "1 fő",
    "services": [
     "AI hangügynök fejlesztés",
     "Telefonos AI asszisztens",
@@ -329,7 +470,21 @@
    ],
    "description": "Pécsi csapat, amely hangalapú AI-rendszerek építésére és üzemeltetésére szakosodott: bejövő és kimenő hívásokat kezelő telefonos ügynököket készít ügyfélszolgálatra, időpontfoglalásra és érdeklődők minősítésére. Emellett tudásbázisra épülő chatbotokat, dokumentum- és képfeldolgozó megoldásokat, valamint CRM- és telefónia-integrációkat fejleszt. Kisvállalkozásoknak csomagokat, nagyvállalatoknak egyedi munkafolyamatokat kínál. A rendszereket havi riporttal maga üzemelteti is.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 244 1222",
+   "email": "hello@aisquad.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "industries": [
+    "egészségügy",
+    "szépségipar",
+    "vendéglátás",
+    "ügyfélszolgálat",
+    "webshop",
+    "IT helpdesk"
+   ]
   },
   {
    "slug": "ai-strategia",
@@ -351,14 +506,19 @@
    ],
    "description": "Budapesti szolgáltató, amelynek teljes kínálata a generatív és válaszmotoros keresőkre épül. Három havidíjas csomagban (Starter, Growth, Premium) vállal GEO és AEO optimalizálást, ezen belül strukturált adatok beépítését, technikai beállításokat, E-E-A-T jelek erősítését és hangalapú keresésre való felkészítést. A munkát havi riport és konzultáció kíséri, az első egyeztetés az oldal szerint díjmentes.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 255 2615",
+   "email": "hello@aistrategia.hu",
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "ai-visibility-lab",
    "name": "AI Visibility Lab",
    "website": "https://aivisibility.hu/",
    "city": null,
-   "founded_year": null,
+   "founded_year": 2026,
    "team_size": null,
    "services": [
     "AI láthatósági audit",
@@ -371,14 +531,21 @@
    ],
    "description": "A TwinTech Vision Kft. kifejezetten generatív keresőkre szakosodott márkája, amely nem kínál hagyományos teljes körű marketinget. Három egymásra épülő terméke van: fix áras AI láthatósági audit, egyedi árazású GEO stratégia és megvalósítás, valamint havidíjas riport arról, hogyan jelenik meg az ügyfél márkája az AI válaszokban. Újabb szolgáltatásként ChatGPT hirdetéskezelést is vállal. A weboldal két alapítót nevez meg.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "email": "hello@aivisibility.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "marketing ügynökségek"
+   ]
   },
   {
    "slug": "ai-smart",
    "name": "AI-Smart",
    "website": "https://ai-smart.hu/",
    "city": null,
-   "founded_year": null,
+   "founded_year": 2018,
    "team_size": null,
    "services": [
     "AI chatbot",
@@ -396,14 +563,20 @@
    ],
    "description": "Magyar vállalkozásoknak dolgozó, közvetlen kapcsolattartásra építő AI-automatizálási szolgáltató. AI chatbotot, telefonos AI agentet, személyes asszisztenst és időpontfoglaló rendszert készít, kész platformként vagy egyedi fejlesztésként, és webes, mobil- és asztali alkalmazásokat is vállal. A kínálatban Facebook- és Instagram-posztolást, kreatívkészítést és hirdetéskezelést lefedő közösségimédia-szolgáltatás is szerepel. Az oldalon megtérülési kalkulátor is elérhető.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 609 5404",
+   "email": "info@ai-smart.hu",
+   "languages": [
+    "magyar"
+   ],
+   "work_mode": "távolról"
   },
   {
    "slug": "aiworks",
    "name": "AIWORKS",
    "website": "https://aiworks.hu/",
    "city": "Budapest",
-   "founded_year": null,
+   "founded_year": 2021,
    "team_size": null,
    "services": [
     "AI agent fejlesztés",
@@ -420,7 +593,19 @@
    ],
    "description": "Magát mérnöki irodaként meghatározó részvénytársaság, amely AI agenteket, n8n-alapú folyamatautomatizációt, RAG tudásbázisokat és API-integrációkat épít megbízásra. A referenciák között tartalomkészítő, hírfigyelő és pályázatfigyelő agentek szerepelnek, több esetben a hozzájuk tartozó weboldallal együtt. A munkák között SEO-, GEO- és AEO-auditok is megjelennek, vagyis a fejlesztés mellett AI keresőkre optimalizálással is foglalkoznak.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 255 2615",
+   "email": "tamas.szabo@aiworks.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Gameland.hu",
+    "Drkerescsaninmate.hu",
+    "Aipress.hu",
+    "Oksi.hu",
+    "Capturethelove.hu"
+   ]
   },
   {
    "slug": "akcio-reklamugynokseg",
@@ -441,15 +626,26 @@
    ],
    "description": "Budapesti reklámügynökség, amely saját közlése szerint 1988 óta van jelen a hazai reklámpiacon, és kreatív munkával, gyártással, PR-ral, rendezvényekkel, valamint narratívastratégiával foglalkozik. Fix terjedelmű, kéthetes AI láthatóság auditot kínál: feltérképezi, hogyan szerepel a márka a ChatGPT, a Perplexity, a Claude és a Google AI Overviews válaszaiban, összeveti a versenytársakkal, és priorizált akciótervet ad át.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "email": "marketing@akcioreklam.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Coca-Cola",
+    "HBO",
+    "Heineken",
+    "OTP Bank",
+    "Magyar Telekom"
+   ]
   },
   {
    "slug": "alh-consulting-kft",
    "name": "ALH Consulting Kft.",
    "website": "https://alhconsulting.hu/",
    "city": "Csomád",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2015,
+   "team_size": "3 fő",
    "services": [
     "Keresőoptimalizálás",
     "Technikai SEO audit",
@@ -464,7 +660,19 @@
    ],
    "description": "Kizárólag keresőoptimalizálásra szakosodott tanácsadó cég, fizetett hirdetéskezelést nem kínál. Munkája három pillérre épül: technikai és fejlesztési audit sebességoptimalizálással, on-site feladatok (kulcsszókutatás, versenytárselemzés, tartalomfejlesztési stratégia), valamint off-site tevékenység, vagyis linkmarketing, PR cikkek, a linkprofil tisztítása és a Google-büntetések megszüntetése. A megvalósítást felügyelettel és tanácsadással kíséri; a cég közlése szerint több mint tíz év tapasztalattal dolgozik.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 353 4869",
+   "email": "info@alhconsulting.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Játéksziget",
+    "The Body Shop",
+    "1001 Reklámajándék",
+    "LifeStyle Shop",
+    "DrPrezi"
+   ]
   },
   {
    "slug": "amazon-megoldasok",
@@ -490,14 +698,22 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://amazon-megoldasok.hu/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "Phix s.r.o.",
+    "Paal Mode"
+   ]
   },
   {
    "slug": "antikaotika-seo-antal-pap-judit",
    "name": "Antikaotika-SEO (Antal-Pap Judit)",
    "website": "https://seo.antikaotika-design.hu/",
    "city": "Mezőkövesd",
-   "founded_year": null,
+   "founded_year": 2010,
    "team_size": null,
    "services": [
     "SEO audit",
@@ -513,15 +729,28 @@
    ],
    "description": "Antal-Pap Judit SEO-szakember vállalkozása, aki a weboldal szerint több mint tíz éve foglalkozik keresőoptimalizálással, és egy főállású munkatárssal, illetve külső alvállalkozókkal dolgozik. A GEO-t nem klasszikus ügynökségi formában, hanem konzultációként és árazott mentorprogramokként kínálja, amelyek nagyobb csomagja kivitelezést is tartalmaz: szövegírást, linképítést és Google Cégprofil-optimalizálást. Céges workshopokat és előadásokat is tart.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 630 3607",
+   "email": "info@antikaotika-design.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "webáruház"
+   ],
+   "references": [
+    "Everdental",
+    "Pur-szigetelés",
+    "iPhone Repair Base"
+   ]
   },
   {
    "slug": "armadillo-kreativ-ugynokseg",
    "name": "Armadillo Kreatív Ügynökség",
    "website": "https://armadillo.hu",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 1999,
+   "team_size": "17 fő",
    "services": [
     "Content marketing",
     "Social media tartalomgyártás",
@@ -540,7 +769,20 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://armadillo.hu/en/content-marketing/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 30 631 1938",
+   "email": "armadillo@armadillo.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "Alfa Romeo",
+    "Fiat",
+    "Accent Hotels",
+    "Budmil",
+    "Jeep"
+   ]
   },
   {
    "slug": "arvalicom",
@@ -555,7 +797,39 @@
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 20 501 2359",
+   "email": "info@arvaligroup.com",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "industries": [
+    "szolgáltatás és kereskedelem",
+    "fmcg",
+    "tartós fogyasztási cikkek",
+    "ict",
+    "energia",
+    "pénzügyi szolgáltatás",
+    "egészségügy",
+    "elektronikus és nyomtatott média",
+    "autóipar",
+    "tanácsadás",
+    "vendéglátóipar",
+    "ingatlan",
+    "ipar",
+    "it",
+    "webáruház",
+    "építőipar",
+    "művészet"
+   ],
+   "references": [
+    "Daikin",
+    "Columbia Sportswear",
+    "Lascana",
+    "Seiko",
+    "Rentasystem"
+   ]
   },
   {
    "slug": "atp-szovegiras",
@@ -581,15 +855,25 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://atpszovegiras.hu/rolunk/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 30 445 9128",
+   "email": "hello@atpszovegiras.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "WhitePress",
+    "Tomasz Consulting GmbH"
+   ]
   },
   {
    "slug": "avanscript-kft",
    "name": "Avanscript Kft.",
    "website": "https://avanscript.com/",
    "city": "Győr",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2023,
+   "team_size": "4 fő",
    "services": [
     "Weboldal készítés",
     "Webáruház készítés",
@@ -604,7 +888,19 @@
    ],
    "description": "Győri digitális műhely, amely weboldalakat és webáruházakat épít, emellett egyedi webalkalmazásokat, SaaS-rendszereket és belső vállalati szoftvereket fejleszt. A kínálat része az arculattervezés, a technikai és tartalmi keresőoptimalizálás, valamint az AI-alapú megoldások: chatbot, LLM-integráció és folyamatautomatizálás. Saját AI chatbot terméket is fejlesztettek Morsea néven, ügyfélnek készült AI-projektjük azonban saját közlésük szerint még nincs.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 427 7596",
+   "email": "hello@avanscript.com",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Mester Faházak",
+    "Law Walker Faktum Menedzsment",
+    "Gröntopp",
+    "Happy Home Store",
+    "Raabkert"
+   ]
   },
   {
    "slug": "axon-digital",
@@ -627,14 +923,30 @@
    ],
    "description": "A 2020 óta működő, távmunkában dolgozó csapat Meta- és Google Ads-kampányok kezelésével, videós és statikus hirdetési kreatívok gyártásával, valamint weboldalfejlesztéssel foglalkozik. Esettanulmányai jellemzően webáruházakról szólnak, például állateledel, kozmetikum és elektromos roller területéről. A honlapon Google Partner jelvény látható, az együttműködés egy ingyenes, harmincperces konzultációval indul.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 967 8588",
+   "email": "hi@axondigital.io",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "work_mode": "távolról",
+   "industries": [
+    "webáruház"
+   ],
+   "references": [
+    "Annutrition.hu"
+   ]
   },
   {
    "slug": "bako-krisztian",
    "name": "Bakó Krisztián",
    "website": "https://bakokrisztian.hu/",
    "city": "Budapest",
-   "founded_year": null,
+   "founded_year": 2021,
    "team_size": null,
    "services": [
     "Kereső- és AI-optimalizálás (SEO + GEO)",
@@ -651,15 +963,30 @@
    ],
    "description": "Budapesti webes szakember, aki saját név alatt kínál weboldal- és webshopkészítést, karbantartást, Google Ads hirdetéskezelést és keresőoptimalizálást, főként budapesti és Pest megyei ügyfeleknek. A SEO szolgáltatást AI-optimalizálással együtt hirdeti (SEO, GEO, AEO): a cél a Google AI Mode és a ChatGPT válaszaiban való megjelenés. A weboldal szerint több mint 26 év tapasztalattal dolgozik, és saját AI-SEO tanúsítványt is ad ki.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 364 1441",
+   "email": "info@bakokrisztian.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "temetkezés",
+    "egészségügy",
+    "ingatlan"
+   ],
+   "references": [
+    "ADSX.hu",
+    "Dunakontroll",
+    "Gazdag Enikő Pszichológus"
+   ]
   },
   {
    "slug": "barna-design",
    "name": "Barna Design",
    "website": "https://barnadesign.eu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2018,
+   "team_size": "10 fő",
    "services": [],
    "categories": [
     "Online marketing ügynökségek",
@@ -667,14 +994,26 @@
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 30 240 5616",
+   "email": "barna.g@barnadesign.eu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Elektroprofi Mobility",
+    "Léránt Bútor Kft.",
+    "Le Sien",
+    "Biogold",
+    "C4S"
+   ]
   },
   {
    "slug": "bda",
    "name": "BDA",
    "website": "https://www.bda.hu/",
    "city": "Budapest",
-   "founded_year": null,
+   "founded_year": 2013,
    "team_size": "2–10 fő",
    "services": [
     "Weboldalkészítés",
@@ -691,7 +1030,22 @@
    ],
    "description": "Kisvállalatokra szakosodott digitális ügynökség, amely a honlap és a webáruház elkészítésétől a látogatószerzésig kíséri ügyfeleit. Kínálatában arculat- és grafikai tervezés, korlátlan grafikai előfizetés, keresőoptimalizálás, közösségimédia-kezelés, valamint Google Ads és Facebook hirdetésekre épülő online marketing szerepel. A webáruházakhoz automatizált számlázást és online bankkártyás fizetést is beállít.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 637 1229",
+   "email": "info@bda.hu",
+   "certifications": [
+    "Barion Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Lambda Systeme",
+    "Bayer Property",
+    "Millenáris",
+    "Grabarics Development",
+    "IVSZ"
+   ]
   },
   {
    "slug": "beonweb",
@@ -717,15 +1071,31 @@
    ],
    "description": "A 2014-ben indult BeOnWeb az első években egyszemélyes tanácsadó cégként működött, 2017 óta kivitelezéssel foglalkozik, ma tízfős csapattal a budapesti belvárosban. Google Ads- és Meta-hirdetéseket kezel, közösségimédia- és TikTok-tartalmat gyárt, keresőoptimalizálást és hírlevél-automatizálást vállal. Külön csomagjai vannak webáruházaknak és éttermeknek. Minden ügyfél munkáját egy projektmenedzser fogja össze, aki a szakterületi kollégákat koordinálja.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 638 8590",
+   "email": "hello@beonweb.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "webáruház",
+    "étterem"
+   ],
+   "references": [
+    "Fackelmann",
+    "Ambassador",
+    "Paleocentrum",
+    "Medimarket",
+    "Zenhome"
+   ]
   },
   {
    "slug": "berenyisoft",
    "name": "BerényiSoft",
    "website": "https://berenyisoft.com/",
    "city": "Újlengyel",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2018,
+   "team_size": "1 fő",
    "services": [
     "Egyedi AI-szoftverfejlesztés",
     "AI Call Center (voicebot)",
@@ -741,15 +1111,23 @@
    ],
    "description": "Vállalati szoftverfejlesztő cég, amely a weboldala szerint több mint húsz év fejlesztői tapasztalatra épít. AI területen telefonos voicebotot, virtuális ügyintézőt, e-mail-feldolgozó és időpontfoglaló rendszert kínál, és egyedi AI-szoftverfejlesztést, tanácsadást, üzemeltetést is vállal. Hagyományos kínálata webes, mobil- és asztali alkalmazásokból, RPA-ból és a saját MikroMenedzser vállalatirányítási rendszerből áll.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 21 200 0797",
+   "email": "office@berenyisoft.com",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Sowolu-légtechnika Kft."
+   ]
   },
   {
    "slug": "bestmarketing-kft",
    "name": "BestMarketing Kft.",
    "website": "https://bestmarketing.hu/",
    "city": "Debrecen",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2009,
+   "team_size": "3 fő",
    "services": [
     "Google Ads hirdetéskezelés",
     "Facebook hirdetéskezelés",
@@ -768,7 +1146,28 @@
    ],
    "description": "Debreceni online marketing ügynökség, amelynek fő területe a Google Ads, a Facebook- és Instagram-hirdetések kezelése, a keresőoptimalizálás és a weboldalkészítés. Ágazati ajánlatai is vannak webáruházaknak, éttermeknek és egészségügyi szolgáltatóknak, továbbá pályázatokhoz kapcsolódó marketinget is vállal. A cég Google Partner és Meta Partner minősítést tüntet fel, és közlése szerint külső alvállalkozók helyett saját szakembereivel dolgozik.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 786 4984",
+   "email": "mail@bestmarketing.hu",
+   "certifications": [
+    "Google Partner",
+    "Meta Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "webáruház",
+    "étterem",
+    "egészségügy"
+   ],
+   "references": [
+    "Generali Biztosító",
+    "Hajdú-Bihar megyei kereskedelmi és iparkamara",
+    "Hajdú Zrt.",
+    "Megatherm Kft.",
+    "Apple4You"
+   ]
   },
   {
    "slug": "beup-pr-consulting",
@@ -776,7 +1175,7 @@
    "website": "https://beup.hu",
    "city": "Budapest",
    "founded_year": 2024,
-   "team_size": null,
+   "team_size": "1 fő",
    "services": [
     "Vállalati kommunikáció és tanácsadás",
     "Kríziskommunikáció",
@@ -796,15 +1195,23 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://beup.hu/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 30 208 4555",
+   "email": "info@beup.hu",
+   "certifications": [
+    "MPRSZ ügynökségi tag"
+   ],
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "bolkodesign",
    "name": "BolkoDesign",
    "website": "https://bolkodesign.hu/",
    "city": "Pécs",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2014,
+   "team_size": "11 fő",
    "services": [
     "Branding és arculattervezés",
     "Marketingstratégia",
@@ -821,15 +1228,27 @@
    ],
    "description": "Pécsi kreatív stúdió, amelynek súlypontja a dizájn: márkaépítő workshopok, arculattervezés, UI/UX és webfejlesztés, valamint kiállítási standok tervezése. Ehhez marketingstratégia, közösségimédia-tartalomgyártás, hírlevélmarketing, PPC kampánykezelés, továbbá fotózás és forgatás társul. A honlapon feltüntetett elismerések között szerepel Az év honlapja 2023 díj; a bemutatott ügyféllogók között nagyvállalati márkák is vannak.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 1 700 3035",
+   "email": "info@bolkodesign.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Mizo",
+    "Express One",
+    "Schuller",
+    "Goodyear",
+    "Lukoil"
+   ]
   },
   {
    "slug": "boom-marketing-agency",
    "name": "BOOM Marketing Agency",
    "website": "https://boommarketing.hu/",
    "city": "Nyíregyháza",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2018,
+   "team_size": "5 fő",
    "services": [
     "Facebook hirdetések kezelése",
     "Google Ads hirdetések kezelése",
@@ -845,7 +1264,20 @@
    ],
    "description": "Szűk, jól körülhatárolt kínálattal dolgozó ügynökség: Facebook- és Google Ads-hirdetéseket kezel, webshopoknak e-mail marketing automatizálást épít, emellett vevőszerzési auditot és tanácsadást nyújt. Az együttműködés háromféle lehet, az önálló munkát segítő útmutatástól a teljes kiszervezésig. A szolgáltatások mellett online tanfolyamokat is kínál, többek között ChatGPT-használatról, e-mail automatizálásról és hirdetéskezelésről.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "webáruház"
+   ],
+   "references": [
+    "Hartenstein Media",
+    "Best Lashes",
+    "Chilifarm.hu",
+    "Bamba Marha",
+    "Bestmarkt"
+   ]
   },
   {
    "slug": "booster-marketing",
@@ -870,15 +1302,30 @@
    ],
    "description": "Óbudai irodával működő hirdetéskezelő ügynökség, amelynek kínálata a fizetett kampányokra épül: Facebook-, Instagram- és Google-hirdetések, újabban ChatGPT-hirdetések kezelése. A Facebook-szolgáltatás három nyilvános árú csomagban érhető el, a csak hirdetéskezelést tartalmazó változat havi 99 900 Ft + áfától indul, és kérhető oldalkezeléssel együtt is. Ingyenes hirdetési auditot, szálláshelyeknek szóló marketinget, e-mail marketinget és weboldalkészítést is kínálnak.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 757 2052",
+   "email": "hello@boostermarketing.hu",
+   "certifications": [
+    "Google Partner",
+    "Meta Business Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Otthon Centrum",
+    "F5",
+    "Don Pepe",
+    "Lexus"
+   ]
   },
   {
    "slug": "bp-digital",
    "name": "BP Digital",
    "website": "https://bpdigital.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2017,
+   "team_size": "14 fő",
    "services": [
     "SEO tanácsadás",
     "SEO elemzés és stratégia",
@@ -896,15 +1343,28 @@
    ],
    "description": "Keresőoptimalizálásra épülő ügynökség, amelynek kínálata a SEO elemzéstől és stratégiától a tanácsadáson, a technikai auditon és a webáruházak optimalizálásán át a linképítésig és az online PR-ig terjed. A hagyományos keresők mellett a mesterséges intelligenciára épülő keresésre is készít szolgáltatást: GEO audit keretében vizsgálja, hogyan jelenik meg egy márka az AI válaszaiban, és ehhez képzést is tart. PPC kampányokat szintén kezel.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 738 7333",
+   "email": "hello@bpdigital.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "BioTechUSA",
+    "BENU Gyógyszertárak",
+    "Intrum",
+    "E.ON",
+    "Cinema City"
+   ]
   },
   {
    "slug": "bpdata",
    "name": "BPDATA",
    "website": "https://bpdata.com/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2021,
+   "team_size": "5 fő",
    "services": [
     "LLM- és AI-fejlesztés",
     "RAG rendszerek és chatbotok",
@@ -920,7 +1380,20 @@
    ],
    "description": "Budapesti, magát AI-first fejlesztő ügynökségként leíró csapat, amely éles üzemre szánt AI-rendszereket épít: RAG-alapú megoldásokat, chatbotokat, munkafolyamatot végrehajtó asszisztenseket és ágenseket, valamint árazó és előrejelző gépi tanulási modelleket. Mellettük egyedi backend- és frontendfejlesztést, AI-stratégiai tanácsadást, megfelelőségi átvilágítást és képzést is kínál. Két saját terméke a Prediqta és a Knowledgebase.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 785 7142",
+   "email": "info@bpdata.com",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "AutoWallis",
+    "Praktiker",
+    "Auchan",
+    "Indotek",
+    "DMS One"
+   ]
   },
   {
    "slug": "brocasterz",
@@ -928,7 +1401,7 @@
    "website": "https://brocasterz.com",
    "city": "Budapest",
    "founded_year": 2021,
-   "team_size": null,
+   "team_size": "8 fő",
    "services": [
     "Céges podcast készítés",
     "Podcast marketing",
@@ -945,7 +1418,18 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://brocasterz.com/kapcsolat/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "email": "podcast@brocasterz.com",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Media Markt",
+    "BioTechUSA",
+    "Bosch",
+    "Ericsson",
+    "MKB Bank"
+   ]
   },
   {
    "slug": "budapest-marketing",
@@ -969,15 +1453,34 @@
    ],
    "description": "Kizárólag fizetett hirdetések kezelésére szakosodott budapesti PPC ügynökség, amely elsősorban magyar webáruházaknak és kisvállalkozásoknak dolgozik. Google Ads, Facebook, Instagram és TikTok kampányokat kezel, a hirdetési kreatívokat és szövegeket is elkészíti, keresőoptimalizálást és webfejlesztést viszont nem vállal. A weboldalon Google Partner és Meta Business Partner jelvény látható; a cég közlése szerint több mint 50 hirdetési fiókot kezel.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "email": "info@budapestmarketing.com",
+   "certifications": [
+    "Google Partner",
+    "Meta Business Partner",
+    "TikTok Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "webáruház"
+   ],
+   "references": [
+    "SoAsia",
+    "Vendo Box",
+    "Reál Pont",
+    "BP Shop",
+    "Rich Life"
+   ]
   },
   {
    "slug": "cap-marketing",
    "name": "CAP Marketing",
    "website": "https://capmarketing.hu",
    "city": null,
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2020,
+   "team_size": "1 fő",
    "services": [
     "TikTok tartalomgyártás",
     "TikTok stratégia",
@@ -997,15 +1500,20 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://capmarketing.hu/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 70 577 0722",
+   "email": "hello@capmarketing.hu",
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "chiro-marketing",
    "name": "Chiro Marketing",
    "website": "https://chiro.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2007,
+   "team_size": "13 fő",
    "services": [
     "Online marketing stratégia",
     "Komplex marketing kivitelezés",
@@ -1022,7 +1530,19 @@
    ],
    "description": "A budapesti Chiro Marketing hazai vállalatoknak nyújt komplex online marketing szolgáltatást a stratégiától és audittól a kivitelezésig. Kínálatában PPC-kampánykezelés, közösségimédia-kezelés, médiavásárlás, videós tartalomgyártás és podcast marketing szerepel, külön területként foglalkozik B2B marketinggel és munkáltatói márkaépítéssel. Az együttműködés rögzített lépésekben zajlik: ajánlat és szerződés után stratégia, kreatívok, kampányoptimalizálás, majd havi beszámoló következik. Magát etikus ügynökségként határozza meg, etikai kódexe nyilvános.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "email": "info@chiro.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "Segafredo",
+    "Sencor",
+    "Repjegy.hu",
+    "SmartMan Konferencia",
+    "Gewiss Hungária"
+   ]
   },
   {
    "slug": "city-marketing",
@@ -1048,7 +1568,19 @@
    ],
    "description": "Budapesti online marketing ügynökség, amely a közösségi média és a fizetett hirdetések köré szervezi szolgáltatásait. Facebook-, Instagram- és Google-hirdetéseket kezel, külön megoldást kínál helyi célzású kampányokra, emellett hírlevélmarketinget, grafikai tervezést és weboldalkészítést vállal. Referenciái között jellemzően helyi és kisebb vállalkozások találhatók, például élelmiszerbolt, edzőterem, szépségszalon és lakópark.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 886 0819",
+   "email": "info@citymarketing.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Buda Gourmet",
+    "Primefit",
+    "Cervinus",
+    "Mezőliget Lakópark",
+    "Vajola Beauty Studio"
+   ]
   },
   {
    "slug": "company-365",
@@ -1056,7 +1588,7 @@
    "website": "https://company-365.com/",
    "city": "Dunaharaszti",
    "founded_year": 2019,
-   "team_size": null,
+   "team_size": "2 fő",
    "services": [
     "Google Ads kampánykezelés",
     "Facebook és Instagram hirdetés",
@@ -1074,7 +1606,15 @@
    ],
    "description": "Fizetett online kampányok kezelésére szakosodott ügynökség, amely Google, Facebook, Instagram, TikTok, Pinterest és LinkedIn hirdetéseket visz, mellette márkaépítést, grafikai tervezést, webfejlesztést és videókészítést is vállal. A Company 365 Online Kft. 2019-ben jött létre, az elődje 2011-ben indult Vállalkozás-OK néven; vezetője Rózsahegyi László. Google Partner címmel rendelkezik, és a cég közlése szerint eddig több mint 100 millió forint hirdetési költést kezelt.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 990 8992",
+   "email": "info@company-365.com",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "conceptz",
@@ -1098,7 +1638,24 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://conceptz.hu/video/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 70 314 8504",
+   "email": "hello@conceptz.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "IT",
+    "mérnöki",
+    "autóipari"
+   ],
+   "references": [
+    "Vincotech",
+    "KUKA",
+    "Nilfisk",
+    "Commsignia",
+    "NNG"
+   ]
   },
   {
    "slug": "contentshop",
@@ -1128,22 +1685,39 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://contentshop.hu/rolunk/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 30 920 3222",
+   "email": "contentshop@contentshop.hu",
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "corrad-design",
    "name": "Corrad Design",
    "website": "https://keresooptimalizalunk.hu/",
    "city": null,
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2000,
+   "team_size": "2 fő",
    "services": [],
    "categories": [
     "Online marketing ügynökségek"
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 20 538 3560",
+   "email": "info@keresooptimalizalunk.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Mon Salon Kozmetika",
+    "Családjogi Ügyvéd",
+    "Tom-X Clean",
+    "4 Évszak",
+    "Ajándékkosarad"
+   ]
   },
   {
    "slug": "crs-ai-marketing-seo-ugynokseg-kft",
@@ -1151,7 +1725,7 @@
    "website": "https://aimarketingugynokseg.hu/",
    "city": "Budapest",
    "founded_year": 2007,
-   "team_size": null,
+   "team_size": "1 fő",
    "services": [
     "Keresőoptimalizálás",
     "AI-SEO / GEO / AEO",
@@ -1168,7 +1742,17 @@
    ],
    "description": "Keresőoptimalizálásra és AI-keresőkben való láthatóságra (GEO, AEO) építő budapesti ügynökség, amely a weboldal közlése szerint 2007 óta működik. Technikai SEO-t, linképítést, tartalomgyártást és WordPress-fejlesztést vállal, emellett AI-tanácsadást, valamint AI- és SEO-tanfolyamokat tart. Főként B2B cégeknek, webáruházaknak és kkv-knak dolgozik; a munkát jellemzően audittal kezdi, helyezési garanciát kifejezetten nem vállal.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 629 0690",
+   "email": "iroda@aimarketingugynokseg.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "industries": [
+    "webáruház",
+    "b2b"
+   ]
   },
   {
    "slug": "csabai-online-marketing",
@@ -1192,15 +1776,23 @@
    ],
    "description": "Békéscsabai székhelyű kis ügynökség, amely főként webáruházak Google Ads kampányait kezeli: keresési, Shopping, Performance Max és remarketing hirdetéseket. Többplatformos csomagjában Meta- és TikTok-hirdetéskezelés is szerepel, a webshoposoknak pedig Google Ads tanfolyamot is tart. Az alapító saját közlése szerint több mint öt éve foglalkozik online ügyfélszerzéssel; országosan vállalnak megbízást.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 50 133 6166",
+   "email": "hello@csabaionlinemarketing.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "cegem-360",
    "name": "Cégem 360",
    "website": "https://cegem360.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2008,
+   "team_size": "3 fő",
    "services": [
     "Egyedi weboldal fejlesztés",
     "Webshop készítés",
@@ -1214,7 +1806,27 @@
    ],
    "description": "Elsősorban fejlesztőcég: Laravel alapú egyedi weboldalakat és webáruházakat épít, emellett saját vállalati szoftvereket (CRM, gyártás, logisztika) és marketingeszközöket is kínál. Az üzemeltetési ágon belül külön szolgáltatásoldala van a SEO és GEO optimalizálásnak, ahol a generatív keresőkben való megjelenést a hagyományos keresőoptimalizálás kiegészítéseként vállalja. A Cégem 360 Kft. székhelye Budapest belvárosában található.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 331 9550",
+   "email": "info@cegem360.hu",
+   "certifications": [
+    "ISO 9001:2015"
+   ],
+   "languages": [
+    "magyar",
+    "angol",
+    "német"
+   ],
+   "industries": [
+    "B2B"
+   ],
+   "references": [
+    "Cliff",
+    "Arcadia98",
+    "Tauri",
+    "Két Kör",
+    "Barbershop Arena"
+   ]
   },
   {
    "slug": "dlx-media",
@@ -1238,15 +1850,36 @@
    ],
    "description": "A 2019 júniusában alapított budapesti cég a tartalomgyártásra összpontosít: imázs-, termék- és rendezvényvideókat, podcastokat és YouTube-csatornákat készít és kezel, saját zuglói stúdiója bérelhető is. Ehhez közösségimédia-kezelés, sajtómegjelenések szervezése, szövegírás és e-mail marketing társul. A cég közlése szerint tízfős belső csapattal és több mint harminc alvállalkozóval dolgozik.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 237 5721",
+   "email": "hello@dlxmedia.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "gyártás és nagykereskedelem",
+    "webáruház",
+    "oktatás",
+    "IT",
+    "startup",
+    "horeca",
+    "egészségügy"
+   ],
+   "references": [
+    "Allianz",
+    "GLS",
+    "Gránit Alapkezelő",
+    "Webshippy",
+    "NEBULO"
+   ]
   },
   {
    "slug": "dog-pony",
    "name": "Dog & Pony",
    "website": "https://marketingtanacsado.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2016,
+   "team_size": "9 fő",
    "services": [
     "Facebook és Instagram hirdetés",
     "Google Ads / PPC",
@@ -1265,30 +1898,71 @@
    ],
    "description": "Budapesti digitális marketing- és reklámügynökség, amely a teljesítményalapú hirdetéseket kreatív és PR-munkával kapcsolja össze. Közösségimédia-kampányokat futtat Facebookon, Instagramon, TikTokon és YouTube-on, kezel Google Ads fiókokat, végez keresőoptimalizálást és webfejlesztést, emellett arculatot tervez, reklámfilmet készít, és köztéri megjelenéseket, eseményeket, influenszer-együttműködéseket is szervez. B2C és B2B ügyfeleknek egyaránt dolgozik; a cég közlése szerint több mint 200 projektet teljesített.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 530 8986",
+   "email": "dogpony@marketingtanacsado.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "utazás",
+    "ipar",
+    "szépség és divat",
+    "pénzügy",
+    "fmcg",
+    "gasztronómia",
+    "ingatlan és építőipar",
+    "információ és technológia",
+    "jog",
+    "egészségügy",
+    "nonprofit",
+    "webshopok"
+   ],
+   "references": [
+    "Allianz",
+    "Continental",
+    "Eurotravel",
+    "Hotelscombined",
+    "ABK Law"
+   ]
   },
   {
    "slug": "doppio",
    "name": "DOPPIO",
    "website": "https://doppio.hu/",
    "city": null,
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2019,
+   "team_size": "2 fő",
    "services": [],
    "categories": [
     "Weboldal készítés"
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 30 529 1204",
+   "email": "hello@doppio.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Becsei Ékszer",
+    "Autó Dual",
+    "Richter Gedeon",
+    "Teleki-Tisza-kastély",
+    "Dublino"
+   ]
   },
   {
    "slug": "drive-online-marketing-kft",
    "name": "Drive Online Marketing Kft.",
    "website": "https://driveonline.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2015,
+   "team_size": "13 fő",
    "services": [
     "Google Ads",
     "Facebook és Instagram hirdetés",
@@ -1307,15 +1981,30 @@
    ],
    "description": "Hirdetéskezelésre épülő budapesti ügynökség: Google, Facebook és Instagram, YouTube, LinkedIn, Bing, TikTok és ChatGPT felületeken futtat kampányokat ügyfélszerzési, webáruházas, márkaépítési és toborzási célokra. Ezt tartalomgyártás, arculat- és weboldalkészítés, valamint marketingképzések és tanácsadás egészíti ki. Külön csomagban kínál AI keresőoptimalizálást, amelyben havonta mérik, hogyan szerepel a márka a ChatGPT, a Perplexity és a Google AI válaszaiban.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 246 8925",
+   "email": "kapcsolat@driveonline.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Linde Gáz Magyarország",
+    "FAAC Hungary",
+    "Bridgestone",
+    "thyssenkrupp",
+    "Cityfood"
+   ]
   },
   {
    "slug": "elite-vision",
    "name": "Elite Vision",
    "website": "https://profiweboldalkeszites.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2012,
+   "team_size": "1 fő",
    "services": [
     "Céges weboldal készítés",
     "Webáruház készítés",
@@ -1330,7 +2019,20 @@
    ],
    "description": "Egyedi, nem sablonra épülő céges weboldalakat és webáruházakat készít saját adminfelülettel, reszponzív kivitelben, főként kis- és középvállalkozásoknak. A fejlesztést arculat- és logótervezés, keresőoptimalizálás, valamint karbantartás és tartalomfeltöltési segítség egészíti ki. Irodája Budapest XVI. kerületében van, de távmunkában országszerte és külföldi megrendelőknek is dolgozik. A cég közlése szerint több mint tíz év szakmai tapasztalattal rendelkezik.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 321 3675",
+   "email": "info@profiweboldalkeszites.hu",
+   "languages": [
+    "magyar"
+   ],
+   "work_mode": "mindkettő",
+   "references": [
+    "Agricolae",
+    "Panyolai Pálinkák",
+    "Hunland Pigmenta",
+    "Alukonstrukt",
+    "HairHungary"
+   ]
   },
   {
    "slug": "emerald-pr",
@@ -1356,14 +2058,30 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://emeraldpr.hu/about/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 30 928 9647",
+   "email": "zsofia.lakatos@emeraldpr.hu",
+   "certifications": [
+    "Burson Cohn & Wolfe partner"
+   ],
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "Bunge",
+    "Mars",
+    "Honeywell",
+    "General Electric",
+    "White Star Real Estate"
+   ]
   },
   {
    "slug": "emlitve-hu",
    "name": "emlitve.hu",
    "website": "https://emlitve.hu/",
    "city": "Sopron",
-   "founded_year": null,
+   "founded_year": 2015,
    "team_size": null,
    "services": [
     "Weboldalkészítés",
@@ -1377,7 +2095,15 @@
    ],
    "description": "Soproni egyéni vállalkozás, amely kisebb cégek online jelenlétét építi fel: weboldalt készít, Google-keresőre optimalizál, konverziót javít, és külön megnevezett szolgáltatásként AI SEO-t és GEO-t is kínál. Utóbbi célja, hogy az ügyfél márkája releváns forrásként jelenjen meg az AI-alapú keresők válaszaiban. Az ajánlat három csomagra tagolódik, a felméréstől a teljes online jelenlétig.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 456 4128",
+   "email": "hello@emlitve.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "MatracExpress"
+   ]
   },
   {
    "slug": "everigo-group",
@@ -1403,15 +2129,20 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://everigo.eu/amazon-ertekesites-eladas/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 70 630 0195",
+   "email": "info@everigo.eu",
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "evobrands-marketing-ugynokseg",
    "name": "Evobrands Marketing Ügynökség",
    "website": "https://evobrands.hu/",
    "city": "Békéscsaba",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2014,
+   "team_size": "1 fő",
    "services": [
     "Facebook hirdetéskezelés",
     "Facebook oldal kezelés",
@@ -1428,15 +2159,27 @@
    ],
    "description": "Békéscsabai székhelyű marketingügynökség, amely a Facebook- és Instagram-hirdetések kezelését külön, fix havidíjas csomagban kínálja: a weboldalon közzétett ár 149 000 Ft + áfa havonta, legfeljebb 600 000 forintos hirdetési keretig. A fizetett kampányok mellett oldalkezelést, Google Ads és TikTok kampányokat, weboldalkészítést, videós és grafikai munkákat is vállal. A cég közlése szerint több mint egy évtizede van a piacon.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 725 5632",
+   "email": "info@evobrands.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Multi-Vitamin.hu",
+    "Oxygen Wellness Naphegy",
+    "Kond-Coop Kft.",
+    "Körúti Orvosi Centrum",
+    "Biobolt"
+   ]
   },
   {
    "slug": "exact-match",
    "name": "Exact Match",
    "website": "https://exactmatch.hu",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2020,
+   "team_size": "6 fő",
    "services": [
     "Google Ads",
     "Facebook és Instagram hirdetés",
@@ -1452,7 +2195,21 @@
    ],
    "description": "PPC-re és webanalitikára szakosodott budapesti ügynökség. Google Ads kampányokat tervez és kezel keresési, Shopping, display, YouTube és alkalmazáskampány formában, mellette Facebook-, Instagram- és LinkedIn-hirdetéseket is visz. Másik fő területe a mérés: GA4 beállítás, audit, mérési terv és riportok. Óradíjas vagy havidíjas PPC-tanácsadást, valamint online, tantermi és céges képzéseket is tart.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "email": "aron@exactmatch.hu",
+   "certifications": [
+    "Google Premier Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Schiller Autó Család",
+    "BioTechUSA",
+    "EPAM",
+    "Stylehub",
+    "Pesti Házak"
+   ]
   },
   {
    "slug": "exaline",
@@ -1481,22 +2238,49 @@
    ],
    "description": "Budapesti online marketing ügynökség, amely vállalkozásoknak kezel Google Ads-, valamint Facebook- és Instagram-kampányokat, emellett marketingstratégiát, keresőoptimalizálást és tartalommarketinget is vállal. A hirdetések mellett WordPress weboldalakat, illetve Shoprenter és Unas alapú webáruházakat épít. Külön szolgáltatásként kínál LLMS.txt fájl készítést, amely a weboldalak AI keresőkben és a ChatGPT-ben való megjelenését célozza. Az oldalon Google Partner jelvény szerepel.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 453 3533",
+   "email": "hello@exaline.hu",
+   "certifications": [
+    "Google CSS Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Máthé Textil",
+    "Patikapack",
+    "Rottner",
+    "Topmunkavédelem",
+    "Europabau"
+   ]
   },
   {
    "slug": "fatfox-creative",
    "name": "FatFox Creative",
    "website": "https://fatfoxcreative.hu/",
    "city": "Nagykovácsi",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2020,
+   "team_size": "2 fő",
    "services": [],
    "categories": [
     "Online marketing ügynökségek"
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 70 416 2900",
+   "email": "hello@fatfoxcreative.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Face and Soul",
+    "Samsung",
+    "Pure Luxury",
+    "Raktárbox",
+    "Ecovent"
+   ]
   },
   {
    "slug": "fdagent",
@@ -1516,15 +2300,19 @@
    ],
    "description": "Budapesti szolgáltató, amely kifejezetten agentic workflow rendszerekre, vagyis több lépésben önállóan dolgozó AI agentekre szakosodott. Egyedi árazású tervezési és fejlesztési munkát vállal magyar vállalkozásoknak, a megvalósításban n8n-integrációra is épít. A fejlesztés mellett fix díjas, alkalmanként 150 000 forintos workshopot is tart a témában. Jogi cégadatokat a weboldal nem közöl.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "email": "hello@fdagent.hu",
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "ferling-pr",
    "name": "FERLING PR",
    "website": "https://pr.ferling.hu",
    "city": "Pécs",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 1995,
+   "team_size": "16 fő",
    "services": [
     "Hírnévmenedzsment",
     "Vállalati és munkáltatói márkaépítés",
@@ -1542,15 +2330,27 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://pr.ferling.hu/szolgaltatasok",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 30 560 4964",
+   "email": "info@ferling.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "Trans-Sped",
+    "Körber Hungária",
+    "TESCO Technology",
+    "AMC Networks International"
+   ]
   },
   {
    "slug": "fleishmanhillard-budapest",
    "name": "FleishmanHillard",
    "website": "https://www.fleishmanhillard.hu",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2001,
+   "team_size": "8 fő",
    "services": [
     "Integrált vállalati kommunikációs stratégia",
     "Hírnévmenedzsment, külső kommunikáció",
@@ -1568,7 +2368,30 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://www.fleishmanhillard.hu/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 70 477 4650",
+   "email": "info@fleishmanhillard.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "industries": [
+    "bank",
+    "mezőgazdaság",
+    "energia",
+    "gyógyszeripar",
+    "pénzpiac",
+    "életmód szolgáltatások",
+    "ipari ágazatok",
+    "technológia"
+   ],
+   "references": [
+    "OTP Bank",
+    "PannoniaBio",
+    "InnoEnergy",
+    "Novartis",
+    "Deloitte"
+   ]
   },
   {
    "slug": "follow-marketing",
@@ -1592,37 +2415,73 @@
    ],
    "description": "Teljes körű marketingügynökségként mutatkozik be, amelynek kínálatában Meta- és Google-hirdetések, tartalomgyártás, lead generálás és online stratégia szerepel. Az oldaltérkép alapján külön aloldala van a teljes körű marketingnek, a profil- és hirdetéskezelésnek, a tanácsadásnak, egy AI auditnak és a ChatGPT-hirdetésnek, emellett esettanulmányokat és megtérülés-kalkulátort is közzétesz. Székhelyről, alapítási évről és csapatméretről a beolvasható tartalom nem ad tájékoztatást.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "forweb",
    "name": "FORWEB",
    "website": "https://forweb.hu/",
    "city": "Nyíregyháza",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2011,
+   "team_size": "9 fő",
    "services": [],
    "categories": [
     "Online marketing ügynökségek"
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 30 451 9672",
+   "email": "info@forweb.hu",
+   "certifications": [
+    "Google Premier Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "egészségügy"
+   ],
+   "references": [
+    "F Medical Magánklinika",
+    "Sugarnails"
+   ]
   },
   {
    "slug": "fusion-4",
    "name": "Fusion 4",
    "website": "https://fusion4.hu/",
    "city": "Kecskemét",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2006,
+   "team_size": "13 fő",
    "services": [],
    "categories": [
     "Online marketing ügynökségek"
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 30 298 7000",
+   "email": "hello@fusion4.hu",
+   "certifications": [
+    "Google Partner",
+    "UNAS Expert",
+    "Shoprenter Expert",
+    "Shopify Expert"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Akker Plus",
+    "Hegedűs méz",
+    "Hungaria Pumpen",
+    "Carbon",
+    "Hybridherbs"
+   ]
   },
   {
    "slug": "future-marketing",
@@ -1648,15 +2507,27 @@
    ],
    "description": "Elsősorban webáruházak hirdetéseivel foglalkozó online marketing ügynökség, amelyet Tóth Márk vezet. Facebook, Instagram, Google Ads, TikTok és Pinterest kampányokat kezel, ezt webanalitika, szerveroldali mérés, e-mail marketing, keresőoptimalizálás és WordPress alapú weboldalkészítés egészíti ki. Webshopok mellett egészségügyi, építőipari, logisztikai és utazási cégeknek is dolgozik. Hirdetési fiókok átvilágítását és marketingstratégia készítését szintén vállalja.",
    "status": "ellenőrizendő",
-   "review_note": "Az oldal forrásában spam tartalom van, valószínűleg feltörték."
+   "review_note": "Az oldal forrásában spam tartalom van, valószínűleg feltörték.",
+   "phone": "+36 70 150 1907",
+   "email": "hello@futuremarketing.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "webáruház",
+    "egészségügy",
+    "építőipar",
+    "logisztika",
+    "utazás"
+   ]
   },
   {
    "slug": "futuremanagement",
    "name": "FutureManagement",
    "website": "https://futuremanagement.hu/",
    "city": "Debrecen",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2016,
+   "team_size": "23 fő",
    "services": [
     "Webshop marketing",
     "Egészségügyi marketing",
@@ -1672,15 +2543,33 @@
    ],
    "description": "Debreceni központú ügynökség, amelynek Balatonfüreden is van irodája. Szolgáltatásait jellemzően havidíjas, ügyféltípusra szabott csomagokban kínálja: külön ajánlata van egészségügyi szolgáltatóknak, szolgáltató cégeknek és webáruházaknak, emellett videós tartalommal bővített csomagot is árul. A hirdetéskezelés és a közösségimédia-tartalom mellett weboldalakat készít, logót és arculatot tervez, valamint munkáltatói márkaépítéssel foglalkozik. A csomagok induló nettó árai a weboldalon nyilvánosak.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 454 8164",
+   "email": "hello@futuremanagement.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "industries": [
+    "egészségügy",
+    "szolgáltatás",
+    "webáruház"
+   ],
+   "references": [
+    "AutoWallis",
+    "Padelmaster",
+    "Fiziotars",
+    "Kulcsrakészház",
+    "Debrecen Takarítás"
+   ]
   },
   {
    "slug": "fws-online-zrt",
    "name": "fws online Zrt.",
    "website": "https://www.fws.hu/",
    "city": "Fertőszentmiklós",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2023,
+   "team_size": "15 fő",
    "services": [
     "Egyedi weboldal fejlesztés",
     "Egyedi webshop fejlesztés",
@@ -1696,15 +2585,27 @@
    ],
    "description": "Fertőszentmiklósi webstúdió, amely sablonok helyett egyedi tervezésű weboldalakat és webáruházakat fejleszt saját adminfelülettel. A fejlesztéshez domain-, tárhely- és üzemeltetési szolgáltatás, üzleti levelezés, GDPR-megfelelési támogatás és szakértői konzultáció társul. Marketing oldalon webszövegírást, weboldal-auditot, valamint fotó- és videókészítést vállal. A cég közlése szerint több mint 18 éves tapasztalattal dolgozik, ügyfelei között szálloda, önkormányzat és tőzsdei vállalat is van.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 99 200 300",
+   "email": "ugyfelszolgalat@fws.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Tornácos Hotel és Étterem",
+    "Horváth West-Bau",
+    "Castrum Sec",
+    "Gyógyszer Webáruház",
+    "Lajta-Szig"
+   ]
   },
   {
    "slug": "garand-design",
    "name": "Garand Design",
    "website": "https://garanddesign.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2015,
+   "team_size": "7 fő",
    "services": [
     "Meta hirdetéskezelés",
     "Google Ads kezelés",
@@ -1722,7 +2623,22 @@
    ],
    "description": "Budapesti szoftverfejlesztő és online marketing cég, amely webáruházaknak és leadgyűjtő vállalkozásoknak tervez Facebook- és Instagram-kampányokat. A Meta-hirdetéskezelés része a Pixel és a Conversions API beállítása, a célközönségek megtervezése, a kreatívok A/B tesztelése és a riportolás. A fizetett csatornák közül Google Ads, TikTok és ChatGPT hirdetéseket is kezelnek, emellett SEO és AI SEO szolgáltatást, AI-bevezetési tanácsadást és egyedi szoftverfejlesztést kínálnak.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 580 1466",
+   "email": "info@garanddesign.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "webáruház"
+   ],
+   "references": [
+    "WanderWell",
+    "FUTUREAL",
+    "SportCouture",
+    "VikVir",
+    "Dohány utcai Zsinagóga"
+   ]
   },
   {
    "slug": "gbh-media-marketing",
@@ -1737,15 +2653,19 @@
    ],
    "description": "A gbhmedia.hu cím a gbh.hu oldalra irányít át, ahol az adatgyűjtés idején csak egy fejlesztés alatt álló oldalról szóló tájékoztatás és egy e-mail-cím volt látható. A cégről ezért a GBH Média Marketing néven túl semmi nem ellenőrizhető: szolgáltatások, székhely, alapítási év és csapatméret nem szerepel a weboldalon. Az adatlap az oldal elkészülte után frissítendő.",
    "status": "ellenőrizendő",
-   "review_note": "Az oldal fejlesztés alatt áll, szolgáltatás nem ellenőrizhető."
+   "review_note": "Az oldal fejlesztés alatt áll, szolgáltatás nem ellenőrizhető.",
+   "email": "geri@gbhmedia.hu",
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "gold-communications",
    "name": "Gold Communications",
    "website": "https://www.goldcomm.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2001,
+   "team_size": "10 fő",
    "services": [
     "PR és sajtókapcsolatok",
     "Marketingtanácsadás",
@@ -1764,14 +2684,20 @@
    ],
    "description": "Budapesti székhelyű, teljes körű kommunikációs ügynökség, amely a PR-t és a sajtómunkát marketingtanácsadással, médiavásárlással és rendezvényszervezéssel kapcsolja össze. A kínálatban a klasszikus felületek (tévé- és rádiószpot, citylight, újsághirdetés) mellett Google Ads és közösségimédia-hirdetés is szerepel. Külön területként foglalkozik piackutatással és uniós pályázatok kommunikációjával; a cég közlése szerint több mint húsz éve működik.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 1 209 9028",
+   "email": "goldcomm@goldcomm.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ]
   },
   {
    "slug": "google-marketing-kft-google-ads-hirdetes-hu",
    "name": "Google Marketing Kft. (google-ads-hirdetes.hu)",
    "website": "https://google-ads-hirdetes.hu/",
    "city": null,
-   "founded_year": null,
+   "founded_year": 2024,
    "team_size": null,
    "services": [
     "Google Ads kampánykészítés",
@@ -1787,15 +2713,23 @@
    ],
    "description": "Sándor Benjámin Google Ads szakértő egyszemélyes szolgáltatása, amely mögött a lábléc szerint a Google Marketing Kft. áll. Keresési kampányok felépítésével és folyamatos kezelésével foglalkozik: fiókbeállítás, kulcsszókutatás, versenytárselemzés, optimalizálás és havi riport tartozik a munkához, kiegészítve weboldal-audittal és tanácsadással. Az oldal Google Partnerként mutatja be, és a Google partnerprofiljára is hivatkozik.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 746 7535",
+   "email": "info@google-ads-hirdetes.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "green-edge",
    "name": "Green Edge",
    "website": "https://greenedge.hu",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2017,
+   "team_size": "6 fő",
    "services": [
     "Google Ads hirdetéskezelés",
     "Facebook hirdetéskezelés",
@@ -1811,15 +2745,22 @@
    ],
    "description": "Marketingügynökség, amely önálló szolgáltatásként kínál Google Ads hirdetéskezelést, és az oldala szerint hivatalos Google Partner. A fizetett kampányokat közösségimédia-kommunikációval, Facebook-hirdetéssel, videógyártással és weboldal-fejlesztéssel egészíti ki. Az online munkán túl offline feladatokat is vállal, például grafikai tervezést, kiállítási stand építését és rendezvényszervezést, ami a tisztán PPC-s cégektől megkülönbözteti.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "email": "kapcsolat@greenedge.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "grepton",
    "name": "Grepton",
    "website": "https://grepton.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2001,
+   "team_size": "106 fő",
    "services": [
     "AI-bevezetés és tanácsadás",
     "AI agentek és copilotok",
@@ -1835,14 +2776,35 @@
    ],
    "description": "Több mint húsz éve működő informatikai részvénytársaság, amely főként hazai nagyvállalatoknak és intézményeknek szállít üzleti rendszereket. Microsoft Solution Partnerként Dynamics 365, Power BI és Salesforce bevezetésekkel foglalkozik, AI területen pedig tanácsadást, folyamatautomatizálást, valamint üzleti folyamatokra szabott agenteket és copilotokat kínál, jellemzően Microsoft Copilot és Azure AI alapokon.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 1 204 7730",
+   "email": "mail@grepton.hu",
+   "certifications": [
+    "Microsoft Solution Partner"
+   ],
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "industries": [
+    "kulturális szektor",
+    "gyártóipar",
+    "szolgáltatóipar"
+   ],
+   "references": [
+    "Allianz",
+    "Richter Gedeon",
+    "Telekom",
+    "Yettel",
+    "Semmelweis Egyetem"
+   ]
   },
   {
    "slug": "growth-craft",
    "name": "Growth Craft",
    "website": "https://growthcraft.agency/hu/",
    "city": "Jászárokszállás",
-   "founded_year": null,
+   "founded_year": 2024,
    "team_size": "8 fő",
    "services": [
     "PPC hirdetés",
@@ -1860,7 +2822,13 @@
    ],
    "description": "Adatvezérelt szemléletű growth marketing ügynökség, amelyet Buza Patrik alapított; az üzemeltető Growth Craft Kft. székhelye Jászárokszállás. PPC kampányokat, keresőoptimalizálást, weboldalkészítést, analitikát, e-mail és közösségimédia-marketinget, valamint növekedési stratégiát kínál főként kis- és középvállalkozásoknak és startupoknak. A weboldalon nyolc csapattag szerepel, köztük több senior PPC specialista; személyes egyeztetést jellemzően Szegeden, Budapesten és Gyöngyös környékén tartanak.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 250 3672",
+   "email": "info@growthcraft.agency",
+   "languages": [
+    "magyar",
+    "angol"
+   ]
   },
   {
    "slug": "growww-digital",
@@ -1886,7 +2854,25 @@
    ],
    "description": "A 2013-ban alapított budapesti ügynökség performance marketingre szakosodott, főként webáruházak és online szolgáltatók számára. Mintegy ötvenfős csapata PPC- és Shopping-kampányokat, keresőoptimalizálást, analitikát, programmatic médiavásárlást és közösségimédia-kommunikációt végez, emellett a közép-kelet-európai piacra lépést is támogatja. Google Premier Partner és Microsoft Advertising Partner minősítéssel rendelkezik, saját fejlesztésű eszközei közé tartozik a ROIminer és a ROIshopper.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "email": "hello@growwwdigital.com",
+   "certifications": [
+    "Google Premier Partner",
+    "Google Comparison Shopping Premium Partner",
+    "Google Marketing Platform Certified",
+    "Microsoft Advertising Partner"
+   ],
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "Daikin",
+    "Douglas",
+    "Kifli.hu",
+    "BioTechUSA",
+    "Helia-D"
+   ]
   },
   {
    "slug": "hd-marketing",
@@ -1894,7 +2880,7 @@
    "website": "https://hdmarketing.hu/",
    "city": "Budapest",
    "founded_year": 2011,
-   "team_size": null,
+   "team_size": "22 fő",
    "services": [
     "Google Ads kampánykezelés",
     "Google Shopping",
@@ -1913,15 +2899,33 @@
    ],
    "description": "A 2011 márciusában indult budapesti ügynökség teljesítményalapú és márkaépítő online marketinggel foglalkozik: Google Ads és Shopping kampányokat, közösségi hirdetéseket, keresőoptimalizálást, webanalitikát és hírlevél-automatizálást kínál. Külön szolgáltatásként szerepel az AI-láthatóság felmérése és javítása ChatGPT-ben és Geminiben. A cég közlése szerint Google Premier Partner, és évente mintegy 2,8 milliárd forint Google Ads költést kezel.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 574 1749",
+   "email": "info@hdmarketing.hu",
+   "certifications": [
+    "Google Premier Partner",
+    "Facebook Managed Agency"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "e-kereskedelem",
+    "B2B",
+    "B2C"
+   ],
+   "references": [
+    "SPAR",
+    "Luxoya"
+   ]
   },
   {
    "slug": "honlapbirodalom",
    "name": "HonlapBirodalom",
    "website": "https://www.honlapbirodalom.hu",
    "city": "Debrecen",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2010,
+   "team_size": "9 fő",
    "services": [
     "Google Ads kampánykezelés",
     "Facebook és Instagram hirdetés",
@@ -1938,14 +2942,23 @@
    ],
    "description": "Debreceni webes cég, amely a honlap- és webáruház-készítés mellett 2011 óta kezel Google Ads és Facebook kampányokat. Hirdetéskezelése Shopping, remarketing és YouTube kampányokra is kiterjed, és Google Partner jelvényt tüntet fel. A kínálatban keresőoptimalizálás, AI-keresőkre optimalizálás, TikTok-hirdetés, egyedi szoftver- és API-fejlesztés is szerepel, így a kampány és a mögötte álló weboldal egy helyről rendelhető.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 414 6215",
+   "email": "ertekesites@honlapbirodalom.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "work_mode": "távolról"
   },
   {
    "slug": "honlapseo-burai-barbi",
    "name": "HonlapSEO (Burai Barbi)",
    "website": "https://honlapseo.hu/",
    "city": "Dömös",
-   "founded_year": null,
+   "founded_year": 2020,
    "team_size": "1 fő",
    "services": [
     "Keresőoptimalizálás",
@@ -1961,7 +2974,16 @@
    ],
    "description": "Burai Barbi egyéni vállalkozó SEO-szakértő, aki saját közlése szerint 2016 óta dolgozik a területen, Dömös székhellyel. Egyszeri auditot, havidíjas keresőoptimalizálást, szövegírást, kulcsszókutatást és tanácsadást vállal. A menüben külön pontként szerepel a GEO és AI optimalizálás, amelyet elsősorban mentorálásként nyújt: állapotfelméréssel indul, és arra tanítja meg az ügyfelet, hogyan jelenjen meg a ChatGPT, a Gemini, a Perplexity és az AI Overviews találataiban.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 242 9494",
+   "email": "info@honlapseo.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Julia Ruhaszalon",
+    "Naturportal"
+   ]
   },
   {
    "slug": "hrenko-digital-agency-kft",
@@ -1969,7 +2991,7 @@
    "website": "https://www.hrenko.hu/",
    "city": "Budapest",
    "founded_year": 2009,
-   "team_size": null,
+   "team_size": "4 fő",
    "services": [
     "Webfejlesztés",
     "Webáruház készítés",
@@ -1986,7 +3008,22 @@
    ],
    "description": "Budapesti digitális ügynökség, amely a webes fejlesztést és a marketinget egy helyen kínálja: egyedi WordPress-oldalak, WooCommerce és egyedi webáruházak, UX- és UI-tervezés, mellette Google Ads kampánykezelés, SEO, szövegírás és arculattervezés. Külön megoldásokat ajánl turisztikai szereplőknek és toborzókampányokhoz, valamint tárhelyet is biztosít. Tagja a Magyar Reklámszövetségnek és az IAB Hungarynek.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 729 0904",
+   "email": "hello@hrenko.hu",
+   "certifications": [
+    "Magyar Reklámszövetség tag",
+    "IAB Hungary tag"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "turisztika"
+   ],
+   "references": [
+    "Burger King Magyarország"
+   ]
   },
   {
    "slug": "hrusi-content-marketing",
@@ -2013,15 +3050,20 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://hrusicontent.hu/rolunk/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 30 384 6680",
+   "email": "info@hrusicontent.hu",
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "hypin",
    "name": "Hypin",
    "website": "https://hypin.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2009,
+   "team_size": "15 fő",
    "services": [
     "Social media kezelés",
     "TikTok és Reels videók",
@@ -2038,14 +3080,32 @@
    ],
    "description": "Budapesti marketingügynökség, amely a közösségi médiára és a rövid videós tartalmakra épít, saját gyártócsapattal. Külön szolgáltatáscsomagot kínál éttermeknek, kávézóknak és szálláshelyeknek, emellett webáruházaknak és nagyobb, összetett kommunikációs projektekhez is dolgozik. Hirdetéskezelése a Meta, a Google és a TikTok mellett a ChatGPT hirdetési felületére is kiterjed. A cég közlése szerint 2020 óta működik Budapesten.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 637 5522",
+   "email": "hypin@hypin.hu",
+   "languages": [
+    "magyar"
+   ],
+   "work_mode": "mindkettő",
+   "industries": [
+    "vendéglátás",
+    "szálláshely",
+    "webshop"
+   ],
+   "references": [
+    "Pietro Bistro",
+    "Budapest Airport",
+    "LAFI",
+    "Coral Group",
+    "Berlinger Haus"
+   ]
   },
   {
    "slug": "innowa-marketing",
    "name": "Innowa Marketing",
    "website": "https://www.innowa.hu/",
    "city": "Budapest",
-   "founded_year": null,
+   "founded_year": 2018,
    "team_size": "10+ fő",
    "services": [
     "Influencer marketing",
@@ -2064,15 +3124,28 @@
    ],
    "description": "Az Andrássy úti székhelyű budapesti ügynökség profiljában a közösségi média áll a középpontban: influencer kampányokat szervez, Instagram- és Facebook-oldalakat kezel, TikTok tartalmat gyárt. Emellett konverzióalapú Google Ads és Meta hirdetéskezelést, keresőoptimalizálást, sajtómarketinget, videókészítést, valamint weboldal- és webshopfejlesztést is kínál. A weboldalon feltüntetett adatok szerint a csapat több mint tíz főből áll, és ötszáznál több projektet teljesített.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 205 0596",
+   "email": "info@innowa.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "iTOLC",
+    "Zala Springs",
+    "Royal Club Hotel",
+    "BESTWAX",
+    "Billingo"
+   ]
   },
   {
    "slug": "interactic-media",
    "name": "Interactic Media",
    "website": "https://interacticmedia.com/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 1991,
+   "team_size": "1 fő",
    "services": [
     "Meta hirdetéskezelés",
     "Google Ads hirdetéskezelés",
@@ -2089,14 +3162,29 @@
    ],
    "description": "Budapesti székhelyű, fizetett hirdetésekre szakosodott ügynökség, amely főként Shopify- és UNAS-alapú webáruházaknak kezel Meta- és Google-kampányokat, a hirdetési kreatívokkal és a méréssel együtt. A döntéseket a rendelésenkénti profitra alapozza, nem pusztán a ROAS mutatóra; ehhez saját, Margyn nevű elemzőplatformot használ. Külön szolgáltatásként leadgeneráló kampányokat és a magyar piacra belépő cégek támogatását is kínálja.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "email": "mate@interacticmedia.com",
+   "languages": [
+    "angol",
+    "magyar"
+   ],
+   "industries": [
+    "webáruház"
+   ],
+   "references": [
+    "Gere & Schubert",
+    "Picassify",
+    "Namely",
+    "SPARITUAL",
+    "Kling"
+   ]
   },
   {
    "slug": "interword-web-social",
    "name": "interword web & social",
    "website": "https://www.interword.hu/",
    "city": "Veszprém",
-   "founded_year": null,
+   "founded_year": 2002,
    "team_size": "2–10 fő",
    "services": [
     "Webdesign és webfejlesztés",
@@ -2113,7 +3201,20 @@
    ],
    "description": "Veszprémi webes és közösségimédia-ügynökség, amely weboldalak tervezését és fejlesztését kapcsolja össze a közösségi csatornák kezelésével, Google Ads, Meta és TikTok kampányokkal, e-mail és tartalommarketinggel, valamint keresőoptimalizálással. Referenciái között helyi kulturális intézmények és szállodák is szerepelnek, például a Veszprémi Petőfi Színház. Havidíjas weboldal-konstrukciót és ingyenes honlapauditot is kínál.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 992 2321",
+   "email": "info@interword.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "Veszprémi Petőfi Színház",
+    "Hotel Füred**** Spa & Conference",
+    "Flamingó Wellness és Konferencia Hotel****",
+    "Laczkó Dezső Múzeum",
+    "OLIVA Hotel & Étterem"
+   ]
   },
   {
    "slug": "intren",
@@ -2139,14 +3240,37 @@
    ],
    "description": "Budapesti digitális ügynökség széles szolgáltatási körrel, amelyen belül a Meta Ads külön, teljes körű hirdetéskezelési szolgáltatás: célközönség-kutatás, kreatívok és szövegek, A/B tesztelés, riportok, Pixel, Conversions API és Commerce Manager használatával. A díjazás havi alapdíjból és/vagy a hirdetési költés százalékából áll. Google, Shopping, LinkedIn és programmatic kampányokat, webanalitikát, konverzióoptimalizálást, SEO-t és AI-keresésekre történő optimalizálást is végeznek.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 1 201 5468",
+   "email": "sales@intren.hu",
+   "certifications": [
+    "Google Premier Partner",
+    "Meta Business Partner",
+    "Microsoft Advertising Partner",
+    "Google Marketing Platform Sales Partner",
+    "VWO Trusted Agency",
+    "Google Analytics 360 Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "pénzügyi szektor"
+   ],
+   "references": [
+    "Nestlé",
+    "BENU",
+    "Bayer",
+    "Provident",
+    "Jófogás"
+   ]
   },
   {
    "slug": "introweb-kft",
    "name": "Introweb Kft.",
    "website": "https://www.introweb.hu/",
    "city": "Szeged",
-   "founded_year": null,
+   "founded_year": 2003,
    "team_size": "13 fő",
    "services": [
     "META hirdetéskezelés",
@@ -2165,7 +3289,19 @@
    ],
    "description": "Webfejlesztéssel, üzemeltetéssel és webmarketinggel egyaránt foglalkozó cég, amelynél a Meta-hirdetéskezelés önálló szolgáltatás: az Instagram- és Facebook-kampányok tervezését, célzási struktúráját, folyamatos optimalizálását és a profilok menedzselését vállalják. A cég közlése szerint közel tíz éve kezel Meta-hirdetéseket. A marketingkínálatban Google Ads menedzsment, keresőoptimalizálás, generatív keresőoptimalizálás (GEO), hírlevélkezelés és tartalomgyártás is szerepel.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 414 2574",
+   "email": "porta@introweb.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Biztonságos Munkahely Kft.",
+    "DISZPÉCSER24 Kft.",
+    "Hercegasszony Birtok",
+    "MATE Agrárcsoport Kft. - Elvira Kert",
+    "VarrdOda Webshop"
+   ]
   },
   {
    "slug": "itzen",
@@ -2173,7 +3309,7 @@
    "website": "https://itzen.hu/",
    "city": "Orgovány",
    "founded_year": 2016,
-   "team_size": null,
+   "team_size": "5 fő",
    "services": [
     "SEO",
     "PPC menedzsment",
@@ -2190,14 +3326,25 @@
    ],
    "description": "Informatikai háttérből induló, 2016 óta működő online marketing vállalkozás, amelynek címe a Bács-Kiskun megyei Orgoványban található. Havidíjas keresőoptimalizálást, SEO auditot, WordPress és egyedi (Laravel) alapú weboldalkészítést, honlapkarbantartást, valamint Google Ads és Meta hirdetéseket lefedő PPC menedzsmentet kínál, jellemzően kisvállalkozásoknak. A munkát szabályozott folyamatokra és havi riportokra építi; a cég közlése szerint több mint 70 ügyfele volt.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 554 2654",
+   "email": "kozpont@itzen.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "eskuvoclassic.hu",
+    "afonyaporta.hu",
+    "dotforyoushop.com",
+    "csekebernadett.hu"
+   ]
   },
   {
    "slug": "just-bee-digital",
    "name": "Just Bee Digital",
    "website": "https://justbeedigital.hu/",
    "city": null,
-   "founded_year": null,
+   "founded_year": 2020,
    "team_size": null,
    "services": [
     "AI keresőoptimalizálás audit és stratégia",
@@ -2212,15 +3359,19 @@
    ],
    "description": "Pásti Edina digitális marketing szakértő cége, amelynek súlypontja az oktatás: céges AI képzéseket, workshopokat, marketingcsapatoknak szóló mentorálást és online kurzusokat tart, továbbá AI-val készít márka- és ingatlanvideókat. Tanácsadási ágon AIO és SEO auditot, illetve stratégiát kínál, amelynek célja, hogy az ügyfél weboldala a ChatGPT, a Perplexity és a Gemini számára is látható legyen.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "email": "hello@justbeedigital.hu",
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "kalu-creative",
    "name": "KALU Creative",
    "website": "https://kalucreative.com/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2023,
+   "team_size": "2 fő",
    "services": [
     "TikTok menedzsment",
     "Tartalomgyártás",
@@ -2237,15 +3388,31 @@
    ],
    "description": "Közösségi médiára, azon belül elsősorban a TikTokra összpontosító budapesti kreatív ügynökség. Csatornamenedzsmentet, videós és képi tartalomgyártást, influenszerkampányokat, valamint Facebook-, Instagram-, TikTok- és Google-hirdetések kezelését vállalja. Személyes márkáknak, webáruházaknak és nagyobb cégeknek egyaránt dolgozik; a honlapon bemutatott esettanulmányok között többek között a DPD, az Otthon Centrum és a Játéknet szerepel. KALU Academy néven képzést is kínál.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 731 0002",
+   "email": "hello@kalucreative.com",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "industries": [
+    "webáruház"
+   ],
+   "references": [
+    "DPD",
+    "Pölöskei",
+    "Vakvarjú",
+    "Otthon Centrum",
+    "Sasszemklinika"
+   ]
   },
   {
    "slug": "kanga-design",
    "name": "Kanga Design",
    "website": "https://kangadesign.hu",
    "city": "Leányfalu",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2000,
+   "team_size": "3 fő",
    "services": [
     "Google Ads hirdetéskezelés",
     "Remarketing hirdetés",
@@ -2260,15 +3427,32 @@
    ],
    "description": "Leányfalui online marketing és SEO vállalkozás, amely a keresőoptimalizálás mellett külön szolgáltatásként kezeli ügyfelei Google Ads és remarketing kampányait. A kínálat a keresőből érkező forgalomra épül: kulcsszókutatás, SEO elemzés, linképítés és SEO szövegírás tartozik hozzá. WordPress alapú honlapokat, valamint UNAS és WooCommerce webáruházakat is készít, így kisebb cégeknek teljes webes jelenlétet tud összerakni.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 246 0941",
+   "email": "info@kangadesign.hu",
+   "languages": [
+    "magyar"
+   ],
+   "work_mode": "távolról",
+   "industries": [
+    "webáruház",
+    "ügyvédi iroda",
+    "egészségügy",
+    "nonprofit"
+   ],
+   "references": [
+    "Philips",
+    "Sony",
+    "LG"
+   ]
   },
   {
    "slug": "kiszervezett-marketing",
    "name": "Kiszervezett Marketing",
    "website": "https://kiszervezettmarketing.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2021,
+   "team_size": "1 fő",
    "services": [
     "Facebook hirdetéskezelés",
     "Instagram hirdetések",
@@ -2280,7 +3464,22 @@
    ],
    "description": "A Kiszervezett Marketing Kft. kínálatában a Facebook-hirdetéskezelés a weboldalkészítés és -karbantartás mellett az egyetlen megnevezett marketingszolgáltatás. Három havidíjas csomagot hirdet, havi 98 900 Ft + áfától; mindegyik tartalmazza a Business Manager, a Pixel és a Conversions API beállítását, az A/B tesztelést, az Instagram-hirdetéseket és a heti e-mailes riportot. Esettanulmányai B2B és B2C leadgyűjtésről, valamint webshopos értékesítésről szólnak.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 1 987 6778",
+   "email": "info@kiszervezettmarketing.hu",
+   "certifications": [
+    "Magyar Marketing Szövetség tag"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Arriva",
+    "Juhhe",
+    "Agroinfomedia",
+    "Cégjegyző",
+    "Consolum"
+   ]
   },
   {
    "slug": "klikkmania",
@@ -2288,7 +3487,7 @@
    "website": "https://www.klikkmania.hu/",
    "city": "Budapest",
    "founded_year": 2007,
-   "team_size": null,
+   "team_size": "14 fő",
    "services": [
     "Google Ads",
     "Facebook és Instagram hirdetés",
@@ -2307,14 +3506,30 @@
    ],
    "description": "A 2007-ben alapított budapesti keresőmarketing ügynökség két fő területe a fizetett hirdetések kezelése és a keresőoptimalizálás. Hirdetési oldalon a Google Ads és a Meta mellett TikTok, YouTube, Microsoft Advertising és Pinterest kampányokat is visz, a SEO-kínálatban pedig külön szerepel az AI SEO és a Google AI Overviews optimalizálás. Honlapján Google Premier Partner jelvény látható.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 778 3839",
+   "email": "info@klikkmania.hu",
+   "certifications": [
+    "Google Premier Partner",
+    "Meta Business Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Nestlé",
+    "Erste Bank",
+    "Duna House",
+    "Velux",
+    "Netrisk"
+   ]
   },
   {
    "slug": "kmu-marketing",
    "name": "KMÜ Marketing",
    "website": "https://kmumarketing.hu/",
    "city": "Budapest",
-   "founded_year": null,
+   "founded_year": 2011,
    "team_size": "6 fő (kampánykezelők)",
    "services": [
     "Google Ads kampánykezelés",
@@ -2330,7 +3545,22 @@
    ],
    "description": "Kizárólag Google hirdetésekre szakosodott ügynökség: keresési, Shopping, Performance Max, display, Discovery és YouTube kampányokat kezel, elsősorban kis- és középvállalkozásoknak, webáruházaknak. A kampánykezelést webshop-optimalizálási és webanalitikai tanácsokkal egészíti ki. A cég közlése szerint 2022-ben, 2023-ban és 2024-ben is Google Premier Partner minősítést kapott, a munkát hatfős kampánykezelő csapat végzi.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 855 1004",
+   "email": "info@kmumarketing.hu",
+   "certifications": [
+    "Google Premier Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "gumiszőnyeg.eu",
+    "szivattyu-shop.hu",
+    "A-Z Bútor Webáruház",
+    "idrinks.hu",
+    "Baseus Hungary"
+   ]
   },
   {
    "slug": "ko-online-ugynokseg",
@@ -2355,15 +3585,27 @@
    ],
    "description": "A Kőrösi Ödön által alapított budapesti ügynökség Google és Meta hirdetéskezeléssel, keresőoptimalizálással, valamint weboldalak és webáruházak készítésével foglalkozik. Ügyfelei jellemzően kis- és középvállalkozások, ajánlatkérésre építő szolgáltatók és Unas, Shoprenter vagy WooCommerce alapú webshopok. A weboldal minősített Google Partner státuszt tüntet fel, és Google Ads képzést is kínál. A cég közlése szerint 2016 óta működik ezen a területen.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 160 8488",
+   "email": "info@onlineugynokseg.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "szolgáltatói szektor",
+    "webáruház"
+   ]
   },
   {
    "slug": "konverziomester",
    "name": "KonverzióMester",
    "website": "https://konverziomester.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2020,
+   "team_size": "1 fő",
    "services": [
     "Konverzióoptimalizálás (CRO)",
     "PPC kampánymenedzsment",
@@ -2375,15 +3617,21 @@
    ],
    "description": "Webáruházakra szakosodott szolgáltató, amelynek két fő területe a konverzióoptimalizálás és a PPC kampányok kezelése. A weboldal saját megfogalmazása szerint a konverziós arány javításán mesterséges intelligenciára támaszkodó módszerekkel dolgozik, a hirdetési oldalon pedig Google Ads kampányokat említ. A cég székhelyéről, alapítási évéről és csapatáról az oldal elérhető részei nem közölnek adatot, ezért ezek itt nem szerepelnek.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "webáruház"
+   ]
   },
   {
    "slug": "langmar-kommunikacio",
    "name": "Langmár Kommunikáció",
    "website": "https://langmar.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2011,
+   "team_size": "6 fő",
    "services": [
     "PR szolgáltatások",
     "Szövegírás",
@@ -2394,14 +3642,27 @@
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 30 628 9177",
+   "email": "info@langmar.hu",
+   "languages": [
+    "magyar"
+   ],
+   "work_mode": "távolról",
+   "references": [
+    "Panyi Zsuzsi (panyizsuzsi.hu)",
+    "Rácz Péter (complexpress.hu)",
+    "Dóri Kozmetika (dorikozmetika.eu)",
+    "Comline",
+    "Clearwater Kft."
+   ]
   },
   {
    "slug": "lead",
    "name": "LEAD+",
    "website": "https://leadplus.hu/",
    "city": null,
-   "founded_year": null,
+   "founded_year": 2017,
    "team_size": null,
    "services": [
     "B2B leadgenerálás",
@@ -2422,14 +3683,31 @@
    ],
    "description": "Kifejezetten B2B cégek érdeklődőszerzésére épülő ügynökség, amelyet a Golden Brothers Zrt. működtet. A stratégiától a vevőszerző weboldalon, Google Ads és Meta kampányokon, LinkedIn-megkereséseken át a CRM-es utánkövetésig egy rendszerben kezeli az értékesítési tölcsért. Kínálatában szerepel a ChatGPT-hez hasonló AI-eszközökben való megjelenés javítása és weboldalra telepíthető AI chatbot készítése is.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 226 6566",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "b2b",
+    "logisztika"
+   ],
+   "references": [
+    "ROSAS Group",
+    "Kreabim Kft.",
+    "SolarGo Kft.",
+    "Kraftman d.o.o."
+   ]
   },
   {
    "slug": "loginet-systems",
    "name": "LogiNet Systems",
    "website": "https://www.loginet.hu/",
    "city": "Budapest",
-   "founded_year": null,
+   "founded_year": 2008,
    "team_size": "100+ fő",
    "services": [
     "Egyedi szoftverfejlesztés",
@@ -2446,7 +3724,20 @@
    ],
    "description": "Budapesti szoftverház, amely a weboldala szerint több mint száz informatikai szakemberrel dolgozik egyedi webes, mobil- és e-kereskedelmi rendszereken, valamint rendszerintegráción. Mesterséges intelligencia területén hangalapú ügyfélszolgálati agenteket és AI-integrációt fejleszt megbízásra. Saját AI-termékei is vannak, köztük egy magyar nyelvű beszédszintézis-megoldás, a Logitalk. A fejlesztés mellett rendszerauditot, specifikációkészítést és üzemeltetést is vállal.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 174 1633",
+   "email": "info@loginet.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "Auchan",
+    "Rossmann",
+    "BENU Gyógyszertár",
+    "Vodafone",
+    "GLOBUS"
+   ]
   },
   {
    "slug": "lounge-group",
@@ -2472,7 +3763,17 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://lounge.hu/diviziok/lounge-comm",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 1 371 0189",
+   "email": "info@lounge.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "MVM Magyar Villamos Művek Zrt.",
+    "Nemzeti Mobilfizetési Zrt."
+   ]
   },
   {
    "slug": "madarasz-gabor-it-e-business",
@@ -2497,15 +3798,32 @@
    ],
    "description": "Egyéni tanácsadó, aki az informatikai fejlesztést és az online marketinget egyetlen üzletfejlesztési stratégiában kapcsolja össze. Az IT-oldalon webáruházak és B2B/B2C weboldalak építését, ERP- és CRM-bevezetést, rendszerintegrációt és folyamatautomatizálást vállal, marketingben pedig Google és Bing Ads-kampányokat, SEO-t, e-mail marketinget és közösségimédia-kezelést. Mikrovállalkozásoktól nagyvállalatokig dolgozik ügyfeleknek, egyes projekteken partnerekkel együtt.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 695 8372",
+   "email": "hello@madaraszgabor.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "B2B",
+    "B2C",
+    "e-kereskedelem"
+   ],
+   "references": [
+    "ANTIKVÁRIUM.HU KFT.",
+    "Online Márkabolt Magyarország Kft.",
+    "KATEX KFT.",
+    "HÁMORI AUTÓALKATRÉSZ KFT.",
+    "SMARTINDY KFT."
+   ]
   },
   {
    "slug": "madic",
    "name": "MADIC",
    "website": "https://madic.hu/",
    "city": "Sopron",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2022,
+   "team_size": "6 fő",
    "services": [
     "Marketing stratégia",
     "Branding és arculattervezés",
@@ -2523,14 +3841,25 @@
    ],
    "description": "Márkaépítésre összpontosító marketingügynökség, amely a stratégiától az arculattervezésen és a tartalomgyártáson át a weboldalfejlesztésig kíséri a vállalkozásokat. A PPC szolgáltatás keretében Meta (Facebook, Instagram) és Google Ads rendszerekben is futtat kampányokat, emellett rendezvénymarketinggel, közösségimédia-kezeléssel és auditokkal foglalkozik. A működtető cég a MADIC Group Kft., a bemutatkozó oldalon öt munkatárs szerepel.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 748 2598",
+   "email": "info@madic.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Billtree",
+    "KATI Naturals",
+    "The Moon Shop",
+    "Safe Control"
+   ]
   },
   {
    "slug": "maon",
    "name": "MAON",
    "website": "https://maon.hu/",
    "city": "Mátészalka",
-   "founded_year": null,
+   "founded_year": 2022,
    "team_size": "7 fő",
    "services": [
     "Google Ads hirdetéskezelés",
@@ -2549,15 +3878,27 @@
    ],
    "description": "A mátészalkai székhelyű MAON hétfős online marketing csapat, amely Google Ads, Meta, LinkedIn és TikTok hirdetéseket kezel, mellette közösségimédia-kezelést, hírlevelezést, weboldal- és webáruház-készítést, grafikai tervezést és videógyártást is vállal. Külön iparági csomagjai vannak egészségügyi, építőipari, szolgáltató és B2B cégeknek. Havidíjas csomagjait nyilvános árakkal hirdeti, és csak olyan partnerrel dolgozik, aki havonta legalább egy személyes találkozót vállal.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 399 3706",
+   "email": "kapcsolat@maon.hu",
+   "languages": [
+    "magyar"
+   ],
+   "work_mode": "mindkettő",
+   "industries": [
+    "egészségügy",
+    "építőipar",
+    "szolgáltatás",
+    "b2b"
+   ]
   },
   {
    "slug": "markcon",
    "name": "Markcon",
    "website": "https://markcon.hu",
    "city": "Pécs",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2006,
+   "team_size": "10 fő",
    "services": [
     "Google Ads",
     "Közösségimédia-hirdetéskezelés",
@@ -2574,14 +3915,37 @@
    ],
    "description": "Teljes körű marketingügynökség stratégákból, kreatívokból, designerekből és fejlesztőkből álló csapattal. Külön szolgáltatásként vállalja a PPC-kampányok teljes kezelését Google Ads-ben, a közösségi oldalon pedig Facebook-, Instagram-, LinkedIn- és TikTok-hirdetéseket visz. Emellett weboldalakat és webáruházakat készít, SEO-val, tartalomgyártással, arculattervezéssel, employer brandinggel és marketingtanácsadással foglalkozik, a hirdetés tehát egy szélesebb kínálat része.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 775 9966",
+   "email": "info@markcon.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "industries": [
+    "gyártás és ipar",
+    "autóipar",
+    "építőipar",
+    "élelmiszeripar",
+    "feldolgozóipar",
+    "szolgáltatási szektor",
+    "felsőoktatás",
+    "bankszektor",
+    "egészségügy",
+    "kis- és nagykereskedelem"
+   ],
+   "references": [
+    "Magyarországi Klinikai Vizsgálatszervezők Társasága",
+    "Eötvös József Főiskola",
+    "Adient"
+   ]
   },
   {
    "slug": "markestic",
    "name": "Markestic",
    "website": "https://markestic.com/",
    "city": "Budapest",
-   "founded_year": null,
+   "founded_year": 2018,
    "team_size": "20+ fő",
    "services": [
     "Google Ads",
@@ -2601,15 +3965,33 @@
    ],
    "description": "Több mint húszfős, budapesti irodából dolgozó digitális marketing ügynökség, amely a fizetett hirdetéseket, a tartalmat és a mérést egy kézben kezeli. Google, Meta, TikTok, LinkedIn és Microsoft kampányokat visz, árösszehasonlító oldalakat menedzsel, SEO-t és konverzióoptimalizálást végez. Külön szolgáltatásként kínálja, hogy az ügyfél oldala megjelenjen a ChatGPT válaszaiban és a Google AI-összefoglalóiban. Google Partner és IAB Hungary tag, e-kereskedelmi és egészségügyi ügyfelekkel.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 561 2185",
+   "email": "hello@markestic.com",
+   "certifications": [
+    "Google Partner",
+    "Criteo Partner",
+    "SalesManago Partner"
+   ],
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "Bosch",
+    "E.ON",
+    "Adecco",
+    "Szallas.hu",
+    "Extreme Digital"
+   ]
   },
   {
    "slug": "marketing-consulting",
    "name": "Marketing Consulting",
    "website": "https://marketing-consulting.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2022,
+   "team_size": "3 fő",
    "services": [
     "Full service marketing",
     "Google hirdetéskezelés",
@@ -2629,15 +4011,27 @@
    ],
    "description": "Budapesti és debreceni irodával működő online marketing ügynökség, amely teljes körű marketingkiszolgálást, Google-, Meta- és TikTok-hirdetéskezelést, keresőoptimalizálást, linképítést és webshop marketinget kínál. Külön szolgáltatásként hirdeti az AI keresőkre való optimalizálást (GEO és AEO). Honlapja Google Partner jelvényt, Shoprenter és UNAS partnerséget, valamint a Magyar Marketing Szövetség Marketing Gyémánt díjait tünteti fel.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 016 3003",
+   "email": "hello@marketing-consulting.hu",
+   "certifications": [
+    "Google Partner",
+    "Optimonk Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "B2B"
+   ]
   },
   {
    "slug": "marketing-kalkulator",
    "name": "Marketing Kalkulátor",
    "website": "https://marketingkalkulator.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2020,
+   "team_size": "5 fő",
    "services": [
     "Google Ads kampánykezelés",
     "Keresőoptimalizálás",
@@ -2654,15 +4048,26 @@
    ],
    "description": "Budapesti keresőmarketing-cég, amelyet Kovács Endre SEO- és GEO-szakember vezet; ő a weboldal szerint 2007 óta foglalkozik keresőoptimalizálással. A fő profil a Google Ads és Facebook kampánykezelés, a SEO és a linképítés. A GEO szolgáltatás auditból, technikai és tartalmi javításokból, hitelességépítésből és annak folyamatos méréséből áll, hogyan szerepel az ügyfél a ChatGPT, a Gemini és a Google AI Overviews válaszaiban.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 331 2133",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "industries": [
+    "építőipar"
+   ]
   },
   {
    "slug": "marketing-most",
    "name": "Marketing Most",
    "website": "https://marketingmost.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2020,
+   "team_size": "2 fő",
    "services": [
     "Videógyártás",
     "Online hirdetéskezelés (PPC)",
@@ -2680,14 +4085,25 @@
    ],
    "description": "Budapesti online marketinges csapat, amelynek kínálatában a videógyártás (márka-, termék- és hirdetési videók) ugyanúgy megtalálható, mint a Google-, Facebook- és Instagram-hirdetések kezelése és a keresőoptimalizálás. Sablonok helyett egyedi fejlesztésű weboldalakat és webáruházakat készít, ezen felül CRM-et és egyedi belső rendszereket, mobilalkalmazásokat is fejleszt. Marketingstratégiát és tanácsadást szintén vállal.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 407 2783",
+   "email": "hello@marketingmost.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "Steigen",
+    "Rendezveny-sator.hu",
+    "Doktor Kanapé"
+   ]
   },
   {
    "slug": "marketing-professzorok",
    "name": "Marketing Professzorok",
    "website": "https://marketingprofesszorok.hu",
    "city": "Gödöllő",
-   "founded_year": null,
+   "founded_year": 2015,
    "team_size": "14 fő",
    "services": [
     "Google Ads hirdetéskezelés",
@@ -2705,15 +4121,32 @@
    ],
    "description": "Tizennégy fős online marketing csapat, amely nyilvános árú csomagokban kínál hirdetésmenedzsmentet: külön Google-, külön közösségimédia- és kombinált Google–Meta csomagja is van. A kampánykezeléshez landing oldal készítése és optimalizálás is tartozik. A cég emellett keresőoptimalizálással, tartalommarketinggel, online PR-ral, honlapkészítéssel, marketing audittal és tanfolyamokkal foglalkozik, vagyis nem kizárólag PPC-re épül a profilja.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 332 7224",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "turizmus",
+    "egészségügy",
+    "webáruház",
+    "gasztronómia",
+    "b2b",
+    "szolgáltatás"
+   ],
+   "references": [
+    "Zsidai Gasztronómiai Csoport",
+    "GSK",
+    "Primis"
+   ]
   },
   {
    "slug": "marketing21",
    "name": "Marketing21",
    "website": "https://marketing21.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2018,
+   "team_size": "18 fő",
    "services": [
     "PPC",
     "SEO",
@@ -2725,7 +4158,29 @@
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 70 366 1719",
+   "email": "info@marketing21.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "industries": [
+    "hotel",
+    "egészségügy",
+    "b2b",
+    "webshop"
+   ],
+   "references": [
+    "Alcoa",
+    "L'Occitane",
+    "Bunzl",
+    "Geberit",
+    "Samsung Experience Store"
+   ]
   },
   {
    "slug": "marketinges-erika-es-csapata",
@@ -2751,14 +4206,28 @@
    ],
    "description": "Tatabányai székhelyű integrált marketingügynökség, amelyet Kovács Erika marketingstratéga vezet, és főként kis- és középvállalkozásoknak dolgozik. A stratégiaalkotástól a kivitelezésig egy kézben tartja a munkát: Google Ads, YouTube, Facebook és Instagram hirdetések kezelése, közösségi oldalak gondozása, weboldal- és webshopkészítés, grafika, szövegírás, videó és webanalitika. Google Partner jelvényt, valamint Shoprenter és UNAS szakértői minősítést tüntet fel.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 628 4314",
+   "email": "erika@marketingeserika.hu",
+   "certifications": [
+    "Google Partner",
+    "Shoprenter Szakértő"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Koloman",
+    "Spektrum fogorvosi rendelő",
+    "Tubadzin"
+   ]
   },
   {
    "slug": "marketingprezident",
    "name": "MarketingPrezident",
    "website": "https://marketingprezident.hu/",
    "city": null,
-   "founded_year": null,
+   "founded_year": 2015,
    "team_size": "6+ fő",
    "services": [
     "Google Ads",
@@ -2777,15 +4246,30 @@
    ],
    "description": "Fizetett online hirdetésekre épülő ügynökség, amelyet a Marketing Prezident Kft. üzemeltet. Google Ads, Google Shopping, YouTube, Facebook, Instagram, TikTok, Microsoft Ads és LinkedIn kampányokat kezel, ezt webanalitika, hírlevélküldés, grafika, közösségimédia-kezelés és weboldalkészítés egészíti ki. Havidíjas csomagjait nyilvánosan árazza, a kezelt csatornák száma szerint. A láblécben Google Partner jelvény látható; a cég közlése szerint több mint hattagú csapattal dolgozik.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 484 2598",
+   "email": "info@marketingprezident.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Himalája",
+    "Csoda Kertész",
+    "olcsobbgumi.hu",
+    "Gumiflex",
+    "Első Füredi Magánklinika"
+   ]
   },
   {
    "slug": "maximum-business",
    "name": "Maximum Business",
    "website": "https://maximumbusiness.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2018,
+   "team_size": "3 fő",
    "services": [
     "Növekedési stratégia",
     "Márkaépítés és pozicionálás",
@@ -2803,15 +4287,35 @@
    ],
    "description": "A Maximum Business a marketinget cégépítési feladatként kezeli: hét területből álló saját rendszerében a növekedési stratégia és a márkapozicionálás mellett Meta-, Google-, YouTube- és TikTok-kampányokat, tartalomgyártást, keresőoptimalizálást, weboldal- és CRM-fejlesztést, valamint videós és PR-munkát vállal. Szolgáltatásai között a Google mellett az AI-keresőkben való láthatóság is szerepel. A cég közlése szerint budapesti és dubaji irodával működik.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 739 1360",
+   "email": "ajanlatkeres@maximumbusiness.hu",
+   "certifications": [
+    "Google Partner",
+    "Meta Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "B2B",
+    "B2C"
+   ],
+   "references": [
+    "Zepter",
+    "Mercedes-Benz",
+    "Hada",
+    "Oliwka",
+    "Trófea Grill"
+   ]
   },
   {
    "slug": "mediator-group",
    "name": "Mediator",
    "website": "https://mediator.hu",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2005,
+   "team_size": "90 fő",
    "services": [
     "Kreatív kampányok",
     "Médiatervezés",
@@ -2829,7 +4333,12 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://mediator.hu/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 20 220 2906",
+   "email": "info@mediator.hu",
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "melkweg",
@@ -2837,7 +4346,7 @@
    "website": "https://melkweg.hu/",
    "city": "Budapest",
    "founded_year": 2015,
-   "team_size": null,
+   "team_size": "8 fő",
    "services": [
     "Tanácsadás",
     "Arculattervezés",
@@ -2851,7 +4360,19 @@
    ],
    "description": "A 2015-ben Budapesten alapított stúdió élménytervezéssel és szoftverfejlesztéssel foglalkozik: arculatot, egyszerű és összetett weboldalakat, webshopokat, mobilalkalmazásokat és digitális termékeket készít. Ügyfelei között cégek, startupok és innovációs csapatok egyaránt megtalálhatók, a munkát stratégiai tanácsadás egészíti ki. Hirdetéskezelést nem kínál, a hangsúly a tervezésen és a fejlesztésen van. Referenciái között szerepel az Alma Gyógyszertárak és a Liget Budapest.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 823 6660",
+   "email": "hello@melkweg.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "ELMŰ-ÉMÁSZ",
+    "ELLE",
+    "Lufthansa Cargo",
+    "MÁV",
+    "Kheiron Medical"
+   ]
   },
   {
    "slug": "micron-digital",
@@ -2873,15 +4394,29 @@
    ],
    "description": "Webfejlesztő műhely, amely weboldalak, webáruházak és mobilalkalmazások készítése mellett önálló szolgáltatásként kínál AI agent fejlesztést. A megrendelő folyamataira szabott, célorientált agenteket, telefonos hangasszisztenst és a weboldalon éjjel-nappal működő ügyféltámogató asszisztenst épít. Saját webáruház-platformja a Sellvio, emellett meglévő weboldalak üzemeltetését és hibajavítását is vállalja. A weboldal budapesti elérhetőséget ad meg.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 746 8266",
+   "email": "info@microndigital.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "oktatás",
+    "ingatlan",
+    "vendéglátás"
+   ],
+   "references": [
+    "BeeHub",
+    "MyBox"
+   ]
   },
   {
    "slug": "mobuen-digital-agency-kft",
    "name": "Mobuen Digital Agency Kft.",
    "website": "https://mobuen.com/",
    "city": null,
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2022,
+   "team_size": "2 fő",
    "services": [
     "Amazon regisztráció",
     "Amazon fiókkezelés",
@@ -2896,15 +4431,24 @@
    ],
    "description": "Amazon-értékesítésre szakosodott ügynökség, amely havidíjas konstrukcióban építi és kezeli a kereskedők eladói fiókját. A díj a regisztrációt, az FBA beállítását, az A+ tartalmat, a márkaregisztrációt, a Storefront kialakítását, a Buy Box megszerzését és az Amazonon belüli PPC kampányokat is lefedi. A csapat előbb saját termékekkel kereskedett a piactéren, ügyfeleknek 2020 óta dolgozik; a cég közlése szerint hivatalos Amazon Ads és Amazon SPN partner.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "email": "sayhello@mobuen.com",
+   "certifications": [
+    "Amazon Ads Partner",
+    "Amazon SPN Partner"
+   ],
+   "languages": [
+    "angol"
+   ],
+   "work_mode": "távolról"
   },
   {
    "slug": "morgens",
    "name": "MORGENS",
    "website": "https://morgens.hu",
    "city": "Nagykanizsa",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2012,
+   "team_size": "24 fő",
    "services": [
     "Google Ads kampányok",
     "Microsoft hirdetések",
@@ -2919,22 +4463,59 @@
    ],
    "description": "Szállodákra és vendéglátóhelyekre szakosodott digitális cég, amely saját foglalómotort, hűségprogram- és utalványrendszert, valamint szállodai weboldalakat fejleszt. Marketing üzletága többnyelvű PPC-kampányokat épít és kezel Google Ads, Microsoft és Yandex felületeken, mellette közösségimédia-kampányokat, e-mail marketinget és elemzést is végez. Az oldal Google Premier Partnerként tünteti fel, 2012-től 2026-ig jelölve az időszakot.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 642 0833",
+   "email": "sales@morgens.hu",
+   "certifications": [
+    "Google Premier Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "szálloda",
+    "turizmus"
+   ],
+   "references": [
+    "Lotus Therme Hotel & Spa",
+    "Barack Thermal Resort",
+    "Hotel Európa Fit",
+    "Greenfield Hotel Golf & Spa",
+    "Sungarden Wellness & Family Hotel"
+   ]
   },
   {
    "slug": "ndmarketing",
    "name": "NDMARKETING",
    "website": "https://ndmarketing.hu/",
    "city": "Debrecen",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2020,
+   "team_size": "4 fő",
    "services": [],
    "categories": [
     "Online marketing ügynökségek"
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 30 725 5590",
+   "email": "info@ndmarketing.hu",
+   "certifications": [
+    "Google Partner",
+    "Meta Partner",
+    "Shoprenter Partner",
+    "UNAS Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Borostyán Med-Hotel",
+    "Madách Színház",
+    "Campus Fesztivál",
+    "Kowalsky meg a Vega",
+    "Plan-Épszer"
+   ]
   },
   {
    "slug": "nest-comms",
@@ -2965,7 +4546,23 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://nestgroup.hu/en/comms/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 20 259 1600",
+   "email": "partner@nestgroup.hu",
+   "languages": [
+    "magyar",
+    "angol",
+    "német",
+    "koreai",
+    "kínai"
+   ],
+   "references": [
+    "BorsodChem",
+    "Futureal",
+    "Cordia",
+    "BYD",
+    "CATL"
+   ]
   },
   {
    "slug": "net-position-kft",
@@ -2973,7 +4570,7 @@
    "website": "https://www.net-position.hu/",
    "city": "Budapest",
    "founded_year": 2006,
-   "team_size": null,
+   "team_size": "13 fő",
    "services": [
     "Keresőoptimalizálás",
     "SEO audit",
@@ -2990,7 +4587,24 @@
    ],
    "description": "A 2006 óta működő budapesti online marketing cég keresőoptimalizálást kétféle díjazással vállal: havidíjas és eredményalapú konstrukcióban, külön Joomla- és WordPress-oldalakra szabott megoldással. Google Partnerként keresési és Shopping kampányokat kezel és auditál, emellett Facebook- és Instagram-hirdetéseket is futtat. A szövegírási szolgáltatás SEO-szövegekre, landing oldalakra, blogra és termékleírásokra terjed ki, és a cég közlése szerint mesterséges intelligencia nélkül készül.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 778 0938",
+   "email": "info@net-position.hu",
+   "certifications": [
+    "Google Partner",
+    "UNAS SEO Partner",
+    "Shoprenter Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "dunaauto.hu",
+    "Konica Minolta",
+    "Karcher Vitay",
+    "Forcapil",
+    "Allen Carr"
+   ]
   },
   {
    "slug": "netmarketing-online-reklamugynokseg-kft",
@@ -2998,7 +4612,7 @@
    "website": "https://netmarketing.hu/",
    "city": "Dabas",
    "founded_year": 2011,
-   "team_size": null,
+   "team_size": "16 fő",
    "services": [
     "Marketingstratégia",
     "Honlapkészítés",
@@ -3015,14 +4629,35 @@
    ],
    "description": "A 2011-ben létrejött, dabasi székhelyű ügynökség ügyfélkörének zömét webáruházak adják, mellettük szolgáltatóknak és gyártóknak is dolgozik. Google Ads- és Facebook-hirdetéseket kezel, közösségimédia-felületeket gondoz, honlapot készít és marketingstratégiát tervez. Az e-kereskedelmi fókuszt jelzi, hogy önálló szolgáltatásként kínál termékfeed-menedzsmentet. Google Partner; a cég közlése szerint eddig 790 webáruházzal dolgozott.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 387 3167",
+   "email": "info@netmarketing.hu",
+   "certifications": [
+    "Google Partner",
+    "Facebook Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "webáruház",
+    "szolgáltató",
+    "gyártó"
+   ],
+   "references": [
+    "Örkényi Takarék",
+    "Energofish",
+    "Infiniti",
+    "FORMONT",
+    "AGROKER Áruház Kft."
+   ]
   },
   {
    "slug": "nexen-it",
    "name": "NEXEN IT",
    "website": "https://nexenit.hu/",
    "city": "Újlengyel",
-   "founded_year": null,
+   "founded_year": 2023,
    "team_size": "12+ fő",
    "services": [
     "AI-alapú üzleti automatizálás",
@@ -3038,7 +4673,21 @@
    ],
    "description": "Egyedi szoftvereket, ügyviteli és CRM-rendszereket, weboldalakat és mobilalkalmazásokat fejlesztő cég, amely külön szolgáltatásként kínál AI-alapú üzleti automatizálást. Ennek keretében hideghívó, ügyfélszolgálati, értékesítési és e-mail-feldolgozó AI agenteket épít, főként kis- és középvállalkozásoknak. A folyamatfeltárást saját, EVOLUTIQ nevű módszertan szerint végzi; a weboldal több mint tizenkét csapattagot említ.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 422 4856",
+   "email": "hello@nexenit.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "work_mode": "mindkettő",
+   "references": [
+    "Absolutely Woman",
+    "Brikso",
+    "HEROE",
+    "InterCars",
+    "LoveNord"
+   ]
   },
   {
    "slug": "nexly",
@@ -3061,7 +4710,19 @@
    ],
    "description": "Egyéni vállalkozásként működő, balatonalmádi székhelyű fejlesztő, amely cégre szabott AI-rendszereket tervez, épít és üzemeltet. Fő területe a hangalapú és írásos ügyfélszolgálati asszisztens, amely a megrendelő saját adataiból válaszol és az ügyeket CRM-be rögzíti, emellett ajánlat- és rendelésfelvételt, belső tudásbázist is automatizál. A munka fizetős felméréssel indul, a kód és a dokumentáció átadásra kerül.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 317 9610",
+   "email": "info@nexly.digital",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Energofish",
+    "Personal Best",
+    "Brandin",
+    "Nagyajándék.hu",
+    "EV Solution"
+   ]
   },
   {
    "slug": "noguchi",
@@ -3069,7 +4730,7 @@
    "website": "https://www.noguchi.hu",
    "city": "Budapest",
    "founded_year": 1996,
-   "team_size": null,
+   "team_size": "26 fő",
    "services": [
     "PR és stratégiai kommunikációs tanácsadás",
     "Pozicionálás",
@@ -3086,15 +4747,39 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://www.noguchi.hu/rolunk",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 1 312 7289",
+   "email": "office@noguchi.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "élelmiszeripar",
+    "IT",
+    "egészségügy",
+    "energiaipar",
+    "pénzügy",
+    "jog",
+    "építőipar",
+    "ingatlan",
+    "logisztika",
+    "média"
+   ],
+   "references": [
+    "Coca-Cola",
+    "Danone",
+    "McDonald's",
+    "Unilever",
+    "Yettel"
+   ]
   },
   {
    "slug": "odpictures",
    "name": "ODPictures",
    "website": "https://odpictures.hu",
    "city": "Gödöllő",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2012,
+   "team_size": "2 fő",
    "services": [
     "Közösségi média tartalomgyártás",
     "Reklámfilm-gyártás",
@@ -3112,7 +4797,19 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://odpictures.hu/video-gyartas/kozossegi-media-tartalomgyartas/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 30 870 6160",
+   "email": "info@odpictures.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "TDK",
+    "Hilti",
+    "Hungexpo",
+    "Richter",
+    "UEFA"
+   ]
   },
   {
    "slug": "oloren",
@@ -3120,7 +4817,7 @@
    "website": "https://www.oloren.hu/",
    "city": "Budapest",
    "founded_year": 2014,
-   "team_size": null,
+   "team_size": "3 fő",
    "services": [
     "Filmkészítés és Reels",
     "Fotózás",
@@ -3138,7 +4835,27 @@
    ],
    "description": "Hajdúszoboszlón alakult 2014-ben, Horizont Records néven, ma budapesti irodából dolgozik. Eredeti profilja a film- és fotógyártás: reklám- és márkafilm, online sorozat, videoklip, animáció, termék-, ingatlan- és drónfotó. Erre épült rá a marketing: Google Ads és Meta hirdetéskezelés, havidíjas SEO és GEO csomagok, szövegírás, arculattervezés és webfejlesztés webáruházzal, CRM- és foglalási integrációval. Az oldalon Google Partner jelvény látható.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 964 0339",
+   "email": "info@oloren.hu",
+   "certifications": [
+    "Google Partner",
+    "Microsoft Advertising Certified Professional",
+    "ISO 9001",
+    "Dolby Vision Certified Professional"
+   ],
+   "languages": [
+    "magyar",
+    "angol",
+    "német"
+   ],
+   "references": [
+    "Novo Pilates",
+    "HCC",
+    "Datacam",
+    "Flink",
+    "Szamsped"
+   ]
   },
   {
    "slug": "online-marketing-wings-digitalis-ugynokseg-kft",
@@ -3146,7 +4863,7 @@
    "website": "https://online-marketing-wings.hu/",
    "city": "Szeged",
    "founded_year": 2011,
-   "team_size": null,
+   "team_size": "1 fő",
    "services": [
     "Egyedi webfejlesztés",
     "Google Ads hirdetéskezelés",
@@ -3164,7 +4881,18 @@
    ],
    "description": "Szegedi teljes körű digitális ügynökség, amely 2011 óta kínálja szolgáltatásait vállalkozásoknak. Egyedi weboldalakat fejleszt, Google Ads kampányokat kezel, keresőoptimalizálással, Facebook- és Instagram-kampányokkal, valamint e-mail marketinggel foglalkozik, és a teljes online marketing kiszervezését is vállalja. Sajátossága a céges videók gyártása és a kezdőknek szóló képzési kínálat, amely Google Ads, SEO és közösségimédia-tanfolyamokat foglal magában.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 62 659 215",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Johnson & Johnson",
+    "General Electric",
+    "E.ON",
+    "Egis Gyógyszergyár Zrt.",
+    "KITE Zrt."
+   ]
   },
   {
    "slug": "openonline",
@@ -3172,7 +4900,7 @@
    "website": "https://openonline.hu/",
    "city": "Győr",
    "founded_year": 2013,
-   "team_size": null,
+   "team_size": "12 fő",
    "services": [
     "Online marketing terv",
     "PPC kampánykezelés",
@@ -3190,15 +4918,32 @@
    ],
    "description": "Győri székhelyű online marketing ügynökség, amely 2013-ban indult. Tevékenysége a marketingterv készítésétől a kattintásalapú kampányok kezelésén, a keresőoptimalizáláson és a közösségimédia-kezelésen át a weboldal- és webáruház-fejlesztésig, valamint a grafikai és arculattervezésig terjed. Honlapja szerint Google Partner, emellett HubSpot- és Shoprenter-minősítést is feltüntet, és külön csomagot kínál induló vállalkozásoknak.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 971 0331",
+   "email": "info@openonline.hu",
+   "certifications": [
+    "Google Partner",
+    "Shoprenter Szakértő",
+    "HubSpot Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Tomcsányi Gyógyszertári Csoport",
+    "Magyar Termőföld Ingatlanhasznosító",
+    "Wellum Pénzügyi Zrt.",
+    "Tisza Cash",
+    "Dana Hungary Kft."
+   ]
   },
   {
    "slug": "optimalizalt-online-marketing-kft",
    "name": "Optimalizált Online Marketing Kft.",
    "website": "https://optimalizalt.hu/",
    "city": "Budakeszi",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2022,
+   "team_size": "2 fő",
    "services": [
     "Google Ads hirdetéskezelés",
     "Meta hirdetéskezelés",
@@ -3215,7 +4960,27 @@
    ],
    "description": "Budakeszi székhelyű, PPC-re szakosodott ügynökség, amelynek fő tevékenysége a Google Ads-, a Meta- (Facebook és Instagram) és a TikTok-kampányok kezelése. Ezt videós tartalomgyártás, tartalommarketing, tanácsadás és toborzási kampányok egészítik ki, a meglévő hirdetési fiókokra díjmentes auditot kínálnak. Projektalapon és folyamatos megbízásban is dolgoznak, hűségidő nélkül. Google Partner minősítéssel rendelkezik, a cég közlése szerint évente több mint 320 millió forintnyi hirdetési költést kezel.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 618 6102",
+   "email": "info@optimalizalt.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "webshop",
+    "szolgáltatás",
+    "személyes márka"
+   ],
+   "references": [
+    "Sixt Rent Car",
+    "Sanofi",
+    "Rave Ace Garden",
+    "Avmax Rendszertechnika",
+    "Variola"
+   ]
   },
   {
    "slug": "optimalnet",
@@ -3242,7 +5007,29 @@
    ],
    "description": "Budapesti, XIII. kerületi SEO- és digitális marketing ügynökség, amely 2005 óta van a piacon, és weboldala szerint Google Partner minősítéssel rendelkezik. Keresőoptimalizálás, Google Ads, közösségimédia-stratégia és Facebook hirdetéskezelés mellett külön szolgáltatásként kínál AI-láthatóságot (AEO/GEO) és ChatGPT hirdetést is. Több iparágra, köztük fogászatra, ingatlanra, szálláshelyekre és webáruházakra szabott marketingcsomagot tart, emellett képzéseket és marketingkiszervezést is vállal.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 226 6117",
+   "email": "info@optimalnet.hu",
+   "certifications": [
+    "Google Premier Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "fogászat",
+    "ingatlan",
+    "szálláshely",
+    "könyv",
+    "autómentő"
+   ],
+   "references": [
+    "Westend City Center",
+    "Best Western",
+    "Marionnaud",
+    "Butlers",
+    "Internetpatika"
+   ]
   },
   {
    "slug": "optimeyes",
@@ -3265,15 +5052,33 @@
    ],
    "description": "Kétfős budapesti csapat, amely AI-automatizációt és webdesignt kínál vállalkozásoknak. Ügyfélkommunikációs chatbotokat, Make-, Zapier- és n8n-alapú munkafolyamatokat, értékesítési és CRM-automatizálást, valamint belső tudásbázisra épülő asszisztenseket készít; a legnagyobb csomag egyedi AI asszisztens fejlesztését is tartalmazza. Weboldalakat, webalkalmazásokat és online foglalási rendszereket is fejlesztenek. Az árazás csomagokra épül, projektmérettől függően.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "email": "info@optimeyes.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "szépségipar",
+    "vendéglátás és szállás",
+    "rendezvényszervezés",
+    "oktatás",
+    "e-kereskedelem",
+    "marketing ügynökségek",
+    "ingatlan",
+    "pénzügyi tanácsadás",
+    "ügyvédi irodák",
+    "HR és toborzás",
+    "SaaS és tech startupok",
+    "szórakoztatóipar"
+   ]
   },
   {
    "slug": "peakbit-technologies-kft",
    "name": "PeakBit Technologies Kft",
    "website": "https://peakbit.tech/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2023,
+   "team_size": "6 fő",
    "services": [
     "Mobilalkalmazás-fejlesztés",
     "Webfejlesztés",
@@ -3295,7 +5100,7 @@
    "name": "Pixon Design",
    "website": "https://pixon.hu/",
    "city": "Tatabánya",
-   "founded_year": null,
+   "founded_year": 2024,
    "team_size": null,
    "services": [
     "SEO és LLM optimalizálás",
@@ -3313,15 +5118,27 @@
    ],
    "description": "Tatabányai webes stúdió, amely egyedi weboldalak, webáruházak, szoftverek és mobilalkalmazások fejlesztése mellett keresőoptimalizálást is vállal. A SEO szolgáltatást kifejezetten LLM optimalizálással együtt kínálja: a tartalmat úgy építi fel, hogy a ChatGPT, a Gemini és a Perplexity is olvasni és idézni tudja. Külön szolgáltatása az egyedi AI chatbot, amely weboldalra, Messengerre és WhatsAppra telepíthető.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 542 5589",
+   "email": "info@pixon.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Szörnyen Matek",
+    "Beraktár.hu",
+    "Mirabell Dental",
+    "Máda Plusz",
+    "Zsalugép Webáruház"
+   ]
   },
   {
    "slug": "plus-creative-agency",
    "name": "Plus Creative Agency",
    "website": "https://plus-kreativ.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2014,
+   "team_size": "6 fő",
    "services": [
     "Médiavásárlás",
     "Marketingkampányok",
@@ -3333,15 +5150,31 @@
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 1 621 5804",
+   "email": "hello@plus-kreativ.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "Huawei",
+    "Groupama",
+    "BKV",
+    "Magyar Államkincstár",
+    "Takler Kúria"
+   ]
   },
   {
    "slug": "ppc-media",
    "name": "PPC Média",
    "website": "https://ppcmedia.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2006,
+   "team_size": "9 fő",
    "services": [
     "Google Ads kampánykezelés",
     "Google Ads fiók audit",
@@ -3358,29 +5191,60 @@
    ],
    "description": "Google Ads kampányokra szakosodott budapesti ügynökség, amely saját közlése szerint 2006 óta dolgozik az online marketingben, és Premier Google Partner minősítéssel rendelkezik. A Google-fiókok kezelése és auditja mellett Meta-, Microsoft Ads-, LinkedIn-, Criteo- és Pinterest-kampányokat is visz, webáruházaknak pedig CSS-alapú Shopping megoldást ad. Elsősorban nagyobb költésű hirdetőket céloz: havi 500 ezer forint feletti PPC-büdzsétől ajánlja magát.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 692 6158",
+   "email": "hello@ppcmedia.hu",
+   "certifications": [
+    "Google Premier Partner",
+    "Criteo Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "webshop"
+   ]
   },
   {
    "slug": "ppc-online-webmarketing",
    "name": "PPC Online Webmarketing",
    "website": "https://ppconline.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2022,
+   "team_size": "6 fő",
    "services": [],
    "categories": [
     "Online marketing ügynökségek"
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 70 533 0257",
+   "email": "info@ppconline.hu",
+   "certifications": [
+    "Google Partner",
+    "Shoptet Partner",
+    "UNAS Partner",
+    "Shoprenter Szakértő"
+   ],
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "Relax Kft",
+    "Cryptoplaza",
+    "Kittwell",
+    "Bluedigital",
+    "Sailortom"
+   ]
   },
   {
    "slug": "ppc-smart",
    "name": "PPC Smart",
    "website": "https://ppc-smart.hu/",
    "city": null,
-   "founded_year": null,
+   "founded_year": 2008,
    "team_size": null,
    "services": [
     "Keresőoptimalizálás",
@@ -3391,15 +5255,20 @@
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 20 323 4584",
+   "email": "seoguru.ppcsmart@gmail.com",
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "prbk-kommunikacio",
    "name": "PRBK",
    "website": "https://prbk.hu",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2003,
+   "team_size": "7 fő",
    "services": [
     "Stratégiai tervezés",
     "Márkaépítés",
@@ -3418,7 +5287,22 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://prbk.hu/rolunk/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "email": "info@probako.hu",
+   "certifications": [
+    "Worldcom PR Group Partner"
+   ],
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "Kiwi.com",
+    "Eurowag",
+    "Unilever",
+    "IBUSZ",
+    "Artisjus"
+   ]
   },
   {
    "slug": "presston-pr",
@@ -3444,14 +5328,18 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://presstonpr.hu/cegismerteto.html",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "languages": [
+    "magyar",
+    "angol"
+   ]
   },
   {
    "slug": "prioris",
    "name": "Prioris",
    "website": "https://prioris.hu/",
    "city": "Budapest",
-   "founded_year": null,
+   "founded_year": 2017,
    "team_size": "18 fő",
    "services": [
     "Marketingstratégia és tanácsadás",
@@ -3470,7 +5358,24 @@
    ],
    "description": "Tizennyolc fős budapesti online marketing ügynökség, amelynek fő területe a fizetett hirdetések kezelése Google, Meta és TikTok felületeken, kiegészítve stratégiai tanácsadással, e-mail marketinggel, konverzióoptimalizálással és weboldal-, illetve PPC-audittal. Honlapja Google Partner és Meta Business Partner státuszt tüntet fel. A cég közlése szerint ügyfeleinek mintegy 70 százaléka több éve dolgozik velük.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 799 6596",
+   "email": "hello@prioris.hu",
+   "certifications": [
+    "Google Partner",
+    "Meta Business Partner",
+    "Optimonk Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "OfficeMarket.hu",
+    "PC aréna",
+    "Expertus Travel",
+    "Wallbox",
+    "Nail4U.hu"
+   ]
   },
   {
    "slug": "pro-business-consulting",
@@ -3478,7 +5383,7 @@
    "website": "https://www.probusiness.hu",
    "city": null,
    "founded_year": 2015,
-   "team_size": null,
+   "team_size": "2 fő",
    "services": [
     "Kommunikációs és PR-stratégia",
     "Sajtó- és médiakapcsolatok",
@@ -3498,15 +5403,35 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://www.probusiness.hu/kik-vagyunk/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 20 320 8019",
+   "email": "hello@probusiness.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "B2B",
+    "informatika",
+    "építés és lakberendezés",
+    "bank és pénzügy",
+    "egészségügy",
+    "üzleti szolgáltatás"
+   ],
+   "references": [
+    "MBH Bank",
+    "Budapest Bank",
+    "Cleartex",
+    "Dreamcinema",
+    "Wepark"
+   ]
   },
   {
    "slug": "produkcios-reszleg",
    "name": "Produkciós Részleg",
    "website": "https://www.pr-reszleg.hu",
    "city": null,
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2009,
+   "team_size": "3 fő",
    "services": [
     "Vállalati PR és sajtókommunikáció",
     "Sajtóközlemények",
@@ -3527,22 +5452,48 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://www.pr-reszleg.hu/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 70 942 5520",
+   "email": "info@pr-reszleg.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "B2B",
+    "B2C"
+   ]
   },
   {
    "slug": "profelis",
    "name": "Profelis",
    "website": "https://profelis.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2006,
+   "team_size": "4 fő",
    "services": [],
    "categories": [
     "Online marketing ügynökségek"
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 20 460 1537",
+   "email": "info@profelis.hu",
+   "certifications": [
+    "Google Partner",
+    "MMSZ tanúsított tag"
+   ],
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "Duna Medical Center",
+    "Jóautók.hu",
+    "Premier",
+    "Welch",
+    "Wing"
+   ]
   },
   {
    "slug": "ps-provocative",
@@ -3567,14 +5518,42 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://psprovocative.com/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 30 347 6472",
+   "email": "info@psprovocative.com",
+   "certifications": [
+    "MPRSZ tagság",
+    "Convoy Global PR Group"
+   ],
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "industries": [
+    "élelmiszer",
+    "egészségügy",
+    "divat",
+    "kozmetika és szépségápolás",
+    "logisztika",
+    "járműipar",
+    "oktatás",
+    "pénzügy",
+    "turizmus és vendéglátás"
+   ],
+   "references": [
+    "Danone",
+    "Starbucks",
+    "KFC",
+    "Michelin",
+    "Erste Bank"
+   ]
   },
   {
    "slug": "psa-consulting-kft",
    "name": "PSA Consulting Kft.",
    "website": "https://psa.hu/",
    "city": "Budapest",
-   "founded_year": null,
+   "founded_year": 2023,
    "team_size": "2–10 fő",
    "services": [
     "Amazon eladói fiók regisztráció",
@@ -3590,15 +5569,26 @@
    ],
    "description": "Teljes körű Amazon ügynökség, amely az eladói fiók regisztrációjától a termékoldalak elkészítésén és az FBA-logisztika beindításán át az Amazonon belüli hirdetések kezeléséig kíséri a kereskedőket. Segít a külföldi adószámok és adóügyi megfelelés intézésében is, a piacterek nyelvén anyanyelvi munkatársak dolgoznak. Irodája Budapest IX. kerületében van, emellett Németországban, a stuttgarti repülőtér közelében is jelen van.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 435 0144",
+   "email": "info@psa-consulting.hu",
+   "certifications": [
+    "Amazon Ads Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "GALLMET"
+   ]
   },
   {
    "slug": "r-szoft",
    "name": "R-Szoft",
    "website": "https://r-szoft.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2019,
+   "team_size": "7 fő",
    "services": [
     "Generatív AI fejlesztés",
     "AI ügynök fejlesztés",
@@ -3613,15 +5603,34 @@
    ],
    "description": "Budapesti szoftverfejlesztő cég, amely a weboldala szerint 2018 óta készít szoftvereket, és mára a generatív AI-ra helyezte a hangsúlyt. LLM-bevezetést, AI ügynököket, chatbotokat, belső tudásbázisra épülő asszisztenseket és e-mail-elemző megoldásokat fejleszt megbízásra, távközlési, HR- és ajánlatadási területre szabott megoldásokkal. Saját termékei is vannak, köztük a SmartAIChat és az Athene AI.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 181 2087",
+   "email": "office@r-szoft.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "távközlés",
+    "ipar",
+    "HR",
+    "logisztika",
+    "állami szektor"
+   ],
+   "references": [
+    "Indivizo",
+    "Nemzeti Sportinformációs Rendszer",
+    "Tachosafe",
+    "Vodafone",
+    "Xella"
+   ]
   },
   {
    "slug": "radelit-media",
    "name": "Radelit Média",
    "website": "https://radelitmedia.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2020,
+   "team_size": "13 fő",
    "services": [
     "PPC hirdetések",
     "SEO",
@@ -3639,15 +5648,33 @@
    ],
    "description": "Négy üzletágra épülő, teljes körű marketingügynökség: a marketing (PPC, SEO, e-mail, influenszer kampányok, webfejlesztés) mellett saját tartalomgyártással, médiaértékesítéssel és -vásárlással foglalkozó sales house-zal, valamint rendezvényszervezéssel is rendelkezik. A PPC szolgáltatás Google Ads és Meta Ads felületeken futó kampányok teljes kezelését fedi le. Referenciái között feltűnően sok a szálloda. A honlapon Google Partner, IAB Hungary és Magyar Marketing Szövetség logó látható.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 486 1088",
+   "email": "info@radelit.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "szálloda"
+   ],
+   "references": [
+    "Starbucks",
+    "CIB Bank",
+    "Allianz",
+    "Bosch",
+    "Bambara Hotel"
+   ]
   },
   {
    "slug": "relevat-digital",
    "name": "Relevat Digital",
    "website": "https://relevatdigital.com/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2022,
+   "team_size": "1 fő",
    "services": [
     "AI rendszerek és agentek",
     "WordPress fejlesztés",
@@ -3662,15 +5689,28 @@
    ],
    "description": "Budapesti fejlesztőcég, amely távmunkában nemzetközi megbízásokat is vállal. Hat szolgáltatási területe van: AI-rendszerek és agentek építése, WordPress- és egyedi webes megoldások, egyedi webáruház-fejlesztés, folyamatautomatizálás és belső eszközök, folyamatos karbantartás, valamint audit és stratégiai tanácsadás. Jellemzően olyan csapatoknak dolgozik, amelyek kinőtték a sablonos webáruházat, vagy sok ismétlődő kézi munkát váltanának ki.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "email": "hello@relevatdigital.com",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "work_mode": "távolról",
+   "references": [
+    "Bitrise",
+    "Kultzer",
+    "Papageno",
+    "RTL",
+    "Sony"
+   ]
   },
   {
    "slug": "rg-studio-kft",
    "name": "RG-STÚDIÓ Kft.",
    "website": "https://rgstudio.hu/",
    "city": "Pécs",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 1995,
+   "team_size": "12 fő",
    "services": [
     "Google hirdetéskezelés",
     "Facebook és Instagram hirdetés",
@@ -3688,14 +5728,30 @@
    ],
    "description": "Pécsi online marketing ügynökség, amely elsősorban webáruházaknak és növekedni kívánó cégeknek dolgozik. Kezel Google-, Facebook-, Instagram-, TikTok- és LinkedIn-hirdetéseket, készít marketingstratégiát és auditot, végez keresőoptimalizálást, tartalommarketinget, valamint weboldal- és webshopfejlesztést. Digitalizációs pályázatokhoz kapcsolódó támogatást és Manychat alapú Messenger chatbot építést is kínál. A cég közlése szerint 2025-ben ünnepelte 25 éves fennállását.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 539 3556",
+   "email": "info@rgstudio.hu",
+   "certifications": [
+    "Google Partner",
+    "Messenger Marketing Expert"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "webáruház"
+   ],
+   "references": [
+    "EGLO Lux Kft.",
+    "E-Educatio"
+   ]
   },
   {
    "slug": "rm-webstudio",
    "name": "RM Webstudio",
    "website": "https://rmwebstudio.hu/",
    "city": "Budapest",
-   "founded_year": null,
+   "founded_year": 2019,
    "team_size": null,
    "services": [],
    "categories": [
@@ -3703,15 +5759,27 @@
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 20 665 3858",
+   "email": "kapcsolat@rmwebstudio.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Országos Magyar Vadászkamara",
+    "Cushman & Wakefield Magyarország",
+    "Mokos Pincészet",
+    "Working-Right.hu – Menedék Egyesület",
+    "Urbán Fuvarozás"
+   ]
   },
   {
    "slug": "rollout-it",
    "name": "Rollout IT",
    "website": "https://rolloutit.net/",
    "city": null,
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2018,
+   "team_size": "15 fő",
    "services": [
     "Egyedi szoftverfejlesztés",
     "Dedikált fejlesztőcsapatok",
@@ -3727,30 +5795,64 @@
    ],
    "description": "A Rollout IT a magyarországi bejegyzésű Runios IT Ltd. márkaneve, amely egyedi szoftverfejlesztéssel, dedikált fejlesztőcsapatok kihelyezésével és staff augmentationnel foglalkozik, magyar és amerikai elérhetőséggel. Kiemelt területei az AI, az EdTech és a FinTech, külön Rust-fejlesztési gyakorlattal. AI-vonalon chatbotokat, saját tudásbázisra épülő asszisztenseket és agentikus munkafolyamatokat épít, startupoknak és nagyvállalatoknak egyaránt.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 476 8347",
+   "email": "office@rolloutit.net",
+   "languages": [
+    "angol"
+   ],
+   "industries": [
+    "ai",
+    "edtech",
+    "fintech"
+   ],
+   "references": [
+    "Erste",
+    "MOL",
+    "Vodafone",
+    "MBH",
+    "Labster"
+   ]
   },
   {
    "slug": "scl-media-marketing",
    "name": "SCL Media Marketing",
    "website": "https://sclmedia.hu/",
    "city": "Miskolc",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2022,
+   "team_size": "5 fő",
    "services": [],
    "categories": [
     "Online marketing ügynökségek"
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 70 383 3777",
+   "email": "hello@sclmedia.hu",
+   "certifications": [
+    "Google Partner",
+    "Mailerlite Partner",
+    "Mailchimp Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "DVTK",
+    "Magyar Vöröskereszt Miskolc",
+    "Korhely étterem",
+    "Huntherm Kft.",
+    "Bástya Hotel"
+   ]
   },
   {
    "slug": "selector-online-marketing-ugynokseg",
    "name": "Selector Online Marketing Ügynökség",
    "website": "https://www.selector.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2010,
+   "team_size": "8 fő",
    "services": [
     "PPC kampánykezelés",
     "Google Ads",
@@ -3769,7 +5871,23 @@
    ],
    "description": "A budapesti Selector külön szakcsapatokkal viszi a kampánykezelést, a keresőoptimalizálást, a webfejlesztést és a közösségi médiát. Hirdetési oldalon a Google Ads és a Meta mellett LinkedIn-, TikTok-, Pinterest- és ChatGPT-hirdetéseket is kezel, emellett auditokat, webanalitikát és konverzióoptimalizálást kínál. AI SEO szolgáltatása azt vizsgálja és javítja, hogyan jelenik meg egy márka a ChatGPT, a Perplexity és a Google AI válaszaiban. A cég közlése szerint Google Partner.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 414 5065",
+   "email": "hello@selector.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "Menedzser Praxis",
+    "Sager Pharma Kft.",
+    "Zöld Gépezet",
+    "Revicet",
+    "Codeberry"
+   ]
   },
   {
    "slug": "seo-cikkek",
@@ -3793,14 +5911,25 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://seocikkek.hu/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 30 623 2610",
+   "email": "anita@seocikkek.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Blikk.hu",
+    "168.hu",
+    "Origo.hu",
+    "Edigital"
+   ]
   },
   {
    "slug": "seoads-online-marketing",
    "name": "SeoAds Online Marketing",
    "website": "https://seoads.hu/",
    "city": null,
-   "founded_year": null,
+   "founded_year": 2022,
    "team_size": null,
    "services": [
     "Facebook hirdetéskezelés",
@@ -3820,7 +5949,12 @@
    ],
    "description": "Tóth Tibor által alapított online marketing vállalkozás, amely a Facebook- és Instagram-hirdetéseket a kampányok számához és a hirdetési kerethez igazított, nyilvános árú csomagokban kezeli; a legkisebb csomag havi 45 000 Ft + áfa. Emellett Google Ads kampányokat, keresőoptimalizálást és weboldalfejlesztést vállal. A SEO-szolgáltatás része az AI-keresőkre (ChatGPT, Gemini, Perplexity) történő optimalizálás, a fejlesztési kínálatban pedig egyedi, nyelvi modellre épülő chatbotok is szerepelnek.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 624 2373",
+   "email": "kapcsolat@seoads.hu",
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "seobox",
@@ -3843,14 +5977,25 @@
    ],
    "description": "Koza Andrea SEO-szakértő nevéhez kötődő, kizárólag keresőoptimalizálásra szakosodott szolgáltató. Auditot, tanácsadást, havidíjas optimalizálást, szövegírást és linképítést vállal, emellett online szervezetfejlesztést is kínál. Önálló menüpontja az AI SEO, amelynek célja, hogy az ügyfél tartalma az AI-alapú keresők számára idézhető legyen. Fizetett hirdetésekkel a weboldal alapján nem foglalkozik.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "email": "info@seobox.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Lantern Event Kft.",
+    "Cégesbiztosítás",
+    "Master Language",
+    "Immunlife Forever",
+    "ÁCSFer"
+   ]
   },
   {
    "slug": "setler-alex-sa-marketing",
    "name": "Setler Alex | SA Marketing",
    "website": "https://setleralex.hu/",
    "city": null,
-   "founded_year": null,
+   "founded_year": 2018,
    "team_size": null,
    "services": [
     "Facebook hirdetéskezelés",
@@ -3866,14 +6011,25 @@
    ],
    "description": "Egyéni vállalkozóként dolgozó hirdetési szakember, aki Facebook-, Instagram- és Google-kampányok kezelését vállalja; az ügyfél projektmenedzser közbeiktatása nélkül, közvetlenül vele dolgozik. A havidíjas PPC-csomagok 89 000 forinttól indulnak, a nagyobb csomag 139 000 forinttól, és létezik egyszeri, csak beállítást tartalmazó változat is. A weboldal szerint hivatalos Google Partner. A kivitelezés mellett digitális marketing tananyagokat is kínál.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "email": "samarketing@setleralex.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Blokkbirodalom.hu",
+    "Droveez.hu"
+   ]
   },
   {
    "slug": "sikerosveny-online-marketing-ugynokseg",
    "name": "Sikerösvény online marketing ügynökség",
    "website": "https://sikerosveny.hu/",
    "city": null,
-   "founded_year": null,
+   "founded_year": 2018,
    "team_size": null,
    "services": [
     "Facebook hirdetéskezelés",
@@ -3886,15 +6042,27 @@
    ],
    "description": "Kisvállalkozásoknak dolgozó, szűk profilú online marketing műhely, amelynek három fő szolgáltatása a Facebook-hirdetéskezelés, a WordPress weboldalak és a WooCommerce webáruházak készítése. A hirdetéseknél a stratégiától a célközönségek beállításán, a kreatívok elkészítésén és a pixeles mérésen át a folyamatos optimalizálásig vállalja a munkát. Az oldal Válóczi Károlyt nevezi meg marketingrendszer-tervezőként és kivitelezőként.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 377 1938",
+   "email": "uzenet@sikerosveny.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "viragrendeles.com",
+    "tudatoscsalad.hu",
+    "temiti.hu",
+    "felvinczy.hu",
+    "globustrend.hu"
+   ]
   },
   {
    "slug": "smartbotics",
    "name": "SmartBotics",
    "website": "https://smartbotics.ai/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2025,
+   "team_size": "3 fő",
    "services": [
     "Egyedi AI asszisztens fejlesztés",
     "AI üzleti elemzés és stratégia",
@@ -3908,7 +6076,14 @@
    ],
    "description": "Vállalkozások számára épít úgynevezett AI kollégákat: a megrendelő saját adataira és folyamataira tanított asszisztenseket, amelyeket a meglévő eszközökbe köt be. A munka üzleti elemzéssel és stratégiával indul, majd fejlesztés, bevezetés és folyamatos finomhangolás következik. A cég közlése szerint több mint ötszáz integrációt támogat, köztük hazai rendszereket, például a Billingót, a Számlázz.hu-t és a miniCRM-et.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 1 490 0504",
+   "email": "info@smartbotics.ai",
+   "languages": [
+    "magyar",
+    "angol",
+    "német"
+   ]
   },
   {
    "slug": "socialpro",
@@ -3916,7 +6091,7 @@
    "website": "https://www.socialpro.hu/",
    "city": "Dombóvár",
    "founded_year": 2020,
-   "team_size": null,
+   "team_size": "2 fő",
    "services": [
     "AI agent fejlesztés",
     "AI telefonos asszisztens",
@@ -3935,14 +6110,26 @@
    ],
    "description": "A dombóvári székhelyű KG Creative Media Group Kft. márkája, amely 2020-ban indult, és a weboldal szerint 2024-ben fordult az AI-fejlesztés felé. Egyedi AI agenteket, telefonos asszisztenseket és üzleti automatizációkat épít hazai kis- és középvállalkozásoknak, emellett webes és mobilfejlesztést vállal. A fejlesztési munkát hirdetéskezelés egészíti ki: Google Ads, Meta-kampányok és AI keresőkre szabott tartalomoptimalizálás.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 208 3310",
+   "email": "krasznai.gabor@socialpro.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Domusa Teknik",
+    "T Flotta",
+    "Duna House",
+    "Otthon Centrum",
+    "Kupi"
+   ]
   },
   {
    "slug": "socialwings",
    "name": "SocialWings",
    "website": "https://socialwings.hu/",
    "city": "Budapest",
-   "founded_year": null,
+   "founded_year": 2020,
    "team_size": "18 fő",
    "services": [
     "Google Ads hirdetéskezelés",
@@ -3961,7 +6148,14 @@
    ],
    "description": "Budapesti online marketing ügynökség, amely a fizetett hirdetésekre épít: Google Ads, Facebook- és Instagram-kampányokat kezel, emellett közösségimédia-menedzsmentet, e-mail marketinget, egyedi és sablonalapú webfejlesztést, valamint online marketing auditot vállal. Kevésbé megszokott szolgáltatása a céges és influenszer közösségimédia-fiókok védelme. Google Partner minősítésű; a cég közlése szerint 18 szakemberrel dolgozik, hazai és külföldi kampányokon egyaránt.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "email": "hello@socialwings.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ]
   },
   {
    "slug": "soul-in",
@@ -3985,15 +6179,21 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://soulin.hu/social-media-tartalomgyartas/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "phone": "+36 30 715 6727",
+   "email": "info@soulin.hu",
+   "languages": [
+    "magyar"
+   ],
+   "work_mode": "mindkettő"
   },
   {
    "slug": "stilldesign",
    "name": "Stilldesign",
    "website": "https://stilldesign.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2008,
+   "team_size": "3 fő",
    "services": [
     "Weboldal készítés",
     "Webáruház készítés",
@@ -4012,15 +6212,27 @@
    ],
    "description": "A budapesti webfejlesztő és online marketing csapat weboldalakat és webáruházakat épít, amelyeket hirdetéskezeléssel is kiegészít: Google Ads, Facebook, Instagram, LinkedIn és TikTok kampányokat egyaránt vállal. Emellett keresőoptimalizálással, közösségi oldalak kezelésével, szövegírással és AI chatbot fejlesztéssel is foglalkozik. A cég közlése szerint közel húsz év alatt több mint ezer honlapot és webshopot készített.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 326 2176",
+   "email": "mate.rona@stilldesign.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Új Színház Nonprofit Kft.",
+    "Kamin Group Kft.",
+    "Holdvölgy Birtok Borászat",
+    "TeaNova Kft.",
+    "Budapesti Közművek"
+   ]
   },
   {
    "slug": "suhajda-tamas-ppc-webdesign-automatizaciok",
    "name": "Suhajda Tamás - PPC | Webdesign | Automatizációk",
    "website": "https://www.suhajdatamas.hu/",
    "city": "Szeged",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2025,
+   "team_size": "1 fő",
    "services": [
     "Facebook hirdetéskezelés",
     "Google Ads hirdetéskezelés",
@@ -4036,15 +6248,30 @@
    ],
    "description": "Szegedi szakértői vállalkozás, amely az SHJD Solutions Kft. keretében Facebook- és Instagram-hirdetéseket kezel: értékesítési kampányokat, dinamikus remarketinget és katalógushirdetéseket, űrlapos leadgyűjtést, pixelbeállítást és konverziómérést, havi riporttal. Az oldal a kezelési díjat jellemzően havi 40-100 ezer forint közé teszi. Google Ads és ChatGPT Ads kampányokat, weboldalkészítést, közösségimédia-tartalomgyártást és AI-val írt blogcikkek automatizált közzétételét is kínálja.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 609 9119",
+   "email": "hello@suhajdatamas.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Aquamaxx",
+    "Ecoprotect",
+    "Elko",
+    "vampirebitealarm.com",
+    "Veres Gipszkarton"
+   ]
   },
   {
    "slug": "sybell-informatika-kft",
    "name": "Sybell Informatika Kft.",
    "website": "https://sybell.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2017,
+   "team_size": "11 fő",
    "services": [
     "Webtárhely",
     "Domain regisztráció",
@@ -4058,7 +6285,19 @@
    ],
    "description": "Tárhelyszolgáltató, amely webtárhelyet, domain regisztrációt, céges levelezést, valamint bérelhető és virtuális szervereket kínál vállalkozásoknak, webáruházaknak és nagy forgalmú oldalaknak. Kiemelten a WordPress-alapú honlapok üzemeltetésére összpontosít: ingyenes költöztetést és karbantartási szolgáltatást is nyújt. A cég közlése szerint 17 éves tapasztalattal rendelkezik, szerverei budapesti szerverparkban működnek, viszonteladóknak pedig partnerprogramot tart fenn.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 1 707 6726",
+   "email": "hello@sybell.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Wellis",
+    "Pick Szeged",
+    "CITY TAXI",
+    "Legrand",
+    "Magyar Kereskedelmi és Iparkamara"
+   ]
   },
   {
    "slug": "tartalom-design-kft",
@@ -4066,7 +6305,7 @@
    "website": "https://tartalomdesign.hu/",
    "city": "Dunakeszi",
    "founded_year": 2018,
-   "team_size": null,
+   "team_size": "2 fő",
    "services": [
     "Facebook és Instagram kampánykezelés",
     "Google Ads kampánykezelés",
@@ -4085,7 +6324,19 @@
    ],
    "description": "A 2018 óta működő ügynökség „AI-támogatott marketing rendszerként” írja le a munkamódszerét: minden területnek külön szakértője van, a projekteket pedig egy úgynevezett rendszermérnök hangolja össze. Kezel Facebook-, Instagram-, Google Ads-, TikTok- és ChatGPT-hirdetéseket, külön szolgáltatásként kínál AI keresőkre optimalizálást (AEO/GEO), továbbá weboldalakat és webáruházakat épít, szöveget ír, videót és fotót készít. Főként hazai kis- és középvállalkozásoknak dolgozik.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 533 2224",
+   "email": "info@tartalomdesign.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "webáruház",
+    "divat",
+    "turizmus",
+    "étterem",
+    "mezőgazdaság"
+   ]
   },
   {
    "slug": "tasnadi",
@@ -4093,7 +6344,7 @@
    "website": "https://www.tasnadi.co/hu",
    "city": "Budapest",
    "founded_year": 2018,
-   "team_size": null,
+   "team_size": "2 fő",
    "services": [
     "Branding",
     "Weboldal készítés",
@@ -4106,7 +6357,20 @@
    ],
    "description": "Budapesti digitális ügynökség, amely 2018-ban tervezőstúdióként indult, ma pedig arculattervezéssel, weboldalak és webshopok készítésével, valamint tanácsadással foglalkozik. Elsősorban szolgáltató kkv-knak és startupoknak dolgozik, a honlapokat érdeklődőszerzésre és értékesítésre építve. Kínálatában újabb elemként digitalizációs stratégia is szerepel. A cég weboldala több szakmai elismerést sorol fel, köztük az Aranyrajzszög 2019 és a Magyar Tervezőgrafika 2023 díjat.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 242 5087",
+   "email": "hello@tasnadi.net",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "EEG",
+    "Szabadság Bisztró",
+    "Caffé Mauro",
+    "TFSE",
+    "International House Budapest"
+   ]
   },
   {
    "slug": "the-palm-group",
@@ -4128,7 +6392,20 @@
    ],
    "description": "Növekedésközpontú digitális marketing ügynökség, amely szolgáltatásait nem hirdetési platformok, hanem üzleti célok szerint csoportosítja: növekedési stratégia, bevételre optimalizált performance kampányok, döntéstámogató riportok, konverzióra tervezett weboldalak és webáruházak, valamint mesterséges intelligenciával támogatott kreatívgyártás. Belépő csomagként növekedési auditot kínál. A weboldal láblécében Google Partner jelvény szerepel, a referenciák között nagyvállalati logók láthatók.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Fujitsu",
+    "Generali",
+    "FoodPanda",
+    "Xiaomi",
+    "Marquard"
+   ]
   },
   {
    "slug": "the-pitch",
@@ -4153,7 +6430,26 @@
    ],
    "description": "Blogként indult 2013-ban, a mögötte álló céget 2015-ben jegyezték be, ügynökségi munkát pedig 2017 óta végez a budapesti SEO csapat, amely a saját közlése szerint tizenkét főből áll. Fizetett hirdetést nem kezel, a keresőoptimalizálás teljes folyamatát viszi: audit, stratégia, házon belüli szövegírás, linképítés, migráció és monitoring. Külön szolgáltatásban vizsgálja a nagy nyelvi modellekben elérhető láthatóságot, emellett tanfolyamokat és szakmai rendezvényeket szervez.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 835 0440",
+   "email": "hello@thepitch.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "webshop",
+    "egészségügy",
+    "jogi szolgáltatók",
+    "pénzügyi szolgáltatók",
+    "utazási iroda"
+   ],
+   "references": [
+    "Rossmann",
+    "Szimpatika",
+    "Euronics",
+    "Gumi.hu",
+    "Masterplast"
+   ]
   },
   {
    "slug": "timesaver",
@@ -4178,7 +6474,19 @@
    ],
    "description": "Sinka Gabriella Tímea egyszemélyes tanácsadói vállalkozása, amely saját megfogalmazása szerint apparátus nélkül, szükség esetén külső szakemberek bevonásával dolgozik. Magyar márkáknak kínál GEO és AEO tartalomstratégiát, AI láthatósági diagnosztikát és átfogó SEO/AEO elemzést. Emellett weboldalt épít, Google Ads és Meta hirdetéseket kezel, közösségi médiát visz, és Make alapú üzleti automatizálást is vállal.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 296 5730",
+   "email": "info@timesaver.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Prémium Ingatlanok",
+    "DentiCare.ie",
+    "Női Vezetők",
+    "Szakonyi Krisztina",
+    "Nagyváradi Nelli"
+   ]
   },
   {
    "slug": "toldi-marketing",
@@ -4204,7 +6512,22 @@
    ],
    "description": "Toldi Miklós 2013-ban indult, személyes márkára épülő budapesti vállalkozása, amelyet a Profit Digi Bt. üzemeltet. Hirdetéskezelést vállal a Google, a Facebook, az Instagram, a LinkedIn, a TikTok és a Pinterest felületein, mellette konverzióoptimalizálást, keresőoptimalizálást és közösségimédia-marketinget. Külön ajánlata az AI SEO és GEO, vagyis a ChatGPT-hez hasonló rendszerek ajánlásaiba kerülés. A honlap Google Premier Partner státuszt tüntet fel.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 849 2125",
+   "email": "miklos@toldimarketing.hu",
+   "certifications": [
+    "Google Premier Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Crystal Nails",
+    "Honda",
+    "The Million Roses",
+    "Játéksziget",
+    "Duna Medical Center"
+   ]
   },
   {
    "slug": "toptarget",
@@ -4212,7 +6535,7 @@
    "website": "https://toptarget.hu/",
    "city": "Vecsés",
    "founded_year": 2012,
-   "team_size": null,
+   "team_size": "2 fő",
    "services": [
     "Google Ads hirdetéskezelés",
     "Facebook és Instagram hirdetések",
@@ -4230,14 +6553,32 @@
    ],
    "description": "A 2012 januárjában alapított Toptarget Marketing Kft. webáruházak és szolgáltató cégek fizetett hirdetéseit kezeli: Google Ads (keresési, Shopping, Performance Max), Facebook, Instagram, YouTube, újabban ChatGPT-hirdetések is. Erős a mérési oldala, GA4, Google Tag Manager és Consent Mode beállítást vállal, ezekről tanfolyamot is tart. Hivatalos Google Partner minősítéssel rendelkezik; tartalommarketinget és WordPress-fejlesztést is végez.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 442 8304",
+   "email": "info@toptarget.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "webáruház",
+    "szolgáltató cégek"
+   ],
+   "references": [
+    "jateksport.hu",
+    "zsola-ablak.hu",
+    "aranypiac.hu",
+    "lezermed.hu"
+   ]
   },
   {
    "slug": "torok-balazs",
    "name": "Török Balázs",
    "website": "https://www.torokbalazs.com/",
    "city": null,
-   "founded_year": null,
+   "founded_year": 2020,
    "team_size": null,
    "services": [
     "CRM és hírlevélrendszerek",
@@ -4257,7 +6598,21 @@
    ],
    "description": "Egyéni digitális marketing tanácsadó, aki a honlapja szerint több mint tíz év tapasztalattal épít CRM- és hírlevélrendszereket, automatizmusokat, valamint kezel Facebook- és Google Ads-kampányokat. SEO, GEO és AEO auditot és tanácsadást is végez, továbbá AI-bevezetést és automatizált munkafolyamatok kiépítését vállalja cégeknek. Marketing, értékesítési és AI témájú céges képzéseket tart, interim megoldásként is bevonható.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "certifications": [
+    "Shoprenter szakértő"
+   ],
+   "languages": [
+    "magyar",
+    "angol",
+    "német"
+   ],
+   "references": [
+    "Codecool",
+    "FAW Volkswagen",
+    "KPMG",
+    "Ebrand"
+   ]
   },
   {
    "slug": "unidome-studio-creative",
@@ -4283,15 +6638,27 @@
    ],
    "description": "Videós és fotós tartalomgyártásból kiinduló kreatív stúdió: reklámfilmet, vállalati, ipari és oktatófilmet, alkalmazásbemutató videót készít, utómunkával és élő közvetítéssel együtt. A gyártás mellé online marketinget is ad, vagyis a közösségi oldalak teljes körű kezelését, PPC kampányokat a Google Ads-től a Facebook-, Instagram- és TikTok-hirdetésekig, hírlevélkészítést, webáruház-támogatást és influenszermarketinget. Így a tartalom elkészítése és terjesztése egy csapatnál marad.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 20 406 1570",
+   "email": "hello@unidome.studio",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Schneider Electric",
+    "E.ON",
+    "FUJIFILM",
+    "Skullcandy",
+    "Provident"
+   ]
   },
   {
    "slug": "uniomedia",
    "name": "Uniomedia",
    "website": "https://uniomedia.com",
    "city": null,
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2012,
+   "team_size": "42 fő",
    "services": [
     "Public relations",
     "Public affairs, kormányzati kapcsolatok",
@@ -4310,15 +6677,24 @@
    "status": "kész",
    "review_note": null,
    "source_url": "https://uniomedia.com/en/",
-   "added": "2026-10-11"
+   "added": "2026-10-11",
+   "languages": [
+    "angol"
+   ],
+   "references": [
+    "Telekom HU",
+    "CIB Bank",
+    "Heineken",
+    "Sanofi"
+   ]
   },
   {
    "slug": "urban-communications",
    "name": "Urban Communications",
    "website": "https://www.urbancomm.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2010,
+   "team_size": "2 fő",
    "services": [
     "PR és médiakommunikáció",
     "Márkaépítés és stratégia",
@@ -4336,7 +6712,18 @@
    ],
    "description": "Kommunikációs ügynökség, amely három területre összpontosít: turizmus és vendéglátás (desztinációk, szállodák, borászatok, éttermek), kkv-k és startupok, valamint a magyar piacra lépő nemzetközi márkák kommunikációja és tartalmainak lokalizálása. A PR és a stratégiai tanácsadás mellett közösségimédia-kezelést, influenszermarketinget, Wix-alapú weboldalépítést és Facebook-, Instagram-, illetve Google-hirdetések beállítását is vállalja. Sajátossága a CLEAN MEDIA néven futó kültéri gerillareklám.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 747 0577",
+   "email": "akos@urbancomm.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "industries": [
+    "turizmus",
+    "vendéglátás",
+    "kkv és startup"
+   ]
   },
   {
    "slug": "usernet",
@@ -4344,7 +6731,7 @@
    "website": "https://www.usernet.hu/",
    "city": "Budapest",
    "founded_year": 2001,
-   "team_size": null,
+   "team_size": "3 fő",
    "services": [
     "Weboldal fejlesztés",
     "Webshop fejlesztés",
@@ -4358,14 +6745,26 @@
    ],
    "description": "2001-ben alapított, budapesti székhelyű webfejlesztő cég, amely egyedi weboldalakat, webshopokat és portálokat, valamint belső vállalati folyamatokat támogató webes szoftvereket készít. A fejlesztés mellett Google Ads kampánykezelést és mérést, illetve üzemeltetést és támogatást is vállal. Saját közlése szerint több mint 400 projektet zárt le; referenciái között a Michelin és az Audi neve is szerepel.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 318 7474",
+   "email": "info@usernet.hu",
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Michelin",
+    "Audi",
+    "Billerbeck",
+    "Royal Vodka",
+    "Trocellen Automotive"
+   ]
   },
   {
    "slug": "vamosoft",
    "name": "Vamosoft",
    "website": "https://vamosoft.net/hu/",
    "city": "Szigetszentmiklós",
-   "founded_year": null,
+   "founded_year": 2023,
    "team_size": null,
    "services": [
     "Mobilalkalmazás-fejlesztés",
@@ -4379,7 +6778,19 @@
    ],
    "description": "Elsősorban iOS- és Android-alkalmazásokat fejlesztő csapat, amely egyedi webes rendszereket is készít. A munka az igényfelméréstől a tervezésen és az agilis fejlesztésen át az áruházi publikálásig és az indulás előkészítéséig tart, utána karbantartást és támogatást adnak. A cég közlése szerint több mint 60 alkalmazást fejlesztett, munkáira egy év hibajavítási garanciát vállal, a várható költség pedig online kalkulátorral becsülhető.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 822 8542",
+   "email": "info@vamosoft.hu",
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "DPD Group",
+    "Unibet",
+    "GolfRacks",
+    "Leo Hunts"
+   ]
   },
   {
    "slug": "ventoora",
@@ -4400,7 +6811,20 @@
    ],
    "description": "Webfejlesztéssel és keresőoptimalizálással foglalkozó ügynökség, amely Next.js alapú weboldalakat épít, technikai SEO-t, kulcsszókutatást, linképítést és analitikai beállítást vállal. A menüben önálló szolgáltatás a GEO optimalizálás, amelynek célja, hogy az ügyfél megjelenjen a ChatGPT, a Perplexity és a Gemini válaszaiban. Saját eszközt is említ, a keresési szándék elemzésére szolgáló Ventoora AI Search Intent Toolt.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 52 558 814",
+   "email": "info@ventoora.hu",
+   "certifications": [
+    "Google Ads tanúsítvány",
+    "Google Analytics tanúsítvány"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "Langa-Ép Kft.",
+    "DartsZone App"
+   ]
   },
   {
    "slug": "virus-media-keresomarketing-ugynokseg",
@@ -4408,7 +6832,7 @@
    "website": "https://www.virusmedia.hu/",
    "city": "Budapest",
    "founded_year": 2009,
-   "team_size": null,
+   "team_size": "2 fő",
    "services": [
     "SEO",
     "Google Ads",
@@ -4427,7 +6851,29 @@
    ],
    "description": "A 2009 óta működő keresőmarketing ügynökséget Mészáros Ádám alapította. Fő területe a keresőoptimalizálás és a linképítés, emellett Google Ads, Facebook, TikTok, YouTube, Bing és Etarget hirdetéseket kezel, weboldalt készít, valamint Google Ads és Analytics oktatást tart. A SEO-munkában az AI-keresőkben való láthatóságot (GEO) is figyelembe veszi. A cég közlése szerint több mint egymilliárd forint Google Ads költést kezelt.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 902 7110",
+   "email": "info@virusmedia.hu",
+   "certifications": [
+    "Google Ads és Google Analytics minősített szakértő",
+    "Microsoft Advertising minősített szakértő",
+    "HubSpot SEO minősített szakértő",
+    "SEMrush SEO akkreditáció",
+    "Yandex szakmai minősítés"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "webáruház"
+   ],
+   "references": [
+    "Bosch",
+    "Praktiker",
+    "Törley",
+    "Diego",
+    "Roche"
+   ]
   },
   {
    "slug": "webery",
@@ -4448,14 +6894,26 @@
    ],
    "description": "Budapesti székhelyű webes gyártócég, amely elsősorban európai marketing- és médiaügynökségek technológiai beszállítójaként, szabványosított folyamat szerint készít weboldalakat. Saját fejlesztésű platformja (WWS) a projekt-előkészítést, a költségkalkulációt, a funkcionális specifikációt és az ajánlatadást automatizálja. A cég közlése szerint olyan márkáknak készültek náluk oldalak, mint a Coca-Cola, a Nestlé, a Logitech és a Suzuki.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 710 1114",
+   "email": "contact@webery.com",
+   "languages": [
+    "angol"
+   ],
+   "references": [
+    "Coca-Cola",
+    "Nestlé",
+    "Logitech",
+    "Suzuki",
+    "Erste"
+   ]
   },
   {
    "slug": "webgrow-digital-agency",
    "name": "Webgrow Digital Agency",
    "website": "https://webgrow.hu/",
    "city": "Kaposvár",
-   "founded_year": null,
+   "founded_year": 2022,
    "team_size": "5 fő",
    "services": [
     "Weboldalfejlesztés",
@@ -4474,7 +6932,22 @@
    ],
    "description": "Ötfős csapat, amely a webfejlesztést és az online marketinget egy kézben kínálja. Egyedi weboldalakat és webshopokat épít WooCommerce, Shopify, Shoptet, Shoprenter és UNAS rendszerre, WordPress-karbantartási csomagokat ad, mellette Google Ads és Meta kampányokat kezel, keresőoptimalizálással, hírlevél-marketinggel és GA4-alapú analitikával foglalkozik. Honlapján Google Partner jelvény szerepel; alapítója és vezetője Kovács Dorián.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "email": "hello@webgrow.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar",
+    "angol"
+   ],
+   "references": [
+    "Atenor",
+    "Magyar Nemzeti Bank",
+    "Swietelsky",
+    "Coconutoil Cosmetics",
+    "Kaposvár-Car Kft."
+   ]
   },
   {
    "slug": "weboldal-keszites-most",
@@ -4489,15 +6962,35 @@
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 70 778 0938",
+   "email": "info@weboldalkeszitesmost.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "szolgáltatás",
+    "kereskedelem",
+    "ipar"
+   ],
+   "references": [
+    "Ro-Land Plus Kft.",
+    "Infrasat Kft.",
+    "Kri-design.hu",
+    "Tand.hu",
+    "Profimotorszerviz.hu"
+   ]
   },
   {
    "slug": "weboptim",
    "name": "Weboptim",
    "website": "https://weboptim.hu",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2009,
+   "team_size": "6 fő",
    "services": [
     "Google Ads kampánymenedzsment",
     "Facebook hirdetés",
@@ -4513,29 +7006,63 @@
    ],
    "description": "Budapesti online marketing cég, amelynek kiemelt szolgáltatása a Google Ads kampányok felépítése és folyamatos kezelése. Emellett keresőoptimalizálást, Facebook-hirdetést és profilépítést, konverzióoptimalizálást, online versenytárselemzést és videómarketinget vállal. Az oldalán Google Partner minősítést tüntet fel, és a cég közlése szerint több mint négyszáz ügyfélnek kétezernél több kampányt kezelt.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 525 7044",
+   "email": "info@weboptim.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar",
+    "angol",
+    "spanyol",
+    "francia",
+    "olasz"
+   ],
+   "references": [
+    "Orex Zrt."
+   ]
   },
   {
    "slug": "welovedigital",
    "name": "Welovedigital",
    "website": "https://welovedigital.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2015,
+   "team_size": "1 fő",
    "services": [],
    "categories": [
     "Online marketing ügynökségek"
    ],
    "description": null,
    "status": "ellenőrizendő",
-   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+   "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik.",
+   "phone": "+36 70 326 4968",
+   "certifications": [
+    "Google Partner",
+    "Meta Business Partner",
+    "Shoprenter szakértő"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "webáruház"
+   ],
+   "references": [
+    "Unió Biztosító",
+    "Codecool",
+    "Zekastyling",
+    "Mini Skandi Home",
+    "Dr. Prézi"
+   ]
   },
   {
    "slug": "win-winmarketing",
    "name": "Win-WinMarketing",
    "website": "https://win-winmarketing.hu/",
    "city": "Gyöngyös",
-   "founded_year": null,
+   "founded_year": 2016,
    "team_size": null,
    "services": [
     "Facebook hirdetéskezelés",
@@ -4551,7 +7078,19 @@
    ],
    "description": "Gyöngyösi hirdetéskezelő vállalkozás, amely kizárólag fizetett kampányokkal foglalkozik: Facebook-, Instagram- és TikTok-hirdetésekkel, Google Ads kampányokkal, valamint meglévő hirdetési fiókok auditjával. Az oldal szerint az optimalizálás nagy része kézzel, nem az algoritmusokra hagyva történik, és az ügyfelek közvetlenül a tulajdonossal dolgoznak. A vállalkozás saját közlése szerint több mint tíz év ügynökségi tapasztalatra épít.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 70 427 4261",
+   "email": "info@win-winmarketing.hu",
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "informatika",
+    "műszaki cikk kereskedelem"
+   ],
+   "references": [
+    "eKollekció"
+   ]
   },
   {
    "slug": "wise-digital",
@@ -4578,14 +7117,35 @@
    ],
    "description": "Teljesítményalapú marketingre szakosodott budapesti csapat, amely Google Ads-, Meta- és programmatic kampányokat kezel, médiatervezést és analitikát végez. A keresőoptimalizálás mellett külön szolgáltatásként kínál GEO-t és AEO-t, vagyis AI-keresőkre történő optimalizálást. Elsősorban e-kereskedelmi, DTC, szolgáltató és FMCG cégeknek dolgozik; a honlap lábléce Google Premier Partner státuszt tüntet fel.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "email": "solution@wisedigital.hu",
+   "certifications": [
+    "Google Premier Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "industries": [
+    "e-kereskedelem",
+    "dtc",
+    "szolgáltatás",
+    "fmcg",
+    "kiskereskedelem"
+   ],
+   "references": [
+    "Auchan",
+    "K&H",
+    "Omnicom Media Group",
+    "UNIX Autó",
+    "Broadway"
+   ]
   },
   {
    "slug": "wp-sprint",
    "name": "WP Sprint",
    "website": "https://wpsprint.hu",
    "city": null,
-   "founded_year": null,
+   "founded_year": 2018,
    "team_size": null,
    "services": [
     "Google Ads kampánykezelés",
@@ -4601,15 +7161,30 @@
    ],
    "description": "Schaffer Gábor online marketing szakértő egyszemélyes vállalkozása, aki a kampányokat személyesen kezeli. Google Ads és Facebook kampánykezelést, céges WordPress weboldalak készítését és SEO auditot kínál, kiegészítő szolgáltatásként e-mail marketinget, felugróablak-rendszert és chatbotot is beállít. Az oldalán minősített Google Partnerként mutatkozik be, és a Google partnerjelvényére hivatkozik.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "phone": "+36 30 811 6653",
+   "email": "info@wpsprint.hu",
+   "certifications": [
+    "Google Partner"
+   ],
+   "languages": [
+    "magyar"
+   ],
+   "references": [
+    "HotelHood",
+    "Optinox Ipari Kft.",
+    "Poligrat Magyarország Kft.",
+    "Home & Living",
+    "Dr. Illanitz Elemér"
+   ]
   },
   {
    "slug": "yellowbird",
    "name": "YellowBird",
    "website": "https://yellowbird.hu/",
    "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
+   "founded_year": 2020,
+   "team_size": "5 fő",
    "services": [],
    "categories": [
     "Online marketing ügynökségek"
