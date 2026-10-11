@@ -53,6 +53,33 @@
  ],
  "companies": [
   {
+   "slug": "vantgard-digital",
+   "name": "'Vantgard Digital",
+   "website": "https://www.vantgarddigital.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "SEO",
+    "AEO / GEO / AI SEO",
+    "Google Ads és közösségi hirdetések",
+    "Szövegírás és tartalomgyártás",
+    "PR és sajtómegjelenések",
+    "Linképítés",
+    "Webfejlesztés",
+    "Közösségi média kommunikáció"
+   ],
+   "categories": [
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "AI SEO ügynökségek"
+   ],
+   "description": "Budapesti digitális marketing ügynökség, amelynek súlypontja a tartalom és a keresőláthatóság: keresőoptimalizálás, PR-cikkek és sajtómegjelenések, linképítés, szövegírás. Emellett Google Ads, valamint Facebook-, Instagram- és LinkedIn-kampányokat kezel, weboldalakat készít, és külön szolgáltatásként kínál AEO, GEO és AI-láthatósági auditot. Honlapja szerint Google Partner, továbbá Shoprenter és UNAS szakértő ügynökség.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
    "slug": "2100labs",
    "name": "2100Labs",
    "website": "https://2100labs.com/",
@@ -171,6 +198,31 @@
    "review_note": null
   },
   {
+   "slug": "a-piacteres",
+   "name": "A Piacteres",
+   "website": "https://apiacteres.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Amazon fiókkezelés",
+    "Amazon PPC kampánykezelés",
+    "Amazon hirdetés-audit",
+    "Termékoldal-optimalizálás",
+    "Amazon piackutatás",
+    "Készlet- és fiók-egészség figyelés",
+    "Fiók-visszaállítás"
+   ],
+   "categories": [
+    "Amazon ügynökségek"
+   ],
+   "description": "A Piacteres saját márkás termékeket értékesítő cégeknek segít az Amazon európai és amerikai piacain, saját bevallása szerint öt éve. Szolgáltatásai között szerepel a teljes fiókkezelés (kampány-átnézés, készletfigyelés, termékoldal-javítás, vevőkezelés, Buy Box és árazás, havi riport), a hirdetés-audit és a termékszintű piackutatás. Az oldal szerint 25+ márkával dolgozott 15 országban, és havonta legfeljebb két új ügyfelet indít. Emellett SellHelm néven Amazon-eladóknak szóló szoftvert és közösségi tagságot is kínál.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://apiacteres.hu/",
+   "added": "2026-10-11"
+  },
+  {
    "slug": "abmg",
    "name": "ABMG",
    "website": "https://abmg.hu/",
@@ -257,31 +309,6 @@
    "review_note": null
   },
   {
-   "slug": "ai-smart",
-   "name": "AI-Smart",
-   "website": "https://ai-smart.hu/",
-   "city": null,
-   "founded_year": null,
-   "team_size": null,
-   "services": [
-    "AI chatbot",
-    "Telefonos AI agent",
-    "Személyes AI asszisztens",
-    "Időpontfoglaló rendszer",
-    "Egyedi webalkalmazás",
-    "Weboldal és landing oldal",
-    "AI social media marketing",
-    "E-mail marketing"
-   ],
-   "categories": [
-    "Facebook hirdetés ügynökségek",
-    "AI agent fejlesztő cégek"
-   ],
-   "description": "Magyar vállalkozásoknak dolgozó, közvetlen kapcsolattartásra építő AI-automatizálási szolgáltató. AI chatbotot, telefonos AI agentet, személyes asszisztenst és időpontfoglaló rendszert készít, kész platformként vagy egyedi fejlesztésként, és webes, mobil- és asztali alkalmazásokat is vállal. A kínálatban Facebook- és Instagram-posztolást, kreatívkészítést és hirdetéskezelést lefedő közösségimédia-szolgáltatás is szerepel. Az oldalon megtérülési kalkulátor is elérhető.",
-   "status": "kész",
-   "review_note": null
-  },
-  {
    "slug": "ai-squad",
    "name": "AI Squad",
    "website": "https://aisquad.hu/",
@@ -343,6 +370,31 @@
     "AI SEO ügynökségek"
    ],
    "description": "A TwinTech Vision Kft. kifejezetten generatív keresőkre szakosodott márkája, amely nem kínál hagyományos teljes körű marketinget. Három egymásra épülő terméke van: fix áras AI láthatósági audit, egyedi árazású GEO stratégia és megvalósítás, valamint havidíjas riport arról, hogyan jelenik meg az ügyfél márkája az AI válaszokban. Újabb szolgáltatásként ChatGPT hirdetéskezelést is vállal. A weboldal két alapítót nevez meg.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "ai-smart",
+   "name": "AI-Smart",
+   "website": "https://ai-smart.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "AI chatbot",
+    "Telefonos AI agent",
+    "Személyes AI asszisztens",
+    "Időpontfoglaló rendszer",
+    "Egyedi webalkalmazás",
+    "Weboldal és landing oldal",
+    "AI social media marketing",
+    "E-mail marketing"
+   ],
+   "categories": [
+    "Facebook hirdetés ügynökségek",
+    "AI agent fejlesztő cégek"
+   ],
+   "description": "Magyar vállalkozásoknak dolgozó, közvetlen kapcsolattartásra építő AI-automatizálási szolgáltató. AI chatbotot, telefonos AI agentet, személyes asszisztenst és időpontfoglaló rendszert készít, kész platformként vagy egyedi fejlesztésként, és webes, mobil- és asztali alkalmazásokat is vállal. A kínálatban Facebook- és Instagram-posztolást, kreatívkészítést és hirdetéskezelést lefedő közösségimédia-szolgáltatás is szerepel. Az oldalon megtérülési kalkulátor is elérhető.",
    "status": "kész",
    "review_note": null
   },
@@ -415,6 +467,32 @@
    "review_note": null
   },
   {
+   "slug": "amazon-megoldasok",
+   "name": "Amazon Megoldások (artPhone s.r.o.)",
+   "website": "https://amazon-megoldasok.hu",
+   "city": "Pozsony (Bratislava)",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Amazon admin szolgáltatás",
+    "Fióknyitás és verifikáció",
+    "Fiók-visszaállítás, fellebbezések",
+    "Listák készítése és SEO optimalizálás",
+    "Amazon PPC optimalizálás",
+    "Brand és shop kiépítés",
+    "Amazon audit",
+    "Amazon tanácsadás"
+   ],
+   "categories": [
+    "Amazon ügynökségek"
+   ],
+   "description": "Az Amazon Megoldások a pozsonyi székhelyű, szlovák artPhone s.r.o. magyar nyelvű Amazon-szolgáltatása, amely saját bevallása szerint több mint 12 éves Amazon-tapasztalattal rendelkezik. Teljes körű admin szolgáltatást, shop- és brand-kiépítést, listák készítését és SEO-optimalizálását, fellebbezések intézését és fiók-visszaállítást kínál. Foglalkozik Seller Central elakadásokkal, PPC-kampányok rendbetételével és átfogó auditokkal is, munkájában MI-támogatott elemzéseket használ. Ingyenes 30 perces konzultációt, valamint óradíjas tanácsadást kínál.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://amazon-megoldasok.hu/",
+   "added": "2026-10-11"
+  },
+  {
    "slug": "antikaotika-seo-antal-pap-judit",
    "name": "Antikaotika-SEO (Antal-Pap Judit)",
    "website": "https://seo.antikaotika-design.hu/",
@@ -438,6 +516,33 @@
    "review_note": null
   },
   {
+   "slug": "armadillo-kreativ-ugynokseg",
+   "name": "Armadillo Kreatív Ügynökség",
+   "website": "https://armadillo.hu",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Content marketing",
+    "Social media tartalomgyártás",
+    "Blog- és weboldalszövegírás",
+    "PR-cikkek, sajtóanyagok",
+    "Reklámfilm készítés",
+    "Influencer marketing",
+    "TikTok marketing",
+    "Grafikai tervezés"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek",
+    "Online marketing ügynökségek"
+   ],
+   "description": "Az Armadillo Kreatív Ügynökség (Armadillo Design Kft.) budapesti kreatív ügynökség. Szolgáltatásai között szerepel a content marketing, a social media tartalomgyártás és -menedzsment, a blog-, hírlevél- és weboldalszövegírás, valamint PR-cikkek és sajtóanyagok készítése. Emellett reklámfilm-készítéssel, influencer- és TikTok marketinggel, integrált kampányokkal és grafikai tervezéssel is foglalkozik.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://armadillo.hu/en/content-marketing/",
+   "added": "2026-10-11"
+  },
+  {
    "slug": "arvalicom",
    "name": "ArvaliCom",
    "website": "https://arvali.hu/",
@@ -451,6 +556,32 @@
    "description": null,
    "status": "ellenőrizendő",
    "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "atp-szovegiras",
+   "name": "ATP Szövegírás",
+   "website": "https://atpszovegiras.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Marketing szövegírás",
+    "Blogírás",
+    "SEO szövegírás",
+    "Honlap szövegezés",
+    "Termékleírás",
+    "Sajtóanyag, PR cikkek",
+    "Hírlevélírás",
+    "Korrektúra"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "Az ATP szövegíró csapat marketingszövegek, blogbejegyzések és SEO-szövegek írását, szerkesztését és korrektúráját vállalja. Kínálatában honlapszövegezés, termékleírás, sajtóanyag, PR-cikk, hírlevél, reklámszöveg és angol nyelvű szövegírás is szerepel, valamint Facebook-oldal kezelése. A bemutatkozó oldal háromfős csapatról ír, a csapatoldalon négy munkatárs szerepel.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://atpszovegiras.hu/rolunk/",
+   "added": "2026-10-11"
   },
   {
    "slug": "avanscript-kft",
@@ -640,6 +771,34 @@
    "review_note": null
   },
   {
+   "slug": "beup-pr-consulting",
+   "name": "BeUP! PR Consulting",
+   "website": "https://beup.hu",
+   "city": "Budapest",
+   "founded_year": 2024,
+   "team_size": null,
+   "services": [
+    "Vállalati kommunikáció és tanácsadás",
+    "Kríziskommunikáció",
+    "Médiakapcsolatok, sajtókommunikáció",
+    "Médiatréning",
+    "Social media management",
+    "Digitális marketing",
+    "Weboldal- és webshopkészítés",
+    "Rendezvényszervezés"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Online marketing ügynökségek",
+    "Weboldal készítés"
+   ],
+   "description": "A budapesti PR-ügynökséget Tóth Krisztina alapította 2024 tavaszán. A cég a klasszikus PR-eszközöket digitális tartalomgyártással és marketinggel kombinálja. Vállal vállalati és kríziskommunikációt, médiakapcsolatokat, médiatréninget, social media kezelést, valamint weboldal- és webshopkészítést és rendezvényszervezést.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://beup.hu/",
+   "added": "2026-10-11"
+  },
+  {
    "slug": "bolkodesign",
    "name": "BolkoDesign",
    "website": "https://bolkodesign.hu/",
@@ -764,6 +923,31 @@
    "review_note": null
   },
   {
+   "slug": "brocasterz",
+   "name": "BROCASTERZ Podcast Kft.",
+   "website": "https://brocasterz.com",
+   "city": "Budapest",
+   "founded_year": 2021,
+   "team_size": null,
+   "services": [
+    "Céges podcast készítés",
+    "Podcast marketing",
+    "Podcast stúdió bérlés",
+    "Webinárium és live streaming",
+    "Online kurzus gyártás",
+    "Szakértői short videók",
+    "Podcast audit és tanácsadás"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A BROCASTERZ podcast ügynökség céges podcastok teljes körű készítésével foglalkozik a koncepciótól a felvételen és utómunkán át a marketingig, és az adásokból social media tartalmakat is gyárt. Webináriumokat, online kurzusokat és szakértői rövid videókat is készít, valamint két budapesti stúdiót ad bérbe. A cég közlése szerint 2018 óta több mint 3000 hosszú formátumú anyagot készített; a cégadatok szerint a Kft.-t 2021-ben alapították.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://brocasterz.com/kapcsolat/",
+   "added": "2026-10-11"
+  },
+  {
    "slug": "budapest-marketing",
    "name": "Budapest Marketing",
    "website": "https://budapestmarketing.com/",
@@ -788,26 +972,32 @@
    "review_note": null
   },
   {
-   "slug": "cegem-360",
-   "name": "Cégem 360",
-   "website": "https://cegem360.hu/",
-   "city": "Budapest",
+   "slug": "cap-marketing",
+   "name": "CAP Marketing",
+   "website": "https://capmarketing.hu",
+   "city": null,
    "founded_year": null,
    "team_size": null,
    "services": [
-    "Egyedi weboldal fejlesztés",
-    "Webshop készítés",
-    "SEO és GEO optimalizálás",
-    "Webgrafika és UI/UX",
-    "Weboldal üzemeltetés",
-    "Vállalati szoftverek (CRM)"
+    "TikTok tartalomgyártás",
+    "TikTok stratégia",
+    "Social media stratégia",
+    "Videóvágás",
+    "Meta hirdetéskezelés",
+    "Google hirdetéskezelés",
+    "Weboldalfejlesztés"
    ],
    "categories": [
-    "AI SEO ügynökségek"
+    "Tartalomgyártó ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "Weboldal készítés"
    ],
-   "description": "Elsősorban fejlesztőcég: Laravel alapú egyedi weboldalakat és webáruházakat épít, emellett saját vállalati szoftvereket (CRM, gyártás, logisztika) és marketingeszközöket is kínál. Az üzemeltetési ágon belül külön szolgáltatásoldala van a SEO és GEO optimalizálásnak, ahol a generatív keresőkben való megjelenést a hagyományos keresőoptimalizálás kiegészítéseként vállalja. A Cégem 360 Kft. székhelye Budapest belvárosában található.",
+   "description": "A CAP Marketing fő profilja saját közlése szerint a TikTok tartalomgyártás és stratégiaépítés; TikTok-videókat és social média stratégiát készít vállalkozásoknak. Emellett hirdetéskezeléssel (Meta és Google) és weboldalfejlesztéssel is foglalkozik. A cég közlése szerint több mint 35 aktív ügyféllel dolgozik, és eddig több mint 2500 videót gyártott.",
    "status": "kész",
-   "review_note": null
+   "review_note": null,
+   "source_url": "https://capmarketing.hu/",
+   "added": "2026-10-11"
   },
   {
    "slug": "chiro-marketing",
@@ -887,6 +1077,60 @@
    "review_note": null
   },
   {
+   "slug": "conceptz",
+   "name": "Conceptz",
+   "website": "https://conceptz.hu",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Céges videókészítés",
+    "Céges fotózás",
+    "Social media videócsomag",
+    "Employer branding videó",
+    "Branding",
+    "Kreatív koncepció és tanácsadás"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A Conceptz budapesti ügynökség, amely márkaépítő videós és fotós tartalmakat, valamint marketingkoncepciókat készít elsősorban B2B cégeknek és kkv-knak. Kínálatában cégbemutató és imázsvideók, employer branding videók, céges fotózás és social media videócsomag szerepel, havidíjas tartalomgyártási együttműködés is lehetséges. Szakterülete saját közlése szerint főként az IT-, mérnöki, autóipari és technológiai szektor kommunikációja.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://conceptz.hu/video/",
+   "added": "2026-10-11"
+  },
+  {
+   "slug": "contentshop",
+   "name": "Contentshop",
+   "website": "https://contentshop.hu",
+   "city": "Budaörs",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Tartalomgyártás",
+    "Blog- és hírlevélírás",
+    "Közösségi média menedzsment",
+    "PR",
+    "PPC és Google Ads kampányok",
+    "Arculat és grafika",
+    "Weboldal fejlesztés",
+    "Marketing tanácsadás"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek",
+    "Online marketing ügynökségek",
+    "PR ügynökségek",
+    "Google Ads ügynökségek",
+    "Weboldal készítés"
+   ],
+   "description": "A Contentshop budaörsi, teljes körű szolgáltatást nyújtó kreatív, digitális ügynökség, amely saját leírása szerint többek között tartalomkészítésre, közösségi médiára, e-mail marketingre és weboldaltervezésre szakosodott. Szolgáltatásai között szerepel a PR, a tartalomgyártás, a blog- és hírlevélírás, a PPC/Google Ads kampányok, az arculattervezés és a webfejlesztés. Csapatában a cég közlése szerint stratégák, szövegírók, grafikusok, PPC- és marketingszakemberek, valamint webfejlesztők dolgoznak.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://contentshop.hu/rolunk/",
+   "added": "2026-10-11"
+  },
+  {
    "slug": "corrad-design",
    "name": "Corrad Design",
    "website": "https://keresooptimalizalunk.hu/",
@@ -951,6 +1195,28 @@
    "review_note": null
   },
   {
+   "slug": "cegem-360",
+   "name": "Cégem 360",
+   "website": "https://cegem360.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Egyedi weboldal fejlesztés",
+    "Webshop készítés",
+    "SEO és GEO optimalizálás",
+    "Webgrafika és UI/UX",
+    "Weboldal üzemeltetés",
+    "Vállalati szoftverek (CRM)"
+   ],
+   "categories": [
+    "AI SEO ügynökségek"
+   ],
+   "description": "Elsősorban fejlesztőcég: Laravel alapú egyedi weboldalakat és webáruházakat épít, emellett saját vállalati szoftvereket (CRM, gyártás, logisztika) és marketingeszközöket is kínál. Az üzemeltetési ágon belül külön szolgáltatásoldala van a SEO és GEO optimalizálásnak, ahol a generatív keresőkben való megjelenést a hagyományos keresőoptimalizálás kiegészítéseként vállalja. A Cégem 360 Kft. székhelye Budapest belvárosában található.",
+   "status": "kész",
+   "review_note": null
+  },
+  {
    "slug": "dlx-media",
    "name": "DLX MEDIA",
    "website": "https://dlxmedia.hu/",
@@ -967,7 +1233,8 @@
     "Email marketing"
    ],
    "categories": [
-    "Online marketing ügynökségek"
+    "Online marketing ügynökségek",
+    "Tartalomgyártó ügynökségek"
    ],
    "description": "A 2019 júniusában alapított budapesti cég a tartalomgyártásra összpontosít: imázs-, termék- és rendezvényvideókat, podcastokat és YouTube-csatornákat készít és kezel, saját zuglói stúdiója bérelhető is. Ehhez közösségimédia-kezelés, sajtómegjelenések szervezése, szövegírás és e-mail marketing társul. A cég közlése szerint tízfős belső csapattal és több mint harminc alvállalkozóval dolgozik.",
    "status": "kész",
@@ -993,7 +1260,8 @@
    "categories": [
     "Online marketing ügynökségek",
     "Facebook hirdetés ügynökségek",
-    "Google Ads ügynökségek"
+    "Google Ads ügynökségek",
+    "PR ügynökségek"
    ],
    "description": "Budapesti digitális marketing- és reklámügynökség, amely a teljesítményalapú hirdetéseket kreatív és PR-munkával kapcsolja össze. Közösségimédia-kampányokat futtat Facebookon, Instagramon, TikTokon és YouTube-on, kezel Google Ads fiókokat, végez keresőoptimalizálást és webfejlesztést, emellett arculatot tervez, reklámfilmet készít, és köztéri megjelenéseket, eseményeket, influenszer-együttműködéseket is szervez. B2C és B2B ügyfeleknek egyaránt dolgozik; a cég közlése szerint több mint 200 projektet teljesített.",
    "status": "kész",
@@ -1065,6 +1333,32 @@
    "review_note": null
   },
   {
+   "slug": "emerald-pr",
+   "name": "Emerald PR",
+   "website": "https://emeraldpr.hu",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Stratégiai kommunikációs tanácsadás",
+    "Reputációmenedzsment",
+    "Márkaépítés",
+    "Befektetői kapcsolatok",
+    "Public affairs",
+    "Kríziskommunikáció",
+    "CSR-kommunikáció",
+    "Személyes márkaépítés"
+   ],
+   "categories": [
+    "PR ügynökségek"
+   ],
+   "description": "A budapesti Emerald Public Relations teljes körű PR-ügynökség, amelyet Lakatos Zsófia, a Magyar PR Szövetség korábbi elnöke alapított. A cég közlése szerint a Burson Cohn & Wolfe magyarországi partnere. Stratégiai kommunikációs tanácsadást, reputációmenedzsmentet, márkaépítést, befektetői kapcsolatokat, public affairst és kríziskommunikációt vállal.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://emeraldpr.hu/about/",
+   "added": "2026-10-11"
+  },
+  {
    "slug": "emlitve-hu",
    "name": "emlitve.hu",
    "website": "https://emlitve.hu/",
@@ -1084,6 +1378,32 @@
    "description": "Soproni egyéni vállalkozás, amely kisebb cégek online jelenlétét építi fel: weboldalt készít, Google-keresőre optimalizál, konverziót javít, és külön megnevezett szolgáltatásként AI SEO-t és GEO-t is kínál. Utóbbi célja, hogy az ügyfél márkája releváns forrásként jelenjen meg az AI-alapú keresők válaszaiban. Az ajánlat három csomagra tagolódik, a felméréstől a teljes online jelenlétig.",
    "status": "kész",
    "review_note": null
+  },
+  {
+   "slug": "everigo-group",
+   "name": "Everigo Group",
+   "website": "https://everigo.eu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Amazon Marketplace kezelés",
+    "Amazon fiók regisztráció és karbantartás",
+    "Amazon Advertising és SEO",
+    "Termékoldalak létrehozása",
+    "Amazon vevőkezelés",
+    "Amazon stratégia és havi riport",
+    "Többnyelvű ügyfélszolgálat",
+    "Fordítás és lokalizálás"
+   ],
+   "categories": [
+    "Amazon ügynökségek"
+   ],
+   "description": "Az Everigo Group vállalkozások külföldi terjeszkedését támogatja, többek között szlovák, román, német, olasz, horvát, szlovén, lengyel és cseh piacokon. Amazon Marketplace kezelés keretében regisztrálja és karbantartja az Amazon-fiókot, kezeli a PPC-hirdetéseket, elkészíti a termékoldalakat, tartja a kapcsolatot a vevőkkel és havi riportot készít, az együttműködés előtt piackutatást végez. Ezen felül többnyelvű ügyfélszolgálatot, fordítást és lokalizálást, logisztikai és adminisztratív támogatást, valamint social media és PPC marketinget kínál.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://everigo.eu/amazon-ertekesites-eladas/",
+   "added": "2026-10-11"
   },
   {
    "slug": "evobrands-marketing-ugynokseg",
@@ -1197,6 +1517,58 @@
    "description": "Budapesti szolgáltató, amely kifejezetten agentic workflow rendszerekre, vagyis több lépésben önállóan dolgozó AI agentekre szakosodott. Egyedi árazású tervezési és fejlesztési munkát vállal magyar vállalkozásoknak, a megvalósításban n8n-integrációra is épít. A fejlesztés mellett fix díjas, alkalmanként 150 000 forintos workshopot is tart a témában. Jogi cégadatokat a weboldal nem közöl.",
    "status": "kész",
    "review_note": null
+  },
+  {
+   "slug": "ferling-pr",
+   "name": "FERLING PR",
+   "website": "https://pr.ferling.hu",
+   "city": "Pécs",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Hírnévmenedzsment",
+    "Vállalati és munkáltatói márkaépítés",
+    "Belső kommunikáció",
+    "Médiakommunikáció",
+    "Marketingkommunikáció",
+    "Kríziskommunikáció",
+    "Public affairs",
+    "Rendezvényszervezés"
+   ],
+   "categories": [
+    "PR ügynökségek"
+   ],
+   "description": "A pécsi székhelyű FERLING Kft. PR-üzletága hírnévmenedzsmentet, vállalati és munkáltatói márkaépítést, belső kommunikációt és médiakommunikációt vállal. Emellett marketingkommunikációval, közösségi médiával, kríziskommunikációval, public affairsszel, CSR-kommunikációval és pályázati projektek nyilvánosságával is foglalkozik. Munkáit több hazai és nemzetközi szakmai díj ismerte el.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://pr.ferling.hu/szolgaltatasok",
+   "added": "2026-10-11"
+  },
+  {
+   "slug": "fleishmanhillard-budapest",
+   "name": "FleishmanHillard",
+   "website": "https://www.fleishmanhillard.hu",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Integrált vállalati kommunikációs stratégia",
+    "Hírnévmenedzsment, külső kommunikáció",
+    "Belső kommunikáció",
+    "Employer branding",
+    "Márkaépítés, pozicionálás",
+    "Válságkommunikáció",
+    "Kutatás, elemzés",
+    "Kommunikációs képzések"
+   ],
+   "categories": [
+    "PR ügynökségek"
+   ],
+   "description": "A budapesti kommunikációs ügynökség a CaféPR új neve: 2009-ben csatlakozott a FleishmanHillard nemzetközi hálózatához, a nevet 2020-ban vette fel. Integrált vállalati kommunikációs stratégiát, hírnévmenedzsmentet, belső kommunikációt, employer brandinget és válságkommunikációt vállal, valamint EDUSTATION néven képzéseket tart. A cég közlése szerint többször volt Magyarországon az év PR-ügynöksége.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://www.fleishmanhillard.hu/",
+   "added": "2026-10-11"
   },
   {
    "slug": "follow-marketing",
@@ -1617,6 +1989,33 @@
    "review_note": null
   },
   {
+   "slug": "hrusi-content-marketing",
+   "name": "HRUSI Content Marketing",
+   "website": "https://hrusicontent.hu",
+   "city": null,
+   "founded_year": 2025,
+   "team_size": null,
+   "services": [
+    "Kreatív tartalomkészítés",
+    "Közösségi média menedzsment",
+    "Meta hirdetések",
+    "Weboldal készítés",
+    "Marketingstratégia",
+    "Marketing mentor"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek",
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Weboldal készítés"
+   ],
+   "description": "A HRUSI Content Marketing 2025-ben indult marketingvállalkozás, amelyet Flóra (stratégiai marketing és kampányok) és Zoli (technikai és webes megvalósítás) visz. Szolgáltatásai a kreatív tartalomkészítés, a közösségi média menedzsment, a Meta-hirdetések, a WordPress-alapú weboldalkészítés és a személyre szabott marketingstratégia. Havidíjas weboldalcsomagot (WebStart) is kínál.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://hrusicontent.hu/rolunk/",
+   "added": "2026-10-11"
+  },
+  {
    "slug": "hypin",
    "name": "Hypin",
    "website": "https://hypin.hu/",
@@ -1833,7 +2232,8 @@
    "categories": [
     "Online marketing ügynökségek",
     "Facebook hirdetés ügynökségek",
-    "Google Ads ügynökségek"
+    "Google Ads ügynökségek",
+    "Tartalomgyártó ügynökségek"
    ],
    "description": "Közösségi médiára, azon belül elsősorban a TikTokra összpontosító budapesti kreatív ügynökség. Csatornamenedzsmentet, videós és képi tartalomgyártást, influenszerkampányokat, valamint Facebook-, Instagram-, TikTok- és Google-hirdetések kezelését vállalja. Személyes márkáknak, webáruházaknak és nagyobb cégeknek egyaránt dolgozik; a honlapon bemutatott esettanulmányok között többek között a DPD, az Otthon Centrum és a Játéknet szerepel. KALU Academy néven képzést is kínál.",
    "status": "kész",
@@ -2047,6 +2447,32 @@
    "description": "Budapesti szoftverház, amely a weboldala szerint több mint száz informatikai szakemberrel dolgozik egyedi webes, mobil- és e-kereskedelmi rendszereken, valamint rendszerintegráción. Mesterséges intelligencia területén hangalapú ügyfélszolgálati agenteket és AI-integrációt fejleszt megbízásra. Saját AI-termékei is vannak, köztük egy magyar nyelvű beszédszintézis-megoldás, a Logitalk. A fejlesztés mellett rendszerauditot, specifikációkészítést és üzemeltetést is vállal.",
    "status": "kész",
    "review_note": null
+  },
+  {
+   "slug": "lounge-group",
+   "name": "Lounge Group",
+   "website": "https://lounge.hu",
+   "city": null,
+   "founded_year": 2004,
+   "team_size": null,
+   "services": [
+    "PR és kommunikációs stratégia",
+    "Kríziskommunikáció és public affairs",
+    "Kreatív tervezés",
+    "Médiatervezés és -vásárlás",
+    "Rendezvényszervezés",
+    "Kutatás",
+    "Reklámfilm- és tartalomgyártás"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A Lounge Group 100%-ban magyar tulajdonú, full service ügynökségi csoport; első tagja, a Lounge Design 2004-ben alakult. A PR-feladatokat a 2010-ben alakult Lounge Communication látja el, amely a klasszikus PR mellett PA- és kríziskommunikációs tanácsadással is foglalkozik. A csoport kreatív, médiaügynökségi, rendezvényszervezési, kutatási és film-, illetve tartalomgyártási szolgáltatásokat is nyújt.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://lounge.hu/diviziok/lounge-comm",
+   "added": "2026-10-11"
   },
   {
    "slug": "madarasz-gabor-it-e-business",
@@ -2380,6 +2806,32 @@
    "review_note": null
   },
   {
+   "slug": "mediator-group",
+   "name": "Mediator",
+   "website": "https://mediator.hu",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Kreatív kampányok",
+    "Médiatervezés",
+    "Közösségi média",
+    "Digitális kommunikáció",
+    "Rendezvények",
+    "PR",
+    "Stratégia"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Online marketing ügynökségek"
+   ],
+   "description": "A budapesti Mediator független, full service reklámügynökség. Kreatív, média, közösségi média, digitális, rendezvény-, PR- és stratégiai szolgáltatásokat kínál. A cég közlése szerint 2024-ben 3. helyen állt az Apex PR-rangsorban.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://mediator.hu/",
+   "added": "2026-10-11"
+  },
+  {
    "slug": "melkweg",
    "name": "Melkweg",
    "website": "https://melkweg.hu/",
@@ -2485,6 +2937,37 @@
    "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
   },
   {
+   "slug": "nest-comms",
+   "name": "NEST Comms",
+   "website": "https://nestgroup.hu",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "PR- és kommunikációs stratégia",
+    "Márkaépítés",
+    "Employer branding",
+    "Reputációmenedzsment",
+    "Médiatréning",
+    "Tartalomgyártás, videó",
+    "Közösségi média és influencer marketing",
+    "PPC kampányok"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Tartalomgyártó ügynökségek",
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Google Ads ügynökségek",
+    "Weboldal készítés"
+   ],
+   "description": "A budapesti NEST Comms a NEST Group PR- és kommunikációs ügynöksége. Integrált marketing- és PR-stratégiát, employer brandinget, reputációmenedzsmentet és médiatréninget vállal. Tartalomgyártással (videó, szövegírás, sajtóközlemény), közösségimédia-kezeléssel, influencer marketinggel, webfejlesztéssel és PPC-kampányokkal (Meta, Google, LinkedIn, TikTok) is foglalkozik.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://nestgroup.hu/en/comms/",
+   "added": "2026-10-11"
+  },
+  {
    "slug": "net-position-kft",
    "name": "net-Position Kft.",
    "website": "https://www.net-position.hu/",
@@ -2579,6 +3062,57 @@
    "description": "Egyéni vállalkozásként működő, balatonalmádi székhelyű fejlesztő, amely cégre szabott AI-rendszereket tervez, épít és üzemeltet. Fő területe a hangalapú és írásos ügyfélszolgálati asszisztens, amely a megrendelő saját adataiból válaszol és az ügyeket CRM-be rögzíti, emellett ajánlat- és rendelésfelvételt, belső tudásbázist is automatizál. A munka fizetős felméréssel indul, a kód és a dokumentáció átadásra kerül.",
    "status": "kész",
    "review_note": null
+  },
+  {
+   "slug": "noguchi",
+   "name": "Noguchi",
+   "website": "https://www.noguchi.hu",
+   "city": "Budapest",
+   "founded_year": 1996,
+   "team_size": null,
+   "services": [
+    "PR és stratégiai kommunikációs tanácsadás",
+    "Pozicionálás",
+    "Employer branding",
+    "Reputációmenedzsment",
+    "Válságkommunikáció és krízistréning",
+    "Márka- és vállalati kommunikáció",
+    "Public affairs"
+   ],
+   "categories": [
+    "PR ügynökségek"
+   ],
+   "description": "A budapesti Noguchi PR- és stratégiai kommunikációs tanácsadó ügynökség, amelyet 1996 novemberében négy PR-szakember alapított. Pozicionálást, employer brandinget, reputációmenedzsmentet, válságkommunikációt, valamint márka- és vállalati kommunikációt vállal több iparágban. A cég közlése szerint a szakma 2022 és 2023 után harmadszor is az év ügynökségének választotta.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://www.noguchi.hu/rolunk",
+   "added": "2026-10-11"
+  },
+  {
+   "slug": "odpictures",
+   "name": "ODPictures",
+   "website": "https://odpictures.hu",
+   "city": "Gödöllő",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Közösségi média tartalomgyártás",
+    "Reklámfilm-gyártás",
+    "Céges imázsfilm",
+    "Rendezvényfilm",
+    "Videóklip készítés",
+    "Livestream produkció",
+    "Rendezvény- és portréfotózás",
+    "Drónfelvétel"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "Az ODPictures (ODPictures Art Studio Kft.) gödöllői székhelyű videós és fotós tartalomgyártó. Reklámfilmeket, céges imázsfilmeket, rendezvényfilmeket, videóklipeket, dokumentumfilmeket és livestream produkciókat készít, valamint rendszeres, platformra szabott közösségi média videótartalmat gyárt. A cég közlése szerint 2008 óta több mint 1000 filmet forgatott.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://odpictures.hu/video-gyartas/kozossegi-media-tartalomgyartas/",
+   "added": "2026-10-11"
   },
   {
    "slug": "oloren",
@@ -2860,6 +3394,59 @@
    "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
   },
   {
+   "slug": "prbk-kommunikacio",
+   "name": "PRBK",
+   "website": "https://prbk.hu",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Stratégiai tervezés",
+    "Márkaépítés",
+    "Termékbevezetés",
+    "Médiakapcsolatok",
+    "Digitális kampányok",
+    "Közösségi média kommunikáció",
+    "Kríziskommunikáció",
+    "Tartalommarketing"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A budapesti PRBK (Próbakő) PR-ügynökség hazai és nemzetközi ügyfeleket támogat piacra lépésben, növekedésben és kríziskezelésben. Public relations, közösségi média, digitális kommunikáció és tartalommarketing terén dolgozik. A cég közlése szerint 15 éve tagja a Worldcom PR Group nemzetközi ügynökséghálózatnak.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://prbk.hu/rolunk/",
+   "added": "2026-10-11"
+  },
+  {
+   "slug": "presston-pr",
+   "name": "PResston PR",
+   "website": "https://presstonpr.hu",
+   "city": "Budapest",
+   "founded_year": 2007,
+   "team_size": null,
+   "services": [
+    "Sajtókapcsolatok",
+    "Rendezvényszervezés",
+    "Médiatréning",
+    "Hirdetésszervezés",
+    "Kiadványszerkesztés",
+    "Arculattervezés és márkaépítés",
+    "Válság- és változáskommunikáció",
+    "Médiamonitoring"
+   ],
+   "categories": [
+    "PR ügynökségek"
+   ],
+   "description": "A PResston PR Kft. 2007 óta működő PR- és kommunikációs ügynökség budapesti és debreceni központtal. Sajtókapcsolatokat, rendezvényszervezést, médiatréninget, hirdetésszervezést és kiadványszerkesztést vállal. Arculattervezéssel, márkaépítéssel, válság- és változáskommunikációval, valamint médiamonitoringgal is foglalkozik.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://presstonpr.hu/cegismerteto.html",
+   "added": "2026-10-11"
+  },
+  {
    "slug": "prioris",
    "name": "Prioris",
    "website": "https://prioris.hu/",
@@ -2886,6 +3473,63 @@
    "review_note": null
   },
   {
+   "slug": "pro-business-consulting",
+   "name": "Pro/Business Consulting",
+   "website": "https://www.probusiness.hu",
+   "city": null,
+   "founded_year": 2015,
+   "team_size": null,
+   "services": [
+    "Kommunikációs és PR-stratégia",
+    "Sajtó- és médiakapcsolatok",
+    "Thought leadership, personal branding",
+    "Honlap- és arculatkialakítás",
+    "Tartalommarketing",
+    "Kiszervezett kommunikáció",
+    "Litigation PR",
+    "Sales támogatás"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Tartalomgyártó ügynökségek",
+    "Weboldal készítés"
+   ],
+   "description": "A Pro/Business Consulting 2015-ben alakult, elsősorban üzleti és B2B kommunikációra szakosodott PR-ügynökség. Kommunikációs stratégiát, sajtókapcsolatokat, véleményvezér-építést, tartalommarketinget, kiszervezett kommunikációt és peres PR-t vállal, valamint honlap- és arculatkialakítással is foglalkozik. Alapítója Bende Máté.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://www.probusiness.hu/kik-vagyunk/",
+   "added": "2026-10-11"
+  },
+  {
+   "slug": "produkcios-reszleg",
+   "name": "Produkciós Részleg",
+   "website": "https://www.pr-reszleg.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Vállalati PR és sajtókommunikáció",
+    "Sajtóközlemények",
+    "Belső kommunikáció",
+    "Szövegírás, kiadványszerkesztés",
+    "Marketingstratégia",
+    "Honlapkészítés",
+    "SEO és content marketing",
+    "Reklámajándék"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Tartalomgyártó ügynökségek",
+    "Keresőoptimalizáló ügynökségek",
+    "Weboldal készítés"
+   ],
+   "description": "A Produkciós Részleg PR- és marketingkommunikációs kisvállalkozás, amelynek fő tevékenysége a PR. Vállalati PR- és sajtókommunikációt, sajtóközleményeket, belső kommunikációt, szövegírást és kiadványszerkesztést vállal. Marketingoldalon honlapkészítéssel, SEO-val, content marketinggel és közösségimédia-kezeléssel, továbbá reklámajándékokkal is foglalkozik.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://www.pr-reszleg.hu/",
+   "added": "2026-10-11"
+  },
+  {
    "slug": "profelis",
    "name": "Profelis",
    "website": "https://profelis.hu/",
@@ -2899,6 +3543,31 @@
    "description": null,
    "status": "ellenőrizendő",
    "review_note": "A cég weboldala nem volt beolvasható, a leírás hiányzik."
+  },
+  {
+   "slug": "ps-provocative",
+   "name": "PS:PRovocative",
+   "website": "https://psprovocative.com",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Public relations",
+    "Sajtókapcsolatok, sajtóesemények",
+    "Marketingkommunikáció",
+    "Médiavásárlás",
+    "Tartalommarketing",
+    "Kommunikációs és médiatréning",
+    "Rendezvényszervezés"
+   ],
+   "categories": [
+    "PR ügynökségek"
+   ],
+   "description": "A budapesti PS:PRovocative teljes körű PR- és marketingkommunikációs ügynökség, az MPRSZ ügynökségi tagja. Elsősorban életmód, divat, kozmetika, FMCG, technológia és digitális kommunikáció területén dolgozik. Sajtókapcsolatokat, kampánymenedzsmentet, médiavásárlást, tartalommarketinget és kommunikációs tréningeket vállal.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://psprovocative.com/",
+   "added": "2026-10-11"
   },
   {
    "slug": "psa-consulting-kft",
@@ -3103,6 +3772,30 @@
    "review_note": null
   },
   {
+   "slug": "seo-cikkek",
+   "name": "SEO cikkek",
+   "website": "https://seocikkek.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": "2 fő",
+   "services": [
+    "SEO cikkírás",
+    "Egyedi szövegírás",
+    "Bérblogolás",
+    "PR cikkírás",
+    "Termék- és kategórialeírások",
+    "Facebook- és Instagram-posztok"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A SEO cikkek két szövegíróból álló csapat, amely SEO-cikkek, blogbejegyzések, PR-cikkek, termék- és kategórialeírások, valamint Facebook- és Instagram-posztok írását vállalja. Saját közlése szerint mesterséges intelligencia nélkül, ember által írt szövegeket készít, akár linképítési célra is. A cég közlése szerint több mint 8 éve foglalkozik szövegírással.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://seocikkek.hu/",
+   "added": "2026-10-11"
+  },
+  {
    "slug": "seoads-online-marketing",
    "name": "SeoAds Online Marketing",
    "website": "https://seoads.hu/",
@@ -3269,6 +3962,30 @@
    "description": "Budapesti online marketing ügynökség, amely a fizetett hirdetésekre épít: Google Ads, Facebook- és Instagram-kampányokat kezel, emellett közösségimédia-menedzsmentet, e-mail marketinget, egyedi és sablonalapú webfejlesztést, valamint online marketing auditot vállal. Kevésbé megszokott szolgáltatása a céges és influenszer közösségimédia-fiókok védelme. Google Partner minősítésű; a cég közlése szerint 18 szakemberrel dolgozik, hazai és külföldi kampányokon egyaránt.",
    "status": "kész",
    "review_note": null
+  },
+  {
+   "slug": "soul-in",
+   "name": "SOUL IN",
+   "website": "https://soulin.hu",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Social média tartalomgyártás",
+    "Rövid videók (Reels, TikTok, Shorts)",
+    "Social média menedzsment",
+    "Márkaépítés és arculat",
+    "Rendezvényszervezés",
+    "Behind the scenes videók"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A SOUL IN budapesti csapat, amely social media tartalomgyártással, rövid videókkal és online márkaépítéssel foglalkozik. Instagramra, TikTokra és YouTube Shortsra készít videókat, feed- és story-kreatívokat, valamint közösségi média menedzsmentet, arculattervezést és rendezvényszervezést is vállal. Werk- és behind the scenes tartalmakat is készít filmekhez, rendezvényekhez és sporteseményekhez.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://soulin.hu/social-media-tartalomgyartas/",
+   "added": "2026-10-11"
   },
   {
    "slug": "stilldesign",
@@ -3569,6 +4286,33 @@
    "review_note": null
   },
   {
+   "slug": "uniomedia",
+   "name": "Uniomedia",
+   "website": "https://uniomedia.com",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Public relations",
+    "Public affairs, kormányzati kapcsolatok",
+    "Regionális médiakapcsolatok",
+    "Piacra lépési stratégia",
+    "Tartalomgyártás",
+    "PPC és digitális hirdetés",
+    "Közösségimédia-kezelés"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Tartalomgyártó ügynökségek",
+    "Online marketing ügynökségek"
+   ],
+   "description": "Az Uniomedia független stratégiai kommunikációs cég, amely Közép-Kelet- és Dél-Európában működik. PR-t, public affairst, kormányzati kapcsolatokat, regionális médiakapcsolatokat és piacra lépési tanácsadást vállal. Kreatív tartalomgyártással, grafikai és webdesignnal, PPC- és digitális hirdetésekkel, valamint közösségimédia-kezeléssel is foglalkozik.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://uniomedia.com/en/",
+   "added": "2026-10-11"
+  },
+  {
    "slug": "urban-communications",
    "name": "Urban Communications",
    "website": "https://www.urbancomm.hu/",
@@ -3634,33 +4378,6 @@
     "Weboldal készítés"
    ],
    "description": "Elsősorban iOS- és Android-alkalmazásokat fejlesztő csapat, amely egyedi webes rendszereket is készít. A munka az igényfelméréstől a tervezésen és az agilis fejlesztésen át az áruházi publikálásig és az indulás előkészítéséig tart, utána karbantartást és támogatást adnak. A cég közlése szerint több mint 60 alkalmazást fejlesztett, munkáira egy év hibajavítási garanciát vállal, a várható költség pedig online kalkulátorral becsülhető.",
-   "status": "kész",
-   "review_note": null
-  },
-  {
-   "slug": "vantgard-digital",
-   "name": "'Vantgard Digital",
-   "website": "https://www.vantgarddigital.hu/",
-   "city": "Budapest",
-   "founded_year": null,
-   "team_size": null,
-   "services": [
-    "SEO",
-    "AEO / GEO / AI SEO",
-    "Google Ads és közösségi hirdetések",
-    "Szövegírás és tartalomgyártás",
-    "PR és sajtómegjelenések",
-    "Linképítés",
-    "Webfejlesztés",
-    "Közösségi média kommunikáció"
-   ],
-   "categories": [
-    "Online marketing ügynökségek",
-    "Facebook hirdetés ügynökségek",
-    "Google Ads ügynökségek",
-    "AI SEO ügynökségek"
-   ],
-   "description": "Budapesti digitális marketing ügynökség, amelynek súlypontja a tartalom és a keresőláthatóság: keresőoptimalizálás, PR-cikkek és sajtómegjelenések, linképítés, szövegírás. Emellett Google Ads, valamint Facebook-, Instagram- és LinkedIn-kampányokat kezel, weboldalakat készít, és külön szolgáltatásként kínál AEO, GEO és AI-láthatósági auditot. Honlapja szerint Google Partner, továbbá Shoprenter és UNAS szakértő ügynökség.",
    "status": "kész",
    "review_note": null
   },
