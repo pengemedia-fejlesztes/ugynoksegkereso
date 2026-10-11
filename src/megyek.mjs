@@ -10,4 +10,6 @@ export const MEGYE = {
   'Mátészalka': 'Szabolcs-Szatmár-Bereg', 'Nagykanizsa': 'Zala', 'Dabas': 'Pest', 'Balatonalmádi': 'Veszprém',
   'Budakeszi': 'Pest', 'Miskolc': 'Borsod-Abaúj-Zemplén', 'Dombóvár': 'Tolna', 'Dunakeszi': 'Pest', 'Vecsés': 'Pest',
   'Szigetszentmiklós': 'Pest', 'Kaposvár': 'Somogy', 'Gyöngyös': 'Heves',
+  'Balatonlelle': 'Somogy', 'Tiszavasvári': 'Szabolcs-Szatmár-Bereg', 'Gárdony': 'Fejér', 'Erdősmárok': 'Baranya',
+  'Komárom': 'Komárom-Esztergom', 'Bodajk': 'Fejér', 'Orosháza': 'Békés',
 };

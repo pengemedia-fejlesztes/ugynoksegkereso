@@ -4,20 +4,30 @@
   "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/12/2100lab.png",
   "via": "ugynoksegkereso.hu"
  },
+ "22media": {
+  "file": "22media.jpg",
+  "src": "https://partnerek.shoptet.hu/wp-content/uploads/2022/03/22media.jpg",
+  "via": "partnerek.shoptet.hu"
+ },
  "2bseenstudio": {
   "file": "2bseenstudio.svg",
   "src": "https://2bseenstudio.hu/logo.svg",
   "via": "header-logo",
   "dark": true
  },
+ "2k-web-and-design-shoprenter-webaruhaz-keszites-testreszabas": {
+  "file": "2k-web-and-design-shoprenter-webaruhaz-keszites-testreszabas.jpg",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2021/08/2klogo-1.jpeg",
+  "via": "szakertok.shoprenter.hu"
+ },
  "360-marketing-ugynokseg": {
   "file": "360-marketing-ugynokseg.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/360-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/360.png",
   "via": "ugynoksegkereso.hu"
  },
  "7digits-seven-digits-media-zrt": {
   "file": "7digits-seven-digits-media-zrt.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/09/7digits-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/09/7digits.png",
   "via": "ugynoksegkereso.hu"
  },
  "a-piacteres": {
@@ -30,9 +40,14 @@
   "src": "https://abmg.hu/wp-content/themes/abmg/images/abmg-web-ppc-logo.svg",
   "via": "header-own"
  },
+ "adlogic": {
+  "file": "adlogic.webp",
+  "src": "https://static.unas.eu/sync_own/content/8519/8519.webp",
+  "via": "unas.hu"
+ },
  "adops-digital": {
   "file": "adops-digital.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/04/ugynoksegek-logoi-10-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/04/ugynoksegek-logoi-10.png",
   "via": "ugynoksegkereso.hu"
  },
  "adskezeles-hu": {
@@ -66,6 +81,11 @@
   "via": "header-own",
   "dark": true
  },
+ "aio-marketing": {
+  "file": "aio-marketing.webp",
+  "src": "https://static.unas.eu/sync_own/content/6209/6209.webp",
+  "via": "unas.hu"
+ },
  "aiworks": {
   "file": "aiworks.png",
   "src": "https://aiworks.hu/images/logo-mono4.png",
@@ -76,6 +96,11 @@
   "src": "https://akcioreklam.hu/favicon.svg",
   "via": "icon"
  },
+ "alfa-design-webdesign-es-webfejlesztes-a-webaruhazak-szakertoje": {
+  "file": "alfa-design-webdesign-es-webfejlesztes-a-webaruhazak-szakertoje.jpg",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2020/04/alfa-logo-shoprenter.jpg",
+  "via": "szakertok.shoprenter.hu"
+ },
  "alh-consulting-kft": {
   "file": "alh-consulting-kft.png",
   "src": "https://alhconsulting.hu/app/uploads/2019/03/jateksziget.png",
@@ -83,13 +108,18 @@
  },
  "amazon-megoldasok": {
   "file": "amazon-megoldasok.png",
-  "src": "https://amazon-megoldasok.hu/apple-touch-icon-72x72-precomposed.png?_ts=1682174915",
+  "src": "https://amazon-megoldasok.hu/apple-touch-icon-512x512-precomposed.png",
   "via": "apple-touch-icon"
  },
  "antikaotika-seo-antal-pap-judit": {
   "file": "antikaotika-seo-antal-pap-judit.jpg",
-  "src": "https://seo.antikaotika-design.hu/wp-content/uploads/2016/11/cropped-LOG%C3%93-192x192.jpg",
+  "src": "https://seo.antikaotika-design.hu/wp-content/uploads/2016/11/cropped-LOG%C3%93.jpg",
   "via": "icon"
+ },
+ "appsy-mobil-app-fejlesztes-a-webshopodhoz": {
+  "file": "appsy-mobil-app-fejlesztes-a-webshopodhoz.jpg",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2023/02/Appsy-profile-11.jpg",
+  "via": "szakertok.shoprenter.hu"
  },
  "armadillo-kreativ-ugynokseg": {
   "file": "armadillo-kreativ-ugynokseg.svg",
@@ -107,6 +137,11 @@
   "src": "https://atpszovegiras.hu/wp-content/uploads/2019/08/ATP_logo_feher_kicsi.png",
   "via": "header-own"
  },
+ "automatikus-termekfeltoltes-ar-es-keszletfrissites-egyedi-feed-kefix": {
+  "file": "automatikus-termekfeltoltes-ar-es-keszletfrissites-egyedi-feed-kefix.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2019/11/kefix_sr-2.png",
+  "via": "szakertok.shoprenter.hu"
+ },
  "avanscript-kft": {
   "file": "avanscript-kft.png",
   "src": "https://avanscript.com/icon.png?icon.2esh8varwuoq8.png",
@@ -117,34 +152,54 @@
   "src": "https://axondigital.io/wp-content/uploads/2023/05/AxonDigital_Logo_Color.svg",
   "via": "header-own"
  },
+ "b-pro-shoprenter-webaruhaz-menedzsment-es-keszites-egyedi-design-fejlesztes-marketing": {
+  "file": "b-pro-shoprenter-webaruhaz-menedzsment-es-keszites-egyedi-design-fejlesztes-marketing.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2020/06/b_pro_logo_vilagos_hatter.png",
+  "via": "szakertok.shoprenter.hu"
+ },
  "bako-krisztian": {
   "file": "bako-krisztian.png",
-  "src": "https://bakokrisztian.hu/wp-content/uploads/2021/03/cropped-android-chrome-512x512-1-1-300x300.png",
+  "src": "https://bakokrisztian.hu/wp-content/uploads/2021/03/cropped-android-chrome-512x512-1-1.png",
   "via": "icon"
+ },
+ "barex-iparmuvesz-kft-basa-janos-fotomuvesz": {
+  "file": "barex-iparmuvesz-kft-basa-janos-fotomuvesz.jpg",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2019/04/3d_fgép_kisméret.jpg",
+  "via": "szakertok.shoprenter.hu"
  },
  "barna-design": {
   "file": "barna-design.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2026/02/ugynoksegek-logoi-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2026/02/ugynoksegek-logoi.png",
   "via": "ugynoksegkereso.hu"
  },
  "bda": {
   "file": "bda.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/05/ugynoksegek-logoi-15-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/05/ugynoksegek-logoi-15.png",
   "via": "ugynoksegkereso.hu"
+ },
+ "beecorp-studio": {
+  "file": "beecorp-studio.webp",
+  "src": "https://static.unas.eu/sync_own/content/7305/7305.webp",
+  "via": "unas.hu"
  },
  "beonweb": {
   "file": "beonweb.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/12/ugynoksegek-logoi-16-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/12/ugynoksegek-logoi-16.png",
   "via": "ugynoksegkereso.hu"
  },
  "berenyisoft": {
   "file": "berenyisoft.jpg",
-  "src": "https://berenyisoft.com/wp-content/uploads/2018/12/cropped-berenyisoft_logo-192x192.jpg",
+  "src": "https://berenyisoft.com/wp-content/uploads/2018/12/cropped-berenyisoft_logo.jpg",
   "via": "icon"
+ },
+ "berry-art-a-webshop-szakerto": {
+  "file": "berry-art-a-webshop-szakerto.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2020/09/Berry-Art-Logo-1.png",
+  "via": "szakertok.shoprenter.hu"
  },
  "bestmarketing-kft": {
   "file": "bestmarketing-kft.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/Kbestmarketing-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/Kbestmarketing.png",
   "via": "ugynoksegkereso.hu"
  },
  "beup-pr-consulting": {
@@ -154,12 +209,12 @@
  },
  "bolkodesign": {
   "file": "bolkodesign.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/11/BD-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/11/BD.png",
   "via": "ugynoksegkereso.hu"
  },
  "boom-marketing-agency": {
   "file": "boom-marketing-agency.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/09/boom-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/09/boom.png",
   "via": "ugynoksegkereso.hu"
  },
  "booster-marketing": {
@@ -179,6 +234,11 @@
   "src": "https://bpdata.com/logo/logo-light.svg",
   "via": "logo-own",
   "dark": true
+ },
+ "brandflow-marketing": {
+  "file": "brandflow-marketing.webp",
+  "src": "https://static.unas.eu/sync_own/content/8735/8735.webp",
+  "via": "unas.hu"
  },
  "brocasterz": {
   "file": "brocasterz.png",
@@ -204,17 +264,32 @@
  },
  "chiro-marketing": {
   "file": "chiro-marketing.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/05/ugynoksegek-logoi-14-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/05/ugynoksegek-logoi-14.png",
   "via": "ugynoksegkereso.hu"
  },
  "city-marketing": {
   "file": "city-marketing.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/09/city-marketing-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/09/city-marketing.png",
   "via": "ugynoksegkereso.hu"
+ },
+ "codexpress-hu-webaruhaz-nullarol-a-sikerig": {
+  "file": "codexpress-hu-webaruhaz-nullarol-a-sikerig.png",
+  "src": "https://codexpress.hu/tenancy/assets/manager/files/logo/codexpresslogo07.png",
+  "via": "header-logo"
+ },
+ "codeyard-kft": {
+  "file": "codeyard-kft.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2024/08/Screenshot-2024-08-06-at-10.30.10.png",
+  "via": "szakertok.shoprenter.hu"
+ },
+ "commercium": {
+  "file": "commercium.png",
+  "src": "https://static.unas.eu/sync_own/content/9146/9146.png?version=1521",
+  "via": "unas.hu"
  },
  "company-365": {
   "file": "company-365.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2025/02/ugynoksegek-logoi-27-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2025/02/ugynoksegek-logoi-27.png",
   "via": "ugynoksegkereso.hu"
  },
  "conceptz": {
@@ -223,6 +298,11 @@
   "via": "logo-own",
   "dark": true
  },
+ "connect-center-integracios-szoftver-shoprenter-webaruhazhoz": {
+  "file": "connect-center-integracios-szoftver-shoprenter-webaruhazhoz.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2020/05/Asset-1.png",
+  "via": "szakertok.shoprenter.hu"
+ },
  "contentshop": {
   "file": "contentshop.jpg",
   "src": "https://contentshop.hu/wp-content/uploads/2026/06/logo-1.jpg",
@@ -230,7 +310,7 @@
  },
  "corrad-design": {
   "file": "corrad-design.png",
-  "src": "https://keresooptimalizalunk.hu/wp-content/uploads/2024/10/cropped-favicon-192x192.png",
+  "src": "https://keresooptimalizalunk.hu/wp-content/uploads/2024/10/cropped-favicon.png",
   "via": "icon"
  },
  "crs-ai-marketing-seo-ugynokseg-kft": {
@@ -241,17 +321,42 @@
  },
  "csabai-online-marketing": {
   "file": "csabai-online-marketing.png",
-  "src": "https://csabaionlinemarketing.hu/wp-content/uploads/2024/08/cropped-favicon-log-192x192.png",
+  "src": "https://csabaionlinemarketing.hu/wp-content/uploads/2024/08/cropped-favicon-log.png",
   "via": "icon"
+ },
+ "daroczi-vilmos": {
+  "file": "daroczi-vilmos.jpg",
+  "src": "https://daroczivilmos.hu/assets/img/favicon.jpg",
+  "via": "icon"
+ },
+ "databoss-hu": {
+  "file": "databoss-hu.webp",
+  "src": "https://static.unas.eu/sync_own/content/9191/9191.webp",
+  "via": "unas.hu"
+ },
+ "debhack-egyedi-megoldasok-mindenkinek": {
+  "file": "debhack-egyedi-megoldasok-mindenkinek.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2019/10/betalogo-1.png",
+  "via": "szakertok.shoprenter.hu"
+ },
+ "demeter-zoltan-webshoposok-hu": {
+  "file": "demeter-zoltan-webshoposok-hu.svg",
+  "src": "https://webshoposok.cdn.shoprenter.hu/custom/webshoposok/image/data/product/Logo/webshoposok-logo-fooldal-3.svg",
+  "via": "header-logo"
+ },
+ "diamond-agency": {
+  "file": "diamond-agency.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2021/09/diamondagency.png",
+  "via": "szakertok.shoprenter.hu"
  },
  "dlx-media": {
   "file": "dlx-media.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/09/ugynoksegek-logoi-24-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/09/ugynoksegek-logoi-24.png",
   "via": "ugynoksegkereso.hu"
  },
  "dog-pony": {
   "file": "dog-pony.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2025/08/ugynoksegek-logoi-42-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2025/08/ugynoksegek-logoi-42.png",
   "via": "ugynoksegkereso.hu"
  },
  "doppio": {
@@ -262,8 +367,18 @@
  },
  "drive-online-marketing-kft": {
   "file": "drive-online-marketing-kft.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2025/07/ugynoksegek-logoi-41-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2025/07/ugynoksegek-logoi-41.png",
   "via": "ugynoksegkereso.hu"
+ },
+ "ebusiness-experts-amire-webaruhazadhoz-szukseg-van": {
+  "file": "ebusiness-experts-amire-webaruhazadhoz-szukseg-van.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2019/05/ebusiness-experts-logo.png",
+  "via": "szakertok.shoprenter.hu"
+ },
+ "ecompartner-hu-webaruhaz-kivitelezes-egyedi-design-landingoldal-marketing": {
+  "file": "ecompartner-hu-webaruhaz-kivitelezes-egyedi-design-landingoldal-marketing.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2026/04/ecompartnerlogo.png",
+  "via": "szakertok.shoprenter.hu"
  },
  "elite-vision": {
   "file": "elite-vision.png",
@@ -300,6 +415,11 @@
   "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/05/Exaline-I-Logo.png",
   "via": "ugynoksegkereso.hu"
  },
+ "faceliftr-az-utolso-simitasok-shoprenteres-webshopodnak": {
+  "file": "faceliftr-az-utolso-simitasok-shoprenteres-webshopodnak.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2019/08/Faceliftr.png",
+  "via": "szakertok.shoprenter.hu"
+ },
  "fatfox-creative": {
   "file": "fatfox-creative.png",
   "src": "https://fatfoxcreative.hu/wp-content/uploads/2025/01/FatFox-1152-x-880-keppont.png",
@@ -321,19 +441,30 @@
   "src": "https://cdn.prod.website-files.com/66f169e07cbaf7d5067b5290/67b2279ad861c7822070aefb_c2e2d974b7bf090d7b20bce7e82a7994_fleishmanhillard_logo_footer.avif",
   "via": "logo-own"
  },
+ "flyit-kft": {
+  "file": "flyit-kft.png",
+  "src": "https://flyit.hu/images/logo_header.png",
+  "via": "header-logo"
+ },
  "follow-marketing": {
   "file": "follow-marketing.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/11/ugynoksegek-logoi-2-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/11/ugynoksegek-logoi-2.png",
   "via": "ugynoksegkereso.hu"
  },
  "forweb": {
   "file": "forweb.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/08/ugynoksegek-logoi-27-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/08/ugynoksegek-logoi-27.png",
   "via": "ugynoksegkereso.hu"
+ },
+ "foxgrafika-hu-online-offline-webes-grafikai-es-management-szolgaltatasok": {
+  "file": "foxgrafika-hu-online-offline-webes-grafikai-es-management-szolgaltatasok.png",
+  "src": "https://3417b4558e.clvaw-cdnwnd.com/f5e002dba2e73edea74a6d203f3d1f47/200003314-c68fec6901/foxgrafika-short-white-logo-png-01.png?ph=3417b4558e",
+  "via": "header-logo",
+  "dark": true
  },
  "fusion-4": {
   "file": "fusion-4.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/01/ugynoksegek-logoi-1-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/01/ugynoksegek-logoi-1.png",
   "via": "ugynoksegkereso.hu"
  },
  "future-marketing": {
@@ -343,7 +474,7 @@
  },
  "futuremanagement": {
   "file": "futuremanagement.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/Kfuturemanagement-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/Kfuturemanagement.png",
   "via": "ugynoksegkereso.hu"
  },
  "fws-online-zrt": {
@@ -351,11 +482,21 @@
   "src": "https://www.fws.hu/build/assets/apple-touch-icon-1024x1024.png",
   "via": "apple-touch-icon"
  },
+ "gaelta": {
+  "file": "gaelta.svg",
+  "src": "https://partnerek.shoptet.hu/wp-content/uploads/2026/02/Gaelta-Logo-icon-1.svg",
+  "via": "partnerek.shoptet.hu"
+ },
  "garand-design": {
   "file": "garand-design.svg",
   "src": "https://garanddesign.hu/brand/garand-logo-light.svg",
   "via": "header-own",
   "dark": true
+ },
+ "gasparics-sandor-a-webaruhaz-szakerto": {
+  "file": "gasparics-sandor-a-webaruhaz-szakerto.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2021/06/gasparics-sandor.png",
+  "via": "szakertok.shoprenter.hu"
  },
  "gold-communications": {
   "file": "gold-communications.png",
@@ -372,6 +513,11 @@
   "src": "https://greenedge.hu/wp-content/uploads/2021/05/Green-Edge-rekl%C3%A1m%C3%BCgyn%C3%B6ks%C3%A9g-logo-kicsi.png",
   "via": "header-own"
  },
+ "grentmedia": {
+  "file": "grentmedia.png",
+  "src": "https://static.unas.eu/sync_own/content/4427/4427.png?version=1521",
+  "via": "unas.hu"
+ },
  "grepton": {
   "file": "grepton.png",
   "src": "https://grepton.hu/wp-content/uploads/2025/05/grepton-logo.png",
@@ -385,12 +531,12 @@
  },
  "growww-digital": {
   "file": "growww-digital.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/10/ugynoksegek-logoi-35-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/10/ugynoksegek-logoi-35.png",
   "via": "ugynoksegkereso.hu"
  },
  "hd-marketing": {
   "file": "hd-marketing.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2025/08/ugynoksegek-logoi-44-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2025/08/ugynoksegek-logoi-44.png",
   "via": "ugynoksegkereso.hu"
  },
  "honlapbirodalom": {
@@ -413,10 +559,20 @@
   "src": "https://hrusicontent.hu/wp-content/uploads/2025/08/cropped-logo-hatter-nelkul.png",
   "via": "header-own"
  },
+ "hyper-marketing-agency-a-sikert-merjuk": {
+  "file": "hyper-marketing-agency-a-sikert-merjuk.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2020/06/Hyper-arculat-5.png",
+  "via": "szakertok.shoprenter.hu"
+ },
  "hypin": {
   "file": "hypin.webp",
   "src": "https://hypin.hu/img/logos/pietro.webp",
   "via": "logo-top"
+ },
+ "infinx-kft": {
+  "file": "infinx-kft.jpg",
+  "src": "https://partnerek.shoptet.hu/wp-content/uploads/2022/12/1601558546020.jpg",
+  "via": "partnerek.shoptet.hu"
  },
  "innowa-marketing": {
   "file": "innowa-marketing.png",
@@ -430,7 +586,7 @@
  },
  "interword-web-social": {
   "file": "interword-web-social.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/logo-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/logo.png",
   "via": "ugynoksegkereso.hu"
  },
  "intren": {
@@ -446,7 +602,7 @@
  },
  "itzen": {
   "file": "itzen.png",
-  "src": "https://itzen.hu/wp-content/uploads/2016/06/cropped-itzen-logo-half-transparent-192x192.png",
+  "src": "https://itzen.hu/wp-content/uploads/2016/06/cropped-itzen-logo-half-transparent.png",
   "via": "icon"
  },
  "just-bee-digital": {
@@ -471,8 +627,13 @@
  },
  "klikkmania": {
   "file": "klikkmania.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/klikkmarketing-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/klikkmarketing.png",
   "via": "ugynoksegkereso.hu"
+ },
+ "klikkmedia": {
+  "file": "klikkmedia.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2026/03/Klikkmedia-LOGO-Group.png",
+  "via": "szakertok.shoprenter.hu"
  },
  "kmu-marketing": {
   "file": "kmu-marketing.png",
@@ -485,10 +646,20 @@
   "via": "header-logo",
   "dark": true
  },
+ "konverzio24-lezerpontos-szemelyre-szabott-kommunikacio-az-erdeklodokkel-idegenvezetes-a-penztarig": {
+  "file": "konverzio24-lezerpontos-szemelyre-szabott-kommunikacio-az-erdeklodokkel-idegenvezetes-a-penztarig.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2020/11/K24_LogoNew_HD.png",
+  "via": "szakertok.shoprenter.hu"
+ },
  "konverziomester": {
   "file": "konverziomester.png",
-  "src": "https://konverziomester.hu/manus-storage/konverziomester-favicon-96_a322df39.png",
+  "src": "https://files.manuscdn.com/user_upload_by_module/web_dev_logo/310519663140403288/RzbswjMzLIWkvoyC.png",
   "via": "icon"
+ },
+ "kreativ-klikk": {
+  "file": "kreativ-klikk.webp",
+  "src": "https://static.unas.eu/sync_own/content/10831/10831.webp",
+  "via": "unas.hu"
  },
  "langmar-kommunikacio": {
   "file": "langmar-kommunikacio.png",
@@ -497,8 +668,13 @@
  },
  "lead": {
   "file": "lead.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2026/04/Lead-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2026/04/Lead.png",
   "via": "ugynoksegkereso.hu"
+ },
+ "limeart-design-studio": {
+  "file": "limeart-design-studio.jpg",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2019/07/shoprenteres_design_limeart2.jpg",
+  "via": "szakertok.shoprenter.hu"
  },
  "loginet-systems": {
   "file": "loginet-systems.svg",
@@ -511,6 +687,11 @@
   "src": "https://lounge.hu/media/prod/36c135cf9851730cea3f70fb3766314765c30f8b_thumbnail_320.jpeg",
   "via": "logo-own"
  },
+ "mad-web-ujra-definialunk-digitalisan": {
+  "file": "mad-web-ujra-definialunk-digitalisan.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2023/06/madweb.png",
+  "via": "szakertok.shoprenter.hu"
+ },
  "madarasz-gabor-it-e-business": {
   "file": "madarasz-gabor-it-e-business.jpg",
   "src": "https://www.madaraszgabor.hu/wp-content/uploads/2021/03/handshake_fekete_big-7.jpg",
@@ -521,9 +702,19 @@
   "src": "https://madic.hu/wp-content/uploads/2023/04/MADIC-AI-LOGO.png",
   "via": "header-own"
  },
+ "makeitonline": {
+  "file": "makeitonline.svg",
+  "src": "https://makeitonline.hu/images/makeit_logo.svg",
+  "via": "header-logo"
+ },
+ "mala-hu": {
+  "file": "mala-hu.webp",
+  "src": "https://static.unas.eu/sync_own/content/8469/8469.webp",
+  "via": "unas.hu"
+ },
  "maon": {
   "file": "maon.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/08/ugynoksegek-logoi-26-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/08/ugynoksegek-logoi-26.png",
   "via": "ugynoksegkereso.hu"
  },
  "markcon": {
@@ -533,12 +724,12 @@
  },
  "markestic": {
   "file": "markestic.png",
-  "src": "https://markestic.com/icon.png?icon.1dt5kcsx7h_4u.png",
+  "src": "https://markestic.com/icon-512.png",
   "via": "icon"
  },
  "marketing-consulting": {
   "file": "marketing-consulting.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/marketing-consulting-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/marketing-consulting.png",
   "via": "ugynoksegkereso.hu"
  },
  "marketing-kalkulator": {
@@ -558,12 +749,12 @@
  },
  "marketing21": {
   "file": "marketing21.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/09/ugynoksegek-logoi-15-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/09/ugynoksegek-logoi-15.png",
   "via": "ugynoksegkereso.hu"
  },
  "marketinges-erika-es-csapata": {
   "file": "marketinges-erika-es-csapata.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/Kugynoksegek-logoi-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/Kugynoksegek-logoi.png",
   "via": "ugynoksegkereso.hu"
  },
  "marketingprezident": {
@@ -572,9 +763,19 @@
   "via": "header-logo",
   "dark": true
  },
+ "marketplacementor": {
+  "file": "marketplacementor.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2024/03/marketplace-mentor-szines-logo-2.png",
+  "via": "szakertok.shoprenter.hu"
+ },
+ "markweb-digital": {
+  "file": "markweb-digital.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2021/04/markweb-logo_2019.png",
+  "via": "szakertok.shoprenter.hu"
+ },
  "maximum-business": {
   "file": "maximum-business.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/10/ugynoksegek-logoi-32-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/10/ugynoksegek-logoi-32.png",
   "via": "ugynoksegkereso.hu"
  },
  "mediator-group": {
@@ -592,6 +793,16 @@
   "file": "micron-digital.webp",
   "src": "https://www.microndigital.hu/wp-content/uploads/2024/12/logo-1.webp",
   "via": "logo-own"
+ },
+ "mime-digital": {
+  "file": "mime-digital.jpg",
+  "src": "https://partnerek.shoptet.hu/wp-content/uploads/2023/01/logo-mime-digital-rgb-500x500-c-default.jpg",
+  "via": "partnerek.shoptet.hu"
+ },
+ "mindensync": {
+  "file": "mindensync.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2019/05/logoicon5.png",
+  "via": "szakertok.shoprenter.hu"
  },
  "mobuen-digital-agency-kft": {
   "file": "mobuen-digital-agency-kft.png",
@@ -622,8 +833,13 @@
  },
  "netmarketing-online-reklamugynokseg-kft": {
   "file": "netmarketing-online-reklamugynokseg-kft.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/Knetmarketing-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/Knetmarketing.png",
   "via": "ugynoksegkereso.hu"
+ },
+ "netmetro-sikerre-programozva": {
+  "file": "netmetro-sikerre-programozva.png",
+  "src": "http://netmetro.hu/media/favicon/apple-touch-icon.png",
+  "via": "apple-touch-icon"
  },
  "nexen-it": {
   "file": "nexen-it.svg",
@@ -636,6 +852,11 @@
   "src": "https://nexly.digital/nexly-logo.svg",
   "via": "header-own"
  },
+ "nexodot-egy-helyen-minden": {
+  "file": "nexodot-egy-helyen-minden.jpg",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2023/02/nexodot-lightbg.jpg",
+  "via": "szakertok.shoprenter.hu"
+ },
  "noguchi": {
   "file": "noguchi.webp",
   "src": "https://images.squarespace-cdn.com/content/v1/66df4a8e857437239f130a92/7a17d1b0-0baa-482d-ab2c-ec0a42a63834/Noguchi_logo_orange.png?format=1500w",
@@ -646,6 +867,11 @@
   "src": "https://odpictures.hu/wp-content/uploads/2023/01/odp_logo.png",
   "via": "header-own",
   "dark": true
+ },
+ "okosanwebshopot": {
+  "file": "okosanwebshopot.png",
+  "src": "https://static.unas.eu/sync_own/content/4337/4337.png?version=1521",
+  "via": "unas.hu"
  },
  "oloren": {
   "file": "oloren.png",
@@ -660,12 +886,12 @@
  },
  "openonline": {
   "file": "openonline.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/10/ugynoksegek-logoi-33-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/10/ugynoksegek-logoi-33.png",
   "via": "ugynoksegkereso.hu"
  },
  "optimalizalt-online-marketing-kft": {
   "file": "optimalizalt-online-marketing-kft.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/ugynoksegek-logoi-11-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/ugynoksegek-logoi-11.png",
   "via": "ugynoksegkereso.hu"
  },
  "optimeyes": {
@@ -673,24 +899,29 @@
   "src": "https://www.optimeyes.hu/icon.svg",
   "via": "icon"
  },
+ "petadev-webshop-applikacio-fejlesztes": {
+  "file": "petadev-webshop-applikacio-fejlesztes.jpg",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2024/01/petadev-logo.jpg",
+  "via": "szakertok.shoprenter.hu"
+ },
  "pixon-design": {
   "file": "pixon-design.png",
-  "src": "https://pixon.hu/wp-content/uploads/2026/09/cropped-pixon-favicon2-192x192.png",
+  "src": "https://pixon.hu/wp-content/uploads/2026/09/cropped-pixon-favicon2.png",
   "via": "icon"
  },
  "plus-creative-agency": {
   "file": "plus-creative-agency.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/ugynoksegek-logoil-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/ugynoksegek-logoil.png",
   "via": "ugynoksegkereso.hu"
  },
  "ppc-media": {
   "file": "ppc-media.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/ppc-media-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/ppc-media.png",
   "via": "ugynoksegkereso.hu"
  },
  "ppc-online-webmarketing": {
   "file": "ppc-online-webmarketing.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/02/ugynoksegek-logoi-5-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/02/ugynoksegek-logoi-5.png",
   "via": "ugynoksegkereso.hu"
  },
  "ppc-smart": {
@@ -711,7 +942,7 @@
  },
  "prioris": {
   "file": "prioris.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2025/09/ugynoksegek-logoi-47-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2025/09/ugynoksegek-logoi-47.png",
   "via": "ugynoksegkereso.hu"
  },
  "pro-business-consulting": {
@@ -747,7 +978,7 @@
  },
  "radelit-media": {
   "file": "radelit-media.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/01/ugynoksegek-logoi-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/01/ugynoksegek-logoi.png",
   "via": "ugynoksegkereso.hu"
  },
  "relevat-digital": {
@@ -757,8 +988,13 @@
  },
  "rg-studio-kft": {
   "file": "rg-studio-kft.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2025/01/ugynoksegek-logoi-24-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2025/01/ugynoksegek-logoi-24.png",
   "via": "ugynoksegkereso.hu"
+ },
+ "riseappstudio-webaruhaz-applikaciova-minden-ami-egy-webshophoz-kell": {
+  "file": "riseappstudio-webaruhaz-applikaciova-minden-ami-egy-webshophoz-kell.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2021/02/logo@3x.png",
+  "via": "szakertok.shoprenter.hu"
  },
  "rm-webstudio": {
   "file": "rm-webstudio.svg",
@@ -771,6 +1007,11 @@
   "src": "https://rolloutit.net/wp-content/uploads/2025/05/roll_logo_black.png",
   "via": "header-own"
  },
+ "sales-innovo": {
+  "file": "sales-innovo.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2019/05/SalesInnovoLogo_v2_gradient-3.png",
+  "via": "szakertok.shoprenter.hu"
+ },
  "scl-media-marketing": {
   "file": "scl-media-marketing.svg",
   "src": "https://sclmedia.hu/wp-content/uploads/2024/11/sclmedia-online-marketing-ugynokseg-logo-sotet.svg",
@@ -778,7 +1019,7 @@
  },
  "selector-online-marketing-ugynokseg": {
   "file": "selector-online-marketing-ugynokseg.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/05/Nevtelen-terv-6-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/05/Nevtelen-terv-6.png",
   "via": "ugynoksegkereso.hu"
  },
  "seo-cikkek": {
@@ -803,10 +1044,20 @@
   "via": "header-own",
   "dark": true
  },
+ "shopmentor-a-webaruhaz-specialista": {
+  "file": "shopmentor-a-webaruhaz-specialista.jpg",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2019/04/colorful_vertical_logo_400x400.jpg",
+  "via": "szakertok.shoprenter.hu"
+ },
  "sikerosveny-online-marketing-ugynokseg": {
   "file": "sikerosveny-online-marketing-ugynokseg.png",
   "src": "https://sikerosveny.hu/wp-content/uploads/2021/10/sikerosveny-logo-szines-atlatszo-270.png",
   "via": "header-own"
+ },
+ "simplatech-webshop-rancfelvarras-premium-minosegben": {
+  "file": "simplatech-webshop-rancfelvarras-premium-minosegben.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2020/02/ST_2.png",
+  "via": "szakertok.shoprenter.hu"
  },
  "smartbotics": {
   "file": "smartbotics.png",
@@ -820,7 +1071,7 @@
  },
  "socialwings": {
   "file": "socialwings.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/03/ugynoksegek-logoi-7-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/03/ugynoksegek-logoi-7.png",
   "via": "ugynoksegkereso.hu"
  },
  "soul-in": {
@@ -828,14 +1079,29 @@
   "src": "https://soulin.hu/wp-content/uploads/2026/04/logo.png",
   "via": "logo-own"
  },
+ "spark-studio-international-a-b-teszteles-es-konverzio-optimalizalas": {
+  "file": "spark-studio-international-a-b-teszteles-es-konverzio-optimalizalas.png",
+  "src": "https://hu.sparkstudiointernational.com/wp-content/uploads/2024/02/spark_logo_w6.png",
+  "via": "header-logo"
+ },
+ "srthemes-valts-sebesseget-es-emeld-shoprenteres-sablonod-a-kovetkezo-szintre": {
+  "file": "srthemes-valts-sebesseget-es-emeld-shoprenteres-sablonod-a-kovetkezo-szintre.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2021/02/Facebook-profile-2.png",
+  "via": "szakertok.shoprenter.hu"
+ },
  "stilldesign": {
   "file": "stilldesign.png",
   "src": "https://stilldesign.hu/wp-content/themes/stilldesign3/img/logo-blue-gradient.png",
   "via": "header-logo"
  },
+ "storementor": {
+  "file": "storementor.png",
+  "src": "https://partnerek.shoptet.hu/wp-content/uploads/2023/05/logo.png",
+  "via": "partnerek.shoptet.hu"
+ },
  "suhajda-tamas-ppc-webdesign-automatizaciok": {
   "file": "suhajda-tamas-ppc-webdesign-automatizaciok.png",
-  "src": "https://www.suhajdatamas.hu/wp-content/uploads/2026/02/cropped-2000x1000_v2_feher-192x192.png",
+  "src": "https://www.suhajdatamas.hu/wp-content/uploads/2026/02/cropped-2000x1000_v2_feher.png",
   "via": "icon"
  },
  "sybell-informatika-kft": {
@@ -843,15 +1109,25 @@
   "src": "https://sybell.hu/wp-content/themes/sybell/assets/img/sybell_logo-small-min.png",
   "via": "header-own"
  },
+ "tappointment-kft": {
+  "file": "tappointment-kft.png",
+  "src": "https://tappcoding-cms.s3.eu-central-1.amazonaws.com/tappointment_H150px_bdfda054b9.png",
+  "via": "header-logo"
+ },
  "tartalom-design-kft": {
   "file": "tartalom-design-kft.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2026/05/Tartalom-design-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2026/05/Tartalom-design.png",
   "via": "ugynoksegkereso.hu"
  },
  "tasnadi": {
   "file": "tasnadi.svg",
   "src": "https://cdn.prod.website-files.com/63d28050af0cad664b50fd2c/678e643d6fc079ddeee65dc4_logo-dark.svg",
   "via": "logo-own"
+ },
+ "thalassys": {
+  "file": "thalassys.jpg",
+  "src": "https://partnerek.shoptet.hu/wp-content/uploads/2023/02/thalassyslogo373x373-LinkedIn.jpg",
+  "via": "partnerek.shoptet.hu"
  },
  "the-palm-group": {
   "file": "the-palm-group.png",
@@ -870,12 +1146,17 @@
  },
  "toldi-marketing": {
   "file": "toldi-marketing.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/09/Toldilogo-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/09/Toldilogo.png",
   "via": "ugynoksegkereso.hu"
+ },
+ "topin": {
+  "file": "topin.png",
+  "src": "https://partnerek.shoptet.hu/wp-content/uploads/2023/08/simple.png",
+  "via": "partnerek.shoptet.hu"
  },
  "toptarget": {
   "file": "toptarget.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/06/ugynoksegek-logoi-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/06/ugynoksegek-logoi.png",
   "via": "ugynoksegkereso.hu"
  },
  "torok-balazs": {
@@ -883,9 +1164,24 @@
   "src": "https://cdn.prod.website-files.com/62c89c321cfc4566032e12a3/65a46c9e0f0d216cc94b1ca1_torokbalazs_2024.webp",
   "via": "header-own"
  },
+ "uhu-kreativ-ugynokseg": {
+  "file": "uhu-kreativ-ugynokseg.webp",
+  "src": "https://static.unas.eu/sync_own/content/6491/6491.webp",
+  "via": "unas.hu"
+ },
+ "uiworks-hu": {
+  "file": "uiworks-hu.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2024/07/logo.png",
+  "via": "szakertok.shoprenter.hu"
+ },
+ "ujhonlapod-hu": {
+  "file": "ujhonlapod-hu.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2022/10/Nevtelen-1.png",
+  "via": "szakertok.shoprenter.hu"
+ },
  "unidome-studio-creative": {
   "file": "unidome-studio-creative.png",
-  "src": "https://unidome.studio/wp-content/uploads/2025/03/android-chrome-512x512-1-268x268.png",
+  "src": "https://unidome.studio/wp-content/uploads/2025/03/android-chrome-512x512-1.png",
   "via": "icon"
  },
  "uniomedia": {
@@ -911,18 +1207,38 @@
  },
  "vantgard-digital": {
   "file": "vantgard-digital.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/08/ugynoksegek-logoi-28-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/08/ugynoksegek-logoi-28.png",
   "via": "ugynoksegkereso.hu"
+ },
+ "vaw-hungary": {
+  "file": "vaw-hungary.webp",
+  "src": "https://static.unas.eu/sync_own/content/9601/9601.webp",
+  "via": "unas.hu"
  },
  "ventoora": {
   "file": "ventoora.png",
   "src": "https://ventoora.hu/favicon.png",
   "via": "icon"
  },
+ "verteco-hu": {
+  "file": "verteco-hu.jpg",
+  "src": "https://partnerek.shoptet.hu/wp-content/uploads/2023/03/verteco-logo.jpg",
+  "via": "partnerek.shoptet.hu"
+ },
  "virus-media-keresomarketing-ugynokseg": {
   "file": "virus-media-keresomarketing-ugynokseg.png",
   "src": "https://www.virusmedia.hu/wp-content/uploads/2024/12/logo.png",
   "via": "logo-own"
+ },
+ "webaruhazmester": {
+  "file": "webaruhazmester.webp",
+  "src": "https://static.unas.eu/sync_own/content/8859/8859.webp",
+  "via": "unas.hu"
+ },
+ "webeditor-kft-shoprenter-integracio-automatizacio-uzemeltetes": {
+  "file": "webeditor-kft-shoprenter-integracio-automatizacio-uzemeltetes.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2019/05/we_fav.png",
+  "via": "szakertok.shoprenter.hu"
  },
  "webery": {
   "file": "webery.png",
@@ -931,22 +1247,87 @@
  },
  "webgrow-digital-agency": {
   "file": "webgrow-digital-agency.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/10/ugynoksegek-logoi-31-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2024/10/ugynoksegek-logoi-31.png",
   "via": "ugynoksegkereso.hu"
+ },
+ "webid": {
+  "file": "webid.jpg",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2023/08/webid.jpg",
+  "via": "szakertok.shoprenter.hu"
+ },
+ "webmaister": {
+  "file": "webmaister.png",
+  "src": "https://static.unas.eu/sync_own/content/4372/4372.png?version=1521",
+  "via": "unas.hu"
+ },
+ "webmentor-hu": {
+  "file": "webmentor-hu.webp",
+  "src": "https://static.unas.eu/sync_own/content/7661/7661.webp",
+  "via": "unas.hu"
+ },
+ "webmotion-kft-fejlesztes-marketing": {
+  "file": "webmotion-kft-fejlesztes-marketing.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2019/11/webmotion_icon_color.png",
+  "via": "szakertok.shoprenter.hu"
  },
  "weboldal-keszites-most": {
   "file": "weboldal-keszites-most.png",
   "src": "https://weboldalkeszitesmost.hu/images/ow-logo.png",
   "via": "header-own"
  },
+ "weboldalszerkesztes-tervezestol-a-kivitelezesig": {
+  "file": "weboldalszerkesztes-tervezestol-a-kivitelezesig.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2022/02/weboldalszerkesztes-logo-320-×-320px.png",
+  "via": "szakertok.shoprenter.hu"
+ },
  "weboptim": {
   "file": "weboptim.png",
   "src": "https://weboptim.hu/weboptim-content/themes/weboptim/images/logo.png",
   "via": "header-logo"
  },
+ "webshine-webmuhely-a-sokoldalu-shoprenter-szakerto": {
+  "file": "webshine-webmuhely-a-sokoldalu-shoprenter-szakerto.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2019/04/ggmedia-logo.png",
+  "via": "szakertok.shoprenter.hu"
+ },
+ "webshop-automatizalas-webshopautomatizalas-hu": {
+  "file": "webshop-automatizalas-webshopautomatizalas-hu.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2019/04/Untitled-design.png",
+  "via": "szakertok.shoprenter.hu"
+ },
+ "webshop-karbantartasa": {
+  "file": "webshop-karbantartasa.png",
+  "src": "https://static.unas.eu/sync_own/content/4432/4432.png?version=1521",
+  "via": "unas.hu"
+ },
+ "webshop-mentor": {
+  "file": "webshop-mentor.png",
+  "src": "https://static.unas.eu/sync_own/content/4437/4437.png?version=1521",
+  "via": "unas.hu"
+ },
+ "webshopmenedzseles-hu": {
+  "file": "webshopmenedzseles-hu.webp",
+  "src": "https://static.unas.eu/sync_own/content/7970/7970.webp",
+  "via": "unas.hu"
+ },
+ "webshopper": {
+  "file": "webshopper.png",
+  "src": "https://static.unas.eu/sync_own/content/4412/4412.png?version=1521",
+  "via": "unas.hu"
+ },
+ "webszer": {
+  "file": "webszer.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2025/02/Webszerlogo.png",
+  "via": "szakertok.shoprenter.hu"
+ },
+ "webtic-online-a-megbizhato-munkatars": {
+  "file": "webtic-online-a-megbizhato-munkatars.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2020/05/logo.png",
+  "via": "szakertok.shoprenter.hu"
+ },
  "welovedigital": {
   "file": "welovedigital.png",
-  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/Kwelovedigital-1024x1024.png",
+  "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2023/08/Kwelovedigital.png",
   "via": "ugynoksegkereso.hu"
  },
  "win-winmarketing": {
@@ -965,9 +1346,19 @@
   "src": "https://wpsprint.hu/wp-content/uploads/2020/03/wpsprint-logo.png",
   "via": "header-own"
  },
+ "yco-digital-agency-a-digitalis-jelenlet-amire-buszke-leszel": {
+  "file": "yco-digital-agency-a-digitalis-jelenlet-amire-buszke-leszel.png",
+  "src": "https://szakertok.shoprenter.hu/wp-content/uploads/2025/09/ycologo.png",
+  "via": "szakertok.shoprenter.hu"
+ },
  "yellowbird": {
   "file": "yellowbird.png",
   "src": "https://yellowbird.hu/wp-content/themes/yellowbird/assets/logo.png",
   "via": "header-own"
+ },
+ "zadori-beatrix-melitta": {
+  "file": "zadori-beatrix-melitta.jpg",
+  "src": "https://partnerek.shoptet.hu/wp-content/uploads/2025/12/ZB_shoptet_logo.jpg",
+  "via": "partnerek.shoptet.hu"
  }
 }

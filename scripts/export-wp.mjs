@@ -1,7 +1,7 @@
 // WordPress-import előállítása a repó adataiból: node scripts/export-wp.mjs
 // Kimenet: wordpress/kompasz-core/import/data.json + import/logos/*
 // Az importálást a WP adminban a Kompasz → Importálás oldal (vagy `wp kompasz import`) végzi.
-import { readFile, writeFile, mkdir, rm, copyFile } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, rm, copyFile, stat } from 'node:fs/promises';
 import { CATS, AGENCIES, PARTNERS, HOME_TOP } from '../src/data.mjs';
 import { MEGYE } from '../src/megyek.mjs';
 import { buildRefPages, buildIndustryPages, industryName, certName, slugify } from '../src/ugyfelek-minositesek.mjs';
@@ -18,25 +18,28 @@ const SLUGS = {
   'Google Ads ügynökségek': 'google-ads-ugynoksegek', 'Facebook hirdetés ügynökségek': 'facebook-hirdetes-ugynoksegek',
   'Online marketing ügynökségek': 'online-marketing-ugynoksegek', 'PR ügynökségek': 'pr-ugynoksegek',
   'Keresőoptimalizáló ügynökségek': 'keresooptimalizalo-ugynoksegek', 'Amazon ügynökségek': 'amazon-ugynoksegek',
-  'Weboldal készítés': 'weboldal-keszites', 'Tartalomgyártó ügynökségek': 'tartalomgyarto-ugynoksegek',
+  'Weboldal készítés': 'weboldal-keszites', 'Tartalomgyártó ügynökségek': 'tartalomgyarto-ugynoksegek', 'Bérelhető webshop szakértők': 'berelheto-webshop-szakertok',
 };
 // Ikonkulcsok a téma ikonkészletéhez (Kompasz v4 design)
 const ICONS = {
   'AI agent fejlesztő cégek': 'bot', 'AI SEO ügynökségek': 'sparkle', 'Google Ads ügynökségek': 'target',
   'Facebook hirdetés ügynökségek': 'megaphone', 'Online marketing ügynökségek': 'trend', 'PR ügynökségek': 'news',
-  'Keresőoptimalizáló ügynökségek': 'search', 'Amazon ügynökségek': 'box', 'Weboldal készítés': 'browser',
+  'Keresőoptimalizáló ügynökségek': 'search', 'Amazon ügynökségek': 'box', 'Weboldal készítés': 'browser', 'Bérelhető webshop szakértők': 'box',
   'Tartalomgyártó ügynökségek': 'pen',
 };
 // Kategóriák sorrendje a fejlécben (design: AI agent → Tartalomgyártás)
 const NAV_ORDER = ['AI agent fejlesztő cégek', 'AI SEO ügynökségek', 'Google Ads ügynökségek', 'Facebook hirdetés ügynökségek',
-  'Online marketing ügynökségek', 'PR ügynökségek', 'Keresőoptimalizáló ügynökségek', 'Amazon ügynökségek', 'Weboldal készítés',
+  'Online marketing ügynökségek', 'PR ügynökségek', 'Keresőoptimalizáló ügynökségek', 'Amazon ügynökségek', 'Weboldal készítés', 'Bérelhető webshop szakértők',
   'Tartalomgyártó ügynökségek'];
-const NAV_SHORT = { 'Keresőoptimalizáló ügynökségek': 'SEO', 'Weboldal készítés': 'Weboldal', 'Tartalomgyártó ügynökségek': 'Tartalomgyártás', 'AI agent fejlesztő cégek': 'AI agent fejlesztés' };
+const NAV_SHORT = { 'Bérelhető webshop szakértők': 'Bérelhető webshop', 'Keresőoptimalizáló ügynökségek': 'SEO', 'Weboldal készítés': 'Weboldal', 'Tartalomgyártó ügynökségek': 'Tartalomgyártás', 'AI agent fejlesztő cégek': 'AI agent fejlesztés' };
 
 // Logók kicsinyítése 256 px-re (ha a sharp telepítve van), hogy a bővítmény zip-je feltölthető maradjon
 let sharp = null;
 try { sharp = (await import('sharp')).default; } catch { console.warn('sharp nincs telepítve: a logók eredeti méretben kerülnek az importba'); }
-async function copyLogo(file) {
+async function copyLogo(file, slug) {
+  // Négyzetes, keretkitöltő változat (scripts/logo-negyzet.py), ha van
+  const sq = `src/logos-negyzet/${slug}.webp`;
+  if (await stat(sq).catch(() => null)) { await copyFile(sq, `${OUT}/logos/${slug}.webp`); return `${slug}.webp`; }
   const src = `src/logos/${file}`;
   if (!sharp || file.endsWith('.svg')) { await copyFile(src, `${OUT}/logos/${file}`); return file; }
   const out = file.replace(/\.[a-z]+$/i, '.png');
@@ -69,7 +72,7 @@ for (const c of db.companies) {
   const desc = c.description || old?.d || '';
   if (!(c.status === 'kész' || (old && desc))) continue; // a nyilvános oldalon is csak ezek látszanak
   const lg = logos[c.slug];
-  const logoFile = lg ? await copyLogo(lg.file) : null;
+  const logoFile = lg ? await copyLogo(lg.file, c.slug) : null;
   const g = google[c.slug];
   agencies.push({
     slug: c.slug, name: c.name, website: c.website, city: c.city, founded: c.founded_year, team: c.team_size,

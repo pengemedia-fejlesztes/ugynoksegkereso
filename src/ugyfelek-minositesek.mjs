@@ -14,6 +14,7 @@ const CERT_ALIASES = [
   [/^shoprenter (szakerto|expert|partner)$/i, 'Shoprenter partner'],
   [/^unas (szakerto|expert|partner|seo partner)$/i, 'UNAS partner'],
   [/^shopify (partner|expert)$/i, 'Shopify partner'],
+  [/^shoptet (partner|szakerto|expert)$/i, 'Shoptet partner'],
   [/^tiktok (marketing )?partner$/i, 'TikTok partner'],
   [/^iso 9001/i, 'ISO 9001'],
   [/^mprsz/i, 'MPRSZ-tag'],

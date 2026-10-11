@@ -40,12 +40,12 @@ h1,h2,h3{margin:0}
 /* Logó */
 .logo{position:relative;flex:none;border-radius:14px;background:#fff;border:1px solid var(--soft);overflow:hidden;display:grid;place-items:center}
 .logo>span{position:absolute;font:600 13px var(--mono);color:var(--mut4)}
-.logo img{position:relative;width:100%;height:100%;object-fit:contain;background:#fff;padding:7%}
+.logo img{position:relative;display:block;width:100%;height:100%;object-fit:cover;padding:0}
 .logo.dark,.logo.dark img{background:#111318;border-color:#111318}
 .logo.mini{border-radius:50%;border:2px solid #fff;margin-left:-7px}
 .logo.mini:first-child{margin-left:0}
 .logo.mini>span{font-size:8px}
-.logo.mini img{padding:3px}
+.logo.mini img{padding:0}
 
 /* Értékelés, címkék */
 .rating{display:inline-flex;align-items:baseline;gap:6px;flex-wrap:wrap}

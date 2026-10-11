@@ -74,7 +74,8 @@ function kompasz_import_base(array $data) {
 function kompasz_import_logo($file, $post_id, $name) {
     $src = KOMPASZ_CORE_DIR . 'import/logos/' . $file;
     if (!file_exists($src)) return 0;
-    $existing = get_posts(['post_type' => 'attachment', 'numberposts' => 1, 'fields' => 'ids', 'meta_key' => 'kompasz_logo_file', 'meta_value' => $file]);
+    $md5 = md5_file($src);
+    $existing = get_posts(['post_type' => 'attachment', 'numberposts' => 1, 'fields' => 'ids', 'meta_query' => [['key' => 'kompasz_logo_file', 'value' => $file], ['key' => 'kompasz_logo_md5', 'value' => $md5]]]);
     if ($existing) return (int) $existing[0];
     $upload = wp_upload_bits('kompasz-' . $file, null, file_get_contents($src));
     if (!empty($upload['error'])) return 0;
@@ -86,6 +87,7 @@ function kompasz_import_logo($file, $post_id, $name) {
     if (is_wp_error($att) || !$att) return 0;
     if (strpos((string) $type['type'], 'svg') === false) wp_update_attachment_metadata($att, wp_generate_attachment_metadata($att, $upload['file']));
     update_post_meta($att, 'kompasz_logo_file', $file);
+    update_post_meta($att, 'kompasz_logo_md5', $md5);
     update_post_meta($att, '_wp_attachment_image_alt', $name . ' logó');
     return (int) $att;
 }
@@ -129,9 +131,19 @@ function kompasz_import_agencies(array $data, $offset, $limit) {
         wp_set_object_terms($id, $a['client_terms'] ?? [], 'ugyfel');
         wp_set_object_terms($id, $a['cert_terms'] ?? [], 'minosites');
         wp_set_object_terms($id, $a['industry_terms'] ?? [], 'iparag');
-        if ($a['logo'] && !has_post_thumbnail($id)) {
-            $att = kompasz_import_logo($a['logo'], $id, $a['name']);
-            if ($att) set_post_thumbnail($id, $att);
+        if ($a['logo']) {
+            // Új logó, vagy az importált logó tartalma változott (md5): csere; kézzel beállított kiemelt képhez nem nyúl
+            $cur = (int) get_post_thumbnail_id($id);
+            $src = KOMPASZ_CORE_DIR . 'import/logos/' . $a['logo'];
+            $md5 = is_file($src) ? md5_file($src) : '';
+            $imported = $cur && get_post_meta($cur, 'kompasz_logo_file', true);
+            if (!$cur || ($imported && $md5 && get_post_meta($cur, 'kompasz_logo_md5', true) !== $md5)) {
+                $att = kompasz_import_logo($a['logo'], $id, $a['name']);
+                if ($att && $att !== $cur) {
+                    set_post_thumbnail($id, $att);
+                    if ($imported) wp_delete_attachment($cur, true);
+                }
+            }
         }
     }
     return count($slice);

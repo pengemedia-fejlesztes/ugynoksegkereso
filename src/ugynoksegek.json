@@ -49,6 +49,11 @@
    "slug": "ai-agent-fejleszto-cegek",
    "name": "AI agent fejlesztő cégek",
    "origin": "új"
+  },
+  {
+   "slug": "berelheto-webshop-szakertok",
+   "name": "Bérelhető webshop szakértők",
+   "origin": "új"
   }
  ],
  "companies": [
@@ -192,7 +197,8 @@
     "Online marketing ügynökségek",
     "Facebook hirdetés ügynökségek",
     "Google Ads ügynökségek",
-    "AI SEO ügynökségek"
+    "AI SEO ügynökségek",
+    "Bérelhető webshop szakértők"
    ],
    "description": "A 2017-ben alapított budapesti ügynökség stratégiaalkotást, keresőoptimalizálást, Google- és Meta-hirdetéskezelést, valamint weboldal- és webáruház-fejlesztést vállal. Kínálatában iparágakra szabott csomagok is vannak, például egészségügyi, szépségipari, vendéglátós és Shoprenter- vagy UNAS-alapú webáruházak számára. AI SEO szolgáltatása a Google mellett a ChatGPT, a Perplexity és az AI Overviews találataira optimalizál. A kivitelezés mellett PPC-, SEO-, analitika- és AI-képzéseket is tart; a cég közlése szerint 16-nál több szakemberrel dolgozik.",
    "status": "kész",
@@ -217,6 +223,10 @@
     "Femina",
     "Vichy",
     "Bankmonitor"
+   ],
+   "certifications": [
+    "Shoprenter partner",
+    "Shoptet partner"
    ]
   },
   {
@@ -366,7 +376,8 @@
     "Facebook hirdetés ügynökségek",
     "Google Ads ügynökségek",
     "AI SEO ügynökségek",
-    "AI agent fejlesztő cégek"
+    "AI agent fejlesztő cégek",
+    "Bérelhető webshop szakértők"
    ],
    "description": "Budapesti ügynökség, amely a keresőoptimalizálást és a fizetett hirdetések kezelését mesterséges intelligenciára épülő szolgáltatásokkal egészíti ki. Google, Meta, TikTok, LinkedIn és Pinterest kampányokat visz, emellett foglalkozik azzal is, hogy az ügyfelek megjelenjenek a ChatGPT és a Gemini válaszaiban. AI ügynököt és chatbotot is fejleszt, valamint weboldalt és UNAS webáruházat készít. Főként kis- és középvállalkozásoknak dolgozik, több iparágra szabott ajánlattal.",
    "status": "kész",
@@ -385,6 +396,9 @@
     "szépségipar",
     "szállás",
     "kertészet"
+   ],
+   "certifications": [
+    "UNAS partner"
    ]
   },
   {
@@ -1298,7 +1312,8 @@
    ],
    "categories": [
     "Facebook hirdetés ügynökségek",
-    "Google Ads ügynökségek"
+    "Google Ads ügynökségek",
+    "Bérelhető webshop szakértők"
    ],
    "description": "Óbudai irodával működő hirdetéskezelő ügynökség, amelynek kínálata a fizetett kampányokra épül: Facebook-, Instagram- és Google-hirdetések, újabban ChatGPT-hirdetések kezelése. A Facebook-szolgáltatás három nyilvános árú csomagban érhető el, a csak hirdetéskezelést tartalmazó változat havi 99 900 Ft + áfától indul, és kérhető oldalkezeléssel együtt is. Ingyenes hirdetési auditot, szálláshelyeknek szóló marketinget, e-mail marketinget és weboldalkészítést is kínálnak.",
    "status": "kész",
@@ -1307,7 +1322,8 @@
    "email": "hello@boostermarketing.hu",
    "certifications": [
     "Google Partner",
-    "Meta Business Partner"
+    "Meta Business Partner",
+    "Shoprenter partner"
    ],
    "languages": [
     "magyar"
@@ -2123,7 +2139,8 @@
     "Fordítás és lokalizálás"
    ],
    "categories": [
-    "Amazon ügynökségek"
+    "Amazon ügynökségek",
+    "Bérelhető webshop szakértők"
    ],
    "description": "Az Everigo Group vállalkozások külföldi terjeszkedését támogatja, többek között szlovák, román, német, olasz, horvát, szlovén, lengyel és cseh piacokon. Amazon Marketplace kezelés keretében regisztrálja és karbantartja az Amazon-fiókot, kezeli a PPC-hirdetéseket, elkészíti a termékoldalakat, tartja a kapcsolatot a vevőkkel és havi riportot készít, az együttműködés előtt piackutatást végez. Ezen felül többnyelvű ügyfélszolgálatot, fordítást és lokalizálást, logisztikai és adminisztratív támogatást, valamint social media és PPC marketinget kínál.",
    "status": "kész",
@@ -2134,6 +2151,11 @@
    "email": "info@everigo.eu",
    "languages": [
     "magyar"
+   ],
+   "certifications": [
+    "Shoprenter partner",
+    "Shoptet partner",
+    "UNAS partner"
    ]
   },
   {
@@ -2459,7 +2481,8 @@
    "team_size": "13 fő",
    "services": [],
    "categories": [
-    "Online marketing ügynökségek"
+    "Online marketing ügynökségek",
+    "Bérelhető webshop szakértők"
    ],
    "description": null,
    "status": "ellenőrizendő",
@@ -2470,7 +2493,8 @@
     "Google Partner",
     "UNAS Expert",
     "Shoprenter Expert",
-    "Shopify Expert"
+    "Shopify Expert",
+    "UNAS partner"
    ],
    "languages": [
     "magyar"
@@ -2539,7 +2563,8 @@
     "PPC audit"
    ],
    "categories": [
-    "Online marketing ügynökségek"
+    "Online marketing ügynökségek",
+    "Bérelhető webshop szakértők"
    ],
    "description": "Debreceni központú ügynökség, amelynek Balatonfüreden is van irodája. Szolgáltatásait jellemzően havidíjas, ügyféltípusra szabott csomagokban kínálja: külön ajánlata van egészségügyi szolgáltatóknak, szolgáltató cégeknek és webáruházaknak, emellett videós tartalommal bővített csomagot is árul. A hirdetéskezelés és a közösségimédia-tartalom mellett weboldalakat készít, logót és arculatot tervez, valamint munkáltatói márkaépítéssel foglalkozik. A csomagok induló nettó árai a weboldalon nyilvánosak.",
    "status": "kész",
@@ -2561,6 +2586,9 @@
     "Fiziotars",
     "Kulcsrakészház",
     "Debrecen Takarítás"
+   ],
+   "certifications": [
+    "Shoprenter partner"
    ]
   },
   {
@@ -3581,7 +3609,8 @@
    "categories": [
     "Online marketing ügynökségek",
     "Facebook hirdetés ügynökségek",
-    "Google Ads ügynökségek"
+    "Google Ads ügynökségek",
+    "Bérelhető webshop szakértők"
    ],
    "description": "A Kőrösi Ödön által alapított budapesti ügynökség Google és Meta hirdetéskezeléssel, keresőoptimalizálással, valamint weboldalak és webáruházak készítésével foglalkozik. Ügyfelei jellemzően kis- és középvállalkozások, ajánlatkérésre építő szolgáltatók és Unas, Shoprenter vagy WooCommerce alapú webshopok. A weboldal minősített Google Partner státuszt tüntet fel, és Google Ads képzést is kínál. A cég közlése szerint 2016 óta működik ezen a területen.",
    "status": "kész",
@@ -3589,7 +3618,8 @@
    "phone": "+36 30 160 8488",
    "email": "info@onlineugynokseg.hu",
    "certifications": [
-    "Google Partner"
+    "Google Partner",
+    "Shoprenter partner"
    ],
    "languages": [
     "magyar"
@@ -3613,7 +3643,8 @@
    ],
    "categories": [
     "Online marketing ügynökségek",
-    "Google Ads ügynökségek"
+    "Google Ads ügynökségek",
+    "Bérelhető webshop szakértők"
    ],
    "description": "Webáruházakra szakosodott szolgáltató, amelynek két fő területe a konverzióoptimalizálás és a PPC kampányok kezelése. A weboldal saját megfogalmazása szerint a konverziós arány javításán mesterséges intelligenciára támaszkodó módszerekkel dolgozik, a hirdetési oldalon pedig Google Ads kampányokat említ. A cég székhelyéről, alapítási évéről és csapatáról az oldal elérhető részei nem közölnek adatot, ezért ezek itt nem szerepelnek.",
    "status": "kész",
@@ -3623,6 +3654,9 @@
    ],
    "industries": [
     "webáruház"
+   ],
+   "certifications": [
+    "Shoprenter partner"
    ]
   },
   {
@@ -4283,7 +4317,8 @@
     "Online marketing ügynökségek",
     "Facebook hirdetés ügynökségek",
     "Google Ads ügynökségek",
-    "AI SEO ügynökségek"
+    "AI SEO ügynökségek",
+    "Bérelhető webshop szakértők"
    ],
    "description": "A Maximum Business a marketinget cégépítési feladatként kezeli: hét területből álló saját rendszerében a növekedési stratégia és a márkapozicionálás mellett Meta-, Google-, YouTube- és TikTok-kampányokat, tartalomgyártást, keresőoptimalizálást, weboldal- és CRM-fejlesztést, valamint videós és PR-munkát vállal. Szolgáltatásai között a Google mellett az AI-keresőkben való láthatóság is szerepel. A cég közlése szerint budapesti és dubaji irodával működik.",
    "status": "kész",
@@ -4292,7 +4327,8 @@
    "email": "ajanlatkeres@maximumbusiness.hu",
    "certifications": [
     "Google Partner",
-    "Meta Partner"
+    "Meta Partner",
+    "Shoprenter partner"
    ],
    "languages": [
     "magyar"
@@ -4493,7 +4529,8 @@
    "team_size": "4 fő",
    "services": [],
    "categories": [
-    "Online marketing ügynökségek"
+    "Online marketing ügynökségek",
+    "Bérelhető webshop szakértők"
    ],
    "description": null,
    "status": "ellenőrizendő",
@@ -4504,7 +4541,8 @@
     "Google Partner",
     "Meta Partner",
     "Shoprenter Partner",
-    "UNAS Partner"
+    "UNAS Partner",
+    "UNAS partner"
    ],
    "languages": [
     "magyar"
@@ -4625,7 +4663,8 @@
    "categories": [
     "Online marketing ügynökségek",
     "Facebook hirdetés ügynökségek",
-    "Google Ads ügynökségek"
+    "Google Ads ügynökségek",
+    "Bérelhető webshop szakértők"
    ],
    "description": "A 2011-ben létrejött, dabasi székhelyű ügynökség ügyfélkörének zömét webáruházak adják, mellettük szolgáltatóknak és gyártóknak is dolgozik. Google Ads- és Facebook-hirdetéseket kezel, közösségimédia-felületeket gondoz, honlapot készít és marketingstratégiát tervez. Az e-kereskedelmi fókuszt jelzi, hogy önálló szolgáltatásként kínál termékfeed-menedzsmentet. Google Partner; a cég közlése szerint eddig 790 webáruházzal dolgozott.",
    "status": "kész",
@@ -4634,7 +4673,8 @@
    "email": "info@netmarketing.hu",
    "certifications": [
     "Google Partner",
-    "Facebook Partner"
+    "Facebook Partner",
+    "Shoptet partner"
    ],
    "languages": [
     "magyar"
@@ -5146,7 +5186,8 @@
     "Webfejlesztés"
    ],
    "categories": [
-    "Online marketing ügynökségek"
+    "Online marketing ügynökségek",
+    "Bérelhető webshop szakértők"
    ],
    "description": null,
    "status": "ellenőrizendő",
@@ -5154,7 +5195,8 @@
    "phone": "+36 1 621 5804",
    "email": "hello@plus-kreativ.hu",
    "certifications": [
-    "Google Partner"
+    "Google Partner",
+    "Shoprenter partner"
    ],
    "languages": [
     "magyar",
@@ -6928,14 +6970,17 @@
    "categories": [
     "Online marketing ügynökségek",
     "Facebook hirdetés ügynökségek",
-    "Google Ads ügynökségek"
+    "Google Ads ügynökségek",
+    "Bérelhető webshop szakértők"
    ],
    "description": "Ötfős csapat, amely a webfejlesztést és az online marketinget egy kézben kínálja. Egyedi weboldalakat és webshopokat épít WooCommerce, Shopify, Shoptet, Shoprenter és UNAS rendszerre, WordPress-karbantartási csomagokat ad, mellette Google Ads és Meta kampányokat kezel, keresőoptimalizálással, hírlevél-marketinggel és GA4-alapú analitikával foglalkozik. Honlapján Google Partner jelvény szerepel; alapítója és vezetője Kovács Dorián.",
    "status": "kész",
    "review_note": null,
    "email": "hello@webgrow.hu",
    "certifications": [
-    "Google Partner"
+    "Google Partner",
+    "Shoptet partner",
+    "UNAS partner"
    ],
    "languages": [
     "magyar",
@@ -7192,6 +7237,1934 @@
    "description": "A yellowbird.hu címen jelenleg nem ügynökségi oldal, hanem egy magyar nyelvű tartalomoldal érhető el, amely Ember, Kultúra, Természet és Üzlet rovatokban közöl cikkeket. Marketingszolgáltatás, ügyféllista vagy árajánlatkérési lehetőség nem szerepel rajta. Az impresszum nem nevezi meg az üzemeltetőt, csak szerkesztőségi és értékesítési e-mail-címet, valamint a tárhelyszolgáltatót tünteti fel, így a korábbi ügynökség működése innen nem igazolható.",
    "status": "ellenőrizendő",
    "review_note": "A domainen ma nem ügynökségi oldal fut."
+  },
+  {
+   "slug": "shopmentor-a-webaruhaz-specialista",
+   "name": "Shopmentor- A webáruház specialista",
+   "website": "https://shopmentor.hu",
+   "city": "Nyíregyháza",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Webáruház-üzemeltetés",
+    "Shoprenter webáruház",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter és UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés, webáruház-üzemeltetés). NEKED MIRE VAN SZÜKSÉGED? Webáruház indítás – Üzemeltetés – Redesign – Költöztetés – Fejlesztések KIK VAGYUNK MI?",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/shopmentor/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner",
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "webmotion-kft-fejlesztes-marketing",
+   "name": "Webmotion Kft. – Fejlesztés & Marketing",
+   "website": "https://webmotion.hu",
+   "city": "Szeged",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "E-kereskedelmi tanácsadás",
+    "Webáruház-üzemeltetés",
+    "Shoprenter webáruház",
+    "Shoptet webáruház",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter és Shoptet és UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés, webáruház-tanácsadás, webáruház-üzemeltetés). Kedves Látogató! Üdvözöllek szakértői oldalunkon!",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/webmotion-kft/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner",
+    "Shoptet partner",
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "codexpress-hu-webaruhaz-nullarol-a-sikerig",
+   "name": "Codexpress.hu – webáruház nulláról a sikerig",
+   "website": "https://codexpress.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). “Webáruház nulláról a sikerig” A CODEXPRESS üzleti- és technológiai kompetencia egyben – kiemelt Shoprenter szakértő partner Üzleti kompetencia: Közel 20 éve működtetünk nagyobb (évi 12Mrd) és kisebb forgalmú webáruházakat különböző iparágakban (számítástechnika, kozmetikum, kerékpár, elektromos járművek, tisztítószerek, barkácstermékek, lakberendezési, lakástextil stb. termékek).",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/az-expressz-webaruhaz-codexpress-hu/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "ebusiness-experts-amire-webaruhazadhoz-szukseg-van",
+   "name": "eBusiness Experts – Amire webáruházadhoz szükség van",
+   "website": "https://ebex.hu",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Webáruház-üzemeltetés",
+    "Shoprenter webáruház",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter és UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés, webáruház-üzemeltetés). Webáruház tulajdonosként szakértői segítséget szeretnél kapni? Mi a webáruház üzemeltetés minden területén rendelkezésedre állunk!",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/732/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner",
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "alfa-design-webdesign-es-webfejlesztes-a-webaruhazak-szakertoje",
+   "name": "Alfa Design – Webdesign és webfejlesztés, a webáruházak szakértője",
+   "website": "https://alfadesign.hu/eddigi-munkaink/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Igazán egyedi és funkcionális webes megoldások, megbízható digitális kommunikáció, meggyőző social megoldások. A grafika, a marketing, a webfejlesztés és kommunikáció terén közel 15 éves tapasztalattal működünk.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/alfa-design/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "webshine-webmuhely-a-sokoldalu-shoprenter-szakerto",
+   "name": "Webshine webműhely – a sokoldalú ShopRenter szakértő",
+   "website": "https://webshine.eu/webaruhaz-keszites-ajanlat/shoprenter-webaruhaz-keszites",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Webáruház-üzemeltetés",
+    "Shoprenter webáruház",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter és UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés, webáruház-üzemeltetés). E-commerce szakértőként cégünk 13 éve foglalkozik webáruházak fejlesztésével és az online marketing különböző területeivel. Vállalkozásunk sikeresen menedzselt már közel 400 webáruház projektet, örömünkre nagy számban a ShopRenter rendszerében is, valamint a ShopRenterhez nagyban hasonló OpenCart rendszerben.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/566/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner",
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "berry-art-a-webshop-szakerto",
+   "name": "Berry Art – A webshop szakértő",
+   "website": "https://berryart.hu/",
+   "city": "Debrecen",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Egyedi webshop fejlesztés Látványos grafikai megoldások, arculattervezés és termékfeltöltés. A BerryArt Magyarország piacvezető e-kereskedelmi rendszerének, a Shoprenter webáruházainak elkészítésére specializálódott.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/berry-art-webshop-szakerto/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "demeter-zoltan-webshoposok-hu",
+   "name": "Demeter Zoltán – Webshoposok.hu",
+   "website": "https://www.webshoposok.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Kedves Érdeklődő! Elvesztél a rendszer részleteiben?",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/12685/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "ecompartner-hu-webaruhaz-kivitelezes-egyedi-design-landingoldal-marketing",
+   "name": "ecompartner.hu – webáruház kivitelezés, egyedi design, landingoldal, marketing",
+   "website": "https://www.ecompartner.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Webáruház-üzemeltetés",
+    "Shoprenter webáruház",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter és UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés, webáruház-üzemeltetés). Szakterületünk a webáruházak, weboldalak és egyedi landingoldalak tervezése, kivitelezése, valamint az ezekhez kapcsolódó marketingfolyamatok kialakítása. Nem csupán látványos online felületeket készítünk, hanem olyan üzleti célokra épülő megoldásokat, amelyek támogatják a bizalomépítést, az érdeklődők megszerzését és az értékesítést.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/13134/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner",
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "webtic-online-a-megbizhato-munkatars",
+   "name": "Webtic Online – A megbízható munkatárs",
+   "website": "https://webtic.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Ön megálmodja, Mi megvalósítjuk! Csapatunk a tervezéstől kezdve a megvalósításig folyamatosan alkalmazkodik az igényeidhez.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/webtic-a-megbizhato-munkatars/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "2k-web-and-design-shoprenter-webaruhaz-keszites-testreszabas",
+   "name": "2K Web and Design – Shoprenter webáruház készítés, testreszabás",
+   "website": "https://2kwebdesign.hu/",
+   "city": "Balatonlelle",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Krista Kristóf vagyok, webdesigner , a 2K Web and Design megálmodója. Egy webáruház elindításához számos feladatot el kell végezni: megtervezni a felépítést, kinézetet, ki kell alakítani a megfelelő termékkategóriákat, fel kell tölteni az áruházat a termékek adataival, el kell készíteni egy egyedi megjelenést biztosító designt, be kell állítani a szállítási és fizetési funkciókat stb..",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/2k-web-and-design-webshop-keszites-grafika-marketing/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "diamond-agency",
+   "name": "Diamond Agency",
+   "website": "https://www.diamondagency.hu/hu",
+   "city": "Debrecen",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). A dmd 18 éves múlttal rendelkező full-service ügynökség, amely PR-, marketing- és kommunikációs stratégiák kidolgozásával, végrehajtásával, tanácsadással, kreatív tervezéssel és kivitelezéssel, valamint produkciós feladatok ellátásával foglalkozik, megtalálva az összhangot a stratégia és a design között. Minden ügyfelünk számára személyre szabott megoldásokat kínálunk és ügyfél élményt teremtünk.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/diamond-interactive-kft/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "spark-studio-international-a-b-teszteles-es-konverzio-optimalizalas",
+   "name": "Spark Studio International – A/B tesztelés és konverzió optimalizálás",
+   "website": "https://hu.sparkstudiointernational.com/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). A/B tesztekkel mért bevételnövelés Shoprenter webshopoknak 3,2 Mrd Ft többletbevétel magyar ügyfeleinknek 2023 és 2025 között, a nyertes tesztek GA4-ben mért többletbevétele alapján +72% Egyik ügyfelünk bevétele az együttműködésünk alatt két éven át átlagosan évi 72%-kal nőtt 26 hónap Folyamatfejlesztési ügyfeleink átlagosan 26 hónapig maradnak velünk A webshopod látogatóinak nagy része vásárlás n",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/spark-studio-international/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "ujhonlapod-hu",
+   "name": "Ujhonlapod.hu",
+   "website": "https://ujhonlapod.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Hol is lehet jobban megismerkedni a webfejlesztéssel/programozással, mint az iskolában? :) Már ott is nagyon érdekelt a webfejlesztés, egyszerűen lekötött a szép oldalak elkészítése.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/ujhonlapod-hu/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "sales-innovo",
+   "name": "Sales Innovo",
+   "website": "https://salesinnovo.com",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Webáruház-üzemeltetés",
+    "Shoprenter webáruház",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter és UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés, webáruház-üzemeltetés). MOBILAPPLIKÁCIÓ FEJLESZTÉS SHOPRENTERES WEBÁRUHÁZBÓL! Mivel 2023-tól a 3rd party sütik kivezetésre kerülnek, így a saját ügyfél adatbázis kialakítása még nagyobb fontossággal bír!",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/935/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner",
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "hyper-marketing-agency-a-sikert-merjuk",
+   "name": "HYPER Marketing Agency – A sikert mérjük!",
+   "website": "https://www.hypermarketing.hu/",
+   "city": "Győr",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Full szerviz marketing támogatás Ügynökségünk teljes, naprakész marketing háttér támogatást tud nyújtani ügyfeleinek. Legyen szó akár egy induló kis vállalkozásról vagy akár egy multinacionális, nemzetközi vállalatról.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/hyper-marketing-agency/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "b-pro-shoprenter-webaruhaz-menedzsment-es-keszites-egyedi-design-fejlesztes-marketing",
+   "name": "B PRO… Shoprenter webáruház menedzsment és készítés, egyedi design, fejlesztés, marketing!",
+   "website": "https://bpro.hu/webaruhaz/",
+   "city": "Szeged",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Csapatunk összeállításánál fontos szempont volt, hogy mindenki specialistája legyen területének. Nem várjuk el egy kollegától, hogy mindenhez is értsen.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/2334/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "konverzio24-lezerpontos-szemelyre-szabott-kommunikacio-az-erdeklodokkel-idegenvezetes-a-penztarig",
+   "name": "Konverzio24. Lézerpontos, személyre szabott kommunikáció az érdeklődőkkel – „idegenvezetés” a pénztárig",
+   "website": "https://magyarchatbot.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). 2021 új fejezet lesz az online marketing horizontján: az a cég viszi el a pálmát – és a vevőket a konkurencia orra elől – aki maximálisan személyre tudja szabni a kommunikációt és az ügyfélkezelést , jobban, mint ahogy azt a többiek teszik. (Ráadásul ezt automatizáltan = költséghatékonyan, és „ha lehet” éjjel-nappal) Ezért építünk Messenger chatbotokat – feltuningolva Google-fejlesztésű AI -val (m",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/messenger-marketing-ugynokseg/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "riseappstudio-webaruhaz-applikaciova-minden-ami-egy-webshophoz-kell",
+   "name": "RISEAPPSTUDIO / Webáruház applikációvá / Minden ami egy webshophoz kell",
+   "website": "https://riseappstudio.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Napjainkban az online vásárlások többsége mobilról zajlik. Mit szólnál, ha azt mondanánk, hogy vásárlóid a telefonjukról a TE applikációdon keresztül tudnának rendelni?",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/riseapp-studio/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "webszer",
+   "name": "Webszer",
+   "website": "https://www.webszer.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Webszer .hu Technológiai Innováció & Online Növekedés 100+ Sikeres Projekt Több, mint egy ügynökség. A digitális térben nem csak jelen vagyunk, hanem építjük azt.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/webszer/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "marketplacementor",
+   "name": "MarketplaceMentor",
+   "website": "https://marketplacementor.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Webáruház-üzemeltetés",
+    "Shoprenter webáruház",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter és UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés, webáruház-üzemeltetés). Segítünk webáruházadnak, hogy termékeid havi több százezer látogatót elérő felületeken jelenjenek meg Magyarországon és a környező országokban. Várjunk csak!",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/marketplacementor/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner",
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "markweb-digital",
+   "name": "Markweb Digital",
+   "website": "https://markwebdigital.hu",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Kik számára javasoljuk szolgáltatásainkat? Elsődlegesen E-kereskedelmi cégek, online is foglalható szolgáltatások tulajdonosai számára javasoljuk, mivel itt tudjuk garantálni a mért eredmények alapján történő kampánykezelést.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/markweb-digital/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "webid",
+   "name": "WebID",
+   "website": "https://webid.hu",
+   "city": "Győrújbarát",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Timár Mátyás vagyok, 2005 óta foglalkozom webfejlesztéssel és webmarketinggel – ami a mellett, hogy a hivatásom, a hobbim is egyben. Ha Shoprenter webáruházzal kapcsolatos kérdésed lenne, esetleg tanácsra lenne szükséged vagy elakadtál és segítséget kérnél, jó helyen jársz!",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/webid/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "yco-digital-agency-a-digitalis-jelenlet-amire-buszke-leszel",
+   "name": "YCO digital agency – A digitális jelenlét, amire büszke leszel.",
+   "website": "https://yco.hu",
+   "city": "Pécs",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Bemutatkozás A YCO egy több mint 20 éve működő digitális ügynökség, ahol a marketing és a webfejlesztés kéz a kézben jár. Célunk, hogy ügyfeleink ne csak egy webáruházat kapjanak, hanem egy jól működő, növekedésre optimalizált üzleti rendszert.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/yco-digital-agency-a-digitalis-jelenlet-amire-buszke-leszel/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "gasparics-sandor-a-webaruhaz-szakerto",
+   "name": "Gasparics Sándor – A webáruház szakértő",
+   "website": "https://www.durasoft.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Webáruház szakértőként bő 15 év tapasztalatával szeretnék partnere lenni Önnek, mint vevőbarát kis és közepes vállalkozásnak. A kétezres évek eleje óta foglalkozom internettel , és 2006 óta online marketinggel .",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/gasparics-sandor-a-webaruhaz-szakerto/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "klikkmedia",
+   "name": "KlikkMedia",
+   "website": "https://klikkmedia.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). KlikkMedia: Webshop marketing, ami mérhető eredményt hoz Gyorsan dolgozunk, mert nagyvállalati tempóból jövünk. Nem hónapokat várunk az első eredményre, az első hónapban már látod, mi változott.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/13090/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "faceliftr-az-utolso-simitasok-shoprenteres-webshopodnak",
+   "name": "Faceliftr – az utolsó simítások Shoprenteres webshopodnak",
+   "website": "https://www.faceliftr.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Faceliftr – az utolsó simítások webshopodnak Miben segíthetünk? Ha gyors segítségre van szükséged a Shoprenteres sablonod testreszabásában, az oldalaid kinézetének átalakításában, akkor fordulj hozzánk.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/dikudiku-kft/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "netmetro-sikerre-programozva",
+   "name": "Netmetro – Sikerre programozva!",
+   "website": "http://netmetro.hu",
+   "city": "Tiszavasvári",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház",
+    "Shoptet webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter és Shoptet webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Kik vagyunk mi? Egy lelkes kis csapat vagyunk, aki segít neked a webáruházad elindításában, beállításaiban, karbantartásában és termékfeltöltésben illetve összeköti az általad használt programjaidat a ShopRenterrel, hogy tudjanak „beszélgetni” egymással, ezáltal leautomatizálva rengeteg monoton munkafolyamatot – időt és pénzt sprórolva Neked.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/netmetro/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner",
+    "Shoptet partner"
+   ]
+  },
+  {
+   "slug": "limeart-design-studio",
+   "name": "Limeart Design Studio",
+   "website": "https://limeart.hu",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Webshop design és kivitelezés Emelkedjen ki a versenytársai közül Egy jól megtervezett webshop nemcsak jól néz ki, hanem magabiztosan vezeti végig a vásárlót a böngészéstől a rendelésig. Az átlátható struktúra, az erős vizuális megjelenés és a tudatosan kialakított felhasználói élmény növeli a bizalmat, egyszerűbbé teszi a vásárlást, és több látogatóból alakít valódi vásárlót.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/1379/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "srthemes-valts-sebesseget-es-emeld-shoprenteres-sablonod-a-kovetkezo-szintre",
+   "name": "SRThemes – Válts sebességet és emeld Shoprenteres sablonod a következő szintre!",
+   "website": "https://srthemes.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Válts sebességet és emeld Shoprenteres sablonod a következő szintre! Több éves tapasztalattal és az egyik legnagyobb egyedi Shoprenter sablon portfólióval rendelkező vállalkozásként segítünk webáruházadnak kitűnni a versenytársak közül és elérni üzleti céljaidat.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/srthemes-egyedi-sablonok-megfizetheto-aron/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "foxgrafika-hu-online-offline-webes-grafikai-es-management-szolgaltatasok",
+   "name": "FoxGrafika.hu – Online & Offline webes Grafikai és Management szolgáltatások:",
+   "website": "https://foxgrafika.hu",
+   "city": "Gárdony",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). ONLINE & OFFLINE webes Grafikai és Management szolgáltatások: SZOLGÁLTATÁSOK: ONLINE WEBES SZOLGÁLTATÁSOK: Weboldal készítés (személyes, bemutatkozó, céges, vagy akár egy Város honlapja…) Webáruház készítés (Shoprenteres és más üzemeltetői rendszerben webshopok készítése) Webáruház menedzselés (Vállaljuk webshopok kezelését a nap 24 órájában, a hét 7 napján – ügyfélszolgálat, számlázás, webshop ke",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/7885/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "nexodot-egy-helyen-minden",
+   "name": "NEXODOT – Egy helyen minden",
+   "website": "https://nexodot.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). A cégünk több mint 10 éves tapasztalattal nyújt informatikai megoldásokat kis és nagy vállalkozások számára. Fő profilunk a weboldalak, webes rendszereket, asztali és mobilalkalmazások tervezése, fejlesztése és üzemeltetése.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/nexodot-egy-helyen-minden/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "simplatech-webshop-rancfelvarras-premium-minosegben",
+   "name": "Simplatech – Webshop ráncfelvarrás PRÉMIUM minőségben",
+   "website": "https://hu.simpla.tech/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Webshopja látogatói 2 másodperc alatt döntik el, hogy maradnak-e az oldalon. Ügyfeleink tudják, hogy 2020-ban elengedhetetlen a színvonalas megjelenés az online térben.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/simpla-tech/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "webeditor-kft-shoprenter-integracio-automatizacio-uzemeltetes",
+   "name": "Webeditor Kft. – Shoprenter integráció, automatizáció, üzemeltetés",
+   "website": "https://webeditor.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Shoprenter integráció Shoprenter webáruházad összekapcsolása külső rendszerekkel, hogy üzleti folyamataid gördülékenyek és hatékonyak legyenek. Fejlesztünk egyedi ERP, számlázó, készletkezelő vagy logisztikai integrációkat, hogy minden rendszered egy helyen és automatikusan működjön.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/webeditor-hu/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "tappointment-kft",
+   "name": "Tappointment Kft.",
+   "website": "https://www.tappointment.com",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Mi, a Tappointment csapat, szívvel-lélekkel dolgozunk azon, hogy ügyfeleink digitális jelenlétét a lehető legjobbra formáljuk. A Shoprenter platformot használó ügyfelek számára kínálunk teljes körű szolgáltatásokat: kezdve a termékstratégiától, a felhasználóbarát és esztétikus webdesignon át, a fejlesztésig.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/12483/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "uiworks-hu",
+   "name": "uiworks.hu",
+   "website": "https://uiworks.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Bemutatkozás Perge János vagyok, front-end fejlesztő és korábbi Shoprenter-fejlesztő. Több mint 10 éves tapasztalattal rendelkezem e-kereskedelmi oldalak és egyedi webes megoldások fejlesztésében, különös figyelmet fordítva az igényes dizájnra és a felhasználói élményre.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/12627/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "weboldalszerkesztes-tervezestol-a-kivitelezesig",
+   "name": "Weboldalszerkesztes – tervezéstől a kivitelezésig",
+   "website": "https://weboldalszerkesztes.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Shoprenter webáruház fejlesztés Több mint 2 évtizedes webáruház üzemeltetési és fejlesztési tapasztalattal rendelkezünk. Ha szeretné kiválasztott Shoprenteres sablonját testreszabatni, kinézetén változtatni, mi segítünk Önnek.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/weboldalszerkesztes-tervezestol-a-kivitelezesig/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "debhack-egyedi-megoldasok-mindenkinek",
+   "name": "DebHack – egyedi megoldások mindenkinek",
+   "website": "https://debhack.tech",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Gyulai Gergő vagyok, senior fejlesztő. 2016-ban kezdtem el dolgozni a ShopRenter-nél, ahol lehetőségem nyílt belelátni a rendszer működésébe, így világos képet kapva arról, hogy mit is lehet kihozni egy ShopRenteres webáruházból.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/debhack-tech/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "mad-web-ujra-definialunk-digitalisan",
+   "name": "Mad Web – Újra definiálunk digitálisan",
+   "website": "https://madweb.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Weboldalakat tervezünk újra, kiváló ügyfélszolgálattal, könnyen érthető hangnemben és eredmény-orientáltan Ha végre már sikerült felismerned, hogy nem biztos, az a legjobb megoldás, ha te bütykölöd a weboldalad, akkor itt a helyed! Add profi kezekben az online megjelenésed jövőjét – mi rendbe tesszük és frissítjük a designt, te pedig bármikor jelezheted nekünk, ha kérdésed, problémád merülne fel.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/mad-web-ujra-definialunk-digitalisan/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "flyit-kft",
+   "name": "FlyIT Kft.",
+   "website": "https://flyit.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Megfizethető üzleti megoldások A digitalizáció útvesztőjében könnyű elvesznie egy vállalatnak. Cégünk olyan nagyvállalati fejlesztésekben szerzett tapasztalattal rendelkezik, melyek lehetővé teszik azt, hogy igazán minőségi és hatékonyságát növelő üzleti megoldásokat készíthessünk Önnek és cégének.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/flyit-kft/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "automatikus-termekfeltoltes-ar-es-keszletfrissites-egyedi-feed-kefix",
+   "name": "Automatikus termékfeltöltés, ár- és készletfrissítés, egyedi feed | Kéfix",
+   "website": "https://kefix.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Beállítjuk helyetted a beszállítóid termékszinkronját. Akár 2 munkanap alatt, garanciával.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/1673/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "webshop-automatizalas-webshopautomatizalas-hu",
+   "name": "Webshop Automatizálás – webshopautomatizalas.hu",
+   "website": "http://webshopautomatizalas.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Összekötjük webáruházát bármilyen nagykerrel, ERP rendszerrel, Raktárkezelővel vagy más szoftverrel. Olyan webfejlesztő cég vagyunk, akik webshop integrációkat végeznek, automatizálás megoldásokat fejlesztenek webáruházak egyedi igényeire szabva.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/webshop-automatizalas/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "appsy-mobil-app-fejlesztes-a-webshopodhoz",
+   "name": "Appsy – Mobil App fejlesztés a Webshopodhoz",
+   "website": "https://www.appsy.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Szeretnéd, hogy a webáruházad látogatói gyakrabban vásároljanak és többet költsenek? Mobilalkalmazásainkkal el tudjuk érni, hogy… – a vásárlóid többet figyeljenek rád és gyakrabban látogassanak el hozzád.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/appsy/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "mindensync",
+   "name": "mindensync",
+   "website": "http://mindensync.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Kapcsold össze áruházad az ügyviteli szoftvereddel és a nagykereskedésekkel! A mi megoldásunk sokféle rendszer közt tud mozgatni nagy mennyiségű adatot automatizáltan.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/758/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "barex-iparmuvesz-kft-basa-janos-fotomuvesz",
+   "name": "Barex Iparművész Kft Basa János fotóművész",
+   "website": "https://www.rotophoto3d.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Senior fotóművészként vezetem cégemet, ahol az uj fotótechnológiák hazai elismerését tartom legfőbb célkítűzésemnek, különös tekintettel a valósághű 3D képanyagok elkészítését. Ez a módszer, a termék teljes körüljárását, sőt a 3.-ik tengely spin pörgése segitségével teljes térbeli érzést ad a felhasználónak, leendő vásárlónak, és igy a legalkalmasabb a termék megismerésére.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/barex-iparmuvesz-kft-basa-janos-fotomuvesz/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "connect-center-integracios-szoftver-shoprenter-webaruhazhoz",
+   "name": "Connect Center – Integrációs szoftver Shoprenter webáruházhoz",
+   "website": "https://www.connectcenter.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Kimondottan a Shoprenter-re specializált integrációs-, szinkronizációs megoldás, melynek segítségével hatékonyan és biztonságosan tudjuk a webáruházhoz kapcsolni a külső rendszereket. Legyen az vállalatirányítási-, készletező-, számlázó-, nagyker-, vagy bármilyen más szoftver, amivel automatizálni tudod folyamataidat.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/shoprenter-connect-integracios-szoftver/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "petadev-webshop-applikacio-fejlesztes",
+   "name": "Petadev – Webshop applikáció fejlesztés",
+   "website": "https://petadev.com/hu/mobil-applikacio-keszites",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Szakterületünk az egyedi mobil applikáció és webalkalmazás fejlesztés. Webshopok esetén nem csak egyedi, időigényes és költségesebb applikációk készítését vállaljuk, hanem hibrid webes beépítést is, így kisebb költségből tesztelheted van-e egyáltalán igény a webshopodra alkalmazás formájában.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/petadev-mobil-applikacio-fejlesztes/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "codeyard-kft",
+   "name": "CodeYard Kft",
+   "website": "https://codeyard.eu",
+   "city": "Debrecen",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoprenter webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoprenter webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Miben tudunk segíteni? Ha Webshopodnak mobilos felületet szeretnél indítani vagy vállalkozásod bármilyen digitális kihívással szembesül.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://szakertok.shoprenter.hu/szakerto/codeyard-kft/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoprenter partner"
+   ]
+  },
+  {
+   "slug": "webaruhazmester",
+   "name": "WEBÁRUHÁZMESTER",
+   "website": "https://webaruhazmester.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). Szeretnéd, ha gördülékenyen indulna az új webshopod, átalakítanád a régit? UNAS-ra költöznél?",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "aio-marketing",
+   "name": "AiO Marketing",
+   "website": "https://aiomarketing.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). Az AiO Marketing a partnereik sikere érdekében teljeskörű szolgáltatásokat nyújt: webáruház üzemeltetés, innovatív design, arculattervezés, keresőoptimalizálás (SEO), termékfotózás, grafikai tervezés, online marketing. Célunk ügyfeleink céljainak elérése, vállalkozásaik növekedésének maximalizálása.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "webshopper",
+   "name": "Webshopper",
+   "website": "https://www.webshopper.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). Szeretnél egy UNAS webáruházat, de nem tudod hogyan kezdj hozzá, vagy egyszerűen nincs időd az elkészítésére? Szívügyünk a precizitás és mindig a tökéletességre törekszünk - Gyakorlatilag bárki képes elkészíteni saját UNAS webshopját, de egy laikus számára ez bizony nem egy pár órás feladat - sokszo",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "brandflow-marketing",
+   "name": "BrandFlow Marketing",
+   "website": "https://brandflowmarketing.hu",
+   "city": "Dunakeszi",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). BrandFlow Marketing – UNAS Webáruház Szakértő\nKategóriák: #Webdesign #Marketing #Üzemeltetés\nSikeres webáruházat építeni nem csupán technikai feladat – a megfelelő design, marketing és működés összehangolása nélkülözhetetlen a növekedéshez. Ebben segítünk!",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "okosanwebshopot",
+   "name": "Okosanwebshopot",
+   "website": "https://okosanwebshopot.hu/unas/?utm_source=unas.hu&utm_medium=referral",
+   "city": "Erdősmárok",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). Komplett, profitorientált webshop marketing és stratégia menedzsment A-Z-ig. Facebook-Instagram, Google hirdetések kezelése, SEO optimalizálás, hírlevél és blog, poszt, webshop szövegírás.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "webmentor-hu",
+   "name": "webmentor.hu",
+   "website": "https://www.webmentor.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). Kicsi a bors, de erős – és ez ránk is igaz! Háromfős csapatunk készen áll arra, hogy szakértelmével és lelkesedésével hozzájáruljon UNAS-projekted sikeréhez, vagy támogatást nyújtson egyéb online megoldásokban.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "webmaister",
+   "name": "Webmaister",
+   "website": "https://webmaister.hu/unas-webshop-menedzsment/?utm_source=unas.hu&utm_medium=referral&utm_campaign=kulso-szakertok",
+   "city": "Komárom",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). Mit nyújthat számodra a Webmaister? Webshopodnak egyedi arculatot varázsolnak, mellyel kitűnhetsz a tömegből.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "mala-hu",
+   "name": "MALA.HU",
+   "website": "https://mala.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). A MALA.HU szakértői támogatást nyújt webshop kialakítás, webdesign és külső fejlesztés területén. Az Unas.hu partnereként segítünk a vállalkozások növekedésében és hatékonyabb működésében.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "vaw-hungary",
+   "name": "VAW Hungary",
+   "website": "https://vawhungary.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). A VAW Hungary sokmindent jelent. Virtuális Asszisztencia Weben.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "kreativ-klikk",
+   "name": "Kreatív Klikk",
+   "website": "https://www.kreativklikk.hu/",
+   "city": "Nyíregyháza",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). A Kreatív Klikknél növekedésre tervezett, kulcsrakész UNAS webáruházakat építünk, hogy a technikai fejfájás helyett kizárólag a termékeidre és az eladásra koncentrálhass. Legyen szó egy vadonatúj webshop indításáról vagy egy meglévő rendszer költöztetéséről más motorról, garantáljuk a zökkenőmentes",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "webshop-mentor",
+   "name": "Webshop Mentor",
+   "website": "https://webshop-mentor.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). Igényeid alapján elkészítjük UNAS webáruházad! Bankkártyás fizetés, automatikus számlázás, ászf, futárszolgálatok és még sorolhatnám, mindent beállítunk neked, amire szükséged lehet!",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "storementor",
+   "name": "Storementor",
+   "website": "https://storementor.hu/",
+   "city": "Szeged",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Webáruház-üzemeltetés",
+    "Shoptet webáruház",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoptet és UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés, webáruház-üzemeltetés). A STOREMentor szakmai tapasztalatával segít webáruházak költöztetésében, megújításában vagy létrehozásában. Teljes körű költözést vállalnak, a termék és kategória adatbázis áthozatalától kezdve az ügyfél adatokon át a blogokig.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoptet partner",
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "uhu-kreativ-ugynokseg",
+   "name": "Uhu Kreatív Ügynökség",
+   "website": "https://uhu-kreativ.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). Célunk, hogy a hazai és nemzetközi KKV-knak egy közösen, jól megtervezett marketing stratégia mentén több vevőt tudjunk futószalagon biztosítani. Ehhez egy már bevált marketing automatizált rendszert használunk, jelentős munkaidőt spórolva ügyfeleinknek.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "webshop-karbantartasa",
+   "name": "Webshop karbantartasa",
+   "website": "https://webshopkarbantartasa.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). Milyen előnyökkel jár a webshop karbantartási szolgáltatás? Több idő marad a válallkozás fejlesztésére és üzemeltetésére.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "webshopmenedzseles-hu",
+   "name": "webshopmenedzseles.hu",
+   "website": "https://webshopmenedzseles.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). Károlyi Marianna webshop szakértő vagyok. Közel 8 éve foglalkozom webáruházakkal, nagy tapasztalatom van webáruház készítésben elejétől a végéig, üzemeltetésben, tanácsadásban, átalakításban, sablonváltásban, háttérmunkák kivitelezésében, grafikai tervezésben.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "grentmedia",
+   "name": "Grentmedia",
+   "website": "https://grentmedia.hu/unas-webaruhaz-keszites/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). Szeretnél te is egy profi webáruház tulajdonosa lenni, de nincs időd vagy tudásod a megalkotására? Ha nincs időd beállítani egy webáruházat, vagy nincs energiád az összes tudást összeszedni, hogy mindent beállíts, akkor mi segítünk elkészíteni áruházad.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "beecorp-studio",
+   "name": "BeeCorp Studio",
+   "website": "https://beecorpstudio.hu/",
+   "city": "Bodajk",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). Költséghatékony és jól működő webáruházat indítanál, de nem tudod hogyan kezdj hozzá? Az UNAS tökéletes megoldás akár egy termékről, akár több százról beszélünk.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "databoss-hu",
+   "name": "databoss.hu",
+   "website": "https://databoss.hu/hu/szolgaltatasaink",
+   "city": "Leányfalu",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). Segítünk, hogy az UNAS webáruházad ne csak működjön, hanem valóban eredményeket hozzon. Teljes körű UNAS webáruház-készítés és arculatváltás.Egyedi design és CSS testreszabás, hogy kitűnj a versenytársak közül.API-kapcsolatok és integrációk: összekötjük webshopodat külső partnereid adatbázisaival, í",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "commercium",
+   "name": "Commercium",
+   "website": "http://commercium.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). Fő szakterületem a piactér integráció – különösen az Allegro, Pepita, magyar és külföldi rendszerek összekapcsolása UNAS webáruházakkal. Az EasySales hivatalos partnereként abban segítek, hogy termékeidet átláthatóan és hatékonyan kezeld egyetlen felületről, automatizált módon.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "adlogic",
+   "name": "Adlogic",
+   "website": "https://adlogic.hu/adlogic-osszes-szolgaltatasaink/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-üzemeltetés",
+    "UNAS webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) UNAS webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-üzemeltetés). Az Adlogic teljes mértékben e-kereskedelemre optimalizált marketinggel foglalkozik. A tulajdonos 15 éves e-kereskedelmi múltja miatt üzleti és tulajdonos szemlélettel, rendkívül eredménycentrikusan dolgozunk.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://unas.hu/szakertok",
+   "added": "2026-10-11",
+   "certifications": [
+    "UNAS partner"
+   ]
+  },
+  {
+   "slug": "thalassys",
+   "name": "Thalassys",
+   "website": "https://www.thalassys.hu",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoptet webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoptet webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Rozvojom podnikania sa zaoberáme už 20 rokov. So všetkými odvetviami, kde je možné poskytnúť externú expertízu.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://partnerek.shoptet.hu/szakertok/szabo-laszlo/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoptet partner"
+   ]
+  },
+  {
+   "slug": "vallalkozas-okosan",
+   "name": "Vállalkozás Okosan",
+   "website": "https://www.vallalkozas-okosan.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "E-kereskedelmi tanácsadás",
+    "Shoptet webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) Shoptet webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-tanácsadás). Vuray György vagyok, a 2011-ben indult Vállalkozás Okosan egyik alapítója, és vezető tanácsadója. Az induláskor kitűzött egyik legfontosabb célunk az volt, hogy könnyen érthető, és gyakorlatias tudásanyaggal támogassuk a jelen, és a jövő vállalkozóit.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://partnerek.shoptet.hu/szakertok/szilagyi-anita/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoptet partner"
+   ]
+  },
+  {
+   "slug": "6clickz",
+   "name": "6clickz",
+   "website": "http://6clickz.com/hu/",
+   "city": "Košice",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "E-kereskedelmi tanácsadás",
+    "Shoptet webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők"
+   ],
+   "description": "A(z) Shoptet webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-tanácsadás). 6clickz [six clicks] vagyunk. Digitális marketing ügynökség, amely test &amp; learn megközelítéssel segíti a cégek növekedését.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://partnerek.shoptet.hu/szakertok/6clickz/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoptet partner"
+   ]
+  },
+  {
+   "slug": "gaelta",
+   "name": "Gaelta",
+   "website": "https://gaelta.com/hu/",
+   "city": "Trnava",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoptet webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoptet webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Kivételes és személyes megközelítést keres? Több mint 8 éves tapasztalat és 14 fős szakértői csapat.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://partnerek.shoptet.hu/szakertok/gaelta/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoptet partner"
+   ]
+  },
+  {
+   "slug": "daroczi-vilmos",
+   "name": "Daróczi Vilmos",
+   "website": "https://daroczivilmos.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoptet webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoptet webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Daróczi Vilmos vagyok és jelenleg egyéni vállalkozóként tevékenykedek. A programozás először csak a hobbim volt, viszont mára már a mindennapjaim része.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://partnerek.shoptet.hu/szakertok/daroczi-vilmos/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoptet partner"
+   ]
+  },
+  {
+   "slug": "infinx-kft",
+   "name": "InfinX Kft.",
+   "website": "https://www.infinx.hu/",
+   "city": "Orosháza",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoptet webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoptet webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Cégünk social media felületek kezelésével, grafikával, programozással illetve webfejlesztéssel foglalkozik. Ha velünk dolgozol egy összeszokott, rugalmas csapattal működsz együtt.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://partnerek.shoptet.hu/szakertok/infinx-kft/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoptet partner"
+   ]
+  },
+  {
+   "slug": "makeitonline",
+   "name": "MakeITOnline",
+   "website": "https://makeitonline.hu",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoptet webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoptet webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Cégünk közel 10 éve szolgálja ki ügyfeleit főként egyedi igényekre szabott fejlesztések,programozás, grafikai munkák és marketing területén. Stabil 10+ fős sok éves összeszokott csapattal igyekszünk a lehető legjobb szolgáltatást nyújtani Ügyfeleinknek.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://partnerek.shoptet.hu/szakertok/makeitonline/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoptet partner"
+   ]
+  },
+  {
+   "slug": "mime-digital",
+   "name": "mime digital",
+   "website": "https://www.mimedigital.hu",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoptet webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoptet webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Mi egy szorgalmas emberekből álló digitális stúdió, illetve csapat vagyunk. Számíthat ránk, ha webáruházakról, UX-ről, designról és innovációkról van szó.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://partnerek.shoptet.hu/szakertok/mime-digital/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoptet partner"
+   ]
+  },
+  {
+   "slug": "topin",
+   "name": "TOPiN",
+   "website": "https://topin.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoptet webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoptet webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). A TOPiN-HUB Kft. az innováció és minőség elkötelezett képviselője a szoftverfejlesztés területén.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://partnerek.shoptet.hu/szakertok/topin/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoptet partner"
+   ]
+  },
+  {
+   "slug": "zadori-beatrix-melitta",
+   "name": "Zádori Beatrix Melitta",
+   "website": "https://www.zbweb.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoptet webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoptet webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Shoptet webáruházak felépítésével, beállításával, rendbetételével és hosszú távú működtetésével foglalkozunk, gyakorlati tapasztalatra építve. Egy kis családi vállalkozás vagyunk, ahol a webáruházak nem csak „projektek”, hanem a mindennapjaink részei.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://partnerek.shoptet.hu/szakertok/zadori-beatrix-melitta/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoptet partner"
+   ]
+  },
+  {
+   "slug": "hegedus-roland",
+   "name": "Hegedűs Roland",
+   "website": "https://www.devergoveszprem.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoptet webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoptet webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Hegedűs Roland vagyok Shoptet webshop tulajdonos. Fő munkám a ruházathoz és divathoz köt immáron 15 éve, kis- és nagykereskedelmi értékesítéssel is foglalkozom.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://partnerek.shoptet.hu/szakertok/hegedus-roland/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoptet partner"
+   ]
+  },
+  {
+   "slug": "verteco-hu",
+   "name": "Verteco.hu",
+   "website": "https://www.verteco.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Webáruház-fejlesztés",
+    "Shoptet webáruház"
+   ],
+   "categories": [
+    "Bérelhető webshop szakértők",
+    "Weboldal készítés"
+   ],
+   "description": "A(z) Shoptet webáruház-rendszer hivatalos szakértői listáján szereplő cég (webáruház-fejlesztés). Rólunk Fiatalok vagyunk, de sokéves tapasztalattal rendelkezünk a digitális reklámozás területén. Nagyon élvezzük a munkánkat, és tudjuk, hogy munkánk eredménye mindig egy elégedett ügyfél kell hogy legyen.",
+   "status": "kész",
+   "review_note": null,
+   "source_url": "https://partnerek.shoptet.hu/szakertok/verteco-hu/",
+   "added": "2026-10-11",
+   "certifications": [
+    "Shoptet partner"
+   ]
   }
  ]
 }
