@@ -58,3 +58,45 @@ export function buildRefPages(companies, MIN = 2) {
     for (const t of list) for (const s of t.agencies) ((byAgency[s] ||= { clients: [], certs: [] })[field]).push(t.slug);
   return { clients: clients.map(({ slug, name, count }) => ({ slug, name, count })), certs: certs.map(({ slug, name, count }) => ({ slug, name, count })), byAgency };
 }
+
+// Iparági tapasztalat egységesítése (a cégek saját megnevezéseiből) – /iparag/<slug>/ oldalakhoz
+const INDUSTRY_MAP = [
+  [/^(webaruhaz|webshop|webshopok|e-kereskedelem|ecommerce|e-commerce)$/, 'Webáruház és e-kereskedelem'],
+  [/^(egeszsegugy|egeszsegugyi|orvosi|klinika)/, 'Egészségügy'],
+  [/^(gyogyszeripar|gyogyszer)/, 'Gyógyszeripar'],
+  [/b2b/, 'B2B szolgáltatók'],
+  [/^b2c$/, 'B2C (lakossági) vállalkozások'],
+  [/^oktatas/, 'Oktatás'],
+  [/^(ingatlan|epitoipar|ingatlan es epitoipar)/, 'Ingatlan és építőipar'],
+  [/^(etterem|vendeglatas|vendeglatoipar|horeca|gasztronomia|turizmus|utazasi iroda|utazas|szallashely|szalloda|szallas)$/, 'Vendéglátás és turizmus'],
+  [/^(szepsegipar|divat|szepseg es divat)$/, 'Szépségipar és divat'],
+  [/^logisztika/, 'Logisztika'],
+  [/^(it|informatika|informacio es technologia|it helpdesk)$/, 'IT és technológia'],
+  [/^(penzugy|bank|penzpiac|biztositas)$/, 'Pénzügy és bank'],
+  [/^(ugyvedi iroda|jog)$/, 'Jogi szolgáltatók'],
+  [/^(ipar|gyartas.*|mernoki|autoipari|energia)$/, 'Ipar és gyártás'],
+  [/^(fmcg|elelmiszeripar|allateledel)$/, 'FMCG és élelmiszeripar'],
+  [/^(mezogazdasag|kerteszet)$/, 'Mezőgazdaság'],
+  [/^nonprofit/, 'Nonprofit'],
+];
+export function industryName(raw) {
+  const f = fold(String(raw).trim());
+  for (const [re, name] of INDUSTRY_MAP) if (re.test(f)) return name;
+  return null; // túl általános vagy egyedi megnevezés: nem kap oldalt
+}
+
+/** Iparági oldalak: legalább MIN cégnél szereplő iparágak; { list: [{slug,name,count}], byAgency: {slug: [iparág-slug]} } */
+export function buildIndustryPages(companies, MIN = 2) {
+  const m = new Map();
+  for (const c of companies) for (const n of new Set((c.industries || []).map(industryName).filter(Boolean))) {
+    const k = slugify(n);
+    if (!m.has(k)) m.set(k, { name: n, agencies: new Set() });
+    m.get(k).agencies.add(c.slug);
+  }
+  const list = [...m.entries()].filter(([, v]) => v.agencies.size >= MIN)
+    .map(([slug, v]) => ({ slug, name: v.name, count: v.agencies.size, agencies: [...v.agencies] }))
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'hu'));
+  const byAgency = {};
+  for (const t of list) for (const s of t.agencies) (byAgency[s] ||= []).push(t.slug);
+  return { list: list.map(({ slug, name, count }) => ({ slug, name, count })), byAgency };
+}

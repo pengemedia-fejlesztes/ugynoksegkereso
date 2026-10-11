@@ -34,7 +34,7 @@ function kompasz_import_base(array $data) {
     }
 
     // Referencia-ügyfél és minősítés oldalak
-    foreach (['clients' => 'ugyfel', 'certs' => 'minosites'] as $key => $tax) {
+    foreach (['clients' => 'ugyfel', 'certs' => 'minosites', 'industries' => 'iparag'] as $key => $tax) {
         foreach ($data['ref_pages'][$key] ?? [] as $t) {
             $ex = get_term_by('slug', $t['slug'], $tax);
             if ($ex) wp_update_term($ex->term_id, $tax, ['name' => $t['name']]);
@@ -52,6 +52,7 @@ function kompasz_import_base(array $data) {
         'cimkek' => ['Ügynökségek szolgáltatás szerint', ''],
         'ugyfelek' => ['Ügynökségek referencia-ügyfél szerint', ''],
         'minositesek' => ['Minősített ügynökségek', ''],
+        'iparagak' => ['Ügynökségek iparági tapasztalat szerint', ''],
     ];
     foreach ($pages as $slug => [$title, $content]) {
         if (!get_page_by_path($slug)) wp_insert_post(['post_type' => 'page', 'post_status' => 'publish', 'post_name' => $slug, 'post_title' => $title, 'post_content' => $content]);
@@ -123,6 +124,7 @@ function kompasz_import_agencies(array $data, $offset, $limit) {
         wp_set_object_terms($id, $a['tags'], 'szolgaltatas');
         wp_set_object_terms($id, $a['client_terms'] ?? [], 'ugyfel');
         wp_set_object_terms($id, $a['cert_terms'] ?? [], 'minosites');
+        wp_set_object_terms($id, $a['industry_terms'] ?? [], 'iparag');
         if ($a['logo'] && !has_post_thumbnail($id)) {
             $att = kompasz_import_logo($a['logo'], $id, $a['name']);
             if ($att) set_post_thumbnail($id, $att);

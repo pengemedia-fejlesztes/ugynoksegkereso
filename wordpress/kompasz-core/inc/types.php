@@ -60,6 +60,14 @@ function kompasz_register_types() {
         'hierarchical' => false, 'public' => true, 'show_admin_column' => false, 'show_in_rest' => true,
         'rewrite' => ['slug' => 'minosites', 'with_front' => false],
     ]);
+
+    // Iparági tapasztalat (pl. Egészségügy) – /iparag/egeszsegugy/
+    register_taxonomy('iparag', ['ugynokseg'], [
+        'labels' => ['name' => 'Iparágak', 'singular_name' => 'Iparág', 'add_new_item' => 'Új iparág',
+            'edit_item' => 'Iparág szerkesztése', 'all_items' => 'Összes iparág', 'menu_name' => 'Iparágak'],
+        'hierarchical' => false, 'public' => true, 'show_admin_column' => false, 'show_in_rest' => true,
+        'rewrite' => ['slug' => 'iparag', 'with_front' => false],
+    ]);
 }
 add_action('init', 'kompasz_register_types');
 

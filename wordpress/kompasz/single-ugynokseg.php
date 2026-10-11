@@ -37,7 +37,7 @@ $around = $list ? array_slice($list, max(0, min($pos - 3, count($list) - 5)), 5,
       <section class="pbox">
         <h2>Bemutatkozás</h2>
         <div class="pdesc"><?php echo wpautop(esc_html($a['desc'])); ?></div>
-        <div class="facts">
+        <div class="facts" id="kapcsolat">
           <?php
           $place = trim(implode(', ', array_unique(array_filter([$a['city'], $a['county'] !== $a['city'] ? $a['county'] : '']))));
           $facts = ['HELYSZÍN' => $place, 'CSAPAT' => $a['team'], 'ALAPÍTVA' => $a['founded'], 'ÁRSZINT' => $a['price_min'], 'ÁRAZÁS' => $a['price_model'],
@@ -52,6 +52,10 @@ $around = $list ? array_slice($list, max(0, min($pos - 3, count($list) - 5)), 5,
         <?php if ($a['services']): ?>
           <h3>Szolgáltatások</h3>
           <div class="svc"><?php foreach ($a['services'] as $s) echo '<span>' . esc_html($s) . '</span>'; ?></div>
+        <?php endif; ?>
+        <?php $ind_terms = get_the_terms($a['id'], 'iparag'); if ($ind_terms && !is_wp_error($ind_terms)): ?>
+          <h3>Iparági listák</h3>
+          <div class="svc links"><?php foreach ($ind_terms as $t) printf('<a href="%s">%s →</a>', esc_url(get_term_link($t)), esc_html($t->name)); ?></div>
         <?php endif; ?>
         <?php $cert_terms = get_the_terms($a['id'], 'minosites'); if ($cert_terms && !is_wp_error($cert_terms)): ?>
           <h3>Minősítések szerinti listák</h3>

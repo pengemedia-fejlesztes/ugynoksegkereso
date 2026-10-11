@@ -88,7 +88,7 @@ function kompasz_row($a, $opts = []) {
             <p class="desc<?php echo $long ? ' clamp' : ''; ?>"><?php echo esc_html($a['desc']); ?></p>
             <div class="foot"><?php echo kompasz_tag_chips($a, 3, $opts['tag'] ?? null); ?><?php echo kompasz_also_in($a, $term); ?></div>
         </div>
-        <div class="cta"><?php echo kompasz_contact_btn($a); ?><a class="btn-line" href="<?php echo esc_url($a['link']); ?>">Profil megtekintése</a></div>
+        <div class="cta"><a class="btn" href="<?php echo esc_url($a['link'] . '#kapcsolat'); ?>">Kapcsolat</a><a class="btn-line" href="<?php echo esc_url($a['link']); ?>">Profil megtekintése</a></div>
     </article>
     <?php return ob_get_clean();
 }
@@ -103,7 +103,7 @@ function kompasz_card($a, $pos) {
 function kompasz_featured_strip($f, $compact = false) {
     if (!$f) return '';
     return sprintf('<div class="fstrip%s">%s<div class="fs-body"><div class="fs-hd"><span class="fs-name">%s</span><span class="fbadge">KIEMELT ÜGYNÖKSÉG</span></div><div class="fs-pitch">%s</div></div><div class="fs-act">%s<a class="btn-soft" href="%s">Profil</a></div></div>',
-        $compact ? ' compact' : '', kompasz_logo($f, $compact ? 44 : 52), esc_html($f['name']), esc_html($f['pitch'] ?: wp_trim_words($f['desc'], 14)), kompasz_contact_btn($f, 'btn sm'), esc_url($f['link']));
+        $compact ? ' compact' : '', kompasz_logo($f, $compact ? 44 : 52), esc_html($f['name']), esc_html($f['pitch'] ?: wp_trim_words($f['desc'], 14)), sprintf('<a class="btn sm" href="%s">Kapcsolat</a>', esc_url($f['link'] . '#kapcsolat')), esc_url($f['link']));
 }
 
 function kompasz_seo_block($title, $rows) {
