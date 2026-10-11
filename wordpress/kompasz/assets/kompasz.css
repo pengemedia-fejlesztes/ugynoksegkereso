@@ -363,3 +363,5 @@ a.chip:hover{background:var(--ink);color:#fff}
  .sidetoc a{display:block;font:400 14px/1.35 var(--sans);padding:6px 0 6px 10px;border-left:2px solid transparent;color:var(--mut2);text-decoration:none}
  .sidetoc a.is-active{border-left-color:var(--accent);color:var(--ink);font-weight:600}
 }
+/* Mobil: rácselemek ne lógjanak ki a hosszú, nem törő szövegek miatt */
+.sgrid>*,.scard,.posts>*,.taggrid>*,.facts>*{min-width:0}
