@@ -27,3 +27,7 @@ Az oldal publikus URL-en elérhető, de nem indexelhető:
 - minden oldalon `<meta name="robots" content="noindex, nofollow, noarchive">`
 
 Élesítéskor ezt a hármat kell eltávolítani a `build.mjs`-ből.
+
+## WordPress (Kompasz)
+
+Az új, WordPress-alapú változat a `wordpress/` mappában van; telepítés és szerkesztés: `wordpress/README.md`.

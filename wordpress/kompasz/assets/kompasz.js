@@ -1,0 +1,89 @@
+(function () {
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+
+  // Hibás logó helyén a monogram marad
+  $$('.logo img').forEach(function (img) {
+    var hide = function () { img.style.display = 'none'; };
+    if (img.complete && img.naturalWidth === 0) hide();
+    img.addEventListener('error', hide);
+  });
+
+  // Kezdőlap: Legjobbra értékeltek fülek
+  $$('.tabs [data-tab]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      $$('.tabs [data-tab]').forEach(function (o) { o.setAttribute('aria-selected', o === b ? 'true' : 'false'); });
+      $$('[data-panel]').forEach(function (p) { p.hidden = p.dataset.panel !== b.dataset.tab; });
+      var l = $('[data-tablink]'); if (l) l.href = b.dataset.href;
+    });
+  });
+
+  // Mobil: SEO-szöveg lenyitása
+  $$('.seo-more').forEach(function (b) {
+    var grid = b.previousElementSibling;
+    grid.classList.add('clip');
+    b.addEventListener('click', function () {
+      var c = grid.classList.toggle('clip');
+      b.textContent = c ? 'Tovább olvasom' : 'Kevesebb';
+    });
+  });
+
+  // Toplista: szűrés, rendezés, lapozás
+  var rowsBox = $('#rows');
+  if (!rowsBox) return;
+  var rows = $$('.row', rowsBox);
+  var featured = rows.filter(function (r) { return r.dataset.featured; })[0];
+  var plain = rows.filter(function (r) { return !r.dataset.featured; });
+  var STEP = 10, shown = STEP, sort = 'pos';
+  var lm = $('.loadmore'), bar = $('.bar i', lm), lmLabel = $('.lm-label', lm), lmBtn = $('.lm-btn', lm);
+  var countEl = $('.rcount'), noresult = $('.noresult', rowsBox);
+
+  function selected(key) { return $$('[data-filter="' + key + '"]:checked').map(function (i) { return i.value; }); }
+  function matches(r, f) {
+    if (f.tag.length && !f.tag.some(function (t) { return (' ' + r.dataset.tags + ' ').indexOf(' ' + t + ' ') !== -1; })) return false;
+    if (f.city.length && f.city.indexOf(r.dataset.city) === -1) return false;
+    if (f.team.length && f.team.indexOf(r.dataset.team) === -1) return false;
+    if (f.rating.length) { var min = Math.min.apply(null, f.rating.map(parseFloat)); if (parseFloat(r.dataset.rating) < min) return false; }
+    return true;
+  }
+  var cmp = {
+    pos: function (a, b) { return a.dataset.pos - b.dataset.pos; },
+    rating: function (a, b) { return (b.dataset.rating - a.dataset.rating) || (a.dataset.pos - b.dataset.pos); },
+    name: function (a, b) { return a.dataset.name.localeCompare(b.dataset.name, 'hu'); }
+  };
+
+  function render() {
+    var f = { tag: selected('tag'), city: selected('city'), team: selected('team'), rating: selected('rating') };
+    var hits = plain.filter(function (r) { return matches(r, f); }).sort(cmp[sort]);
+    // A kiemelt ügynökség helyezés szerinti rendezésnél a 3. hely után áll, egyébként a többi közé sorolódik
+    if (featured && matches(featured, f)) {
+      if (sort === 'pos') hits.splice(Math.min(3, hits.length), 0, featured);
+      else { hits.push(featured); hits.sort(cmp[sort]); }
+    }
+    rows.forEach(function (r) { r.hidden = true; });
+    var n = Math.min(shown + (featured ? 1 : 0), hits.length);
+    hits.forEach(function (r, i) { rowsBox.insertBefore(r, noresult); if (i < n) r.hidden = false; });
+    countEl.textContent = hits.length + ' ügynökség';
+    noresult.hidden = hits.length > 0;
+    if (n < hits.length) {
+      lm.hidden = false;
+      bar.style.width = Math.round(n / hits.length * 100) + '%';
+      lmLabel.textContent = n + ' / ' + hits.length + ' megjelenítve';
+      lmBtn.textContent = 'További ' + Math.min(STEP, hits.length - n) + ' ügynökség';
+    } else lm.hidden = true;
+  }
+
+  $$('[data-filter]').forEach(function (i) { i.addEventListener('change', function () { shown = STEP; render(); }); });
+  $$('.fclear').forEach(function (b) { b.addEventListener('click', function () { $$('[data-filter]').forEach(function (i) { i.checked = false; }); shown = STEP; render(); }); });
+  $$('.sort [data-sort]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      sort = b.dataset.sort;
+      $$('.sort [data-sort]').forEach(function (o) { o.setAttribute('aria-pressed', o === b ? 'true' : 'false'); });
+      render();
+    });
+  });
+  if (lmBtn) lmBtn.addEventListener('click', function () { shown += STEP; render(); });
+  var ft = $('.ftoggle'), panel = $('.filters');
+  if (ft && panel) ft.addEventListener('click', function () { panel.classList.toggle('open'); });
+  render();
+})();

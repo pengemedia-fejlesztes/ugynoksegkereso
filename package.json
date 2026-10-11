@@ -1,10 +1,14 @@
 {
-  "name": "ugynoksegkereso",
+  "name": "kompasz",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
-    "dev": "node build.mjs && cd public && python3 -m http.server 8080"
+    "dev": "node build.mjs && cd public && python3 -m http.server 8080",
+    "wp:export": "node scripts/export-wp.mjs",
+    "wp:zip": "bash scripts/zip-wp.sh"
   },
-  "engines": { "node": ">=18" }
+  "engines": {
+    "node": ">=18"
+  }
 }

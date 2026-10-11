@@ -1,0 +1,61 @@
+name: WordPress csomagok és telepítés
+
+# Minden változáskor elkészíti a téma és a bővítmény zip-csomagját (Actions → futás → Artifacts).
+# Ha a repó Settings → Secrets alatt megvannak a tárhely adatai, SFTP-n fel is tölti őket:
+#   WP_SFTP_HOST, WP_SFTP_USER, WP_SFTP_PASSWORD, WP_SFTP_PATH (a WordPress gyökérmappája, pl. /public_html)
+#   opcionális: WP_SFTP_PORT (alapértelmezés: 22)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'wordpress/**'
+      - 'scripts/export-wp.mjs'
+      - 'scripts/zip-wp.sh'
+      - 'src/ugynoksegek.json'
+      - 'src/logos.json'
+      - 'src/google-ratings.json'
+      - 'src/data.mjs'
+      - 'src/tags.mjs'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wordpress
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: PHP szintaxis-ellenőrzés
+        run: find wordpress -name '*.php' -print0 | xargs -0 -n1 php -l > /dev/null
+      - run: bash scripts/zip-wp.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kompasz-wordpress
+          path: dist/*.zip
+      - name: Telepítés SFTP-n
+        env:
+          HOST: ${{ secrets.WP_SFTP_HOST }}
+          USER: ${{ secrets.WP_SFTP_USER }}
+          PASS: ${{ secrets.WP_SFTP_PASSWORD }}
+          ROOT: ${{ secrets.WP_SFTP_PATH }}
+          PORT: ${{ secrets.WP_SFTP_PORT }}
+        run: |
+          if [ -z "$HOST" ] || [ -z "$USER" ] || [ -z "$PASS" ] || [ -z "$ROOT" ]; then
+            echo "Nincs megadva tárhely-hozzáférés (WP_SFTP_*), a telepítés kimarad."; exit 0
+          fi
+          sudo apt-get install -y -qq lftp > /dev/null
+          lftp -u "$USER","$PASS" -p "${PORT:-22}" "sftp://$HOST" -e "
+            set sftp:auto-confirm yes; set net:max-retries 2;
+            mirror -R --delete --verbose=1 wordpress/kompasz \"$ROOT/wp-content/themes/kompasz\";
+            mirror -R --delete --verbose=1 wordpress/kompasz-core \"$ROOT/wp-content/plugins/kompasz-core\";
+            bye"
+          echo "Feltöltve. Új adatok esetén a WP adminban: Kompasz → Importálás."
