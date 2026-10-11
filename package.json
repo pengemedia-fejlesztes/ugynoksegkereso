@@ -1,0 +1,10 @@
+{
+  "name": "ugynoksegkereso",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs && cd public && python3 -m http.server 8080"
+  },
+  "engines": { "node": ">=18" }
+}
