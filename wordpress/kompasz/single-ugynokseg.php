@@ -41,7 +41,7 @@ $around = $list ? array_slice($list, max(0, min($pos - 3, count($list) - 5)), 5,
           <?php
           $place = trim(implode(', ', array_unique(array_filter([$a['city'], $a['county'] !== $a['city'] ? $a['county'] : '']))));
           $facts = ['HELYSZÍN' => $place, 'CSAPAT' => $a['team'], 'ALAPÍTVA' => $a['founded'], 'ÁRSZINT' => $a['price_min'], 'ÁRAZÁS' => $a['price_model'],
-              'MUNKAVÉGZÉS' => $a['work_mode'], 'TELEFON' => function_exists('kompasz_agency_has') && kompasz_agency_has($a['id'], 'phone') ? $a['phone'] : '', 'E-MAIL' => $a['email']];
+              'MUNKAVÉGZÉS' => $a['work_mode'], 'TELEFON' => function_exists('kompasz_agency_has') && kompasz_agency_has($a['id'], 'phone') ? $a['phone'] : '', 'E-MAIL' => function_exists('kompasz_agency_has') && kompasz_agency_has($a['id'], 'email') ? $a['email'] : ''];
           foreach ($facts as $l => $v): if (!$v) continue;
             if ($l === 'TELEFON') $v = sprintf('<a href="tel:%s">%s</a>', esc_attr(preg_replace('/[^0-9+]/', '', $v)), esc_html($v));
             elseif ($l === 'E-MAIL') $v = sprintf('<a href="mailto:%1$s">%1$s</a>', esc_html($v));

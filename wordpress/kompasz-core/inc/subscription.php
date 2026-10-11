@@ -1,6 +1,6 @@
 <?php
 // Előfizetői csomagok: a csomagot az admin a felhasználó adatlapján állítja be; a csomag a felhasználóhoz rendelt ügynökségre érvényes.
-// Előfizetőnél a weboldal közvetlen linkkel és a telefonszám látszik; nem előfizetőnél a telefonszám rejtett,
+// Előfizetőnél a weboldal közvetlen linkkel, a telefonszám és az e-mail cím látszik; nem előfizetőnél a telefonszám és az e-mail rejtett,
 // a weboldal pedig csak a saját átirányító címünkön (/x/<azonosító>-<aláírás>/) keresztül érhető el, az Index dex.hu/x mintájára; a cél-cím nem szerepel az oldal kódjában.
 if (!defined('ABSPATH')) exit;
 
@@ -9,7 +9,7 @@ const KOMPASZ_PACKAGE_META = 'kompasz_package';
 /** A csomagok és a bennük lévő funkciók – új csomag ide vehető fel */
 function kompasz_packages() {
     return [
-        'alap' => ['label' => 'Előfizetés', 'features' => ['phone', 'website']],
+        'alap' => ['label' => 'Előfizetés', 'features' => ['phone', 'email', 'website']],
     ];
 }
 
@@ -34,7 +34,7 @@ $kompasz_package_field = function ($user) {
     echo '<h2>Előfizetés</h2><table class="form-table" role="presentation"><tr><th><label for="kompasz_package">Csomag</label></th><td>';
     echo '<select name="kompasz_package" id="kompasz_package"><option value="">Nem előfizető</option>';
     foreach (kompasz_packages() as $k => $p) printf('<option value="%s"%s>%s</option>', esc_attr($k), selected($cur, $k, false), esc_html($p['label']));
-    echo '</select><p class="description">Előfizetőnél a cégadatlapon látszik a telefonszám és a weboldal közvetlen linkje. ';
+    echo '</select><p class="description">Előfizetőnél a cégadatlapon látszik a telefonszám, az e-mail cím és a weboldal közvetlen linkje. ';
     echo $agencies ? 'Hozzárendelt cégadatlap: ' . implode(', ', array_map(function ($id) { return '<a href="' . esc_url(get_edit_post_link($id)) . '">' . esc_html(get_the_title($id)) . '</a>'; }, $agencies)) . '.' : 'A felhasználóhoz még nincs cégadatlap rendelve (az ügynökség szerkesztőjében, a „Cégfiók” dobozban rendelhető hozzá).';
     echo '</p></td></tr></table>';
 };
