@@ -315,3 +315,4 @@ button{font-family:inherit}
 .taggrid span{font:500 12.5px var(--mono);color:var(--mut)}
 @media (max-width:767px){.tagbar{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch}.tagbar a,.tagbar>span{flex:none}}
 .logo.dark,.logo.dark img{background:#111318;border-color:#111318}
+.gsrc{font:500 11.5px var(--sans);color:var(--mut3);white-space:nowrap}

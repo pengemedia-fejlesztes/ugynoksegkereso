@@ -12,6 +12,7 @@ on:
     paths:
       - 'src/ugynoksegek.json'
       - 'scripts/fetch-logos.mjs'
+      - 'src/logo-overrides.json'
       - '.github/workflows/logos.yml'
 
 permissions:
