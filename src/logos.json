@@ -596,9 +596,8 @@
  },
  "intren": {
   "file": "intren.png",
-  "src": "https://intren.hu/wp-content/uploads/2025/07/logo_simple_white2.png",
-  "via": "header-own",
-  "dark": true
+  "src": "https://intren.hu/wp-content/uploads/2025/07/logo_blue2.png",
+  "via": "kezi"
  },
  "introweb-kft": {
   "file": "introweb-kft.svg",
