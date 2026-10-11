@@ -1,0 +1,1312 @@
+{
+ "candidates": [
+  {
+   "slug": "noguchi",
+   "name": "Noguchi",
+   "website": "https://www.noguchi.hu/",
+   "city": null,
+   "founded_year": 1996,
+   "team_size": null,
+   "services": [
+    "Márkakommunikáció",
+    "Vállalati kommunikáció",
+    "Kríziskommunikáció",
+    "Hírnévmenedzsment",
+    "Employer branding",
+    "B2B kommunikáció"
+   ],
+   "categories": [
+    "PR ügynökségek"
+   ],
+   "description": "A Noguchi PR- és stratégiai kommunikációs tanácsadó ügynökség, amelyet 1996-ban négy PR-szakember alapított. Márka- és vállalati kommunikációval, pozicionálással, kríziskommunikációval és hírnévmenedzsmenttel, valamint employer brandinggel és B2B kommunikációval foglalkozik. Az ügyfelekkel mátrixrendszerben, két kiemelt tanácsadóval dolgozik.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő. A székhely városa az oldal kivonatából nem derült ki.",
+   "source_url": "https://www.noguchi.hu/rolunk",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "lounge-group",
+   "name": "Lounge Group (Lounge Communication)",
+   "website": "https://lounge.hu/",
+   "city": null,
+   "founded_year": 2010,
+   "team_size": null,
+   "services": [
+    "Stratégiai PR",
+    "Kríziskommunikáció",
+    "Médiafigyelés és -elemzés",
+    "Média- és kommunikációs tréning",
+    "Public affairs",
+    "CSR-kampányok",
+    "Eseménykommunikáció"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Online marketing ügynökségek"
+   ],
+   "description": "A Lounge Group integrált marketingkommunikációs cégcsoport, amelynek médiatervezési, social media, kreatív és rendezvényszervezési üzletága is van. A PR-feladatokat a 2010-ben alakult, magyar tulajdonú Lounge Communication látja el: stratégiai PR-koncepciók, kríziskommunikáció, médiafigyelés, médiatréning, public affairs, CSR-kampányok és sajtótájékoztatók szervezése. Hazai és külföldi vállalatoknak, valamint állami intézményeknek dolgozik.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő. Az alapítási év a Lounge Communication divízióra vonatkozik.",
+   "source_url": "https://lounge.hu/diviziok/lounge-comm",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "prbk-kommunikacio",
+   "name": "PRBK Kommunikáció (korábban Próbakő)",
+   "website": "https://prbk.hu/",
+   "city": null,
+   "founded_year": 2003,
+   "team_size": null,
+   "services": [
+    "Vállalati kommunikáció",
+    "Márkakommunikáció",
+    "Kríziskommunikáció",
+    "Sajtókapcsolatok",
+    "Közösségimédia-kezelés",
+    "Employer branding",
+    "Tartalommarketing"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A PRBK (korábban Próbakő Kommunikáció) 2003-ban alakult PR-ügynökség, amely kezdetben főként médiakapcsolatokra szakosodott. Vállalati és márkakommunikációt, kríziskommunikációt, közösségimédia-kezelést, employer brandinget és tartalommarketinget vállal, emellett KKV-knak digitális tréningeket tart. A Worldcom PR Group hálózat tagja.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő. A probako.hu domain is a céghez tartozik.",
+   "source_url": "https://prbk.hu/en/about-us/",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "nest-comms",
+   "name": "NEST Comms",
+   "website": "https://nestgroup.hu/en/comms/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "PR-tanácsadás",
+    "Stratégiai kommunikáció",
+    "Kríziskezelés",
+    "Sajtókapcsolatok",
+    "Employer branding",
+    "Influencer marketing",
+    "Médiaaudit"
+   ],
+   "categories": [
+    "PR ügynökségek"
+   ],
+   "description": "A NEST Comms a budapesti NEST Group PR- és marketingkommunikációs üzletága. PR-tanácsadást, stratégiai kommunikációt, kríziskezelést, sajtókapcsolatokat, employer brandinget és influencer marketinget vállal. Magyar, angol, német és kínai nyelven is dolgozik, külföldi ügyfelekkel is.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő.",
+   "source_url": "https://nestgroup.hu/en/comms/",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "beup-pr-consulting",
+   "name": "BeUP! PR Consulting",
+   "website": "https://beup.hu/",
+   "city": "Budapest",
+   "founded_year": 2024,
+   "team_size": null,
+   "services": [
+    "Médiakapcsolatok",
+    "Kríziskommunikáció",
+    "Vállalati kommunikáció",
+    "Médiatréning",
+    "Social media kezelés",
+    "Rendezvényszervezés",
+    "Arculattervezés",
+    "Weboldalkészítés"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Online marketing ügynökségek",
+    "Weboldal készítés"
+   ],
+   "description": "A BeUP! PR Consulting 2024 tavaszán alapított budapesti PR-ügynökség, alapítója Tóth Krisztina. Vállalati kommunikációt, médiakapcsolatokat, kríziskommunikációt és médiatréninget kínál, emellett social media kezelést, digitális hirdetéskezelést, arculattervezést, weboldalkészítést és rendezvényszervezést is vállal.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő.",
+   "source_url": "https://beup.hu/a-beuprol/",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "pro-pr-ugynokseg",
+   "name": "PRO PR ügynökség (PRo Kommunikációs Kft.)",
+   "website": "https://procomm.hu/",
+   "city": null,
+   "founded_year": 2011,
+   "team_size": null,
+   "services": [
+    "Márkastratégia",
+    "PR-kampányok",
+    "Sajtókapcsolatok",
+    "Kríziskommunikáció",
+    "Médiaelemzés",
+    "Social media",
+    "Médiatréning",
+    "Influencer együttműködések"
+   ],
+   "categories": [
+    "PR ügynökségek"
+   ],
+   "description": "A PRo Kommunikációs Kft. 2011-ben alakult PR-ügynökség. Márkastratégiát, PR-kampányokat, sajtókapcsolati munkát, kríziskommunikációt, sajtófigyelést és médiaelemzést, social media menedzsmentet és médiatréninget vállal, valamint véleményvezérekkel való együttműködéseket koordinál.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő.",
+   "source_url": "https://procomm.hu/",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "ps-provocative",
+   "name": "PS:PRovocative",
+   "website": "https://psprovocative.com/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Reputációmenedzsment",
+    "Sajtókommunikáció",
+    "Márkabevezetés",
+    "Tartalommarketing",
+    "Médiavásárlás",
+    "Média- és krízistréning",
+    "CSR-kommunikáció"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A PS:PRovocative budapesti PR-ügynökség, a Convoy Global PR Group tagja; ügyvezetője Petrányi-Széll Rita. Reputációmenedzsmentet, sajtókommunikációt és sajtóeseményeket, márkabevezetést, tartalommarketinget, médiavásárlást, valamint média-, krízis- és prezentációs tréningeket kínál. CSR-stratégiát is vállal, ESG-jelentést és -tanácsadást nem.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő.",
+   "source_url": "https://psprovocative.com/rolunk/",
+   "found_by": [
+    "pr",
+    "content"
+   ]
+  },
+  {
+   "slug": "forte-communications",
+   "name": "FORTE Communications",
+   "website": "https://www.fortecom.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "PR-tanácsadás",
+    "Kríziskommunikáció",
+    "Belső kommunikáció",
+    "Employer branding",
+    "Sajtóközlemények és sajtótájékoztatók",
+    "Kiadványkészítés",
+    "Public affairs"
+   ],
+   "categories": [
+    "PR ügynökségek"
+   ],
+   "description": "A FORTE Communications Kft. budapesti, magyar tulajdonú PR-ügynökség. PR-tanácsadást és -stratégiát, médiaelemzést, kríziskommunikációt, belső kommunikációt és employer brandinget vállal, emellett sajtóközleményeket, sajtótájékoztatókat és vállalati kiadványokat készít, valamint public affairs feladatokat is ellát.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő. Az oldal részben régi (2016–2019-es copyright), az aktivitás ellenőrizendő.",
+   "source_url": "https://www.fortecom.hu/szolgaltatasok.html",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "produkcios-reszleg",
+   "name": "Produkciós Részleg",
+   "website": "https://www.pr-reszleg.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Sajtókommunikáció",
+    "Médiakommunikációs stratégia",
+    "Sajtótájékoztató- és interjúszervezés",
+    "Marketingstratégia",
+    "Keresőoptimalizálás",
+    "Közösségimédia-kezelés",
+    "Reklámajándékok"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Online marketing ügynökségek"
+   ],
+   "description": "A Produkciós Részleg Kft. PR- és marketingkommunikációs ügynökség, amelynek fő tevékenysége a PR: médiakommunikációs stratégiát, sajtóközleményeket, sajtótájékoztatókat és interjúkat szervez, és elemzi a megjelenéseket. Marketingtanácsadást, weboldal- és tartalomkészítést, SEO-t és közösségimédia-kezelést is vállal, valamint reklámajándékokat gyárt.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő.",
+   "source_url": "https://www.pr-reszleg.hu/",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "pro-business-consulting",
+   "name": "Pro/Business Consulting",
+   "website": "https://www.probusiness.hu/",
+   "city": "Budapest",
+   "founded_year": 2015,
+   "team_size": null,
+   "services": [
+    "Kommunikációs és PR-stratégia",
+    "Sajtó- és médiakapcsolatok",
+    "Thought leadership",
+    "Tartalommarketing",
+    "Kiszervezett kommunikáció",
+    "Litigation PR",
+    "Honlap- és arculatkialakítás"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A Pro/Business Consulting 2015-ben alakult, elsősorban üzleti (B2B) területre szakosodott PR- és kommunikációs ügynökség, amelyet a Pro Business Kft. üzemeltet. Kommunikációs stratégiát, sajtó- és médiakapcsolatokat, véleményvezér-építést, tartalommarketinget, kiszervezett kommunikációt és litigation PR-t vállal. Ügyfelei főként a professzionális szolgáltató szektorból kerülnek ki.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő.",
+   "source_url": "https://www.probusiness.hu/kik-vagyunk/",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "pr-agent-communications",
+   "name": "PR AGENT Communications",
+   "website": "https://pragent.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Kommunikációs audit",
+    "Kommunikációs stratégia",
+    "B2B és B2C kommunikáció",
+    "Social media menedzsment",
+    "Tartalommarketing",
+    "Rendezvényszervezés"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A PR AGENT Communications budapesti kommunikációs ügynökség, amely hazai és nemzetközi ügyfeleknek dolgozik. Kommunikációs auditot és stratégiát, B2B, B2C és B2G kommunikációt, online és social media menedzsmentet, tartalommarketinget és rendezvényszervezést vállal.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő. Az oldalak egyes állításai ellentmondásosak (pl. működési idő).",
+   "source_url": "https://pragent.hu/en/rolunk/",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "presston-pr",
+   "name": "PResston PR",
+   "website": "https://presstonpr.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Sajtókapcsolatok",
+    "Stratégiai kommunikációs tanácsadás",
+    "Médiatréning",
+    "Válságkommunikáció",
+    "Médiamonitoring",
+    "Belső kommunikáció",
+    "Rendezvényszervezés"
+   ],
+   "categories": [
+    "PR ügynökségek"
+   ],
+   "description": "A PResston PR Kft. budapesti és debreceni irodával működő PR-ügynökség. Külső PR területen sajtókapcsolatokat, stratégiai tanácsadást, médiatréninget, válságkommunikációt, médiamonitoringot és rendezvényszervezést vállal, belső PR-ban hírleveleket, kiadványokat és employer brandinget.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő. A weboldal régi felépítésű, az aktivitás ellenőrizendő; harmadik fél forrás szerint 2007 óta működik.",
+   "source_url": "https://presstonpr.hu/cegismerteto.html",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "spindoc",
+   "name": "Spindoc Kommunikációs Hálózat",
+   "website": "https://www.spindoc.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Kríziskommunikáció",
+    "Sajtókapcsolatok",
+    "Médiafigyelés",
+    "PR-stratégia és tanácsadás",
+    "Brandépítés",
+    "Személyes márkaépítés",
+    "Tréningek"
+   ],
+   "categories": [
+    "PR ügynökségek"
+   ],
+   "description": "A Spindoc szakértő tanácsadók hálózataként működő kommunikációs cég, alapítója Bőhm Kornél. Vállalati kríziskommunikációt, sajtókapcsolatokat, médiafigyelést, PR-stratégiát és -tanácsadást, brand- és személyesmárka-építést, valamint tréningeket kínál.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő.",
+   "source_url": "https://www.spindoc.hu/szolgaltatasok",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "ferling-pr",
+   "name": "FERLING PR",
+   "website": "https://pr.ferling.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Hírnévmenedzsment",
+    "Munkáltatói márkaépítés",
+    "Marketingkommunikáció",
+    "Közösségi média",
+    "Kríziskommunikáció",
+    "Public affairs",
+    "CSR",
+    "Belső kommunikáció"
+   ],
+   "categories": [
+    "PR ügynökségek"
+   ],
+   "description": "A FERLING Kft. vidéki központtal működő PR-ügynökség. Hírnévmenedzsmentet, vállalati és munkáltatói márkaépítést, marketingkommunikációt, közösségimédia-kommunikációt, kríziskommunikációt, public affairst, CSR- és belső kommunikációt vállal, sajtófigyelést is nyújt. Design üzletága arculat- és kiadványtervezéssel foglalkozik.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő. A központ városa az oldal kivonatából nem derült ki.",
+   "source_url": "https://pr.ferling.hu/szolgaltatasok",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "next9-communications",
+   "name": "Next9 Communications",
+   "website": "https://www.next9.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Vállalati kommunikáció",
+    "Márkakommunikáció",
+    "Kríziskommunikáció",
+    "Digitális storytelling",
+    "Reputációkezelés",
+    "CSR",
+    "Employer branding"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A Next9 (Nextnine Kft.) budapesti kommunikációs, PR, content és branding ügynökség, alapító-ügyvezetői Híves Beáta és Győri Krisztina. Vállalati, márka- és kríziskommunikációt, social és vizuális történetmesélést, reputációkezelést, CSR-t és employer brandinget vállal.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő.",
+   "source_url": "https://www.next9.hu/en/",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "fleishmanhillard-budapest",
+   "name": "FleishmanHillard Budapest (korábban Café PR)",
+   "website": "https://www.fleishmanhillard.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Márkaépítés",
+    "Kríziskommunikáció",
+    "Employer branding",
+    "Belső kommunikáció",
+    "Hírnévmenedzsment",
+    "Válságkommunikációs tréning"
+   ],
+   "categories": [
+    "PR ügynökségek"
+   ],
+   "description": "A FleishmanHillard budapesti ügynöksége a korábbi Café PR. Márkaépítést, kríziskommunikációt, employer brandinget, belső kommunikációt és hírnévmenedzsmentet vállal, válságkommunikációs tréningeket is tart. Ügyfelei között gyógyszeripari és nemzetközi cégek szerepelnek.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő.",
+   "source_url": "https://www.fleishmanhillard.hu/en/company",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "emerald-pr",
+   "name": "Emerald PR",
+   "website": "https://emeraldpr.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Reputációmenedzsment",
+    "Public affairs",
+    "Márkaépítés",
+    "Befektetői kapcsolatok",
+    "Kríziskommunikáció",
+    "CSR",
+    "Digitális kommunikáció"
+   ],
+   "categories": [
+    "PR ügynökségek"
+   ],
+   "description": "Az Emerald Public Relations budapesti PR-ügynökség, a WPP-hez tartozó Burson Cohn & Wolfe magyarországi partnere; alapítója Lakatos Zsófia. Reputációmenedzsmentet, public affairst, márkaépítést, befektetői kapcsolatokat, kríziskommunikációt, CSR- és digitális kommunikációt vállal.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő. Az oldal tartalma részben régi, a cím két változatban szerepel; az aktivitás ellenőrizendő.",
+   "source_url": "https://emeraldpr.hu/about/",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "uniomedia",
+   "name": "Uniomedia (uniomed!a GROUP)",
+   "website": "https://uniomedia.com/en/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Kreatív tartalomgyártás",
+    "Public affairs",
+    "Kormányzati kapcsolatok",
+    "Regionális médiakapcsolatok",
+    "Piacra lépési stratégia",
+    "Kríziskommunikáció",
+    "Médiatréning"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "Az Uniomedia független, menedzsment-tulajdonú stratégiai kommunikációs cég, amely Közép- és Kelet-Európára fókuszál, budapesti irodával. Két fő területe a kreatív tartalomgyártás és a stakeholder-menedzsment: piacra lépési stratégia, public affairs, kormányzati kapcsolatok és regionális médiakapcsolatok. Kríziskommunikációt és vezetői médiatréninget is vállal.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő. A budapesti cím az uniomedia.hu esettanulmány-oldaláról származik; harmadik fél szerint 2007-ben alapították.",
+   "source_url": "https://uniomedia.com/en/",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "karoly-robert-pr-marketing",
+   "name": "Károly Róbert PR & Marketing",
+   "website": "https://www.krpr.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Sajtó- és médiakapcsolatok",
+    "Sajtóközlemények",
+    "Interjúszervezés",
+    "Sajtófigyelés",
+    "Kríziskommunikáció",
+    "CSR/ESG-kommunikáció",
+    "Influencer együttműködések"
+   ],
+   "categories": [
+    "PR ügynökségek"
+   ],
+   "description": "A Károly Róbert PR & Marketing egyéni PR- és marketingtanácsadó, a Magyar Public Relations Szövetség egyéni tagja. Fő területe a sajtó- és médiakapcsolatok, sajtóközlemények, interjúszervezés és sajtófigyelés; emellett kommunikációs tervezést, krízis-, belső és CSR/ESG-kommunikációt, közösségimédia-kommunikációt és hirdetésszervezést vállal.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő. Egyéni szakember, nem ügynökség.",
+   "source_url": "https://www.krpr.hu/szolg%C3%A1ltat%C3%A1sok",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "mediator-group",
+   "name": "Mediator Group",
+   "website": "https://mediator.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "PR",
+    "Kreatív kampányok",
+    "Médiatervezés",
+    "Social media",
+    "Digitális kommunikáció",
+    "Rendezvényszervezés",
+    "Stratégia"
+   ],
+   "categories": [
+    "PR ügynökségek",
+    "Online marketing ügynökségek"
+   ],
+   "description": "A Mediator Group budapesti, független full-service reklámügynökség. Kreatív, média-, social media, digitális, rendezvényszervezési, PR és stratégiai szolgáltatásokat nyújt. A Trend FM-mel közösen készíti a reBrief kommunikációs podcastot.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch minden domainre DNS-hibát adott (ENOTFOUND), ezért az adatok a cég saját domainjére szűkített webkeresés találati kivonataiból származnak; élő oldalon ellenőrizendő. Elsősorban reklámügynökség, a PR egy a szolgáltatásai közül.",
+   "source_url": "https://mediator.hu/",
+   "found_by": [
+    "pr"
+   ]
+  },
+  {
+   "slug": "amazon-marketing",
+   "name": "Amazon Marketing",
+   "website": "https://amazonmarketing.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Amazon hirdetéskezelés",
+    "Amazon SEO",
+    "Termékoldal-optimalizálás",
+    "Amazon Brand Store készítés",
+    "Amazon marketing tanácsadás"
+   ],
+   "categories": [
+    "Amazon ügynökségek"
+   ],
+   "description": "Amazon-marketing tanácsadással és fiókmenedzsmenttel foglalkozó szolgáltató, amely hazai és nemzetközi cégeknek kínál támogatást az Amazon piactereken. Szolgáltatásai között szerepel a fizetett Amazon-hirdetések kezelése, az Amazon SEO, a termékoldalak optimalizálása és a márkabolt (Brand Store) kialakítása. Az oldalon György Sarolta és Lipták Márk neve szerepel.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND minden domainre) nem tudta megnyitni az oldalt; a leírás a cég saját oldalának keresőtalálati kivonatán alapul (amazonmarketing.hu/en/). Kézzel ellenőrizni.",
+   "source_url": "https://amazonmarketing.hu/en/",
+   "found_by": [
+    "amazon"
+   ]
+  },
+  {
+   "slug": "amaz-on-iroda",
+   "name": "Amaz-On Iroda",
+   "website": "https://www.amazoniroda.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Amazon tanácsadás",
+    "Piackutatás",
+    "Amazon fióknyitás",
+    "Amazon fiókkezelés",
+    "Amazon oktatási videócsomag"
+   ],
+   "categories": [
+    "Amazon ügynökségek"
+   ],
+   "description": "Magyar eladóknak szóló Amazon-tanácsadó iroda, amely a termékpiac vizsgálatától a fióknyitáson át az első eladásig teljes körű ügyintézést vállal. Az önálló Amazon-vállalkozást indítóknak videós oktatócsomagot is kínál a jogi feltételekről, a termék- és piackritériumokról és a technikai beállításokról.",
+   "status": "ellenőrizendő",
+   "review_note": "WebFetch DNS-hiba miatt az oldal nem volt megnyitható; a leírás az amazoniroda.hu oldalak keresőtalálati kivonatán alapul. Egy keresési összefoglaló pécsi székhelyet említett, ezt a city mezőbe nem írtam be – ellenőrizni. A pontos cégnév írásmódja (Amazon Iroda / Amaz-On Iroda) is ellenőrizendő.",
+   "source_url": "https://www.amazoniroda.hu/videocsomag",
+   "found_by": [
+    "amazon"
+   ]
+  },
+  {
+   "slug": "a-piacteres",
+   "name": "A Piacteres (Czuczor Gergely)",
+   "website": "https://apiacteres.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Amazon kereskedői regisztráció",
+    "Piackutatás",
+    "Amazon audit",
+    "Amazon FBA fiókkezelés",
+    "Amazon PPC"
+   ],
+   "categories": [
+    "Amazon ügynökségek"
+   ],
+   "description": "Czuczor Gergely tanácsadói szolgáltatása, amely magyar kisvállalkozásokat segít az Amazonon való értékesítés elindításában. Vállalja az Amazon kereskedői fiók regisztrációját és a szükséges dokumentumok előkészítését, emellett piackutatást, Amazon-auditot és FBA-fiókkezelést kínál. Az oldal szerint több mint húsz magyar kisvállalkozásnak segített.",
+   "status": "ellenőrizendő",
+   "review_note": "WebFetch DNS-hiba miatt az oldal nem volt megnyitható; a leírás az apiacteres.hu oldalak (főoldal, kapcsolat, blog) keresőtalálati kivonatán alapul. Egyéni szakértő, aki a kivonat szerint főállásban szervezetfejlesztési vezető – ellenőrizni, hogy aktívan vállal-e megbízást. Az 'Amazon PPC' szolgáltatás csak blogcikkből következik.",
+   "source_url": "https://apiacteres.hu/",
+   "found_by": [
+    "amazon"
+   ]
+  },
+  {
+   "slug": "amazon-megoldasok",
+   "name": "Amazon Megoldások (artPhone s.r.o.)",
+   "website": "https://amazon-megoldasok.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Amazon fiókkezelés",
+    "Fiók-visszaállítás és fellebbezés",
+    "Listing-optimalizálás",
+    "Amazon SEO",
+    "AI-alapú elemzés"
+   ],
+   "categories": [
+    "Amazon ügynökségek"
+   ],
+   "description": "Magyar nyelven szolgáltató Amazon-tanácsadó, amely fiókadminisztrációt, felfüggesztett fiókok visszaállítását és fellebbezést, listing- és SEO-munkát, valamint AI-támogatott elemzést kínál. Az üzemeltető artPhone s.r.o. az oldal szerint 2013 óta értékesít saját termékeket az európai Amazon-piactereken, és az amerikai, kanadai és mexikói piacon is van tapasztalata.",
+   "status": "ellenőrizendő",
+   "review_note": "WebFetch DNS-hiba miatt az oldal nem volt megnyitható; a leírás a főoldal és az About Us oldal keresőtalálati kivonatán alapul. Az üzemeltető s.r.o. (valószínűleg szlovákiai) cég – ellenőrizni, hogy illik-e a 'magyar ügyfeleknek magyarul' feltételhez.",
+   "source_url": "https://amazon-megoldasok.hu/about-us",
+   "found_by": [
+    "amazon"
+   ]
+  },
+  {
+   "slug": "amazon-fiokkezelo",
+   "name": "Amazon Fiókkezelő",
+   "website": "https://www.amazonfiokkezelo.com/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Amazon fiókkezelés",
+    "Piackutatás",
+    "Termékfeltöltés",
+    "Ügyfélszolgálat és rendeléskezelés",
+    "FBA raktárba szállítás",
+    "Áfabevallás és nemzetközi adózás"
+   ],
+   "categories": [
+    "Amazon ügynökségek"
+   ],
+   "description": "Kiszervezett Amazon-fiókkezelést kínáló szolgáltató azoknak a vállalkozásoknak, amelyek nem tudják, hogyan kezdjenek hozzá, vagy nincs erre munkatársuk. Feladatai között szerepel a piackutatás, a fiókregisztráció, a termékfeltöltés, az ügyfélszolgálat és rendeléskezelés, a termékek Amazon-raktárba szállítása, valamint a havi áfabevallások és a nemzetközi számlázás kezelése.",
+   "status": "ellenőrizendő",
+   "review_note": "WebFetch DNS-hiba miatt az oldal nem volt megnyitható; a leírás a főoldal keresőtalálati kivonatán alapul. Üzemeltető cég, székhely és elérhetőség nem derült ki – ellenőrizni, hogy működik-e.",
+   "source_url": "https://www.amazonfiokkezelo.com/",
+   "found_by": [
+    "amazon"
+   ]
+  },
+  {
+   "slug": "everigo-group",
+   "name": "Everigo Group",
+   "website": "https://everigo.eu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Amazon Marketplace kezelés",
+    "Amazon értékesítési stratégia",
+    "Fordítás és lokalizálás",
+    "Többnyelvű ügyfélszolgálat",
+    "Nemzetközi marketing és piackutatás",
+    "OSS-regisztráció"
+   ],
+   "categories": [
+    "Amazon ügynökségek",
+    "Online marketing ügynökségek"
+   ],
+   "description": "Magyar e-kereskedők külföldi terjeszkedését támogató szolgáltató, amelynek kínálatában az Amazon Marketplace kezelése és az Amazon-értékesítési stratégia kidolgozása is szerepel. Emellett fordítást és lokalizálást, többnyelvű ügyfélszolgálatot, nemzetközi piackutatást, OSS-regisztrációt, valamint helyi telefonszám és bankszámla nyitását vállalja.",
+   "status": "ellenőrizendő",
+   "review_note": "WebFetch DNS-hiba miatt az oldal nem volt megnyitható; a leírás az everigo.eu Amazon-oldalainak keresőtalálati kivonatán alapul. Az Amazon nem fő profil (külföldi terjeszkedés), és a cikkek dátuma ellentmondásos – ellenőrizni, hogy aktív-e.",
+   "source_url": "https://everigo.eu/amazon-ertekesites-eladas/",
+   "found_by": [
+    "amazon"
+   ]
+  },
+  {
+   "slug": "rankingz",
+   "name": "Rankingz",
+   "website": "https://rankingz.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Blogcikkírás",
+    "Tartalomfrissítés",
+    "Közösségimédia-posztok",
+    "Tartalomnaptár",
+    "SEO",
+    "PPC-kampánykezelés"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek",
+    "Keresőoptimalizáló ügynökségek",
+    "Google Ads ügynökségek"
+   ],
+   "description": "A Rankingz havidíjas előfizetéses modellben vállal online marketingfeladatokat, köztük blogbejegyzések írását, tartalomfrissítést, közösségimédia-posztokat és tartalomnaptár kialakítását. Az oldal szerint a feladatokat jellemzően 72 órán belül szállítják, az előfizetés szüneteltethető és lemondható. SEO- és PPC-szolgáltatást is kínál.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő. Székhely és cégadatok nem derültek ki.",
+   "source_url": "https://rankingz.hu/tartalommarketing/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "marketing-szovegiro",
+   "name": "Marketing szövegírás (Pazona Károly Zsolt)",
+   "website": "https://marketing-szovegiro.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": "5–6 fő",
+   "services": [
+    "Blogírás",
+    "Marketingszövegírás",
+    "Tartalommarketing",
+    "SEO-szövegírás",
+    "Weboldalszövegek"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A marketing-szovegiro.hu mögött Pazona Károly Zsolt áll, aki az oldal szerint több mint 10 éve foglalkozik tartalommarketinggel és marketingszövegírással, 5–6 fős szövegíró alvállalkozói csapattal. Havi blogírási csomagokat kínál, ügyfelei többsége magyar mikro-, kis- és középvállalkozás.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő. Árak régi oldalverziókban eltérnek.",
+   "source_url": "https://marketing-szovegiro.hu/magunkrol/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "uhu-kreativ",
+   "name": "Uhu Kreatív ügynökség",
+   "website": "https://uhu-kreativ.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Kreatív szövegírás",
+    "Blogcikkírás",
+    "Hirdetésszövegek",
+    "Közösségimédia-kezelés",
+    "E-mail marketing",
+    "Weboldal-készítés"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek",
+    "Weboldal készítés"
+   ],
+   "description": "Az Uhu Kreatív kisvállalkozásoknak dolgozó marketingügynökség, amely weboldalszövegeket, blogcikkeket, hirdetési szövegeket, hírleveleket és közösségimédia-tartalmakat készít. Emellett WordPress-weboldalakat, webáruházakat és landing oldalakat is fejleszt. Az adatkezelési tájékoztató szerint az üzemeltető a budapesti Devorium Bt.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő.",
+   "source_url": "https://uhu-kreativ.hu/kreativ-szovegiras/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "armadillo-kreativ-ugynokseg",
+   "name": "Armadillo Kreatív Ügynökség",
+   "website": "https://armadillo.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Tartalommarketing",
+    "Közösségimédia-marketing",
+    "Blog- és PR-cikkek",
+    "Influencer-marketing",
+    "Reklámfilm-készítés",
+    "TikTok-marketing"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek",
+    "Online marketing ügynökségek",
+    "Facebook hirdetés ügynökségek"
+   ],
+   "description": "Az Armadillo budapesti (III. kerület) kreatív ügynökség, amelynek szövegírói blogcikkeket, közösségimédia-posztokat, PR-cikkeket, sajtóközleményeket és hírleveleket készítenek. Szolgáltatásai között szerepel az influencer-marketing, a reklámfilm-készítés és a TikTok-marketing is. Referenciái között az oldal a Fiat-csoport magyarországi, cseh és szlovák Facebook-oldalainak kezelését említi.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő.",
+   "source_url": "https://armadillo.hu/en/content-marketing/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "hrusi-content-marketing",
+   "name": "HRUSI Content Marketing",
+   "website": "https://hrusicontent.hu/",
+   "city": "Győrújbarát",
+   "founded_year": 2025,
+   "team_size": null,
+   "services": [
+    "Tartalomkészítés",
+    "Közösségimédia-kezelés",
+    "Meta-hirdetések",
+    "Weboldal-készítés",
+    "Marketingmentorálás"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek",
+    "Facebook hirdetés ügynökségek",
+    "Weboldal készítés"
+   ],
+   "description": "A HRUSI Content Marketing kisvállalkozásoknak kínál szöveges és vizuális tartalomkészítést, közösségimédia-kezelést és Meta-hirdetéskezelést. WordPress-alapú weboldalakat is készít, havidíjas konstrukcióban is. Az oldal szerint a közös vállalkozás 2025-ben indult, székhelye Győrújbarát.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő.",
+   "source_url": "https://hrusicontent.hu/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "contentshop",
+   "name": "Contentshop",
+   "website": "https://contentshop.hu/",
+   "city": "Budaörs",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Tartalomgyártás",
+    "PR",
+    "Közösségi média",
+    "PPC-kampányok",
+    "Arculattervezés",
+    "Weboldal-fejlesztés"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek",
+    "Online marketing ügynökségek",
+    "PR ügynökségek"
+   ],
+   "description": "A Contentshop budaörsi kreatív digitális ügynökség, amely tartalomgyártással, PR-ral, közösségi médiával, marketingautomatizálással, e-mail marketinggel és weboldaltervezéssel foglalkozik. Csapatában stratégák, szövegírók, grafikusok, PPC-szakemberek és fejlesztők dolgoznak. Az oldalon PR-referenciák is szerepelnek.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő. A címadatok oldalanként eltérnek.",
+   "source_url": "https://contentshop.hu/rolunk/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "brocasterz",
+   "name": "Brocasterz",
+   "website": "https://brocasterz.com/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": "21 fő",
+   "services": [
+    "Céges podcastkészítés",
+    "Podcastmarketing",
+    "Podcast PR",
+    "Stúdióbérlés",
+    "Műsoraudit és tanácsadás",
+    "Webinárium-gyártás"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A Brocasterz podcastügynökség, amely az oldal szerint 2019 óta készít céges podcastokat a koncepciótól a felvételen át az utómunkáig. Budapest belvárosában saját stúdiót üzemeltet, amely óradíjban bérelhető. Podcastmarketinget, podcast PR-t, műsorauditot és műsorvezetői képzést is kínál.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő.",
+   "source_url": "https://brocasterz.com/szolgaltatasaink/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "dkp-visual",
+   "name": "DKP Visual",
+   "website": "https://dkpvisual.com/",
+   "city": "Budapest",
+   "founded_year": 2012,
+   "team_size": null,
+   "services": [
+    "Podcastgyártás",
+    "Reklámfilm-készítés",
+    "Imázsfilm",
+    "Rövid videók közösségi médiára",
+    "Céges fotózás"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A DKP Visual budapesti fotó- és videóstúdió, amely reklámfilmeket, imázsfilmeket és rendezvényvideókat készít, valamint teljes körű podcastgyártást vállal a tervezéstől a publikálásig. A podcastepizódokból rövid videókat is készít TikTokra, Reelsre és Shortsra. Vezetője Kékesi Donát fotográfus.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő. Alapítási év a bemutatkozó oldal 'since 2012' közléséből.",
+   "source_url": "https://dkpvisual.com/podcast-studio-budapest/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "conceptz",
+   "name": "Conceptz",
+   "website": "https://conceptz.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Céges videókészítés",
+    "Social media videócsomag",
+    "Esettanulmány-videók",
+    "Employer branding videók",
+    "Rendezvényvideók",
+    "Céges fotózás"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A Conceptz marketingszemléletű videó- és fotóstúdió, amely cégbemutató, esettanulmány-, employer branding- és rendezvényvideókat készít. Havidíjas közösségimédia-videócsomagot is kínál. Budapesten, a XI. kerületben működik; referenciái között az oldal ipari és technológiai cégeket sorol fel.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő.",
+   "source_url": "https://conceptz.hu/video/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "1x1-media",
+   "name": "1x1 Media",
+   "website": "https://1x1media.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Videós tartalomgyártás",
+    "Forgatókönyvírás",
+    "Drónos felvételek",
+    "Hirdetéskezelés",
+    "Weboldal-készítés",
+    "Marketingrendszer-építés"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek",
+    "Online marketing ügynökségek"
+   ],
+   "description": "Az 1x1 Media kkv-knak, főként építőipari cégeknek épít marketingrendszert, amelynek része a TikTokra, Instagramra és YouTube-ra szabott videós tartalomgyártás. A munka a tervezést, forgatókönyvírást, kamerás és drónos forgatást, valamint az utómunkát fedi le. Havidíjas videós csomagokat kínál, a legnagyobbhoz hirdetéskezelés is tartozik.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő. Székhely nem derült ki.",
+   "source_url": "https://1x1media.hu/videos-tartalomgyartas/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "budacsik-films",
+   "name": "Budacsik Films (Budacsik Media Solutions Kft.)",
+   "website": "https://budacsikfilms.com/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Havi rendszeres videókészítés",
+    "Short form videók",
+    "Termékbemutató videók",
+    "Imázsfilm",
+    "Esettanulmány-videók",
+    "Rendezvényvideók"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A Budacsik Films (Budacsik Media Solutions Kft.) cégeknek készít bemutató-, imázs-, esettanulmány- és rendezvényvideókat. Havi rendszeres videógyártást is kínál, főként álló rövid videókra (TikTok, Reels, Shorts), havi egy forgatási nappal. Az oldal szerint 2018 óta készítenek videókat, ügyvezetője Budácsik Attila.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő. Székhely nem derült ki.",
+   "source_url": "https://budacsikfilms.com/havi-rendszeres-video-keszites/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "social-video",
+   "name": "Social Videó (Everengine Kft.)",
+   "website": "https://socialvideo.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Social media videógyártás",
+    "Videóvágás",
+    "Operatőri munka",
+    "Fotózás",
+    "Kreatív koncepció"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A Social Videó havidíjas konstrukcióban kínál videógyártási kapacitást közösségimédia-felületekre. Az oldal szerint a díjért vágók, operatőrök, fotósok, rendezők és kreatívok csapata érhető el. Üzemeltetője az Everengine Kft.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő. Kevés információ volt elérhető; székhely nem derült ki.",
+   "source_url": "https://socialvideo.hu/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "odpictures",
+   "name": "ODPictures Art Studio Kft.",
+   "website": "https://odpictures.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Közösségimédia-videók",
+    "Videógyártás",
+    "Drónos és FPV-felvételek",
+    "Timelapse-videók",
+    "Livestream",
+    "Rendezvényfotózás"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "Az ODPictures budapesti videós és fotós stúdió, amely havi rendszerességgel gyárt közösségimédia-filmeket a stratégiai tervezéstől a több formátumú leszállításig. Emellett reklám-, timelapse- és drónos felvételeket, élő közvetítést és rendezvényfotózást vállal. Az oldal szerint 2008 óta több mint ezer filmet forgattak.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő.",
+   "source_url": "https://odpictures.hu/video-gyartas/kozossegi-media-tartalomgyartas/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "seo-cikkek",
+   "name": "SEO cikkek",
+   "website": "https://seocikkek.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "SEO-cikkírás",
+    "Bérblogolás",
+    "PR-cikkírás",
+    "Termékleírások",
+    "Közösségimédia-posztok"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A SEO cikkek szövegíró szolgáltatás bérblogolást, SEO- és PR-cikkírást, termék- és kategórialeírásokat, valamint közösségimédia-posztokat vállal karakteralapú árazással. Az oldal szerint több mint 8 éve foglalkoznak szövegírással; a munkát Kőszegi-Arbeiter Anita és Gutási Krisztina szövegíró vezeti.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő. Kis szövegírói csapat, nem klasszikus ügynökség; székhely nem derült ki.",
+   "source_url": "https://seocikkek.hu/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "atp-szovegiras",
+   "name": "ATP Szövegírás",
+   "website": "https://atpszovegiras.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": "3 fő",
+   "services": [
+    "SEO-szövegírás",
+    "Marketingszövegírás",
+    "Honlapszövegek",
+    "Angol nyelvű szövegírás",
+    "Korrektúra",
+    "Projektszövegezés"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek",
+    "Keresőoptimalizáló ügynökségek"
+   ],
+   "description": "Az ATP Szövegírás háromfős szövegírói csapat, amelynek tagjai korábban újságíróként dolgoztak. SEO-, marketing-, tartalom- és honlapszövegírást, angol nyelvű szövegírást, projektszövegezést és korrektúrát vállal. Az oldal szerint minden leadott szöveget korrektor néz át.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő. Székhely nem derült ki.",
+   "source_url": "https://atpszovegiras.hu/rolunk/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "marketingmask",
+   "name": "Marketingmask",
+   "website": "https://marketingmask.com/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "SEO-szövegírás",
+    "Blogszövegírás",
+    "Hírlevélírás",
+    "YouTube-szövegírás",
+    "Kampánymenedzsment",
+    "Stratégiai tanácsadás"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek",
+    "Google Ads ügynökségek",
+    "Facebook hirdetés ügynökségek"
+   ],
+   "description": "A Marketingmask kkv-knak kínál honlap-, blog- és YouTube-szövegírást kulcsszókutatással és metaadatokkal, valamint hírlevélírást. Emellett Google Ads- és Instagram-kampánymenedzsmentet és stratégiai tanácsadást is vállal.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő. Székhely nem derült ki.",
+   "source_url": "https://marketingmask.com/kampanymenedzsment/szovegiras-tartalomkeszites/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "soul-in",
+   "name": "SOUL IN",
+   "website": "https://soulin.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Közösségimédia-tartalomgyártás",
+    "Rövid videók",
+    "Márkaépítés",
+    "Social media menedzsment",
+    "Rendezvényszervezés"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A SOUL IN budapesti online marketing ügynökség, amely Instagramra, TikTokra, YouTube Shortsra és más felületekre készít rövid videókat, feed- és story-posztokat, carousel-tartalmakat és kampányvizuálokat. A munkafolyamat a brieftől a forgatáson és vágáson át a platformra szabott exportig tart. Alapítója Anna, aki content creatorként dolgozik.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő. Kis csapat lehet; cégadatok nem derültek ki.",
+   "source_url": "https://soulin.hu/social-media-tartalomgyartas/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "hello-agency",
+   "name": "Hello Agency",
+   "website": "https://helloagency.hu/",
+   "city": "Budapest",
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Social media menedzsment",
+    "Tartalomkészítés",
+    "Szövegírás",
+    "Grafikai tervezés",
+    "Videógyártás",
+    "Rendezvényszervezés"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek",
+    "PR ügynökségek",
+    "Online marketing ügynökségek"
+   ],
+   "description": "A Hello Agency budapesti kommunikációs és rendezvényszervező ügynökség, amely közösségimédia-stratégiát és tartalmakat készít Instagramra, Facebookra, LinkedInre, YouTube-ra és TikTokra. Szövegírást, grafikai tervezést és videógyártást is kínál. Referenciái között a Prangl és a Mammut bevásárlóközpont szerepel.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő.",
+   "source_url": "https://helloagency.hu/szolgaltatasaink/social-media",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "cap-marketing",
+   "name": "CAP Marketing Agency Kft.",
+   "website": "https://capmarketing.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "TikTok-tartalomgyártás",
+    "TikTok-stratégia",
+    "Videóforgatás",
+    "Hirdetéskezelés",
+    "Weboldal-fejlesztés"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek",
+    "Facebook hirdetés ügynökségek"
+   ],
+   "description": "A CAP Marketing fő profilja a TikTok-tartalomgyártás és -stratégia, emellett hirdetéskezelést és weboldal-fejlesztést is vállal. Az oldal szerint a videókhoz operatőrt, felszerelést és szükség esetén szereplőket is biztosít, és több mint 500 videót készített. A csapat egyetemistákból, középiskolásokból és pályakezdőkből áll.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő. Székhely nem derült ki.",
+   "source_url": "https://capmarketing.hu/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "tartalomgyar",
+   "name": "Tartalomgyár",
+   "website": "https://tartalomgyar.hu/",
+   "city": null,
+   "founded_year": null,
+   "team_size": null,
+   "services": [
+    "Tartalommarketing-tanácsadás",
+    "Tartalomgyártás",
+    "Médiaépítés",
+    "Tartalommenedzsment",
+    "Kampánymenedzsment"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek"
+   ],
+   "description": "A Tartalomgyár bérelhető szerkesztőségként működő tartalommarketing-szolgáltató, amely az oldal szerint több mint ezer újságíróból, szerkesztőből, grafikusból, fotósból és videósból álló adatbázisból állít össze projektcsapatokat. Tanácsadást, médiaépítést, cikk-, blog-, hírlevél- és esettanulmány-gyártást, valamint tartalommenedzsmentet kínál cégeknek, ügynökségeknek és médiumoknak.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő. Az indexelt oldalak nagyon régiek (7–9 év); a cég jelenlegi működése bizonytalan.",
+   "source_url": "https://tartalomgyar.hu/hogyan-mukodunk/",
+   "found_by": [
+    "content"
+   ]
+  },
+  {
+   "slug": "databoss",
+   "name": "DataBoss",
+   "website": "https://databoss.hu/",
+   "city": null,
+   "founded_year": 2012,
+   "team_size": null,
+   "services": [
+    "Tartalommarketing",
+    "SEO-szövegírás",
+    "Blogírás",
+    "Weboldal-készítés",
+    "Webáruház-készítés",
+    "PPC-kampányok"
+   ],
+   "categories": [
+    "Tartalomgyártó ügynökségek",
+    "Weboldal készítés",
+    "Keresőoptimalizáló ügynökségek"
+   ],
+   "description": "A DataBoss az oldal szerint 2012 óta készít honlapokat, webáruházakat és portálokat, és online kampányokat is futtat. Szövegírási és tartalommarketing-szolgáltatása weboldalszövegeket, blogcikkeket, hírleveleket és közösségimédia-tartalmakat foglal magában, SEO- és konverziós szempontokkal.",
+   "status": "ellenőrizendő",
+   "review_note": "A WebFetch DNS-hiba miatt (ENOTFOUND) nem volt megnyitható; az adatok a cég saját domainjére szűrt keresés indexelt oldalszövegéből származnak, élőben ellenőrizendő. A fő profil webfejlesztés, a tartalom másodlagos lehet; több oldal régebbi.",
+   "source_url": "https://databoss.hu/hu/tartalommarketing-es-szovegiras",
+   "found_by": [
+    "content"
+   ]
+  }
+ ],
+ "existing_add": [
+  {
+   "slug": "dog-pony",
+   "reason": "A marketingtanacsado.hu oldalon külön PR ügynökség szolgáltatási oldal van (https://www.marketingtanacsado.hu/pr-ugynokseg/): PR kampány, tanácsadás, cikkírás és -elhelyezés, sajtóközlemények, médiafigyelés.",
+   "found_by": "pr"
+  },
+  {
+   "slug": "growww-digital",
+   "reason": "Egy keresőtalálat szerint szolgáltatásai között szerepel a 'Marketplace hirdetések (Amazon, Emag, stb.) kezelése'. Másodlagos forrás (ügynökséglistás blog), a saját oldalon ellenőrizendő.",
+   "found_by": "amazon"
+  },
+  {
+   "slug": "tartalom-design-kft",
+   "reason": "Kreatív és SEO-szövegírást, blogcikkeket kínál (tartalomdesign.hu/kreativ-szovegiras/); a cégnév is a tartalomgyártásra utal.",
+   "found_by": "content"
+  },
+  {
+   "slug": "dlx-media",
+   "reason": "Tartalomstratégiát, szövegírást, blogcikkeket, YouTube- és podcastgyártást vállal (dlxmedia.hu/podcast/), 20+ fős tartalomkészítő csapattal.",
+   "found_by": "content"
+  },
+  {
+   "slug": "kalu-creative",
+   "reason": "Saját meghatározása szerint az egyik legnagyobb magyar short-form tartalomgyártó ügynökség (TikTok-menedzsment, tartalomgyártás).",
+   "found_by": "content"
+  },
+  {
+   "slug": "dog-pony",
+   "reason": "Külön tartalommarketing- és szövegírás-szolgáltatás, valamint TikTok-videós tartalomgyártás (marketingtanacsado.hu).",
+   "found_by": "content"
+  },
+  {
+   "slug": "plus-creative-agency",
+   "reason": "Saját STUDIO+ podcast- és videóstúdiót üzemeltet (studioplus.hu), podcastkészítést kínál.",
+   "found_by": "content"
+  },
+  {
+   "slug": "scl-media-marketing",
+   "reason": "Facebook-, Instagram- és TikTok-tartalomgyártást (szöveges, vizuális, videós) kínál közösségimédia-menedzsment keretében.",
+   "found_by": "content"
+  },
+  {
+   "slug": "kanga-design",
+   "reason": "Külön oldala van online tartalomgyártásra, tartalommarketingre és SEO-szövegírásra (kangadesign.hu).",
+   "found_by": "content"
+  }
+ ]
+}
