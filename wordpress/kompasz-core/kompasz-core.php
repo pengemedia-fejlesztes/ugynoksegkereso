@@ -22,6 +22,7 @@ require_once KOMPASZ_CORE_DIR . 'inc/import.php';
 require_once KOMPASZ_CORE_DIR . 'inc/accounts.php';
 require_once KOMPASZ_CORE_DIR . 'inc/pages-content.php';
 require_once KOMPASZ_CORE_DIR . 'inc/webp.php';
+require_once KOMPASZ_CORE_DIR . 'inc/subscription.php';
 
 register_activation_hook(__FILE__, function () {
     kompasz_register_types();

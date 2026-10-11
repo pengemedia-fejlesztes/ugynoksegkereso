@@ -48,8 +48,10 @@ function kompasz_meta_line($a) {
 }
 
 function kompasz_contact_btn($a, $class = 'btn') {
-    if (!$a['website']) return '';
-    return sprintf('<a class="%s" href="%s" target="_blank" rel="nofollow noopener">Kapcsolat ↗</a>', esc_attr($class), esc_url($a['website']));
+    $href = function_exists('kompasz_website_href') ? kompasz_website_href($a) : $a['website'];
+    if (!$href) return '';
+    $direct = function_exists('kompasz_agency_has') && kompasz_agency_has($a['id'], 'website');
+    return sprintf('<a class="%s" href="%s" target="_blank" rel="%s">Kapcsolat ↗</a>', esc_attr($class), esc_url($href), $direct ? 'noopener' : 'nofollow noopener');
 }
 
 function kompasz_tag_chips($a, $max = 3, $current = null) {

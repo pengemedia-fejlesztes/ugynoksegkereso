@@ -58,7 +58,7 @@ function kompasz_breadcrumb_ld($items) {
 }
 
 function kompasz_org_ld($a) {
-    $o = ['@type' => 'Organization', 'name' => $a['name'], 'url' => $a['website'] ?: $a['link']];
+    $o = ['@type' => 'Organization', 'name' => $a['name'], 'url' => ($a['website'] && function_exists('kompasz_agency_has') && kompasz_agency_has($a['id'], 'website')) ? $a['website'] : $a['link']];
     if ($a['desc']) $o['description'] = $a['desc'];
     if ($a['logo']) $o['logo'] = $a['logo'];
     if ($a['city']) $o['address'] = ['@type' => 'PostalAddress', 'addressLocality' => $a['city'], 'addressCountry' => 'HU'];
