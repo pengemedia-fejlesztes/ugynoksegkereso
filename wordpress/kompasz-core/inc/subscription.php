@@ -1,7 +1,7 @@
 <?php
 // Előfizetői csomagok: a csomagot az admin a felhasználó adatlapján állítja be; a csomag a felhasználóhoz rendelt ügynökségre érvényes.
 // Előfizetőnél a weboldal közvetlen linkkel és a telefonszám látszik; nem előfizetőnél a telefonszám rejtett,
-// a weboldal pedig csak a saját átirányító címünkön (/x/?f=…) keresztül érhető el, az Index dex.hu/x mintájára.
+// a weboldal pedig csak a saját átirányító címünkön (/x/<azonosító>-<aláírás>/) keresztül érhető el, az Index dex.hu/x mintájára; a cél-cím nem szerepel az oldal kódjában.
 if (!defined('ABSPATH')) exit;
 
 const KOMPASZ_PACKAGE_META = 'kompasz_package';
@@ -57,7 +57,7 @@ add_filter('manage_users_custom_column', function ($out, $col, $user_id) {
     return isset(kompasz_packages()[$p]) ? esc_html(kompasz_packages()[$p]['label']) : '—';
 }, 10, 3);
 
-// --- Kimenő link nem előfizetőknek: /x/?f=<cél>&a=<ügynökség>&s=<aláírás> ---
+// --- Kimenő link nem előfizetőknek: /x/<ügynökség-azonosító>-<aláírás>/ ---
 function kompasz_out_sig($url, $agency_id) {
     return substr(hash_hmac('sha256', $agency_id . '|' . $url, wp_salt('auth')), 0, 16);
 }
@@ -66,21 +66,22 @@ function kompasz_out_sig($url, $agency_id) {
 function kompasz_website_href($a) {
     if (empty($a['website'])) return '';
     if (kompasz_agency_has($a['id'], 'website')) return $a['website'];
-    return add_query_arg(['f' => rawurlencode($a['website']), 'a' => (int) $a['id'], 's' => kompasz_out_sig($a['website'], (int) $a['id'])], home_url('/x/'));
+    // A linkben csak az ügynökség azonosítója és egy aláírás van – a cél-cím nem szerepel az oldal kódjában
+    return home_url('/x/' . (int) $a['id'] . '-' . kompasz_out_sig($a['website'], (int) $a['id']) . '/');
 }
 
-add_action('init', function () { add_rewrite_rule('^x/?$', 'index.php?kompasz_out=1', 'top'); });
-add_filter('query_vars', function ($v) { $v[] = 'kompasz_out'; return $v; });
+add_action('init', function () { add_rewrite_rule('^x/([0-9]+)-([0-9a-f]{16})/?$', 'index.php?kompasz_out=$matches[1]&kompasz_sig=$matches[2]', 'top'); });
+add_filter('query_vars', function ($v) { $v[] = 'kompasz_out'; $v[] = 'kompasz_sig'; return $v; });
 add_filter('robots_txt', function ($txt) { return $txt . "\nDisallow: /x/\n"; });
 
 add_action('template_redirect', function () {
     if (!get_query_var('kompasz_out')) return;
-    $url = isset($_GET['f']) ? esc_url_raw(rawurldecode(wp_unslash($_GET['f']))) : '';
-    $aid = (int) ($_GET['a'] ?? 0);
-    $sig = (string) ($_GET['s'] ?? '');
+    $aid = (int) get_query_var('kompasz_out');
+    $sig = (string) get_query_var('kompasz_sig');
+    $url = $aid && get_post_type($aid) === 'ugynokseg' ? (string) get_post_meta($aid, 'kompasz_website', true) : '';
     header('X-Robots-Tag: noindex, nofollow');
     nocache_headers();
-    if (!$url || !$aid || !hash_equals(kompasz_out_sig($url, $aid), $sig) || get_post_meta($aid, 'kompasz_website', true) !== $url) {
+    if (!$url || !hash_equals(kompasz_out_sig($url, $aid), $sig)) {
         status_header(404);
         wp_die('Ez a hivatkozás nem érvényes.', 'Érvénytelen hivatkozás', ['response' => 404]);
     }
