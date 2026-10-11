@@ -159,7 +159,7 @@
  },
  "bako-krisztian": {
   "file": "bako-krisztian.png",
-  "src": "https://bakokrisztian.hu/wp-content/uploads/2021/03/cropped-android-chrome-512x512-1-1.png",
+  "src": "https://bakokrisztian.hu/wp-content/uploads/2021/03/cropped-android-chrome-512x512-1-1-300x300.png",
   "via": "icon"
  },
  "barex-iparmuvesz-kft-basa-janos-fotomuvesz": {
@@ -189,7 +189,7 @@
  },
  "berenyisoft": {
   "file": "berenyisoft.jpg",
-  "src": "https://berenyisoft.com/wp-content/uploads/2018/12/cropped-berenyisoft_logo.jpg",
+  "src": "https://berenyisoft.com/wp-content/uploads/2018/12/cropped-berenyisoft_logo-192x192.jpg",
   "via": "icon"
  },
  "berry-art-a-webshop-szakerto": {
@@ -310,7 +310,7 @@
  },
  "corrad-design": {
   "file": "corrad-design.png",
-  "src": "https://keresooptimalizalunk.hu/wp-content/uploads/2024/10/cropped-favicon.png",
+  "src": "https://keresooptimalizalunk.hu/wp-content/uploads/2024/10/cropped-favicon-192x192.png",
   "via": "icon"
  },
  "crs-ai-marketing-seo-ugynokseg-kft": {
@@ -538,6 +538,11 @@
   "file": "hd-marketing.png",
   "src": "https://www.ugynoksegkereso.hu/wp-content/uploads/2025/08/ugynoksegek-logoi-44.png",
   "via": "ugynoksegkereso.hu"
+ },
+ "hegedus-roland": {
+  "file": "hegedus-roland.png",
+  "src": "https://cdn.myshoptet.com/usr/www.devergoveszprem.hu/user/logos/new_weblogo.png",
+  "via": "header-own"
  },
  "honlapbirodalom": {
   "file": "honlapbirodalom.png",
@@ -906,7 +911,7 @@
  },
  "pixon-design": {
   "file": "pixon-design.png",
-  "src": "https://pixon.hu/wp-content/uploads/2026/09/cropped-pixon-favicon2.png",
+  "src": "https://pixon.hu/wp-content/uploads/2026/09/cropped-pixon-favicon2-192x192.png",
   "via": "icon"
  },
  "plus-creative-agency": {
@@ -1101,7 +1106,7 @@
  },
  "suhajda-tamas-ppc-webdesign-automatizaciok": {
   "file": "suhajda-tamas-ppc-webdesign-automatizaciok.png",
-  "src": "https://www.suhajdatamas.hu/wp-content/uploads/2026/02/cropped-2000x1000_v2_feher.png",
+  "src": "https://www.suhajdatamas.hu/wp-content/uploads/2026/02/cropped-2000x1000_v2_feher-192x192.png",
   "via": "icon"
  },
  "sybell-informatika-kft": {
@@ -1181,7 +1186,7 @@
  },
  "unidome-studio-creative": {
   "file": "unidome-studio-creative.png",
-  "src": "https://unidome.studio/wp-content/uploads/2025/03/android-chrome-512x512-1.png",
+  "src": "https://unidome.studio/wp-content/uploads/2025/03/android-chrome-512x512-1-268x268.png",
   "via": "icon"
  },
  "uniomedia": {
@@ -1199,6 +1204,11 @@
   "file": "usernet.webp",
   "src": "https://www.usernet.hu/resources/images/logo.webp",
   "via": "header-own"
+ },
+ "vallalkozas-okosan": {
+  "file": "vallalkozas-okosan.png",
+  "src": "https://www.vallalkozas-okosan.hu/sites/default/files/vo-logo.png",
+  "via": "header-logo"
  },
  "vamosoft": {
   "file": "vamosoft.svg",
