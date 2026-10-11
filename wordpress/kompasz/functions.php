@@ -12,7 +12,6 @@ add_action('after_setup_theme', function () {
 
 add_action('wp_enqueue_scripts', function () {
     $v = KOMPASZ_THEME_VERSION . '.' . filemtime(get_theme_file_path('assets/kompasz.css'));
-    wp_enqueue_style('kompasz-fonts', 'https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Geist:wght@400;500;600&family=Geist+Mono:wght@500;600&display=swap', [], null);
     wp_enqueue_style('kompasz', get_theme_file_uri('assets/kompasz.css'), [], $v);
     wp_enqueue_script('kompasz', get_theme_file_uri('assets/kompasz.js'), [], $v, ['strategy' => 'defer', 'in_footer' => true]);
     // Felesleges blokk-stílusok kikapcsolása a gyorsaságért (a téma nem használ blokkszerkesztős elrendezést a nyilvános oldalon)
@@ -20,7 +19,11 @@ add_action('wp_enqueue_scripts', function () {
 });
 
 add_action('wp_head', function () {
-    echo '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' . "\n";
+    // Betűtípusok a saját tárhelyről (latin + latin-ext): előtöltés + beágyazott @font-face, külső kérés nélkül (gyorsaság)
+    $fonts = get_theme_file_uri('assets/fonts');
+    foreach (['bricolage-grotesque-latin', 'geist-latin'] as $f) echo '<link rel="preload" href="' . esc_url("$fonts/$f.woff2") . '" as="font" type="font/woff2" crossorigin>' . "\n";
+    $css = @file_get_contents(get_theme_file_path('assets/fonts/fonts.css'));
+    if ($css) echo '<style id="kompasz-fonts">' . str_replace('{FONTS}', esc_url($fonts), $css) . '</style>' . "\n";
     echo '<link rel="icon" href="' . esc_url(get_theme_file_uri('assets/favicon.svg')) . '" type="image/svg+xml">' . "\n";
 }, 1);
 
