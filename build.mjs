@@ -1,11 +1,13 @@
 // Statikus oldalgenerátor: node build.mjs → public/
-import { mkdir, writeFile, copyFile, rm, readFile } from 'node:fs/promises';
-import { CATS, AGENCIES, PARTNERS, HOME_SEO, LOGO_BASE } from './src/data.mjs';
+import { mkdir, writeFile, copyFile, cp, rm, readFile } from 'node:fs/promises';
+import { CATS, AGENCIES, PARTNERS, HOME_TOP, HOME_SEO, LOGO_BASE } from './src/data.mjs';
 import { TAGS } from './src/tags.mjs';
 
 // Az ügynökségadatok forrása: src/ugynoksegek.json (export: 2026-10-11).
 // A design régi listájából (data.mjs → AGENCIES) csak a sorrend, az értékelés és a logó jön.
 const DB = JSON.parse(await readFile('src/ugynoksegek.json', 'utf8'));
+// Letöltött logók (scripts/fetch-logos.mjs) → /logos/<fájl>
+const LOGOS = JSON.parse(await readFile('src/logos.json', 'utf8').catch(() => '{}'));
 
 const OUT = 'public';
 const SITE = (process.env.SITE_URL || 'https://ugynoksegek.pmdev.hu').replace(/\/$/, '');
@@ -46,7 +48,7 @@ const companies = DB.companies.map(c => {
     ok: c.status === 'kész' || !!(old && d), order: old ? old.order : Infinity,
     tagSlugs: TAGS.filter(t => (c.services || []).some(t.m)).map(t => t.slug),
     rawTags: (c.services?.length ? c.services : old?.tags || []).slice(0, 3), services: c.services || [],
-    logo: old ? LOGO_BASE + old.logo : null, ini: ini(c.name), partner: PARTNERS.includes(c.name),
+    logo: LOGOS[c.slug] ? `/logos/${LOGOS[c.slug].file}` : old ? LOGO_BASE + old.logo : null, ini: ini(c.name),
     stars: old ? stars(old.r) : '', r: old ? old.r.toFixed(1).replace('.', ',') : '',
   };
 }).filter(c => c.ok);
@@ -131,7 +133,6 @@ const footer = `<footer class="ftr"><div class="wrap">
 </div>
 <div class="fbot"><span>© 2026 Ügynökségkereső</span><span>Magyar · <a href="#" aria-disabled="true" title="Hamarosan">English</a></span></div>
 </div></footer>`;
-const footerSmall = `<footer class="ftr ftr-s"><div class="wrap"><span class="b">Ügynökségkereső</span><a class="first" href="/kivalasztasi-elvek/">A listák kiválasztási elvei</a><a href="/aszf/">ÁSZF</a><a href="/adatvedelem/">Adatvédelmi tájékoztató</a><span class="c">© 2026</span></div></footer>`;
 const end = '\n</body>\n</html>\n';
 
 // ---------- Kezdőlap ----------
@@ -186,7 +187,7 @@ ${featured.map(c => `<a class="fsm" href="${href(c)}"><span class="ar">↗</span
 <section class="wrap top5 d-only">
 <div class="sec-h"><div><div class="eyebrow">ONLINE MARKETING ÜGYNÖKSÉGEK · 2026</div><h2 class="h2">A lista eleje</h2></div><a class="btn-ghost" href="${href(om)}">Teljes lista →</a></div>
 <div class="t5">
-${agencies.slice(0, 5).map(a => `<div class="t5row"><span class="rank">${a.rank}</span>${logo(a, 'l52', 52)}<span class="nm">${esc(a.n)}</span><span class="ds">${esc(a.d.length > 140 ? a.d.slice(0, a.d.lastIndexOf(' ', 140)) + '…' : a.d)}</span><span class="rate">${rating(a)}</span><a class="btn" ${ext(a)}>Kapcsolat ↗</a></div>`).join('\n')}
+${HOME_TOP.map(n => byName[n]).filter(Boolean).map((a, i) => ({ ...a, rank: String(i + 1).padStart(2, '0') })).map(a => `<div class="t5row"><span class="rank">${a.rank}</span>${logo(a, 'l52', 52)}<span class="nm">${esc(a.n)}</span><span class="ds">${esc(a.d.length > 140 ? a.d.slice(0, a.d.lastIndexOf(' ', 140)) + '…' : a.d)}</span><span class="rate">${rating(a)}</span><a class="btn" ${ext(a)}>Kapcsolat ↗</a></div>`).join('\n')}
 </div>
 </section>
 
@@ -209,13 +210,16 @@ const pageLd = ({ url, name, desc, crumbs, list }) => jsonld({ '@context': 'http
   { '@type': 'ItemList', '@id': SITE + url + '#lista', name, numberOfItems: list.length, itemListOrder: 'https://schema.org/ItemListOrderAscending', itemListElement: list.map(orgLd) },
 ] });
 
-function listBody(list, curTag) {
-  const partners = list.filter(a => a.partner);
+const byName = Object.fromEntries(companies.map(c => [c.n, c]));
+function listBody(list, curTag, curCat) {
+  const pNames = Object.keys(PARTNERS).filter(n => curCat && PARTNERS[n].includes(curCat) && byName[n]);
+  const partners = pNames.map(n => list.find(a => a.n === n) || byName[n]);
+  list = list.map(a => ({ ...a, partner: pNames.includes(a.n) }));
   return `
 ${partners.length ? `<section class="partners" aria-label="Kiemelt partner">
 <div class="p-h"><span class="l">KIEMELT PARTNER${partners.length > 1 ? 'EK' : ''}</span><span class="paid">FIZETETT MEGJELENÉS</span><span class="n">A kiemelés nem befolyásolja a lista sorrendjét. <a href="/kivalasztasi-elvek/">Részletek</a></span></div>
 <div class="p-grid${partners.length === 1 ? ' one' : ''}">
-${partners.map(a => `<article class="pcard"><div class="top">${logo(a, 'l72', 72)}<div style="min-width:0"><span class="pbadge">★ KIEMELT PARTNER</span><h3>${esc(a.n)}</h3><div class="meta">${rating(a, ` · #${a.rank} a listán`)}</div></div></div>
+${partners.map(a => `<article class="pcard"><div class="top">${logo(a, 'l72', 72)}<div style="min-width:0"><span class="pbadge">★ KIEMELT PARTNER</span><h3>${esc(a.n)}</h3><div class="meta">${rating(a, list.some(x => x.n === a.n) ? ` · #${a.rank} a listán` : '')}</div></div></div>
 <p>${esc(a.d)}</p>
 <div class="tags">${tagLinks(a, curTag)}</div>
 <div class="act"><a class="btn" ${ext(a)}>Kapcsolat ↗</a><a class="u" ${ext(a)}>${esc(a.url)}</a><span class="ad">Hirdetés</span></div></article>`).join('\n')}
@@ -256,7 +260,7 @@ const topTags = (list, skip) => {
 
 function listingPage({ url, title, desc, crumbs, h1, q, intro, list, seoH, seo, curCat, curTag, upd = true }) {
   const om = CATS.find(c => c.n === 'Online marketing ügynökségek');
-  const body = list.length ? listBody(list, curTag)
+  const body = list.length ? listBody(list, curTag, curCat)
     : `<div class="empty"><h3>A lista összeállítás alatt</h3>Hamarosan itt találod a cégeket. Addig nézd meg az <a href="${href(om)}">online marketing ügynökségek toplistáját</a>.</div>`;
   return head(title, desc, pageLd({ url, name: h1, desc, crumbs, list })) + header(curCat ? 'cat' : '') + `
 <main>
@@ -271,7 +275,7 @@ ${topTags(list, curTag)}
 ${sideNav(curCat)}
 </div>
 </main>
-` + seoBlock(seoH, seo.map(([h, p]) => ({ h, p }))) + footerSmall + end;
+` + seoBlock(seoH, seo.map(([h, p]) => ({ h, p }))) + footer + end;
 }
 
 const category = cat => listingPage({
@@ -339,6 +343,7 @@ await out('_headers', HEADERS);
 await out('favicon.svg', FAVICON);
 await copyFile('src/styles.css', `${OUT}/styles.css`);
 await copyFile('src/app.js', `${OUT}/app.js`);
+await cp('src/logos', `${OUT}/logos`, { recursive: true }).catch(() => {});
 console.log(`Kész: ${OUT}/ (${CATS.length} toplista, ${companies.length} cég)`);
 for (const c of CATS) console.log(`  ${String(LISTS[c.n].length).padStart(3)}  ${c.n}`);
 console.log(`Címkeoldalak: ${LIVE_TAGS.length}`);

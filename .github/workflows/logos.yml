@@ -1,0 +1,41 @@
+name: Logók letöltése
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Minden logó újratöltése'
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - 'src/ugynoksegek.json'
+      - 'scripts/fetch-logos.mjs'
+      - '.github/workflows/logos.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: logos
+  cancel-in-progress: false
+
+jobs:
+  logos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/fetch-logos.mjs ${{ inputs.force && '--force' || '' }}
+      - name: Commit
+        run: |
+          git add src/logos src/logos.json
+          if git diff --cached --quiet; then echo "Nincs változás"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Logók frissítése (automatikus)"
+          git push
