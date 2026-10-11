@@ -88,6 +88,7 @@ const head = (title, desc, ld = '') => `<!doctype html>
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="noindex, nofollow, noarchive">
+<script>if(location.hostname.endsWith('.pages.dev'))location.replace('https://ugynoksegek.pmdev.hu'+location.pathname+location.search+location.hash);</script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
