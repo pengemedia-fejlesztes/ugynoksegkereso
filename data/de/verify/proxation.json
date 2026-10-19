@@ -1,0 +1,17 @@
+{
+ "slug": "proxation",
+ "website": "https://www.proxation.de",
+ "final_url": "https://proxation.de/",
+ "status": 200,
+ "error": null,
+ "title": "eCommerce Agentur für kundenzentrierte Webshops",
+ "description": "Als Shopware & E-Commerce Agentur aus München und zertifizierter Shopware Solutions Partner setzen wir Ihre Wünsche und Vorstellungen elegant und effizient in einen modernen Online Shop um.",
+ "checked": "2026-10-19",
+ "pages": [
+  {
+   "url": "https://proxation.de/",
+   "status": 200,
+   "text": "eCommerce Agentur für kundenzentrierte Webshops"
+  }
+ ]
+}

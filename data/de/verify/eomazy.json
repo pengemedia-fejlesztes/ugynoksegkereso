@@ -1,0 +1,27 @@
+{
+ "slug": "eomazy",
+ "website": "https://eomazy.de",
+ "final_url": "https://www.eomazy.de/",
+ "status": 200,
+ "error": null,
+ "title": "eomazy is under construction",
+ "description": "Deine Amazon Agentur",
+ "checked": "2026-10-19",
+ "pages": [
+  {
+   "url": "https://www.eomazy.de/",
+   "status": 200,
+   "text": "eomazy is under construction \r\n Entschuldigung, wir führen einige Arbeiten an der Website durch.\n Danke für deine Geduld. Wir arbeiten gerade an der Website und sind in Kürze wieder zurück."
+  },
+  {
+   "url": "https://www.eomazy.de/rolunk/",
+   "status": 200,
+   "text": "eomazy is under construction \r\n Entschuldigung, wir führen einige Arbeiten an der Website durch.\n Danke für deine Geduld. Wir arbeiten gerade an der Website und sind in Kürze wieder zurück."
+  },
+  {
+   "url": "https://www.eomazy.de/kapcsolat/",
+   "status": 200,
+   "text": "eomazy is under construction \r\n Entschuldigung, wir führen einige Arbeiten an der Website durch.\n Danke für deine Geduld. Wir arbeiten gerade an der Website und sind in Kürze wieder zurück."
+  }
+ ]
+}

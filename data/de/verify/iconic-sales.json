@@ -1,0 +1,18 @@
+{
+ "slug": "iconic-sales",
+ "website": "https://www.iconic-sales.de",
+ "final_url": "https://www.iconic-sales.de",
+ "status": 0,
+ "error": "ENOTFOUND",
+ "title": "",
+ "description": "",
+ "checked": "2026-10-19",
+ "pages": [
+  {
+   "url": "https://www.iconic-sales.de",
+   "status": 0,
+   "error": "ENOTFOUND",
+   "text": ""
+  }
+ ]
+}

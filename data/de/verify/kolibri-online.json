@@ -1,0 +1,17 @@
+{
+ "slug": "kolibri-online",
+ "website": "https://www.kolibri-online.de",
+ "final_url": "https://www.kolibri-online.de/",
+ "status": 403,
+ "error": null,
+ "title": "403 Forbidden",
+ "description": "",
+ "checked": "2026-10-19",
+ "pages": [
+  {
+   "url": "https://www.kolibri-online.de/",
+   "status": 403,
+   "text": "403 Forbidden \r\n 403 Forbidden\n openresty/1.27.1.1"
+  }
+ ]
+}

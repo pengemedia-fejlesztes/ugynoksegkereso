@@ -1,0 +1,18 @@
+{
+ "slug": "schoenborn-media",
+ "website": "https://www.schoenborn-media.de",
+ "final_url": "https://www.schoenborn-media.de",
+ "status": 0,
+ "error": "ENOTFOUND",
+ "title": "",
+ "description": "",
+ "checked": "2026-10-19",
+ "pages": [
+  {
+   "url": "https://www.schoenborn-media.de",
+   "status": 0,
+   "error": "ENOTFOUND",
+   "text": ""
+  }
+ ]
+}

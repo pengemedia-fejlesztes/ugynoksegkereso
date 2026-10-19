@@ -1,0 +1,17 @@
+{
+ "slug": "takevalue",
+ "website": "https://www.takevalue.de/",
+ "final_url": "https://www.takevalue.de/",
+ "status": 403,
+ "error": null,
+ "title": "Error 403 Forbidden",
+ "description": "",
+ "checked": "2026-10-19",
+ "pages": [
+  {
+   "url": "https://www.takevalue.de/",
+   "status": 403,
+   "text": "Error 403 Forbidden \n 403 Forbidden"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "slug": "globalist",
+ "website": "https://www.globalist.de",
+ "final_url": "https://www.globalist.de",
+ "status": 0,
+ "error": "ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR",
+ "title": "",
+ "description": "",
+ "checked": "2026-10-19",
+ "pages": [
+  {
+   "url": "https://www.globalist.de",
+   "status": 0,
+   "error": "ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR",
+   "text": ""
+  }
+ ]
+}

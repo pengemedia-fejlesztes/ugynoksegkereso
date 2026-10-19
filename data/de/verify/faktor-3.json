@@ -1,0 +1,18 @@
+{
+ "slug": "faktor-3",
+ "website": "https://www.faktor3.de",
+ "final_url": "https://www.faktor3.de",
+ "status": 0,
+ "error": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+ "title": "",
+ "description": "",
+ "checked": "2026-10-19",
+ "pages": [
+  {
+   "url": "https://www.faktor3.de",
+   "status": 0,
+   "error": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+   "text": ""
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "slug": "brandsatz",
+ "website": "https://www.brandsatz.de",
+ "final_url": "https://www.brandsatz.de/",
+ "status": 200,
+ "error": null,
+ "title": "",
+ "description": "",
+ "checked": "2026-10-19",
+ "pages": [
+  {
+   "url": "https://www.brandsatz.de/",
+   "status": 200,
+   "text": ""
+  }
+ ]
+}

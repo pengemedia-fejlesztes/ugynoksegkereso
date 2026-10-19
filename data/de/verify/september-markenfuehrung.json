@@ -1,0 +1,18 @@
+{
+ "slug": "september-markenfuehrung",
+ "website": "https://www.september.de",
+ "final_url": "https://www.september.de",
+ "status": 0,
+ "error": "DEPTH_ZERO_SELF_SIGNED_CERT",
+ "title": "",
+ "description": "",
+ "checked": "2026-10-19",
+ "pages": [
+  {
+   "url": "https://www.september.de",
+   "status": 0,
+   "error": "DEPTH_ZERO_SELF_SIGNED_CERT",
+   "text": ""
+  }
+ ]
+}

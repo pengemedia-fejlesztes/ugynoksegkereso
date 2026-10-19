@@ -1,0 +1,18 @@
+{
+ "slug": "adsmasters",
+ "website": "https://adsmasters.de",
+ "final_url": "https://adsmasters.de",
+ "status": 0,
+ "error": "AbortError",
+ "title": "",
+ "description": "",
+ "checked": "2026-10-19",
+ "pages": [
+  {
+   "url": "https://adsmasters.de",
+   "status": 0,
+   "error": "AbortError",
+   "text": ""
+  }
+ ]
+}

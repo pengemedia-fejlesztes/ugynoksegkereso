@@ -1,0 +1,18 @@
+{
+ "slug": "exportarts",
+ "website": "https://www.exportarts.de/",
+ "final_url": "https://www.exportarts.de/",
+ "status": 0,
+ "error": "CERT_HAS_EXPIRED",
+ "title": "",
+ "description": "",
+ "checked": "2026-10-19",
+ "pages": [
+  {
+   "url": "https://www.exportarts.de/",
+   "status": 0,
+   "error": "CERT_HAS_EXPIRED",
+   "text": ""
+  }
+ ]
+}
