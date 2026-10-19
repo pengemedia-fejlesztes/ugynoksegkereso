@@ -1,2150 +1,964 @@
 {
  "candidates": [
   {
-   "slug": "4imedia",
-   "name": "4iMEDIA GmbH",
-   "website": "https://www.4imedia.com",
-   "city": "Leipzig",
-   "categories": [
-    "Content-Marketing-Agenturen"
-   ],
-   "services": [
-    "Corporate Publishing",
-    "Kundenmagazine",
-    "Geschäfts- und Nachhaltigkeitsberichte",
-    "SEO-Content",
-    "Social Media"
-   ],
-   "note": "Leipziger Kommunikationsagentur (seit 2000) für Corporate Publishing, Redaktion und digitale Kommunikation inkl. GEO/KI-Sichtbarkeit.",
-   "evidence": "https://www.designrush.com/agency/profile/4imedia-gmbh"
-  },
-  {
-   "slug": "4tfm-e-commerce-agentur",
-   "name": "4TFM E-Commerce Agentur GmbH",
-   "website": "https://www.4tfm.de",
-   "city": "Berlin",
-   "categories": [
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "Shopify-Onlineshops",
-    "Shop-Migration",
-    "B2B-Shoplösungen",
-    "ERP-/CRM-Integration",
-    "Theme-Design"
-   ],
-   "note": "Berliner Shopify-Agentur, die seit 2015 individuelle Onlineshops, Migrationen und B2B-Lösungen realisiert.",
-   "evidence": "https://www.sortlist.co.uk/agency/ecommerce-agentur"
-  },
-  {
-   "slug": "aaads",
-   "name": "AAADS",
-   "website": "https://www.aaads.de",
-   "city": "Köln",
-   "categories": [
-    "Google-Ads-Agenturen",
-    "Meta-Ads-Agenturen"
-   ],
-   "services": [
-    "Meta Ads",
-    "Google Ads",
-    "Creative Design",
-    "Landingpages",
-    "E-Commerce-Beratung"
-   ],
-   "note": "Kölner Boutique-Agentur für Performance Marketing mit Fokus auf Meta Ads und Google Ads, maximal 30 Kunden parallel.",
-   "evidence": "https://www.business-on.de/anbieter/aaads"
-  },
-  {
-   "slug": "ad-agents",
-   "name": "Ad Agents",
-   "website": "https://www.ad-agents.com",
-   "city": "Herrenberg",
-   "categories": [
-    "Amazon-Agenturen",
-    "Online-Marketing-Agenturen"
-   ],
-   "services": [
-    "Amazon SEO",
-    "Amazon SEA",
-    "Performance-Marketing"
-   ],
-   "note": "Performance-Agentur aus Herrenberg, die seit 2015 Amazon SEO und Amazon SEA anbietet.",
-   "evidence": "https://www.amalytix.com/amazon-agentur/ad-agents/"
-  },
-  {
-   "slug": "adcologne",
-   "name": "adcologne",
-   "website": "https://www.adcologne.de",
-   "city": "Köln",
-   "categories": [
-    "Google-Ads-Agenturen"
-   ],
-   "services": [
-    "Google Ads",
-    "SEA-Beratung",
-    "Google Shopping",
-    "White-Label-SEA"
-   ],
-   "note": "Kölner SEA-Spezialist seit 2007, der laut Verzeichnis den Status Google Ads Premier Partner angibt.",
-   "evidence": "https://www.business-on.de/anbieter/adcologne"
-  },
-  {
-   "slug": "admates",
-   "name": "adMates",
-   "website": "https://www.admates.de/",
-   "city": "München",
-   "categories": [
-    "Online-Marketing-Agenturen",
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "SEO",
-    "Google Ads",
-    "Meta Ads",
-    "LinkedIn Ads",
-    "GEO"
-   ],
-   "note": "2017 gegründete Full-Service-Online-Marketing-Agentur aus München für SEO, SEA und Social Ads.",
-   "evidence": "https://www.wirtschaftsforum.de/admates-gmbh"
-  },
-  {
-   "slug": "adpoint",
-   "name": "AdPoint",
-   "website": "https://adpoint.de",
-   "city": "Hannover",
-   "categories": [
-    "Google-Ads-Agenturen"
-   ],
-   "services": [
-    "Google Ads",
-    "Google Shopping",
-    "Produktdaten-Management",
-    "Microsoft Ads",
-    "SEA-Beratung"
-   ],
-   "note": "Hannoversche Agentur für digitale Werbung, deren Ads-Experten laut Verzeichnis als Google Premier Partner ausschließlich im Google-Ökosystem arbeiten.",
-   "evidence": "https://www.wirtschaftsforum.de/adpoint-gmbh"
-  },
-  {
-   "slug": "adseed",
-   "name": "adseed",
-   "website": "https://www.adseed.de",
-   "city": "Leipzig",
-   "categories": [
-    "Google-Ads-Agenturen",
-    "Meta-Ads-Agenturen"
-   ],
-   "services": [
-    "Google Ads",
-    "Microsoft Ads",
-    "Social Ads",
-    "YouTube Ads",
-    "Web-Analyse"
-   ],
-   "note": "Unabhängige Performance-Marketing-Agentur aus Leipzig seit 2007 mit Fokus auf Paid Search und Social Ads, laut Verzeichnis Google Premier Partner.",
-   "evidence": "https://www.campixx.de/agenturen/sea/adseed-gmbh/"
-  },
-  {
-   "slug": "adsmasters",
-   "name": "AdsMasters",
-   "website": "https://adsmasters.de",
-   "city": "Düsseldorf",
-   "categories": [
-    "Amazon-Agenturen"
-   ],
-   "services": [
-    "Amazon PPC",
-    "Amazon SEO",
-    "Seller- und Vendor-Betreuung",
-    "Internationale Expansion"
-   ],
-   "note": "Düsseldorfer Full-Service-Amazon-Agentur, 2017 von Tobias Dziuba gegründet.",
-   "evidence": "https://www.drweb.de/adsmasters/"
-  },
-  {
-   "slug": "alexanderplatz-hamburg",
-   "name": "Alexanderplatz Hamburg GmbH",
-   "website": "https://www.alexanderplatz.de",
+   "slug": "ijonis",
+   "name": "IJONIS",
+   "website": "https://ijonis.com/",
    "city": "Hamburg",
    "categories": [
-    "Content-Marketing-Agenturen"
-   ],
-   "services": [
-    "Social-Media-Strategie",
-    "Content-Produktion",
-    "Redaktionsplanung",
-    "Community Management",
-    "Social Ads"
-   ],
-   "note": "Inhabergeführte Hamburger Social-Media-Agentur in Bahrenfeld mit Content Marketing als eigener Leistung inkl. Foto- und Videoproduktion.",
-   "evidence": "https://www.business-on.de/anbieter/alexanderplatz-hamburg"
-  },
-  {
-   "slug": "ama-x",
-   "name": "ama-X",
-   "website": "https://ama-x.de",
-   "city": "München",
-   "categories": [
-    "Amazon-Agenturen"
-   ],
-   "services": [
-    "Amazon SEO",
-    "Amazon Advertising",
-    "Listing-Optimierung",
-    "Content-Strategie"
-   ],
-   "note": "Münchner Amazon-Agentur seit 2015, nach eigenen Angaben über 130 betreute Marken.",
-   "evidence": "https://www.sortlist.co.uk/agency/ama-x"
-  },
-  {
-   "slug": "ameo",
-   "name": "ameo",
-   "website": "https://www.ameo.de",
-   "city": "Hamburg",
-   "categories": [
-    "Amazon-Agenturen"
-   ],
-   "services": [
-    "Vendor- und Seller-Beratung",
-    "Listing-Optimierung",
-    "Amazon Advertising",
-    "Review-Management"
-   ],
-   "note": "Hamburger Amazon-Agentur seit 2015 mit über 40 Mitarbeitenden, übernahm 2024 intomarkets; 2026 von mindgruve übernommen.",
-   "evidence": "https://retail-news.de/ameo-intomarkets-uebernahme-amazon-agentur/"
-  },
-  {
-   "slug": "amz-advertise",
-   "name": "AMZ Advertise",
-   "website": "https://amz-advertise.de",
-   "city": "Flensburg",
-   "categories": [
-    "Amazon-Agenturen"
-   ],
-   "services": [
-    "Amazon PPC Management",
-    "Amazon DSP",
-    "A+ Content",
-    "Produktfotos"
-   ],
-   "note": "Amazon-Performance-Agentur aus Flensburg mit Fokus auf TACoS/Gewinn, Amazon Advanced Partner.",
-   "evidence": "https://omr.com/de/reviews/service/amz-advertise"
-  },
-  {
-   "slug": "amz-marketing",
-   "name": "AMZ-Marketing",
-   "website": "https://www.amz-marketing.de",
-   "city": "Regensburg",
-   "categories": [
-    "Amazon-Agenturen"
-   ],
-   "services": [
-    "Seller-Central-Betreuung",
-    "Vendor-Central-Betreuung",
-    "Amazon PPC",
-    "Listing-Optimierung"
-   ],
-   "note": "Regensburger Agentur, seit 2014 ausschließlich auf Amazon spezialisiert, Amazon Platinum Partner.",
-   "evidence": "https://omr.com/de/reviews/contenthub/interview-david-schmidbauer-amz-marketing"
-  },
-  {
-   "slug": "amz-mala",
-   "name": "amz.mala",
-   "website": "https://amzmala.de",
-   "city": "Dortmund",
-   "categories": [
-    "Amazon-Agenturen"
-   ],
-   "services": [
-    "Listing-Optimierung",
-    "Account-Management",
-    "Amazon Advertising",
-    "Review-Management",
-    "Markenaufbau"
-   ],
-   "note": "Digitalagentur für Online-Marktplätze mit Sitz in Dortmund, Schwerpunkt Amazon PPC und SEO.",
-   "evidence": "https://www.amalytix.com/amazon-agentur/amz-mala/"
-  },
-  {
-   "slug": "analyticaa",
-   "name": "AnalyticaA",
-   "website": "https://www.analyticaa.de",
-   "city": "München",
-   "categories": [
-    "Google-Ads-Agenturen"
-   ],
-   "services": [
-    "Google Ads",
-    "Web-Analyse",
-    "Tracking",
-    "Social Media"
-   ],
-   "note": "Münchner Agentur, im Google-Ads-Agenturvergleich von Dr. Web als Google Partner geführt.",
-   "evidence": "https://www.drweb.de/google-ads-agentur-vergleich/"
-  },
-  {
-   "slug": "arboro",
-   "name": "arboro",
-   "website": "https://www.arboro.de",
-   "city": "Stuttgart",
-   "categories": [
-    "Google-Ads-Agenturen"
-   ],
-   "services": [
-    "Google Ads",
-    "SEA-Beratung",
-    "Google Shopping",
-    "Kampagnenoptimierung"
-   ],
-   "note": "Stuttgarter Agentur, die sich als Google Premier Partner mit zertifizierten Google-Experten bezeichnet.",
-   "evidence": "https://www.arboro.de/en/glossary/sea-stuttgart"
-  },
-  {
-   "slug": "artaxo",
-   "name": "artaxo",
-   "website": "https://www.artaxo.com",
-   "city": "Hamburg",
-   "categories": [
-    "Content-Marketing-Agenturen",
-    "Google-Ads-Agenturen",
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "Google Ads",
-    "SEO",
-    "SEA-Beratung",
-    "KI-Sichtbarkeit",
-    "Content Marketing",
-    "Suchmaschinenmarketing",
-    "GEO"
-   ],
-   "note": "Hamburger Agentur mit Schwerpunkt SEO, SEA und Sichtbarkeit in generativer KI, bei OMR Reviews als Google-Ads-Agentur gelistet.",
-   "evidence": "https://omr.com/de/reviews/service-category/google-ads-agencies/hamburg"
-  },
-  {
-   "slug": "artundweise",
-   "name": "artundweise GmbH",
-   "website": "https://www.artundweise.de",
-   "city": "Bremen",
-   "categories": [
-    "Webdesign-Agenturen",
-    "Content-Marketing-Agenturen",
-    "Online-Marketing-Agenturen"
-   ],
-   "services": [
-    "Content-Strategie",
-    "Redaktion",
-    "Webdesign",
-    "SEO",
-    "Foto- und Videoproduktion",
-    "Paid Social"
-   ],
-   "note": "Bremer Full-Service-Agentur (seit 1991) für Content Marketing, Webdesign, SEO und Social Media mit Modell 'Marketingteam as a Service'.",
-   "evidence": "https://www.campixx.de/agenturen/content-marketing/artundweise/"
-  },
-  {
-   "slug": "aufgesang",
-   "name": "Aufgesang",
-   "website": "https://www.aufgesang.de",
-   "city": "Hannover",
-   "categories": [
-    "Content-Marketing-Agenturen",
-    "Google-Ads-Agenturen",
-    "KI-SEO-Agenturen",
-    "Online-Marketing-Agenturen",
-    "PR-Agenturen",
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "Generative Engine Optimization",
-    "SEO",
-    "Performance Marketing",
-    "Online-PR",
-    "Wikipedia-PR",
-    "GEO / LLMO",
-    "Google Ads",
-    "Meta Ads"
-   ],
-   "note": "Inhabergeführte Online-Marketing-Agentur aus Hannover (gegr. 1998) mit Schwerpunkt GEO, SEO, Performance Marketing und Online-PR.",
-   "evidence": "https://www.campixx.de/agenturen/seo/aufgesang-gmbh/"
-  },
-  {
-   "slug": "bloofusion",
-   "name": "Bloofusion",
-   "website": "https://www.bloofusion.de",
-   "city": "Emsdetten",
-   "categories": [
-    "Amazon-Agenturen",
-    "Google-Ads-Agenturen",
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "Google Ads",
-    "Microsoft Advertising",
-    "Amazon Ads",
-    "SEO",
-    "SEA / Google Ads",
-    "E-Commerce-Marketing",
-    "Shop-Optimierung"
-   ],
-   "note": "Online-Marketing-Agentur mit Standorten in Emsdetten und Münster, die im SEA-Bereich die komplette Kontobetreuung für Google, Microsoft und Amazon Ads übernimmt.",
-   "evidence": "https://www.business-on.de/performance-marketing-agenturen/hannover"
-  },
-  {
-   "slug": "bold-creators-club",
-   "name": "Bold Creators Club",
-   "website": "https://www.boldcreatorsclub.com",
-   "city": "München",
-   "categories": [
-    "Content-Marketing-Agenturen"
-   ],
-   "services": [
-    "Vertical Video",
-    "TikTok-Content",
-    "Social-Media-Content",
-    "Creator-Produktion"
-   ],
-   "note": "Münchner Vertical-Video-Spezialist mit rund 40-köpfigem Team, der sich auf TikTok-Awards beruft.",
-   "evidence": "https://join.com/companies/boldcreatorsclub/16525427-werkstudent-social-media"
-  },
-  {
-   "slug": "bow-bayerisches-onlinewerk",
-   "name": "BOW – Bayerisches Onlinewerk",
-   "website": "https://www.bayerisches-onlinewerk.de",
-   "city": "München",
-   "categories": [
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "Shopware-Onlineshops",
-    "Corporate Websites",
-    "App-Entwicklung"
-   ],
-   "note": "Shopware-Agentur in München, die Industrie, Handel und KMU mit Onlineshops, Corporate Websites und Apps betreut.",
-   "evidence": "https://store.shopware.com/bow-bayerisches-onlinewerk.html"
-  },
-  {
-   "slug": "brandsatz",
-   "name": "brandsatz GmbH",
-   "website": "https://www.brandsatz.de",
-   "city": "Hamburg",
-   "categories": [
-    "Content-Marketing-Agenturen"
-   ],
-   "services": [
-    "Content Marketing",
-    "SEO",
-    "Social-Media-Marketing",
-    "Influencer-Marketing",
-    "Texterstellung"
-   ],
-   "note": "Hamburger Agentur (gegründet 2006) für Content-, Social-Media-, Influencer-, Online-Marketing und SEO.",
-   "evidence": "https://www.sortlist.co.uk/agency/brandsatz"
-  },
-  {
-   "slug": "claneo",
-   "name": "Claneo",
-   "website": "https://www.claneo.com",
-   "city": "Berlin",
-   "categories": [
-    "Content-Marketing-Agenturen",
-    "KI-SEO-Agenturen",
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "Generative Engine Optimization",
-    "Internationales SEO",
-    "Offpage-Optimierung",
-    "Content Marketing",
-    "Digital PR",
-    "GEO / LLMO",
-    "GEO"
-   ],
-   "note": "Berliner Search- und Content-Agentur für internationales SEO und GEO, Mitgründer schrieb ein Fachbuch zu Generative Engine Optimization.",
-   "evidence": "https://otterly.ai/blog/geo-vs-seo-claneo-matthaeus-michalik/"
-  },
-  {
-   "slug": "construktiv",
-   "name": "construktiv GmbH",
-   "website": "https://www.construktiv.de",
-   "city": "Bremen",
-   "categories": [
-    "Content-Marketing-Agenturen",
-    "Online-Marketing-Agenturen"
-   ],
-   "services": [
-    "Content Marketing",
-    "SEO",
-    "SEA",
-    "Social Media"
-   ],
-   "note": "Digitalagentur mit Standorten in Bremen, Berlin und Erfurt, die Content Marketing mit SEO, SEA und Social Media anbietet.",
-   "evidence": "https://www.stepstone.de/cmp/de/construktiv-GmbH-64166/kontakte.html"
-  },
-  {
-   "slug": "context-studios",
-   "name": "Context Studios",
-   "website": "https://www.contextstudios.ai",
-   "city": "Berlin",
-   "categories": [
-    "KI-Agenten-Entwickler",
-    "KI-SEO-Agenturen"
+    "KI-Agenten-Entwickler"
    ],
    "services": [
     "KI-Agenten-Entwicklung",
-    "Chatbot-Entwicklung",
-    "RAG-Systeme",
+    "Workflow-Automatisierung",
     "LLM-Integration",
-    "GEO-Audit",
-    "AI-Visibility-Monitoring"
+    "Individuelle Softwareentwicklung"
    ],
-   "note": "Berliner KI-Agentur, die KI-Agenten, Chatbots (GPT, Claude, Gemini) mit RAG entwickelt und zusätzlich GEO/AEO-Leistungen anbietet.",
-   "evidence": "https://www.contextstudios.ai/de/standorte/berlin/ki-agenten/entwicklung"
+   "note": "Hamburger KI-Agentur, die KI-Agenten, automatisierte Workflows und Softwareplattformen für den Mittelstand entwickelt.",
+   "evidence": "https://sellwerk.de/firmenprofil/ijonis",
+   "batch": 2
   },
   {
-   "slug": "dasaundo",
-   "name": "dasAundO",
-   "website": "https://dasaundo.de",
-   "city": "Hamburg",
-   "categories": [
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "Webentwicklung",
-    "E-Commerce",
-    "WordPress",
-    "Webflow",
-    "Contao"
-   ],
-   "note": "Hamburger Digitalagentur für nachhaltige, SEO-optimierte Webentwicklung und E-Commerce mit Contao, WordPress oder Webflow.",
-   "evidence": "https://www.drweb.de/webflow-agentur-vergleich/"
-  },
-  {
-   "slug": "die-sea-experten",
-   "name": "Die SEA-Experten",
-   "website": "https://www.sea-experten.de",
-   "city": "Berlin",
-   "categories": [
-    "Google-Ads-Agenturen"
-   ],
-   "services": [
-    "Google Ads",
-    "Google Shopping",
-    "Performance Max",
-    "YouTube Ads",
-    "Microsoft Ads",
-    "Conversion-Tracking"
-   ],
-   "note": "Berliner Agentur mit ausschließlichem Fokus auf Google Ads für E-Commerce und Mittelstand, laut Pressemitteilung mehrfach Google Premier Partner.",
-   "evidence": "https://www.openpr.de/news/1245725/DIE-SEA-EXPERTEN-renommierte-Google-Ads-Agentur-wird-zum-zweiten-Mal-Google-Premium-Partner.html"
-  },
-  {
-   "slug": "dreikon",
-   "name": "DREIKON",
-   "website": "https://www.dreikon.de",
-   "city": "Münster",
-   "categories": [
-    "Google-Ads-Agenturen",
-    "KI-SEO-Agenturen",
-    "Meta-Ads-Agenturen",
-    "Online-Marketing-Agenturen",
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "SEO",
-    "Google Ads",
-    "Facebook- und Instagram-Ads",
-    "Content-Marketing",
-    "Webentwicklung",
-    "Generative Engine Optimization",
-    "Performance Marketing"
-   ],
-   "note": "Münsteraner Agentur, die SEO/GEO, Google Ads und Facebook-/Instagram-Kampagnen kombiniert.",
-   "evidence": "https://www.influencer-hero.com/de/blogs/top-facebook-advertising-agencies-in-germany"
-  },
-  {
-   "slug": "efly-marketplace-services",
-   "name": "eFLY Marketplace Services",
-   "website": "https://www.efly-amz.com",
-   "city": "Stuttgart",
-   "categories": [
-    "Amazon-Agenturen"
-   ],
-   "services": [
-    "Marketplace-Management",
-    "Amazon Advertising",
-    "Influencer-Marketing",
-    "Account-Management"
-   ],
-   "note": "Full-Service-Marktplatzagentur aus Stuttgart mit über 250 Kunden, offizieller Amazon Ads Partner.",
-   "evidence": "https://www.kauflandglobalmarketplace.com/en/partner_agency/efly-marketplace-services-gmbh/"
-  },
-  {
-   "slug": "eminded",
-   "name": "eMinded",
-   "website": "https://www.eminded.de",
+   "slug": "appleute",
+   "name": "appleute",
+   "website": "https://appleute.de/",
    "city": "München",
    "categories": [
-    "Google-Ads-Agenturen"
+    "KI-Agenten-Entwickler"
    ],
    "services": [
-    "Google Ads",
-    "Google Shopping",
-    "Performance Max",
-    "Microsoft Ads",
-    "YouTube Ads"
+    "KI-Entwicklung",
+    "Chatbot-Entwicklung",
+    "Prozessautomatisierung",
+    "App-Entwicklung",
+    "MLOps"
    ],
-   "note": "Inhabergeführte Münchner SEA-Agentur, laut Vergleichsportalen Google Premier Partner und Microsoft Advertising Elite Partner.",
-   "evidence": "https://www.drweb.de/eminded/"
+   "note": "Münchner KI- und App-Agentur für KMU im DACH-Raum mit Prototyp-zu-MVP-Ansatz und DSGVO-konformer Architektur.",
+   "evidence": "https://www.appleute.de/en/ai-agency/",
+   "batch": 2
   },
   {
-   "slug": "eology",
-   "name": "eology GmbH",
-   "website": "https://www.eology.de",
-   "city": "Volkach",
+   "slug": "dida",
+   "name": "dida Datenschmiede GmbH",
+   "website": "https://dida.do/",
+   "city": "Berlin",
    "categories": [
-    "Content-Marketing-Agenturen",
-    "Google-Ads-Agenturen",
-    "KI-SEO-Agenturen",
-    "Online-Marketing-Agenturen",
-    "SEO-Agenturen"
+    "KI-Agenten-Entwickler"
    ],
    "services": [
-    "Generative Engine Optimization",
-    "LLMO",
-    "SEO",
-    "SEA",
-    "Content Creation",
-    "Tracking",
-    "SEO & GEO",
-    "Performance Marketing"
+    "Maßgeschneiderte KI-Lösungen",
+    "NLP- und LLM-Entwicklung",
+    "Prototyping",
+    "MLOps",
+    "KI-Beratung"
    ],
-   "note": "Online-Marketing-Agentur aus Volkach (ca. 100 Mitarbeitende), die SEO und GEO inkl. LLMO-Leistung anbietet.",
-   "evidence": "https://www.business-on.de/anbieter/eology"
+   "note": "Berliner Firma für angewandtes Machine Learning, die maßgeschneiderte KI-/LLM-Software von der Planung bis zum Deployment entwickelt.",
+   "evidence": "https://dida.do/",
+   "batch": 2
   },
   {
-   "slug": "eom",
-   "name": "EOM – Effektiv Online-Marketing",
-   "website": "https://www.eom.de/",
-   "city": "Hannover",
-   "categories": [
-    "Online-Marketing-Agenturen",
-    "SEO-Agenturen",
-    "Google-Ads-Agenturen"
-   ],
-   "services": [
-    "SEO",
-    "Google Ads",
-    "Social Ads",
-    "Conversion-Optimierung",
-    "Schulungen (EOM Academy)"
-   ],
-   "note": "Hannoveraner Agentur, die seit 2009 zu SEO, Google Ads, Social Ads und Conversion-Optimierung berät.",
-   "evidence": "https://www.business-on.de/anbieter/eom"
-  },
-  {
-   "slug": "eomazy",
-   "name": "eomazy",
-   "website": "https://eomazy.de",
-   "city": "Volkach",
-   "categories": [
-    "Amazon-Agenturen"
-   ],
-   "services": [
-    "Marktforschung",
-    "Amazon-Beratung",
-    "Amazon Content",
-    "Amazon Advertising",
-    "Account-Setup"
-   ],
-   "note": "Online-Marketing-Agentur aus Volkach, spezialisiert auf Marktplätze wie Amazon.",
-   "evidence": "https://www.amalytix.com/amazon-agentur/eomazy/"
-  },
-  {
-   "slug": "exito",
-   "name": "exito",
-   "website": "https://www.exito.de/",
-   "city": "Nürnberg",
-   "categories": [
-    "Online-Marketing-Agenturen"
-   ],
-   "services": [
-    "SEA",
-    "Social Media Ads",
-    "Online-Marketing-Beratung",
-    "E-Commerce-Marketing"
-   ],
-   "note": "1998 gegründete, inhabergeführte Performance-Agentur aus Nürnberg für SEA, Social Ads und Online-Marketing-Beratung.",
-   "evidence": "https://onlinemarketing.de/?p=23197"
-  },
-  {
-   "slug": "experics",
-   "name": "experics digital GmbH",
-   "website": "https://www.experics.de",
-   "city": "Lingen",
-   "categories": [
-    "KI-SEO-Agenturen",
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "Generative Engine Optimization",
-    "E-Commerce-SEO",
-    "Organic Google Shopping",
-    "AI-Shopping-Sichtbarkeit",
-    "GEO",
-    "SEO-Audits",
-    "SEO-Beratung"
-   ],
-   "note": "SEO- und GEO-Boutique aus Lingen (Ems) mit E-Commerce-Fokus und Senior-Team.",
-   "evidence": "https://omr.com/de/reviews/service/experics-de"
-  },
-  {
-   "slug": "exportarts",
-   "name": "Exportarts",
-   "website": "https://www.exportarts.de/",
-   "city": "Frankfurt am Main",
-   "categories": [
-    "Online-Marketing-Agenturen",
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "Webdesign",
-    "SEO",
-    "SEA",
-    "Social Media"
-   ],
-   "note": "Laut OMR auf individuelle Webseiten, SEO, SEA und Social Media spezialisierte Agentur mit Standorten in Frankfurt und Kassel.",
-   "evidence": "https://omr.com/de/reviews/service-category/online-marketing-services/frankfurt-am-main"
-  },
-  {
-   "slug": "faktor-3",
-   "name": "Faktor 3",
-   "website": "https://www.faktor3.de",
-   "city": "Hamburg",
-   "categories": [
-    "PR-Agenturen"
-   ],
-   "services": [
-    "Pressearbeit",
-    "Unternehmenskommunikation",
-    "Technologie-PR",
-    "Content-Kommunikation"
-   ],
-   "note": "Im PR-Journal-Ranking 2025 unter den Top-Agenturen für Technologie und Digitalisierung genannt; 2019 Rang 10 im Pfeffer-Ranking.",
-   "evidence": "https://schwartzpr.de/en/umsatzranking-des-pr-journals-schwartz-pr-festigt-position-unter-top-5-pr-agenturen-fuer-technologie-digitalisierung/"
-  },
-  {
-   "slug": "fischerappelt",
-   "name": "fischerAppelt",
-   "website": "https://www.fischerappelt.de",
-   "city": "Hamburg",
-   "categories": [
-    "PR-Agenturen"
-   ],
-   "services": [
-    "Pressearbeit",
-    "Unternehmenskommunikation",
-    "Krisenkommunikation",
-    "Content-Marketing"
-   ],
-   "note": "Laut HORIZONT weiterhin Platz 1 im Pfeffer-Ranking 2025 der größten PR-Agenturen Deutschlands.",
-   "evidence": "https://www.horizont.net/agenturen/nachrichten/ranking-das-sind-die-groessten-pr-agenturen-in-deutschland-235066"
-  },
-  {
-   "slug": "fogel-podcasting",
-   "name": "Fogel-Podcasting",
-   "website": "https://www.fogel-podcasting.de",
-   "city": "Gütersloh",
-   "categories": [
-    "Content-Marketing-Agenturen"
-   ],
-   "services": [
-    "Corporate Podcasts",
-    "B2B-Podcasts",
-    "Podcast-Produktion",
-    "Podcast-Strategie"
-   ],
-   "note": "Inhabergeführte Agentur aus Gütersloh/Bielefeld für B2B-Corporate-Podcasts.",
-   "evidence": "https://www.drweb.de/podcast-agentur-vergleich/"
-  },
-  {
-   "slug": "friendventure",
-   "name": "Friendventure",
-   "website": "https://www.friendventure.de",
+   "slug": "datasolut",
+   "name": "Datasolut GmbH",
+   "website": "https://datasolut.com/",
    "city": "Köln",
    "categories": [
-    "Meta-Ads-Agenturen"
+    "KI-Agenten-Entwickler"
    ],
    "services": [
-    "Social Ads",
-    "Meta Ads",
-    "TikTok Ads",
-    "Social Media Strategie"
+    "Agentic-AI-Beratung",
+    "KI-Agenten-Entwicklung",
+    "RAG-Chatbots",
+    "Machine Learning"
    ],
-   "note": "Social-Ads-Agentur mit Standorten in Köln, Berlin und Hamburg und über 70 Digital-Spezialisten, Kunden u. a. adidas und Viessmann.",
-   "evidence": "https://www.friendventure.de/en/social-ads-agency/"
+   "note": "Kölner KI-Beratung, die KI-Agenten auf Databricks bzw. Microsoft Azure/Fabric baut, typischerweise in 4–8 Wochen bis zum produktiven Agenten.",
+   "evidence": "https://datasolut.com/leistungen/agentic-ai-beratung/",
+   "batch": 2
   },
   {
-   "slug": "geoagentur-de",
-   "name": "GEOAgentur.de",
-   "website": "https://geoagentur.de",
-   "city": "Herford",
+   "slug": "innfactory",
+   "name": "innFactory AI Consulting",
+   "website": "https://innfactory.ai/",
+   "city": "Rosenheim",
    "categories": [
-    "KI-SEO-Agenturen"
+    "KI-Agenten-Entwickler"
    ],
    "services": [
-    "GEO-Audit",
-    "Generative Engine Optimization",
-    "Markenwahrnehmung in LLMs"
+    "KI-Beratung",
+    "KI-Strategie",
+    "Individuelle KI-Lösungen",
+    "CompanyGPT",
+    "KI-Agenten mit n8n"
    ],
-   "note": "Boutique-Agentur aus Herford, die sich ausschließlich auf GEO konzentriert und Audits zur Markenwahrnehmung in KI-Modellen anbietet.",
-   "evidence": "https://www.bakedwith.com/blog/die-besten-geo-agenturen-in-deutschland-ein-uberblick"
+   "note": "KI-Beratung aus Rosenheim mit Fokus auf KI-Strategie, Compliance, CompanyGPT und individuelle KI-Lösungen.",
+   "evidence": "https://innfactory.ai/en/",
+   "batch": 2
   },
   {
-   "slug": "globalist",
-   "name": "Globalist",
-   "website": "https://www.globalist.de",
-   "city": "Stuttgart",
+   "slug": "sequator-ki-agentur",
+   "name": "KI Agentur (Sequator GmbH)",
+   "website": "https://ki-agentur.com/",
+   "city": "Heinsberg",
    "categories": [
-    "Google-Ads-Agenturen",
-    "Meta-Ads-Agenturen"
+    "KI-Agenten-Entwickler"
    ],
    "services": [
-    "Meta Ads",
-    "TikTok Ads",
-    "Google Ads",
-    "Attribution",
-    "SEO"
+    "KI-Agenten",
+    "Chatbots",
+    "Generative KI-Lösungen",
+    "KI-Strategie"
    ],
-   "note": "Stuttgarter Performance-Marketing-Agentur mit Fokus auf Meta, TikTok und Google Ads, die laut Stellenanzeigen rund 60 Mio. Euro Werbebudget jährlich verwaltet.",
-   "evidence": "https://ecommerceguide.com/jobs/performance-marketing-manager-m-w-d-fokus-meta-ads-at-globalist-gmbh-598c7d68/"
+   "note": "Von der Sequator GmbH in Heinsberg betriebene KI-Agentur für individuelle KI-Agenten, Chatbots und generative KI im Mittelstand.",
+   "evidence": "https://ki-agentur.com/",
+   "batch": 2
   },
   {
-   "slug": "gaehnfrei",
-   "name": "gähnfrei",
-   "website": "https://www.gaehnfrei.de",
+   "slug": "next-strategy-ai",
+   "name": "Next Strategy AI GmbH",
+   "website": "https://nextstrategy.ai/",
    "city": "Hamburg",
    "categories": [
-    "Webdesign-Agenturen"
+    "KI-Agenten-Entwickler"
    ],
    "services": [
-    "Webdesign",
-    "Responsive Websites",
-    "WordPress"
+    "KI-Agenten",
+    "KI-Automatisierung",
+    "On-Premise-Unternehmens-LLM",
+    "AnythingLLM-Einrichtung",
+    "RAG-Konfiguration"
    ],
-   "note": "Hamburger Design- und Internetagentur für Webdesign, responsive Websites und WordPress.",
-   "evidence": "https://elioplus.com/profiles/channel-partners/113571/gaehnfrei"
+   "note": "Hamburger KI-Agentur für KI-Agenten, Automatisierung und On-Premise-Unternehmens-LLMs.",
+   "evidence": "https://nextstrategy.ai/",
+   "batch": 2
   },
   {
-   "slug": "hanseranking",
-   "name": "Hanseranking",
-   "website": "https://www.hanseranking.de",
-   "city": "Hamburg",
+   "slug": "aweos",
+   "name": "AWEOS GmbH",
+   "website": "https://aweos.de/",
+   "city": "Solingen",
    "categories": [
-    "Google-Ads-Agenturen",
-    "SEO-Agenturen",
-    "Online-Marketing-Agenturen"
+    "KI-Agenten-Entwickler"
    ],
    "services": [
-    "Google Ads",
-    "SEO",
-    "Social Media",
-    "Online-Marketing"
+    "KI-Automatisierung",
+    "Prozessoptimierung",
+    "KI-Integration",
+    "Softwareentwicklung"
    ],
-   "note": "Hamburger Agentur, laut Verzeichnis Google Premium Partner für SEA, SEO und Social Media mit über 100 Mitarbeitenden.",
-   "evidence": "https://www.business-on.de/performance-marketing-agenturen/hamburg"
+   "note": "Solinger Agentur mit Schwerpunkt auf der technischen Umsetzung von KI-Projekten, insbesondere Automatisierung und Prozessoptimierung.",
+   "evidence": "https://aweos.de/leistungen/ki-agentur/",
+   "batch": 2
   },
   {
-   "slug": "huks-digital",
-   "name": "huks.digital",
-   "website": "https://huks.digital",
-   "city": "Karlsbad",
-   "categories": [
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "Shopify-Shops",
-    "Webdesign",
-    "SEO",
-    "Branding",
-    "Grafikdesign"
-   ],
-   "note": "Inhabergeführte Agentur und Shopify-Partner aus Karlsbad bei Karlsruhe für Shopify-Shops, Webdesign und Online-Marketing.",
-   "evidence": "https://webwiki.de/huks.digital"
-  },
-  {
-   "slug": "hurra-com",
-   "name": "hurra.com",
-   "website": "https://www.hurra.com/",
-   "city": "Stuttgart",
-   "categories": [
-    "Online-Marketing-Agenturen",
-    "Google-Ads-Agenturen"
-   ],
-   "services": [
-    "SEA",
-    "SEO",
-    "Display",
-    "Social Media Advertising",
-    "Bewegtbild"
-   ],
-   "note": "1998 gegründete, inhabergeführte Digital-Performance-Agentur aus Stuttgart für SEA, SEO, Display und Social Ads.",
-   "evidence": "https://seranking.com/de/agencies/hurra/"
-  },
-  {
-   "slug": "iconic-sales",
-   "name": "ICONIC SALES",
-   "website": "https://www.iconic-sales.de",
-   "city": "Schorndorf",
-   "categories": [
-    "Amazon-Agenturen"
-   ],
-   "services": [
-    "Seller- und Vendor-Management",
-    "Amazon PPC",
-    "Amazon DSP",
-    "A+ Content",
-    "Markenaufbau"
-   ],
-   "note": "2013 in Stuttgart gegründete Full-Service-Amazon-Agentur für KMU, Kontaktadresse in Schorndorf.",
-   "evidence": "https://www.wirtschaftsforum.de/news/die-besten-amazon-full-service-agenturen-sechs-anbieter-fuer-unterschiedliche-anforderungen-im-vergleich"
-  },
-  {
-   "slug": "internetwarriors",
-   "name": "internetwarriors GmbH",
-   "website": "https://www.internetwarriors.de",
-   "city": "Berlin",
-   "categories": [
-    "KI-SEO-Agenturen",
-    "SEO-Agenturen",
-    "Online-Marketing-Agenturen"
-   ],
-   "services": [
-    "GEO",
-    "SEO",
-    "SEA",
-    "Webanalyse",
-    "Social Media Marketing"
-   ],
-   "note": "Berliner Online-Marketing-Agentur (gegr. 2001), die sich als GEO/SEO-Agentur positioniert und eigene GEO-Studien veröffentlicht.",
-   "evidence": "https://omr.com/de/events/festival/exhibitors/internetwarriors-gmbh"
-  },
-  {
-   "slug": "ithelps-digital",
-   "name": "ithelps Digital",
-   "website": "https://ithelps-digital.com",
-   "city": "München",
-   "categories": [
-    "KI-SEO-Agenturen",
-    "SEO-Agenturen",
-    "Google-Ads-Agenturen",
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "KI-Suchmaschinenoptimierung (GEO)",
-    "SEO",
-    "Google Ads",
-    "Webdesign",
-    "Webshops"
-   ],
-   "note": "Digitalagentur mit Standorten u. a. in München und Wien, die SEO, Google Ads und GEO anbietet.",
-   "evidence": "https://seranking.com/de/agencies/ithelps-digital/"
-  },
-  {
-   "slug": "jsh-marketing",
-   "name": "JSH Marketing",
-   "website": "https://jsh.marketing",
-   "city": "München",
-   "categories": [
-    "KI-SEO-Agenturen",
-    "SEO-Agenturen",
-    "Google-Ads-Agenturen"
-   ],
-   "services": [
-    "GEO / KI-Sichtbarkeit",
-    "SEO",
-    "Google Ads",
-    "Content-Erstellung"
-   ],
-   "note": "Inhabergeführte Google-Ads- und SEO-Agentur aus München, die GEO für Sichtbarkeit in ChatGPT und Perplexity anbietet.",
-   "evidence": "https://www.gelbeseiten.de/gsbiz/23e39bf8-e596-49a2-b755-5fed5ce5883f"
-  },
-  {
-   "slug": "jungmut",
-   "name": "JUNGMUT GmbH",
-   "website": "https://www.jungmut.com",
-   "city": "Köln",
-   "categories": [
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "WordPress-Websites",
-    "HubSpot-Websites",
-    "Barrierefreies Webdesign",
-    "B2B-Websites"
-   ],
-   "note": "Kölner Digitalagentur (seit 2007) für WordPress- und HubSpot-Websites sowie barrierefreies Webdesign für B2B und öffentlichen Sektor.",
-   "evidence": "https://www.business-on.de/anbieter/jungmut"
-  },
-  {
-   "slug": "kammann-rossi",
-   "name": "Kammann Rossi GmbH",
-   "website": "https://www.kammannrossi.de",
-   "city": "Köln",
-   "categories": [
-    "Content-Marketing-Agenturen"
-   ],
-   "services": [
-    "Content Marketing",
-    "Corporate Publishing",
-    "Interne Kommunikation",
-    "Storytelling"
-   ],
-   "note": "Inhabergeführte Kölner Agentur (seit 1972) für Content Marketing, interne Kommunikation und Storytelling, u. a. für ARAG und Deutsche Bahn.",
-   "evidence": "https://scompler.com/en/partner/kammannrossi/"
-  },
-  {
-   "slug": "klarkode",
-   "name": "Klarkode GmbH",
-   "website": "https://www.klarkode.com",
-   "city": "Hamburg",
-   "categories": [
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "Webflow-Websites",
-    "CMS-Migration",
-    "Web-Apps",
-    "Automatisierungen"
-   ],
-   "note": "Hamburger Webflow-Premium/Enterprise-Partner für skalierbare Websites und Web-Apps, u. a. für IONITY und Yamaha Music Europe.",
-   "evidence": "https://omr.com/de/reviews/service/klarkode"
-  },
-  {
-   "slug": "klickpiloten",
-   "name": "KlickPiloten",
-   "website": "https://www.klickpiloten.de/",
-   "city": "Stuttgart",
-   "categories": [
-    "Online-Marketing-Agenturen"
-   ],
-   "services": [
-    "SEO",
-    "Google Ads",
-    "Social Media",
-    "E-Mail-Marketing"
-   ],
-   "note": "360°-Digitalmarketing-Agentur aus Stuttgart, Hamburg und Berlin mit SEO, Google Ads, Social Media und E-Mail-Marketing.",
-   "evidence": "https://www.business-on.de/performance-marketing-agenturen/stuttgart"
-  },
-  {
-   "slug": "kolibri-online",
-   "name": "Kolibri Online GmbH",
-   "website": "https://www.kolibri-online.de",
-   "city": "Hamburg",
-   "categories": [
-    "Content-Marketing-Agenturen"
-   ],
-   "services": [
-    "Content-Strategie",
-    "SEO-Content",
-    "GEO-Content",
-    "Lokalisierung",
-    "Digital Copywriting"
-   ],
-   "note": "Internationale Content-Marketing-Agentur aus Hamburg (seit 2008) mit SEO-/GEO-Content und Spezialisierung auf Finanzen und Greentech.",
-   "evidence": "https://www.sortlist.com/agency/kolibri-online"
-  },
-  {
-   "slug": "kopf-und-stift",
-   "name": "Kopf & Stift",
-   "website": "https://kopfundstift.de",
-   "city": "Dresden",
-   "categories": [
-    "KI-SEO-Agenturen",
-    "SEO-Agenturen",
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "GEO-Optimierung",
-    "SEO-Betreuung",
-    "Webdesign",
-    "WordPress-Entwicklung",
-    "WordPress-Websites",
-    "Website-Relaunch",
-    "Responsive Design",
-    "SEO"
-   ],
-   "note": "Webdesign-Agentur aus Dresden, die SEO und GEO für Sichtbarkeit in ChatGPT, Gemini und Perplexity anbietet.",
-   "evidence": "https://kopfundstift.de/leistungen/"
-  },
-  {
-   "slug": "latori",
-   "name": "Latori GmbH",
-   "website": "https://www.latori.com",
-   "city": "Wuppertal",
-   "categories": [
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "Shopify-Plus-Shops",
-    "Shop-Migration",
-    "Headless Commerce",
-    "B2B-E-Commerce",
-    "App-Entwicklung"
-   ],
-   "note": "Shopify-Platinum-Partner mit Standorten in Wuppertal und Stuttgart/Althengstett, spezialisiert auf Shopify Plus, Migrationen und Headless Commerce.",
-   "evidence": "https://www.shopify.com/partners/directory/partner/latori"
-  },
-  {
-   "slug": "loewenstark",
-   "name": "Löwenstark",
-   "website": "https://www.loewenstark.com",
-   "city": "Braunschweig",
-   "categories": [
-    "Google-Ads-Agenturen",
-    "Meta-Ads-Agenturen",
-    "Online-Marketing-Agenturen"
-   ],
-   "services": [
-    "Google Ads",
-    "Social Media Ads",
-    "SEO",
-    "Online-Marketing",
-    "SEA",
-    "Social Media",
-    "Webdesign & Onlineshops",
-    "Influencer-Marketing"
-   ],
-   "note": "Braunschweiger Online-Marketing-Agentur, bundesweit tätig, mit SEA und Social Media Ads im Angebot.",
-   "evidence": "https://www.business-on.de/social-media-agenturen/leipzig"
-  },
-  {
-   "slug": "marketbirds",
-   "name": "marketbirds",
-   "website": "https://www.marketbirds.de",
-   "city": "Düsseldorf",
-   "categories": [
-    "Google-Ads-Agenturen",
-    "Meta-Ads-Agenturen"
-   ],
-   "services": [
-    "Google Ads",
-    "Meta Ads",
-    "Landingpages",
-    "Performance Marketing"
-   ],
-   "note": "2021 in Düsseldorf gegründete Performance-Marketing-Agentur für den Mittelstand mit Fokus auf Google Ads und Meta Ads.",
-   "evidence": "https://www.business-on.de/anbieter/marketbirds"
-  },
-  {
-   "slug": "marketplace-maniacs",
-   "name": "Marketplace Maniacs",
-   "website": "https://www.marketplacemaniacs.de",
-   "city": "München",
-   "categories": [
-    "Amazon-Agenturen"
-   ],
-   "services": [
-    "Amazon-Strategie",
-    "Amazon Advertising",
-    "Visual Content",
-    "Listing-Optimierung"
-   ],
-   "note": "Münchner 360°-Full-Service-Amazon-Agentur für Premium-Marken seit 2018.",
-   "evidence": "https://join.com/companies/marketplacemaniacs/16178516-head-of-advertising-m-w-d"
-  },
-  {
-   "slug": "mashup-communications",
-   "name": "Mashup Communications GmbH",
-   "website": "https://www.mashup-communications.de",
-   "city": "Berlin",
-   "categories": [
-    "Content-Marketing-Agenturen",
-    "PR-Agenturen"
-   ],
-   "services": [
-    "PR",
-    "Content Marketing",
-    "Brand Storytelling",
-    "Employer Branding",
-    "Social Media"
-   ],
-   "note": "Berliner Agentur für PR und Brand Storytelling (seit 2009) mit Content Marketing als zweitem Schwerpunkt.",
-   "evidence": "https://omr.com/de/reviews/service/mashup-communications"
-  },
-  {
-   "slug": "media-carrots",
-   "name": "MEDIA CARROTS",
-   "website": "https://www.mediacarrots.de",
-   "city": "München",
-   "categories": [
-    "Content-Marketing-Agenturen"
-   ],
-   "services": [
-    "Podcast-Produktion",
-    "Redaktion",
-    "Postproduktion",
-    "Podcast-Coaching"
-   ],
-   "note": "Münchner Podcast-Agentur mit Studio in Giesing, die Redaktion, Aufnahme, Postproduktion und Distribution übernimmt.",
-   "evidence": "https://www.in-muenchen.de/?p=745260"
-  },
-  {
-   "slug": "mellowmessage",
-   "name": "mellowmessage",
-   "website": "https://www.mellowmessage.de/",
-   "city": "Leipzig",
-   "categories": [
-    "Online-Marketing-Agenturen"
-   ],
-   "services": [
-    "Online-Marketing",
-    "SEO",
-    "Webentwicklung",
-    "Digitalstrategie"
-   ],
-   "note": "Seit 1997 etablierte Digitalagentur in Leipzig mit über 60 Mitarbeitenden, SEO ist einer von mehreren Schwerpunkten.",
-   "evidence": "https://omr.com/de/reviews/service-category/seo-agencies/leipzig"
-  },
-  {
-   "slug": "mindnapped",
-   "name": "mindnapped GmbH",
-   "website": "https://www.mindnapped.de",
-   "city": "Düsseldorf",
-   "categories": [
-    "Content-Marketing-Agenturen"
-   ],
-   "services": [
-    "Videoproduktion",
-    "Erklärvideos",
-    "Livestreaming",
-    "Content-Strategie"
-   ],
-   "note": "Düsseldorfer Videoagentur (seit 2007) für Videoproduktion, Livestreaming, Animationsvideos und Content-Strategie.",
-   "evidence": "https://www.sortlist.co.uk/agency/mindnapped"
-  },
-  {
-   "slug": "morefire",
-   "name": "morefire",
-   "website": "https://www.more-fire.com/",
-   "city": "Köln",
-   "categories": [
-    "Online-Marketing-Agenturen",
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "SEO",
-    "SEA",
-    "Paid Social",
-    "Content",
-    "Analytics & CRO"
-   ],
-   "note": "Eine der größten inhabergeführten Online-Marketing-Agenturen Deutschlands, 2005 in Köln gegründet, Standorte Köln und Berlin.",
-   "evidence": "https://www.more-fire.com/llms.txt"
-  },
-  {
-   "slug": "mothership",
-   "name": "Mothership GmbH",
-   "website": "https://www.mothership.de",
-   "city": "München",
-   "categories": [
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "Shopware-Entwicklung",
-    "Onlineshop-Setup",
-    "Strategieberatung",
-    "Schnittstellen-Integration"
-   ],
-   "note": "Münchner Shopware-Partneragentur (gegründet 2013) für Aufbau, Entwicklung und Integration von Onlineshops, u. a. für Roeckl und Planet Sports.",
-   "evidence": "https://www.shopware.com/it/partner/agenzia/mothership-gmbh/"
-  },
-  {
-   "slug": "movesell",
-   "name": "MOVESELL",
-   "website": "https://movesell.de",
-   "city": "Kiel",
-   "categories": [
-    "Amazon-Agenturen"
-   ],
-   "services": [
-    "Marketplace-Onboarding",
-    "Markenregistrierung",
-    "Content-Optimierung",
-    "Amazon Advertising"
-   ],
-   "note": "Kieler Full-Service-Amazon-Agentur seit 2017 mit Marken wie Calvin Klein, Thermos und Vaude.",
-   "evidence": "https://www.provenexpert.com/movesell-gmbh/"
-  },
-  {
-   "slug": "mso-digital",
-   "name": "mso digital",
-   "website": "https://www.mso-digital.de",
-   "city": "Osnabrück",
-   "categories": [
-    "Google-Ads-Agenturen",
-    "Meta-Ads-Agenturen",
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "Google Ads",
-    "SEO",
-    "Paid Social",
-    "Digital Analytics",
-    "Tracking"
-   ],
-   "note": "Digital-Marketing-Agentur aus Osnabrück (weitere Standorte Hamburg, Lingen) mit Google-Premier-Partner-Status laut Factsheet.",
-   "evidence": "https://www.mso-digital.de/wp-content/uploads/2023/03/factsheet_mso-digital_2023-03.pdf"
-  },
-  {
-   "slug": "ondevi",
-   "name": "ondevi",
-   "website": "https://www.ondevi.com",
-   "city": "München",
-   "categories": [
-    "Google-Ads-Agenturen"
-   ],
-   "services": [
-    "Google Ads",
-    "Google Shopping",
-    "E-Mail-Marketing",
-    "E-Commerce-Marketing"
-   ],
-   "note": "Münchner Google-Ads- und E-Mail-Marketing-Agentur mit Fokus auf E-Commerce-Marken im DACH-Raum.",
-   "evidence": "https://selbststaendigkeit.de/news-marketing/google-ads-agenturen-fuer-e-commerce/"
-  },
-  {
-   "slug": "online-solutions-group",
-   "name": "Online Solutions Group (OSG)",
-   "website": "https://www.onlinesolutionsgroup.de/",
-   "city": "München",
-   "categories": [
-    "Online-Marketing-Agenturen",
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "SEO",
-    "SEA",
-    "Social Media",
-    "Performance Suite (Tool)"
-   ],
-   "note": "Münchner Full-Service-Online-Marketing-Agentur (gegr. 2008) für SEO, SEA und Social Media mit BVDW-SEO-Zertifikat.",
-   "evidence": "https://onlinemarketing.de/dienstleister/tools-technologien/muenchen/online-solutions-group-gmbh"
-  },
-  {
-   "slug": "ostend-digital",
-   "name": "Ostend Digital",
-   "website": "https://ostend.digital",
-   "city": "Stuttgart",
-   "categories": [
-    "Google-Ads-Agenturen",
-    "Meta-Ads-Agenturen",
-    "Online-Marketing-Agenturen",
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "Google Ads",
-    "Performance Max",
-    "Meta Ads",
-    "Social Ads",
-    "Tracking",
-    "Webdesign",
-    "WordPress-Entwicklung",
-    "Shopware-6-Entwicklung"
-   ],
-   "note": "In Stuttgart gegründete Agentur, laut eigener Seite Google Partner und zertifizierter Meta Business Partner für Facebook- und Instagram-Kampagnen.",
-   "evidence": "https://ostend.digital/google-ads-agentur-hamburg/"
-  },
-  {
-   "slug": "peak-ace",
-   "name": "Peak Ace",
-   "website": "https://www.peakace.agency",
-   "city": "Berlin",
-   "categories": [
-    "Google-Ads-Agenturen",
-    "Meta-Ads-Agenturen",
-    "Online-Marketing-Agenturen",
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "Paid Search",
-    "Paid Social",
-    "SEO",
-    "Amazon Advertising",
-    "Programmatic",
-    "Content & Digital PR",
-    "GEO / LLM-Beratung"
-   ],
-   "note": "Internationale, datengetriebene Performance-Marketing-Agentur mit Hauptsitz in Berlin, laut Pressemitteilung Google Premier Partner 2022.",
-   "evidence": "https://peakace.agency/en/latest/peak-ace-ag-has-been-named-a-2022-google-premier-partner/"
-  },
-  {
-   "slug": "piabo",
-   "name": "Piabo PR",
-   "website": "https://www.piabo.net",
-   "city": "Berlin",
-   "categories": [
-    "PR-Agenturen"
-   ],
-   "services": [
-    "Pressearbeit",
-    "Tech-PR",
-    "Digitale PR",
-    "Unternehmenskommunikation"
-   ],
-   "note": "Im PR-Journal-Ranking 2025 unter den führenden Agenturen für Technologie und Digitalisierung genannt.",
-   "evidence": "https://schwartzpr.de/en/umsatzranking-des-pr-journals-schwartz-pr-festigt-position-unter-top-5-pr-agenturen-fuer-technologie-digitalisierung/"
-  },
-  {
-   "slug": "podcastmania",
-   "name": "Podcastmania",
-   "website": "https://www.podcastmania.de",
-   "city": "Berlin",
-   "categories": [
-    "Content-Marketing-Agenturen"
-   ],
-   "services": [
-    "Podcast-Konzeption",
-    "Podcast-Produktion",
-    "Distribution",
-    "Performance-Kampagnen"
-   ],
-   "note": "Berliner Full-Service-Agentur für Corporate Podcasts von Konzept bis Distribution, Gründer Dominic Hesse.",
-   "evidence": "https://www.sortlist.co.uk/agency/podcast-mania"
-  },
-  {
-   "slug": "podcastmeisterei",
-   "name": "Podcastmeisterei",
-   "website": "https://www.podcastmeisterei.de",
-   "city": "Hamburg",
-   "categories": [
-    "Content-Marketing-Agenturen"
-   ],
-   "services": [
-    "Podcast-Formatentwicklung",
-    "Aufnahme und Schnitt",
-    "Video-Podcasts",
-    "Distribution",
-    "Social-Media-Clips"
-   ],
-   "note": "Hamburger Podcast-Agentur für Unternehmens-Podcasts und Video-Podcasts von Konzeption bis Veröffentlichung.",
-   "evidence": "https://www.sortlist.co.uk/agency/podcastmeisterei"
-  },
-  {
-   "slug": "pragma-code",
-   "name": "Pragma-Code",
-   "website": "https://www.pragma-code.de",
-   "city": "Köln",
-   "categories": [
-    "Content-Marketing-Agenturen",
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "Technisches SEO",
-    "Content-Strategie",
-    "Redaktionsplanung",
-    "SEO-Texte",
-    "Pillar Pages"
-   ],
-   "note": "Kölner SEO- und Content-Agentur, die technisches SEO mit Redaktionsplanung und SEO-optimierten Texten kombiniert.",
-   "evidence": "https://www.pragma-code.de/seo-agentur-koeln"
-  },
-  {
-   "slug": "prima-line",
-   "name": "PRIMA LINE",
-   "website": "https://www.prima-line.de",
-   "city": "Berlin",
-   "categories": [
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "Website-Erstellung",
-    "Website-Relaunch",
-    "WordPress-Programmierung",
-    "Grafikdesign"
-   ],
-   "note": "Berliner Webdesign-Agentur seit 2008 für Website-Neuerstellung, Relaunch und WordPress-Programmierung.",
-   "evidence": "https://www.business-on.de/anbieter/prima-line"
-  },
-  {
-   "slug": "projecter",
-   "name": "Projecter",
-   "website": "https://www.projecter.de/",
-   "city": "Leipzig",
-   "categories": [
-    "Online-Marketing-Agenturen",
-    "Google-Ads-Agenturen"
-   ],
-   "services": [
-    "SEA",
-    "SEO",
-    "Social Media",
-    "Affiliate-Marketing",
-    "Web Analytics"
-   ],
-   "note": "Leipziger Online-Marketing-Agentur seit 2008 mit Full-Service von Performance Marketing bis Beratung, Google Premier Partner.",
-   "evidence": "https://www.business-on.de/anbieter/projecter"
-  },
-  {
-   "slug": "proxation",
-   "name": "Proxation GmbH",
-   "website": "https://www.proxation.de",
-   "city": "München",
-   "categories": [
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "Shopware-Onlineshops",
-    "Plugin-Entwicklung",
-    "E-Commerce-Beratung",
-    "Shop-Wartung"
-   ],
-   "note": "E-Commerce- und Shopware-Agentur aus München, bekannt für die Entwicklung von Shopware-Plugins.",
-   "evidence": "https://www.sortlist.co.uk/agency/proxation"
-  },
-  {
-   "slug": "radyant",
-   "name": "Radyant",
-   "website": "https://radyant.io",
-   "city": "Berlin",
-   "categories": [
-    "KI-SEO-Agenturen",
-    "SEO-Agenturen",
-    "Content-Marketing-Agenturen"
-   ],
-   "services": [
-    "AI-Search-Strategie",
-    "Generative Engine Optimization",
-    "SEO",
-    "Content-Produktion",
-    "GEO-Visibility-Tracking"
-   ],
-   "note": "Berliner Growth-Agentur mit Fokus auf SEO und AI Search (GEO) für Start-ups und Scale-ups.",
-   "evidence": "https://peec.ai/agency-directory/radyant"
-  },
-  {
-   "slug": "rankerfolg",
-   "name": "rankerfolg",
-   "website": "https://seo-agentur-muenchen.net",
-   "city": "München",
-   "categories": [
-    "KI-SEO-Agenturen",
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "Generative Engine Optimization",
-    "Technisches SEO",
-    "Content-Optimierung",
-    "Local SEO"
-   ],
-   "note": "SEO-Agentur aus München, die Websites für Google und KI-Suchmaschinen (ChatGPT, Perplexity, Google AI) sichtbarer macht.",
-   "evidence": "https://www.wirtschaftsforum.de/rankerfolg"
-  },
-  {
-   "slug": "remazing",
-   "name": "Remazing",
-   "website": "https://remazing.eu",
-   "city": "Hamburg",
-   "categories": [
-    "Amazon-Agenturen"
-   ],
-   "services": [
-    "Amazon SEO",
-    "Content-Optimierung",
-    "Amazon Advertising",
-    "Marketplace-Software"
-   ],
-   "note": "Hamburger Amazon-Agentur seit 2016 mit Kunden wie Beiersdorf und Henkel, Minderheitsbeteiligung durch IK Partners.",
-   "evidence": "https://omr.com/de/daily/remazing-ik-partners-beteiligung-amazon-agenturen"
-  },
-  {
-   "slug": "schwartz-public-relations",
-   "name": "Schwartz Public Relations",
-   "website": "https://schwartzpr.de",
-   "city": "München",
-   "categories": [
-    "PR-Agenturen"
-   ],
-   "services": [
-    "Pressearbeit",
-    "Technologie-PR",
-    "Unternehmenskommunikation",
-    "Content-Erstellung"
-   ],
-   "note": "Laut PR-Journal-Umsatzranking 2025 unter den Top 5 PR-Agenturen für Technologie und Digitalisierung.",
-   "evidence": "https://schwartzpr.de/en/umsatzranking-des-pr-journals-schwartz-pr-festigt-position-unter-top-5-pr-agenturen-fuer-technologie-digitalisierung/"
-  },
-  {
-   "slug": "schoenborn-media",
-   "name": "Schönborn Media GmbH",
-   "website": "https://www.schoenborn-media.de",
-   "city": "Hamburg",
-   "categories": [
-    "Content-Marketing-Agenturen"
-   ],
-   "services": [
-    "Videoproduktion",
-    "Social-Media-Formate",
-    "YouTube-/TikTok-Distribution",
-    "Community Management"
-   ],
-   "note": "Hamburger Videoproduktions- und Digitalagentur für Social-Media-Formate und deren Verbreitung auf YouTube, Instagram und TikTok.",
-   "evidence": "https://www.sortlist.co.uk/agency/schoenborn-media-gmbh"
-  },
-  {
-   "slug": "searchperts",
-   "name": "Searchperts",
-   "website": "https://www.searchperts.de",
-   "city": "Düsseldorf",
-   "categories": [
-    "Google-Ads-Agenturen"
-   ],
-   "services": [
-    "Google Ads",
-    "Google Shopping",
-    "Performance Max",
-    "SEA-Beratung"
-   ],
-   "note": "Auf Google Ads spezialisierte SEA-Agentur mit Sitz in Düsseldorf, gegründet 2019, Spitzenplatz im OMR-Reviews-Ranking für Google-Ads-Agenturen.",
-   "evidence": "https://www.business-on.de/anbieter/searchperts"
-  },
-  {
-   "slug": "second-elements",
-   "name": "Second Elements",
-   "website": "https://www.second-elements.de/",
-   "city": "Hamburg",
-   "categories": [
-    "Online-Marketing-Agenturen"
-   ],
-   "services": [
-    "SEO",
-    "SEA",
-    "Social Media Marketing",
-    "Content Creation",
-    "KI-Optimierung"
-   ],
-   "note": "Performance-Agentur aus Hamburg-Ottensen und Berlin für SEO, SEA, Social Media Marketing und Content Creation.",
-   "evidence": "https://join.com/companies/second-elements/16353379-seo-digital-performance-marketing-consultant-w-m-d-in-vollzeit-oder-teilzeit"
-  },
-  {
-   "slug": "semseo-solutions",
-   "name": "SEMSEO Solutions",
-   "website": "https://semseo-solutions.com",
-   "city": "München",
-   "categories": [
-    "KI-SEO-Agenturen",
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "KI-SEO",
-    "GEO",
-    "Technisches SEO",
-    "Content-Strategie",
-    "Linkbuilding",
-    "Google Ads"
-   ],
-   "note": "Münchner SEO-Agentur mit Schwerpunkt KI-SEO und GEO für KI-Suchsysteme.",
-   "evidence": "https://onlinemarketing.de/dienstleister/online-marketing-agentur/muenchen/semseo-solutions-ki-seo-agentur-muenchen"
-  },
-  {
-   "slug": "seo-kueche",
-   "name": "SEO-Küche",
-   "website": "https://www.seo-kueche.de/",
-   "city": "Kolbermoor",
-   "categories": [
-    "SEO-Agenturen",
-    "Online-Marketing-Agenturen"
-   ],
-   "services": [
-    "SEO",
-    "SEA",
-    "Social Media Marketing",
-    "Content Marketing",
-    "Webdesign",
-    "Conversion-Optimierung"
-   ],
-   "note": "2009 gegründete Online-Marketing-Agentur aus Kolbermoor bei Rosenheim mit SEO als Kerngeschäft und mehreren Standorten.",
-   "evidence": "https://www.wirtschaftsforum.de/seo-kueche-internet-marketing-gmbh-co-kg"
-  },
-  {
-   "slug": "seokratie",
-   "name": "Seokratie",
-   "website": "https://www.seokratie.de",
-   "city": "München",
-   "categories": [
-    "Content-Marketing-Agenturen",
-    "Google-Ads-Agenturen",
-    "KI-SEO-Agenturen",
-    "Online-Marketing-Agenturen",
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "SEO",
-    "SEA",
-    "Content-Marketing",
-    "Google Ads",
-    "GEO",
-    "Content Marketing",
-    "Social Media",
-    "YouTube Ads"
-   ],
-   "note": "Münchner Agentur für SEO, SEA und Content-Marketing mit über 40 Experten.",
-   "evidence": "https://www.drweb.de/sea-agentur-vergleich/"
-  },
-  {
-   "slug": "seomatik",
-   "name": "Seomatik",
-   "website": "https://www.seomatik.de/",
-   "city": "Köln",
-   "categories": [
-    "Online-Marketing-Agenturen",
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "SEO",
-    "SEA",
-    "Social Media Marketing"
-   ],
-   "note": "Laut OMR Full-Service-Agentur aus Köln für SEO, SEA und Social Media Marketing.",
-   "evidence": "https://omr.com/de/reviews/service-category/seo-agencies/koeln"
-  },
-  {
-   "slug": "seonative",
-   "name": "seonative",
-   "website": "https://www.seonative.de/",
-   "city": "Stuttgart",
-   "categories": [
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "Technisches SEO",
-    "OnPage-SEO",
-    "SEO-Strategie & Beratung",
-    "Linkbuilding",
-    "SEO-Workshops"
-   ],
-   "note": "Auf Suchmaschinenoptimierung spezialisierte Agentur aus Stuttgart mit technischem SEO, OnPage, Linkbuilding und Workshops.",
-   "evidence": "https://omr.com/de/reviews/service/seonative"
-  },
-  {
-   "slug": "seowerk",
-   "name": "seowerk GmbH",
-   "website": "https://www.seowerk.de",
+   "slug": "k-und-k-kommunikationssysteme",
+   "name": "K&K Kommunikationssysteme GmbH",
+   "website": "https://exklusiv.de/",
    "city": "Augsburg",
    "categories": [
-    "KI-SEO-Agenturen",
-    "Online-Marketing-Agenturen",
-    "PR-Agenturen",
-    "SEO-Agenturen"
+    "KI-Agenten-Entwickler"
    ],
    "services": [
-    "Generative Engine Optimization",
-    "KI-Sichtbarkeit",
-    "SEO",
-    "SEA",
-    "Content-Marketing",
-    "Pressearbeit",
-    "GEO",
-    "Content Marketing"
+    "KI-Agenten",
+    "E-Mail- und Ticket-Automatisierung",
+    "Systemintegration",
+    "Belegverarbeitung"
    ],
-   "note": "SEO-Agentur aus Augsburg, die seit 2023 GEO und KI-Sichtbarkeit in ChatGPT, Perplexity und Gemini anbietet.",
-   "evidence": "https://onlinemarketing.de/dienstleister/online-marketing-agentur/augsburg/seowerk-gmbh"
+   "note": "Augsburger IT-Dienstleister, der KI-Agenten baut, die E-Mails, Belege, Anfragen und Tickets eigenständig an die Kundensysteme angebunden bearbeiten.",
+   "evidence": "https://www.exklusiv.de/ki-agenten/",
+   "batch": 2
   },
   {
-   "slug": "september-markenfuehrung",
-   "name": "September Markenführung",
-   "website": "https://www.september.de",
+   "slug": "giftgruen",
+   "name": "giftGRÜN GmbH",
+   "website": "https://giftgruen.com/",
+   "city": "Aachen",
+   "categories": [
+    "KI-Agenten-Entwickler"
+   ],
+   "services": [
+    "KI-Beratung",
+    "KI-Entwicklung",
+    "Prozessautomatisierung",
+    "Softwareentwicklung"
+   ],
+   "note": "Teil der GRÜN Software Group (Aachen), bietet KI-Beratung und KI-Entwicklung für Unternehmen.",
+   "evidence": "https://www.giftgruen.com/leistungen/ki-beratung-agentur/",
+   "batch": 2
+  },
+  {
+   "slug": "if-blueprint",
+   "name": "IF-Blueprint",
+   "website": "https://if-blueprint.de/",
+   "city": "München",
+   "categories": [
+    "KI-Agenten-Entwickler"
+   ],
+   "services": [
+    "Chatbot-Entwicklung",
+    "Microsoft-Teams-Integration",
+    "Konzeption",
+    "Wartung"
+   ],
+   "note": "Münchner Anbieter individueller Chatbot-Entwicklung mit Microsoft-Teams-Integration und DSGVO-Fokus.",
+   "evidence": "https://if-blueprint.de/loesungen/chatbots/",
+   "batch": 2
+  },
+  {
+   "slug": "2moove",
+   "name": "2moove",
+   "website": "https://2moove.de/",
    "city": "Dresden",
    "categories": [
-    "Webdesign-Agenturen"
+    "KI-Agenten-Entwickler"
    ],
    "services": [
-    "Websites",
-    "Onlineshops",
-    "Corporate Design",
-    "Website-Relaunch"
+    "KI-Beratung",
+    "KI-Automatisierung",
+    "LLM-Anbindung an ERP/CRM",
+    "KI-Agenten"
    ],
-   "note": "Dresdner Full-Service-Werbeagentur für Corporate Design, Websites und Onlineshops, u. a. mit Contao-Relaunches.",
-   "evidence": "https://feedbax.ai/profile/september-werbeagentur"
+   "note": "KI-Agentur mit Sitz in Dresden, die Sprachmodelle mit bestehenden Systemen wie ERP oder CRM verbindet.",
+   "evidence": "https://2moove.de/standorte/ki-agentur-dresden/",
+   "batch": 2
   },
   {
-   "slug": "seybold",
-   "name": "SEYBOLD – Agentur für Sichtbarkeit",
-   "website": "https://www.seybold.de/",
-   "city": "Schorndorf",
+   "slug": "future-ai-solutions",
+   "name": "Future AI Solutions GmbH",
+   "website": "https://futureaisolutions.de/",
+   "city": "Düsseldorf",
    "categories": [
-    "SEO-Agenturen",
-    "KI-SEO-Agenturen"
+    "KI-Agenten-Entwickler"
    ],
    "services": [
-    "SEO-Betreuung",
-    "Technisches SEO",
-    "GEO / KI-Sichtbarkeit",
-    "Backlink-Audits",
+    "KI-Beratung",
+    "Chatbot-Entwicklung",
+    "KI-Automatisierung",
+    "KI-Schulungen"
+   ],
+   "note": "KI-Agentur mit Hauptadresse in Düsseldorf und Standorten in mehreren deutschen Städten, bietet u. a. KI-Chatbot-Beratung und -Umsetzung.",
+   "evidence": "https://futureaisolutions.de/leistungen/chatbots/",
+   "batch": 2
+  },
+  {
+   "slug": "softwarehouse-cologne",
+   "name": "Softwarehouse Cologne",
+   "website": "https://softwarehouse.cologne/",
+   "city": "Köln",
+   "categories": [
+    "KI-Agenten-Entwickler"
+   ],
+   "services": [
+    "KI-Integration",
+    "RAG-Systeme",
+    "KI-Agenten",
+    "Workflow-Automatisierung mit n8n",
+    "Lokale On-Premise-KI"
+   ],
+   "note": "Kölner Softwarehaus (seit 2005), das DSGVO-konforme Chatbots, RAG-Systeme, KI-Agenten und On-Premise-KI umsetzt.",
+   "evidence": "https://softwarehouse.cologne/ki-agentur-koeln",
+   "batch": 2
+  },
+  {
+   "slug": "codersgarden",
+   "name": "Codersgarden",
+   "website": "https://codersgarden.de/",
+   "city": "Langenzenn",
+   "categories": [
+    "KI-Agenten-Entwickler"
+   ],
+   "services": [
+    "Autonome KI-Agenten",
+    "LLM-Integration in CRM/ERP",
+    "KI-Automatisierung",
+    "Softwareentwicklung"
+   ],
+   "note": "KI-Agentur mit Sitz in Langenzenn (Metropolregion Nürnberg), Schwerpunkt autonome Agenten und LLM-Integration in CRM- und ERP-Systeme.",
+   "evidence": "https://codersgarden.de/ki-agentur/berlin/",
+   "batch": 2
+  },
+  {
+   "slug": "der-prozessmeister",
+   "name": "Der Prozessmeister",
+   "website": "https://derprozessmeister.de/",
+   "city": "Hamburg",
+   "categories": [
+    "KI-Agenten-Entwickler"
+   ],
+   "services": [
+    "Chatbot-Entwicklung",
+    "KI-Agenten",
+    "Prozessautomatisierung",
+    "KI-Implementierung"
+   ],
+   "note": "Hamburger KI-Agentur, die Chatbots ab 3.000 € und KI-Agenten ab 5.000 € mit 2–4 Wochen Implementierungszeit anbietet.",
+   "evidence": "https://derprozessmeister.de/ki-agentur-koeln",
+   "batch": 2
+  },
+  {
+   "slug": "neurakey",
+   "name": "neurakey",
+   "website": "https://neurakey.de/",
+   "city": "Köln",
+   "categories": [
+    "KI-Agenten-Entwickler"
+   ],
+   "services": [
+    "KI-Agenten",
+    "Chatbots",
+    "Intelligente Systeme",
+    "KI-Beratung"
+   ],
+   "note": "Kölner KI-Agentur (Im Zollhafen), die KI-Agenten, Chatbots und intelligente Systeme mit planbarem ROI baut.",
+   "evidence": "https://www.neurakey.de/ki-agentur-koeln",
+   "batch": 2
+  },
+  {
+   "slug": "eyedia",
+   "name": "eyedia",
+   "website": "https://eyedia.de/",
+   "city": "Köln",
+   "categories": [
+    "KI-Agenten-Entwickler",
+    "Webdesign-Agenturen",
+    "Online-Marketing-Agenturen"
+   ],
+   "services": [
+    "KI-Agenten",
+    "KI-Chatbot eyebot",
+    "Webdesign und Programmierung",
+    "App-Entwicklung",
+    "Marketing"
+   ],
+   "note": "Kölner Full-Service-Agentur für Webdesign, KI, SaaS-/App-Entwicklung und Marketing mit maßgeschneiderten KI-Agenten.",
+   "evidence": "https://eyedia.de/leistungen/kuenstliche-intelligenz",
+   "batch": 2
+  },
+  {
+   "slug": "ai-works",
+   "name": "AI WORKS",
+   "website": "https://abssn.de/",
+   "city": "Berlin",
+   "categories": [
+    "KI-Agenten-Entwickler"
+   ],
+   "services": [
+    "Chatbots",
+    "KI-Assistenten",
+    "KI-Automatisierung",
+    "AI Agents",
+    "App-Entwicklung"
+   ],
+   "note": "KI-Agentur für Chatbots, KI-Assistenten und Automatisierung mit Sitz laut Website in Berlin und Kundenbetreuung u. a. in Köln, Bonn, Düsseldorf.",
+   "evidence": "https://abssn.de/ki-automatisierung",
+   "batch": 2
+  },
+  {
+   "slug": "ki-brains",
+   "name": "KI Brains",
+   "website": "https://kibrains.de/",
+   "city": "Köln",
+   "categories": [
+    "KI-Agenten-Entwickler"
+   ],
+   "services": [
+    "KI-Beratung",
+    "Potenzialanalyse",
+    "Prozessautomatisierung",
+    "KI-Agenten"
+   ],
+   "note": "KI-Agentur aus Köln, die laut eigener Angabe seit 2010 Prozesse automatisiert und über 700 Projekte umgesetzt hat.",
+   "evidence": "https://kibrains.de/",
+   "batch": 2
+  },
+  {
+   "slug": "hybrid-heroes",
+   "name": "Hybrid Heroes",
+   "website": "https://hybridheroes.de/",
+   "city": "Berlin",
+   "categories": [
+    "KI-Agenten-Entwickler"
+   ],
+   "services": [
+    "RAG-Architekturen",
+    "KI-Agenten-Entwicklung",
+    "MCP-Anbindungen",
+    "App-Entwicklung"
+   ],
+   "note": "Berliner App- und KI-Agentur mit Schwerpunkt auf RAG, Agenten-Entwicklung, MCP-Anbindungen und lokal gehosteten Open-Source-Modellen.",
+   "evidence": "https://hybridheroes.de/en/ai-agency/",
+   "batch": 2
+  },
+  {
+   "slug": "mps-consulting",
+   "name": "MPS Consulting",
+   "website": "https://mps-berlin.de/",
+   "city": "Berlin",
+   "categories": [
+    "KI-Agenten-Entwickler"
+   ],
+   "services": [
+    "KI-Audits",
+    "Voice Agents",
+    "Corporate-LLM-Workspaces",
+    "Workflow-Automatisierung mit n8n und Make"
+   ],
+   "note": "Berliner KI-Agentur (Pankow) mit KI-Audits, Voice Agents, Corporate-LLM-Workspaces und n8n/Make-Automatisierung.",
+   "evidence": "https://www.mps-berlin.de/ki-agentur-berlin.html",
+   "batch": 2
+  },
+  {
+   "slug": "atondix",
+   "name": "atondix",
+   "website": "https://atondix.de/",
+   "city": "Fürth",
+   "categories": [
+    "KI-Agenten-Entwickler"
+   ],
+   "services": [
+    "RAG-Systeme",
+    "KI-Agenten",
+    "Evaluation und Monitoring",
+    "KI-Workshops"
+   ],
+   "note": "KI-Agentur mit Sitz in Fürth, fokussiert auf RAG-Systeme und KI-Agenten für B2B-Unternehmen in Mittelfranken.",
+   "evidence": "https://www.atondix.de/ki-agentur-nuernberg",
+   "batch": 2
+  },
+  {
+   "slug": "codearchitekten-neura7",
+   "name": "CodeArchitekten GmbH (neura7)",
+   "website": "https://ki-stuttgart.de/",
+   "city": "Stuttgart",
+   "categories": [
+    "KI-Agenten-Entwickler"
+   ],
+   "services": [
+    "KI-Automatisierung",
+    "KI-Agenten",
+    "Chatbots",
+    "Prototyp-Entwicklung",
+    "Lokale KI-Modelle"
+   ],
+   "note": "Stuttgarter KI-Agentur (CodeArchitekten GmbH / neura7) für KI-Agenten, Chatbots und Prozessautomatisierung inkl. lokaler Modelle.",
+   "evidence": "https://ki-stuttgart.de/ki-agentur-karlsruhe/",
+   "batch": 2
+  },
+  {
+   "slug": "assono",
+   "name": "assono GmbH",
+   "website": "https://assono.de/",
+   "city": "Schwentinental",
+   "categories": [
+    "KI-Agenten-Entwickler"
+   ],
+   "services": [
+    "KI-Voicebot",
+    "KI-Beratung",
+    "Kundenservice-Automatisierung",
+    "KI-Entwicklung"
+   ],
+   "note": "KI-Dienstleister mit Zentrale bei Kiel (Schwentinental) und Standort Hamburg, der u. a. KI-Voicebots für den Kundenservice umsetzt.",
+   "evidence": "https://www.assono.de/voicebot",
+   "batch": 2
+  },
+  {
+   "slug": "pexon-consulting",
+   "name": "Pexon Consulting GmbH",
+   "website": "https://pexon-consulting.de/",
+   "city": "Grünwald",
+   "categories": [
+    "KI-Agenten-Entwickler"
+   ],
+   "services": [
+    "Voicebot-Entwicklung",
+    "RAG-Chatbots",
+    "KI-Beratung",
+    "Cloud-Lösungen"
+   ],
+   "note": "Beratung aus Grünwald bei München, die Voicebots/KI-Telefonassistenten und RAG-Chatbots auf Unternehmensdokumenten entwickelt.",
+   "evidence": "https://pexon-consulting.de/ki-beratung/chatbot/voicebot-telefonieren-mit-ki/",
+   "batch": 2
+  },
+  {
+   "slug": "voiceagenten",
+   "name": "Voiceagenten",
+   "website": "https://voiceagenten.com/",
+   "city": "Stuttgart",
+   "categories": [
+    "KI-Agenten-Entwickler"
+   ],
+   "services": [
+    "KI-Telefonassistenten",
+    "Voicebot-Entwicklung",
+    "Prototyping",
+    "Systemintegration"
+   ],
+   "note": "Stuttgarter Agentur für KI-Telefonassistenten auf No-/Low-Code-Basis, ergänzt durch individuelle Softwareentwicklung.",
+   "evidence": "https://www.voiceagenten.com/unsere-leistungen/ki-telefonassistenten/",
+   "batch": 2
+  },
+  {
+   "slug": "voice-agentur-rhein-main",
+   "name": "Voice Agentur Rhein-Main",
+   "website": "https://ki-voice-agenten-agentur.de/",
+   "city": "Rödermark",
+   "categories": [
+    "KI-Agenten-Entwickler"
+   ],
+   "services": [
+    "KI-Telefonassistent",
+    "Voice-Agenten",
+    "Terminbuchung per KI",
+    "DSGVO-konformes EU-Hosting"
+   ],
+   "note": "Agentur aus Rödermark (Hessen) für KI-Telefonassistenten im Mittelstand mit DSGVO-Konformität und EU-Hosting.",
+   "evidence": "https://ki-voice-agenten-agentur.de/",
+   "batch": 2
+  },
+  {
+   "slug": "sympra",
+   "name": "Sympra GmbH (GPRA)",
+   "website": "https://sympra.de/",
+   "city": "Stuttgart",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "Medienarbeit",
+    "Kommunikationsberatung",
+    "Corporate Publishing",
+    "Digitale Kommunikation",
+    "Krisenkommunikation"
+   ],
+   "note": "1992 gegründete GPRA-Agentur aus Stuttgart mit Fokus auf Maschinenbau, Automotive und ICT.",
+   "evidence": "https://www.sympra.de/en/agentur/",
+   "batch": 2
+  },
+  {
+   "slug": "lucy-turpin-communications",
+   "name": "Lucy Turpin Communications GmbH",
+   "website": "https://lucyturpin.de/",
+   "city": "München",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "Media Relations",
+    "Thought Leadership",
+    "Content-Lokalisierung",
+    "B2B-Tech-PR",
+    "SEO- und GEO-Sichtbarkeit"
+   ],
+   "note": "1995 gegründete Münchner Agentur für B2B-Technologie-PR im DACH-Raum.",
+   "evidence": "https://www.lucyturpin.de/public-relations/",
+   "batch": 2
+  },
+  {
+   "slug": "pr-com",
+   "name": "PR-COM GmbH",
+   "website": "https://pr-com.de/",
+   "city": "München",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "Pressearbeit",
+    "Fachmedien-Relations",
+    "B2B-Tech-PR",
     "Content-Erstellung"
    ],
-   "note": "1998 von Ralf Seybold gegründete SEO-Agentur aus Schorndorf bei Stuttgart, Mitinitiator der DIN SPEC 33461.",
-   "evidence": "https://onlinemarketing.de/dienstleister/online-marketing-agentur/schorndorf-im-rems-murr-kreis/seybold-agentur-fuer-sichtbarkeit"
+   "note": "Münchner PR-Agentur mit Schwerpunkt B2B-Technologie und Fachmedienarbeit.",
+   "evidence": "https://pr-com.de/",
+   "batch": 2
   },
   {
-   "slug": "smarketer-group",
-   "name": "Smarketer Group",
-   "website": "https://www.smarketer.de",
-   "city": "Berlin",
+   "slug": "fink-und-fuchs",
+   "name": "Fink & Fuchs AG",
+   "website": "https://finkfuchs.de/",
+   "city": "Wiesbaden",
    "categories": [
-    "Google-Ads-Agenturen",
-    "Meta-Ads-Agenturen",
-    "Online-Marketing-Agenturen"
+    "PR-Agenturen"
    ],
    "services": [
-    "Google Ads",
-    "Paid Social",
-    "Performance Marketing",
-    "Kampagnenmanagement"
+    "Media Relations",
+    "Innovationskommunikation",
+    "Public Affairs",
+    "Unternehmenskommunikation"
    ],
-   "note": "Inhabergeführte Berliner Performance-Agentur seit 2011, bei OMR Reviews als Google-Ads-Agentur gelistet.",
-   "evidence": "https://omr.com/de/reviews/service-category/google-ads-agencies/berlin"
+   "note": "1988 gegründete Agentur aus Wiesbaden für die Kommunikation von Innovation und technologischem Wandel, Standorte auch in München und Berlin.",
+   "evidence": "https://finkfuchs.de/im-fokus/media-relations-wirksame-pressearbeit-fuer-mehr-sichtbarkeit-und-relevanz/",
+   "batch": 2
   },
   {
-   "slug": "socialcooks",
-   "name": "SocialCooks",
-   "website": "https://www.socialcooks.com",
-   "city": "München",
-   "categories": [
-    "Meta-Ads-Agenturen"
-   ],
-   "services": [
-    "Meta Ads",
-    "TikTok Ads",
-    "Tracking & Attribution",
-    "Influencer-Kampagnen"
-   ],
-   "note": "Münchner Paid-Social-Agentur (gegründet 2021) für Meta- und TikTok-Ads mit E-Commerce-Hintergrund.",
-   "evidence": "https://ecom-unity.partnerpage.io/socialcooks"
-  },
-  {
-   "slug": "stauferdigital",
-   "name": "Stauferdigital",
-   "website": "https://stauferdigital.de",
-   "city": "Hattenhofen",
-   "categories": [
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "Webdesign",
-    "UX/UI-Design",
-    "Social Media",
-    "Online-Marketing"
-   ],
-   "note": "Agentur aus Hattenhofen (Raum Stuttgart/Göppingen) mit Fokus auf Webdesign, UX/UI-Design, Social Media und Online-Marketing.",
-   "evidence": "https://www.sortlist.co.uk/agency/stauferdigital"
-  },
-  {
-   "slug": "striive",
-   "name": "STRIIVE",
-   "website": "https://www.striive.de",
-   "city": "Berlin",
-   "categories": [
-    "Meta-Ads-Agenturen"
-   ],
-   "services": [
-    "Media Buying",
-    "Meta Ads",
-    "TikTok Ads",
-    "UGC-Produktion",
-    "Creator Content"
-   ],
-   "note": "Performance-Agentur für Social Media Advertising mit Büro in Berlin, fokussiert auf Media Buying und Creator Content für D2C- und E-Commerce-Marken.",
-   "evidence": "https://www.remotely.de/job/striive-edelhoff-studios-gmbh-senior-performance-marketing-manager-fur-meta-tiktok-ads"
-  },
-  {
-   "slug": "suchhelden",
-   "name": "Suchhelden",
-   "website": "https://www.suchhelden.de/",
-   "city": "Osnabrück",
-   "categories": [
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "SEO",
-    "GEO",
-    "Content-SEO",
-    "Linkbuilding"
-   ],
-   "note": "SEO-Agentur mit Hauptsitz in Osnabrück und Standorten u. a. in Hamburg, Berlin, Frankfurt, Düsseldorf und München.",
-   "evidence": "https://www.business-on.de/anbieter/suchhelden"
-  },
-  {
-   "slug": "suxeedo",
-   "name": "suxeedo GmbH",
-   "website": "https://www.suxeedo.de",
-   "city": "Berlin",
-   "categories": [
-    "KI-SEO-Agenturen",
-    "SEO-Agenturen",
-    "Content-Marketing-Agenturen"
-   ],
-   "services": [
-    "GEO",
-    "SEO",
-    "Content Marketing",
-    "Digital PR",
-    "SEA"
-   ],
-   "note": "Berliner Digital-Marketing-Agentur für Content Marketing und SEO, in Verzeichnissen auch als GEO-Agentur geführt.",
-   "evidence": "https://www.werkenntdenbesten.de/e/113069372/marketing/berlin/suxeedo-gmbh-bewertungen.html"
-  },
-  {
-   "slug": "taismo",
-   "name": "taismo GmbH",
-   "website": "https://www.taismo.de",
-   "city": "Kirchheim bei München",
-   "categories": [
-    "KI-SEO-Agenturen",
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "Technisches SEO",
-    "Strukturierte Daten",
-    "GEO-Check",
-    "KI-Sichtbarkeit",
-    "Content-Strategie",
-    "SEO-Betreuung",
-    "GEO",
-    "Google Ads"
-   ],
-   "note": "SEO- und GEO-Agentur bei München mit Schwerpunkt technisches SEO, strukturierte Daten und KI-Sichtbarkeit.",
-   "evidence": "https://clutch.co/profile/taismo"
-  },
-  {
-   "slug": "takevalue",
-   "name": "takevalue",
-   "website": "https://www.takevalue.de/",
-   "city": "Darmstadt",
-   "categories": [
-    "Online-Marketing-Agenturen"
-   ],
-   "services": [
-    "SEO",
-    "SEA",
-    "Paid Social",
-    "Analytics",
-    "Webentwicklung"
-   ],
-   "note": "Digital-Marketing-Agentur aus Darmstadt für B2B und B2C mit Search Marketing, Paid Social, Analytics und Webentwicklung.",
-   "evidence": "https://onlinemarketing.de/dienstleister/online-marketing-agentur/darmstadt/takevalue-consulting-gmbh"
-  },
-  {
-   "slug": "tante-e",
-   "name": "tante-e GmbH",
-   "website": "https://tante-e.com",
-   "city": "Köln",
-   "categories": [
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "Shopify-Plus-Shops",
-    "Klaviyo-E-Mail-Marketing",
-    "Shop-Migration",
-    "E-Commerce-Beratung"
-   ],
-   "note": "Kölner Agentur für Shopify Plus und Klaviyo mit über 200 E-Commerce-Projekten laut Eigenangabe.",
-   "evidence": "https://www.shopify.com.au/plus/partners/tante-e?page=3"
-  },
-  {
-   "slug": "tim-neumann-geo",
-   "name": "Tim Neumann GEO",
-   "website": "https://geo-optimierung.net",
-   "city": "Mannheim",
-   "categories": [
-    "KI-SEO-Agenturen"
-   ],
-   "services": [
-    "Generative Engine Optimization",
-    "Sichtbarkeit in ChatGPT",
-    "Google-AI-Overviews-Optimierung",
-    "Perplexity-Optimierung"
-   ],
-   "note": "Auf Generative Engine Optimization spezialisierter Anbieter aus Mannheim für Sichtbarkeit in ChatGPT, AI Overviews und Perplexity.",
-   "evidence": "https://www.wirtschaftsforum.de/tim-neumann-geo"
-  },
-  {
-   "slug": "valuezon",
-   "name": "VALUEZON",
-   "website": "https://www.valuezon.de",
-   "city": "München",
-   "categories": [
-    "Amazon-Agenturen"
-   ],
-   "services": [
-    "Amazon SEO",
-    "Listing-Optimierung",
-    "Produktbilder und Video",
-    "Sponsored Ads und DSP",
-    "Distributor-Service"
-   ],
-   "note": "Münchner Amazon-Agentur der Gründer der Marke Third of Life; laut Meldung 2026 Fusion mit metoda zur Averest Consulting GmbH.",
-   "evidence": "https://www.drweb.de/valuezon/"
-  },
-  {
-   "slug": "vanachibald",
-   "name": "vanAchibald – friends of design and programming",
-   "website": "https://www.vanachibald.de",
-   "city": "Leipzig",
-   "categories": [
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "Webdesign",
-    "Branding",
-    "Programmierung",
-    "Onpage-SEO",
-    "Online-Marketing"
-   ],
-   "note": "Leipziger Agentur seit 2010 für maßgeschneiderte, SEO-optimierte Websites ohne Templates sowie Branding und Programmierung.",
-   "evidence": "https://www.campixx.de/agenturen/webdesign/vanachibald-friends-of-design-and-programming/"
-  },
-  {
-   "slug": "web-tonic",
-   "name": "Web Tonic",
-   "website": "https://www.webtonic.io",
-   "city": "Berlin",
-   "categories": [
-    "Meta-Ads-Agenturen"
-   ],
-   "services": [
-    "Meta Ads",
-    "TikTok Ads",
-    "Paid Social",
-    "Tracking-Setup"
-   ],
-   "note": "Agentur, die in einem eigenen Berliner Meta-Ads-Agenturvergleich Meta, TikTok und weitere Kanäle anbietet (Quelle nicht neutral).",
-   "evidence": "https://www.webtonic.io/blog/best-meta-ads-fb-ig-agencies-berlin"
-  },
-  {
-   "slug": "webneo",
-   "name": "Webneo",
-   "website": "https://www.webneo.de/",
-   "city": "Dresden",
-   "categories": [
-    "Online-Marketing-Agenturen",
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "Webdesign",
-    "SEO",
-    "SEA",
-    "Onlineshop-Entwicklung",
-    "Markenbildung"
-   ],
-   "note": "Full-Service-Agentur aus Dresden und Leipzig für Markenbildung, Webdesign, SEO, SEA und Onlineshops.",
-   "evidence": "https://omr.com/de/reviews/service-category/seo-agencies/dresden"
-  },
-  {
-   "slug": "webzunder",
-   "name": "webZunder Agentur",
-   "website": "https://www.webzunder.com",
-   "city": "Dresden",
-   "categories": [
-    "Content-Marketing-Agenturen"
-   ],
-   "services": [
-    "Social-Media-Marketing",
-    "Content-Strategie",
-    "Social Ads",
-    "E-Mail-Marketing"
-   ],
-   "note": "Dresdner Social-Media-Agentur mit Fokus auf datenbasierten Content und Strategie.",
-   "evidence": "https://onlinemarketing.de/dienstleister/online-marketing-agentur/dresden/webzunder"
-  },
-  {
-   "slug": "wingmen-online-marketing",
-   "name": "Wingmen Online Marketing",
-   "website": "https://www.wngmn.de/",
-   "city": null,
-   "categories": [
-    "SEO-Agenturen"
-   ],
-   "services": [
-    "SEO-Beratung",
-    "Technisches SEO",
-    "SEO-Strategie",
-    "Content-SEO"
-   ],
-   "note": "2013 gegründete SEO-Beratung (GmbH, Gründer Florian Stelzner), die remote in Deutschland arbeitet.",
-   "evidence": "https://www.campixx.de/agenturen/seo/wingmen-online-marketing/"
-  },
-  {
-   "slug": "wlo-social",
-   "name": "WLO.social",
-   "website": "https://wlo.social",
-   "city": "Berlin",
-   "categories": [
-    "Meta-Ads-Agenturen"
-   ],
-   "services": [
-    "Meta Ads",
-    "TikTok Ads",
-    "Creative-Produktion",
-    "Kampagnenmanagement",
-    "ROAS-Optimierung"
-   ],
-   "note": "Berliner Agentur (Teil der Smarketer Group) ausschließlich für Performance-Marketing auf Meta und TikTok, laut OMR Meta Business Partner.",
-   "evidence": "https://www.business-on.de/anbieter/wlo-social"
-  },
-  {
-   "slug": "woogency",
-   "name": "woogency",
-   "website": "https://woogency.de",
-   "city": "Köln",
-   "categories": [
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "WordPress-Websites",
-    "WooCommerce-Shops",
-    "Webdesign"
-   ],
-   "note": "Im Kölner Branchenbuch als WordPress-Agentur mit Sitz im Mediapark eingetragen.",
-   "evidence": "https://www.koeln.de/branchen/eintrag/47338/webdesign/woogency-wordpress-agentur-koeln"
-  },
-  {
-   "slug": "zacher-media",
-   "name": "zacher media GmbH",
-   "website": "https://www.zachermedia.de",
-   "city": "Köln",
-   "categories": [
-    "Webdesign-Agenturen"
-   ],
-   "services": [
-    "Webdesign",
-    "WordPress-Websites",
-    "SEO",
-    "Grafikdesign"
-   ],
-   "note": "Kölner Webdesign-Agentur für Web-, SEO- und Grafikprojekte mit WordPress-Schwerpunkt.",
-   "evidence": "https://join.com/companies/zachermedia/16375417-senior-wordpress-webdesigner-m-w-d"
-  },
-  {
-   "slug": "zweidigital",
-   "name": "ZweiDigital",
-   "website": "https://www.zweidigital.de",
+   "slug": "oseon",
+   "name": "Oseon GmbH & Co. KG",
+   "website": "https://oseon.com/",
    "city": "Frankfurt am Main",
    "categories": [
-    "Meta-Ads-Agenturen"
+    "PR-Agenturen",
+    "Content-Marketing-Agenturen"
    ],
    "services": [
-    "Facebook-Ads",
-    "Instagram-Ads",
-    "TikTok Ads",
-    "LinkedIn Ads",
-    "Pinterest Ads",
-    "Tracking & Reporting"
+    "Public Relations",
+    "Content Marketing",
+    "Tech-PR",
+    "Branchen-PR Mobilität und Logistik",
+    "HR- und New-Work-PR"
    ],
-   "note": "Social-Ads-Agentur aus Frankfurt am Main, die Performance-Kampagnen auf Facebook, Instagram, LinkedIn, Pinterest und TikTok umsetzt.",
-   "evidence": "https://onlinemarketing.de/dienstleister/online-marketing-agentur/frankfurt-am-main/zweidigital-gmbh"
+   "note": "2008 gegründete inhabergeführte Agentur aus Frankfurt mit Büro in Hamburg, rund 70 % PR und 30 % Content Marketing.",
+   "evidence": "https://www.oseon.com/branchen/mobilitaet-logistik-pr",
+   "batch": 2
+  },
+  {
+   "slug": "faktenkontor",
+   "name": "Faktenkontor GmbH",
+   "website": "https://faktenkontor.de/",
+   "city": "Hamburg",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "Medienberatung",
+    "Kampagnenkonzeption",
+    "Social-Media-Strategie",
+    "Krisenmanagement",
+    "Reputationsmanagement"
+   ],
+   "note": "Hamburger Kommunikationsberatung für Finanzdienstleistung, Gesundheitswirtschaft sowie Beratungs- und Technologiebranche.",
+   "evidence": "https://www.faktenkontor.de/pressemeldungen/wirtschaft-wer-erfolgreich-kommuniziert-setzt-auf-pressearbeit/",
+   "batch": 2
+  },
+  {
+   "slug": "wilde-und-partner",
+   "name": "Wilde & Partner",
+   "website": "https://wilde.de/",
+   "city": "München",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "Internationale PR",
+    "Kommunikationsberatung",
+    "Pressearbeit",
+    "Markenkommunikation"
+   ],
+   "note": "Full-Service-Agentur für internationale PR und Kommunikation aus München und Wien, seit fast 40 Jahren am Markt.",
+   "evidence": "https://www.wilde.de/",
+   "batch": 2
+  },
+  {
+   "slug": "dr-haffa-und-partner",
+   "name": "Dr. Haffa & Partner GmbH",
+   "website": "https://haffapartner.de/",
+   "city": "München",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "Media Relations",
+    "Social Media und Online-PR",
+    "B2B-Marketing",
+    "IT- und Technik-PR"
+   ],
+   "note": "Inhabergeführte Münchner B2B-Agentur für PR und Marketing in IT, Technik und Industrie.",
+   "evidence": "https://www.haffapartner.de/?lang=en",
+   "batch": 2
+  },
+  {
+   "slug": "ad-hoc-pr",
+   "name": "AD HOC Gesellschaft für Public Relations mbH",
+   "website": "https://adhocpr.de/",
+   "city": "Gütersloh",
+   "categories": [
+    "PR-Agenturen",
+    "Content-Marketing-Agenturen"
+   ],
+   "services": [
+    "Presse- und PR-Arbeit",
+    "Krisenkommunikation",
+    "Content Marketing",
+    "Corporate Publishing",
+    "Markenaufbau"
+   ],
+   "note": "Inhabergeführte Full-Service-PR-Agentur aus Gütersloh für strategische Kommunikation.",
+   "evidence": "https://adhocpr.de/agentur",
+   "batch": 2
+  },
+  {
+   "slug": "profil-marketing",
+   "name": "Profil Marketing",
+   "website": "https://profil-marketing.com/",
+   "city": null,
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "B2B-Pressearbeit",
+    "Internationale PR",
+    "Fachpressearbeit"
+   ],
+   "note": "B2B-PR-Agentur mit internationalem Partnernetzwerk (u. a. Eskenzi PR London).",
+   "evidence": "https://www.profil-marketing.com/international/",
+   "batch": 2
+  },
+  {
+   "slug": "storymaker",
+   "name": "Storymaker Agentur für Public Relations GmbH",
+   "website": "https://storymaker.de/",
+   "city": "Tübingen",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "Medienarbeit",
+    "Strategische Kommunikationsberatung",
+    "Social Media",
+    "Content-Produktion",
+    "Corporate Publishing"
+   ],
+   "note": "Inhabergeführte PR-Agentur aus Tübingen (auch München und Berlin) mit Fokus auf technologiegetriebene Unternehmen.",
+   "evidence": "https://www.storymaker.de/storymaker-holt-zweimal-silber-beim-internationalen-spotlight-award-der-lacp/",
+   "batch": 2
+  },
+  {
+   "slug": "maisberger",
+   "name": "Maisberger GmbH",
+   "website": "https://maisberger.de/",
+   "city": "München",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "Media Relations",
+    "Kommunikationsberatung",
+    "Content",
+    "Interne Kommunikation",
+    "Employer Branding"
+   ],
+   "note": "Münchner B2B-Kommunikationsagentur mit Fokus auf Technologie, Industrie und HR.",
+   "evidence": "https://www.maisberger.de/",
+   "batch": 2
+  },
+  {
+   "slug": "punkt-pr",
+   "name": "PUNKT PR GmbH",
+   "website": "https://punkt-pr.de/",
+   "city": "Hamburg",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "Marken-PR",
+    "Produkt-PR",
+    "Krisenkommunikation",
+    "Presse- und Medienarbeit"
+   ],
+   "note": "Inhabergeführte Hamburger Full-Service-PR-Agentur, seit über 30 Jahren am Markt.",
+   "evidence": "https://www.punkt-pr.de/",
+   "batch": 2
+  },
+  {
+   "slug": "engel-und-zimmermann",
+   "name": "Engel & Zimmermann GmbH",
+   "website": "https://engel-zimmermann.de/",
+   "city": "Haar bei München",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "Unternehmenskommunikation",
+    "Krisenkommunikation",
+    "Public Affairs",
+    "Nachhaltigkeitskommunikation",
+    "Gesundheitskommunikation"
+   ],
+   "note": "GPRA-Kommunikationsberatung mit Büros bei München, in Köln und Berlin, Schwerpunkt Corporate-, Krisen- und politische Kommunikation.",
+   "evidence": "https://engel-zimmermann.de/agentur/",
+   "batch": 2
+  },
+  {
+   "slug": "haeberlein-und-mauerer",
+   "name": "Häberlein & Mauerer (haebmau)",
+   "website": "https://haebmau.de/",
+   "city": "München",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "Lifestyle-PR",
+    "Sport-PR",
+    "Healthcare-PR",
+    "Markenkommunikation"
+   ],
+   "note": "PR-Agentur aus München und Berlin mit über 35 Jahren Erfahrung in Sport-, Lifestyle- und Consumer-Health-PR.",
+   "evidence": "https://www.haebmau.de/pr-agentur-muenchen/",
+   "batch": 2
+  },
+  {
+   "slug": "mir-communications",
+   "name": "MIR Communications (Goerke Public Relations)",
+   "website": "https://goerke-pr.de/",
+   "city": "Köln",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "Pressearbeit",
+    "Kampagnenkonzeption",
+    "Content-Erstellung",
+    "Social-Channel-Management",
+    "Healthcare-PR"
+   ],
+   "note": "2007 als Goerke PR gegründete, inhabergeführte Kölner Agentur mit Schwerpunkten Healthcare, Mode und Lifestyle.",
+   "evidence": "https://www.goerke-pr.de/",
+   "batch": 2
+  },
+  {
+   "slug": "crossrelations-brandworks",
+   "name": "crossrelations brandworks GmbH",
+   "website": "https://crossrelations.de/",
+   "city": "Düsseldorf",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "Corporate Communications",
+    "Nachhaltigkeitskommunikation",
+    "Reporting",
+    "Kommunikationsberatung"
+   ],
+   "note": "PR-Agentur für nachhaltige Transformation mit Standorten in Düsseldorf und Frankfurt.",
+   "evidence": "https://crossrelations.de/en/agency/",
+   "batch": 2
+  },
+  {
+   "slug": "insignis",
+   "name": "INSIGNIS Agentur für Kommunikation GmbH (GPRA)",
+   "website": "https://insignis.de/",
+   "city": "Hannover",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "Media Relations",
+    "Digitale Kommunikation",
+    "Politische Kommunikation",
+    "Krisenkommunikation",
+    "Medientraining"
+   ],
+   "note": "GPRA-zertifizierte Agentur aus Hannover und Berlin für strategische PR und Content-Beratung.",
+   "evidence": "https://insignis.de/unsere-kompetenzen/",
+   "batch": 2
+  },
+  {
+   "slug": "schoesslers",
+   "name": "schoesslers GmbH",
+   "website": "https://schoesslers.com/",
+   "city": "Berlin",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "B2B-Kommunikation",
+    "Executive Communications",
+    "Thought Leadership",
+    "Krisenkommunikation"
+   ],
+   "note": "2011 gegründete Berliner B2B-PR-Agentur (Mehrheit bei Vogel Communications Group) mit weiteren Standorten in Würzburg, Hamburg und Köln.",
+   "evidence": "https://schoesslers.com/faq/grounding-page/",
+   "batch": 2
+  },
+  {
+   "slug": "public-link",
+   "name": "Public Link GmbH",
+   "website": "https://publiclink.de/",
+   "city": "Berlin",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "Media Relations",
+    "Digital Relations",
+    "Social Media",
+    "Consumer-PR"
+   ],
+   "note": "Inhabergeführte Berliner PR- und Social-Media-Agentur seit 2003 mit Fokus auf Consumer, Lifestyle, Food und Travel.",
+   "evidence": "https://www.publiclink.de/",
+   "batch": 2
+  },
+  {
+   "slug": "auchkomm",
+   "name": "auchkomm Unternehmenskommunikation",
+   "website": "https://auchkomm.com/",
+   "city": "Nürnberg",
+   "categories": [
+    "PR-Agenturen",
+    "Content-Marketing-Agenturen"
+   ],
+   "services": [
+    "B2B-Pressearbeit",
+    "Ausgelagerte Pressestelle",
+    "Fachartikel und Anwenderberichte",
+    "Messe-PR",
+    "B2B Content Marketing"
+   ],
+   "note": "B2B-PR-Agentur aus Nürnberg für mittelständische Technologieunternehmen aus Maschinenbau und Kunststoff.",
+   "evidence": "https://www.auchkomm.com/",
+   "batch": 2
+  },
+  {
+   "slug": "oberueber-karger",
+   "name": "Oberüber Karger Kommunikationsagentur",
+   "website": "https://oberueber-karger.de/",
+   "city": "Dresden",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "Public Relations",
+    "Public Affairs",
+    "Krisenkommunikation",
+    "Stakeholder-Dialog",
+    "Markenaufbau"
+   ],
+   "note": "Dresdner Kommunikationsagentur mit PR, Public Affairs und Krisenkommunikation.",
+   "evidence": "https://www.oberueber-karger.de/leistungen/public-relations-public-affairs",
+   "batch": 2
+  },
+  {
+   "slug": "faltmann-pr",
+   "name": "faltmann PR",
+   "website": "https://faltmann-pr.de/",
+   "city": "Aachen",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "B2B-Pressearbeit",
+    "Fachartikel",
+    "IT-PR"
+   ],
+   "note": "PR-Agentur aus Aachen mit Pressearbeit und Fachartikeln für B2B- und IT-Unternehmen.",
+   "evidence": "https://www.faltmann-pr.de/",
+   "batch": 2
+  },
+  {
+   "slug": "kerl-und-cie",
+   "name": "Kerl & Cie GmbH",
+   "website": "https://kerlundcie.de/",
+   "city": "Frankfurt am Main",
+   "categories": [
+    "PR-Agenturen"
+   ],
+   "services": [
+    "Finanz-PR",
+    "Pressearbeit",
+    "Interviews und Medienansprache",
+    "Strategische Kommunikation",
+    "Reporting"
+   ],
+   "note": "Frankfurter Agentur für Finanz- und Wirtschaftskommunikation mit rund 25 Beratern für Finanzdienstleister.",
+   "evidence": "https://kerlundcie.de/leistungen/oeffentlichkeitsarbeit",
+   "batch": 2
   }
  ]
 }
