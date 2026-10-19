@@ -6,15 +6,18 @@ import { readFile, writeFile, mkdir, rm } from 'node:fs/promises';
 import { AGENCIES, LOGO_BASE } from '../src/data.mjs';
 
 const FORCE = process.argv.includes('--force');
-const DIR = 'src/logos', MANIFEST = 'src/logos.json';
+// --set=de: a német ügynökségkereső logói (src/de/agenturen.json → src/de/logos/, src/de/logos.json)
+const DE = process.argv.includes('--set=de');
+const BASE = DE ? 'src/de' : 'src';
+const DIR = `${BASE}/logos`, MANIFEST = `${BASE}/logos.json`;
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36';
 const MAX = 600 * 1024;
-const db = JSON.parse(await readFile('src/ugynoksegek.json', 'utf8'));
+const db = JSON.parse(await readFile(DE ? 'src/de/agenturen.json' : 'src/ugynoksegek.json', 'utf8'));
 const manifest = FORCE ? {} : JSON.parse(await readFile(MANIFEST, 'utf8').catch(() => '{}'));
 const domain = u => u.replace(/^(https?:\/\/)?(www\.)?/i, '').split('/')[0].toLowerCase();
-const legacy = new Map(AGENCIES.map(a => [domain(a[3]), LOGO_BASE + a[2]]));
+const legacy = DE ? new Map() : new Map(AGENCIES.map(a => [domain(a[3]), LOGO_BASE + a[2]]));
 // Kézi javítások: { slug: { url: 'kép URL' } } vagy { slug: { skipImg: true } } (csak ikon), { slug: { none: true } }
-const OVERRIDES = JSON.parse(await readFile('src/logo-overrides.json', 'utf8').catch(() => '{}'));
+const OVERRIDES = JSON.parse(await readFile(`${BASE}/logo-overrides.json`, 'utf8').catch(() => '{}'));
 
 async function get(url, ms = 12000) {
   const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), ms);

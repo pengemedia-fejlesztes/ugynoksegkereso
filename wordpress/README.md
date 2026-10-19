@@ -38,3 +38,15 @@ opcionálisan `WP_SFTP_PORT`. Az adatfrissítés után a WP adminban újra kell 
 
 A repó adataiból (`src/ugynoksegek.json`, `src/logos`, `src/google-ratings.json`, `src/data.mjs`, `src/tags.mjs`)
 a `scripts/export-wp.mjs` készíti az importot (`kompasz-core/import/`, nincs a gitben).
+
+## Német oldal (de.ugynoksegek.pmdev.hu)
+
+Ugyanaz a téma és bővítmény, német nyelvvel: a nyelvet az import állítja be (`site.lang = de`), így a felület,
+az URL-ek (`/agentur/`, `/leistung/`, `/branche/`, `/zertifizierung/`, `/impressum/` …), a jogi oldalak és a
+strukturált adatok németek. A WP admin magyar marad.
+
+- Adatok: `src/de/agenturen.json` (ügynökségek), `src/de/content.mjs` (ranglisták, leistung-címkék, kezdőlap szöveg),
+  `src/de/logos/` (a „Logók letöltése” Action tölti le), felületszövegek: `kompasz-core/lang/de.php`.
+- Csomag: `bash scripts/zip-wp.sh de` → `dist/de/kompasz-core.zip` (német importtal) + `dist/de/kompasz.zip`,
+  vagy GitHub → Actions → „WordPress csomagok és telepítés” → `kompass-wordpress-de` artifact.
+- Telepítés: külön WordPress a de-aldomainen; bővítmény és téma feltöltése, majd Kompasz → Importálás.

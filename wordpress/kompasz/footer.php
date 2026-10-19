@@ -7,7 +7,7 @@
         <?php if ($email = get_option('kompasz_email')): ?><a href="mailto:<?php echo esc_attr($email); ?>"><?php echo esc_html($email); ?></a><?php endif; ?>
       </div>
       <div>
-        <div class="flbl">TOPLISTÁK</div>
+        <div class="flbl"><?php echo esc_html(kompasz__('TOPLISTÁK')); ?></div>
         <div class="fcats">
           <?php foreach (kompasz_categories() as $c): ?>
             <a href="<?php echo esc_url(get_term_link($c)); ?>"><span class="fi"><?php echo kompasz_cat_icon($c, 14); ?></span><?php echo esc_html($c->name); ?></a>
@@ -15,15 +15,15 @@
         </div>
       </div>
       <div>
-        <div class="flbl">OLDALAK</div>
-        <div class="fcol"><a href="<?php echo esc_url(home_url('/')); ?>">Kezdőlap</a><a href="<?php echo esc_url(home_url('/cimkek/')); ?>">Szolgáltatások</a><a href="<?php echo esc_url(home_url('/ugyfelek/')); ?>">Referencia-ügyfelek</a><a href="<?php echo esc_url(home_url('/minositesek/')); ?>">Minősítések</a><a href="<?php echo esc_url(home_url('/iparagak/')); ?>">Iparágak</a><a href="<?php echo esc_url(home_url('/rolunk/')); ?>">Rólunk</a><a href="<?php echo esc_url(home_url('/blog/')); ?>">Blog</a><a href="<?php echo esc_url(home_url('/kapcsolat/')); ?>">Kapcsolat</a></div>
+        <div class="flbl"><?php echo esc_html(kompasz__('OLDALAK')); ?></div>
+        <div class="fcol"><a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html(kompasz__('Kezdőlap')); ?></a><a href="<?php echo esc_url(kompasz_page_url('cimkek')); ?>"><?php echo esc_html(kompasz__('Szolgáltatások')); ?></a><a href="<?php echo esc_url(kompasz_page_url('ugyfelek')); ?>"><?php echo esc_html(kompasz__('Referencia-ügyfelek')); ?></a><a href="<?php echo esc_url(kompasz_page_url('minositesek')); ?>"><?php echo esc_html(kompasz__('Minősítések')); ?></a><a href="<?php echo esc_url(kompasz_page_url('iparagak')); ?>"><?php echo esc_html(kompasz__('Iparágak')); ?></a><a href="<?php echo esc_url(kompasz_page_url('rolunk')); ?>"><?php echo esc_html(kompasz__('Rólunk')); ?></a><a href="<?php echo esc_url(kompasz_page_url('blog')); ?>">Blog</a><a href="<?php echo esc_url(kompasz_page_url('kapcsolat')); ?>"><?php echo esc_html(kompasz__('Kapcsolat')); ?></a></div>
       </div>
       <div>
-        <div class="flbl">INFORMÁCIÓ</div>
-        <div class="fcol"><a href="<?php echo esc_url(home_url('/kivalasztasi-elvek/')); ?>">A listák kiválasztási elvei</a><a href="<?php echo esc_url(home_url('/aszf/')); ?>">ÁSZF</a><a href="<?php echo esc_url(home_url('/adatvedelem/')); ?>">Adatvédelmi tájékoztató</a></div>
+        <div class="flbl"><?php echo esc_html(kompasz__('INFORMÁCIÓ')); ?></div>
+        <div class="fcol"><a href="<?php echo esc_url(kompasz_page_url('kivalasztasi-elvek')); ?>"><?php echo esc_html(kompasz__('A listák kiválasztási elvei')); ?></a><a href="<?php echo esc_url(kompasz_page_url('aszf')); ?>"><?php echo esc_html(kompasz__('ÁSZF')); ?></a><a href="<?php echo esc_url(kompasz_page_url('adatvedelem')); ?>"><?php echo esc_html(kompasz__('Adatvédelmi tájékoztató')); ?></a><?php if (kompasz_lang() !== 'hu'): ?><a href="<?php echo esc_url(kompasz_page_url('impresszum')); ?>"><?php echo esc_html(kompasz__('Impresszum')); ?></a><?php endif; ?></div>
       </div>
     </div>
-    <div class="fbot"><span>© <?php echo esc_html(wp_date('Y')); ?> <?php bloginfo('name'); ?></span><span>Magyar · <a href="#" aria-disabled="true" title="Hamarosan">English</a></span></div>
+    <div class="fbot"><span>© <?php echo esc_html(wp_date('Y')); ?> <?php bloginfo('name'); ?></span><span><?php if (kompasz_lang() === 'de'): ?><a href="https://ugynoksegek.pmdev.hu/" hreflang="hu">Magyar</a> · Deutsch<?php else: ?>Magyar · <a href="https://de.ugynoksegek.pmdev.hu/" hreflang="de">Deutsch</a><?php endif; ?></span></div>
   </div>
 </footer>
 <?php wp_footer(); ?>

@@ -11,6 +11,8 @@ on:
     branches: [main]
     paths:
       - 'src/ugynoksegek.json'
+      - 'src/de/agenturen.json'
+      - 'src/de/logo-overrides.json'
       - 'scripts/fetch-logos.mjs'
       - 'src/logo-overrides.json'
       - '.github/workflows/logos.yml'
@@ -33,9 +35,10 @@ jobs:
           node-version: 22
       - run: npm i --no-save --no-package-lock sharp@0.33.5
       - run: node scripts/fetch-logos.mjs ${{ inputs.force && '--force' || '' }}
+      - run: '[ -f src/de/agenturen.json ] && node scripts/fetch-logos.mjs --set=de ${{ inputs.force && ''--force'' || '''' }} || true'
       - name: Commit
         run: |
-          git add src/logos src/logos.json
+          git add src/logos src/logos.json; [ -d src/de/logos ] && git add src/de/logos src/de/logos.json || true
           if git diff --cached --quiet; then echo "Nincs változás"; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898+github-actions[bot]@users.noreply.github.com"

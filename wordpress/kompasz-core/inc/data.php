@@ -25,10 +25,10 @@ function kompasz_team_bucket($team) {
     // Sávok a LinkedIn céges létszámkategóriáihoz igazítva; tartománynál („11–50”) a felső érték dönt
     if (!$team || !preg_match_all('/\d+/', $team, $m)) return '';
     $n = (int) end($m[0]);
-    if ($n <= 10) return '1–10 fő';
-    if ($n <= 50) return '11–50 fő';
-    if ($n <= 200) return '51–200 fő';
-    return '200+ fő';
+    if ($n <= 10) return kompasz__('1–10 fő');
+    if ($n <= 50) return kompasz__('11–50 fő');
+    if ($n <= 200) return kompasz__('51–200 fő');
+    return kompasz__('200+ fő');
 }
 
 function kompasz_stars($r) {

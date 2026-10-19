@@ -1,4 +1,7 @@
 (function () {
+  var I = window.KOMPASZ_I18N || {};
+  var t = function (k, def) { return I[k] || def; };
+  var fmt = function (s, a, b) { return s.replace('%1$d', a).replace('%2$d', b).replace('%d', a); };
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
 
@@ -24,7 +27,7 @@
     grid.classList.add('clip');
     b.addEventListener('click', function () {
       var c = grid.classList.toggle('clip');
-      b.textContent = c ? 'Tovább olvasom' : 'Kevesebb';
+      b.textContent = c ? t('more', 'Tovább olvasom') : t('less', 'Kevesebb');
     });
   });
 
@@ -63,13 +66,13 @@
     rows.forEach(function (r) { r.hidden = true; });
     var n = Math.min(shown + (featured ? 1 : 0), hits.length);
     hits.forEach(function (r, i) { rowsBox.insertBefore(r, noresult); if (i < n) r.hidden = false; });
-    countEl.textContent = hits.length + ' ügynökség';
+    countEl.textContent = fmt(t('agencies', '%d ügynökség'), hits.length);
     noresult.hidden = hits.length > 0;
     if (n < hits.length) {
       lm.hidden = false;
       bar.style.width = Math.round(n / hits.length * 100) + '%';
-      lmLabel.textContent = n + ' / ' + hits.length + ' megjelenítve';
-      lmBtn.textContent = 'További ' + Math.min(STEP, hits.length - n) + ' ügynökség';
+      lmLabel.textContent = fmt(t('shown', '%1$d / %2$d megjelenítve'), n, hits.length);
+      lmBtn.textContent = fmt(t('loadMore', 'További %d ügynökség'), Math.min(STEP, hits.length - n));
     } else lm.hidden = true;
   }
 
@@ -90,13 +93,16 @@
 
 // Blog: széles asztali nézetben oldalsó, követő tartalomjegyzék a kártya alapján, az aktuális fejezet kiemelésével
 (function () {
+  var I = window.KOMPASZ_I18N || {};
+  var t = function (k, def) { return I[k] || def; };
+  var fmt = function (s, a, b) { return s.replace('%1$d', a).replace('%2$d', b).replace('%d', a); };
   var toc = document.getElementById('toc'), art = document.getElementById('cikk');
   if (!toc || !art) return;
   var links = toc.querySelectorAll('.toc-item > a');
   if (links.length < 3) return;
   var side = document.createElement('nav');
   side.className = 'sidetoc';
-  side.setAttribute('aria-label', 'Tartalomjegyzék');
+  side.setAttribute('aria-label', (window.KOMPASZ_I18N && KOMPASZ_I18N.toc) || 'Tartalomjegyzék');
   side.innerHTML = '<div class="sidetoc-title">Tartalom</div>';
   var targets = [];
   links.forEach(function (l) {

@@ -17,6 +17,8 @@ on:
       - 'src/google-ratings.json'
       - 'src/data.mjs'
       - 'src/tags.mjs'
+      - 'src/de/**'
+      - 'scripts/export-wp-de.mjs'
 
 permissions:
   contents: read
@@ -37,10 +39,15 @@ jobs:
       - name: PHP szintaxis-ellenőrzés
         run: find wordpress -name '*.php' -print0 | xargs -0 -n1 php -l > /dev/null
       - run: bash scripts/zip-wp.sh
+      - run: bash scripts/zip-wp.sh de
       - uses: actions/upload-artifact@v4
         with:
           name: kompasz-wordpress
           path: dist/*.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kompass-wordpress-de
+          path: dist/de/*.zip
       - name: Telepítés SFTP-n
         env:
           HOST: ${{ secrets.WP_SFTP_HOST }}

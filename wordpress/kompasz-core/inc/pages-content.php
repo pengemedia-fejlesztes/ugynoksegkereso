@@ -16,7 +16,7 @@ function kompasz_page_contents() {
     $o = kompasz_operator();
     $mail = sprintf('<a href="mailto:%1$s">%1$s</a>', esc_html($o['email']));
     $op = sprintf('%s (székhely: %s; adószám: %s; e-mail: %s)', esc_html($o['name']), esc_html($o['address']), esc_html($o['tax']), $mail);
-    $elvek = esc_url(home_url('/kivalasztasi-elvek/'));
+    $elvek = esc_url(kompasz_page_url('kivalasztasi-elvek'));
 
     $rolunk = <<<HTML
 <p>A Kompasz független magyar oldal, ahol szolgáltatás szerint bontott toplistákban találod a hazai online marketing, Google Ads, Facebook-hirdetés, SEO és AI SEO ügynökségeket, AI agent fejlesztő cégeket, PR-ügynökségeket, weboldal-készítőket és tartalomgyártókat.</p>
@@ -128,12 +128,16 @@ HTML],
 /** Az alapoldalak szövegének frissítése: csak ha még az eredeti „hamarosan” vagy rövid induló szöveg áll benne */
 function kompasz_apply_page_contents($force = false) {
     $done = [];
-    foreach (kompasz_page_contents() as $slug => $html) {
-        $p = get_page_by_path($slug);
+    $de = kompasz_lang() === 'de';
+    if ($de) require_once __DIR__ . '/pages-content-de.php';
+    foreach (($de ? kompasz_page_contents_de() : kompasz_page_contents()) as $key => $html) {
+        $p = get_page_by_path(kompasz_slug($key));
         if (!$p) continue;
         $placeholder = stripos($p->post_content, 'hamarosan') !== false || strlen(wp_strip_all_tags($p->post_content)) < 200;
-        if ($force || $placeholder) { wp_update_post(['ID' => $p->ID, 'post_content' => $html]); $done[] = $slug; }
+        if ($force || $placeholder) { wp_update_post(['ID' => $p->ID, 'post_content' => $html]); $done[] = $key; }
     }
+    // Az induló blogcikkek magyarok – a német oldalon nincsenek
+    if ($de) return $done;
     foreach (kompasz_blog_posts() as $slug => [$title, $html]) {
         if (get_page_by_path($slug, OBJECT, 'post')) continue;
         wp_insert_post(['post_type' => 'post', 'post_status' => 'publish', 'post_name' => $slug, 'post_title' => $title, 'post_content' => $html]);

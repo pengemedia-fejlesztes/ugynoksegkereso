@@ -14,6 +14,11 @@ add_action('wp_enqueue_scripts', function () {
     $v = KOMPASZ_THEME_VERSION . '.' . filemtime(get_theme_file_path('assets/kompasz.css'));
     wp_enqueue_style('kompasz', get_theme_file_uri('assets/kompasz.css'), [], $v);
     wp_enqueue_script('kompasz', get_theme_file_uri('assets/kompasz.js'), [], $v, ['strategy' => 'defer', 'in_footer' => true]);
+    // A szkript szövegei az aktuális nyelven
+    wp_localize_script('kompasz', 'KOMPASZ_I18N', [
+        'more' => kompasz__('Tovább olvasom'), 'less' => kompasz__('Kevesebb'), 'agencies' => kompasz__('%d ügynökség'),
+        'shown' => kompasz__('%1$d / %2$d megjelenítve'), 'loadMore' => kompasz__('További %d ügynökség'), 'toc' => kompasz__('Tartalomjegyzék'),
+    ]);
     // Felesleges blokk-stílusok kikapcsolása a gyorsaságért (a téma nem használ blokkszerkesztős elrendezést a nyilvános oldalon)
     if (!is_singular('post') && !is_page()) { wp_dequeue_style('wp-block-library'); wp_dequeue_style('global-styles'); wp_dequeue_style('classic-theme-styles'); }
 });

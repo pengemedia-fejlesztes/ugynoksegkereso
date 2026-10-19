@@ -1,0 +1,2580 @@
+{
+ "companies": [
+  {
+   "slug": "4imedia",
+   "name": "4iMEDIA GmbH",
+   "website": "https://www.4imedia.com/",
+   "city": "Leipzig",
+   "founded": 2000,
+   "team": null,
+   "services": [
+    "Geschäfts- und Nachhaltigkeitsberichte",
+    "Kundenmagazine",
+    "Corporate Publishing",
+    "Content-Marketing",
+    "SEO und GEO",
+    "PR und Pressearbeit",
+    "Websites"
+   ],
+   "categories": [
+    "Content-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "PR-Agenturen"
+   ],
+   "description": "Die inhabergeführte Leipziger Agentur 4iMEDIA entwickelt seit dem Jahr 2000 Unternehmensberichte, Kundenmagazine, Content-Plattformen und Websites für Kunden in der DACH-Region. Daneben bietet sie SEO- und GEO-Strategien für die Sichtbarkeit in Such- und KI-Systemen sowie PR und Kommunikation an. Nach eigenen Angaben hat die Agentur mehr als 300 Projekte umgesetzt, unter anderem für Total Deutschland und Stromnetz Berlin.",
+   "certs": [],
+   "industries": [
+    "Energie",
+    "Healthcare",
+    "Tourismus",
+    "Verbände",
+    "Öffentlicher Sektor"
+   ],
+   "source_url": "https://www.4imedia.com/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "4tfm-e-commerce-agentur",
+   "name": "4TFM E-Commerce Agentur GmbH",
+   "website": "https://4tfm.de/",
+   "city": "Berlin",
+   "founded": 2015,
+   "team": null,
+   "services": [
+    "Shopify-Shopentwicklung",
+    "Shopify Theme-Design",
+    "xt:Commerce Plugin-Entwicklung",
+    "xt:Commerce Template-Design",
+    "Datenmigration zu Shopify",
+    "Shop-Support und Wartung",
+    "B2B-Shops"
+   ],
+   "categories": [
+    "Webdesign-Agenturen"
+   ],
+   "description": "Die Berliner 4TFM E-Commerce Agentur GmbH ist auf die Entwicklung und Betreuung von Onlineshops mit xt:Commerce und Shopify spezialisiert. Sie entwickelt Plugins, Templates, Themes und Schnittstellen, übernimmt Datenmigrationen zu Shopify und bietet laufenden Support. Seit 2015 ist sie xt:Commerce Solution Partner, seit 2019 Shopify-Partner; abgerechnet wird nach Aufwand ohne Abo.",
+   "certs": [
+    "Shopify Plus Partner",
+    "xt:Commerce Solution Partner"
+   ],
+   "industries": [],
+   "source_url": "https://4tfm.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "aaads",
+   "name": "AAADS",
+   "website": "https://aaads.de/",
+   "city": "Köln",
+   "founded": null,
+   "team": null,
+   "services": [
+    "Meta Ads",
+    "Google Ads",
+    "Creative Design",
+    "Landingpages",
+    "E-Commerce-Consulting"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "Google-Ads-Agenturen",
+    "Meta-Ads-Agenturen"
+   ],
+   "description": "Die Kölner Boutique-Agentur AAADS ist auf Performance Marketing über soziale Netzwerke und Suchmaschinen spezialisiert. Zum Angebot gehören Social Ads auf Meta, Google Ads, Creative Design, Landingpages und E-Commerce-Beratung. Die Betreuung folgt einem fünfstufigen Prozess von Onboarding bis zur laufenden wöchentlichen Optimierung.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://aaads.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "ad-agents",
+   "name": "ad agents GmbH",
+   "website": "https://www.ad-agents.com/",
+   "city": null,
+   "founded": 2006,
+   "team": null,
+   "services": [
+    "Suchmaschinenwerbung",
+    "Suchmaschinenoptimierung",
+    "Social Media Advertising",
+    "Affiliate Management",
+    "Marktplätze",
+    "Display Advertising",
+    "Analytics & Data",
+    "Produktdatenmanagement"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Amazon-Agenturen"
+   ],
+   "description": "Die ad agents GmbH ist seit 2006 als Agentur für Online- und Performance-Marketing tätig, national wie international. Das Leistungsspektrum umfasst Suchmaschinenwerbung, SEO, Social Media Advertising, Affiliate Management, Display Advertising, digitale Marktplätze, Produktdatenmanagement sowie ChatGPT Ads. Zu den Referenzen auf der Website zählen unter anderem ADAC, Loberon, mey und die OLB Bank.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.ad-agents.com/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "adcologne",
+   "name": "adcologne",
+   "website": "https://www.adcologne.de/",
+   "city": "Köln",
+   "founded": 2007,
+   "team": null,
+   "services": [
+    "Google Ads",
+    "Microsoft Ads",
+    "Meta Ads",
+    "TikTok und LinkedIn Ads",
+    "Tracking",
+    "Creatives",
+    "Landingpage-Optimierung"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "Google-Ads-Agenturen",
+    "Meta-Ads-Agenturen"
+   ],
+   "description": "Die Kölner Agentur adcologne betreut seit 2007 Kunden im Bereich SEA und Paid Social Ads, mit Fokus auf mittelständische Unternehmen. Sie konzipiert und optimiert Kampagnen auf Google, Microsoft, Meta, Pinterest, TikTok, LinkedIn und Spotify und unterstützt bei Tracking, Creatives, Landingpages und Funnels. Die Verträge sind nach eigenen Angaben monatlich kündbar.",
+   "certs": [
+    "Google Premier Partner",
+    "Meta Business Partner",
+    "Microsoft Advertising Partner"
+   ],
+   "industries": [],
+   "source_url": "https://www.adcologne.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "admates",
+   "name": "adMates",
+   "website": "https://admates.de/",
+   "city": "München",
+   "founded": null,
+   "team": null,
+   "services": [
+    "SEO",
+    "GEO",
+    "Google Ads",
+    "Google Shopping",
+    "Meta Ads",
+    "TikTok Ads",
+    "Tracking & Analytics",
+    "Conversion-Optimierung"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Meta-Ads-Agenturen"
+   ],
+   "description": "adMates ist eine Full-Service-Online-Marketing-Agentur aus München, die sich vor allem an kleine und mittlere Unternehmen richtet. Sie verzahnt SEO, GEO für KI-Suchsysteme wie ChatGPT, Google Ads sowie Social Ads auf Meta und TikTok und bietet Server-Side-Tracking und strategische Beratung. Das Preismodell kombiniert nach eigenen Angaben einen Grundpreis mit einer Beteiligung am Werbebudget.",
+   "certs": [
+    "Google Partner",
+    "Meta Partner"
+   ],
+   "industries": [],
+   "source_url": "https://admates.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "adpoint",
+   "name": "AdPoint GmbH",
+   "website": "https://adpoint.de/",
+   "city": "Hannover",
+   "founded": null,
+   "team": null,
+   "services": [
+    "Google Ads",
+    "Google Ads Betreuung",
+    "Google Shopping",
+    "Remarketing",
+    "Microsoft Ads",
+    "SEA-Beratung"
+   ],
+   "categories": [
+    "Google-Ads-Agenturen"
+   ],
+   "description": "Die AdPoint GmbH aus Hannover ist eine auf Suchmaschinenwerbung spezialisierte SEM-Agentur, deren Experten nach eigenen Angaben ausschließlich im Google-Ökosystem arbeiten. Sie bietet Aufbau, Betreuung und Optimierung von Google-Ads-Kampagnen inklusive Shopping und Remarketing sowie Microsoft Ads und SEA-Beratung. Zusätzlich gibt es einen kostenlosen SEA-Check für bestehende Konten.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://adpoint.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "adseed",
+   "name": "adseed",
+   "website": "https://www.adseed.de/",
+   "city": "Leipzig",
+   "founded": null,
+   "team": null,
+   "services": [
+    "Google Ads",
+    "Microsoft Advertising",
+    "Social Ads",
+    "Affiliate Marketing",
+    "Webanalyse & Tracking",
+    "Feed-Optimierung",
+    "Ad Creatives",
+    "Seminare & Webinare"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "Google-Ads-Agenturen",
+    "Meta-Ads-Agenturen"
+   ],
+   "description": "Die Leipziger Performance-Marketing-Agentur adseed betreut Kampagnen in Google Ads, Microsoft Advertising, auf Social-Media-Plattformen wie Facebook, Pinterest, LinkedIn und TikTok sowie im Affiliate Marketing. Ergänzend bietet sie Tracking, Datenanalyse, Reporting, Produktdatenfeed-Optimierung und Werbemittelerstellung. Über die adseed Academy veranstaltet sie Seminare und Webinare zum Performance Marketing.",
+   "certs": [
+    "Google CSS Partner"
+   ],
+   "industries": [],
+   "source_url": "https://www.adseed.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "ama-x",
+   "name": "ama-X",
+   "website": "https://www.ama-x.com/",
+   "city": null,
+   "founded": 2015,
+   "team": null,
+   "services": [
+    "Amazon PPC & Advertising",
+    "Amazon DSP",
+    "Amazon SEO",
+    "Amazon Brand Store",
+    "Amazon Workshops",
+    "Troubleshooting",
+    "Internationalisierung"
+   ],
+   "categories": [
+    "Amazon-Agenturen"
+   ],
+   "description": "ama-X ist eine Amazon-Agentur, die Unternehmen seit 2015 beim Aufbau, der Steuerung und Skalierung ihres Amazon-Geschäfts begleitet. Das Angebot reicht von Account-Setup und Troubleshooting über Amazon PPC, DSP und SEO bis zu Brand Stores, Internationalisierung und Workshops für Inhouse-Teams. Nach eigenen Angaben hat die Agentur mehr als 145 Marken betreut.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.ama-x.com/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "amz-advertise",
+   "name": "AMZ Advertise",
+   "website": "https://amz-advertise.de/",
+   "city": null,
+   "founded": null,
+   "team": "23+ Amazon-Spezialisten",
+   "services": [
+    "Amazon Ads Management",
+    "Amazon PPC",
+    "Potenzialanalyse",
+    "Gebotsoptimierung",
+    "Eigene Software SellerFlow"
+   ],
+   "categories": [
+    "Amazon-Agenturen"
+   ],
+   "description": "AMZ Advertise ist eine auf Amazon Ads spezialisierte Agentur für etablierte Händler im DACH-Raum. Jeder Kunde erhält einen festen Senior Account Manager; gesteuert werden die Kampagnen mit der eigenen Software SellerFlow, die Ziele je Produkt aus Marge, Bestand und Wettbewerb berechnet. Nach eigenen Angaben betreut das Team mit über 23 Spezialisten mehr als 400 Kunden.",
+   "certs": [
+    "Amazon Ads Verified Partner"
+   ],
+   "industries": [],
+   "source_url": "https://amz-advertise.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "amz-marketing",
+   "name": "AMZ-Marketing",
+   "website": "https://amz-marketing.de/",
+   "city": null,
+   "founded": 2014,
+   "team": "30+ Spezialisten",
+   "services": [
+    "Amazon Advertising",
+    "Amazon SEO",
+    "Amazon Content Marketing",
+    "360°-Betreuung",
+    "Amazon Workshops",
+    "Internationalisierung",
+    "Potenzialanalyse"
+   ],
+   "categories": [
+    "Amazon-Agenturen"
+   ],
+   "description": "AMZ-Marketing ist eine seit 2014 tätige Amazon-Agentur, die sich als Boutique-Agentur mit bewusst begrenzter Kundenzahl positioniert. Nach eigenen Angaben arbeiten über 30 Spezialisten in fünf Fachabteilungen für SEO, Grafik, Technik, Advertising und Strategie. 2025 erhielt die Agentur den Deutschen Agenturpreis.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://amz-marketing.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "analyticaa",
+   "name": "AnalyticaA GmbH",
+   "website": "https://www.analyticaa.com/",
+   "city": "München",
+   "founded": 2009,
+   "team": null,
+   "services": [
+    "SEA",
+    "SEO",
+    "GEO",
+    "Affiliate Marketing",
+    "Social Media Marketing",
+    "Amazon Marketing",
+    "App-Marketing",
+    "Digital Analytics"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Content-Marketing-Agenturen",
+    "Amazon-Agenturen"
+   ],
+   "description": "Die Münchner AnalyticaA GmbH ist eine Full-Service-Agentur für Digital- und Performance-Marketing und berät seit 2009 Mittelständler und internationale Konzerne. Zum Angebot gehören SEA, SEO, GEO, Affiliate-, Social-Media- und Content-Marketing, Amazon- und App-Marketing sowie Digital Analytics und KI-Beratung. Die Agentur wurde als iBusiness Top 100 SEO-Dienstleister 2026 ausgezeichnet.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.analyticaa.com/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "arboro",
+   "name": "arboro GmbH",
+   "website": "https://www.arboro.de/",
+   "city": null,
+   "founded": 2009,
+   "team": "20+ Senior-Experten",
+   "services": [
+    "Shopware-Entwicklung",
+    "Shopify-Entwicklung",
+    "Shop-Migration",
+    "SEO und GEO",
+    "Google Ads",
+    "UX/UI und CRO",
+    "AI Commerce",
+    "E-Commerce-Beratung"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Webdesign-Agenturen"
+   ],
+   "description": "Die arboro GmbH ist eine Full-Service-Agentur für Shopware und Shopify und seit 2009 im E-Commerce tätig. Ihre festangestellten Senior-Experten verbinden Shopentwicklung, Support und Migration mit SEO/GEO, Google Ads, Conversion-Optimierung und der Vorbereitung von Shops auf KI-Suche und Agentic Commerce. Die Agentur ist Shopware Gold Partner, Shopify Partner und Google Premier Partner sowie ISO-9001-zertifiziert.",
+   "certs": [
+    "Shopware Gold Partner",
+    "Shopify Partner",
+    "Google Premier Partner"
+   ],
+   "industries": [],
+   "source_url": "https://www.arboro.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "artaxo",
+   "name": "artaxo GmbH",
+   "website": "https://artaxo.com/",
+   "city": "Hamburg",
+   "founded": null,
+   "team": "15 Mitarbeiter",
+   "services": [
+    "SEO-Beratung",
+    "GEO & LLMO",
+    "Content-Strategie",
+    "SEA",
+    "UX & CRO",
+    "IT & Web-Analytics",
+    "Linkbuilding"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Content-Marketing-Agenturen"
+   ],
+   "description": "Die Hamburger artaxo GmbH ist eine Agentur für Suchmaschinenmarketing mit nach eigenen Angaben über 25 Jahren Markterfahrung und einem 15-köpfigen Team. Sie bietet SEO-Beratung, GEO und LLMO für die Sichtbarkeit in KI-Suchmaschinen, Content-Strategie, Google-Ads-Betreuung, UX/CRO sowie technische SEO und Web-Analytics. Seit 2010 bildet die Agentur eigenen SEO-Nachwuchs in einem Traineeship aus.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://artaxo.com/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "artundweise",
+   "name": "artundweise GmbH",
+   "website": "https://www.artundweise.de/",
+   "city": "Bremen",
+   "founded": null,
+   "team": "über 50 Mitarbeiter",
+   "services": [
+    "Markenstrategie",
+    "Content Marketing",
+    "GEO",
+    "TYPO3-Websites",
+    "Social Media",
+    "Video und Motion Design",
+    "Social Ads"
+   ],
+   "categories": [
+    "Content-Marketing-Agenturen",
+    "Webdesign-Agenturen",
+    "KI-SEO-Agenturen"
+   ],
+   "description": "Die Bremer Kreativagentur artundweise entwickelt mit über 50 Mitarbeitenden digitale Identität für mittelständische Unternehmen. Sie verbindet Strategie, Content Marketing, Websites auf TYPO3-Basis, Social Media inklusive Paid-Kampagnen sowie Foto- und Videoproduktion. Zudem bietet sie GEO für die Sichtbarkeit in KI-Systemen wie ChatGPT an.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.artundweise.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "aufgesang",
+   "name": "Aufgesang",
+   "website": "https://www.aufgesang.de/",
+   "city": "Hannover",
+   "founded": 2009,
+   "team": null,
+   "services": [
+    "SEO",
+    "GEO & LLMO",
+    "Content-Marketing",
+    "PR und Online-PR",
+    "Google Ads",
+    "Social Media Advertising",
+    "Wikipedia-PR",
+    "Webanalyse & Tracking"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Meta-Ads-Agenturen",
+    "Content-Marketing-Agenturen",
+    "PR-Agenturen"
+   ],
+   "description": "Aufgesang ist eine Online-Marketing-Agentur aus Hannover, die seit 2009 als SEO-Agentur tätig ist und nach eigenen Angaben über 20 Jahre Erfahrung in Online-Marketing und PR mitbringt. Das Angebot umfasst SEO, Generative Engine Optimization (GEO), Content-Marketing, PR und Wikipedia-PR sowie Performance Marketing mit Google Ads und Social Ads, etwa auf Meta. Nach eigenen Angaben betreut die Agentur über 70 große und mittlere Unternehmen.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.aufgesang.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "bloofusion",
+   "name": "Bloofusion",
+   "website": "https://www.bloofusion.de/",
+   "city": null,
+   "founded": null,
+   "team": null,
+   "services": [
+    "SEO",
+    "SEA",
+    "Social Media Marketing",
+    "Webanalyse",
+    "Conversion-Rate-Optimierung",
+    "KI-SEO (GEO)",
+    "Online-Marketing-Coaching"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Content-Marketing-Agenturen"
+   ],
+   "description": "Bloofusion ist eine Online-Marketing-Agentur mit nach eigenen Angaben über 20 Jahren Erfahrung. Sie bietet SEO, SEA, Social Media, Webanalyse und Conversion-Rate-Optimierung sowie KI-SEO (GEO), Content-Marketing und Linkbuilding. Kunden erhalten eine feste Ansprechperson; daneben bietet die Agentur Coaching, Workshops und Relaunch-Begleitung.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.bloofusion.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "claneo",
+   "name": "Claneo",
+   "website": "https://www.claneo.com/",
+   "city": "Berlin",
+   "founded": null,
+   "team": "über 80 Mitarbeiter",
+   "services": [
+    "Suchmaschinenoptimierung",
+    "International SEO",
+    "GEO & LLMO",
+    "Content Marketing",
+    "Content Creation",
+    "Digital PR",
+    "Offpage SEO"
+   ],
+   "categories": [
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Content-Marketing-Agenturen",
+    "PR-Agenturen"
+   ],
+   "description": "Claneo ist eine SEO-Agentur mit Sitz in Berlin, spezialisiert auf internationales SEO und Content Marketing. Mit nach eigenen Angaben über 80 Expert:innen bietet sie strategisches und technisches SEO, GEO und LLMO, Content Creation, Offpage SEO und Digital PR. Zu den Referenzen gehören unter anderem Pattex, HelloFresh und der Jungheinrich Profi Shop.",
+   "certs": [],
+   "industries": [
+    "E-Commerce & Retail",
+    "Versicherung & Finanzen",
+    "Fashion & Lifestyle",
+    "Tourismus & Reise",
+    "Pharma & Healthcare",
+    "FMCG"
+   ],
+   "source_url": "https://www.claneo.com/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "construktiv",
+   "name": "construktiv GmbH",
+   "website": "https://construktiv.de/",
+   "city": "Bremen",
+   "founded": 1997,
+   "team": "über 100 Mitarbeiter",
+   "services": [
+    "Social Media",
+    "Influencer Marketing",
+    "Digital Advertising",
+    "SEO & Content Marketing",
+    "Web & E-Commerce",
+    "Print & Corporate Publishing"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "Content-Marketing-Agenturen",
+    "Webdesign-Agenturen"
+   ],
+   "description": "Die construktiv GmbH ist eine 1997 gegründete Agentur für digitales Marketing mit über 100 Mitarbeitenden an den Standorten Bremen und Berlin. Die Geschäftsbereiche umfassen Social Media und Influencer Marketing, Digital Advertising, Content Marketing und SEO sowie Web und Commerce. Zu den Kunden zählen laut Website unter anderem Paramount+, congstar, OBI, AOK und Vodafone.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://construktiv.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "context-studios",
+   "name": "Context Studios",
+   "website": "https://www.contextstudios.ai/",
+   "city": "Berlin",
+   "founded": null,
+   "team": null,
+   "services": [
+    "KI-Agenten-Entwicklung",
+    "Chatbot-Entwicklung",
+    "MCP-Server-Entwicklung",
+    "KI-Workflows & Automatisierung",
+    "Individuelle Softwareentwicklung",
+    "MVP-Entwicklung",
+    "Technisches SEO & GEO",
+    "KI-Beratung"
+   ],
+   "categories": [
+    "KI-Agenten-Entwickler",
+    "KI-SEO-Agenturen"
+   ],
+   "description": "Context Studios ist ein KI-natives Entwicklungsstudio aus Berlin, das KI-Agenten, Chatbots, MCP-Server und KI-Workflows für Kundenunternehmen entwickelt. Daneben bietet es individuelle Softwareentwicklung, MVP-Sprints mit dem Ziel eines ersten MVP in etwa vier Wochen sowie Prozessautomatisierung. Unter dem Stichwort Sichtbarkeit in KI-Antworten werden zudem technisches SEO, GEO und AEO angeboten.",
+   "certs": [],
+   "industries": [
+    "Bau & Handwerk",
+    "Gesundheitswesen",
+    "Gastgewerbe",
+    "Marketingagenturen",
+    "Private Equity"
+   ],
+   "source_url": "https://www.contextstudios.ai/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "dasaundo",
+   "name": "dasAundO",
+   "website": "https://www.dasaundo.de/",
+   "city": "Hamburg",
+   "founded": 2013,
+   "team": null,
+   "services": [
+    "Webentwicklung",
+    "Webdesign",
+    "Shopify-Shops",
+    "Landingpages",
+    "Webflow- und Wix-Entwicklung",
+    "Nachhaltige Webentwicklung"
+   ],
+   "categories": [
+    "Webdesign-Agenturen"
+   ],
+   "description": "Die Hamburger Digitalagentur dasAundO konzipiert und entwickelt seit 2013 individuelle Websites, E-Commerce-Shops und Landingpages. Je nach Projekt setzt sie auf Wix, Webflow, Contao, WordPress oder Shopify und legt Wert auf SEO-Grundlagen sowie ressourcenschonende Webentwicklung mit Green Hosting.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.dasaundo.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "die-sea-experten",
+   "name": "Die SEA-Experten",
+   "website": "https://www.sea-experten.de/",
+   "city": null,
+   "founded": null,
+   "team": "20 Experten",
+   "services": [
+    "Google Ads Setup",
+    "Google Ads Optimierung",
+    "Google Shopping",
+    "Performance Max",
+    "YouTube Ads",
+    "Microsoft Ads",
+    "Conversion-Tracking"
+   ],
+   "categories": [
+    "Google-Ads-Agenturen"
+   ],
+   "description": "Die SEA-Experten sind eine auf Google Ads spezialisierte Agentur mit nach eigenen Angaben 15 Jahren Erfahrung und über 800 Projekten. Sie übernimmt Setup und Optimierung von Search-, Shopping-, Display-, PMax- und YouTube-Kampagnen sowie Microsoft Ads und verfügt über ein eigenes Tracking-Team. Die Agentur ist Google Premier Partner und wird von TÜV Rheinland und BVDW geprüft.",
+   "certs": [
+    "Google Premier Partner"
+   ],
+   "industries": [
+    "E-Commerce",
+    "Industrie",
+    "Dienstleistungen",
+    "Tourismus"
+   ],
+   "source_url": "https://www.sea-experten.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "dreikon",
+   "name": "DREIKON",
+   "website": "https://www.dreikon.de/",
+   "city": "Münster",
+   "founded": null,
+   "team": null,
+   "services": [
+    "SEO und GEO",
+    "Google Ads",
+    "Social Media Marketing",
+    "Webdesign",
+    "E-Commerce mit Shopware und Shopify",
+    "Local Listing",
+    "Content Marketing",
+    "Grafik- und Markendesign"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Webdesign-Agenturen",
+    "Content-Marketing-Agenturen"
+   ],
+   "description": "DREIKON ist eine Full-Service-Werbeagentur aus Münster, die Markenführung, Kampagnen und digitale Performance verbindet. Das Angebot reicht von SEO, GEO und Google Ads über Social Media, Content Marketing und Local-Listing-Management bis zu Webdesign, E-Commerce mit Shopware und Shopify sowie Grafik- und Corporate Design.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.dreikon.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "eom",
+   "name": "Effektiv Online-Marketing GmbH (EOM)",
+   "website": "https://eom.de/",
+   "city": "Hannover",
+   "founded": 2009,
+   "team": null,
+   "services": [
+    "SEO-Beratung",
+    "Google Ads",
+    "Social Media Ads",
+    "Content Marketing",
+    "Conversion-Optimierung",
+    "Google Analytics 4 & Tracking",
+    "Digitale Barrierefreiheit",
+    "Online-Marketing-Seminare"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Content-Marketing-Agenturen"
+   ],
+   "description": "Die Effektiv Online-Marketing GmbH (EOM) aus Hannover unterstützt seit 2009 vor allem mittelständische Unternehmen im Online-Marketing. Die Agentur bietet SEO-Beratung, Google Ads, Social Media Ads, Content Marketing, Conversion-Optimierung, Tracking mit GA4 und Matomo sowie Beratung zur digitalen Barrierefreiheit. Ergänzend bietet die EOM Academy Seminare und Online-Kurse an.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://eom.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "efly-marketplace-services",
+   "name": "eFLY",
+   "website": "https://efly-amz.com/",
+   "city": "Stuttgart",
+   "founded": null,
+   "team": "60+ Amazon-Experten",
+   "services": [
+    "Amazon-Strategie",
+    "Amazon PPC Advertising",
+    "Amazon Content Marketing",
+    "Amazon SEO & Übersetzung",
+    "Troubleshooting",
+    "Internationalisierung",
+    "Schulungen & Workshops"
+   ],
+   "categories": [
+    "Amazon-Agenturen"
+   ],
+   "description": "eFLY ist eine Amazon-Full-Service-Agentur aus Stuttgart, die Marken auf neun Amazon-Marktplätzen in DACH, EU, USA und Australien betreut. Die Leistungen umfassen Strategie, PPC-Advertising inklusive DSP, Content, SEO und Übersetzung, Troubleshooting sowie Internationalisierung. Nach eigenen Angaben arbeiten über 60 festangestellte Amazon-Experten für mehr als 150 Marken.",
+   "certs": [
+    "Amazon Ads Verified Partner"
+   ],
+   "industries": [],
+   "source_url": "https://efly-amz.com/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "eminded",
+   "name": "eMinded",
+   "website": "https://eminded.de/",
+   "city": "München",
+   "founded": null,
+   "team": null,
+   "services": [
+    "SEA",
+    "SEO",
+    "GEO & LLMO",
+    "Social Ads",
+    "Digital PR",
+    "Content Marketing",
+    "Tracking & Analytics",
+    "Conversion-Rate-Optimierung"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Meta-Ads-Agenturen",
+    "Content-Marketing-Agenturen"
+   ],
+   "description": "eMinded ist eine inhabergeführte Online-Marketing-Agentur aus München mit Schwerpunkt auf B2B- und E-Commerce-Kunden. Das Angebot umfasst Google Ads und Microsoft Ads, SEO sowie GEO und LLMO, Social Ads auf LinkedIn, Meta und TikTok, Digital PR, Content Marketing sowie Tracking und CRO. Seit 2019 veröffentlicht die Agentur nach eigenen Angaben eine eigene Branchenstudie.",
+   "certs": [],
+   "industries": [
+    "Business & HR",
+    "SaaS & Tech"
+   ],
+   "source_url": "https://eminded.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "eology",
+   "name": "eology GmbH",
+   "website": "https://www.eology.de/",
+   "city": "Volkach",
+   "founded": null,
+   "team": null,
+   "services": [
+    "SEO & GEO",
+    "Performance Marketing",
+    "Content Creation",
+    "Online-PR und Outreach",
+    "Social Media",
+    "Tracking & Analytics"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Content-Marketing-Agenturen"
+   ],
+   "description": "Die eology GmbH ist eine Online-Marketing-Agentur mit Standorten in Volkach, Würzburg und Hamburg. Sie bietet SEO und GEO bzw. LLMO für die Sichtbarkeit in Suchmaschinen und KI-Modellen, Performance Marketing über Search-, Social- und Display-Anzeigen, Content Creation, Outreach mit Online-PR und Linkmarketing sowie Social Media und Tracking.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.eology.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "exito",
+   "name": "exito GmbH & Co. KG",
+   "website": "https://www.exito.de/",
+   "city": "Nürnberg",
+   "founded": 1998,
+   "team": null,
+   "services": [
+    "Search Engine Advertising",
+    "SEO",
+    "Display Advertising",
+    "Native und Video Ads",
+    "Social Media Ads",
+    "Online-Marketing-Beratung",
+    "Internationale Kampagnen"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen"
+   ],
+   "description": "Die exito GmbH & Co. KG ist eine Online-Marketing-Agentur aus Nürnberg, die seit 1998 Kampagnen mit Fokus auf Performance Marketing plant, steuert und analysiert. Zum Angebot gehören Suchmaschinenwerbung, SEO, Display-, Native-, Video- und Social-Media-Ads sowie strategische Beratung. Dank muttersprachlicher Mitarbeitender betreut die Agentur auch internationale, mehrsprachige Kampagnen.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.exito.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "experics",
+   "name": "experics digital GmbH",
+   "website": "https://www.experics.de/",
+   "city": null,
+   "founded": null,
+   "team": null,
+   "services": [
+    "SEO-Beratung",
+    "GEO",
+    "Verkaufspsychologisches Copywriting",
+    "Workshops & Schulungen",
+    "Teamaufbau und Prozessberatung"
+   ],
+   "categories": [
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen"
+   ],
+   "description": "experics ist eine Boutique-Agentur für SEO und GEO, die sich an mittelständische Unternehmen im DACH-Raum richtet. Die Beratung erfolgt ausschließlich durch Senior-Berater mit mindestens sieben Jahren Erfahrung, die nach eigenen Angaben maximal fünf bis sieben Kunden gleichzeitig betreuen. Neben SEO und Optimierung für KI-Suchsysteme wie ChatGPT setzt die Agentur auf verkaufspsychologisches Copywriting und Wissenstransfer an Inhouse-Teams.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.experics.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "fischerappelt",
+   "name": "fischerAppelt",
+   "website": "https://www.fischerappelt.de",
+   "city": "Hamburg",
+   "founded": null,
+   "team": null,
+   "services": [
+    "PR & Content",
+    "Werbung",
+    "Digitale Kommunikation",
+    "Design",
+    "Film",
+    "Strategie",
+    "Live Marketing",
+    "Social Media"
+   ],
+   "categories": [
+    "PR-Agenturen",
+    "Content-Marketing-Agenturen"
+   ],
+   "description": "Die Hamburger Agenturgruppe fischerAppelt bietet Lösungen in Kommunikation und Marketing, darunter PR & Content, Werbung, Digital, Design, Film, Strategie, Live Marketing, Online Marketing & Media sowie Social Media. Neben dem Headquarter in Hamburg nennt die Website Standorte in Berlin, Frankfurt, Köln, München, Stuttgart und Doha. Zu den gezeigten Arbeiten zählen Projekte für Audi und die Internationale Stiftung Mozarteum.",
+   "certs": [],
+   "industries": [
+    "Automotive & Mobility",
+    "Healthcare",
+    "FMCG & Retail",
+    "Financial & Professional Services",
+    "Public & Non-Governmental",
+    "Technology"
+   ],
+   "source_url": "https://www.fischerappelt.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "fogel-podcasting",
+   "name": "Fogel-Podcasting",
+   "website": "https://fogel-podcasting.de",
+   "city": "Gütersloh",
+   "founded": 2019,
+   "team": null,
+   "services": [
+    "Corporate Podcasts",
+    "Podcast-Beratung",
+    "Podcast-Produktion",
+    "Interne Podcasts",
+    "Podcast-Hosting und Distribution",
+    "Podcast-Equipment-Verleih",
+    "Podcast-Workshops",
+    "Video-Podcast-Teaser"
+   ],
+   "categories": [
+    "Content-Marketing-Agenturen"
+   ],
+   "description": "Fogel-Podcasting ist eine Agentur für Corporate Podcasts im B2B-Bereich mit Podcast-Studio in Gütersloh/Bielefeld und bietet nach eigenen Angaben seit 2019 einen Full-Podcast-Service an. Das Angebot reicht von Konzeption und Marktanalyse über Aufnahme und Postproduktion bis zu Hosting, Distribution und Vermarktung. Zusätzlich vermietet die Agentur Podcast-Equipment mit Aufnahmeleitung und produziert interne Podcasts als Audio-Intranet.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://fogel-podcasting.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "friendventure",
+   "name": "Friendventure",
+   "website": "https://www.friendventure.de",
+   "city": "Köln",
+   "founded": 2012,
+   "team": "70+ Spezialist:innen",
+   "services": [
+    "Website-Relaunch",
+    "Webdesign & UX/UI",
+    "Webentwicklung",
+    "KI-Chatbots",
+    "GEO",
+    "SEO",
+    "Google Ads",
+    "Social Ads"
+   ],
+   "categories": [
+    "Webdesign-Agenturen",
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Content-Marketing-Agenturen",
+    "KI-Agenten-Entwickler"
+   ],
+   "description": "Die Digitalagentur Friendventure aus Köln und Berlin entwickelt nach eigenen Angaben seit 2012 Websites und setzt heute auf AI-Ready Websites und CMS. Das Leistungsspektrum umfasst Webdesign, Webentwicklung, barrierefreies Webdesign, KI-Chatbots, GEO, SEO, Google Ads, Social Ads und Content Marketing. Nach eigenen Angaben arbeiten mehr als 70 Spezialist:innen an Standorten wie Köln, Berlin, Hamburg, Stuttgart, Düsseldorf und Frankfurt; die Agentur ist Teil der Friends Digital Group.",
+   "certs": [
+    "TYPO3 Solution Partner"
+   ],
+   "industries": [
+    "Energy & Environment",
+    "Professional Services",
+    "Software & IT",
+    "Industry",
+    "E-Commerce",
+    "Retail & FMCG"
+   ],
+   "source_url": "https://www.friendventure.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "geoagentur-de",
+   "name": "geoagentur.de",
+   "website": "https://geoagentur.de",
+   "city": "Herford",
+   "founded": null,
+   "team": "9 Spezialisten",
+   "services": [
+    "GEO-Strategie",
+    "ChatGPT-SEO",
+    "Gemini-SEO",
+    "Perplexity-SEO",
+    "Semantische Optimierung",
+    "Technisches SEO für KI",
+    "KI-Sichtbarkeits-Check"
+   ],
+   "categories": [
+    "KI-SEO-Agenturen"
+   ],
+   "description": "Die Agentur geoagentur.de mit Sitz in Herford ist auf Generative Engine Optimization (GEO) spezialisiert und optimiert Inhalte für die Sichtbarkeit in ChatGPT, Gemini und Perplexity. Die Arbeit gliedert sich in Analyse, Optimierung und laufende Überwachung der KI-generierten Ergebnisse. Nach eigenen Angaben besteht das Team aus neun Spezialisten und hat über 120 Unternehmen betreut.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://geoagentur.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "hanseranking",
+   "name": "Hanseranking",
+   "website": "https://www.hanseranking.de",
+   "city": "Hamburg",
+   "founded": null,
+   "team": "100+ Mitarbeitende",
+   "services": [
+    "Google Ads",
+    "SEO",
+    "GEO",
+    "Social-Media-Marketing",
+    "Meta Ads",
+    "Microsoft Ads",
+    "Content-Erstellung",
+    "Online-Marketing-Beratung"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Meta-Ads-Agenturen",
+    "Content-Marketing-Agenturen"
+   ],
+   "description": "Die Hamburger Online-Marketing-Agentur Hanseranking konzentriert sich auf SEA, SEO, Social Media und Content für kleine und mittelständische Unternehmen. Zum Angebot gehören unter anderem Google Ads, Microsoft Ads, Meta Ads, GEO bzw. ChatGPT-SEO sowie Content-Pakete. Nach eigenen Angaben zählt das Team mehr als 100 Mitarbeitende und arbeitet aktuell mit über 616 Kunden zusammen.",
+   "certs": [
+    "Google Premium Partner",
+    "Microsoft Ads Partner",
+    "BVDW Partner"
+   ],
+   "industries": [],
+   "source_url": "https://www.hanseranking.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "huks-digital",
+   "name": "huks.digital",
+   "website": "https://www.huks.digital",
+   "city": "Karlsruhe",
+   "founded": null,
+   "team": null,
+   "services": [
+    "Webdesign",
+    "SEO",
+    "Online-Marketing",
+    "Social Media",
+    "Shopify-Shops",
+    "Grafikdesign",
+    "Branding"
+   ],
+   "categories": [
+    "Webdesign-Agenturen",
+    "SEO-Agenturen",
+    "Online-Marketing-Agenturen"
+   ],
+   "description": "huks.digital ist eine Werbe- und Digitalagentur aus Karlsruhe für Webdesign, SEO, Online-Marketing und Grafikdesign. Für Onlineshops setzt die Agentur auf Shopify; außerdem gehören Social-Media-Kampagnen, Rebranding sowie Print- und Werbeprodukte zum Angebot. Zu den gezeigten Projekten zählen Websites und Shops für lokale Händler, eine Arztpraxis und eine Band.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.huks.digital/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "hurra-com",
+   "name": "hurra.com",
+   "website": "https://www.hurra.com",
+   "city": null,
+   "founded": null,
+   "team": "150+ Mitarbeitende",
+   "services": [
+    "SEA / Paid Search",
+    "SEO & GEO",
+    "Paid Social",
+    "Programmatic & Display",
+    "Produktdaten & Shopping",
+    "Tracking & Analytics",
+    "Measurement & Attribution",
+    "ChatGPT Ads"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen"
+   ],
+   "description": "hurra.com versteht sich als Digital-Marketing-Partner, der Spezialisten mit eigener Marketing-Intelligence-Technologie (hurra.ai) verbindet. Die Expertise umfasst SEA, SEO & GEO, Paid Social, Programmatic/Display, Produktdaten & Shopping sowie Tracking, Measurement und Attribution. Nach eigenen Angaben hat die Agentur mehr als 2.950 Projekte umgesetzt und beschäftigt über 150 Mitarbeitende, die zu 100 % remote arbeiten.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.hurra.com/de",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "internetwarriors",
+   "name": "internetwarriors",
+   "website": "https://internetwarriors.de",
+   "city": "Berlin",
+   "founded": 2001,
+   "team": null,
+   "services": [
+    "Online-Marketing",
+    "SEO",
+    "GEO-Audit",
+    "SEA",
+    "Social Media Marketing",
+    "Webanalyse"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen"
+   ],
+   "description": "Die Berliner Online-Marketing-Agentur internetwarriors ist nach eigenen Angaben seit 2001 tätig und bündelt die Einzeldisziplinen des Online-Marketings unter einem Dach. Zum Angebot gehören Suchmaschinenoptimierung, SEA und Social Media Marketing sowie Webanalyse. Die Agentur veröffentlicht eigene Studien zu Google AI Mode und AI Overviews und bietet einen GEO-Audit an.",
+   "certs": [],
+   "industries": [
+    "Bau & Immobilien",
+    "Finanzwesen",
+    "Gesundheitswesen",
+    "Industrie & Produktion",
+    "Technologie & IT",
+    "Tourismus & Gastronomie"
+   ],
+   "source_url": "https://internetwarriors.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "jsh-marketing",
+   "name": "JSH Marketing",
+   "website": "https://jsh.marketing",
+   "city": "München",
+   "founded": null,
+   "team": null,
+   "services": [
+    "SEO",
+    "AEO / GEO",
+    "Google Ads",
+    "Google Shopping Ads",
+    "Microsoft Bing Ads",
+    "Technisches SEO",
+    "Local SEO",
+    "Tracking & Analytics"
+   ],
+   "categories": [
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen"
+   ],
+   "description": "JSH Marketing ist eine Suchmaschinenmarketing-Agentur aus München, die SEO, GEO und Google Ads mit sauberem Tracking zu einer Strategie verbindet. Die Arbeitsweise folgt den Schritten Diagnose, Strategie und Umsetzung mit festem Ansprechpartner. Nach eigenen Angaben betreut die Agentur mehr als 200 Kunden.",
+   "certs": [
+    "Google Partner",
+    "Microsoft Advertising Partner"
+   ],
+   "industries": [],
+   "source_url": "https://jsh.marketing/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "jungmut",
+   "name": "JUNGMUT",
+   "website": "https://www.jungmut.com",
+   "city": "Köln",
+   "founded": 2007,
+   "team": null,
+   "services": [
+    "WordPress-Websites",
+    "Barrierefreies Webdesign",
+    "Inbound Marketing",
+    "HubSpot",
+    "Employer Branding",
+    "Positionierung & Design"
+   ],
+   "categories": [
+    "Webdesign-Agenturen"
+   ],
+   "description": "JUNGMUT ist eine Digitalagentur aus Köln, die nach eigenen Angaben seit 2007 WordPress-Websites, HubSpot-Setups und Inbound Marketing für B2B-Unternehmen umsetzt. Zu den Leistungen gehören außerdem barrierefreies Webdesign, Employer Branding sowie Positionierung und Design. Die Agentur arbeitet für Unternehmen, Non-Profit-Organisationen und öffentliche Träger, unter anderem beim Website-Relaunch für Misereor.",
+   "certs": [],
+   "industries": [
+    "Non-Profit-Organisationen",
+    "Öffentlicher Sektor"
+   ],
+   "source_url": "https://www.jungmut.com/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "kammann-rossi",
+   "name": "Kammann Rossi",
+   "website": "https://www.kammannrossi.de",
+   "city": "Köln",
+   "founded": null,
+   "team": "20 Mitarbeiter",
+   "services": [
+    "Content Marketing",
+    "Corporate Publishing (Digital & Print)",
+    "Corporate Reporting",
+    "Interne Kommunikation",
+    "Design",
+    "KI-Transformationsberatung"
+   ],
+   "categories": [
+    "Content-Marketing-Agenturen"
+   ],
+   "description": "Die inhabergeführte Kölner Agentur Kammann Rossi liefert nach eigenen Angaben seit 50 Jahren Kommunikation in Strategie, Beratung, Content und Gestaltung. Sie produziert Magazine, Berichte und Kampagnen, unterstützt bei Corporate Reporting, Change- und interner Kommunikation und berät zur KI-Transformation. Mit AssistantOS betreibt die Agentur eine eigene KI-Plattform für Kreativteams; das Team umfasst nach eigenen Angaben 20 Mitarbeiter.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.kammannrossi.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "klarkode",
+   "name": "Klarkode",
+   "website": "https://www.klarkode.com",
+   "city": null,
+   "founded": null,
+   "team": null,
+   "services": [
+    "Webflow-Websites",
+    "Landingpages",
+    "Web-Applikationen",
+    "CMS-Migration",
+    "Prozessautomatisierung (Make)",
+    "MVP-Entwicklung",
+    "AEO-Audit"
+   ],
+   "categories": [
+    "Webdesign-Agenturen"
+   ],
+   "description": "Klarkode ist eine Webflow-Enterprise-Agentur aus Deutschland, die Websites, Landingpages und Web-Applikationen mit No-Code- und Low-Code-Technologien entwickelt. Zu den Referenzen zählen IONITY, Yamaha Music Europe, Henkel und die Hamburger Morgenpost, unter anderem mit Migrationen zu Webflow und Prozessautomatisierungen über Make. Nach eigenen Angaben vertrauen bereits mehr als 279 Kunden auf die Agentur.",
+   "certs": [
+    "Webflow Premium Enterprise Partner"
+   ],
+   "industries": [],
+   "source_url": "https://www.klarkode.com/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "klickpiloten",
+   "name": "KlickPiloten",
+   "website": "https://klickpiloten.de",
+   "city": "Stuttgart",
+   "founded": null,
+   "team": null,
+   "services": [
+    "SEO & GEO",
+    "Google Ads",
+    "Social Media Ads",
+    "Amazon Ads",
+    "Content-Marketing",
+    "Affiliate-Marketing",
+    "E-Mail-Marketing",
+    "Digital Analytics"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Meta-Ads-Agenturen",
+    "Content-Marketing-Agenturen",
+    "Amazon-Agenturen"
+   ],
+   "description": "KlickPiloten ist eine Digital-Marketing-Agentur mit Standorten in Stuttgart, Hamburg und Berlin für B2B- und B2C-Kunden. Das Leistungsspektrum reicht von SEO und Generative Engine Optimization über Google Ads, Facebook-, TikTok- und LinkedIn-Marketing bis zu Amazon Ads, Affiliate-, Content- und E-Mail-Marketing. Ergänzend bietet die Agentur Analytics, Seminare und eine Academy an.",
+   "certs": [
+    "Adobe Solution Partner",
+    "HubSpot Agentur Partner",
+    "Klaviyo Agentur Partner",
+    "Matomo Partner"
+   ],
+   "industries": [],
+   "source_url": "https://klickpiloten.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "kopf-und-stift",
+   "name": "Kopf & Stift",
+   "website": "https://kopfundstift.de",
+   "city": "Dresden",
+   "founded": 2014,
+   "team": null,
+   "services": [
+    "Webdesign",
+    "WordPress-Entwicklung",
+    "WooCommerce-Shops",
+    "Barrierefreies Webdesign",
+    "SEO-Betreuung",
+    "GEO – Sichtbarkeit in KI",
+    "KI-Integration",
+    "Medienproduktion"
+   ],
+   "categories": [
+    "Webdesign-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen"
+   ],
+   "description": "Die Dresdner Webdesign-Agentur Kopf & Stift entwickelt nach eigenen Angaben seit 2014 WordPress-Websites und bietet SEO sowie GEO für die Sichtbarkeit in KI-Suchen an. Weitere Leistungen sind WooCommerce-Shops, barrierefreies Webdesign, WordPress-Wartung, KI-Integration und Medienproduktion wie Erklärvideos. Nach eigenen Angaben wurden über 150 Website-Projekte umgesetzt, unter anderem für Ärzte, Steuerberater und Dienstleister.",
+   "certs": [],
+   "industries": [
+    "Ärzte & Praxen",
+    "Zahnärzte",
+    "Anwälte"
+   ],
+   "source_url": "https://kopfundstift.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "latori",
+   "name": "Latori GmbH",
+   "website": "https://www.latori.com",
+   "city": "Wuppertal",
+   "founded": null,
+   "team": "40+ Mitarbeiter",
+   "services": [
+    "Shopify-Plus-Entwicklung",
+    "Shop-Migration",
+    "Systemintegration (ERP)",
+    "Headless Commerce",
+    "B2B-E-Commerce",
+    "UI/UX-Design"
+   ],
+   "categories": [
+    "Webdesign-Agenturen"
+   ],
+   "description": "Die Latori GmbH ist eine Shopify-Agentur mit Team in Wuppertal und Stuttgart und begleitet Shopify-Händler nach eigenen Angaben seit über zehn Jahren. Schwerpunkte sind Shopify-Plus-Projekte, Migrationen von Shopware, Spryker oder Magento, ERP-Integrationen, Headless Commerce und B2B-Shops. Nach eigenen Angaben beschäftigt Latori mehr als 40 Mitarbeiter und hat über 100 Enterprise-Projekte umgesetzt, etwa für Lamy und Asphaltgold.",
+   "certs": [
+    "Shopify Platinum Partner"
+   ],
+   "industries": [],
+   "source_url": "https://www.latori.com/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "loewenstark",
+   "name": "Löwenstark",
+   "website": "https://www.loewenstark.com",
+   "city": null,
+   "founded": 2001,
+   "team": null,
+   "services": [
+    "GEO",
+    "SEO",
+    "SEA",
+    "Social-Media-Ads",
+    "E-Mail-Marketing",
+    "Content-Erstellung",
+    "Website- und Shop-Entwicklung",
+    "Barrierefreiheit"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Webdesign-Agenturen",
+    "Content-Marketing-Agenturen"
+   ],
+   "description": "Löwenstark ist eine Full-Service-Online-Marketing-Agentur, die nach eigenen Angaben seit 2001 tätig ist und sich auf KMU spezialisiert. Das Angebot verbindet Performance Marketing (u. a. GEO, SEO, SEA, Social-Media-Ads, E-Mail- und Affiliate-Marketing), Brand Marketing, Content-Produktion, Website- und Shop-Entwicklung mit WordPress, TYPO3, Shopware und Magento sowie digitale Beratung. Ergänzend bietet die Agentur Leistungen zur digitalen Barrierefreiheit an.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.loewenstark.com/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "amz-mala",
+   "name": "mala markets",
+   "website": "https://mala-markets.com/",
+   "city": null,
+   "founded": null,
+   "team": null,
+   "services": [
+    "Amazon-Agentur",
+    "Amazon SEO und PPC",
+    "Amazon DSP",
+    "OTTO-Marketing",
+    "Kaufland-Marketing",
+    "eBay-Marketing",
+    "Produktbilder und A+ Content"
+   ],
+   "categories": [
+    "Amazon-Agenturen"
+   ],
+   "description": "mala markets ist eine Marktplatz-Agentur, die etablierte Marken als externe Marktplatz-Abteilung auf Amazon, OTTO, Kaufland und eBay betreut. Die Leistungen umfassen Strategie, SEO, Advertising mit Sponsored Ads und DSP sowie Content wie Produktbilder und A+ Content. Die Agentur ist offizieller Partner von OTTO; ihr Framework stützt sich nach eigenen Angaben auf über 250 Projekte.",
+   "certs": [
+    "OTTO Partner"
+   ],
+   "industries": [
+    "Elektronik",
+    "Küche & Haushalt",
+    "Haustier",
+    "Fashion",
+    "Kosmetik",
+    "Lebensmittel"
+   ],
+   "source_url": "https://mala-markets.com/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "marketbirds",
+   "name": "marketbirds",
+   "website": "https://marketbirds.io",
+   "city": null,
+   "founded": null,
+   "team": null,
+   "services": [
+    "Google Ads",
+    "Intent-basierte Landingpages",
+    "CRM-Anbindung",
+    "Offline Conversion Tracking",
+    "Landingpage-Optimierung",
+    "Google Ads Audit"
+   ],
+   "categories": [
+    "Google-Ads-Agenturen"
+   ],
+   "description": "marketbirds ist eine Google-Ads-Agentur, die Kampagnen mit einem Lead-to-Revenue-System verbindet, bei dem CRM-Daten über Offline Conversion Tracking in die Kampagnensteuerung zurückfließen. Dazu gehören intent-basierte Landingpages und laufende Landingpage-Optimierung, unterstützt durch KI-Agenten unter Aufsicht eines Senior Account Managers. Nach eigenen Angaben basiert die Arbeit auf mehr als 13 Jahren Erfahrung, über 150 Projekten und mehr als 200 Mio. Euro verwaltetem Werbebudget.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://marketbirds.io/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "mashup-communications",
+   "name": "Mashup Communications",
+   "website": "https://www.mashup-communications.de",
+   "city": "Berlin",
+   "founded": 2009,
+   "team": null,
+   "services": [
+    "Public Relations",
+    "B2B-PR",
+    "Content Marketing",
+    "Social-Media-Redaktion",
+    "Employer Branding",
+    "Storytelling-Workshops"
+   ],
+   "categories": [
+    "PR-Agenturen",
+    "Content-Marketing-Agenturen"
+   ],
+   "description": "Mashup Communications ist eine PR- und Kommunikationsagentur aus Berlin, die nach eigenen Angaben seit 2009 Storytelling-Strategien für Unternehmen entwickelt. Die Leistungen umfassen PR, Content Marketing und Social-Media-Redaktion, Employer Branding sowie Storytelling-Workshops und Webinare. Die Website nennt transparente Festpreise, etwa einen monatlichen B2B-PR-Retainer ab 4.800 Euro.",
+   "certs": [],
+   "industries": [
+    "Digital B2B",
+    "Finanzbranche & Fintech",
+    "HR & New Work",
+    "Pharma & Healthcare",
+    "Bau & Immobilien",
+    "Industrie & Versorger"
+   ],
+   "source_url": "https://www.mashup-communications.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "mellowmessage",
+   "name": "mellowmessage",
+   "website": "https://www.mellowmessage.de",
+   "city": null,
+   "founded": null,
+   "team": null,
+   "services": [
+    "B2B-Digitalmarketing",
+    "Customer Journey Management",
+    "Marketing-Automation & Lead-Nurturing",
+    "Systemintegration",
+    "Performance-Messung",
+    "Website- und E-Commerce-Projekte"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen"
+   ],
+   "description": "mellowmessage ist eine Agentur für B2B-Digitalmarketing mit Fokus auf das Industrie-Marketing. Mit einem integrierten Customer Journey Management verbindet sie Strategie, Systeme und Daten, um Marketing messbar und steuerbar zu machen, unter anderem durch Lead-Scoring und automatisierte Nurturing-Prozesse. Zu den genannten Kunden zählen SCHUNCK GROUP, KION, Analytik Jena, Hanwha Q CELLS und Bauerfeind.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.mellowmessage.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "morefire",
+   "name": "morefire",
+   "website": "https://www.more-fire.com",
+   "city": "Köln",
+   "founded": null,
+   "team": "120+ Mitarbeitende",
+   "services": [
+    "SEO",
+    "GEO",
+    "Google Ads / SEA",
+    "Content Marketing",
+    "Social Media Marketing",
+    "Marketing Automation",
+    "Conversion-Rate-Optimierung",
+    "Tracking & Analytics"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Content-Marketing-Agenturen"
+   ],
+   "description": "morefire ist eine Full-Service-Online-Marketing-Agentur aus Köln für SEO, GEO, SEA, Content Marketing, Social Media und Marketing Automation. Weitere Leistungen sind Conversion-Rate-Optimierung, Webdesign, Analytics und Trainings. Nach eigenen Angaben arbeiten mehr als 120 Mitarbeitende an zwei Standorten, die Agentur verfügt über 20+ Jahre Erfahrung und betreut aktuell 235 aktive Kunden.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.more-fire.com/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "movesell",
+   "name": "MOVESELL",
+   "website": "https://movesell.de",
+   "city": null,
+   "founded": null,
+   "team": "50+ Experten",
+   "services": [
+    "Amazon Full-Service",
+    "Amazon Sponsored Ads",
+    "Amazon DSP & AMC",
+    "Amazon SEO & A+ Content",
+    "Brandstore",
+    "Marketplace-Beratung",
+    "OTTO Ads",
+    "BI- & Monitoring-Tool ROPT"
+   ],
+   "categories": [
+    "Amazon-Agenturen"
+   ],
+   "description": "MOVESELL ist eine Amazon-Agentur für internationale Marktplätze und bietet Full-Service, Beratung, Sponsored Ads, DSP/AMC sowie SEO- und Brand-Content wie A+ Content und Brandstores. Mit ROPT betreibt die Agentur ein eigenes BI-, Monitoring- und KI-Content-Tool. Nach eigenen Angaben betreuen mehr als 50 Experten über 300 Kunden, darunter STABILO, VAUDE und Dunlop.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://movesell.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "mso-digital",
+   "name": "mso digital",
+   "website": "https://www.mso-digital.de",
+   "city": "Osnabrück",
+   "founded": null,
+   "team": null,
+   "services": [
+    "SEO",
+    "GEO",
+    "Google Ads / SEA",
+    "Paid Social",
+    "Web Analytics & Tracking",
+    "Server Side Tagging",
+    "E-Mail-Marketing",
+    "Digital Consulting"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen"
+   ],
+   "description": "mso digital ist eine Digital-Marketing-Agentur mit Standorten in Osnabrück, Hamburg und Lingen für performance-getriebenes Online-Marketing. Das Angebot umfasst SEO inklusive GEO und Agent-Led SEO, SEA/Google Ads, Paid Social, Web Analytics mit Tracking und Consent Management, E-Mail-Marketing sowie Digital Consulting. Strategie, Umsetzung und Tracking werden aus einer Hand angeboten.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.mso-digital.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "ondevi",
+   "name": "ondevi",
+   "website": "https://ondevi.com",
+   "city": "München",
+   "founded": null,
+   "team": null,
+   "services": [
+    "Google Ads",
+    "Google Shopping",
+    "Performance Max",
+    "YouTube & Demand Gen",
+    "Tracking",
+    "Creative Strategy",
+    "Landingpages & Advertorials",
+    "Google CSS"
+   ],
+   "categories": [
+    "Google-Ads-Agenturen"
+   ],
+   "description": "ondevi ist eine Münchner Google-Ads-Agentur für Onlineshops, D2C-Brands, Händler und Mittelständler. Sie deckt Search, Performance Max, Shopping, YouTube, Demand Gen und Display ab und ergänzt dies durch eigenes Tracking, Datenfeed-Optimierung, eine hauseigene CSS-Lösung, Ad Creatives und Landingpages. Nach eigenen Angaben erzielen Kunden über die Kampagnen 100 Mio. Euro E-Commerce-Umsatz pro Jahr.",
+   "certs": [],
+   "industries": [
+    "E-Commerce"
+   ],
+   "source_url": "https://ondevi.com/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "online-solutions-group",
+   "name": "Online Solutions Group",
+   "website": "https://www.onlinesolutionsgroup.de",
+   "city": null,
+   "founded": 2008,
+   "team": null,
+   "services": [
+    "SEO",
+    "GEO / LLMO",
+    "Google Ads",
+    "Social Ads",
+    "Content & Linkaufbau",
+    "E-Commerce-SEO",
+    "SEO-Workshops",
+    "Performance Suite (eigenes Tool)"
+   ],
+   "categories": [
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Online-Marketing-Agenturen"
+   ],
+   "description": "Die Online Solutions Group ist eine Agentur für SEO, GEO und Google Ads, die nach eigenen Angaben seit 2008 tätig ist und eigene Technologie einsetzt. Mit der Performance Suite misst sie unter anderem, wie oft Kunden in KI-Antworten von ChatGPT oder Perplexity genannt werden. Die Leistungen werden zu Festpreisen mit monatlich kündbaren Laufzeiten angeboten; nach eigenen Angaben wurden über 1.000 Projekte umgesetzt.",
+   "certs": [
+    "BVDW-zertifiziert (SEO + SEA)"
+   ],
+   "industries": [],
+   "source_url": "https://www.onlinesolutionsgroup.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "ostend-digital",
+   "name": "Ostend Digital",
+   "website": "https://ostend.digital",
+   "city": "Stuttgart",
+   "founded": null,
+   "team": null,
+   "services": [
+    "Google Ads",
+    "Meta Ads",
+    "LinkedIn Ads",
+    "SEO",
+    "GEO",
+    "Landingpages",
+    "Conversion-Tracking",
+    "Webdesign"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "Google-Ads-Agenturen",
+    "Meta-Ads-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Webdesign-Agenturen"
+   ],
+   "description": "Ostend Digital ist eine Online-Marketing-Agentur aus Stuttgart mit weiterem Standort in Palma de Mallorca. Schwerpunkte sind Google Ads und Meta Ads, ergänzt durch LinkedIn-, TikTok- und ChatGPT-Ads, SEO, GEO, Landingpages, Conversion-Tracking sowie Webdesign mit Shopify, Shopware und WooCommerce. Nach eigenen Angaben hat die Agentur mehr als 300 Kunden betreut.",
+   "certs": [
+    "Google Partner",
+    "Meta Partner"
+   ],
+   "industries": [],
+   "source_url": "https://ostend.digital/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "peak-ace",
+   "name": "Peak Ace AG",
+   "website": "https://peakace.agency",
+   "city": "Berlin",
+   "founded": null,
+   "team": "130+ Mitarbeitende",
+   "services": [
+    "Paid Search",
+    "Paid Social",
+    "SEO",
+    "LLMO & GEO",
+    "Content Services",
+    "Digital PR",
+    "Digital Analytics",
+    "Conversion-Rate-Optimierung"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Content-Marketing-Agenturen"
+   ],
+   "description": "Die Peak Ace AG ist eine internationale Digital-Marketing-Agentur mit Sitz in Berlin. Das Angebot umfasst Paid Search, Paid Social, SEO, LLMO- und GEO-Beratung, Content Services, Digital PR, Display & Video sowie Analytics und Conversion-Optimierung. Nach eigenen Angaben arbeiten über 130 Mitarbeitende an drei Standorten für mehr als 200 Kunden in über 25 Sprachen, darunter Airbnb und AutoScout24.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://peakace.agency/de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "piabo",
+   "name": "PIABO Communications",
+   "website": "https://piabo.net",
+   "city": "Berlin",
+   "founded": null,
+   "team": null,
+   "services": [
+    "Public Relations",
+    "GEO / AI Visibility",
+    "Social Media",
+    "Influencer Relations",
+    "Personal Branding",
+    "Public Affairs",
+    "Content Marketing",
+    "Graphic Design"
+   ],
+   "categories": [
+    "PR-Agenturen",
+    "Content-Marketing-Agenturen",
+    "KI-SEO-Agenturen"
+   ],
+   "description": "PIABO Communications ist eine Kommunikationsagentur für Tech-Unternehmen, Scale-ups und High-Growth-Companies mit Standorten unter anderem in Berlin, Hamburg, München und weiteren europäischen sowie internationalen Städten. Das Leistungsportfolio umfasst Public Relations, Social Media, Personal Branding, Public Affairs, Influencer Relations, Podcasts, Content Marketing und Design. Mit PIABO GEO bietet die Agentur zudem AI Visibility Audits und Maßnahmen für die Sichtbarkeit in ChatGPT, Perplexity und Gemini an.",
+   "certs": [],
+   "industries": [
+    "Fintech",
+    "Healthtech",
+    "Greentech",
+    "E-Commerce",
+    "KI / AI",
+    "Blockchain / Web3"
+   ],
+   "source_url": "https://piabo.net/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "podcastmania",
+   "name": "Podcastmania",
+   "website": "https://podcastmania.de",
+   "city": "Berlin",
+   "founded": 2018,
+   "team": null,
+   "services": [
+    "Podcast-Strategie & Konzeption",
+    "Podcast-Produktion",
+    "Video-Podcasts",
+    "Audio-Spots & Jingles",
+    "Podcast-Cover-Design",
+    "Distribution & Hosting",
+    "Performance-Reporting"
+   ],
+   "categories": [
+    "Content-Marketing-Agenturen"
+   ],
+   "description": "Podcastmania ist eine 2018 gegründete Full-Service-Agentur für Corporate Podcasts mit Sitz in Berlin. Sie übernimmt Strategie und Konzeption, Produktion im Berliner Studio oder remote sowie Distribution und Reichweiten-Reporting. Nach eigenen Angaben hat die Agentur mehr als 500 Produktionen für über 100 Marken umgesetzt, darunter Porsche, Telekom und HELIOS Kliniken.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://podcastmania.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "projecter",
+   "name": "Projecter",
+   "website": "https://www.projecter.de/",
+   "city": "Leipzig",
+   "founded": 2008,
+   "team": "über 60 Mitarbeiter",
+   "services": [
+    "Online-Marketing-Beratung",
+    "Performance Marketing (SEA)",
+    "SEO",
+    "GEO",
+    "Social Media Marketing",
+    "Affiliate Marketing",
+    "Content-Produktion",
+    "Web Analytics"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Meta-Ads-Agenturen",
+    "Content-Marketing-Agenturen",
+    "Amazon-Agenturen"
+   ],
+   "description": "Die Leipziger Full-Service-Digitalagentur Projecter betreut seit 2008 Kundenprojekte und beschäftigt nach eigenen Angaben über 60 Online-Marketing-Expertinnen und -Experten. Das Leistungsspektrum reicht von Performance Marketing auf Google, Meta und LinkedIn über SEO, GEO und Social Media bis zu Affiliate Marketing, Feed- und Marktplatz-Management sowie Web Analytics. Projecter ist Teil der Obsidian-Agenturgruppe mit Standorten u. a. in Hamburg, Kopenhagen und Helsinki und arbeitet für Kunden wie SportScheck, RB Leipzig und Carhartt WIP.",
+   "certs": [],
+   "industries": [
+    "Industrie",
+    "SaaS",
+    "Fashion",
+    "Food & Drinks",
+    "E-Commerce",
+    "Real Estate"
+   ],
+   "source_url": "https://www.projecter.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "radyant",
+   "name": "Radyant",
+   "website": "https://www.radyant.io/",
+   "city": null,
+   "founded": null,
+   "team": "21 Teammitglieder",
+   "services": [
+    "AI Search Optimization",
+    "SEO-Strategie",
+    "AI-Visibility-Monitoring",
+    "Programmatic SEO",
+    "Content-Produktion",
+    "Digital PR"
+   ],
+   "categories": [
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen"
+   ],
+   "description": "Radyant bezeichnet sich als AI-native Growth-Agentur mit Spezialisierung auf SEO, AI Search und Digital PR und arbeitet als Erweiterung der Teams von Startups, Scale-ups und Enterprise-Unternehmen. Angeboten werden u. a. AI Search Optimization für Sichtbarkeit in ChatGPT, Claude, Gemini und Microsoft Copilot, tägliches Monitoring der KI-Sichtbarkeit sowie Programmatic SEO. Zu den genannten Kunden gehören Heyflow, deeploi, ToolSense und Planeco Building; das Team umfasst nach eigenen Angaben 21 Personen.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.radyant.io/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "remazing",
+   "name": "Remazing",
+   "website": "https://remazing.eu/de",
+   "city": null,
+   "founded": 2016,
+   "team": null,
+   "services": [
+    "Retail Media (Amazon PPC & DSP)",
+    "Marketplace-Strategie & Consulting",
+    "Amazon-Content & Listings",
+    "Marketplace-Management",
+    "Amazon Marketing Cloud",
+    "Reporting-Plattform Remdash"
+   ],
+   "categories": [
+    "Amazon-Agenturen"
+   ],
+   "description": "Remazing ist eine E-Commerce-Agentur für Online-Marktplätze, die seit 2016 Consumer Brands auf Amazon und weiteren Marktplätzen betreut. Die Leistungen umfassen Retail Media mit PPC- und DSP-Strategien, Strategie-Beratung, SEO-optimierten Listing-Content sowie operatives End-to-End-Marketplace-Management für Vendoren und Seller. Ergänzend betreibt die Agentur die eigene Reporting-Plattform Remdash; Amazon Ads hat nach Angaben der Agentur Case Studies zu Kunden wie MAM, OMRON und Marvis veröffentlicht.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://remazing.eu/de",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "schwartz-public-relations",
+   "name": "Schwartz Public Relations",
+   "website": "https://schwartzpr.de/",
+   "city": "München",
+   "founded": 1994,
+   "team": null,
+   "services": [
+    "Public Relations",
+    "Media Relations",
+    "Corporate Communications",
+    "Generative Engine Optimization (GEO)",
+    "Content Marketing",
+    "Influencer Relations",
+    "Social Media"
+   ],
+   "categories": [
+    "PR-Agenturen",
+    "KI-SEO-Agenturen",
+    "Content-Marketing-Agenturen"
+   ],
+   "description": "Schwartz Public Relations ist eine 1994 gegründete, inhabergeführte PR-Agentur mit Sitz in der Sendlinger Straße in München. Sie berät Technologie-Konzerne, KMU und Startups in Public Relations, Corporate Communications, Generative Engine Optimization (GEO), Content Marketing, Influencer Relations und Social Media. Im Umsatz-Ranking des PR Journals belegt die Agentur nach eigenen Angaben Platz 4 unter den Technologieagenturen in Deutschland.",
+   "certs": [],
+   "industries": [
+    "ICT & Digitalisierung",
+    "Industrie & Automatisierung",
+    "Consumer Tech",
+    "Greentech & Energie",
+    "Automotive & Mobility",
+    "Medtech & Life Sciences"
+   ],
+   "source_url": "https://schwartzpr.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "searchperts",
+   "name": "Searchperts",
+   "website": "https://searchperts.de/",
+   "city": null,
+   "founded": null,
+   "team": null,
+   "services": [
+    "Google Ads Betreuung",
+    "SEA",
+    "Google Ads Audit",
+    "Google Shopping / CSS",
+    "Microsoft Advertising"
+   ],
+   "categories": [
+    "Google-Ads-Agenturen"
+   ],
+   "description": "Searchperts ist eine auf Google Ads spezialisierte Agentur für E-Commerce und Mittelstand. Kern des Angebots ist der „Google Ads Profit Sprint“, ein 90-tägiger Prozess aus Diagnose, Strategie, Umsetzung und quartalsweiser Anpassung ohne Langzeitverträge. Daneben betreut die Agentur CSS-Shopping- und Microsoft-Advertising-Kampagnen; als Referenzen werden u. a. Ecosia, rolly toys und Deiters genannt.",
+   "certs": [],
+   "industries": [
+    "E-Commerce"
+   ],
+   "source_url": "https://searchperts.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "second-elements",
+   "name": "Second Elements",
+   "website": "https://www.second-elements.de/",
+   "city": "Hamburg",
+   "founded": 1999,
+   "team": null,
+   "services": [
+    "SEO-Beratung",
+    "AI Search Optimization",
+    "Google Ads",
+    "Microsoft Ads",
+    "Social Media Ads",
+    "Conversion-Rate-Optimierung",
+    "Digital-Marketing-Workshops"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Meta-Ads-Agenturen"
+   ],
+   "description": "Die Hamburger Digital-Marketing-Agentur Second Elements ist seit 1999 am Markt und hat neben Hamburg auch Ansprechpartner in Berlin. Sie verbindet SEO-Beratung und SEA mit Social Media Ads auf Facebook, Instagram und LinkedIn. Für die KI-Sichtbarkeit bietet die Agentur AI Search Optimization und das eigene LLM-Monitoring-Tool „PromptScout AI“ an; zudem ist sie zertifizierter Google Premier Partner.",
+   "certs": [
+    "Google Premier Partner"
+   ],
+   "industries": [],
+   "source_url": "https://www.second-elements.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "semseo-solutions",
+   "name": "SEMSEO Solutions",
+   "website": "https://semseo-solutions.com/",
+   "city": "München",
+   "founded": null,
+   "team": null,
+   "services": [
+    "KI-SEO / GEO",
+    "Technisches SEO",
+    "SEO-Beratung und -Betreuung",
+    "SEO-Content",
+    "Linkaufbau",
+    "Google Ads & SEA",
+    "SEO-Gutachten"
+   ],
+   "categories": [
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen"
+   ],
+   "description": "SEMSEO Solutions ist eine KI-SEO-Agentur mit SEO- und GEO-Experten in München und Berlin. Sie optimiert Websites für Google sowie für ChatGPT, Perplexity und AI Overviews und setzt dabei eigenentwickelte Tools wie SEMSEO Tools und SEMSEO Connect ein. Neben technischem SEO, Content und Linkaufbau bietet die Agentur Google Ads, Social Ads und unabhängige SEO-Gutachten an; nach eigenen Angaben verfügt sie über mehr als 17 Jahre SEO-Erfahrung und über 200 Kunden.",
+   "certs": [],
+   "industries": [
+    "Anwälte",
+    "B2B & Industrie",
+    "Handwerk",
+    "Immobilienmakler",
+    "Onlineshops"
+   ],
+   "source_url": "https://semseo-solutions.com/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "seo-kueche",
+   "name": "SEO-Küche",
+   "website": "https://www.seo-kueche.de/",
+   "city": null,
+   "founded": 2009,
+   "team": null,
+   "services": [
+    "SEO",
+    "Generative Engine Optimization (GEO)",
+    "SEA / Google Ads",
+    "Social Media Marketing",
+    "Content Marketing",
+    "Webdesign & Onlineshops",
+    "Conversion-Optimierung",
+    "E-Mail-Marketing"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Content-Marketing-Agenturen",
+    "Webdesign-Agenturen"
+   ],
+   "description": "Die SEO-Küche ist eine seit 2009 tätige Online-Marketing-Agentur, die Unternehmen in der Google-Suche und in KI-Systemen wie ChatGPT, Gemini und Perplexity sichtbar machen will. Mit dem Paket „Online-Marketing Plus“ kombiniert sie GEO, SEO, SEA, Social Media, Content und Webdesign. Weitere Leistungen sind Linkmarketing, Local Listing, Conversion-Optimierung, Webanalyse, E-Mail-Marketing und die Entwicklung von Onlineshops.",
+   "certs": [],
+   "industries": [
+    "E-Commerce",
+    "Tourismus & Reise",
+    "Pharma & Healthcare",
+    "Versicherungen & Finanzen",
+    "Fashion & Lifestyle",
+    "SaaS & Software"
+   ],
+   "source_url": "https://www.seo-kueche.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "seokratie",
+   "name": "Seokratie",
+   "website": "https://www.seokratie.de/",
+   "city": "München",
+   "founded": 2008,
+   "team": null,
+   "services": [
+    "SEO-Beratung",
+    "GEO-Beratung",
+    "SEA-Betreuung / Google Ads",
+    "Content Marketing",
+    "Social Media Ads",
+    "Video- und YouTube-Marketing",
+    "SEO-Workshops"
+   ],
+   "categories": [
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Content-Marketing-Agenturen",
+    "Online-Marketing-Agenturen"
+   ],
+   "description": "Seokratie ist eine SEO- und GEO-Agentur mit Büro in München, die seit 2008 vor allem B2B- und Industrieunternehmen betreut. Die Agentur bietet SEO, GEO für die Sichtbarkeit in der KI-Suche, SEA-Betreuung mit Google Ads sowie Content Marketing an. Ergänzend veröffentlicht Seokratie Blog, Newsletter, Webinare und Kurse zu SEO, Google Ads und KI im Online-Marketing.",
+   "certs": [],
+   "industries": [
+    "B2B",
+    "Industrie"
+   ],
+   "source_url": "https://www.seokratie.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "seomatik",
+   "name": "SEOMATIK",
+   "website": "https://www.seomatik.de/",
+   "city": null,
+   "founded": null,
+   "team": "über 50 Mitarbeiter",
+   "services": [
+    "Suchmaschinenoptimierung (SEO)",
+    "Onpage- und Offpage-Optimierung",
+    "SEA / Google Ads",
+    "Google Shopping",
+    "Content Marketing",
+    "Social Media Marketing",
+    "Performance Marketing"
+   ],
+   "categories": [
+    "SEO-Agenturen",
+    "Online-Marketing-Agenturen",
+    "Google-Ads-Agenturen"
+   ],
+   "description": "SEOMATIK ist eine SEO- und Full-Service-Online-Marketing-Agentur mit Standorten u. a. in Berlin, Hannover, Bielefeld, Frankfurt, Köln, Hamburg und München. Neben der Suchmaschinenoptimierung bietet sie SEA mit Google Ads, Google Shopping, Content Marketing, Social Media Marketing und Performance Marketing an. Nach eigenen Angaben beschäftigt die Agentur über 50 Mitarbeiter in Deutschland und ist zertifizierte Google-Partner-Agentur.",
+   "certs": [
+    "Google Partner"
+   ],
+   "industries": [],
+   "source_url": "https://www.seomatik.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "seonative",
+   "name": "seonative",
+   "website": "https://www.seonative.de/",
+   "city": "Stuttgart",
+   "founded": 2005,
+   "team": "über 20 SEO-Spezialisten",
+   "services": [
+    "Technisches SEO",
+    "OnPage-Optimierung",
+    "Strategisches SEO",
+    "SEO-Beratung",
+    "KI-SEO",
+    "Linkaufbau",
+    "SEO-Workshops",
+    "Local SEO"
+   ],
+   "categories": [
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen"
+   ],
+   "description": "seonative ist eine seit 2005 tätige SEO-Agentur mit Sitz in Stuttgart und gehört zur Full-Service-Agentur netzgefährten GmbH. Nach eigenen Angaben betreut ein Team von über 20 SEO-Spezialisten mehr als 400 Kunden. Das Angebot umfasst technisches SEO, OnPage-Optimierung, strategisches SEO, KI-SEO, Linkaufbau sowie Workshops; Betreuungskunden erhalten monatliche SEO-Reports und einen festen Ansprechpartner.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.seonative.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "seowerk",
+   "name": "seowerk",
+   "website": "https://www.seowerk.de/",
+   "city": null,
+   "founded": 2014,
+   "team": "30 Mitarbeiter",
+   "services": [
+    "Generative Engine Optimization (GEO)",
+    "GEO- & AI-Readiness-Analyse",
+    "SEO",
+    "AI-Content-Design",
+    "Pressearbeit / Brand Authority",
+    "Google Ads / PPC",
+    "Affiliate-Management"
+   ],
+   "categories": [
+    "KI-SEO-Agenturen",
+    "SEO-Agenturen",
+    "Content-Marketing-Agenturen"
+   ],
+   "description": "seowerk ist eine 2014 gegründete GEO- und SEO-Agentur, die Unternehmen in KI-Systemen wie ChatGPT, Gemini, Claude und Google AI Overviews sichtbar machen will. Das Angebot gliedert sich in GEO- und AI-Readiness-Analysen, die Optimierung von Technik und Content sowie den Aufbau externer Autoritätssignale über Pressearbeit und Social Media. Nach eigenen Angaben arbeiten 30 Mitarbeiterinnen und Mitarbeiter für die Agentur, die mehr als 700 Projekte umgesetzt hat.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.seowerk.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "seybold",
+   "name": "SEYBOLD ONE",
+   "website": "https://seybold.de/",
+   "city": null,
+   "founded": 1998,
+   "team": null,
+   "services": [
+    "Full Service SEO",
+    "Full Service GEO / KI-Sichtbarkeit",
+    "Technisches Audit",
+    "Backlink-Risk-Management",
+    "Penalty Recovery",
+    "Shopify-Optimierung",
+    "Local SEO",
+    "Content & Topical Authority"
+   ],
+   "categories": [
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen"
+   ],
+   "description": "SEYBOLD ONE ist eine seit 1998 tätige Agentur für strategisches Sichtbarkeitsmanagement in Suchmaschinen und KI-Systemen. Neben Full-Service-SEO und GEO für ChatGPT, Perplexity, Gemini und AI Overviews ist sie auf forensische SEO-Audits, toxische Backlinks, Negative-SEO-Abwehr und Penalty Recovery spezialisiert. Die Agentur ist nach eigenen Angaben Co-Initiator der DIN SPEC 33461 und betreut über 300 Kunden.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://seybold.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "smarketer-group",
+   "name": "Smarketer",
+   "website": "https://www.smarketer.de/",
+   "city": "Berlin",
+   "founded": null,
+   "team": null,
+   "services": [
+    "Google Ads Betreuung",
+    "Google Shopping / CSS",
+    "Microsoft Advertising",
+    "YouTube Ads",
+    "Google Analytics & Tracking",
+    "Conversion-Rate-Optimierung",
+    "ChatGPT Ads"
+   ],
+   "categories": [
+    "Google-Ads-Agenturen"
+   ],
+   "description": "Smarketer ist eine SEA-Agentur mit Standorten in Berlin und Kassel, die sich auf Google Ads und Microsoft Advertising konzentriert. Das Angebot umfasst Such-, Display-, Performance-Max- und YouTube-Kampagnen, Google Shopping mit eigenem CSS, Tracking mit Google Analytics und Tag Manager sowie Conversion-Optimierung. Die Agentur wirbt mit leistungsbasierter Vergütung; als Referenz wird u. a. Audible genannt.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.smarketer.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "socialcooks",
+   "name": "Social Cooks",
+   "website": "https://socialcooks.com/",
+   "city": "München",
+   "founded": null,
+   "team": null,
+   "services": [
+    "Meta Ads",
+    "TikTok Ads",
+    "Snapchat Ads",
+    "Feed-Optimierung",
+    "Creative-Produktion & UGC",
+    "Organic Social & DM-Funnels"
+   ],
+   "categories": [
+    "Meta-Ads-Agenturen"
+   ],
+   "description": "Social Cooks ist eine gründergeführte Paid-Social-Agentur aus München mit Fokus auf profitables E-Commerce-Wachstum. Sie betreut Facebook- und Instagram-Kampagnen, TikTok- und Snapchat-Ads, Feed-Optimierung für Katalogkampagnen sowie die Produktion von Ad-Creatives mit Creator-UGC. Die drei Gründer haben nach eigenen Angaben die eigene Modemarke SASSYCLASSY auf über 50 Mio. € Umsatz skaliert; der Geschäftsführer war zuvor bei Meta und Microsoft tätig.",
+   "certs": [],
+   "industries": [
+    "E-Commerce"
+   ],
+   "source_url": "https://socialcooks.com/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "striive",
+   "name": "STRIIVE",
+   "website": "https://www.striive.de/",
+   "city": "Berlin",
+   "founded": null,
+   "team": null,
+   "services": [
+    "Meta Ads",
+    "TikTok Ads",
+    "Pinterest & Snapchat Ads",
+    "Strategisches Media Buying",
+    "Creative-Strategie & Testing",
+    "Creator Content / UGC"
+   ],
+   "categories": [
+    "Meta-Ads-Agenturen"
+   ],
+   "description": "STRIIVE ist eine Performance-Advertising-Agentur aus Berlin für Social-Media-Werbung auf Meta, TikTok, Pinterest und Snapchat. Die Agentur baut für E-Commerce-Marken Paid-Social-Systeme mit strukturiertem Creative-Testing und einer Media-Buying-Strategie auf Basis der Deckungsbeitragsmarge auf. Nach eigenen Angaben hat STRIIVE 53 Mio. € Ad Spend verwaltet; als Kunden werden u. a. Gymondo, Just Spices und FORMEL SKIN genannt.",
+   "certs": [],
+   "industries": [
+    "E-Commerce"
+   ],
+   "source_url": "https://www.striive.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "suchhelden",
+   "name": "Suchhelden",
+   "website": "https://www.suchhelden.de/",
+   "city": null,
+   "founded": null,
+   "team": null,
+   "services": [
+    "SEO",
+    "GEO / KI-Optimierung",
+    "Google Ads",
+    "Programmatic Advertising",
+    "Social Media Marketing",
+    "Content Marketing",
+    "Google Shopping & Retail Media",
+    "Affiliate Marketing"
+   ],
+   "categories": [
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen",
+    "Content-Marketing-Agenturen",
+    "Online-Marketing-Agenturen"
+   ],
+   "description": "Die Suchhelden GmbH ist eine SEO-Agentur, die zusätzlich SEA, GEO für ChatGPT, Perplexity, Gemini und Claude, Social Media und Content Marketing anbietet. Weitere Leistungen sind Google Shopping, Retail Media, Shopify, Webdesign, Affiliate Marketing und Native Advertising. Die Agentur verweist auf über 210 Kundenbewertungen auf Google, OMR Reviews und ProvenExpert.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.suchhelden.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "suxeedo",
+   "name": "suxeedo",
+   "website": "https://suxeedo.de/",
+   "city": "Berlin",
+   "founded": 2011,
+   "team": "über 40 Mitarbeiter",
+   "services": [
+    "Content Marketing",
+    "SEO",
+    "GEO / LLMO",
+    "SEA",
+    "Leadgenerierung",
+    "UX und Conversion-Optimierung",
+    "Seeding & Digital PR",
+    "Social Media"
+   ],
+   "categories": [
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Content-Marketing-Agenturen",
+    "Google-Ads-Agenturen",
+    "Online-Marketing-Agenturen"
+   ],
+   "description": "suxeedo ist eine Digital-Marketing-Agentur aus Berlin, die seit 2011 nach eigenen Angaben mehr als 1.000 Projekte realisiert hat. Über 40 Expertinnen und Experten arbeiten in den Bereichen Content Marketing, SEO, GEO, SEA, UX, Leadgenerierung, Social Media, Seeding und Digital PR. Den Schwerpunkt bilden Content Marketing und Search, ergänzt um KI-Sichtbarkeit und automatisierte Content-Workflows.",
+   "certs": [],
+   "industries": [
+    "Healthcare",
+    "SaaS",
+    "Versicherungen",
+    "Retail",
+    "Banking",
+    "E-Commerce"
+   ],
+   "source_url": "https://suxeedo.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "taismo",
+   "name": "taismo",
+   "website": "https://taismo.de/",
+   "city": "München",
+   "founded": null,
+   "team": null,
+   "services": [
+    "SEO-Betreuung",
+    "GEO & KI-Sichtbarkeit",
+    "SEA & Google Ads",
+    "Local SEO",
+    "Internationales SEO",
+    "SEO- und GEO-Audits",
+    "WordPress-Webdesign",
+    "Social Recruiting"
+   ],
+   "categories": [
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen",
+    "Google-Ads-Agenturen"
+   ],
+   "description": "taismo ist eine SEO- und GEO-Agentur aus München, die vor allem B2B- und Mittelstandsunternehmen betreut. Neben SEO-Betreuung, Local und internationalem SEO bietet sie GEO für Sichtbarkeit in ChatGPT, Perplexity und Google AI Overviews, SEA mit Google Ads, WordPress-Webdesign und Social Recruiting an. Die SEO-Betreuung läuft nach Angaben der Agentur als monatlich kündbarer Retainer.",
+   "certs": [],
+   "industries": [
+    "B2B",
+    "Mittelstand"
+   ],
+   "source_url": "https://taismo.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "tante-e",
+   "name": "tante-e",
+   "website": "https://tante-e.com/",
+   "city": null,
+   "founded": null,
+   "team": null,
+   "services": [
+    "Shopify-Setup",
+    "Shopify-Migration",
+    "Shopify-Relaunch",
+    "Growth Retainer",
+    "Shopify-Audit",
+    "A/B-Testing",
+    "UX/UI-Design"
+   ],
+   "categories": [
+    "Webdesign-Agenturen"
+   ],
+   "description": "Die Tante-E GmbH ist eine Shopify-Agentur, die ausschließlich mit Shopify und Shopify Plus arbeitet und sich nach eigenen Angaben zu den wenigen Shopify Platinum Partnern weltweit zählt. Sie übernimmt Shop-Setups, Migrationen und Relaunches sowie Analysen, A/B-Tests und kontinuierliche Optimierung mit Beratung, UX/UI-Design und Fullstack-Development. Zu den Referenzen gehören u. a. OACE, LFDY, fritz-kola, Reisenthel und der 1. FC Union Berlin.",
+   "certs": [
+    "Shopify Platinum Partner"
+   ],
+   "industries": [
+    "E-Commerce"
+   ],
+   "source_url": "https://tante-e.com/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "valuezon",
+   "name": "VALUEZON",
+   "website": "https://valuezon.de/",
+   "city": "München",
+   "founded": null,
+   "team": "30+ Amazon-Experten",
+   "services": [
+    "Amazon-Strategie",
+    "Amazon-Content & Produktbilder",
+    "Amazon PPC",
+    "Amazon DSP",
+    "Amazon-Distributor-Service",
+    "Performance Cockpit"
+   ],
+   "categories": [
+    "Amazon-Agenturen"
+   ],
+   "description": "VALUEZON ist eine Amazon-Agentur, die Seller und Vendoren mit Strategie, Content, PPC- und DSP-Kampagnen betreut und auf Wunsch als Amazon-Distributor auftritt. Die Agentur hat nach eigenen Angaben die eigene Marke Third of Life von München aus auf über 10 Mio. € Umsatz auf Amazon.de skaliert. Ein Team von über 30 Amazon-Experten arbeitet mit dem selbst entwickelten Performance Cockpit; als Referenzen werden u. a. Liqui Moly, Haier und Gepp’s genannt.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://valuezon.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "webneo",
+   "name": "WEBneo",
+   "website": "https://www.webneo.de/",
+   "city": "Dresden",
+   "founded": null,
+   "team": "50 Mitarbeiter",
+   "services": [
+    "Marketingstrategie & Branding",
+    "KI-SEO / GEO",
+    "SEA",
+    "Social-Media-Marketing",
+    "Webdesign",
+    "Onlineshop-Entwicklung (Shopify, Shopware, JTL)",
+    "TYPO3-Entwicklung",
+    "KI-Beratung"
+   ],
+   "categories": [
+    "Online-Marketing-Agenturen",
+    "Webdesign-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen"
+   ],
+   "description": "WEBneo ist eine Full-Service-Marketing- und Digitalagentur mit Standorten in Dresden, Leipzig, Halle und Berlin. Sie unterstützt mittelständische und große B2B- und B2C-Unternehmen mit Markenbildung, Online-Marketing inklusive KI-SEO/GEO und SEA sowie der Entwicklung von Websites und Onlineshops auf Shopify, Shopware, JTL und TYPO3. Nach eigenen Angaben arbeiten 50 Mitarbeitende an vier Standorten für über 600 Kunden.",
+   "certs": [],
+   "industries": [
+    "Energie & Solar",
+    "Anwälte & Steuern",
+    "Öffentliche Auftraggeber",
+    "Technologie & Elektronik",
+    "Lebensmittel",
+    "Medizin, Pharma & Kosmetik"
+   ],
+   "source_url": "https://www.webneo.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "wingmen-online-marketing",
+   "name": "Wingmen Online Marketing GmbH",
+   "website": "https://wngmn.com/",
+   "city": "Hamburg",
+   "founded": 2013,
+   "team": null,
+   "services": [
+    "SEO-Beratung",
+    "GEO",
+    "Accessibility-Beratung"
+   ],
+   "categories": [
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen"
+   ],
+   "description": "Die Wingmen Online Marketing GmbH mit Sitz am Anckelmannsplatz in Hamburg ist seit 2013 als SEO-Beratung tätig. Sie begleitet Unternehmen strategisch in SEO, GEO und digitaler Barrierefreiheit (Accessibility). Ergänzend bietet die Beratung Newsletter, Podcast und Tools als Wissensangebote an.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://wngmn.com/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "wlo-social",
+   "name": "WLO.social",
+   "website": "https://www.wlo.social/",
+   "city": null,
+   "founded": null,
+   "team": null,
+   "services": [
+    "Social Performance (Paid Social)",
+    "Meta Ads",
+    "TikTok Ads",
+    "Content Creation",
+    "Social Media Management",
+    "Workshops"
+   ],
+   "categories": [
+    "Meta-Ads-Agenturen"
+   ],
+   "description": "WLO.social ist eine Agentur für Performance Marketing und Social Media Management auf Meta, TikTok, Pinterest und Reddit mit Fokus auf den DACH-Raum. Sie steuert Werbekonten mit Media-Buyern und Creatives, produziert Content für Anzeigen, betreut organische Social-Kanäle und bietet Workshops an. Nach eigenen Angaben verfügt das Team über 14 Jahre Erfahrung; als Referenzen werden Sportstech, Ahorn Hotels & Resorts, Bresser und Itsco genannt.",
+   "certs": [],
+   "industries": [],
+   "source_url": "https://www.wlo.social/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "woogency",
+   "name": "woogency",
+   "website": "https://woogency.de/",
+   "city": null,
+   "founded": null,
+   "team": null,
+   "services": [
+    "WooCommerce-Shops",
+    "WordPress-Webdesign",
+    "Shop-Migration zu WooCommerce",
+    "Conversion- und Checkout-Optimierung",
+    "Wartung & Pflege",
+    "WordPress-SEO & GEO",
+    "LearnDash-Lernplattformen"
+   ],
+   "categories": [
+    "Webdesign-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen"
+   ],
+   "description": "woogency ist eine WordPress- und WooCommerce-Agentur, die nach eigenen Angaben über 20 Jahre Erfahrung mitbringt und als WooExpert Gold Partner ausgewiesen ist. Sie entwickelt WordPress-Websites und WooCommerce-Shops, migriert Shops von Systemen wie Shopware oder Magento und übernimmt Conversion-Optimierung, Wartung und Online-Marketing inklusive SEO und GEO. Zusätzlich setzt die Agentur Lernplattformen mit LearnDash und BuddyBoss um.",
+   "certs": [
+    "WooExpert Gold Partner"
+   ],
+   "industries": [],
+   "source_url": "https://woogency.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "zacher-media",
+   "name": "zacher media GmbH",
+   "website": "https://zachermedia.de/",
+   "city": "Köln",
+   "founded": null,
+   "team": null,
+   "services": [
+    "Webdesign",
+    "WordPress-Websites",
+    "SEO & GEO (KI-SEO)",
+    "Lokale Suchmaschinenoptimierung",
+    "Corporate Design",
+    "Branding & Markenentwicklung",
+    "Wartung & Hosting"
+   ],
+   "categories": [
+    "Webdesign-Agenturen",
+    "SEO-Agenturen",
+    "KI-SEO-Agenturen"
+   ],
+   "description": "Die zacher media GmbH ist eine inhabergeführte Werbeagentur aus Köln, die sich auf Websites, Markenauftritte und Kampagnen für mittelständische Unternehmen spezialisiert hat. In den Bereichen web, design und strategy bietet sie WordPress-Webdesign, SEO und GEO, Corporate Design, Branding sowie UX/UI- und Marketingstrategie an. Zu den Referenzen zählen u. a. Viktoria Köln, die REMA Gruppe und GILDE HANDWERK.",
+   "certs": [],
+   "industries": [
+    "Mittelstand"
+   ],
+   "source_url": "https://zachermedia.de/",
+   "status": "kész",
+   "review_note": null
+  },
+  {
+   "slug": "zweidigital",
+   "name": "ZweiDigital",
+   "website": "https://www.zweidigital.de/",
+   "city": null,
+   "founded": null,
+   "team": null,
+   "services": [
+    "Facebook- und Instagram-Ads",
+    "TikTok Ads",
+    "LinkedIn Ads",
+    "Pinterest Ads",
+    "ChatGPT Ads",
+    "User Generated Content",
+    "Tracking & Reporting"
+   ],
+   "categories": [
+    "Meta-Ads-Agenturen"
+   ],
+   "description": "ZweiDigital ist eine Performance-Marketing-Agentur mit Schwerpunkt auf Social Ads auf Facebook/Instagram, TikTok, Pinterest und LinkedIn und ist Meta Business Partner. Die Agentur übernimmt Strategie, Performance-Design, serverseitiges Tracking mit Live-Dashboards sowie die Produktion von User Generated Content über ein Netzwerk von nach eigenen Angaben über 1.800 Creatorn. Zu den Projekten zählen u. a. Schöffel, ZEISS, RaceChip und die SRH Fernhochschule.",
+   "certs": [
+    "Meta Business Partner"
+   ],
+   "industries": [],
+   "source_url": "https://www.zweidigital.de/",
+   "status": "kész",
+   "review_note": null
+  }
+ ]
+}

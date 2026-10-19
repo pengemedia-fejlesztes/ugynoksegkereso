@@ -29,7 +29,7 @@ function kompasz_cat_icon($term, $size = 16) {
 }
 
 function kompasz_logo($a, $size, $class = '') {
-    $img = $a['logo'] ? sprintf('<img src="%s" alt="%s" loading="lazy" decoding="async" width="%d" height="%d">', esc_url($a['logo']), esc_attr($a['name'] . ' logó'), $size, $size) : '';
+    $img = $a['logo'] ? sprintf('<img src="%s" alt="%s" loading="lazy" decoding="async" width="%d" height="%d">', esc_url($a['logo']), esc_attr($a['name'] . ' ' . kompasz__('logó')), $size, $size) : '';
     return sprintf('<span class="logo %s%s" style="width:%3$dpx;height:%3$dpx"><span>%4$s</span>%5$s</span>', esc_attr($class), $a['logo'] && $a['logo_dark'] ? ' dark' : '', $size, esc_html($a['initials']), $img);
 }
 
@@ -37,13 +37,13 @@ function kompasz_logo($a, $size, $class = '') {
 function kompasz_rating_html($a, $long = false) {
     if (!$a['rating']) return '';
     $src = $a['rating_src'] === 'google' && $a['google_count']
-        ? sprintf('<span class="gsrc">Google · %d vélemény</span>', $a['google_count'])
-        : ($long ? '<span class="gsrc">a lista értékelése</span>' : '');
+        ? sprintf('<span class="gsrc">' . esc_html(kompasz__('Google · %d vélemény')) . '</span>', $a['google_count'])
+        : ($long ? '<span class="gsrc">' . esc_html(kompasz__('a lista értékelése')) . '</span>' : '');
     return sprintf('<span class="rating"><span class="stars" aria-hidden="true">%s</span><b>%s/5</b>%s</span>', kompasz_stars($a['rating']), kompasz_num($a['rating']), $src);
 }
 
 function kompasz_meta_line($a) {
-    $parts = array_filter([$a['city'], $a['team'], $a['founded'] ? 'alapítva ' . $a['founded'] : '']);
+    $parts = array_filter([$a['city'], $a['team'], $a['founded'] ? kompasz__('alapítva') . ' ' . $a['founded'] : '']);
     return $parts ? '<div class="metaline">' . esc_html(implode(' · ', $parts)) . '</div>' : '';
 }
 
@@ -51,7 +51,7 @@ function kompasz_contact_btn($a, $class = 'btn') {
     $href = function_exists('kompasz_website_href') ? kompasz_website_href($a) : $a['website'];
     if (!$href) return '';
     $direct = function_exists('kompasz_agency_has') && kompasz_agency_has($a['id'], 'website');
-    return sprintf('<a class="%s" href="%s" target="_blank" rel="%s">Kapcsolat ↗</a>', esc_attr($class), esc_url($href), $direct ? 'noopener' : 'nofollow noopener');
+    return sprintf('<a class="%s" href="%s" target="_blank" rel="%s">' . esc_html(kompasz__('Kapcsolat ↗')) . '</a>', esc_attr($class), esc_url($href), $direct ? 'noopener' : 'nofollow noopener');
 }
 
 function kompasz_tag_chips($a, $max = 3, $current = null) {
@@ -68,7 +68,7 @@ function kompasz_tag_chips($a, $max = 3, $current = null) {
 function kompasz_also_in($a, $current = null) {
     $names = [];
     foreach ($a['cats'] as $c) if (!$current || $c->term_id !== $current->term_id) $names[] = sprintf('<a href="%s">%s</a>', esc_url(get_term_link($c)), esc_html(kompasz_term_meta($c, 'kompasz_short', $c->name)));
-    return $names ? '<span class="also">Szerepel még: ' . implode(', ', array_slice($names, 0, 3)) . '</span>' : '';
+    return $names ? '<span class="also">' . esc_html(kompasz__('Szerepel még:')) . ' ' . implode(', ', array_slice($names, 0, 3)) . '</span>' : '';
 }
 
 /** Toplista-sor (4b) */
@@ -83,34 +83,34 @@ function kompasz_row($a, $opts = []) {
         <span class="rank"><?php echo $featured ? '★' : esc_html(str_pad($a['pos'] ?? '', 2, '0', STR_PAD_LEFT)); ?></span>
         <a href="<?php echo esc_url($a['link']); ?>" tabindex="-1" aria-hidden="true"><?php echo kompasz_logo($a, 88); ?></a>
         <div class="body">
-            <div class="hd"><h3><a href="<?php echo esc_url($a['link']); ?>"><?php echo esc_html($a['name']); ?></a></h3><?php echo kompasz_rating_html($a); ?><?php if ($featured) echo '<span class="fbadge">KIEMELT ÜGYNÖKSÉG</span>'; ?></div>
+            <div class="hd"><h3><a href="<?php echo esc_url($a['link']); ?>"><?php echo esc_html($a['name']); ?></a></h3><?php echo kompasz_rating_html($a); ?><?php if ($featured) echo '<span class="fbadge">' . esc_html(kompasz__('KIEMELT ÜGYNÖKSÉG')) . '</span>'; ?></div>
             <?php echo kompasz_meta_line($a); ?>
             <p class="desc<?php echo $long ? ' clamp' : ''; ?>"><?php echo esc_html($a['desc']); ?></p>
             <div class="foot"><?php echo kompasz_tag_chips($a, 3, $opts['tag'] ?? null); ?><?php echo kompasz_also_in($a, $term); ?></div>
         </div>
-        <div class="cta"><a class="btn" href="<?php echo esc_url($a['link'] . '#kapcsolat'); ?>">Kapcsolat</a><a class="btn-line" href="<?php echo esc_url($a['link']); ?>">Profil megtekintése</a></div>
+        <div class="cta"><a class="btn" href="<?php echo esc_url($a['link'] . '#kapcsolat'); ?>"><?php echo esc_html(kompasz__('Kapcsolat')); ?></a><a class="btn-line" href="<?php echo esc_url($a['link']); ?>"><?php echo esc_html(kompasz__('Profil megtekintése')); ?></a></div>
     </article>
     <?php return ob_get_clean();
 }
 
 /** Kis kártya (kezdőlap: Legjobbra értékeltek) */
 function kompasz_card($a, $pos) {
-    return sprintf('<a class="card" href="%s">%s<span class="pos">#%d</span><span class="nm">%s</span>%s<span class="ds">%s</span><span class="more">Profil →</span></a>',
-        esc_url($a['link']), kompasz_logo($a, 56), $pos, esc_html($a['name']), kompasz_rating_html($a), esc_html($a['desc']));
+    return sprintf('<a class="card" href="%s">%s<span class="pos">#%d</span><span class="nm">%s</span>%s<span class="ds">%s</span><span class="more">%s</span></a>',
+        esc_url($a['link']), kompasz_logo($a, 56), $pos, esc_html($a['name']), kompasz_rating_html($a), esc_html($a['desc']), esc_html(kompasz__('Profil →')));
 }
 
 /** Kiemelt ügynökség sáv (kezdőlap, profil oldalsáv) */
 function kompasz_featured_strip($f, $compact = false) {
     if (!$f) return '';
-    return sprintf('<div class="fstrip%s">%s<div class="fs-body"><div class="fs-hd"><span class="fs-name">%s</span><span class="fbadge">KIEMELT ÜGYNÖKSÉG</span></div><div class="fs-pitch">%s</div></div><div class="fs-act">%s<a class="btn-soft" href="%s">Profil</a></div></div>',
-        $compact ? ' compact' : '', kompasz_logo($f, $compact ? 44 : 52), esc_html($f['name']), esc_html($f['pitch'] ?: wp_trim_words($f['desc'], 14)), sprintf('<a class="btn sm" href="%s">Kapcsolat</a>', esc_url($f['link'] . '#kapcsolat')), esc_url($f['link']));
+    return sprintf('<div class="fstrip%s">%s<div class="fs-body"><div class="fs-hd"><span class="fs-name">%s</span><span class="fbadge">' . esc_html(kompasz__('KIEMELT ÜGYNÖKSÉG')) . '</span></div><div class="fs-pitch">%s</div></div><div class="fs-act">%s<a class="btn-soft" href="%s">' . esc_html(kompasz__('Profil')) . '</a></div></div>',
+        $compact ? ' compact' : '', kompasz_logo($f, $compact ? 44 : 52), esc_html($f['name']), esc_html($f['pitch'] ?: wp_trim_words($f['desc'], 14)), sprintf('<a class="btn sm" href="%s">' . esc_html(kompasz__('Kapcsolat')) . '</a>', esc_url($f['link'] . '#kapcsolat')), esc_url($f['link']));
 }
 
 function kompasz_seo_block($title, $rows) {
     if (!$rows) return '';
     $out = '<section class="seo"><div class="wrap"><h2>' . esc_html($title) . '</h2><div class="seo-grid">';
     foreach ($rows as $r) $out .= sprintf('<div><h3>%s</h3><p>%s</p></div>', esc_html($r['h']), esc_html($r['p']));
-    return $out . '</div><button class="seo-more" type="button">Tovább olvasom</button></div></section>';
+    return $out . '</div><button class="seo-more" type="button">' . esc_html(kompasz__('Tovább olvasom')) . '</button></div></section>';
 }
 
 function kompasz_crumbs($items) {
@@ -119,14 +119,14 @@ function kompasz_crumbs($items) {
     foreach ($items as $i => [$name, $url]) {
         $out[] = $i === $last ? '<span>' . esc_html($name) . '</span>' : ($url ? sprintf('<a href="%s">%s</a>', esc_url($url), esc_html($name)) : esc_html($name));
     }
-    return '<nav class="crumb" aria-label="Morzsamenü">' . implode(' / ', $out) . '</nav>';
+    return '<nav class="crumb" aria-label="' . esc_attr(kompasz__('Morzsamenü')) . '">' . implode(' / ', $out) . '</nav>';
 }
 
 /** Kategória-csempék sora (kapcsolódó / „Nézd meg ezeket is”) */
 function kompasz_cat_tiles($cats, $class = 'tiles') {
     $out = '<div class="' . esc_attr($class) . '">';
     foreach ($cats as $c) {
-        $out .= sprintf('<a class="tile" href="%s"><span class="ti">%s</span><span class="tn">%s</span><span class="tc">%d cég →</span></a>', esc_url(get_term_link($c)), kompasz_cat_icon($c, 18), esc_html($c->name), count(kompasz_list($c)));
+        $out .= sprintf('<a class="tile" href="%s"><span class="ti">%s</span><span class="tn">%s</span><span class="tc">%s</span></a>', esc_url(get_term_link($c)), kompasz_cat_icon($c, 18), esc_html($c->name), esc_html(sprintf(kompasz__('%d cég →'), count(kompasz_list($c)))));
     }
     return $out . '</div>';
 }
@@ -146,7 +146,7 @@ function kompasz_filters($list, $skip_tag = null) {
     arsort($tags); arsort($cities);
     $tags = array_slice($tags, 0, 8, true);
     $cities = array_slice(array_filter($cities, function ($n) { return $n >= 2; }), 0, 6, true);
-    $order = ['1–10 fő', '11–50 fő', '51–200 fő', '200+ fő'];
+    $order = array_map('kompasz__', ['1–10 fő', '11–50 fő', '51–200 fő', '200+ fő']);
     $teams = array_filter(array_replace(array_fill_keys($order, 0), $teams));
     $group = function ($title, $key, $items, $labels = []) {
         if (!$items) return '';
@@ -157,8 +157,8 @@ function kompasz_filters($list, $skip_tag = null) {
         return $o . '</div>';
     };
     $tag_labels = array_map(function ($t) { return $t->name; }, $tag_obj);
-    $html = $group('SZOLGÁLTATÁS', 'tag', $tags, $tag_labels) . $group('HELYSZÍN', 'city', $cities) . (array_sum($teams) >= 3 ? $group('CSAPATMÉRET', 'team', $teams) : '')
-        . $group('ÉRTÉKELÉS', 'rating', array_filter(['4' => $r4, '4.5' => $r45]), ['4' => '4 felett', '4.5' => '4,5 felett']);
+    $html = $group(kompasz__('SZOLGÁLTATÁS'), 'tag', $tags, $tag_labels) . $group(kompasz__('HELYSZÍN'), 'city', $cities) . (array_sum($teams) >= 3 ? $group(kompasz__('CSAPATMÉRET'), 'team', $teams) : '')
+        . $group(kompasz__('ÉRTÉKELÉS'), 'rating', array_filter(['4' => $r4, '4.5' => $r45]), ['4' => kompasz__('4 felett'), '4.5' => kompasz__('4,5 felett')]);
     return $html;
 }
 
@@ -174,17 +174,17 @@ function kompasz_listing($term, $args) {
     $count = count($list) + ($featured ? 1 : 0);
     ob_start(); ?>
     <div class="wrap listing">
-        <aside class="filters" aria-label="Szűrők">
-            <div class="fhead"><span>Szűrők</span><button type="button" class="fclear">Törlés</button></div>
+        <aside class="filters" aria-label="<?php echo esc_attr(kompasz__('Szűrők')); ?>">
+            <div class="fhead"><span><?php echo esc_html(kompasz__('Szűrők')); ?></span><button type="button" class="fclear"><?php echo esc_html(kompasz__('Törlés')); ?></button></div>
             <div class="fsub"><?php echo esc_html($args['filter_note']); ?></div>
             <?php echo kompasz_filters($featured ? array_merge($list, [$featured]) : $list, $is_tag ? $term : null); ?>
         </aside>
         <div class="results">
-            <?php if ($featured): ?><div class="adline">Hirdetés: <a href="<?php echo esc_url($featured['link']); ?>"><?php echo esc_html($featured['name']); ?></a></div><?php endif; ?>
+            <?php if ($featured): ?><div class="adline"><?php echo esc_html(kompasz__('Hirdetés:')); ?> <a href="<?php echo esc_url($featured['link']); ?>"><?php echo esc_html($featured['name']); ?></a></div><?php endif; ?>
             <div class="rbar">
-                <button type="button" class="ftoggle">Szűrők</button>
-                <span class="rcount" data-total="<?php echo (int) $count; ?>"><?php echo (int) $count; ?> ügynökség</span>
-                <div class="sort" role="group" aria-label="Rendezés"><span>Rendezés:</span><button type="button" data-sort="pos" aria-pressed="true">Helyezés</button><button type="button" data-sort="rating" aria-pressed="false">Értékelés</button><button type="button" data-sort="name" aria-pressed="false">Név</button></div>
+                <button type="button" class="ftoggle"><?php echo esc_html(kompasz__('Szűrők')); ?></button>
+                <span class="rcount" data-total="<?php echo (int) $count; ?>"><?php echo esc_html(sprintf(kompasz__('%d ügynökség'), $count)); ?></span>
+                <div class="sort" role="group" aria-label="<?php echo esc_attr(kompasz__('Rendezés')); ?>"><span><?php echo esc_html(kompasz__('Rendezés:')); ?></span><button type="button" data-sort="pos" aria-pressed="true"><?php echo esc_html(kompasz__('Helyezés')); ?></button><button type="button" data-sort="rating" aria-pressed="false"><?php echo esc_html(kompasz__('Értékelés')); ?></button><button type="button" data-sort="name" aria-pressed="false"><?php echo esc_html(kompasz__('Név')); ?></button></div>
             </div>
             <div class="rows" id="rows">
                 <?php
@@ -196,9 +196,9 @@ function kompasz_listing($term, $args) {
                 }
                 if ($featured && $i < 3) echo kompasz_row($featured, ['term' => $term, 'featured' => true]);
                 ?>
-                <div class="noresult" hidden>Nincs a szűrőknek megfelelő ügynökség. <button type="button" class="fclear">Szűrők törlése</button></div>
+                <div class="noresult" hidden><?php echo esc_html(kompasz__('Nincs a szűrőknek megfelelő ügynökség.')); ?> <button type="button" class="fclear"><?php echo esc_html(kompasz__('Szűrők törlése')); ?></button></div>
             </div>
-            <div class="loadmore"<?php echo $count > 11 ? '' : ' hidden'; ?>><div class="bar"><i></i></div><span class="lm-label"></span><button type="button" class="lm-btn">További 10 ügynökség</button></div>
+            <div class="loadmore"<?php echo $count > 11 ? '' : ' hidden'; ?>><div class="bar"><i></i></div><span class="lm-label"></span><button type="button" class="lm-btn"><?php echo esc_html(kompasz__('További 10 ügynökség')); ?></button></div>
         </div>
     </div>
     <?php return ob_get_clean();

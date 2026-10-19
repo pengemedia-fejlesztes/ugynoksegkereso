@@ -6,17 +6,17 @@ $related = array_values(array_filter(kompasz_categories(), function ($c) use ($t
 ?>
 <main>
   <div class="wrap pagehead">
-    <?php echo kompasz_crumbs([['Kezdőlap', home_url('/')], ['Ügynökségek', null], [$t->name, null]]); ?>
+    <?php echo kompasz_crumbs([[kompasz__('Kezdőlap'), home_url('/')], [kompasz__('Ügynökségek'), null], [$t->name, null]]); ?>
     <h1><?php echo esc_html(kompasz_term_meta($t, 'kompasz_h1', $t->name)); ?></h1>
     <p class="lead"><?php echo esc_html(kompasz_term_meta($t, 'kompasz_intro', $t->description)); ?></p>
-    <div class="related"><span>Kapcsolódó listák:</span><?php foreach (array_slice($related, 0, 4) as $c) printf('<a href="%s">%s%s</a>', esc_url(get_term_link($c)), kompasz_cat_icon($c, 15), esc_html($c->name)); ?></div>
+    <div class="related"><span><?php echo esc_html(kompasz__('Kapcsolódó listák:')); ?></span><?php foreach (array_slice($related, 0, 4) as $c) printf('<a href="%s">%s%s</a>', esc_url(get_term_link($c)), kompasz_cat_icon($c, 15), esc_html($c->name)); ?></div>
   </div>
-  <?php echo kompasz_listing($t, ['filter_note' => $t->name . ' toplistára szabott szűrők']); ?>
+  <?php echo kompasz_listing($t, ['filter_note' => sprintf(kompasz__('%s toplistára szabott szűrők'), $t->name)]); ?>
   <section class="wrap more-lists">
-    <h2>Nézd meg ezeket a toplistákat is</h2>
+    <h2><?php echo esc_html(kompasz__('Nézd meg ezeket a toplistákat is')); ?></h2>
     <?php echo kompasz_cat_tiles(array_slice($related, 0, 5)); ?>
   </section>
 </main>
 <?php
-echo kompasz_seo_block($t->name . ': amit érdemes tudni', kompasz_term_seo($t));
+echo kompasz_seo_block(sprintf(kompasz__('%s: amit érdemes tudni'), $t->name), kompasz_term_seo($t));
 get_footer();

@@ -14,6 +14,7 @@ define('KOMPASZ_CORE_FILE', __FILE__);
 define('KOMPASZ_CORE_DIR', plugin_dir_path(__FILE__));
 define('KOMPASZ_CORE_URL', plugin_dir_url(__FILE__));
 
+require_once KOMPASZ_CORE_DIR . 'inc/i18n.php';
 require_once KOMPASZ_CORE_DIR . 'inc/types.php';
 require_once KOMPASZ_CORE_DIR . 'inc/fields.php';
 require_once KOMPASZ_CORE_DIR . 'inc/data.php';

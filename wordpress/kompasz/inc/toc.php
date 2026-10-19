@@ -38,7 +38,7 @@ function kompasz_toc_card($items) {
     if ($n) $list .= '</ul></li>';
     $list = str_replace('<ul class="toc-sub"></ul>', '', $list);
     $icon = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1" fill="currentColor"/><circle cx="4.5" cy="12" r="1" fill="currentColor"/><circle cx="4.5" cy="18" r="1" fill="currentColor"/></svg>';
-    return '<details class="toc" id="toc"><summary class="toc-head"><span class="toc-icon">' . $icon . '</span><span class="toc-ttl"><span class="toc-title">Tartalomjegyzék</span><span class="toc-meta">'
-        . esc_html($n . ' fejezet') . '</span></span><span class="toc-btn"><span class="toc-open">Megnyitás</span><span class="toc-close">Bezárás</span><span class="toc-chev" aria-hidden="true"></span></span></summary>'
+    return '<details class="toc" id="toc"><summary class="toc-head"><span class="toc-icon">' . $icon . '</span><span class="toc-ttl"><span class="toc-title">' . esc_html(kompasz__('Tartalomjegyzék')) . '</span><span class="toc-meta">'
+        . esc_html(sprintf(kompasz__('%d fejezet'), $n)) . '</span></span><span class="toc-btn"><span class="toc-open">' . esc_html(kompasz__('Megnyitás')) . '</span><span class="toc-close">' . esc_html(kompasz__('Bezárás')) . '</span><span class="toc-chev" aria-hidden="true"></span></span></summary>'
         . '<ol class="toc-body">' . $list . '</ol></details>';
 }

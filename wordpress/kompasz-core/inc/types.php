@@ -15,7 +15,7 @@ function kompasz_register_types() {
         'menu_icon' => 'dashicons-building',
         'menu_position' => 5,
         'supports' => ['title', 'editor', 'thumbnail', 'revisions'],
-        'rewrite' => ['slug' => 'ugynokseg', 'with_front' => false],
+        'rewrite' => ['slug' => kompasz_slug('ugynokseg'), 'with_front' => false],
         'show_in_rest' => true,
     ]);
 
@@ -42,7 +42,7 @@ function kompasz_register_types() {
         'public' => true,
         'show_admin_column' => true,
         'show_in_rest' => true,
-        'rewrite' => ['slug' => 'cimke', 'with_front' => false],
+        'rewrite' => ['slug' => kompasz_slug('cimke'), 'with_front' => false],
     ]);
 
     // Referencia-ügyfelek (pl. SPAR, Tesco) – /ugyfel/spar/: azok az ügynökségek, amelyek ennek a cégnek dolgoztak
@@ -50,7 +50,7 @@ function kompasz_register_types() {
         'labels' => ['name' => 'Referencia-ügyfelek', 'singular_name' => 'Referencia-ügyfél', 'add_new_item' => 'Új ügyfél',
             'edit_item' => 'Ügyfél szerkesztése', 'all_items' => 'Összes ügyfél', 'menu_name' => 'Referencia-ügyfelek'],
         'hierarchical' => false, 'public' => true, 'show_admin_column' => false, 'show_in_rest' => true,
-        'rewrite' => ['slug' => 'ugyfel', 'with_front' => false],
+        'rewrite' => ['slug' => kompasz_slug('ugyfel'), 'with_front' => false],
     ]);
 
     // Minősítések (pl. Google Partner) – /minosites/google-partner/
@@ -58,7 +58,7 @@ function kompasz_register_types() {
         'labels' => ['name' => 'Minősítések', 'singular_name' => 'Minősítés', 'add_new_item' => 'Új minősítés',
             'edit_item' => 'Minősítés szerkesztése', 'all_items' => 'Összes minősítés', 'menu_name' => 'Minősítések'],
         'hierarchical' => false, 'public' => true, 'show_admin_column' => false, 'show_in_rest' => true,
-        'rewrite' => ['slug' => 'minosites', 'with_front' => false],
+        'rewrite' => ['slug' => kompasz_slug('minosites'), 'with_front' => false],
     ]);
 
     // Iparági tapasztalat (pl. Egészségügy) – /iparag/egeszsegugy/
@@ -66,7 +66,7 @@ function kompasz_register_types() {
         'labels' => ['name' => 'Iparágak', 'singular_name' => 'Iparág', 'add_new_item' => 'Új iparág',
             'edit_item' => 'Iparág szerkesztése', 'all_items' => 'Összes iparág', 'menu_name' => 'Iparágak'],
         'hierarchical' => false, 'public' => true, 'show_admin_column' => false, 'show_in_rest' => true,
-        'rewrite' => ['slug' => 'iparag', 'with_front' => false],
+        'rewrite' => ['slug' => kompasz_slug('iparag'), 'with_front' => false],
     ]);
 }
 add_action('init', 'kompasz_register_types');

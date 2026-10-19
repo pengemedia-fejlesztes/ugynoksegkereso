@@ -83,7 +83,7 @@ add_action('template_redirect', function () {
     nocache_headers();
     if (!$url || !hash_equals(kompasz_out_sig($url, $aid), $sig)) {
         status_header(404);
-        wp_die('Ez a hivatkozás nem érvényes.', 'Érvénytelen hivatkozás', ['response' => 404]);
+        wp_die(kompasz__('Ez a hivatkozás nem érvényes.'), kompasz__('Érvénytelen hivatkozás'), ['response' => 404]);
     }
     update_post_meta($aid, 'kompasz_out_clicks', (int) get_post_meta($aid, 'kompasz_out_clicks', true) + 1);
     // Saját oldalról érkezett kattintás: azonnali átirányítás; máshonnan (pl. kimásolt link): köztes oldal
@@ -95,7 +95,7 @@ add_action('template_redirect', function () {
     status_header(200);
     $name = get_the_title($aid);
     $host = wp_parse_url($url, PHP_URL_HOST);
-    printf('<!doctype html><html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Továbblépés – %1$s</title><style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#F6F4EF;font:16px/1.5 system-ui,sans-serif;color:#111318}.c{max-width:420px;margin:16px;background:#fff;border:1px solid #E2DED5;border-radius:18px;padding:28px}h1{font-size:22px;margin:0 0 8px}p{color:#5C5F66;margin:0 0 18px}a.b{display:inline-block;background:#0E6B4F;color:#fff;text-decoration:none;border-radius:12px;padding:12px 18px;font-weight:600}</style></head><body><div class="c"><h1>Továbblépés a(z) %1$s weboldalára</h1><p>A Kompasz oldaláról egy külső weboldalra lépsz: %2$s</p><a class="b" href="%3$s" rel="nofollow noopener">Tovább a weboldalra →</a></div></body></html>',
+    printf('<!doctype html><html lang="' . kompasz_locale()['html'] . '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>' . esc_html(kompasz__('Továbblépés')) . ' – %1$s</title><style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#F6F4EF;font:16px/1.5 system-ui,sans-serif;color:#111318}.c{max-width:420px;margin:16px;background:#fff;border:1px solid #E2DED5;border-radius:18px;padding:28px}h1{font-size:22px;margin:0 0 8px}p{color:#5C5F66;margin:0 0 18px}a.b{display:inline-block;background:#0E6B4F;color:#fff;text-decoration:none;border-radius:12px;padding:12px 18px;font-weight:600}</style></head><body><div class="c"><h1>' . esc_html(kompasz__('Továbblépés a(z) %1$s weboldalára')) . '</h1><p>' . esc_html(sprintf(kompasz__('A(z) %s oldaláról egy külső weboldalra lépsz:'), get_bloginfo('name'))) . ' %2$s</p><a class="b" href="%3$s" rel="nofollow noopener">' . esc_html(kompasz__('Tovább a weboldalra →')) . '</a></div></body></html>',
         esc_html($name), esc_html($host), esc_url($url));
     exit;
 });

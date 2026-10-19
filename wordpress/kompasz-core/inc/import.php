@@ -42,22 +42,27 @@ function kompasz_import_base(array $data) {
         }
     }
 
+    // A nyelv az importfájlból (a slugok és a felület szövegei ehhez igazodnak)
+    update_option('kompasz_lang', $data['site']['lang'] ?? 'hu');
+    $email = '<a href="mailto:' . esc_attr($data['site']['email']) . '">' . esc_html($data['site']['email']) . '</a>';
     $pages = [
-        'rolunk' => ['Rólunk', '<p>A Kompasz független magyar oldal, ahol szolgáltatás szerint bontott toplistákban találod a hazai ügynökségeket.</p>'],
+        'rolunk' => [kompasz__('Rólunk'), ''],
         'blog' => ['Blog', ''],
-        'kapcsolat' => ['Kapcsolat', '<p>Ügynökség vagy, és szerepelnél a listán? Kérdésed van? Írj nekünk: <a href="mailto:' . esc_attr($data['site']['email']) . '">' . esc_html($data['site']['email']) . '</a>.</p>'],
-        'kivalasztasi-elvek' => ['A listák kiválasztási elvei', '<p>A sorrend ügyfélértékeléseken, referenciákon, szakmai tapasztalaton és nyilvános cégadatokon alapul. A fizetett megjelenés nem változtat a sorrenden, és minden ilyen helyet „Hirdetés” felirattal jelölünk.</p>'],
-        'aszf' => ['Általános szerződési feltételek', '<p>Az ÁSZF szövege hamarosan elérhető.</p>'],
-        'adatvedelem' => ['Adatvédelmi tájékoztató', '<p>Az adatvédelmi tájékoztató szövege hamarosan elérhető.</p>'],
-        'cimkek' => ['Ügynökségek szolgáltatás szerint', ''],
-        'ugyfelek' => ['Ügynökségek referencia-ügyfél szerint', ''],
-        'minositesek' => ['Minősített ügynökségek', ''],
-        'iparagak' => ['Ügynökségek iparági tapasztalat szerint', ''],
+        'kapcsolat' => [kompasz__('Kapcsolat'), '<p>' . sprintf(kompasz__('Ügynökség vagy, és szerepelnél a listán? Kérdésed van? Írj nekünk: %s.'), $email) . '</p>'],
+        'kivalasztasi-elvek' => [kompasz__('A listák kiválasztási elvei'), '<p>' . esc_html(kompasz__('A sorrend ügyfélértékeléseken, referenciákon, szakmai tapasztalaton és nyilvános cégadatokon alapul. A fizetett megjelenés nem változtat a sorrenden, és minden ilyen helyet „Hirdetés” felirattal jelölünk.')) . '</p>'],
+        'aszf' => [kompasz__('Általános szerződési feltételek'), ''],
+        'adatvedelem' => [kompasz__('Adatvédelmi tájékoztató'), ''],
+        'cimkek' => [kompasz__('Ügynökségek szolgáltatás szerint'), ''],
+        'ugyfelek' => [kompasz__('Ügynökségek referencia-ügyfél szerint'), ''],
+        'minositesek' => [kompasz__('Minősített ügynökségek'), ''],
+        'iparagak' => [kompasz__('Ügynökségek iparági tapasztalat szerint'), ''],
     ];
-    foreach ($pages as $slug => [$title, $content]) {
+    if (kompasz_lang() !== 'hu') $pages['impresszum'] = [kompasz__('Impresszum'), ''];
+    foreach ($pages as $key => [$title, $content]) {
+        $slug = kompasz_slug($key);
         if (!get_page_by_path($slug)) wp_insert_post(['post_type' => 'page', 'post_status' => 'publish', 'post_name' => $slug, 'post_title' => $title, 'post_content' => $content]);
     }
-    if ($blog = get_page_by_path('blog')) update_option('page_for_posts', $blog->ID);
+    if ($blog = get_page_by_path(kompasz_slug('blog'))) update_option('page_for_posts', $blog->ID);
     kompasz_apply_page_contents();
 
     update_option('blogname', $data['site']['name']);
@@ -65,6 +70,7 @@ function kompasz_import_base(array $data) {
     if (!get_option('kompasz_email')) update_option('kompasz_email', $data['site']['email']);
     update_option('kompasz_featured_pitch', get_option('kompasz_featured_pitch') ?: $data['settings']['featured_pitch']);
     update_option('kompasz_home_seo', $data['home_seo']);
+    update_option('kompasz_home_tab', $data['settings']['home_tab'] ?? 'online-marketing-ugynoksegek');
     if (!get_option('permalink_structure')) update_option('permalink_structure', '/%postname%/');
     // Fejlesztés alatt a keresőrobotok kitiltva (Beállítások → Olvasás)
     if (!get_option('kompasz_imported')) update_option('blog_public', 0);
@@ -160,6 +166,8 @@ function kompasz_import_finish(array $data) {
     }
     if (!get_option('kompasz_home_top')) update_option('kompasz_home_top', array_values(array_filter(array_map($id, $data['settings']['home_top']))));
     update_option('kompasz_imported', $data['version']);
+    // A nyelvfüggő URL-részek (pl. /agentur/) a következő kérésben, az új nyelvvel regisztrálva frissülnek
+    update_option('kompasz_flush_rules', 1);
     flush_rewrite_rules();
 }
 
