@@ -1,0 +1,451 @@
+{
+ "4imedia": {
+  "file": "4imedia.png",
+  "src": "https://www.4imedia.com/wp-content/uploads/4imedia_logo_sw_7e.png",
+  "via": "logo-top",
+  "dark": true
+ },
+ "4tfm-e-commerce-agentur": {
+  "file": "4tfm-e-commerce-agentur.svg",
+  "src": "https://4tfm.de/wp-content/uploads/2025/11/4tfm_logo.svg",
+  "via": "logo-own"
+ },
+ "aaads": {
+  "file": "aaads.png",
+  "src": "https://framerusercontent.com/images/B12WwRbm4g1iw0bGE0mBQXNROf8.png",
+  "via": "apple-touch-icon"
+ },
+ "ad-agents": {
+  "file": "ad-agents.svg",
+  "src": "https://www.ad-agents.com/wp-content/uploads/2022/03/ad-agents-logo-1.svg",
+  "via": "header-own"
+ },
+ "adcologne": {
+  "file": "adcologne.png",
+  "src": "https://www.adcologne.de/wp-content/uploads/2022/01/ameron-logo.png",
+  "via": "logo-own"
+ },
+ "admates": {
+  "file": "admates.png",
+  "src": "https://admates.de/wp-content/themes/admatesnewtheme/theme/Img/admatesLogo.png",
+  "via": "header-own"
+ },
+ "adpoint": {
+  "file": "adpoint.png",
+  "src": "https://adpoint.de/wp-content/uploads/2021/12/adpoint.png",
+  "via": "logo-own"
+ },
+ "adseed": {
+  "file": "adseed.svg",
+  "src": "https://www.adseed.de/wp-content/uploads/adseed_logo_quer_dark.svg",
+  "via": "header-own"
+ },
+ "ama-x": {
+  "file": "ama-x.webp",
+  "src": "https://cdn.prod.website-files.com/66ecf0adab3cfcf4e4826240/66ef5e80344c2721a85a9539_image%20(166).webp",
+  "via": "logo-top"
+ },
+ "amz-advertise": {
+  "file": "amz-advertise.svg",
+  "src": "https://amz-advertise.de/images/logos/amz-logo-website-weis.svg",
+  "via": "header-own",
+  "dark": true
+ },
+ "amz-mala": {
+  "file": "amz-mala.svg",
+  "src": "https://mala-markets.com/wp-content/uploads/2024/06/malamarkets_logo_white_red.svg",
+  "via": "header-own",
+  "dark": true
+ },
+ "amz-marketing": {
+  "file": "amz-marketing.avif",
+  "src": "https://cdn.prod.website-files.com/69488c44c5a364accb18e49c/6a44e3007d00fff5a9e3f041_amz-marketing-logo.avif",
+  "via": "header-logo"
+ },
+ "analyticaa": {
+  "file": "analyticaa.png",
+  "src": "https://www.analyticaa.com/wp-content/uploads/analyticaa-logo.png",
+  "via": "header-own"
+ },
+ "arboro": {
+  "file": "arboro.svg",
+  "src": "https://a.storyblok.com/f/288897518322999/146x34/bf51e09e0b/logo.svg",
+  "via": "header-own",
+  "dark": true
+ },
+ "artaxo": {
+  "file": "artaxo.png",
+  "src": "https://artaxo.com/_astro/artaxo-logo-ohne-claim.CBgVrFZP_18dlQm.png",
+  "via": "logo-own"
+ },
+ "artundweise": {
+  "file": "artundweise.svg",
+  "src": "https://www.artundweise.de/_assets/9ebe51156f8229bdb6dd8b3e7a310c1f/Static/mandant/img/logo-stage.svg",
+  "via": "logo-top",
+  "dark": true
+ },
+ "aufgesang": {
+  "file": "aufgesang.svg",
+  "src": "https://www.aufgesang.de/wp-content/uploads/Aufgesang-Logo_zwischen.svg",
+  "via": "header-own"
+ },
+ "bloofusion": {
+  "file": "bloofusion.svg",
+  "src": "https://www.bloofusion.de/assets/img/logo-bloofusion.svg",
+  "via": "header-own"
+ },
+ "claneo": {
+  "file": "claneo.svg",
+  "src": "https://www.claneo.com/wp-content/uploads/Element-3.svg",
+  "via": "header-own"
+ },
+ "construktiv": {
+  "file": "construktiv.svg",
+  "src": "https://construktiv.de/wp-content/uploads/2025/09/construktiv.svg",
+  "via": "header-own"
+ },
+ "context-studios": {
+  "file": "context-studios.svg",
+  "src": "https://www.contextstudios.ai/logos/icon-light-transparent.svg",
+  "via": "header-logo",
+  "dark": true
+ },
+ "dasaundo": {
+  "file": "dasaundo.webp",
+  "src": "https://www.dasaundo.de/assets/images/7/dasaundo_logo-c76b18af.webp",
+  "via": "logo-own",
+  "dark": true
+ },
+ "die-sea-experten": {
+  "file": "die-sea-experten.png",
+  "src": "https://1e54fe14.delivery.rocketcdn.me/wp-content/uploads/2025/03/logo-die-sea-experten-weiss.png",
+  "via": "header-own",
+  "dark": true
+ },
+ "dreikon": {
+  "file": "dreikon.png",
+  "src": "https://www.dreikon.de/site/assets/files/1038/top100seo-2026.0x70.png",
+  "via": "logo-own"
+ },
+ "efly-marketplace-services": {
+  "file": "efly-marketplace-services.png",
+  "src": "https://efly-amz.com/images/logo.png",
+  "via": "logo-own"
+ },
+ "eminded": {
+  "file": "eminded.svg",
+  "src": "https://eminded.de/wp-content/uploads/2022/07/eminded-logo-main-min-1.svg",
+  "via": "header-own"
+ },
+ "eology": {
+  "file": "eology.svg",
+  "src": "https://www.eology.de/wp-content/themes/eology/template-parts/gbb/logo-marquee/img/eo_kundenlogos_walloffans_450x104.svg",
+  "via": "logo-own",
+  "dark": true
+ },
+ "eom": {
+  "file": "eom.png",
+  "src": "https://eom.de/wp-content/uploads/2020/06/cropped-cropped-cropped-cropped-cropped-EOM-Logo-Insights-S-250w-1.png",
+  "via": "header-logo"
+ },
+ "exito": {
+  "file": "exito.svg",
+  "src": "https://www.exito.de/media/layout/logos/exito.svg?m=1646142445",
+  "via": "logo-own"
+ },
+ "experics": {
+  "file": "experics.png",
+  "src": "https://www.experics.de/apple-icon.png?apple-icon.10x_2v7lvvyml.png",
+  "via": "apple-touch-icon"
+ },
+ "fischerappelt": {
+  "file": "fischerappelt.svg",
+  "src": "https://www.fischerappelt.de/uploads/logos/Deutsche_Bank_K_170x85_neu.svg",
+  "via": "logo-own"
+ },
+ "fogel-podcasting": {
+  "file": "fogel-podcasting.png",
+  "src": "https://fogel-podcasting.de/wp-content/uploads/2020/07/cropped-fogelicon001-80x80.png",
+  "via": "header-own"
+ },
+ "friendventure": {
+  "file": "friendventure.jpg",
+  "src": "https://www.friendventure.de/app/uploads/resized/2025/12/mesh-gradient-100x80-c-center.jpg",
+  "via": "header-own"
+ },
+ "geoagentur-de": {
+  "file": "geoagentur-de.svg",
+  "src": "https://geoagentur.de/wp-content/uploads/2025/04/geo-agentur-Logo.svg",
+  "via": "header-own"
+ },
+ "hanseranking": {
+  "file": "hanseranking.webp",
+  "src": "https://www.hanseranking.de/wp-content/themes/hanseranking/media/icons/xing.webp",
+  "via": "header-own"
+ },
+ "huks-digital": {
+  "file": "huks-digital.png",
+  "src": "https://www.huks.digital/wp-content/uploads/2021/10/logo-schwarz-ohne_Zeichenflaeche-1-e1635336902396.png",
+  "via": "logo-own"
+ },
+ "hurra-com": {
+  "file": "hurra-com.svg",
+  "src": "https://www.hurra.com/images/676570d549322e3ca8c0e347_hurra_Logo.svg",
+  "via": "header-own"
+ },
+ "internetwarriors": {
+  "file": "internetwarriors.png",
+  "src": "https://framerusercontent.com/images/2mVv12IHLzYwl4vFZt67U4b1c.png",
+  "via": "icon"
+ },
+ "jsh-marketing": {
+  "file": "jsh-marketing.webp",
+  "src": "https://jsh.marketing/wp-content/uploads/2026/01/cropped-cropped-JSH-Logo-weiss-h60.webp",
+  "via": "header-logo"
+ },
+ "jungmut": {
+  "file": "jungmut.png",
+  "src": "https://www.jungmut.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png",
+  "via": "icon"
+ },
+ "kammann-rossi": {
+  "file": "kammann-rossi.svg",
+  "src": "https://cdn.kammannrossi.de/brand/kr-logo-2025-ink.svg",
+  "via": "header-own"
+ },
+ "klarkode": {
+  "file": "klarkode.svg",
+  "src": "https://cdn.prod.website-files.com/682e31e72f35a00a0e0b6ce8/68652a14fce187d45b907387_Klarkode%20Logo.svg",
+  "via": "logo-own",
+  "dark": true
+ },
+ "klickpiloten": {
+  "file": "klickpiloten.svg",
+  "src": "https://klickpiloten.de/wp-content/uploads/KlickPiloten-Logo-Blau.svg",
+  "via": "header-own"
+ },
+ "kopf-und-stift": {
+  "file": "kopf-und-stift.svg",
+  "src": "https://kopfundstift.de/wp-content/uploads/2021/06/webdesign-agentur-logo.svg",
+  "via": "header-own"
+ },
+ "latori": {
+  "file": "latori.svg",
+  "src": "https://a.storyblok.com/f/172873/161x46/9e9af02763/shopify-logo-black.svg",
+  "via": "logo-top"
+ },
+ "loewenstark": {
+  "file": "loewenstark.svg",
+  "src": "https://www.loewenstark.com/wp-content/themes/ls-pk/img/LOM_Logo_Negativ.svg",
+  "via": "header-own",
+  "dark": true
+ },
+ "marketbirds": {
+  "file": "marketbirds.png",
+  "src": "https://onecdn.io/media/4a565f24-9890-4bab-85b3-013c4895ddd3/md2x",
+  "via": "logo-own",
+  "dark": true
+ },
+ "mashup-communications": {
+  "file": "mashup-communications.svg",
+  "src": "https://www.mashup-communications.de/app/uploads/2023/04/Message-dropdown.svg",
+  "via": "header-own",
+  "dark": true
+ },
+ "mellowmessage": {
+  "file": "mellowmessage.svg",
+  "src": "https://www.mellowmessage.de/_assets/51b117c5728eb4c7ecc85ca95ece0324/Images/mm_logo-claim_2.svg",
+  "via": "header-logo"
+ },
+ "morefire": {
+  "file": "morefire.svg",
+  "src": "https://www.more-fire.com/wp-content/uploads/2020/09/morefire-logo-white.svg",
+  "via": "header-own",
+  "dark": true
+ },
+ "movesell": {
+  "file": "movesell.png",
+  "src": "https://movesell.de/wp-content/uploads/yootheme/cache/01/movesell_Wort-Bildmarke_blau-2-012ab328.png",
+  "via": "header-own"
+ },
+ "mso-digital": {
+  "file": "mso-digital.svg",
+  "src": "https://www.mso-digital.de/wp-content/uploads/2020/09/MSO-Digital-Logo-tiny.svg",
+  "via": "header-logo",
+  "dark": true
+ },
+ "ondevi": {
+  "file": "ondevi.svg",
+  "src": "https://cdn.prod.website-files.com/680794a92c0d51ed197aec0e/680797fe17c908d6a6cc15bb_logo_light.svg",
+  "via": "logo-own",
+  "dark": true
+ },
+ "online-solutions-group": {
+  "file": "online-solutions-group.svg",
+  "src": "https://www.onlinesolutionsgroup.de/wp-content/uploads/logo.svg",
+  "via": "header-own",
+  "dark": true
+ },
+ "ostend-digital": {
+  "file": "ostend-digital.svg",
+  "src": "https://ostend.digital/wp-content/uploads/2024/10/Ostend-Logo.svg",
+  "via": "header-own"
+ },
+ "peak-ace": {
+  "file": "peak-ace.svg",
+  "src": "https://peakace.agency/wp-content/uploads/2026/07/Logo-Horizontal-RGB.svg",
+  "via": "header-own"
+ },
+ "piabo": {
+  "file": "piabo.png",
+  "src": "https://piabo.net/wp-content/uploads/2024/05/PIABO_LOGO-CMYK-v2__ScaleMaxWidthWzIxN10.png",
+  "via": "header-own",
+  "dark": true
+ },
+ "podcastmania": {
+  "file": "podcastmania.png",
+  "src": "https://podcastmania.de/wp-content/uploads/2026/05/cropped-Design-ohne-Titel-2-scaled-1.png",
+  "via": "header-own"
+ },
+ "projecter": {
+  "file": "projecter.jpg",
+  "src": "https://www.projecter.de/wp-content/uploads/2020/01/370x280.jpg",
+  "via": "header-own"
+ },
+ "radyant": {
+  "file": "radyant.svg",
+  "src": "https://www.radyant.io/brand/radyant-logo-white.svg",
+  "via": "logo-own",
+  "dark": true
+ },
+ "remazing": {
+  "file": "remazing.svg",
+  "src": "https://remazing.eu/remazing-logo.svg",
+  "via": "header-own",
+  "dark": true
+ },
+ "schwartz-public-relations": {
+  "file": "schwartz-public-relations.png",
+  "src": "https://schwartzpr.de/website/themes/schwartzpr/spr-template/html/assets/img/logo/spr-logo.png",
+  "via": "header-own"
+ },
+ "searchperts": {
+  "file": "searchperts.svg",
+  "src": "https://searchperts.de/wp-content/themes/searchperts/assets/img/ratings.svg",
+  "via": "header-own"
+ },
+ "second-elements": {
+  "file": "second-elements.png",
+  "src": "https://www.second-elements.de/hubfs/SE_logo_kurz_RGB.png",
+  "via": "header-own"
+ },
+ "semseo-solutions": {
+  "file": "semseo-solutions.png",
+  "src": "https://semseo-solutions.com/wp-content/uploads/2025/12/SEMSEO-Solutions-1-300x300.png",
+  "via": "header-own"
+ },
+ "seo-kueche": {
+  "file": "seo-kueche.svg",
+  "src": "https://www.seo-kueche.de/wp-content/themes/seo-kueche/_/img/logo.svg",
+  "via": "header-own"
+ },
+ "seokratie": {
+  "file": "seokratie.svg",
+  "src": "https://www.seokratie.de/wp-content/themes/seokratie-2024/img/logo.svg",
+  "via": "header-own"
+ },
+ "seomatik": {
+  "file": "seomatik.svg",
+  "src": "https://www.seomatik.de/wp-content/uploads/2020/03/logo-symbol.svg",
+  "via": "logo-own"
+ },
+ "seonative": {
+  "file": "seonative.svg",
+  "src": "https://www.seonative.de/wp-content/uploads/netzgef%C3%A4hrten-ganz-Orange-3.svg",
+  "via": "logo-own"
+ },
+ "seowerk": {
+  "file": "seowerk.png",
+  "src": "https://www.seowerk.de/wp-content/uploads/seowerk_logo_black.png",
+  "via": "header-own"
+ },
+ "seybold": {
+  "file": "seybold.png",
+  "src": "https://seybold.de/fileadmin/user_upload/Logos-Start/LGI.png",
+  "via": "logo-top"
+ },
+ "smarketer-group": {
+  "file": "smarketer-group.svg",
+  "src": "https://www.smarketer.de/wp-content/themes/smarketer/images/brand/logo.svg",
+  "via": "header-own"
+ },
+ "socialcooks": {
+  "file": "socialcooks.webp",
+  "src": "https://socialcooks.com/_astro/logo-mark.DLV_6iPu_wA6n4.webp",
+  "via": "header-logo"
+ },
+ "striive": {
+  "file": "striive.png",
+  "src": "https://framerusercontent.com/images/qm663G52TR2BltJNOSQqDm1oxo8.png",
+  "via": "icon"
+ },
+ "suchhelden": {
+  "file": "suchhelden.svg",
+  "src": "https://www.suchhelden.de/assets/media/eingebettet/6c914cff886984dd.svg",
+  "via": "header-own"
+ },
+ "suxeedo": {
+  "file": "suxeedo.svg",
+  "src": "https://suxeedo.de/wp-content/themes/suxeedo/images/logo.svg",
+  "via": "header-own",
+  "dark": true
+ },
+ "taismo": {
+  "file": "taismo.svg",
+  "src": "https://taismo.de/wp-content/uploads/2024/09/taismo-logo.svg",
+  "via": "header-own"
+ },
+ "tante-e": {
+  "file": "tante-e.svg",
+  "src": "https://tante-e.com/cdn/shop/files/develey_white_200x.svg?v=1754408045",
+  "via": "logo-own",
+  "dark": true
+ },
+ "valuezon": {
+  "file": "valuezon.svg",
+  "src": "https://valuezon.de/wp-content/uploads/2025/12/Valuezon_Bildzeichen.svg",
+  "via": "header-own"
+ },
+ "webneo": {
+  "file": "webneo.png",
+  "src": "https://www.webneo.de/wp-content/uploads/2023/08/wbn_logo_1c-weiss.png",
+  "via": "header-own",
+  "dark": true
+ },
+ "wingmen-online-marketing": {
+  "file": "wingmen-online-marketing.svg",
+  "src": "https://wngmn.com/img/wingmen-logo.svg",
+  "via": "header-own"
+ },
+ "wlo-social": {
+  "file": "wlo-social.png",
+  "src": "https://framerusercontent.com/images/v8ZXNOloUnDi7Yox2eIDIxDIIyo.png",
+  "via": "apple-touch-icon"
+ },
+ "woogency": {
+  "file": "woogency.webp",
+  "src": "https://woogency.de/wp-content/uploads/2023/08/WooCommerce-Agentur-woogency-logo.png.webp",
+  "via": "header-own",
+  "dark": true
+ },
+ "zacher-media": {
+  "file": "zacher-media.png",
+  "src": "https://cdn-bfcib.nitrocdn.com/bdmRJXNLJouhIJrKJeMDXrnJvBGvuIyl/assets/images/optimized/rev-1bdfadf/zachermedia.de/wp-content/uploads/2025/01/zacher-media_favicon_dunkel-1.png",
+  "via": "icon"
+ },
+ "zweidigital": {
+  "file": "zweidigital.svg",
+  "src": "https://www.zweidigital.de/wp-content/themes/zwd-website/assets/images/logo.svg",
+  "via": "header-logo"
+ }
+}
