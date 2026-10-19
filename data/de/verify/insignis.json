@@ -1,0 +1,27 @@
+{
+ "slug": "insignis",
+ "website": "https://insignis.de/",
+ "final_url": "https://rocketplay.com.de/",
+ "status": 200,
+ "error": null,
+ "title": "Verify you are a human",
+ "description": "",
+ "checked": "2026-10-19",
+ "pages": [
+  {
+   "url": "https://rocketplay.com.de/",
+   "status": 200,
+   "text": "Verify you are a human \n Verify you are a human\n Enter website"
+  },
+  {
+   "url": "https://rocketplay.com.de/rolunk/",
+   "status": 200,
+   "text": "Verify you are a human \n Verify you are a human\n Enter website"
+  },
+  {
+   "url": "https://rocketplay.com.de/kapcsolat/",
+   "status": 200,
+   "text": "Verify you are a human \n Verify you are a human\n Enter website"
+  }
+ ]
+}

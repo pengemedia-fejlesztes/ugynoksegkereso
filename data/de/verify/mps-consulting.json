@@ -1,0 +1,17 @@
+{
+ "slug": "mps-consulting",
+ "website": "https://mps-berlin.de/",
+ "final_url": "https://mps-berlin.de/",
+ "status": 403,
+ "error": null,
+ "title": "Just a moment...",
+ "description": "",
+ "checked": "2026-10-19",
+ "pages": [
+  {
+   "url": "https://mps-berlin.de/",
+   "status": 403,
+   "text": "Just a moment..."
+  }
+ ]
+}
