@@ -2,10 +2,15 @@ name: Jelölt cégek ellenőrzése
 
 on:
   workflow_dispatch:
+    inputs:
+      set:
+        description: 'Melyik jelöltkészlet (data = magyar, data/de = német)'
+        default: 'data/de'
   push:
     branches: [main]
     paths:
       - 'data/candidates.json'
+      - 'data/de/candidates.json'
       - 'scripts/verify-sites.mjs'
 
 permissions:
@@ -24,10 +29,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node scripts/verify-sites.mjs
+      - run: node scripts/verify-sites.mjs ${{ inputs.set || 'data/de' }}
       - name: Commit
         run: |
-          git add data/verify
+          git add data/verify data/de/verify 2>/dev/null || git add data/verify
           if git diff --cached --quiet; then echo "Nincs változás"; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898+github-actions[bot]@users.noreply.github.com"
