@@ -22,8 +22,8 @@
  },
  "adcologne": {
   "file": "adcologne.png",
-  "src": "https://www.adcologne.de/wp-content/uploads/2022/01/ameron-logo.png",
-  "via": "logo-own"
+  "src": "https://www.adcologne.de/wp-content/uploads/2021/12/adcologne-favicon-300x300.png",
+  "via": "icon"
  },
  "admates": {
   "file": "admates.png",
@@ -64,8 +64,8 @@
  },
  "analyticaa": {
   "file": "analyticaa.png",
-  "src": "https://www.analyticaa.com/wp-content/uploads/analyticaa-logo.png",
-  "via": "header-own"
+  "src": "https://www.analyticaa.com/wp-content/uploads/favicon-114.png",
+  "via": "apple-touch-icon"
  },
  "arboro": {
   "file": "arboro.svg",
@@ -124,8 +124,8 @@
  },
  "dreikon": {
   "file": "dreikon.png",
-  "src": "https://www.dreikon.de/site/assets/files/1038/top100seo-2026.0x70.png",
-  "via": "logo-own"
+  "src": "https://www.dreikon.de/site/assets/files/1038/favicon-228.558x558.png",
+  "via": "icon"
  },
  "efly-marketplace-services": {
   "file": "efly-marketplace-services.png",
@@ -139,9 +139,8 @@
  },
  "eology": {
   "file": "eology.svg",
-  "src": "https://www.eology.de/wp-content/themes/eology/template-parts/gbb/logo-marquee/img/eo_kundenlogos_walloffans_450x104.svg",
-  "via": "logo-own",
-  "dark": true
+  "src": "https://www.eology.de/wp-content/themes/eology/template-parts/global/favicon/favicon.svg",
+  "via": "icon"
  },
  "eom": {
   "file": "eom.png",
@@ -159,9 +158,9 @@
   "via": "apple-touch-icon"
  },
  "fischerappelt": {
-  "file": "fischerappelt.svg",
-  "src": "https://www.fischerappelt.de/uploads/logos/Deutsche_Bank_K_170x85_neu.svg",
-  "via": "logo-own"
+  "file": "fischerappelt.png",
+  "src": "https://www.fischerappelt.de/fischerappelt/icons/android-icon-192x192.png",
+  "via": "icon"
  },
  "fogel-podcasting": {
   "file": "fogel-podcasting.png",
@@ -169,9 +168,9 @@
   "via": "header-own"
  },
  "friendventure": {
-  "file": "friendventure.jpg",
-  "src": "https://www.friendventure.de/app/uploads/resized/2025/12/mesh-gradient-100x80-c-center.jpg",
-  "via": "header-own"
+  "file": "friendventure.svg",
+  "src": "https://www.friendventure.de/app/themes/friendventure/dist/assets/icons/favicon/safari-pinned-tab-e662379a5f.svg",
+  "via": "icon"
  },
  "geoagentur-de": {
   "file": "geoagentur-de.svg",
@@ -180,8 +179,8 @@
  },
  "hanseranking": {
   "file": "hanseranking.webp",
-  "src": "https://www.hanseranking.de/wp-content/themes/hanseranking/media/icons/xing.webp",
-  "via": "header-own"
+  "src": "https://www.hanseranking.de/wp-content/uploads/cropped-favicon-192x192.webp",
+  "via": "icon"
  },
  "huks-digital": {
   "file": "huks-digital.png",
@@ -231,8 +230,8 @@
  },
  "latori": {
   "file": "latori.svg",
-  "src": "https://a.storyblok.com/f/172873/161x46/9e9af02763/shopify-logo-black.svg",
-  "via": "logo-top"
+  "src": "https://www.latori.com/favicon.svg?v=bd49460e2ed874b5ea1b67cb63a99fb8",
+  "via": "icon"
  },
  "loewenstark": {
   "file": "loewenstark.svg",
@@ -308,9 +307,9 @@
   "via": "header-own"
  },
  "projecter": {
-  "file": "projecter.jpg",
-  "src": "https://www.projecter.de/wp-content/uploads/2020/01/370x280.jpg",
-  "via": "header-own"
+  "file": "projecter.png",
+  "src": "https://www.projecter.de/wp-content/uploads/2022/07/cropped-favicon-192x192.png",
+  "via": "icon"
  },
  "radyant": {
   "file": "radyant.svg",
@@ -330,9 +329,9 @@
   "via": "header-own"
  },
  "searchperts": {
-  "file": "searchperts.svg",
-  "src": "https://searchperts.de/wp-content/themes/searchperts/assets/img/ratings.svg",
-  "via": "header-own"
+  "file": "searchperts.png",
+  "src": "https://searchperts.de/wp-content/uploads/2026/01/cropped-Green-4.png",
+  "via": "icon"
  },
  "second-elements": {
   "file": "second-elements.png",
@@ -361,8 +360,8 @@
  },
  "seonative": {
   "file": "seonative.svg",
-  "src": "https://www.seonative.de/wp-content/uploads/netzgef%C3%A4hrten-ganz-Orange-3.svg",
-  "via": "logo-own"
+  "src": "https://www.seonative.de/safari-pinned-tab.svg?v=Om5xdwG33d",
+  "via": "icon"
  },
  "seowerk": {
   "file": "seowerk.png",
@@ -371,8 +370,8 @@
  },
  "seybold": {
   "file": "seybold.png",
-  "src": "https://seybold.de/fileadmin/user_upload/Logos-Start/LGI.png",
-  "via": "logo-top"
+  "src": "https://seybold.de/fileadmin/fav/android-icon-192x192.png",
+  "via": "icon"
  },
  "smarketer-group": {
   "file": "smarketer-group.svg",
@@ -380,9 +379,9 @@
   "via": "header-own"
  },
  "socialcooks": {
-  "file": "socialcooks.webp",
-  "src": "https://socialcooks.com/_astro/logo-mark.DLV_6iPu_wA6n4.webp",
-  "via": "header-logo"
+  "file": "socialcooks.png",
+  "src": "https://socialcooks.com/apple-touch-icon.png",
+  "via": "apple-touch-icon"
  },
  "striive": {
   "file": "striive.png",
