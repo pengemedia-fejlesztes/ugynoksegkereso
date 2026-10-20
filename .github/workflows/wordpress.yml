@@ -1,7 +1,7 @@
 name: WordPress – teszt, csomag, telepítés
 
 # Minden változáskor:
-#   1. test   – PHP szintaxis + integrációs teszt friss WordPressen (HU és DE): import, migráció, füstteszt MINDEN ügynökségre, HTTP-ellenőrzés
+#   1. test   – PHP szintaxis + integrációs teszt friss WordPressen, MySQL-lel (HU és DE): import, migráció, füstteszt MINDEN ügynökségre, HTTP-ellenőrzés
 #   2. build  – telepíthető zip-csomagok (Actions → futás → Artifacts)
 #   3. deploy – csak ha a teszt sikeres: SSH-n telepít a HU és a DE oldalra (scripts/deploy.sh → scripts/wp/remote-deploy.sh):
 #               adatbázis-mentés, kódcsere, Contact Form 7, Google API-kulcs, migráció, ellenőrzés, hibánál automatikus visszaállítás.
@@ -53,12 +53,14 @@ jobs:
       - uses: shivammathur/setup-php@v2
         with:
           php-version: '8.2'
-          extensions: pdo_sqlite, sqlite3, mbstring, intl, gd
+          extensions: mysqli, mbstring, intl, gd
           tools: none
       - name: PHP szintaxis-ellenőrzés
         run: find wordpress scripts -name '*.php' -print0 | xargs -0 -n1 php -l > /dev/null
       - name: Csomag (importadatokkal)
         run: bash scripts/zip-wp.sh ${{ matrix.site == 'de' && 'de' || '' }}
+      - name: MySQL indítása
+        run: sudo systemctl start mysql && mysqladmin -uroot -proot --silent --wait=30 ping
       - name: Integrációs teszt friss WordPressen
         run: bash scripts/ci-wp-test.sh ${{ matrix.site }}
 

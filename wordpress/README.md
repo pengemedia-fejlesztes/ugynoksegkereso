@@ -24,7 +24,7 @@ Az első import **kitiltja a keresőrobotokat** (Beállítások → Olvasás →
 
 `.github/workflows/wordpress.yml` minden `main` push-ra:
 
-1. **test** – PHP-szintaxis, majd friss WordPressen (SQLite, HU és DE külön): Contact Form 7, import, `wp kompasz migrate`,
+1. **test** – PHP-szintaxis, majd friss WordPressen (MySQL, HU és DE külön): Contact Form 7, import, `wp kompasz migrate`,
    füstteszt **minden ügynökség** adatlapjára (`scripts/wp/smoke.php`), HTTP-ellenőrzés. Helyben: `bash scripts/ci-wp-test.sh hu`.
 2. **build** – telepíthető zip-csomagok (Artifacts).
 3. **deploy** – csak sikeres teszt után, SSH-n, oldalanként (`scripts/deploy.sh` → a szerveren `scripts/wp/remote-deploy.sh`):
