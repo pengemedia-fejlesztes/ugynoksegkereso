@@ -64,8 +64,19 @@ copy_in "$S/theme" "$TH/kompasz"
 log "kód kicserélve ($(cat "$PL/kompasz-core/build.json" 2>/dev/null))"
 
 # --- Bővítmények és téma ---
-wp plugin is-installed contact-form-7 || wp plugin install contact-form-7 --quiet
-wp plugin activate contact-form-7 kompasz-core --quiet
+wp plugin activate kompasz-core --quiet
+# Contact Form 7: a szerver PHP/WordPress verziójával kompatibilis legújabb kiadás (a legújabb CF7 pl. PHP 8.3-at kér)
+cf7_ok() { wp plugin activate contact-form-7 --quiet >/dev/null 2>&1; }
+if ! { wp plugin is-installed contact-form-7 && cf7_ok; }; then
+  wp plugin install contact-form-7 --force --quiet >/dev/null 2>&1 || true
+  if ! cf7_ok; then
+    for ver in $(curl -gsSf 'https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request[slug]=contact-form-7&request[fields][versions]=1' \
+        | php -r '$v = array_keys((array) (json_decode(stream_get_contents(STDIN), true)["versions"] ?? [])); $v = array_filter($v, fn($x) => preg_match("/^\d+(\.\d+)+$/", $x)); usort($v, "version_compare"); echo implode(" ", array_slice(array_reverse($v), 0, 25));'); do
+      wp plugin install contact-form-7 --version="$ver" --force --quiet >/dev/null 2>&1 && cf7_ok && { log "Contact Form 7 $ver (kompatibilis a szerverrel)"; break; }
+    done
+  fi
+  cf7_ok || { echo "A Contact Form 7 egyik verziója sem kapcsolható be ezen a szerveren (PHP $(php -r 'echo PHP_VERSION;'))."; exit 1; }
+fi
 wp theme activate kompasz --quiet
 # Google Places API-kulcs a wp-config.php-ba (nem az adatbázisba; az admin felületen nem olvasható ki)
 if [ -n "${GOOGLE_PLACES_API_KEY:-}" ]; then

@@ -25,7 +25,8 @@ WP_CLI::add_command('kompasz doctor', function () {
         $rows[] = ['ellenőrzés' => $name, 'állapot' => $ok ? 'OK' : ($required ? 'HIBA' : 'figyelmeztetés'), 'részlet' => $info];
         if (!$ok && $required) $fail++;
     };
-    $check('Bővítmény verzió', true, KOMPASZ_CORE_VERSION);
+    $check('Bővítmény verzió', true, KOMPASZ_CORE_VERSION . (is_file(KOMPASZ_CORE_DIR . 'build.json') ? ' ' . trim(file_get_contents(KOMPASZ_CORE_DIR . 'build.json')) : ''));
+    $check('PHP / WordPress', version_compare(PHP_VERSION, '7.4', '>='), 'PHP ' . PHP_VERSION . ', WordPress ' . get_bloginfo('version'));
     $check('Adatbázis-séma', (int) get_option('kompasz_schema', 1) >= kompasz_schema_version(), get_option('kompasz_schema', 1) . ' / ' . kompasz_schema_version());
     $check('Aktív téma', get_stylesheet() === 'kompasz', get_stylesheet());
     $check('Contact Form 7', class_exists('WPCF7_ContactForm'), class_exists('WPCF7_ContactForm') ? WPCF7_VERSION : 'nincs bekapcsolva');
