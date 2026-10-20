@@ -4,3 +4,4 @@ node_modules/
 wordpress/kompasz-core/import/
 dist/
 build/
+wordpress/kompasz-core/build.json

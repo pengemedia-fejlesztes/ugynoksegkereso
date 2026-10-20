@@ -20,11 +20,35 @@ Követelmény: WordPress 6.4+, PHP 7.4+ (8.x ajánlott).
 Az első import **kitiltja a keresőrobotokat** (Beállítások → Olvasás → „Keresőmotorok láthatósága”; robots.txt + noindex + X-Robots-Tag).
 Élesítéskor ezt kell kikapcsolni.
 
-## Automatikus telepítés
+## Automatikus telepítés (CI/CD)
 
-Ha a GitHub repó Settings → Secrets and variables → Actions alatt megvannak ezek, minden push a téma és a bővítmény
-fájljait SFTP-n feltölti: `WP_SFTP_HOST`, `WP_SFTP_USER`, `WP_SFTP_PASSWORD`, `WP_SFTP_PATH` (a WordPress gyökere, pl. `/public_html`),
-opcionálisan `WP_SFTP_PORT`. Az adatfrissítés után a WP adminban újra kell futtatni a **Kompasz → Importálás**-t.
+`.github/workflows/wordpress.yml` minden `main` push-ra:
+
+1. **test** – PHP-szintaxis, majd friss WordPressen (SQLite, HU és DE külön): Contact Form 7, import, `wp kompasz migrate`,
+   füstteszt **minden ügynökség** adatlapjára (`scripts/wp/smoke.php`), HTTP-ellenőrzés. Helyben: `bash scripts/ci-wp-test.sh hu`.
+2. **build** – telepíthető zip-csomagok (Artifacts).
+3. **deploy** – csak sikeres teszt után, SSH-n, oldalanként (`scripts/deploy.sh` → a szerveren `scripts/wp/remote-deploy.sh`):
+   adatbázis-mentés (`~/kompasz-backups`, utolsó 20) → új kód a régi mellé, csere → Contact Form 7 telepítése/bekapcsolása →
+   `KOMPASZ_GOOGLE_API_KEY` a wp-config.php-ba → import (új oldalon) → migráció → `wp kompasz setup` → füstteszt → `wp kompasz doctor` →
+   első Google-szinkron → külső HTTP-ellenőrzés. **Bármely hiba után az előző kód visszaáll, migrációs hibánál az adatbázis is.**
+   Üres mappába (pl. a német aldomain) a WordPresst is letölti, beállítja és feltölti az adatokkal.
+
+Titkok (GitHub → Settings → Secrets and variables → Actions → Secrets):
+
+| Név | Tartalom |
+|---|---|
+| `WP_SSH_HOST`, `WP_SSH_USER` | SSH-hozzáférés a tárhelyhez |
+| `WP_SSH_KEY` *vagy* `WP_SSH_PASSWORD` | privát kulcs (ajánlott) vagy jelszó; `WP_SSH_PORT` ha nem 22 |
+| `WP_PATH_HU`, `WP_PATH_DE` | a két WordPress gyökérmappája a szerveren |
+| `GOOGLE_PLACES_API_KEY` | Google Cloud → Places API (New) kulcs (a Places API-ra korlátozva) |
+| `WP_DB_NAME_DE`, `WP_DB_USER_DE`, `WP_DB_PASSWORD_DE`, (`WP_DB_HOST_DE`) | csak a német oldal első telepítéséhez |
+| `WP_ADMIN_EMAIL` | az új oldal adminisztrátorának e-mail címe |
+
+Opcionális változók (Variables): `WP_URL_HU`, `WP_URL_DE`. A telepítések előzménye: GitHub → Environments (`production-hu`, `production-de`).
+Kézi indítás: Actions → „WordPress – teszt, csomag, telepítés” → Run workflow (oldal választható).
+
+Üzemeltetés a szerveren: `wp kompasz doctor` (állapot), `wp kompasz migrate`, `wp kompasz google-sync`, `wp kompasz setup`.
+Visszaállítás mentésből: `gunzip -c ~/kompasz-backups/<fájl>.sql.gz | wp db import -`.
 
 ## Szerkesztés a WP adminban
 

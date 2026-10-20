@@ -3,7 +3,6 @@
 // nyelvenkénti telefonszámok, toplista ↔ szolgáltatás-címke párosítás. Minden ügynökségre egyszer fut le (admin vagy: wp kompasz migrate).
 if (!defined('ABSPATH')) exit;
 
-const KOMPASZ_SCHEMA = 2;
 
 function kompasz_fold($s) {
     $s = mb_strtolower(remove_accents((string) $s));
@@ -108,18 +107,56 @@ function kompasz_migrate_agency($id) {
     wp_set_object_terms($id, array_values(array_unique($tags)), 'szolgaltatas');
 }
 
+/**
+ * Verziózott adatbázis-migrációk: verzió => [leírás, függvény]. Új szerkezetváltozás = új sor a végén (soha nem írjuk át a régit).
+ * A futtatás sorrendben, a tárolt verziótól (kompasz_schema) felfelé; minden lépés után a verzió mentődik, így megszakadt futás folytatható.
+ */
+function kompasz_migrations() {
+    return [
+        2 => ['Szöveges minősítés/iparág/referencia → kifejezések; nyelvenkénti telefonszám; toplista ↔ szolgáltatás; Google-link', function () {
+            kompasz_guess_toplist_tags();
+            foreach (get_posts(['post_type' => 'ugynokseg', 'post_status' => 'any', 'fields' => 'ids', 'numberposts' => -1]) as $id) kompasz_migrate_agency($id);
+        }],
+    ];
+}
+
+/** Függőben lévő migrációk futtatása; zárral, hogy két párhuzamos kérés ne fusson egyszerre. Visszaad: lefutott verziók */
+function kompasz_run_migrations($force_from = null) {
+    $current = $force_from !== null ? (int) $force_from : (int) get_option('kompasz_schema', 1);
+    $pending = array_filter(kompasz_migrations(), function ($v) use ($current) { return $v > $current; }, ARRAY_FILTER_USE_KEY);
+    if (!$pending) return [];
+    if (!add_option('kompasz_migration_lock', time(), '', 'no')) {
+        if (time() - (int) get_option('kompasz_migration_lock') < 600) return []; // fut egy másik kérésben
+        update_option('kompasz_migration_lock', time());
+    }
+    @set_time_limit(600);
+    $done = [];
+    try {
+        ksort($pending);
+        foreach ($pending as $v => [$label, $fn]) {
+            $fn();
+            update_option('kompasz_schema', $v);
+            $log = (array) get_option('kompasz_migration_log', []);
+            $log[] = ['version' => $v, 'label' => $label, 'at' => gmdate('c'), 'plugin' => KOMPASZ_CORE_VERSION];
+            update_option('kompasz_migration_log', array_slice($log, -50), false);
+            $done[] = $v;
+        }
+    } finally {
+        delete_option('kompasz_migration_lock');
+    }
+    return $done;
+}
+
+function kompasz_schema_version() {
+    return max(array_keys(kompasz_migrations()));
+}
+
+/** Kompatibilitás: régi hívások (import, CLI) */
 function kompasz_migrate_all() {
-    kompasz_guess_toplist_tags();
-    foreach (get_posts(['post_type' => 'ugynokseg', 'post_status' => 'any', 'fields' => 'ids', 'numberposts' => -1]) as $id) kompasz_migrate_agency($id);
-    update_option('kompasz_schema', KOMPASZ_SCHEMA);
+    return kompasz_run_migrations(1);
 }
 
-add_action('admin_init', function () {
-    if ((int) get_option('kompasz_schema') >= KOMPASZ_SCHEMA || !current_user_can('manage_options') || wp_doing_ajax()) return;
-    @set_time_limit(300);
-    kompasz_migrate_all();
-});
-
-if (defined('WP_CLI') && WP_CLI) {
-    WP_CLI::add_command('kompasz migrate', function () { kompasz_migrate_all(); WP_CLI::success('Adatszerkezet frissítve.'); });
-}
+// Biztonsági háló: ha a telepítés nem futtatta (wp kompasz migrate), az első kérés lefuttatja – a taxonómiák regisztrálása után
+add_action('init', function () {
+    if ((int) get_option('kompasz_schema', 1) < kompasz_schema_version() && get_option('kompasz_imported')) kompasz_run_migrations();
+}, 20);

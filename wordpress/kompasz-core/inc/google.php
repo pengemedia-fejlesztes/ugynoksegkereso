@@ -39,7 +39,8 @@ function kompasz_google_place_id($post_id) {
     if ($cached) return $cached;
     $link = trim((string) get_post_meta($post_id, 'kompasz_google_url', true));
     if ($link === '') return new WP_Error('google', 'Nincs megadva Google Cégprofil link.');
-    $url = kompasz_google_expand($link);
+    // Ha a link már tartalmazza a Place ID-t, nem kell a Google-t hívni; rövid linket (maps.app.goo.gl stb.) előbb kibontunk
+    $url = preg_match('/(?:place_id[:=]|query_place_id=|placeid=)[A-Za-z0-9_-]{20,}/', rawurldecode($link)) ? $link : kompasz_google_expand($link);
     $dec = rawurldecode($url);
     if (preg_match('/(?:place_id[:=]|query_place_id=|placeid=)([A-Za-z0-9_-]{20,})/', $dec, $mm)) {
         update_post_meta($post_id, 'kompasz_google_place_id', $mm[1]);

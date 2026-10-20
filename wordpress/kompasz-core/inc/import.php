@@ -164,7 +164,7 @@ function kompasz_import_finish(array $data) {
     }
     if (!get_option('kompasz_home_top')) update_option('kompasz_home_top', array_values(array_filter(array_map($id, $data['settings']['home_top']))));
     update_option('kompasz_imported', $data['version']);
-    update_option('kompasz_schema', KOMPASZ_SCHEMA);
+    update_option('kompasz_schema', kompasz_schema_version());
     // A nyelvfüggő URL-részek (pl. /agentur/) a következő kérésben, az új nyelvvel regisztrálva frissülnek
     update_option('kompasz_flush_rules', 1);
     flush_rewrite_rules();

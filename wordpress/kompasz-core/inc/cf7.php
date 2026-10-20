@@ -12,11 +12,14 @@ function kompasz_cf7_forms() {
 }
 
 /** Alapértelmezett űrlap létrehozása (egyszer) */
-add_action('admin_init', function () {
-    if (!class_exists('WPCF7_ContactForm') || !current_user_can('manage_options')) return;
+add_action('admin_init', function () { if (current_user_can('manage_options')) kompasz_cf7_ensure_form(); });
+
+/** Visszaad: az űrlap azonosítója (0, ha a CF7 nincs bekapcsolva vagy az űrlapot szándékosan törölték) */
+function kompasz_cf7_ensure_form() {
+    if (!class_exists('WPCF7_ContactForm')) return 0;
     $cur = (int) get_option('kompasz_cf7_form');
-    if ($cur && get_post_type($cur) === 'wpcf7_contact_form') return;
-    if (get_option('kompasz_cf7_created')) return; // szándékosan törölték: nem hozzuk létre újra
+    if ($cur && get_post_type($cur) === 'wpcf7_contact_form') return $cur;
+    if (get_option('kompasz_cf7_created')) return 0; // szándékosan törölték: nem hozzuk létre újra
     $de = kompasz_lang() === 'de';
     $form = WPCF7_ContactForm::get_template(['title' => $de ? 'Kompass – Angebotsanfrage an die Agentur' : 'Kompasz – ajánlatkérés az ügynökségtől']);
     $L = $de
@@ -32,7 +35,8 @@ add_action('admin_init', function () {
     $form->set_properties(['form' => $body, 'mail' => $mail]);
     $id = $form->save();
     if ($id) { update_option('kompasz_cf7_form', (int) $id); update_option('kompasz_cf7_created', 1); }
-});
+    return (int) $id;
+}
 
 /** Az ügynökség adatlapján megjelenő űrlap azonosítója (0 = nincs) */
 function kompasz_cf7_form_for($agency_id) {

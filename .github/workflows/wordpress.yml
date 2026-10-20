@@ -1,24 +1,34 @@
-name: WordPress csomagok és telepítés
+name: WordPress – teszt, csomag, telepítés
 
-# Minden változáskor elkészíti a téma és a bővítmény zip-csomagját (Actions → futás → Artifacts).
-# Ha a repó Settings → Secrets alatt megvannak a tárhely adatai, SFTP-n fel is tölti őket:
-#   WP_SFTP_HOST, WP_SFTP_USER, WP_SFTP_PASSWORD, WP_SFTP_PATH (a WordPress gyökérmappája, pl. /public_html)
-#   opcionális: WP_SFTP_PORT (alapértelmezés: 22)
+# Minden változáskor:
+#   1. test   – PHP szintaxis + integrációs teszt friss WordPressen (HU és DE): import, migráció, füstteszt MINDEN ügynökségre, HTTP-ellenőrzés
+#   2. build  – telepíthető zip-csomagok (Actions → futás → Artifacts)
+#   3. deploy – csak ha a teszt sikeres: SSH-n telepít a HU és a DE oldalra (scripts/deploy.sh → scripts/wp/remote-deploy.sh):
+#               adatbázis-mentés, kódcsere, Contact Form 7, Google API-kulcs, migráció, ellenőrzés, hibánál automatikus visszaállítás.
+# Szükséges titkok (Settings → Secrets and variables → Actions): lásd scripts/deploy.sh fejléce. Ha nincsenek megadva, a deploy kimarad.
 on:
   workflow_dispatch:
+    inputs:
+      sites:
+        description: 'Melyik oldalra telepítsen (hu, de vagy hu,de)'
+        default: 'hu,de'
   push:
     branches: [main]
     paths:
       - 'wordpress/**'
       - 'scripts/export-wp.mjs'
+      - 'scripts/export-wp-de.mjs'
       - 'scripts/zip-wp.sh'
+      - 'scripts/ci-wp-test.sh'
+      - 'scripts/deploy.sh'
+      - 'scripts/wp/**'
       - 'src/ugynoksegek.json'
       - 'src/logos.json'
       - 'src/google-ratings.json'
       - 'src/data.mjs'
       - 'src/tags.mjs'
       - 'src/de/**'
-      - 'scripts/export-wp-de.mjs'
+      - '.github/workflows/wordpress.yml'
 
 permissions:
   contents: read
@@ -28,7 +38,32 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        site: [hu, de]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: pdo_sqlite, sqlite3, mbstring, intl, gd
+          tools: none
+      - name: PHP szintaxis-ellenőrzés
+        run: find wordpress scripts -name '*.php' -print0 | xargs -0 -n1 php -l > /dev/null
+      - name: Csomag (importadatokkal)
+        run: bash scripts/zip-wp.sh ${{ matrix.site == 'de' && 'de' || '' }}
+      - name: Integrációs teszt friss WordPressen
+        run: bash scripts/ci-wp-test.sh ${{ matrix.site }}
+
   build:
+    needs: test
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -36,8 +71,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: PHP szintaxis-ellenőrzés
-        run: find wordpress -name '*.php' -print0 | xargs -0 -n1 php -l > /dev/null
       - run: bash scripts/zip-wp.sh
       - run: bash scripts/zip-wp.sh de
       - uses: actions/upload-artifact@v4
@@ -48,21 +81,46 @@ jobs:
         with:
           name: kompass-wordpress-de
           path: dist/de/*.zip
-      - name: Telepítés SFTP-n
+
+  deploy:
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        site: [hu, de]
+    environment:
+      name: production-${{ matrix.site }}
+      url: ${{ matrix.site == 'de' && 'https://de.ugynoksegek.pmdev.hu' || 'https://ugynoksegek.pmdev.hu' }}
+    steps:
+      - uses: actions/checkout@v4
+        if: github.event_name != 'workflow_dispatch' || contains(github.event.inputs.sites, matrix.site)
+      - uses: actions/setup-node@v4
+        if: github.event_name != 'workflow_dispatch' || contains(github.event.inputs.sites, matrix.site)
+        with:
+          node-version: 22
+      - name: Csomag
+        if: github.event_name != 'workflow_dispatch' || contains(github.event.inputs.sites, matrix.site)
+        run: bash scripts/zip-wp.sh ${{ matrix.site == 'de' && 'de' || '' }}
+      - name: Telepítés
+        if: github.event_name != 'workflow_dispatch' || contains(github.event.inputs.sites, matrix.site)
         env:
-          HOST: ${{ secrets.WP_SFTP_HOST }}
-          USER: ${{ secrets.WP_SFTP_USER }}
-          PASS: ${{ secrets.WP_SFTP_PASSWORD }}
-          ROOT: ${{ secrets.WP_SFTP_PATH }}
-          PORT: ${{ secrets.WP_SFTP_PORT }}
-        run: |
-          if [ -z "$HOST" ] || [ -z "$USER" ] || [ -z "$PASS" ] || [ -z "$ROOT" ]; then
-            echo "Nincs megadva tárhely-hozzáférés (WP_SFTP_*), a telepítés kimarad."; exit 0
-          fi
-          sudo apt-get install -y -qq lftp > /dev/null
-          lftp -u "$USER","$PASS" -p "${PORT:-22}" "sftp://$HOST" -e "
-            set sftp:auto-confirm yes; set net:max-retries 2;
-            mirror -R --delete --verbose=1 wordpress/kompasz \"$ROOT/wp-content/themes/kompasz\";
-            mirror -R --delete --verbose=1 wordpress/kompasz-core \"$ROOT/wp-content/plugins/kompasz-core\";
-            bye"
-          echo "Feltöltve. Új adatok esetén a WP adminban: Kompasz → Importálás."
+          WP_SSH_HOST: ${{ secrets.WP_SSH_HOST }}
+          WP_SSH_USER: ${{ secrets.WP_SSH_USER }}
+          WP_SSH_KEY: ${{ secrets.WP_SSH_KEY }}
+          WP_SSH_PASSWORD: ${{ secrets.WP_SSH_PASSWORD }}
+          WP_SSH_PORT: ${{ secrets.WP_SSH_PORT }}
+          WP_PATH_HU: ${{ secrets.WP_PATH_HU }}
+          WP_PATH_DE: ${{ secrets.WP_PATH_DE }}
+          WP_URL_HU: ${{ vars.WP_URL_HU }}
+          WP_URL_DE: ${{ vars.WP_URL_DE }}
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          WP_DB_NAME_DE: ${{ secrets.WP_DB_NAME_DE }}
+          WP_DB_USER_DE: ${{ secrets.WP_DB_USER_DE }}
+          WP_DB_PASSWORD_DE: ${{ secrets.WP_DB_PASSWORD_DE }}
+          WP_DB_HOST_DE: ${{ secrets.WP_DB_HOST_DE }}
+          WP_ADMIN_EMAIL: ${{ secrets.WP_ADMIN_EMAIL }}
+        run: bash scripts/deploy.sh ${{ matrix.site }}
