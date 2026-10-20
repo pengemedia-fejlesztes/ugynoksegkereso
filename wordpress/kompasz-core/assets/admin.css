@@ -1,0 +1,20 @@
+/* Ügynökség adatlap (admin) */
+.kompasz-edit h3 { margin: 24px 0 6px; padding-top: 16px; border-top: 1px solid #dcdcde; font-size: 14px; }
+.kompasz-edit h3:first-of-type { border-top: 0; padding-top: 0; }
+.kompasz-edit .kgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px 20px; }
+.kompasz-edit .kf { margin: 0 0 12px; }
+.kompasz-edit .kf label { display: block; margin-bottom: 4px; }
+.kompasz-edit .kf .description { display: block; margin-top: 4px; }
+.kompasz-edit .kf input[type=text], .kompasz-edit .kf input[type=url], .kompasz-edit .kf input[type=email] { width: 100%; }
+.kompasz-edit .klangs td { padding: 3px 12px 3px 0; vertical-align: middle; }
+.kompasz-edit .klangs input:disabled { opacity: .45; }
+.kompasz-edit .ksvc { max-width: 760px; }
+.kompasz-edit .ksvc td { padding: 6px 10px; }
+.kompasz-edit .kchecks { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 4px 16px; margin: 6px 0; }
+.kompasz-edit .kref { display: flex; gap: 8px; align-items: center; margin: 0 0 6px; flex-wrap: wrap; }
+.kompasz-edit .kref-del { color: #b32d2e; font-size: 16px; text-decoration: none; }
+.kompasz-edit .kpending { color: #996800; font-style: normal; font-size: 12px; background: #fcf9e8; padding: 1px 6px; border-radius: 3px; }
+.kompasz-edit .kmuted { color: #8c8f94; }
+.kompasz-edit .kerr { display: block; color: #d63638; font-size: 12px; margin-top: 2px; }
+.kompasz-edit .kmore { margin: 4px 0 8px; }
+.kompasz-edit .kmore summary { cursor: pointer; color: #2271b1; margin: 4px 0; }

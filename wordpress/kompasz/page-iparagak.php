@@ -1,7 +1,7 @@
 <?php
 // Iparágak áttekintő (/iparagak/)
 get_header();
-$terms = get_terms(['taxonomy' => 'iparag', 'hide_empty' => true, 'orderby' => 'count', 'order' => 'DESC']);
+$terms = kompasz_public_terms('iparag');
 ?>
 <main class="wrap page wide">
   <?php echo kompasz_crumbs([[kompasz__('Kezdőlap'), home_url('/')], [kompasz__('Iparágak'), null]]); ?>

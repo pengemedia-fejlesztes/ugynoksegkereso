@@ -28,8 +28,20 @@ opcionálisan `WP_SFTP_PORT`. Az adatfrissítés után a WP adminban újra kell 
 
 ## Szerkesztés a WP adminban
 
-- **Ügynökségek**: név, bemutatkozás, logó (kiemelt kép), weboldal, város, alapítás, csapat, szolgáltatások, sorrend, értékelés,
-  Google-értékelés és -vélemények száma; jobb oldalt a toplisták és a szolgáltatás-címkék.
+- **Ügynökségek**: minden adat egy helyen, a szerkesztő alatti **Adatlap** dobozban (minden ügynökségnél ugyanez):
+  - alapadatok; a város és a megye az adatbázisból kiegészít (új is megadható), az alapítás éve legördülő lista;
+  - munkanyelvek pipálva (magyar, angol, német + az adatbázisban szereplő többi nyelv), nyelvenként egy telefonszám:
+    a rendszer +36 20 404 4280 formára alakítja és ellenőrzi, az e-mail címet is (formátum + levelezőszerver);
+  - **Szolgáltatások és toplisták** egy táblázatban: a toplista a hozzá tartozó szolgáltatás sorában van
+    (a párosítás a toplista szerkesztőjében: „Hozzá tartozó szolgáltatás”); toplistára tett cég a szolgáltatást is megkapja;
+  - minősítések és iparágak pipálva az adatbázisból, referencia-ügyfelek automatikus kiegészítéssel (link opcionális);
+  - cégfiók által beírt új minősítés/iparág/referencia **jóváhagyásra vár** (Ügynökségek → Jóváhagyásra vár),
+    az adminisztrátor e-mailt kap róla; addig a nyilvános oldalon nem látszik;
+  - **Google Cégprofil link**: az értékelés és a vélemények száma hetente automatikusan frissül
+    (Google Places API (New) kulcs: Kompasz → Beállítások, vagy `define('KOMPASZ_GOOGLE_API_KEY', '…')` a wp-config.php-ban);
+  - ajánlatkérő űrlap (Contact Form 7) az adatlapon: bekapcsolt CF7 mellett a rendszer létrehoz egy űrlapot;
+    alapértelmezés a Kompasz → Beállításokban, ügynökségenként felülírható.
+  - Sorrend, saját értékelés, belső jegyzet: külön doboz, csak adminisztrátornak.
 - **Toplisták / Szolgáltatás-címkék**: H1, bevezető, alsó SEO-blokkok, címkéknél HTML title és meta leírás.
 - **Kompasz → Beállítások**: kiemelt (fizetett) ügynökség és a toplisták, ahol megjelenik; a kezdőlap „Legjobbra értékeltek” 5 cége.
 - Az újraimport a kézzel szerkesztett bemutatkozásokat és a beállításokat nem írja felül.

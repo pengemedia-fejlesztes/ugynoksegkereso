@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Kompasz – ügynökség-toplisták
  * Description: Ügynökség bejegyzéstípus, toplista- és szolgáltatás-taxonómia, admin mezők, beállítások és adatimport a Kompasz oldalhoz.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: 360 Marketing
  * Text Domain: kompasz
  * Requires PHP: 7.4
@@ -17,6 +17,12 @@ define('KOMPASZ_CORE_URL', plugin_dir_url(__FILE__));
 require_once KOMPASZ_CORE_DIR . 'inc/i18n.php';
 require_once KOMPASZ_CORE_DIR . 'inc/types.php';
 require_once KOMPASZ_CORE_DIR . 'inc/fields.php';
+require_once KOMPASZ_CORE_DIR . 'inc/phone.php';
+require_once KOMPASZ_CORE_DIR . 'inc/terms.php';
+require_once KOMPASZ_CORE_DIR . 'inc/agency-edit.php';
+require_once KOMPASZ_CORE_DIR . 'inc/google.php';
+require_once KOMPASZ_CORE_DIR . 'inc/cf7.php';
+require_once KOMPASZ_CORE_DIR . 'inc/migrate.php';
 require_once KOMPASZ_CORE_DIR . 'inc/data.php';
 require_once KOMPASZ_CORE_DIR . 'inc/settings.php';
 require_once KOMPASZ_CORE_DIR . 'inc/import.php';

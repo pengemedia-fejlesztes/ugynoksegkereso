@@ -40,50 +40,58 @@ $around = $list ? array_slice($list, max(0, min($pos - 3, count($list) - 5)), 5,
         <div class="facts" id="kapcsolat">
           <?php
           $place = trim(implode(', ', array_unique(array_filter([$a['city'], $a['county'] !== $a['city'] ? $a['county'] : '']))));
-          $facts = ['HELYSZÍN' => $place, 'CSAPAT' => $a['team'], 'ALAPÍTVA' => $a['founded'], 'ÁRSZINT' => $a['price_min'], 'ÁRAZÁS' => $a['price_model'],
-              'MUNKAVÉGZÉS' => $a['work_mode'], 'TELEFON' => function_exists('kompasz_agency_has') && kompasz_agency_has($a['id'], 'phone') ? $a['phone'] : '', 'E-MAIL' => function_exists('kompasz_agency_has') && kompasz_agency_has($a['id'], 'email') ? $a['email'] : ''];
-          foreach ($facts as $l => $v): if (!$v) continue;
-            if ($l === 'TELEFON') $v = sprintf('<a href="tel:%s">%s</a>', esc_attr(preg_replace('/[^0-9+]/', '', $v)), esc_html($v));
-            elseif ($l === 'E-MAIL') $v = sprintf('<a href="mailto:%1$s">%1$s</a>', esc_html($v));
-            else $v = esc_html($v); ?>
+          $has = function ($f) use ($a) { return function_exists('kompasz_agency_has') && kompasz_agency_has($a['id'], $f); };
+          $facts = ['HELYSZÍN' => esc_html($place), 'CSAPAT' => esc_html($a['team']), 'ALAPÍTVA' => esc_html($a['founded']), 'ÁRSZINT' => esc_html($a['price_min']),
+              'ÁRAZÁS' => esc_html($a['price_model']), 'MUNKAVÉGZÉS' => esc_html($a['work_mode'])];
+          // Telefonszám nyelvenként; ha csak egy van, nyelv nélkül
+          if ($has('phone') && $a['phones']) {
+              $multi = count($a['phones']) > 1;
+              $facts['TELEFON'] = implode('<br>', array_map(function ($lang, $ph) use ($multi) {
+                  return sprintf('<a href="%s">%s</a>%s', esc_attr(kompasz_phone_href($ph)), esc_html($ph), $multi ? ' <small>(' . esc_html($lang) . ')</small>' : '');
+              }, array_keys($a['phones']), $a['phones']));
+          }
+          if ($has('email') && $a['email']) $facts['E-MAIL'] = sprintf('<a href="mailto:%1$s">%1$s</a>', esc_html($a['email']));
+          foreach ($facts as $l => $v): if ($v === '') continue; ?>
             <div class="fact"><span><?php echo esc_html(kompasz__($l)); ?></span><b><?php echo $v; ?></b></div>
           <?php endforeach; ?>
         </div>
-        <?php if ($a['services']): ?>
-          <h3><?php echo esc_html(kompasz__('Szolgáltatások')); ?></h3>
-          <div class="svc"><?php foreach ($a['services'] as $s) echo '<span>' . esc_html($s) . '</span>'; ?></div>
-        <?php endif; ?>
         <?php
-        // Ha egy iparágnak vagy minősítésnek saját oldala van (több cég is megnevezi), a címke oda linkel
-        $term_links = json_decode((string) get_post_meta($a['id'], 'kompasz_term_links', true), true) ?: [];
-        foreach (['Minősítések' => [$a['certs'], 'minosites'], 'Iparági tapasztalat' => [$a['industries'], 'iparag'], 'Munkanyelvek' => [$a['languages'], '']] as $h => [$items, $tax]): if (!$items) continue; ?>
-          <h3><?php echo esc_html(kompasz__($h)); ?></h3>
-          <div class="svc links"><?php foreach ($items as $s) {
-            $slug = $tax ? ($term_links[$tax][mb_strtolower(trim($s))] ?? '') : '';
-            $term = $slug ? get_term_by('slug', $slug, $tax) : null;
-            echo $term ? sprintf('<a href="%s">%s →</a>', esc_url(get_term_link($term)), esc_html($s)) : '<span>' . esc_html($s) . '</span>';
-          } ?></div>
-        <?php endforeach; ?>
-        <?php $client_terms = get_the_terms($a['id'], 'ugyfel'); if ($client_terms && !is_wp_error($client_terms)): ?>
-          <h3><?php echo esc_html(kompasz__('Akiknek még más ügynökség is dolgozott')); ?></h3>
-          <div class="svc links"><?php foreach ($client_terms as $t) printf('<a href="%s">%s →</a>', esc_url(get_term_link($t)), esc_html($t->name)); ?></div>
-        <?php endif; ?>
-        <?php if ($a['references']): ?>
-          <h3><?php echo esc_html(kompasz__('Referenciák')); ?></h3>
-          <div class="svc"><?php foreach ($a['references'] as $r) {
-            $parts = array_map('trim', explode('|', $r, 2));
-            echo !empty($parts[1]) && wp_http_validate_url($parts[1]) ? sprintf('<a href="%s" target="_blank" rel="nofollow noopener">%s</a>', esc_url($parts[1]), esc_html($parts[0])) : '<span>' . esc_html($parts[0]) . '</span>';
-          } ?></div>
-        <?php endif; ?>
-        <?php if ($a['tags']): ?>
-          <h3><?php echo esc_html(kompasz__('Szolgáltatás szerinti listák')); ?></h3>
+        // Szolgáltatások (a címkeoldalakra linkelnek) és a toplisták, ahol rangsorolva szerepel
+        if ($a['tags']): ?>
+          <h3><?php echo esc_html(kompasz__('Szolgáltatások')); ?></h3>
           <div class="svc links"><?php foreach ($a['tags'] as $t) printf('<a href="%s">%s →</a>', esc_url(get_term_link($t)), esc_html($t->name)); ?></div>
         <?php endif; ?>
         <?php if ($a['cats']): ?>
           <h3><?php echo esc_html(kompasz__('Ezeken a toplistákon szerepel')); ?></h3>
           <div class="svc links pills"><?php foreach ($a['cats'] as $c) printf('<a href="%s">%s%s →</a>', esc_url(get_term_link($c)), kompasz_cat_icon($c, 15), esc_html($c->name)); ?></div>
         <?php endif; ?>
+        <?php
+        // Minősítés, iparág: saját oldala akkor van, ha legalább két ügynökség megnevezi
+        foreach (['Minősítések' => $a['certs'], 'Iparági tapasztalat' => $a['industries']] as $h => $items): if (!$items) continue; ?>
+          <h3><?php echo esc_html(kompasz__($h)); ?></h3>
+          <div class="svc links"><?php foreach ($items as $t) echo $t->count >= 2 ? sprintf('<a href="%s">%s →</a>', esc_url(get_term_link($t)), esc_html($t->name)) : '<span>' . esc_html($t->name) . '</span>'; ?></div>
+        <?php endforeach; ?>
+        <?php if ($a['languages']): ?>
+          <h3><?php echo esc_html(kompasz__('Munkanyelvek')); ?></h3>
+          <div class="svc"><?php foreach ($a['languages'] as $l) echo '<span>' . esc_html($l) . '</span>'; ?></div>
+        <?php endif; ?>
+        <?php if ($a['references']): ?>
+          <h3><?php echo esc_html(kompasz__('Referencia-ügyfelek')); ?></h3>
+          <div class="svc links"><?php foreach ($a['references'] as $r) {
+            if ($r['term']->count >= 2) printf('<a href="%s" title="%s">%s →</a>', esc_url(get_term_link($r['term'])), esc_attr(kompasz__('Akiknek még más ügynökség is dolgozott')), esc_html($r['name']));
+            elseif ($r['url'] && wp_http_validate_url($r['url'])) printf('<a href="%s" target="_blank" rel="nofollow noopener">%s ↗</a>', esc_url($r['url']), esc_html($r['name']));
+            else echo '<span>' . esc_html($r['name']) . '</span>';
+          } ?></div>
+        <?php endif; ?>
       </section>
+
+      <?php $cf7 = function_exists('kompasz_cf7_html') ? kompasz_cf7_html($a['id']) : ''; if ($cf7): ?>
+      <section class="pbox pform" id="ajanlatkeres">
+        <h2><?php echo esc_html(sprintf(kompasz__('Ajánlatkérés: %s'), $a['name'])); ?></h2>
+        <p class="note"><?php echo esc_html(kompasz__('Írd le röviden, miben kérsz segítséget – az ügynökség a megadott elérhetőségen keres.')); ?></p>
+        <?php echo $cf7; ?>
+      </section>
+      <?php endif; ?>
 
       <?php if ($similar || ($featured && !$is_featured)): ?>
       <section class="similar">

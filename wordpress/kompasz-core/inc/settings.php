@@ -13,6 +13,8 @@ add_action('admin_init', function () {
     register_setting('kompasz', 'kompasz_featured_cats', ['type' => 'array', 'sanitize_callback' => function ($v) { return array_map('absint', (array) $v); }]);
     register_setting('kompasz', 'kompasz_home_top', ['type' => 'array', 'sanitize_callback' => function ($v) { return array_values(array_filter(array_map('absint', (array) $v))); }]);
     register_setting('kompasz', 'kompasz_email', ['type' => 'string', 'sanitize_callback' => 'sanitize_email']);
+    register_setting('kompasz', 'kompasz_google_api_key', ['type' => 'string', 'sanitize_callback' => 'sanitize_text_field']);
+    register_setting('kompasz', 'kompasz_cf7_form', ['type' => 'integer', 'sanitize_callback' => 'absint']);
 });
 
 function kompasz_settings_page() {
@@ -48,6 +50,31 @@ function kompasz_settings_page() {
             <h2>Elérhetőség</h2>
             <table class="form-table">
                 <tr><th><label for="kompasz_email">E-mail cím a láblécben</label></th><td><input class="regular-text" id="kompasz_email" name="kompasz_email" value="<?php echo esc_attr(get_option('kompasz_email')); ?>"></td></tr>
+            </table>
+            <h2>Google-értékelések</h2>
+            <p class="description">Az ügynökség adatlapján elég megadni a Google Cégprofil linkjét: az értékelés és a vélemények száma hetente automatikusan frissül a Google Places API-ból.
+                Kulcs: Google Cloud Console → Places API (New) engedélyezése → Hitelesítő adatok → API-kulcs (korlátozd a Places API-ra).</p>
+            <?php if (($_GET['kompasz_google'] ?? '') === 'started') echo '<div class="notice notice-success inline"><p>A frissítés elindult a háttérben.</p></div>'; ?>
+            <table class="form-table">
+                <tr><th><label for="kompasz_google_api_key">Google API-kulcs</label></th><td>
+                    <?php if (defined('KOMPASZ_GOOGLE_API_KEY')): ?><em>A wp-config.php-ban van megadva.</em>
+                    <?php else: ?><input class="regular-text" type="password" autocomplete="off" id="kompasz_google_api_key" name="kompasz_google_api_key" value="<?php echo esc_attr(get_option('kompasz_google_api_key')); ?>"><?php endif; ?>
+                </td></tr>
+                <tr><th>Utolsó heti frissítés</th><td><?php $t = (int) get_option('kompasz_google_last_run'); echo $t ? esc_html(wp_date('Y-m-d H:i', $t)) : 'még nem futott'; ?>
+                    · következő: <?php $n = wp_next_scheduled(KOMPASZ_GOOGLE_HOOK); echo $n ? esc_html(wp_date('Y-m-d H:i', $n)) : '–'; ?>
+                    <?php if (kompasz_google_key()) printf(' <a class="button" href="%s">Mindet frissítem most</a>', esc_url(wp_nonce_url(admin_url('admin-post.php?action=kompasz_google_sync'), 'kompasz_google_sync'))); ?></td></tr>
+            </table>
+            <h2>Ajánlatkérő űrlap (Contact Form 7)</h2>
+            <table class="form-table">
+                <tr><th><label for="kompasz_cf7_form">Űrlap az ügynökségek adatlapján</label></th><td>
+                    <?php $forms = kompasz_cf7_forms(); if ($forms === null): ?>
+                        <em>A Contact Form 7 bővítmény nincs bekapcsolva.</em> Bekapcsolás után a rendszer létrehoz egy ajánlatkérő űrlapot, és itt kiválasztható.
+                    <?php else: ?>
+                        <select id="kompasz_cf7_form" name="kompasz_cf7_form"><option value="0">– nincs –</option>
+                        <?php foreach ($forms as $fid => $title) printf('<option value="%d"%s>%s</option>', $fid, selected((int) get_option('kompasz_cf7_form'), $fid, false), esc_html($title)); ?></select>
+                        <p class="description">Az ajánlatkérés a webhely adminisztrátori címére megy; előfizető ügynökségnél közvetlenül a cég e-mail címére (másolat az adminisztrátornak). Ügynökségenként az adatlapon felülírható.</p>
+                    <?php endif; ?>
+                </td></tr>
             </table>
             <h2>Keresőmotorok</h2>
             <p>Állapot: <strong><?php echo get_option('blog_public') ? 'az oldal indexelhető' : 'a keresőrobotok ki vannak tiltva (noindex, robots.txt)'; ?></strong>.

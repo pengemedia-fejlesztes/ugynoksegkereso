@@ -3,7 +3,7 @@
 get_header();
 $t = get_queried_object();
 $n = count(kompasz_list($t));
-$others = get_terms(['taxonomy' => 'minosites', 'hide_empty' => true, 'orderby' => 'count', 'order' => 'DESC', 'exclude' => [$t->term_id]]);
+$others = kompasz_public_terms('minosites', 2, ['exclude' => [$t->term_id]]);
 ?>
 <main>
   <div class="wrap pagehead">

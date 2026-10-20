@@ -367,3 +367,16 @@ a.chip:hover{background:var(--ink);color:#fff}
 .sgrid>*,.scard,.posts>*,.taggrid>*,.facts>*{min-width:0}
 .pside{min-width:0}
 .profile h1,.pcard-hero .ph-body,.around a .an,.fside,.sn{overflow-wrap:anywhere;min-width:0}
+/* Ajánlatkérő űrlap (Contact Form 7) az adatlapon */
+.pform .note{color:var(--mut);margin:0 0 14px}
+.pform .wpcf7 form p{margin:0 0 12px}
+.pform .wpcf7 label{display:block;font:500 13px var(--sans);color:var(--mut2)}
+.pform .wpcf7 input[type=text],.pform .wpcf7 input[type=email],.pform .wpcf7 input[type=tel],.pform .wpcf7 textarea{display:block;width:100%;box-sizing:border-box;margin-top:5px;padding:10px 12px;border:1px solid var(--line2);border-radius:9px;background:#fff;font:400 15px var(--sans);color:var(--ink)}
+.pform .wpcf7 textarea{height:120px;resize:vertical}
+.pform .wpcf7 input:focus,.pform .wpcf7 textarea:focus{outline:2px solid var(--mint);border-color:var(--accent)}
+.pform .wpcf7 .wpcf7-acceptance label{font-weight:400}
+.pform .wpcf7 input[type=submit]{background:var(--accent);color:#fff;border:0;font:600 14px var(--sans);padding:12px 18px;border-radius:9px;cursor:pointer}
+.pform .wpcf7 input[type=submit]:hover{background:var(--accent-h)}
+.pform .wpcf7-not-valid-tip{color:#c0392b;font-size:12.5px}
+.pform .wpcf7-response-output{border-radius:9px;margin:12px 0 0!important}
+.fact small{color:var(--mut);font-weight:400}

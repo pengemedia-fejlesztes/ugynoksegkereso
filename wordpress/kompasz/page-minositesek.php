@@ -1,7 +1,7 @@
 <?php
 // Minősítések áttekintő (/minositesek/)
 get_header();
-$terms = get_terms(['taxonomy' => 'minosites', 'hide_empty' => true, 'orderby' => 'count', 'order' => 'DESC']);
+$terms = kompasz_public_terms('minosites');
 ?>
 <main class="wrap page wide">
   <?php echo kompasz_crumbs([[kompasz__('Kezdőlap'), home_url('/')], [kompasz__('Minősítések'), null]]); ?>

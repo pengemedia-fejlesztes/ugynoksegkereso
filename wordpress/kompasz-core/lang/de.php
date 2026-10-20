@@ -133,4 +133,6 @@ return [
     'E-MAIL' => 'E-MAIL',
     'Iparági tapasztalat' => 'Branchenerfahrung',
     'Munkanyelvek' => 'Arbeitssprachen',
+    'Ajánlatkérés: %s' => 'Angebotsanfrage: %s',
+    'Írd le röviden, miben kérsz segítséget – az ügynökség a megadott elérhetőségen keres.' => 'Beschreiben Sie kurz Ihr Anliegen – die Agentur meldet sich unter den angegebenen Kontaktdaten.',
 ];

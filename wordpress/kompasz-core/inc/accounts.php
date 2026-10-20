@@ -21,7 +21,8 @@ add_action('init', function () {
 
 function kompasz_is_partner($user_id = null) {
     $u = $user_id ? get_userdata($user_id) : wp_get_current_user();
-    return $u && in_array(KOMPASZ_PARTNER_ROLE, (array) $u->roles, true) && !user_can($u, 'manage_options');
+    // allcaps közvetlenül: a user_can() itt a map_meta_cap szűrőn át újra ezt hívná (végtelen ciklus)
+    return $u && $u->exists() && in_array(KOMPASZ_PARTNER_ROLE, (array) $u->roles, true) && empty($u->allcaps['manage_options']);
 }
 
 /** A felhasználóhoz rendelt ügynökség(ek) azonosítói */
@@ -48,6 +49,9 @@ add_filter('map_meta_cap', function ($caps, $cap, $user_id, $args) {
         if ($post->post_type !== 'ugynokseg' || (int) get_post_meta($post->ID, KOMPASZ_OWNER_META, true) !== (int) $user_id) return ['do_not_allow'];
         return ['read'];
     }
+    // A saját adatlap mentése: a WP ellenőrzi, hogy más szerzőjű bejegyzést szerkeszthet-e (edit_others_posts) – a saját ügynökségénél igen
+    if ($cap === 'edit_others_posts' && !empty($_POST['post_ID']) && get_post_type((int) $_POST['post_ID']) === 'ugynokseg'
+        && (int) get_post_meta((int) $_POST['post_ID'], KOMPASZ_OWNER_META, true) === (int) $user_id) return ['read'];
     if (in_array($cap, ['delete_posts', 'delete_published_posts', 'publish_posts', 'edit_others_posts', 'manage_categories', 'edit_pages'], true)) return ['do_not_allow'];
     return $caps;
 }, 10, 4);

@@ -3,7 +3,7 @@
 get_header();
 $t = get_queried_object();
 $n = count(kompasz_list($t));
-$others = get_terms(['taxonomy' => 'ugyfel', 'hide_empty' => true, 'orderby' => 'count', 'order' => 'DESC', 'number' => 12, 'exclude' => [$t->term_id]]);
+$others = kompasz_public_terms('ugyfel', 2, ['number' => 12, 'exclude' => [$t->term_id]]);
 ?>
 <main>
   <div class="wrap pagehead">

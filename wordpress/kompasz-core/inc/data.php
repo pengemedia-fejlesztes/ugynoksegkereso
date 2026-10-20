@@ -55,6 +55,12 @@ function kompasz_agency($post) {
     $cats = get_the_terms($id, 'toplista') ?: [];
     usort($cats, function ($a, $b) { return (int) get_term_meta($a->term_id, 'kompasz_order', true) <=> (int) get_term_meta($b->term_id, 'kompasz_order', true); });
     $tags = get_the_terms($id, 'szolgaltatas') ?: [];
+    // Minősítések, iparágak: kifejezés-objektumok (jóváhagyásra váró nélkül)
+    $terms = function ($tax) use ($id) {
+        $t = get_the_terms($id, $tax);
+        if (!$t || is_wp_error($t)) return [];
+        return array_values(array_filter($t, function ($x) { return !kompasz_term_is_pending($x); }));
+    };
     $logo_id = get_post_thumbnail_id($id);
     $content = wp_strip_all_tags(strip_shortcodes($post->post_content));
     $website = $m('kompasz_website');
@@ -70,18 +76,19 @@ function kompasz_agency($post) {
         'founded' => $m('kompasz_founded'),
         'team' => $m('kompasz_team'),
         'team_bucket' => kompasz_team_bucket($m('kompasz_team')),
-        'services' => array_values(array_filter(preg_split('/\r?\n/', (string) $m('kompasz_services')))),
+        'services' => wp_list_pluck($tags, 'name'),
         'county' => $m('kompasz_county'),
         'phone' => $m('kompasz_phone'),
+        'phones' => kompasz_agency_phones($id),
         'email' => $m('kompasz_email'),
         'intro' => $m('kompasz_intro'),
-        'industries' => kompasz_meta_lines($id, 'kompasz_industries'),
+        'industries' => $terms('iparag'),
         'price_min' => $m('kompasz_price_min'),
         'price_model' => $m('kompasz_price_model'),
-        'certs' => kompasz_meta_lines($id, 'kompasz_certs'),
+        'certs' => $terms('minosites'),
         'work_mode' => $m('kompasz_work_mode'),
         'languages' => kompasz_meta_lines($id, 'kompasz_languages'),
-        'references' => kompasz_meta_lines($id, 'kompasz_references'),
+        'references' => kompasz_agency_refs($id),
         'rank' => $rank === '' ? PHP_INT_MAX : (int) $rank,
         'rating' => $rating,
         'rating_src' => $google !== '' ? 'google' : ($list !== '' ? 'list' : ''),
