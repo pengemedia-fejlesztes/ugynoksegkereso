@@ -37,7 +37,10 @@ if [ "$SITE" = de ]; then PLUGIN="$ROOT/build/de/kompasz-core"; else PLUGIN="$RO
 [ -f "$PLUGIN/import/data.json" ] || { echo "Hiányzik: $PLUGIN/import/data.json (előbb: bash scripts/zip-wp.sh $SITE)"; exit 1; }
 cp -r "$PLUGIN" wp/wp-content/plugins/kompasz-core
 cp -r "$ROOT/wordpress/kompasz" wp/wp-content/themes/kompasz
-$WP plugin activate contact-form-7 kompasz-core --quiet
+# Hibánál a WP-CLI üzenete is annotációba kerül
+act() { local out; out=$($WP plugin activate "$1" 2>&1) || { echo "::error title=plugin $1::$(echo "$out" | tr '\n' ' ' | cut -c1-500)"; return 1; }; }
+act kompasz-core
+act contact-form-7
 $WP theme activate kompasz --quiet
 $WP rewrite structure '/%postname%/' --quiet
 $WP kompasz import
