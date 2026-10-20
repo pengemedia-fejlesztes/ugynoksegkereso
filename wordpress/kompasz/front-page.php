@@ -34,7 +34,9 @@ $seo = get_option('kompasz_home_seo', []);
 
   <?php if ($tabs): ?>
   <section class="wrap home-top">
-    <div class="sec-h"><h2><?php echo esc_html(kompasz__('Legjobbra értékeltek')); ?></h2><a href="<?php echo esc_url(get_term_link($active)); ?>" class="toplink" data-tablink><?php echo esc_html(kompasz__('Teljes lista →')); ?></a></div>
+    <div class="sec-h"><?php // Értékelés nélküli listánál (pl. az új német oldalon) nem „legjobbra értékelt”, hanem válogatott
+    $rated = false; foreach ($tabs as $c) foreach (array_slice(kompasz_list($c), 0, 5) as $x) if ($x['rating']) $rated = true; ?>
+    <h2><?php echo esc_html(kompasz__($rated ? 'Legjobbra értékeltek' : 'Válogatott ügynökségek')); ?></h2><a href="<?php echo esc_url(get_term_link($active)); ?>" class="toplink" data-tablink><?php echo esc_html(kompasz__('Teljes lista →')); ?></a></div>
     <div class="tabs" role="tablist">
       <?php foreach ($tabs as $c): ?>
         <button type="button" role="tab" data-tab="<?php echo esc_attr($c->slug); ?>" data-href="<?php echo esc_url(get_term_link($c)); ?>" aria-selected="<?php echo $c === $active ? 'true' : 'false'; ?>"><?php echo esc_html(kompasz_term_meta($c, 'kompasz_short', $c->name)); ?></button>

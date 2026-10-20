@@ -53,6 +53,7 @@ return [
     'Kevesebb' => 'Weniger',
     'Kezdőlap' => 'Startseite',
     'Legjobbra értékeltek' => 'Am besten bewertet',
+    'Válogatott ügynökségek' => 'Ausgewählte Agenturen',
     'Lehet, hogy elírtad a címet. Válassz egy toplistát:' => 'Vielleicht hat sich ein Tippfehler eingeschlichen. Wählen Sie eine Rangliste:',
     'Megnyitás' => 'Öffnen',
     'Minősített ügynökségek' => 'Zertifizierte Agenturen',
