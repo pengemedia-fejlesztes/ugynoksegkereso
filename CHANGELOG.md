@@ -4,6 +4,18 @@ A verziószámok a `kompasz-core` bővítményé és a `kompasz` témáé (szema
 (`kompasz_schema` opció, `wordpress/kompasz-core/inc/migrate.php` → `kompasz_migrations()`); a migrációk telepítéskor
 automatikusan futnak (`wp kompasz migrate`), előtte a deploy adatbázis-mentést készít.
 
+## 1.2.0 – 2026-10-21 (séma: 2)
+
+### Üzemeltetés
+- Telepítés HTTPS-en, SSH nélkül (`scripts/deploy-https.sh`): WP admin + REST; mentés, feltöltés, kompatibilis CF7, API-kulcs,
+  import (üres oldalon), migráció, füstteszt, doctor, HTTP-ellenőrzés; hibánál az előző commit kódja és a mentett adatbázis visszaáll.
+  Csak commitolt, GitHubra feltöltött kód telepíthető.
+- REST üzemeltetési végpontok (`/wp-json/kompasz/v1/…`: doctor, backup, backups, restore, migrate, setup, smoke, config, import,
+  google-sync), csak adminisztrátornak; WP-CLI: `wp kompasz backup | smoke`.
+- Adatbázis-mentés PHP-ból (mysqldump nélkül), `wp-content/kompasz-backups`, kívülről nem elérhető, az utolsó 20 marad.
+- Migráció biztonsági hálója 10 perc türelmi idővel: a telepítő előbb ment, és maga futtatja a migrációt.
+- `docs/HOZZAFERES.md`: a szükséges hozzáférések; `CLAUDE.md`: élesítési menet.
+
 ## 1.1.0 – 2026-10-20 (séma: 2)
 
 ### Admin – ügynökség adatlap (minden ügynökségnél egységesen)

@@ -3,6 +3,8 @@
 //   wp kompasz migrate [--from=<verzió>]   függőben lévő adatbázis-migrációk
 //   wp kompasz doctor                      állapotellenőrzés; hibánál nem nulla kilépési kód (a deploy ezen bukik el)
 //   wp kompasz google-sync [--id=<ID>]     Google-értékelések frissítése most
+//   wp kompasz backup                      adatbázis-mentés (wp-content/kompasz-backups)
+//   wp kompasz smoke                       füstteszt minden ügynökségre
 //   wp kompasz setup                       telepítés utáni beállítás (ajánlatkérő űrlap, ütemezés, URL-szabályok); többször is futtatható
 if (!defined('ABSPATH') || !defined('WP_CLI') || !WP_CLI) return;
 
@@ -20,28 +22,22 @@ WP_CLI::add_command('kompasz setup', function () {
 });
 
 WP_CLI::add_command('kompasz doctor', function () {
-    $rows = []; $fail = 0;
-    $check = function ($name, $ok, $info, $required = true) use (&$rows, &$fail) {
-        $rows[] = ['ellenőrzés' => $name, 'állapot' => $ok ? 'OK' : ($required ? 'HIBA' : 'figyelmeztetés'), 'részlet' => $info];
-        if (!$ok && $required) $fail++;
-    };
-    $check('Bővítmény verzió', true, KOMPASZ_CORE_VERSION . (is_file(KOMPASZ_CORE_DIR . 'build.json') ? ' ' . trim(file_get_contents(KOMPASZ_CORE_DIR . 'build.json')) : ''));
-    $check('PHP / WordPress', version_compare(PHP_VERSION, '7.4', '>='), 'PHP ' . PHP_VERSION . ', WordPress ' . get_bloginfo('version'));
-    $check('Adatbázis-séma', (int) get_option('kompasz_schema', 1) >= kompasz_schema_version(), get_option('kompasz_schema', 1) . ' / ' . kompasz_schema_version());
-    $check('Aktív téma', get_stylesheet() === 'kompasz', get_stylesheet());
-    $check('Contact Form 7', class_exists('WPCF7_ContactForm'), class_exists('WPCF7_ContactForm') ? WPCF7_VERSION : 'nincs bekapcsolva');
-    $form = (int) get_option('kompasz_cf7_form');
-    $check('Ajánlatkérő űrlap', !class_exists('WPCF7_ContactForm') || ($form && get_post_type($form) === 'wpcf7_contact_form'), $form ? "#$form" : 'még nincs (az első admin-oldalbetöltés vagy a deploy létrehozza)', false);
-    // Figyelmeztetés (nem hiba): kulcs nélkül minden más működik, csak a heti Google-frissítés áll
-    $check('Google API-kulcs', (bool) kompasz_google_key(), kompasz_google_key() ? (defined('KOMPASZ_GOOGLE_API_KEY') ? 'wp-config.php' : 'beállítások') : 'hiányzik – a heti Google-értékelés frissítés nem fut', false);
-    $check('Heti Google-szinkron ütemezve', (bool) wp_next_scheduled(KOMPASZ_GOOGLE_HOOK), ($n = wp_next_scheduled(KOMPASZ_GOOGLE_HOOK)) ? wp_date('Y-m-d H:i', $n) : '–');
-    $errs = get_posts(['post_type' => 'ugynokseg', 'fields' => 'ids', 'numberposts' => -1, 'meta_key' => 'kompasz_google_error']);
-    $check('Google-szinkron hibák', !$errs, $errs ? count($errs) . ' ügynökség: ' . implode(', ', array_map('get_the_title', array_slice($errs, 0, 5))) : 'nincs', false);
-    $check('Jóváhagyásra vár', true, (string) count(kompasz_pending_terms()));
-    $check('Ügynökségek', (int) wp_count_posts('ugynokseg')->publish > 0, (string) wp_count_posts('ugynokseg')->publish);
-    WP_CLI\Utils\format_items('table', $rows, ['ellenőrzés', 'állapot', 'részlet']);
-    if ($fail) WP_CLI::error("$fail hiba.");
+    $d = kompasz_doctor();
+    WP_CLI\Utils\format_items('table', $d['rows'], ['ellenőrzés', 'állapot', 'részlet']);
+    if (!$d['ok']) WP_CLI::error(count(array_filter($d['rows'], function ($r) { return $r['állapot'] === 'HIBA'; })) . ' hiba.');
     WP_CLI::success('Minden rendben.');
+});
+
+WP_CLI::add_command('kompasz backup', function () {
+    $r = kompasz_backup_db('cli');
+    if (is_wp_error($r)) WP_CLI::error($r->get_error_message());
+    WP_CLI::success(sprintf('Mentés: wp-content/kompasz-backups/%s (%s, %d tábla)', $r['file'], size_format($r['size']), $r['tables']));
+});
+
+WP_CLI::add_command('kompasz smoke', function () {
+    $s = kompasz_smoke();
+    if ($s['problems']) { foreach (array_slice($s['problems'], 0, 50) as $p) WP_CLI::warning($p); WP_CLI::error(count($s['problems']) . ' hiba ' . $s['count'] . ' ügynökségnél.'); }
+    WP_CLI::success($s['count'] . ' ügynökség adatlapja rendben.');
 });
 
 WP_CLI::add_command('kompasz google-sync', function ($args, $assoc) {

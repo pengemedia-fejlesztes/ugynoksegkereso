@@ -20,6 +20,11 @@ Követelmény: WordPress 6.4+, PHP 7.4+ (8.x ajánlott).
 Az első import **kitiltja a keresőrobotokat** (Beállítások → Olvasás → „Keresőmotorok láthatósága”; robots.txt + noindex + X-Robots-Tag).
 Élesítéskor ezt kell kikapcsolni.
 
+## Telepítés HTTPS-en (SSH nélkül)
+
+`bash scripts/deploy-https.sh hu|de` – WP admin felhasználóval és a REST API-val telepít (mentés, feltöltés, CF7, migráció, ellenőrzés,
+hibánál visszaállítás). Ehhez és a többi hozzáféréshez: [`docs/HOZZAFERES.md`](../docs/HOZZAFERES.md).
+
 ## Automatikus telepítés (CI/CD)
 
 `.github/workflows/wordpress.yml` minden `main` push-ra:

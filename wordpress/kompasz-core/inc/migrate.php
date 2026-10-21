@@ -157,6 +157,10 @@ function kompasz_migrate_all() {
 }
 
 // Biztonsági háló: ha a telepítés nem futtatta (wp kompasz migrate), az első kérés lefuttatja – a taxonómiák regisztrálása után
+// 10 perc türelmi idő az új kód megjelenése után: a telepítő előbb adatbázis-mentést készít, és maga futtatja a migrációt.
 add_action('init', function () {
-    if ((int) get_option('kompasz_schema', 1) < kompasz_schema_version() && get_option('kompasz_imported')) kompasz_run_migrations();
+    if ((int) get_option('kompasz_schema', 1) >= kompasz_schema_version() || !get_option('kompasz_imported')) return;
+    $seen = (array) get_option('kompasz_code_seen', []);
+    if (($seen['version'] ?? '') !== KOMPASZ_CORE_VERSION) { update_option('kompasz_code_seen', ['version' => KOMPASZ_CORE_VERSION, 'at' => time()]); return; }
+    if (time() - (int) $seen['at'] >= 600) kompasz_run_migrations();
 }, 20);
