@@ -5,6 +5,8 @@
 //   wp kompasz google-sync [--id=<ID>]     Google-értékelések frissítése most
 //   wp kompasz backup                      adatbázis-mentés (wp-content/kompasz-backups)
 //   wp kompasz smoke                       füstteszt minden ügynökségre
+//   wp kompasz merge-preview               összevonásra javasolt duplikátumok (iparág, minősítés, referencia)
+//   wp kompasz geocode [--limit=30]        hiányzó térképpozíciók keresése (Nominatim, 1 kérés/mp)
 //   wp kompasz setup                       telepítés utáni beállítás (ajánlatkérő űrlap, ütemezés, URL-szabályok); többször is futtatható
 if (!defined('ABSPATH') || !defined('WP_CLI') || !WP_CLI) return;
 
@@ -14,10 +16,8 @@ WP_CLI::add_command('kompasz migrate', function ($args, $assoc) {
 });
 
 WP_CLI::add_command('kompasz setup', function () {
-    $form = kompasz_cf7_ensure_form();
+    $form = kompasz_setup();
     WP_CLI::log($form ? "Ajánlatkérő űrlap: #$form" : 'Ajánlatkérő űrlap: kimarad (Contact Form 7 nincs bekapcsolva, vagy szándékosan törölve).');
-    if (!wp_next_scheduled(KOMPASZ_GOOGLE_HOOK)) wp_schedule_event(time() + HOUR_IN_SECONDS, 'weekly', KOMPASZ_GOOGLE_HOOK);
-    flush_rewrite_rules();
     WP_CLI::success('Beállítva.');
 });
 
@@ -38,6 +38,17 @@ WP_CLI::add_command('kompasz smoke', function () {
     $s = kompasz_smoke();
     if ($s['problems']) { foreach (array_slice($s['problems'], 0, 50) as $p) WP_CLI::warning($p); WP_CLI::error(count($s['problems']) . ' hiba ' . $s['count'] . ' ügynökségnél.'); }
     WP_CLI::success($s['count'] . ' ügynökség adatlapja rendben.');
+});
+
+WP_CLI::add_command('kompasz merge-preview', function () {
+    $rows = kompasz_merge_preview();
+    if (!$rows) WP_CLI::success('Nincs összevonásra javasolt érték.');
+    WP_CLI\Utils\format_items('table', $rows, ['típus', 'megmarad', 'beolvad', 'biztos']);
+});
+
+WP_CLI::add_command('kompasz geocode', function ($args, $assoc) {
+    [$found, $missing, $left] = kompasz_geocode_batch((int) ($assoc['limit'] ?? 30));
+    WP_CLI::success("Pozíció: $found új, $missing nem található, $left van még hátra.");
 });
 
 WP_CLI::add_command('kompasz google-sync', function ($args, $assoc) {

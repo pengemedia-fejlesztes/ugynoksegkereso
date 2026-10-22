@@ -126,7 +126,7 @@ function kompasz_crumbs($items) {
 function kompasz_cat_tiles($cats, $class = 'tiles') {
     $out = '<div class="' . esc_attr($class) . '">';
     foreach ($cats as $c) {
-        $out .= sprintf('<a class="tile" href="%s"><span class="ti">%s</span><span class="tn">%s</span><span class="tc">%s</span></a>', esc_url(get_term_link($c)), kompasz_cat_icon($c, 18), esc_html($c->name), esc_html(sprintf(kompasz__('%d cég →'), count(kompasz_list($c)))));
+        $out .= sprintf('<a class="tile" href="%s"><span class="ti">%s</span><span class="tn">%s</span><span class="tc">%s</span></a>', esc_url(get_term_link($c)), kompasz_cat_icon($c, 18), esc_html(kompasz_toplist_name($c)), esc_html(sprintf(kompasz__('%d cég →'), count(kompasz_list($c)))));
     }
     return $out . '</div>';
 }
@@ -165,7 +165,7 @@ function kompasz_filters($list, $skip_tag = null) {
 /** A teljes lista-oldal törzse (toplista és címke) */
 function kompasz_listing($term, $args) {
     $list = kompasz_list($term);
-    $is_tag = $term->taxonomy !== 'toplista';
+    $is_tag = !kompasz_is_toplist($term);
     $featured = $is_tag ? null : kompasz_is_featured_in($term);
     if ($featured) {
         $list = array_values(array_filter($list, function ($a) use ($featured) { return $a['id'] !== $featured['id']; }));

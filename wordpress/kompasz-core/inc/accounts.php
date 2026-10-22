@@ -56,9 +56,9 @@ add_filter('map_meta_cap', function ($caps, $cap, $user_id, $args) {
     return $caps;
 }, 10, 4);
 
-// A toplista-hozzárendelést a cégfiók nem módosíthatja
+// A toplistás szolgáltatásokat a cégfiók nem módosíthatja (agency-edit.php, mentés); a listákat (megye, nyelv) csak a szerkesztőség bővíti
 add_filter('register_taxonomy_args', function ($args, $taxonomy) {
-    if ($taxonomy === 'toplista') $args['capabilities'] = ['manage_terms' => 'manage_categories', 'edit_terms' => 'manage_categories', 'delete_terms' => 'manage_categories', 'assign_terms' => 'manage_categories'];
+    if (in_array($taxonomy, ['megye', 'nyelv'], true)) $args['capabilities'] = ['manage_terms' => 'manage_categories', 'edit_terms' => 'manage_categories', 'delete_terms' => 'manage_categories', 'assign_terms' => 'edit_posts'];
     return $args;
 }, 10, 2);
 

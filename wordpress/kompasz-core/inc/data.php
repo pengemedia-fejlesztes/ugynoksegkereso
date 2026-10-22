@@ -52,9 +52,11 @@ function kompasz_agency($post) {
     $google = $m('kompasz_google_rating');
     $list = $m('kompasz_rating');
     $rating = $google !== '' ? (float) $google : ($list !== '' ? (float) $list : null);
-    $cats = get_the_terms($id, 'toplista') ?: [];
-    usort($cats, function ($a, $b) { return (int) get_term_meta($a->term_id, 'kompasz_order', true) <=> (int) get_term_meta($b->term_id, 'kompasz_order', true); });
+    // Egy lista: a szolgáltatások; ezek közül a toplista oldallal rendelkezők a „cats” (fejléc-sorrendben)
     $tags = get_the_terms($id, 'szolgaltatas') ?: [];
+    if (is_wp_error($tags)) $tags = [];
+    $cats = array_values(array_filter($tags, 'kompasz_is_toplist'));
+    usort($cats, function ($a, $b) { return (int) get_term_meta($a->term_id, 'kompasz_order', true) <=> (int) get_term_meta($b->term_id, 'kompasz_order', true); });
     // Minősítések, iparágak: kifejezés-objektumok (jóváhagyásra váró nélkül)
     $terms = function ($tax) use ($id) {
         $t = get_the_terms($id, $tax);
@@ -77,7 +79,7 @@ function kompasz_agency($post) {
         'team' => $m('kompasz_team'),
         'team_bucket' => kompasz_team_bucket($m('kompasz_team')),
         'services' => wp_list_pluck($tags, 'name'),
-        'county' => $m('kompasz_county'),
+        'county' => implode(', ', kompasz_post_term_names($id, 'megye')),
         'phone' => $m('kompasz_phone'),
         'phones' => kompasz_agency_phones($id),
         'email' => $m('kompasz_email'),
@@ -87,7 +89,7 @@ function kompasz_agency($post) {
         'price_model' => $m('kompasz_price_model'),
         'certs' => $terms('minosites'),
         'work_mode' => $m('kompasz_work_mode'),
-        'languages' => kompasz_meta_lines($id, 'kompasz_languages'),
+        'languages' => kompasz_post_term_names($id, 'nyelv'),
         'references' => kompasz_agency_refs($id),
         'rank' => $rank === '' ? PHP_INT_MAX : (int) $rank,
         'rating' => $rating,
@@ -99,6 +101,9 @@ function kompasz_agency($post) {
         'initials' => kompasz_initials(get_the_title($id)),
         'cats' => $cats,
         'tags' => $tags,
+        'address' => $m('kompasz_address'),
+        'lat' => $m('kompasz_lat') !== '' ? (float) $m('kompasz_lat') : null,
+        'lng' => $m('kompasz_lng') !== '' ? (float) $m('kompasz_lng') : null,
     ];
 }
 
@@ -121,13 +126,34 @@ function kompasz_list($term) {
     return $cache[$key] = $list;
 }
 
-/** Toplisták a fejléc sorrendjében */
+/** A toplista oldal URL-része (üres: a szolgáltatásnak nincs toplistája) */
+function kompasz_toplist_slug($term) {
+    $id = is_object($term) ? $term->term_id : (int) $term;
+    return (string) get_term_meta($id, 'kompasz_toplist_slug', true);
+}
+
+function kompasz_is_toplist($term) {
+    return is_object($term) && $term->taxonomy === 'szolgaltatas' && kompasz_toplist_slug($term) !== '';
+}
+
+/** A toplista neve (pl. „Google Ads ügynökségek”); ha nincs megadva, a szolgáltatás neve */
+function kompasz_toplist_name($term) {
+    return kompasz_term_meta($term, 'kompasz_toplist_name', $term->name);
+}
+
+/** Kifejezésnevek egy ügynökséghez (jóváhagyásra váró nélkül), név szerint */
+function kompasz_post_term_names($id, $taxonomy) {
+    $t = get_the_terms($id, $taxonomy);
+    return $t && !is_wp_error($t) ? wp_list_pluck($t, 'name') : [];
+}
+
+/** Toplisták (= toplista oldallal rendelkező szolgáltatások) a fejléc sorrendjében */
 function kompasz_categories() {
     static $cats = null;
     if ($cats !== null) return $cats;
-    $cats = get_terms(['taxonomy' => 'toplista', 'hide_empty' => false]);
+    $cats = get_terms(['taxonomy' => 'szolgaltatas', 'hide_empty' => false, 'meta_query' => [['key' => 'kompasz_toplist_slug', 'value' => '', 'compare' => '!=']]]);
     if (is_wp_error($cats)) return $cats = [];
-    usort($cats, function ($a, $b) { return (int) get_term_meta($a->term_id, 'kompasz_order', true) <=> (int) get_term_meta($b->term_id, 'kompasz_order', true); });
+    usort($cats, function ($a, $b) { return [(int) get_term_meta($a->term_id, 'kompasz_order', true), $a->name] <=> [(int) get_term_meta($b->term_id, 'kompasz_order', true), $b->name]; });
     return $cats;
 }
 
@@ -154,5 +180,5 @@ function kompasz_featured() {
 function kompasz_is_featured_in($term) {
     $f = kompasz_featured();
     // Csak ott jelenik meg kiemeltként, ahol maga is szerepel a toplistán – különben nincs helyezése
-    return $f && $term && in_array((int) $term->term_id, $f['featured_in'], true) && has_term((int) $term->term_id, 'toplista', $f['id']) ? $f : null;
+    return $f && $term && in_array((int) $term->term_id, $f['featured_in'], true) && has_term((int) $term->term_id, 'szolgaltatas', $f['id']) ? $f : null;
 }

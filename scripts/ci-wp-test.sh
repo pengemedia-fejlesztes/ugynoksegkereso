@@ -39,8 +39,15 @@ cp -r "$PLUGIN" wp/wp-content/plugins/kompasz-core
 cp -r "$ROOT/wordpress/kompasz" wp/wp-content/themes/kompasz
 # Hibánál a WP-CLI üzenete is annotációba kerül
 act() { local out; out=$($WP plugin activate "$1" 2>&1) || { echo "::error title=plugin $1::$(echo "$out" | tr '\n' ' ' | cut -c1-500)"; return 1; }; }
+# Rank Math és WPS Hide Login (mint az éles oldalon): a Kompasz velük együtt is hibátlan, a belépés a /pengemedia/ címen
+for slug in seo-by-rank-math wps-hide-login; do
+  [ -d "wp/wp-content/plugins/$slug" ] || { [ -f "$slug.zip" ] || curl -sSLfo "$slug.zip" "https://downloads.wordpress.org/plugin/$slug.zip"; unzip -qo "$slug.zip" -d wp/wp-content/plugins; }
+done
 act kompasz-core
 act contact-form-7
+act seo-by-rank-math
+act wps-hide-login
+$WP option update whl_page pengemedia --quiet
 $WP theme activate kompasz --quiet
 $WP rewrite structure '/%postname%/' --quiet
 $WP kompasz import
@@ -54,14 +61,26 @@ php -S "127.0.0.1:$PORT" -t wp > server.log 2>&1 &
 SERVER=$!
 trap 'kill $SERVER 2>/dev/null || true' EXIT
 sleep 1
-TOP=$($WP term list toplista --field=slug --number=1)
+# Toplista = szolgáltatás: egy toplista oldal, egy toplista nélküli szolgáltatás, és a toplistás szolgáltatás régi címe (301 → toplista)
+TOP_URL=$($WP eval 'echo get_term_link(kompasz_categories()[0]);')
+SVC_URL=$($WP eval 'foreach (get_terms(["taxonomy" => "szolgaltatas", "hide_empty" => true]) as $t) if (!kompasz_is_toplist($t)) { echo get_term_link($t); break; }')
+OLD_URL=$($WP eval '$t = kompasz_categories()[0]; echo home_url("/" . kompasz_slug("cimke") . "/" . $t->slug . "/");')
 AGENCY=$($WP post list --post_type=ugynokseg --field=url --posts_per_page=1)
 fail=0
-for url in "http://127.0.0.1:$PORT/" "http://127.0.0.1:$PORT/$TOP/" "$AGENCY"; do
+loc=$(curl -s -o /dev/null -w '%{http_code} %{redirect_url}' "$OLD_URL")
+if [ "$loc" = "301 $TOP_URL" ]; then echo "OK 301 $OLD_URL → $TOP_URL"; else echo "::error::régi címke-cím: $OLD_URL → $loc (várt: 301 $TOP_URL)"; fail=1; fi
+for url in "http://127.0.0.1:$PORT/" "$TOP_URL" "$SVC_URL" "$AGENCY"; do
   code=$(curl -s -o page.html -w '%{http_code}' "$url")
   if [ "$code" != 200 ] || grep -qiE 'critical error|Fatal error|Warning:|Notice:' page.html; then echo "::error::HTTP $code $url $(grep -oiE '(Fatal error|Warning|Notice):[^<]{0,200}' page.html | head -1)"; fail=1; else echo "OK $code $url"; fi
 done
 grep -q 'wpcf7' page.html && echo "OK ajánlatkérő űrlap a profilon" || { echo "HIBA: nincs ajánlatkérő űrlap a profilon"; fail=1; }
+grep -qi 'rankmath' page.html && grep -q 'og:title' page.html && echo "OK Rank Math a profilon" || { echo "::error::nincs Rank Math kimenet a profilon"; fail=1; }
+grep -q 'kmap-pub\|id="helyszin"' page.html && echo "OK térkép a profilon" || echo "figyelem: a profilon nincs térkép (nincs pozíció – a teszt nem kérdezi le a Nominatimot)"
+HOME_URL=$($WP option get home)
+code=$(curl -s -o login.html -w '%{http_code}' "$HOME_URL/pengemedia/")
+[ "$code" = 200 ] && grep -q 'name="log"' login.html && echo "OK belépés: /pengemedia/" || { echo "::error::a /pengemedia/ nem a belépési oldal (HTTP $code)"; fail=1; }
+code=$(curl -s -o /dev/null -w '%{http_code}' "http://127.0.0.1:$PORT/wp-login.php")
+[ "$code" = 404 ] && echo "OK wp-login.php → 404" || { echo "::error::a wp-login.php nem rejtett (HTTP $code)"; fail=1; }
 if [ -f wp/wp-content/debug.log ] && grep -E 'PHP (Fatal|Warning|Notice|Deprecated).*kompasz' wp/wp-content/debug.log; then
   grep -E 'PHP (Fatal|Warning|Notice|Deprecated).*kompasz' wp/wp-content/debug.log | head -5 | sed 's/^/::error::/'; fail=1
 fi

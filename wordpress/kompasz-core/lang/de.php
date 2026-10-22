@@ -135,4 +135,7 @@ return [
     'Munkanyelvek' => 'Arbeitssprachen',
     'Ajánlatkérés: %s' => 'Angebotsanfrage: %s',
     'Írd le röviden, miben kérsz segítséget – az ügynökség a megadott elérhetőségen keres.' => 'Beschreiben Sie kurz Ihr Anliegen – die Agentur meldet sich unter den angegebenen Kontaktdaten.',
+    'Helyszín' => 'Standort',
+    '%s helye a térképen' => '%s auf der Karte',
+    'Nagyobb térkép' => 'Größere Karte',
 ];

@@ -380,3 +380,10 @@ a.chip:hover{background:var(--ink);color:#fff}
 .pform .wpcf7-not-valid-tip{color:#c0392b;font-size:12.5px}
 .pform .wpcf7-response-output{border-radius:9px;margin:12px 0 0!important}
 .fact small{color:var(--mut);font-weight:400}
+/* Helyszín (térkép) az adatlapon */
+.pmap{margin-top:14px}
+.kmap-pub{height:320px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#EEF0EA}
+.pmap-cap{margin:10px 0 0;font-size:14px;color:var(--mut);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.pmap-cap a{color:var(--accent);font-weight:600}
+.svc.pills small{font-weight:600;color:var(--accent);margin-left:2px}
+@media (max-width:640px){.kmap-pub{height:240px}}

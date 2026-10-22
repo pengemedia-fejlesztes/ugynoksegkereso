@@ -8,8 +8,6 @@
 .kompasz-edit .kf input[type=text], .kompasz-edit .kf input[type=url], .kompasz-edit .kf input[type=email] { width: 100%; }
 .kompasz-edit .klangs td { padding: 3px 12px 3px 0; vertical-align: middle; }
 .kompasz-edit .klangs input:disabled { opacity: .45; }
-.kompasz-edit .ksvc { max-width: 760px; }
-.kompasz-edit .ksvc td { padding: 6px 10px; }
 .kompasz-edit .kchecks { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 4px 16px; margin: 6px 0; }
 .kompasz-edit .kref { display: flex; gap: 8px; align-items: center; margin: 0 0 6px; flex-wrap: wrap; }
 .kompasz-edit .kref-del { color: #b32d2e; font-size: 16px; text-decoration: none; }
@@ -18,3 +16,12 @@
 .kompasz-edit .kerr { display: block; color: #d63638; font-size: 12px; margin-top: 2px; }
 .kompasz-edit .kmore { margin: 4px 0 8px; }
 .kompasz-edit .kmore summary { cursor: pointer; color: #2271b1; margin: 4px 0; }
+.kompasz-edit .ksvc { max-width: none; }
+.kompasz-edit .ksvc .ktop { font-weight: 600; }
+.kompasz-edit .kbadge { font-style: normal; font-weight: 500; font-size: 11px; color: #0E6B4F; background: #EAF4EF; padding: 1px 6px; border-radius: 3px; margin-left: 2px; }
+.kompasz-edit .kmap-edit { max-width: 900px; }
+.kompasz-edit .kmap { border: 1px solid #dcdcde; border-radius: 4px; }
+.kompasz-edit .kmap-results { margin: 0 0 8px; padding: 6px 10px; background: #f6f7f7; border: 1px solid #dcdcde; border-radius: 4px; }
+.kompasz-edit .kmap-results li { margin: 3px 0; }
+.kompasz-edit .kmap-results .button-link { text-align: left; }
+.kompasz-edit select { max-width: 100%; }

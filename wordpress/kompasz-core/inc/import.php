@@ -11,18 +11,14 @@ function kompasz_import_data() {
     return json_decode(file_get_contents($file), true);
 }
 
-/** 1. lépés: toplisták, címkék, oldalak, beállítások */
+/** Toplista oldal címe (régi toplista-slug) → a szolgáltatás azonosítója */
+function kompasz_toplist_by_slug($slug) {
+    $ids = get_terms(['taxonomy' => 'szolgaltatas', 'hide_empty' => false, 'fields' => 'ids', 'meta_query' => [['key' => 'kompasz_toplist_slug', 'value' => $slug]]]);
+    return is_wp_error($ids) || !$ids ? 0 : (int) $ids[0];
+}
+
+/** 1. lépés: szolgáltatások (a toplisták a szolgáltatás tulajdonságai), megye- és nyelvlista, oldalak, beállítások */
 function kompasz_import_base(array $data) {
-    foreach ($data['categories'] as $c) {
-        $t = term_exists($c['slug'], 'toplista') ?: wp_insert_term($c['name'], 'toplista', ['slug' => $c['slug']]);
-        if (is_wp_error($t)) continue;
-        $id = (int) (is_array($t) ? $t['term_id'] : $t);
-        wp_update_term($id, 'toplista', ['name' => $c['name'], 'description' => $c['intro']]);
-        $meta = ['kompasz_short' => $c['short'], 'kompasz_icon' => $c['icon'], 'kompasz_order' => $c['order'], 'kompasz_ai' => $c['ai'] ? '1' : '',
-            'kompasz_card' => $c['desc'], 'kompasz_h1' => $c['h1'], 'kompasz_question' => $c['question'], 'kompasz_intro' => $c['intro'],
-            'kompasz_seo' => wp_json_encode($c['seo'], JSON_UNESCAPED_UNICODE)];
-        foreach ($meta as $k => $v) update_term_meta($id, $k, $v);
-    }
     foreach ($data['tags'] as $g) {
         $t = term_exists($g['slug'], 'szolgaltatas') ?: wp_insert_term($g['name'], 'szolgaltatas', ['slug' => $g['slug']]);
         if (is_wp_error($t)) continue;
@@ -32,6 +28,22 @@ function kompasz_import_base(array $data) {
             'kompasz_intro' => $g['intro'], 'kompasz_seo' => wp_json_encode($g['seo'], JSON_UNESCAPED_UNICODE)];
         foreach ($meta as $k => $v) update_term_meta($id, $k, $v);
     }
+    // Toplista: a párosított szolgáltatás (data.json: categories[].tag) tulajdonsága; pár nélkül új szolgáltatás a rövid névvel
+    foreach ($data['categories'] as $c) {
+        $id = kompasz_toplist_by_slug($c['slug']);
+        if (!$id && !empty($c['tag']) && ($t = get_term_by('slug', $c['tag'], 'szolgaltatas')) && kompasz_toplist_slug($t) === '') $id = (int) $t->term_id;
+        if (!$id) {
+            $t = term_exists($c['short'], 'szolgaltatas') ?: wp_insert_term($c['short'], 'szolgaltatas');
+            if (is_wp_error($t)) continue;
+            $id = (int) (is_array($t) ? $t['term_id'] : $t);
+        }
+        wp_update_term($id, 'szolgaltatas', ['description' => $c['intro']]);
+        $meta = ['kompasz_toplist_slug' => $c['slug'], 'kompasz_toplist_name' => $c['name'], 'kompasz_short' => $c['short'], 'kompasz_icon' => $c['icon'],
+            'kompasz_order' => $c['order'], 'kompasz_ai' => $c['ai'] ? '1' : '', 'kompasz_card' => $c['desc'], 'kompasz_h1' => $c['h1'],
+            'kompasz_question' => $c['question'], 'kompasz_intro' => $c['intro'], 'kompasz_seo' => wp_json_encode($c['seo'], JSON_UNESCAPED_UNICODE)];
+        foreach ($meta as $k => $v) update_term_meta($id, $k, $v);
+    }
+    kompasz_seed_lists();
 
     // Referencia-ügyfél és minősítés oldalak
     foreach (['clients' => 'ugyfel', 'certs' => 'minosites', 'industries' => 'iparag'] as $key => $tax) {
@@ -74,7 +86,7 @@ function kompasz_import_base(array $data) {
     if (!get_option('permalink_structure')) update_option('permalink_structure', '/%postname%/');
     // Fejlesztés alatt a keresőrobotok kitiltva (Beállítások → Olvasás)
     if (!get_option('kompasz_imported')) update_option('blog_public', 0);
-    kompasz_guess_toplist_tags();
+    update_option('kompasz_flush_rules', 1);
 }
 
 /** Logó felvétele a médiatárba (egyszer, a fájlnév alapján) */
@@ -102,6 +114,8 @@ function kompasz_import_logo($file, $post_id, $name) {
 /** 2. lépés: ügynökségek kötegekben */
 function kompasz_import_agencies(array $data, $offset, $limit) {
     $slice = array_slice($data['agencies'], $offset, $limit);
+    $toplists = [];
+    foreach ($data['categories'] as $c) if ($id = kompasz_toplist_by_slug($c['slug'])) $toplists[$c['slug']] = $id;
     foreach ($slice as $a) {
         $existing = get_page_by_path($a['slug'], OBJECT, 'ugynokseg');
         $post = ['post_type' => 'ugynokseg', 'post_status' => 'publish', 'post_title' => $a['name'], 'post_name' => $a['slug'], 'post_content' => $a['description']];
@@ -122,19 +136,28 @@ function kompasz_import_agencies(array $data, $offset, $limit) {
             'kompasz_founded' => $a['founded'] ?? '', 'kompasz_team' => $a['team'] ?? '',
             'kompasz_phone' => $a['phone'] ?? '', 'kompasz_email' => $a['email'] ?? '', 'kompasz_intro' => $a['intro'] ?? '',
             'kompasz_languages' => $join($a['languages'] ?? []), 'kompasz_work_mode' => $a['work_mode'] ?? ''];
-        foreach ($profile as $k => $v) { if ((string) $v !== '' && (string) get_post_meta($id, $k, true) === '') update_post_meta($id, $k, (string) $v); }
+        // Megye, munkanyelvek: adatbázis-lista; csak ha még nincs beállítva (kompasz_migrate_agency_lists alakítja át)
+        $lists = ['kompasz_county' => 'megye', 'kompasz_languages' => 'nyelv'];
+        foreach ($profile as $k => $v) {
+            if ((string) $v === '') continue;
+            if (isset($lists[$k]) ? !kompasz_post_term_ids($id, $lists[$k]) : (string) get_post_meta($id, $k, true) === '') update_post_meta($id, $k, (string) $v);
+        }
         if ($a['google']) {
             $meta += ['kompasz_google_rating' => $a['google']['rating'], 'kompasz_google_count' => $a['google']['count'],
                 'kompasz_google_source' => trim(($a['google']['source'] ?? '') . ' (' . ($a['google']['checked'] ?? '') . ')')];
         }
         foreach ($meta as $k => $v) { if ($v === null) $v = ''; update_post_meta($id, $k, (string) $v); }
         // Toplisták, szolgáltatások, minősítések, iparágak, referenciák: csak új vagy még üres adatlapra (az adminban szerkesztett marad)
-        if (!$existing || !kompasz_post_term_ids($id, 'toplista')) wp_set_object_terms($id, $a['categories'], 'toplista');
-        if (!$existing || !kompasz_post_term_ids($id, 'szolgaltatas')) wp_set_object_terms($id, $a['tags'], 'szolgaltatas');
+        if (!$existing || !kompasz_post_term_ids($id, 'szolgaltatas')) {
+            $svc = array_values(array_filter(array_map(function ($slug) { $t = get_term_by('slug', $slug, 'szolgaltatas'); return $t ? (int) $t->term_id : 0; }, $a['tags'])));
+            foreach ($a['categories'] as $slug) if (!empty($toplists[$slug])) $svc[] = $toplists[$slug];
+            wp_set_object_terms($id, array_values(array_unique($svc)), 'szolgaltatas');
+        }
         foreach (['kompasz_certs' => ['certs', 'minosites'], 'kompasz_industries' => ['industries', 'iparag'], 'kompasz_references' => ['references', 'ugyfel']] as $k => [$field, $tax]) {
             if (!$existing || !kompasz_post_term_ids($id, $tax)) update_post_meta($id, $k, $join($a[$field] ?? []));
         }
         kompasz_migrate_agency($id);
+        kompasz_migrate_agency_lists($id);
         if ($a['logo']) {
             // Új logó, vagy az importált logó tartalma változott (md5): csere; kézzel beállított kiemelt képhez nem nyúl
             $cur = (int) get_post_thumbnail_id($id);
@@ -159,7 +182,7 @@ function kompasz_import_finish(array $data) {
     if (!get_option('kompasz_featured') && $data['settings']['featured']) update_option('kompasz_featured', $id($data['settings']['featured']));
     if (!get_option('kompasz_featured_cats')) {
         $cats = [];
-        foreach ($data['settings']['featured_categories'] as $slug) { $t = get_term_by('slug', $slug, 'toplista'); if ($t) $cats[] = $t->term_id; }
+        foreach ($data['settings']['featured_categories'] as $slug) { $t = kompasz_toplist_by_slug($slug); if ($t) $cats[] = $t; }
         update_option('kompasz_featured_cats', $cats);
     }
     if (!get_option('kompasz_home_top')) update_option('kompasz_home_top', array_values(array_filter(array_map($id, $data['settings']['home_top']))));
@@ -193,7 +216,7 @@ function kompasz_import_page() {
         if ($step === 'base') {
             kompasz_import_base($data);
             $next = $step_url(['step' => 'agencies', 'offset' => 0]);
-            echo '<p>Toplisták, címkék és oldalak kész. Ügynökségek importálása…</p>';
+            echo '<p>Szolgáltatások, toplisták és oldalak kész. Ügynökségek importálása…</p>';
         } elseif ($step === 'agencies') {
             $offset = absint($_GET['offset'] ?? 0);
             $done = kompasz_import_agencies($data, $offset, KOMPASZ_IMPORT_BATCH);
@@ -211,7 +234,7 @@ function kompasz_import_page() {
         return;
     }
     $url = $step_url(['step' => 'base']);
-    printf('<p>Az import fájl verziója: <strong>%s</strong>. Tartalma: %d toplista, %d szolgáltatás-címke, %d ügynökség.</p>', esc_html($data['version']), count($data['categories']), count($data['tags']), $total);
+    printf('<p>Az import fájl verziója: <strong>%s</strong>. Tartalma: %d toplista, %d szolgáltatás, %d ügynökség.</p>', esc_html($data['version']), count($data['categories']), count($data['tags']), $total);
     echo '<p>Az import újrafuttatható: a meglévő elemeket slug alapján frissíti. A WP adminban kézzel átírt bemutatkozásokat és a beállításokat nem írja felül.</p>';
     if ($last = get_option('kompasz_imported')) printf('<p>Utolsó import: %s</p>', esc_html($last));
     printf('<p><a class="button button-primary button-hero" href="%s">Importálás indítása</a></p></div>', esc_url($url));

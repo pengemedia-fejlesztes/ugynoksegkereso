@@ -8,7 +8,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <?php
-$kompasz_current = is_tax('toplista') ? get_queried_object() : (is_singular('ugynokseg') ? kompasz_primary_context(kompasz_agency(get_queried_object_id()))[0] : null);
+$kompasz_current = is_tax('szolgaltatas') && kompasz_is_toplist(get_queried_object()) ? get_queried_object() : (is_singular('ugynokseg') ? kompasz_primary_context(kompasz_agency(get_queried_object_id()))[0] : null);
 ?>
 <header class="hdr">
   <div class="wrap hdr-top">

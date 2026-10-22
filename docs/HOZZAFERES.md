@@ -16,7 +16,8 @@ claude.ai/code → a munkamenet címsorában a környezet neve → **Edit** → 
 |---|---|
 | `ugynoksegek.pmdev.hu` | a magyar oldal telepítése, ellenőrzése |
 | `de.ugynoksegek.pmdev.hu` | a német oldal |
-| `master.ugynoksegek.pmdev.hu` | ha az admin ezen a címen fut |
+| `master.ugynoksegek.pmdev.hu` | **a magyar oldal (ide telepít a `deploy-https.sh hu`)** |
+| `nominatim.openstreetmap.org`, `tiles.openfreemap.org`, `unpkg.com` | térkép: címkeresés, csempék, MapLibre (ellenőrzéshez) |
 | a cPanel címe 443-as porton (pl. `cpanel.pmdev.hu`) | aldomain, adatbázis, fájlok (csak a német oldal létrehozásához) |
 | `api.cloudflare.com` | DNS-rekord a német aldomainhez (ha a pmdev.hu DNS-e a Cloudflare-en van) |
 | `api.wordpress.org`, `downloads.wordpress.org` | a szerver PHP-jával kompatibilis Contact Form 7 kiválasztása |
@@ -33,7 +34,9 @@ Ugyanott → **Environment variables** (vagy „Network secrets”, ha az van). 
 |---|---|---|
 | `WP_ADMIN_USER_HU` | pl. `claude-deploy` | WP admin → Felhasználók → Új hozzáadása, szerepkör: **Adminisztrátor**. Külön felhasználó legyen, hogy bármikor letiltható. |
 | `WP_ADMIN_PASSWORD_HU` | a fenti felhasználó jelszava | |
-| `WP_URL_HU` | `https://ugynoksegek.pmdev.hu` | ha az admin máshol fut: `https://master.ugynoksegek.pmdev.hu` |
+| `WP_URL_HU` | `https://master.ugynoksegek.pmdev.hu` | ez az alapértelmezés is |
+| `PMDEV_USER`, `PMDEV_PASSWORD` | a pmdev.hu „Fejlesztés alatt” kapu belépése | a master oldal minden címe (a /wp-admin és a REST is) e mögött van |
+| `WP_LOGIN_SLUG` | `pengemedia` (alapértelmezés) | WPS Hide Login: a belépés címe `…/pengemedia/`, a `wp-login.php` ezután 404 |
 | `GOOGLE_PLACES_API_KEY` | Places API (New) kulcs | 4. pont |
 | `WP_ADMIN_USER_DE`, `WP_ADMIN_PASSWORD_DE` | a német oldal adminja | ha már létezik a német WordPress; különben Claude hozza létre |
 | `CPANEL_URL` | pl. `https://cpanel.pmdev.hu` | az a cím, amin a cPanelbe belépsz – **443-as porton** (nem `:2083`) |

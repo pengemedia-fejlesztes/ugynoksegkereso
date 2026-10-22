@@ -2,7 +2,7 @@
 // Kompasz téma
 if (!defined('ABSPATH')) exit;
 
-define('KOMPASZ_THEME_VERSION', '1.1.0');
+define('KOMPASZ_THEME_VERSION', '1.3.0');
 
 add_action('after_setup_theme', function () {
     add_theme_support('title-tag');

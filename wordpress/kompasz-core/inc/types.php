@@ -19,31 +19,35 @@ function kompasz_register_types() {
         'show_in_rest' => true,
     ]);
 
-    // Toplisták (pl. Online marketing ügynökségek) – az URL a toplista slugja: /online-marketing-ugynoksegek/
-    register_taxonomy('toplista', ['ugynokseg'], [
-        'labels' => [
-            'name' => 'Toplisták', 'singular_name' => 'Toplista', 'add_new_item' => 'Új toplista',
-            'edit_item' => 'Toplista szerkesztése', 'all_items' => 'Összes toplista', 'menu_name' => 'Toplisták',
-        ],
-        'hierarchical' => true,
-        'public' => true,
-        'show_admin_column' => true,
-        'show_in_rest' => true,
-        'rewrite' => ['slug' => 'toplista', 'with_front' => false],
-    ]);
-
-    // Szolgáltatás-címkék (pl. SEO, Google Ads) – /cimke/seo/
+    // Szolgáltatások (pl. SEO, Google Ads) – /cimke/seo/. Ha egy szolgáltatásnak van toplista oldala, az a kifejezés tulajdonsága
+    // (term meta: kompasz_toplist_slug + szövegek, lásd fields.php), és a címe a gyökérben van: /google-ads-ugynoksegek/
     register_taxonomy('szolgaltatas', ['ugynokseg'], [
         'labels' => [
-            'name' => 'Szolgáltatás-címkék', 'singular_name' => 'Szolgáltatás-címke', 'add_new_item' => 'Új címke',
-            'edit_item' => 'Címke szerkesztése', 'all_items' => 'Összes címke', 'menu_name' => 'Szolgáltatás-címkék',
+            'name' => 'Szolgáltatások', 'singular_name' => 'Szolgáltatás', 'add_new_item' => 'Új szolgáltatás',
+            'edit_item' => 'Szolgáltatás szerkesztése', 'all_items' => 'Összes szolgáltatás', 'menu_name' => 'Szolgáltatások és toplisták',
+            'search_items' => 'Szolgáltatás keresése',
         ],
         'hierarchical' => false,
         'public' => true,
         'show_admin_column' => true,
         'show_in_rest' => true,
+        'meta_box_cb' => false,
         'rewrite' => ['slug' => kompasz_slug('cimke'), 'with_front' => false],
     ]);
+
+    // Régi, külön toplista-taxonómia: csak a 3. migrációhoz (átvitel a szolgáltatásokba), felületen és URL-ben nem jelenik meg
+    register_taxonomy('toplista', ['ugynokseg'], [
+        'label' => 'Toplisták (régi)', 'public' => false, 'show_ui' => false, 'show_in_rest' => false, 'query_var' => false, 'rewrite' => false, 'hierarchical' => true,
+    ]);
+
+    // Megyék / tartományok és munkanyelvek: adatbázis-listák, az adminisztrátor bővítheti (Ügynökségek → Megyék / Munkanyelvek)
+    foreach (['megye' => ['Megyék', 'Megye', 'Új megye'], 'nyelv' => ['Munkanyelvek', 'Munkanyelv', 'Új munkanyelv']] as $tax => [$plural, $single, $add]) {
+        register_taxonomy($tax, ['ugynokseg'], [
+            'labels' => ['name' => $plural, 'singular_name' => $single, 'add_new_item' => $add, 'edit_item' => $single . ' szerkesztése', 'menu_name' => $plural],
+            'hierarchical' => false, 'public' => false, 'show_ui' => true, 'show_in_menu' => true, 'show_in_rest' => false,
+            'show_admin_column' => false, 'meta_box_cb' => false, 'rewrite' => false, 'query_var' => false,
+        ]);
+    }
 
     // Referencia-ügyfelek (pl. SPAR, Tesco) – /ugyfel/spar/: azok az ügynökségek, amelyek ennek a cégnek dolgoztak
     register_taxonomy('ugyfel', ['ugynokseg'], [
@@ -71,26 +75,61 @@ function kompasz_register_types() {
 }
 add_action('init', 'kompasz_register_types');
 
-// Toplisták a gyökérben: /online-marketing-ugynoksegek/ (a régi statikus oldal URL-jei megmaradnak)
+// Toplista oldalak a gyökérben: /online-marketing-ugynoksegek/ (a régi statikus oldal URL-jei megmaradnak)
 add_filter('term_link', function ($url, $term, $taxonomy) {
-    return $taxonomy === 'toplista' ? home_url('/' . $term->slug . '/') : $url;
+    if ($taxonomy !== 'szolgaltatas') return $url;
+    $slug = kompasz_toplist_slug($term);
+    return $slug !== '' ? home_url('/' . $slug . '/') : $url;
 }, 10, 3);
 
 add_action('init', function () {
-    $terms = get_terms(['taxonomy' => 'toplista', 'hide_empty' => false, 'fields' => 'slugs']);
-    if (is_wp_error($terms)) return;
-    foreach ($terms as $slug) {
-        add_rewrite_rule('^' . preg_quote($slug, '#') . '/?$', 'index.php?toplista=' . $slug, 'top');
+    foreach (kompasz_categories() as $t) {
+        add_rewrite_rule('^' . preg_quote(kompasz_toplist_slug($t), '#') . '/?$', 'index.php?szolgaltatas=' . $t->slug, 'top');
     }
 }, 20);
 
-// Új vagy átnevezett toplista után frissülnek az URL-szabályok
-foreach (['created_toplista', 'edited_toplista', 'delete_toplista'] as $hook) {
+// Új, átnevezett vagy toplistává tett szolgáltatás után frissülnek az URL-szabályok
+foreach (['created_szolgaltatas', 'edited_szolgaltatas', 'delete_szolgaltatas'] as $hook) {
     add_action($hook, function () { update_option('kompasz_flush_rules', 1); });
 }
 add_action('init', function () {
     if (get_option('kompasz_flush_rules')) { delete_option('kompasz_flush_rules'); flush_rewrite_rules(); }
 }, 99);
+
+// 301: a toplistás szolgáltatás régi címke-címe (/cimke/google-ads/) → a toplista (/google-ads-ugynoksegek/);
+// összevont vagy törölt kifejezés régi címe → az új (kompasz_redirects opció: régi útvonal => [taxonómia, kifejezés])
+add_action('template_redirect', function () {
+    $path = trailingslashit((string) wp_parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH));
+    if (is_tax('szolgaltatas') && !is_feed() && !is_paged()) {
+        $t = get_queried_object();
+        if (kompasz_toplist_slug($t) !== '') {
+            $to = get_term_link($t);
+            if (trailingslashit((string) wp_parse_url($to, PHP_URL_PATH)) !== $path) { wp_safe_redirect($to, 301, 'Kompasz'); exit; }
+        }
+        return;
+    }
+    if (!is_404()) return;
+    $map = (array) get_option('kompasz_redirects', []);
+    $home = trailingslashit((string) wp_parse_url(home_url('/'), PHP_URL_PATH));
+    $rel = '/' . ltrim(substr($path, strlen($home) - 1), '/');
+    if (!isset($map[$rel])) return;
+    [$tax, $id] = $map[$rel];
+    $term = get_term((int) $id, $tax);
+    if ($term && !is_wp_error($term)) { wp_safe_redirect(get_term_link($term), 301, 'Kompasz'); exit; }
+}, 5);
+
+/** Átirányítás felvétele: a kifejezés mostani címe → egy másik kifejezés (összevonás előtt hívandó) */
+function kompasz_add_redirect($from_term, $to_tax, $to_id) {
+    $url = get_term_link($from_term);
+    if (is_wp_error($url)) return;
+    $home = trailingslashit((string) wp_parse_url(home_url('/'), PHP_URL_PATH));
+    $rel = '/' . ltrim(substr(trailingslashit((string) wp_parse_url($url, PHP_URL_PATH)), strlen($home) - 1), '/');
+    $map = (array) get_option('kompasz_redirects', []);
+    $map[$rel] = [$to_tax, (int) $to_id];
+    // A korábban erre a kifejezésre mutató átirányítások is az újra mutassanak
+    foreach ($map as $k => $v) if ($v[0] === $from_term->taxonomy && (int) $v[1] === (int) $from_term->term_id) $map[$k] = [$to_tax, (int) $to_id];
+    update_option('kompasz_redirects', $map, false);
+}
 
 // Admin lista: sorrend és weboldal oszlop
 add_filter('manage_ugynokseg_posts_columns', function ($cols) {

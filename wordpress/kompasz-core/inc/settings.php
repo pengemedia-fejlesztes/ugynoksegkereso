@@ -15,6 +15,7 @@ add_action('admin_init', function () {
     register_setting('kompasz', 'kompasz_email', ['type' => 'string', 'sanitize_callback' => 'sanitize_email']);
     register_setting('kompasz', 'kompasz_google_api_key', ['type' => 'string', 'sanitize_callback' => 'sanitize_text_field']);
     register_setting('kompasz', 'kompasz_cf7_form', ['type' => 'integer', 'sanitize_callback' => 'absint']);
+    register_setting('kompasz', 'kompasz_map_style', ['type' => 'string', 'sanitize_callback' => 'esc_url_raw']);
 });
 
 function kompasz_settings_page() {
@@ -37,7 +38,7 @@ function kompasz_settings_page() {
                 <tr><th><label for="kompasz_featured">Ügynökség</label></th><td><select id="kompasz_featured" name="kompasz_featured"><?php echo $opt(get_option('kompasz_featured')); ?></select></td></tr>
                 <tr><th><label for="kompasz_featured_pitch">Rövid szöveg</label></th><td><input class="large-text" id="kompasz_featured_pitch" name="kompasz_featured_pitch" value="<?php echo esc_attr(get_option('kompasz_featured_pitch')); ?>"></td></tr>
                 <tr><th>Toplisták</th><td>
-                    <?php foreach (kompasz_categories() as $c) printf('<label style="display:block;margin:2px 0"><input type="checkbox" name="kompasz_featured_cats[]" value="%d" %s> %s</label>', $c->term_id, checked(in_array($c->term_id, $featured_cats, true), true, false), esc_html($c->name)); ?>
+                    <?php foreach (kompasz_categories() as $c) printf('<label style="display:block;margin:2px 0"><input type="checkbox" name="kompasz_featured_cats[]" value="%d" %s> %s</label>', $c->term_id, checked(in_array($c->term_id, $featured_cats, true), true, false), esc_html(kompasz_toplist_name($c))); ?>
                 </td></tr>
             </table>
             <h2>Kezdőlap: Legjobbra értékeltek</h2>
@@ -63,6 +64,14 @@ function kompasz_settings_page() {
                 <tr><th>Utolsó heti frissítés</th><td><?php $t = (int) get_option('kompasz_google_last_run'); echo $t ? esc_html(wp_date('Y-m-d H:i', $t)) : 'még nem futott'; ?>
                     · következő: <?php $n = wp_next_scheduled(KOMPASZ_GOOGLE_HOOK); echo $n ? esc_html(wp_date('Y-m-d H:i', $n)) : '–'; ?>
                     <?php if (kompasz_google_key()) printf(' <a class="button" href="%s">Mindet frissítem most</a>', esc_url(wp_nonce_url(admin_url('admin-post.php?action=kompasz_google_sync'), 'kompasz_google_sync'))); ?></td></tr>
+            </table>
+            <h2>Térkép</h2>
+            <p class="description">Az ügynökségek adatlapján: MapLibre GL JS + OpenFreeMap csempék, címkeresés: Nominatim (OpenStreetMap) – kulcs és számlázás nélkül.
+                Akinek nincs pozíciója, annak a rendszer óránként legfeljebb 30 ügynökségnél a városa (és címe) alapján keres egyet.</p>
+            <table class="form-table">
+                <tr><th><label for="kompasz_map_style">Térképstílus (URL)</label></th><td><input class="large-text" id="kompasz_map_style" name="kompasz_map_style" placeholder="https://tiles.openfreemap.org/styles/liberty" value="<?php echo esc_attr(get_option('kompasz_map_style')); ?>">
+                    <p class="description">Üresen: OpenFreeMap „liberty”. Más OpenFreeMap-stílus: …/styles/positron, …/styles/bright.</p></td></tr>
+                <tr><th>Pozíció</th><td><?php $with = count(get_posts(['post_type' => 'ugynokseg', 'post_status' => 'publish', 'fields' => 'ids', 'numberposts' => -1, 'meta_key' => 'kompasz_lat'])); echo esc_html(sprintf('%d / %d ügynökségnél', $with, wp_count_posts('ugynokseg')->publish)); ?></td></tr>
             </table>
             <h2>Ajánlatkérő űrlap (Contact Form 7)</h2>
             <table class="form-table">

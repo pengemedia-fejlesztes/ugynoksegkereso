@@ -31,6 +31,8 @@ function kompasz_resolve_terms($taxonomy, array $names, $post_id = 0, $approved 
         }
         if ($term) { $ids[] = (int) $term->term_id; continue; }
         $new = wp_insert_term($name, $taxonomy);
+        // Az azonos normalizált nevű meglévő kifejezés (pl. „OTP Bank Nyrt.” = „OTP Bank”) – lásd merge.php
+        if (is_wp_error($new) && $new->get_error_code() === 'term_exists' && $new->get_error_data()) { $ids[] = (int) $new->get_error_data(); continue; }
         if (is_wp_error($new)) continue;
         $id = (int) $new['term_id'];
         if (!$approved) {

@@ -31,6 +31,12 @@ const ICONS = {
 const NAV_ORDER = ['AI agent fejlesztő cégek', 'AI SEO ügynökségek', 'Google Ads ügynökségek', 'Facebook hirdetés ügynökségek',
   'Online marketing ügynökségek', 'PR ügynökségek', 'Keresőoptimalizáló ügynökségek', 'Amazon ügynökségek', 'Weboldal készítés', 'Bérelhető webshop szakértők',
   'Tartalomgyártó ügynökségek'];
+// Toplista → szolgáltatás (a WordPressben a toplista a szolgáltatás tulajdonsága; pár nélkül új szolgáltatás lesz a rövid névvel)
+const TOPLIST_TAG = {
+  'AI agent fejlesztő cégek': 'ai-agent-fejlesztes', 'AI SEO ügynökségek': 'ai-seo', 'Google Ads ügynökségek': 'google-ads',
+  'Facebook hirdetés ügynökségek': 'facebook-instagram-hirdetes', 'PR ügynökségek': 'pr', 'Keresőoptimalizáló ügynökségek': 'seo',
+  'Weboldal készítés': 'weboldal-keszites', 'Tartalomgyártó ügynökségek': 'tartalommarketing',
+};
 const NAV_SHORT = { 'Bérelhető webshop szakértők': 'Bérelhető webshop', 'Keresőoptimalizáló ügynökségek': 'SEO', 'Weboldal készítés': 'Weboldal', 'Tartalomgyártó ügynökségek': 'Tartalomgyártás', 'AI agent fejlesztő cégek': 'AI agent fejlesztés' };
 
 // Logók kicsinyítése 256 px-re (ha a sharp telepítve van), hogy a bővítmény zip-je feltölthető maradjon
@@ -54,7 +60,7 @@ const legacy = new Map(AGENCIES.map(([n, r, logo, url, tags, d], i) => [domain(u
 
 const categories = NAV_ORDER.map((n, i) => {
   const c = CATS.find(x => x.n === n);
-  return { slug: SLUGS[n], name: n, short: NAV_SHORT[n] || c.short, icon: ICONS[n], order: i + 1, ai: !!c.ai, desc: c.d || '',
+  return { slug: SLUGS[n], name: n, tag: TOPLIST_TAG[n] || null, short: NAV_SHORT[n] || c.short, icon: ICONS[n], order: i + 1, ai: !!c.ai, desc: c.d || '',
     h1: c.h1, question: c.q, intro: c.intro, seo: c.seo.map(([h, p]) => ({ h, p })) };
 });
 const tags = TAGS.map(t => ({ slug: t.slug, name: t.label, kw: t.kw, h1: t.h1, title: t.title, desc: t.desc, intro: t.intro, seo: t.seo.map(([h, p]) => ({ h, p })) }));

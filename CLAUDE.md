@@ -3,6 +3,10 @@
 Nyelv: a felhasználóval magyarul. Jelszót, tokent soha ne kérj a chatben: környezeti változó vagy GitHub Secret.
 
 ## Szerkezet
+- Egy lista = egy taxonómia: `szolgaltatas` (a toplista a szolgáltatás tulajdonsága: `kompasz_toplist_slug` term meta + szövegek),
+  `megye`, `nyelv`, `minosites`, `iparag`, `ugyfel`. Kódba írt lista nincs; kezdőérték csak egyszeri migrációban.
+- Duplikátum: `inc/merge.php` (normalizált név, Ügynökségek → Összevonás, `wp kompasz merge-preview`); térkép: `inc/map.php`
+  (MapLibre GL JS + OpenFreeMap, címkeresés: Nominatim). Belépés: `/pengemedia/` (WPS Hide Login); SEO: Rank Math + `kompasz/inc/seo.php`.
 - `wordpress/kompasz-core/` bővítmény (adat, admin, import, migráció, REST/CLI üzemeltetés), `wordpress/kompasz/` téma.
 - Adatok: `src/` (HU), `src/de/` (DE) → `scripts/export-wp*.mjs` → `import/data.json`; csomag: `bash scripts/zip-wp.sh [de]`.
 - Adatbázis-változás = új sor a `kompasz_migrations()` végén (`inc/migrate.php`), soha ne írd át a régit; verzió: `KOMPASZ_CORE_VERSION`,
@@ -10,7 +14,8 @@ Nyelv: a felhasználóval magyarul. Jelszót, tokent soha ne kérj a chatben: k�
 
 ## Élesítés („telepítsd élesbe”)
 1. Hozzáférés-ellenőrzés: `env | grep -E '^(WP_|CPANEL_|CLOUDFLARE_|GOOGLE_)' | sed 's/=.*//'` és
-   `curl -s -o /dev/null -w '%{http_code}' https://ugynoksegek.pmdev.hu/`. Ha hiányzik valami: `docs/HOZZAFERES.md` szerint
+   `curl -s -o /dev/null -w '%{http_code}' https://master.ugynoksegek.pmdev.hu/` (401 = a pmdev kapu: `PMDEV_USER`/`PMDEV_PASSWORD` kell).
+   Csak a magyar oldal (master) él; a német oldallal most nem foglalkozunk. Ha hiányzik valami: `docs/HOZZAFERES.md` szerint
    pontosan megnevezni a felhasználónak (a környezet beállításaiban adja meg), nem kerülőúton dolgozni.
 2. Csak commitolt + pusholt kód megy ki. Előtte: `bash scripts/ci-wp-test.sh hu|de` (helyben MariaDB-vel) vagy a GitHub CI zöld.
 3. `bash scripts/deploy-https.sh hu` (és `de`): mentés → feltöltés → CF7 → API-kulcs → migráció → füstteszt → doctor → HTTP;

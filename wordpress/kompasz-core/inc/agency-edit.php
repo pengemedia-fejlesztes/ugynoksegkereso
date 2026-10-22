@@ -1,6 +1,7 @@
 <?php
 // Ügynökség szerkesztése: egyetlen adatlap a szerkesztő alatt (a WP alap taxonómia-dobozai helyett).
-// Minden adat egy helyen: alapadatok, munkanyelvek + telefonszámok, szolgáltatások és toplisták, minősítések, iparágak, referenciák.
+// Minden adat egy helyen: alapadatok, helyszín (térkép), munkanyelvek + telefonszámok, szolgáltatások (= toplisták), minősítések, iparágak,
+// referenciák. Minden választható lista adatbázisból jön (taxonómiák: megye, nyelv, szolgaltatas, minosites, iparag, ugyfel).
 if (!defined('ABSPATH')) exit;
 
 /** Egyszerű mezők: kulcs => [címke, típus, súgó] */
@@ -9,12 +10,12 @@ function kompasz_agency_fields() {
         'kompasz_website'     => ['Weboldal', 'url', 'A „Kapcsolat” gomb ide visz.'],
         'kompasz_email'       => ['E-mail cím', 'email', 'Nyilvános céges e-mail cím. Mentéskor a rendszer ellenőrzi.'],
         'kompasz_city'        => ['Város', 'suggest', 'Kezdj gépelni: a már szereplő városok közül választhatsz, vagy írj be újat.'],
-        'kompasz_county'      => ['Megye', 'suggest', ''],
         'kompasz_founded'     => ['Alapítás éve', 'year', ''],
         'kompasz_team'        => ['Csapatméret', 'text', 'Pl. „15 fő” vagy „11–50 fő”.'],
         'kompasz_work_mode'   => ['Munkavégzés', 'text', 'Helyben, távolról vagy mindkettő; külföldi ügyfelekkel is.'],
         'kompasz_price_min'   => ['Árszint (minimum)', 'text', 'Pl. „havi 150 000 Ft-tól”.'],
         'kompasz_price_model' => ['Árazás módja', 'text', 'Havidíj, projektalapú vagy teljesítményalapú.'],
+        'kompasz_address'     => ['Cím', 'text', 'Utca, házszám (a várost fent add meg). A térképen ez alapján keresheted meg a helyet.'],
         'kompasz_google_url'  => ['Google Cégprofil link', 'url', 'A Google Térképen a cég oldala → Megosztás → link másolása. Az értékelés és a vélemények száma ebből hetente automatikusan frissül.'],
         'kompasz_intro'       => ['Rövid bevezető', 'textarea', '1–2 mondat; a profil tetején jelenik meg. A részletes bemutatkozást a fenti szerkesztőben írod.'],
         // Csak adminisztrátornak (cégfiók nem látja): kompasz_partner_protected_fields()
@@ -37,30 +38,12 @@ function kompasz_meta_values($key) {
     return $rows ?: [];
 }
 
-/** Megyék / tartományok listája a webhely nyelve szerint, kiegészítve az adatbázisban szereplőkkel */
-function kompasz_county_options() {
-    $base = kompasz_lang() === 'de'
-        ? ['Baden-Württemberg', 'Bayern', 'Berlin', 'Brandenburg', 'Bremen', 'Hamburg', 'Hessen', 'Mecklenburg-Vorpommern', 'Niedersachsen', 'Nordrhein-Westfalen', 'Rheinland-Pfalz', 'Saarland', 'Sachsen', 'Sachsen-Anhalt', 'Schleswig-Holstein', 'Thüringen']
-        : ['Budapest', 'Bács-Kiskun', 'Baranya', 'Békés', 'Borsod-Abaúj-Zemplén', 'Csongrád-Csanád', 'Fejér', 'Győr-Moson-Sopron', 'Hajdú-Bihar', 'Heves', 'Jász-Nagykun-Szolnok', 'Komárom-Esztergom', 'Nógrád', 'Pest', 'Somogy', 'Szabolcs-Szatmár-Bereg', 'Tolna', 'Vas', 'Veszprém', 'Zala'];
-    $all = array_unique(array_merge($base, kompasz_meta_values('kompasz_county')));
-    sort($all, SORT_LOCALE_STRING);
-    return $all;
-}
-
-/** Munkanyelvek: az alapnyelvek + minden nyelv, ami az adatbázisban bármelyik ügynökségnél szerepel */
-function kompasz_language_options() {
-    $base = kompasz_lang() === 'de' ? ['Deutsch', 'Englisch', 'Ungarisch'] : ['magyar', 'angol', 'német'];
-    $more = [];
-    foreach (kompasz_meta_values('kompasz_languages') as $v) foreach (preg_split('/\r?\n/', $v) as $l) { $l = trim($l); if ($l !== '') $more[] = $l; }
-    $more = array_diff(array_unique($more), $base);
-    sort($more, SORT_LOCALE_STRING);
-    return array_values(array_merge($base, $more));
-}
-
-/** Toplista → hozzá tartozó szolgáltatás-címke (term meta: kompasz_tag). Pl. „Google Ads ügynökségek” → „Google Ads” */
-function kompasz_toplist_tag($toplist) {
-    $id = (int) get_term_meta(is_object($toplist) ? $toplist->term_id : (int) $toplist, 'kompasz_tag', true);
-    return $id ?: 0;
+/** Választható kifejezések egy adatbázis-listából (megye, nyelv): a gyakoribbak elöl, azonos gyakoriságnál név szerint */
+function kompasz_list_terms($taxonomy, $by_count = false) {
+    $terms = get_terms(['taxonomy' => $taxonomy, 'hide_empty' => false, 'orderby' => 'name']);
+    if (is_wp_error($terms)) return [];
+    if ($by_count) usort($terms, function ($a, $b) { return [$b->count, $a->name] <=> [$a->count, $b->name]; });
+    return $terms;
 }
 
 /** Jóváhagyott kifejezések + az ügynökség saját, még jóváhagyásra váró kifejezései */
@@ -124,7 +107,12 @@ function kompasz_agency_box($post) {
     echo kompasz_field_html('kompasz_email', $m('kompasz_email'));
     $cities = kompasz_meta_values('kompasz_city'); sort($cities, SORT_LOCALE_STRING);
     echo kompasz_field_html('kompasz_city', $m('kompasz_city'), $cities);
-    echo kompasz_field_html('kompasz_county', $m('kompasz_county'), kompasz_county_options());
+    $county = kompasz_post_term_ids($id, 'megye');
+    $out = '<select id="kompasz_megye" name="kompasz_megye"><option value="">–</option>';
+    foreach (kompasz_list_terms('megye') as $t) $out .= sprintf('<option value="%d"%s>%s</option>', $t->term_id, selected(in_array($t->term_id, $county, true), true, false), esc_html($t->name));
+    $out .= '</select>';
+    printf('<div class="kf"><label for="kompasz_megye"><strong>%s</strong></label>%s<span class="description">%s</span></div>', esc_html(kompasz_lang() === 'de' ? 'Bundesland' : 'Megye'), $out,
+        $admin_cats ? sprintf('A lista bővíthető: <a href="%s">Ügynökségek → Megyék</a>.', esc_url(admin_url('edit-tags.php?taxonomy=megye&post_type=ugynokseg'))) : '');
     echo kompasz_field_html('kompasz_founded', $m('kompasz_founded'));
     echo kompasz_field_html('kompasz_team', $m('kompasz_team'));
     echo kompasz_field_html('kompasz_work_mode', $m('kompasz_work_mode'));
@@ -134,36 +122,39 @@ function kompasz_agency_box($post) {
     echo '</div>';
     echo kompasz_field_html('kompasz_intro', $m('kompasz_intro'));
 
-    // 2. Munkanyelvek és telefonszámok (nyelvenként egy szám)
-    $langs = kompasz_meta_lines($id, 'kompasz_languages');
-    $phones = kompasz_agency_phones($id);
+    // Helyszín: cím + térkép (MapLibre GL JS + OpenFreeMap, címkeresés: Nominatim – kulcs és számlázás nélkül)
+    echo '<h3>Helyszín a térképen</h3>';
+    echo kompasz_field_html('kompasz_address', $m('kompasz_address'));
+    echo kompasz_map_admin_html($id);
+
+    // 2. Munkanyelvek (adatbázis-lista) és telefonszámok: nyelvenként egy szám
+    $langs = kompasz_post_term_ids($id, 'nyelv');
+    $phones = kompasz_agency_phone_map($id);
     echo '<h3>Munkanyelvek és telefonszámok</h3><p class="description">Pipáld be, milyen nyelven dolgoznak. Nyelvenként egy telefonszám adható meg, nemzetközi formában (pl. +36 20 404 4280); a rendszer formázza és ellenőrzi.</p>';
     echo '<table class="klangs" data-cc="' . esc_attr(kompasz_phone_default_cc()) . '">';
-    foreach (array_unique(array_merge(kompasz_language_options(), $langs)) as $i => $lang) {
-        $on = in_array($lang, $langs, true);
-        printf('<tr><td><label><input type="checkbox" name="kompasz_lang_on[]" value="%1$s"%2$s> %3$s</label></td><td><input type="tel" name="kompasz_phones[%1$s]" value="%4$s" placeholder="+36 …" class="regular-text" data-kompasz-phone%5$s></td></tr>',
-            esc_attr($lang), checked($on, true, false), esc_html($lang), esc_attr($phones[$lang] ?? ''), $on ? '' : ' disabled');
+    foreach (kompasz_list_terms('nyelv', true) as $t) {
+        $on = in_array($t->term_id, $langs, true);
+        printf('<tr><td><label><input type="checkbox" name="kompasz_lang_on[]" value="%1$d"%2$s> %3$s</label></td><td><input type="tel" name="kompasz_phones[%1$d]" value="%4$s" placeholder="+36 …" class="regular-text" data-kompasz-phone%5$s></td></tr>',
+            $t->term_id, checked($on, true, false), esc_html($t->name), esc_attr($phones[$t->term_id] ?? ''), $on ? '' : ' disabled');
     }
-    echo '<tr><td><input type="text" name="kompasz_lang_new" placeholder="Más nyelv…" class="regular-text"></td><td><input type="tel" name="kompasz_phone_new" placeholder="Telefonszám ehhez a nyelvhez" class="regular-text" data-kompasz-phone></td></tr>';
+    if ($admin_cats) echo '<tr><td><input type="text" name="kompasz_lang_new" placeholder="Más nyelv…" class="regular-text"></td><td><input type="tel" name="kompasz_phone_new" placeholder="Telefonszám ehhez a nyelvhez" class="regular-text" data-kompasz-phone></td></tr>';
     echo '</table>';
+    if ($admin_cats) printf('<p class="description">Az új nyelv a közös listára kerül (<a href="%s">Ügynökségek → Munkanyelvek</a>).</p>', esc_url(admin_url('edit-tags.php?taxonomy=nyelv&post_type=ugynokseg')));
 
-    // 3. Szolgáltatások és toplisták – egy lista: a toplistához tartozó szolgáltatás egy sor
+    // 3. Szolgáltatások – egy lista. A toplista a szolgáltatás tulajdonsága: akinél be van pipálva, az a toplistán is szerepel.
     $tag_ids = kompasz_post_term_ids($id, 'szolgaltatas');
-    $top_ids = kompasz_post_term_ids($id, 'toplista');
-    $tags = get_terms(['taxonomy' => 'szolgaltatas', 'hide_empty' => false, 'orderby' => 'name']);
-    $tops_by_tag = []; $tops_free = [];
-    foreach (kompasz_categories() as $c) { $t = kompasz_toplist_tag($c); if ($t) $tops_by_tag[$t][] = $c; else $tops_free[] = $c; }
-    echo '<h3>Szolgáltatások és toplisták</h3><p class="description">Soronként egy szolgáltatás. A pipa a szolgáltatás-címkét állítja (ettől jelenik meg a cég a címke oldalán és a profilján)' . ($admin_cats ? '; a „Toplistán” oszlop azt, hogy rangsorolva szerepel-e az adott toplistán. Toplistára tett cég a hozzá tartozó szolgáltatást is megkapja.' : '. A toplistákat a szerkesztőség állítja.') . '</p>';
-    echo '<table class="widefat striped ksvc"><thead><tr><th>Szolgáltatás</th><th>Toplistán</th></tr></thead><tbody>';
-    $top_cell = function ($c) use ($top_ids, $admin_cats) {
-        return sprintf('<label><input type="checkbox" name="kompasz_toplists[]" value="%d"%s%s> %s</label>', $c->term_id, checked(in_array($c->term_id, $top_ids, true), true, false), $admin_cats ? '' : ' disabled', esc_html($c->name));
-    };
-    if (!is_wp_error($tags)) foreach ($tags as $t) {
-        $tops = $tops_by_tag[$t->term_id] ?? [];
-        printf('<tr><td><label><input type="checkbox" name="kompasz_tags[]" value="%d"%s> %s</label></td><td>%s</td></tr>', $t->term_id, checked(in_array($t->term_id, $tag_ids, true), true, false), esc_html($t->name), $tops ? implode('<br>', array_map($top_cell, $tops)) : '<span class="kmuted">–</span>');
+    $main = ''; $rest = ''; $n_rest = 0;
+    foreach (get_terms(['taxonomy' => 'szolgaltatas', 'hide_empty' => false, 'orderby' => 'name']) ?: [] as $t) {
+        $on = in_array($t->term_id, $tag_ids, true);
+        $top = kompasz_is_toplist($t);
+        $html = sprintf('<label%s><input type="checkbox" name="kompasz_tags[]" value="%d"%s%s> %s%s</label>', $top ? ' class="ktop"' : '', $t->term_id, checked($on, true, false),
+            $top && !$admin_cats ? ' disabled' : '', esc_html($t->name), $top ? ' <em class="kbadge" title="' . esc_attr(kompasz_toplist_name($t)) . '">toplista</em>' : '');
+        if ($top || $on || $t->count >= 2) $main .= $html; else { $rest .= $html; $n_rest++; }
     }
-    foreach ($tops_free as $c) printf('<tr><td><span class="kmuted">(általános toplista)</span></td><td>%s</td></tr>', $top_cell($c));
-    echo '</tbody></table>';
+    echo '<h3>Szolgáltatások</h3><p class="description">A pipa a szolgáltatást állítja: ettől jelenik meg a cég a szolgáltatás oldalán és a profilján. A „toplista” jelölésű szolgáltatásnak saját toplistája van – aki ezt kapja, rangsorolva szerepel rajta (sorrend: „Sorrend a toplistákon”).'
+        . ($admin_cats ? sprintf(' Új szolgáltatás, toplista: <a href="%s">Ügynökségek → Szolgáltatások és toplisták</a>.', esc_url(admin_url('edit-tags.php?taxonomy=szolgaltatas&post_type=ugynokseg'))) : ' A toplistás szolgáltatásokat a szerkesztőség állítja.') . '</p>';
+    echo '<div class="kchecks ksvc">' . $main . '</div>';
+    if ($rest) printf('<details class="kmore"><summary>További %d szolgáltatás</summary><div class="kchecks ksvc">%s</div></details>', $n_rest, $rest);
 
     // 4–5. Minősítések, iparági tapasztalat: pipálható lista + új érték (jóváhagyásra)
     foreach (['minosites' => ['Minősítések', 'Új minősítés (pl. Google Partner)'], 'iparag' => ['Iparági tapasztalat', 'Új iparág (pl. egészségügy)']] as $tax => [$h, $ph]) {
@@ -246,38 +237,49 @@ add_action('save_post_ugynokseg', function ($post_id) {
         update_post_meta($post_id, $key, kompasz_sanitize_field($type === 'suggest' ? 'text' : $type, $raw));
     }
 
-    // Munkanyelvek és telefonszámok
-    $langs = array_values(array_filter(array_map('sanitize_text_field', (array) ($in['kompasz_lang_on'] ?? []))));
+    $admin_cats = current_user_can('manage_categories');
+
+    // Megye (adatbázis-lista)
+    if (isset($in['kompasz_megye'])) {
+        $c = absint($in['kompasz_megye']);
+        wp_set_object_terms($post_id, $c && term_exists($c, 'megye') ? [$c] : [], 'megye');
+    }
+
+    // Helyszín: koordináták a térképről
+    if (isset($in['kompasz_lat'], $in['kompasz_lng'])) kompasz_map_save($post_id, $in['kompasz_lat'], $in['kompasz_lng']);
+
+    // Munkanyelvek (adatbázis-lista) és telefonszámok nyelvenként
+    $langs = array_values(array_filter(array_map('absint', (array) ($in['kompasz_lang_on'] ?? [])), function ($t) { return term_exists($t, 'nyelv'); }));
     $phones_in = array_map('sanitize_text_field', (array) ($in['kompasz_phones'] ?? []));
-    $new = sanitize_text_field($in['kompasz_lang_new'] ?? '');
-    if ($new !== '') { $langs[] = $new; $phones_in[$new] = sanitize_text_field($in['kompasz_phone_new'] ?? ''); }
+    $new = $admin_cats ? sanitize_text_field($in['kompasz_lang_new'] ?? '') : '';
+    if ($new !== '') {
+        $t = term_exists($new, 'nyelv') ?: wp_insert_term($new, 'nyelv');
+        if (!is_wp_error($t)) { $tid = (int) (is_array($t) ? $t['term_id'] : $t); $langs[] = $tid; $phones_in[$tid] = sanitize_text_field($in['kompasz_phone_new'] ?? ''); }
+    }
     $langs = array_values(array_unique($langs));
-    $old = kompasz_agency_phones($post_id);
+    $old = kompasz_agency_phone_map($post_id);
     $phones = [];
     foreach ($langs as $l) {
         $raw = trim($phones_in[$l] ?? '');
         if ($raw === '') continue;
         $f = kompasz_phone_format($raw);
         if ($f === '') {
-            $errors[] = sprintf('A(z) %s nyelvű telefonszám (%s) hibás, nem lett mentve. Helyes forma: +36 20 404 4280 vagy +36 1 234 5678.', esc_html($l), esc_html($raw));
+            $errors[] = sprintf('A(z) %s nyelvű telefonszám (%s) hibás, nem lett mentve. Helyes forma: +36 20 404 4280 vagy +36 1 234 5678.', esc_html(get_term($l)->name), esc_html($raw));
             if (isset($old[$l])) $phones[$l] = $old[$l];
             continue;
         }
         $phones[$l] = $f;
     }
-    update_post_meta($post_id, 'kompasz_languages', implode("\n", $langs));
-    update_post_meta($post_id, 'kompasz_phones', wp_json_encode($phones, JSON_UNESCAPED_UNICODE));
+    wp_set_object_terms($post_id, $langs, 'nyelv');
+    update_post_meta($post_id, 'kompasz_phones', wp_json_encode((object) $phones, JSON_UNESCAPED_UNICODE));
     update_post_meta($post_id, 'kompasz_phone', $phones ? reset($phones) : '');
 
-    // Szolgáltatások és toplisták
+    // Szolgáltatások (= toplista-tagság). A cégfiók a toplistás szolgáltatásokat nem módosíthatja: azok maradnak, ahogy voltak.
     $tag_ids = array_map('intval', (array) ($in['kompasz_tags'] ?? []));
-    if (current_user_can('manage_categories')) {
-        $top_ids = array_map('intval', (array) ($in['kompasz_toplists'] ?? []));
-        wp_set_object_terms($post_id, $top_ids, 'toplista');
-    } else {
-        $top_ids = kompasz_post_term_ids($post_id, 'toplista');
+    if (!$admin_cats) {
+        $tag_ids = array_filter($tag_ids, function ($t) { return !kompasz_is_toplist(get_term($t, 'szolgaltatas')); });
+        foreach (kompasz_post_term_ids($post_id, 'szolgaltatas') as $t) if (kompasz_is_toplist(get_term($t, 'szolgaltatas'))) $tag_ids[] = $t;
     }
-    foreach ($top_ids as $t) { $tag = kompasz_toplist_tag($t); if ($tag) $tag_ids[] = $tag; }
     wp_set_object_terms($post_id, array_values(array_unique($tag_ids)), 'szolgaltatas');
 
     // Minősítések, iparágak
@@ -326,14 +328,31 @@ add_action('admin_enqueue_scripts', function ($hook) {
     wp_enqueue_script('kompasz-admin', KOMPASZ_CORE_URL . 'assets/admin.js', [], $v, true);
 });
 
-/** Telefonszámok nyelvenként (régi adatnál az egy szám az első munkanyelvhez tartozik) */
-function kompasz_agency_phones($id) {
+/** Telefonszámok nyelvenként: munkanyelv-kifejezés azonosítója => szám (a 4. migráció előtti, nyelvnévvel kulcsolt adatot is olvassa) */
+function kompasz_agency_phone_map($id) {
     $p = json_decode((string) get_post_meta($id, 'kompasz_phones', true), true);
-    if (is_array($p)) return $p;
-    $one = (string) get_post_meta($id, 'kompasz_phone', true);
-    if ($one === '') return [];
-    $langs = kompasz_meta_lines($id, 'kompasz_languages');
-    return [$langs[0] ?? kompasz_language_options()[0] => kompasz_phone_format($one) ?: $one];
+    if (!is_array($p)) {
+        $one = (string) get_post_meta($id, 'kompasz_phone', true);
+        $first = kompasz_post_term_ids($id, 'nyelv')[0] ?? 0;
+        return $one !== '' && $first ? [$first => kompasz_phone_format($one) ?: $one] : [];
+    }
+    $out = [];
+    foreach ($p as $k => $v) {
+        if (is_int($k) || ctype_digit((string) $k)) { $out[(int) $k] = $v; continue; }
+        $t = get_term_by('name', $k, 'nyelv');
+        if ($t) $out[(int) $t->term_id] = $v;
+    }
+    return $out;
+}
+
+/** Telefonszámok megjelenítéshez: nyelv neve => szám */
+function kompasz_agency_phones($id) {
+    $out = [];
+    foreach (kompasz_agency_phone_map($id) as $tid => $ph) {
+        $t = get_term($tid, 'nyelv');
+        if ($t && !is_wp_error($t)) $out[$t->name] = $ph;
+    }
+    return $out;
 }
 
 /** Referenciák: [name, url, link (ügyféloldal, ha több ügynökség is megnevezi), pending] */

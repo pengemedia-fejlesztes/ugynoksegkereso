@@ -10,7 +10,7 @@
         <div class="flbl"><?php echo esc_html(kompasz__('TOPLISTÁK')); ?></div>
         <div class="fcats">
           <?php foreach (kompasz_categories() as $c): ?>
-            <a href="<?php echo esc_url(get_term_link($c)); ?>"><span class="fi"><?php echo kompasz_cat_icon($c, 14); ?></span><?php echo esc_html($c->name); ?></a>
+            <a href="<?php echo esc_url(get_term_link($c)); ?>"><span class="fi"><?php echo kompasz_cat_icon($c, 14); ?></span><?php echo esc_html(kompasz_toplist_name($c)); ?></a>
           <?php endforeach; ?>
         </div>
       </div>

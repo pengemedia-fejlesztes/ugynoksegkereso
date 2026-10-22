@@ -127,3 +127,23 @@
   window.addEventListener('resize', onScroll);
   onScroll();
 })();
+
+// Ügynökség helye a térképen (MapLibre GL JS + OpenFreeMap): a könyvtár csak akkor töltődik be, ha a térkép a képernyő közelébe ér
+(function () {
+  var el = document.querySelector('.kmap-pub');
+  if (!el) return;
+  var cfg = JSON.parse(el.getAttribute('data-map'));
+  function init() {
+    var map = new maplibregl.Map({ container: el, style: cfg.style, center: [cfg.lng, cfg.lat], zoom: cfg.zoom, cooperativeGestures: true, attributionControl: { compact: true } });
+    map.addControl(new maplibregl.NavigationControl({ showCompass: false }));
+    new maplibregl.Marker({ color: '#0E6B4F' }).setLngLat([cfg.lng, cfg.lat]).setPopup(new maplibregl.Popup({ offset: 24 }).setText(cfg.name)).addTo(map);
+  }
+  function load() {
+    if (window.maplibregl) return init();
+    var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = cfg.css; document.head.appendChild(l);
+    var s = document.createElement('script'); s.src = cfg.js; s.async = true; s.onload = init; document.head.appendChild(s);
+  }
+  if (!('IntersectionObserver' in window)) return load();
+  var io = new IntersectionObserver(function (es) { if (es[0].isIntersecting) { io.disconnect(); load(); } }, { rootMargin: '300px' });
+  io.observe(el);
+})();

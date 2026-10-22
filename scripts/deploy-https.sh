@@ -8,16 +8,19 @@
 #   WP_ADMIN_USER_HU, WP_ADMIN_PASSWORD_HU    adminisztrátor (német oldalra: *_DE; ha nincs, WP_ADMIN_USER / WP_ADMIN_PASSWORD)
 #   GOOGLE_PLACES_API_KEY                     Places API (New) kulcs (opcionális; a Kompasz beállításai közé kerül)
 #   HTTP_AUTH                                 ha az oldal HTTP Basic Auth mögött van: "felhasználó:jelszó" (opcionális)
+#   PMDEV_USER, PMDEV_PASSWORD                a pmdev.hu „Fejlesztés alatt” belépési kapuja (/pmdev-belepes.php), ha az oldal mögötte van
+#   WP_LOGIN_SLUG                             a WPS Hide Login belépési címe (alap: pengemedia → /pengemedia/; a wp-login.php ezután 404)
 #
 # Menet: belépés → állapot → adatbázis-mentés → bővítmény és téma feltöltése (felülírással) → Contact Form 7 (kompatibilis verzió) →
-#        aktiválás → API-kulcs → import (üres oldalon) → migráció → beállítás → füstteszt minden ügynökségre → doctor → HTTP-ellenőrzés.
+#        aktiválás → Rank Math, WPS Hide Login (belépés: /$WP_LOGIN_SLUG/) → API-kulcs → import (üres oldalon) → migráció → beállítás → füstteszt minden ügynökségre → doctor → HTTP-ellenőrzés.
 #        Hiba esetén: az előzőleg telepített commit csomagja visszatöltődik, migrációs hibánál az adatbázis is.
 set -euo pipefail
 SITE="${1:?hu vagy de}"
 UP=$(echo "$SITE" | tr '[:lower:]' '[:upper:]')
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 v() { local n="$1"; printf '%s' "${!n:-}"; }
-URL="$(v "WP_URL_$UP")"; [ -n "$URL" ] || URL=$([ "$SITE" = de ] && echo https://de.ugynoksegek.pmdev.hu || echo https://ugynoksegek.pmdev.hu)
+URL="$(v "WP_URL_$UP")"; [ -n "$URL" ] || URL=$([ "$SITE" = de ] && echo https://de.ugynoksegek.pmdev.hu || echo https://master.ugynoksegek.pmdev.hu)
+LOGIN_SLUG="${WP_LOGIN_SLUG:-pengemedia}"
 URL="${URL%/}"
 USER_="$(v "WP_ADMIN_USER_$UP")"; USER_="${USER_:-${WP_ADMIN_USER:-}}"
 PASS_="$(v "WP_ADMIN_PASSWORD_$UP")"; PASS_="${PASS_:-${WP_ADMIN_PASSWORD:-}}"
@@ -31,10 +34,21 @@ log() { echo "[$SITE] $*"; }
 die() { echo "::error::[$SITE] $*"; exit 1; }
 json() { php -r '$d = json_decode(stream_get_contents(STDIN), true); $k = $argv[1]; foreach (explode(".", $k) as $p) $d = is_array($d) && array_key_exists($p, $d) ? $d[$p] : null; echo is_bool($d) ? ($d ? "true" : "false") : (is_scalar($d) ? $d : json_encode($d, JSON_UNESCAPED_UNICODE));' "$1"; }
 
-# --- Belépés (süti) és REST nonce ---
-"${CURL[@]}" -o /dev/null "$URL/wp-login.php" || die "Az oldal nem érhető el: $URL"
+# --- pmdev.hu belépési kapu (ha az oldal „Fejlesztés alatt” áll): a süti 30 napig érvényes ---
+code=$(curl -s -o "$TMP/gate.html" -w '%{http_code}' -A "KompaszDeploy/1.0" ${HTTP_AUTH:+-u "$HTTP_AUTH"} "$URL/")
+if [ "$code" = 401 ] && grep -q 'pmdev-belepes' "$TMP/gate.html"; then
+  [ -n "${PMDEV_USER:-}" ] && [ -n "${PMDEV_PASSWORD:-}" ] || die "Az oldal a pmdev.hu belépési kapuja mögött van: hiányzik PMDEV_USER / PMDEV_PASSWORD."
+  curl -sS -o /dev/null -b "$JAR" -c "$JAR" -A "KompaszDeploy/1.0" --data-urlencode "felhasznalo=$PMDEV_USER" --data-urlencode "jelszo=$PMDEV_PASSWORD" --data-urlencode "vissza=/" "$URL/pmdev-belepes.php"
+  [ "$(curl -s -b "$JAR" -c "$JAR" -A "KompaszDeploy/1.0" -o /dev/null -w '%{http_code}' "$URL/")" != 401 ] || die "A pmdev.hu kapu nem engedett be ($PMDEV_USER)."
+  log "pmdev.hu kapu: belépve"
+fi
+
+# --- Belépés (süti) és REST nonce: a WPS Hide Login után a /$LOGIN_SLUG/ címen, előtte a wp-login.php-n ---
+LOGIN_URL="$URL/wp-login.php"
+if ! curl -s -b "$JAR" -c "$JAR" -A "KompaszDeploy/1.0" ${HTTP_AUTH:+-u "$HTTP_AUTH"} "$LOGIN_URL" | grep -q 'name="log"'; then LOGIN_URL="$URL/$LOGIN_SLUG/"; fi
+"${CURL[@]}" -o /dev/null "$LOGIN_URL" || die "Az oldal nem érhető el: $LOGIN_URL"
 "${CURL[@]}" -o "$TMP/login.html" -b "wordpress_test_cookie=WP%20Cookie%20check" \
-  --data-urlencode "log=$USER_" --data-urlencode "pwd=$PASS_" -d "wp-submit=Log+In&testcookie=1&redirect_to=$URL/wp-admin/" "$URL/wp-login.php" -L
+  --data-urlencode "log=$USER_" --data-urlencode "pwd=$PASS_" -d "wp-submit=Log+In&testcookie=1&redirect_to=$URL/wp-admin/" "$LOGIN_URL" -L
 grep -q 'wordpress_logged_in' "$JAR" || die "Sikertelen belépés ($USER_)."
 NONCE="$("${CURL[@]}" "$URL/wp-admin/admin-ajax.php?action=rest-nonce")"
 [[ "$NONCE" =~ ^[a-f0-9]{10}$ ]] || die "Nem kaptam REST nonce-t (válasz: ${NONCE:0:80})."
@@ -116,20 +130,27 @@ VER="$(rest GET /wp/v2/plugins/kompasz-core/kompasz-core | json version)"; log "
 # Első telepítés az új telepítővel: mentés most (a migráció még nem futott a türelmi idő miatt)
 if [ -z "$BACKUP" ]; then BK="$(rest POST /kompasz/v1/backup '{"label":"pre-migrate"}')" && BACKUP="$(echo "$BK" | json file)" && log "adatbázis-mentés: $BACKUP"; fi
 
-# --- Contact Form 7: a szerverrel kompatibilis legújabb verzió ---
-cf7_active() { [ "$(rest GET /wp/v2/plugins/contact-form-7/wp-contact-form-7 2>/dev/null | json status)" = active ]; }
-if ! cf7_active; then
-  rest POST /wp/v2/plugins '{"slug":"contact-form-7","status":"active"}' >/dev/null 2>&1 || rest PUT /wp/v2/plugins/contact-form-7/wp-contact-form-7 '{"status":"active"}' >/dev/null 2>&1 || true
-  if ! cf7_active; then
-    for ver in $(curl -gsSf 'https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request[slug]=contact-form-7&request[fields][versions]=1' \
+# --- Bővítmények a wordpress.org-ról, a szerver PHP-jával kompatibilis legújabb verzióban: Contact Form 7, Rank Math, WPS Hide Login ---
+plugin_active() { [ "$(rest GET "/wp/v2/plugins/$1" 2>/dev/null | json status)" = active ]; }
+ensure_plugin() { # slug fájl (pl. contact-form-7 wp-contact-form-7)
+  local slug="$1" file="$1/$2"
+  plugin_active "$file" && return 0
+  rest POST /wp/v2/plugins "{\"slug\":\"$slug\",\"status\":\"active\"}" >/dev/null 2>&1 || rest PUT "/wp/v2/plugins/$file" '{"status":"active"}' >/dev/null 2>&1 || true
+  if ! plugin_active "$file"; then
+    for ver in $(curl -gsSf "https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request[slug]=$slug&request[fields][versions]=1" \
         | php -r '$v = array_keys((array) (json_decode(stream_get_contents(STDIN), true)["versions"] ?? [])); $v = array_filter($v, fn($x) => preg_match("/^\d+(\.\d+)+$/", $x)); usort($v, "version_compare"); echo implode(" ", array_slice(array_reverse($v), 0, 25));'); do
-      curl -sSfo "$TMP/cf7.zip" "https://downloads.wordpress.org/plugin/contact-form-7.$ver.zip" || continue
-      upload plugin "$TMP/cf7.zip"
-      rest PUT /wp/v2/plugins/contact-form-7/wp-contact-form-7 '{"status":"active"}' >/dev/null 2>&1 && cf7_active && { log "Contact Form 7 $ver"; break; }
+      curl -sSfo "$TMP/plugin.zip" "https://downloads.wordpress.org/plugin/$slug.$ver.zip" || continue
+      upload plugin "$TMP/plugin.zip"
+      rest PUT "/wp/v2/plugins/$file" '{"status":"active"}' >/dev/null 2>&1 && plugin_active "$file" && { log "$slug $ver"; break; }
     done
   fi
-  cf7_active || die "A Contact Form 7 egyik verziója sem kapcsolható be ezen a szerveren."
-fi
+  plugin_active "$file" || die "A(z) $slug egyik verziója sem kapcsolható be ezen a szerveren."
+}
+ensure_plugin contact-form-7 wp-contact-form-7
+ensure_plugin seo-by-rank-math rank-math
+ensure_plugin wps-hide-login wps-hide-login
+R="$(rest POST /kompasz/v1/config "{\"login_slug\":\"$LOGIN_SLUG\"}")" || die "A belépési cím nem állítható be: $R"
+log "Rank Math, WPS Hide Login aktív; belépés: $URL/$LOGIN_SLUG/ (a wp-login.php és a /wp-admin/ kijelentkezve 404)"
 
 # --- Beállítás, import, migráció ---
 [ -n "${GOOGLE_PLACES_API_KEY:-}" ] && rest POST /kompasz/v1/config "{\"google_api_key\":\"$GOOGLE_PLACES_API_KEY\"}" >/dev/null && log "Google API-kulcs beállítva"
@@ -157,8 +178,10 @@ echo "$D" | php -r '$d = json_decode(stream_get_contents(STDIN), true); foreach 
 [ "$(echo "$D" | json ok)" = true ] || die "doctor: hiba"
 if [ -n "${GOOGLE_PLACES_API_KEY:-}" ] && echo "$D" | grep -q 'még nem futott'; then rest POST /kompasz/v1/google-sync >/dev/null && log "első Google-szinkron elindítva (háttérben)"; fi
 for path in / "$(rest GET '/wp/v2/ugynokseg?per_page=1' | json 0.link | sed "s#^$URL##")"; do
-  code=$(curl -s -L -o "$TMP/page.html" -w '%{http_code}' ${HTTP_AUTH:+-u "$HTTP_AUTH"} "$URL$path")
+  code=$(curl -s -L -b "$JAR" -o "$TMP/page.html" -w '%{http_code}' ${HTTP_AUTH:+-u "$HTTP_AUTH"} "$URL$path")
   if [ "$code" != 200 ] || grep -qiE 'critical error|kritikus hiba|Fatal error' "$TMP/page.html"; then die "$URL$path → HTTP $code"; fi
   log "OK $code $URL$path"
 done
+[ -n "${GOOGLE_PLACES_API_KEY:-}" ] || log "figyelem: nincs GOOGLE_PLACES_API_KEY – a Google-értékelések nem frissülnek"
+R="$(rest POST /kompasz/v1/geocode '{"limit":30}')" && log "térkép: $(echo "$R" | json found) új pozíció, még $(echo "$R" | json remaining) (a többi óránként, a háttérben)"
 log "kész – commit ${SHA:0:7}"

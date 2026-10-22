@@ -4,7 +4,34 @@ A verziószámok a `kompasz-core` bővítményé és a `kompasz` témáé (szema
 (`kompasz_schema` opció, `wordpress/kompasz-core/inc/migrate.php` → `kompasz_migrations()`); a migrációk telepítéskor
 automatikusan futnak (`wp kompasz migrate`), előtte a deploy adatbázis-mentést készít.
 
-## 1.2.0 – 2026-10-21 (séma: 2)
+## 1.3.0 – 2026-10-22 (séma: 5)
+
+### Egy adat – egy hely
+- **Szolgáltatás = toplista = címke:** egy taxonómia (Ügynökségek → Szolgáltatások és toplisták). Ha egy szolgáltatásnak van toplistája,
+  az a kifejezés tulajdonsága (toplista oldal címe, neve, H1, bevezető, SEO, ikon, sorrend). A toplistán mindenki szerepel, akinél
+  a szolgáltatás be van pipálva (sorrend: „Sorrend a toplistákon”). Az adatlapon egy pipalista, a nyilvános profilon egy
+  „Szolgáltatások” szakasz (a toplistás szolgáltatásnál helyezéssel). A toplista-URL-ek maradnak (/online-marketing-ugynoksegek/ …);
+  a toplistás szolgáltatás régi /cimke/… címe 301-gyel a toplistára visz.
+- **Megyék, munkanyelvek:** adatbázis-listák (Ügynökségek → Megyék / Munkanyelvek), az adatlapon legördülő / pipálható;
+  telefonszám nyelvenként. Kódba írt lista nincs; a kezdőértékek a 4. migrációban kerültek be.
+- **Duplikátumok:** normalizált név (ékezet, kis-nagybetű, cégforma, írásjel nélkül) – új érték felvételekor a meglévőt találja meg;
+  Ügynökségek → Összevonás: javaslatok, melyik maradjon, kézi összevonás, napló; a régi címek 301-gyel. Első kör: 5. migráció.
+
+### Új
+- Térkép az adatlapon: MapLibre GL JS + OpenFreeMap, címkeresés Nominatimmal (kulcs és számlázás nélkül). Admin: cím, keresés,
+  kattintás, húzható jelölő. Pozíció nélküli ügynökség: háttérkeresés a város (és cím) alapján, óránként legfeljebb 30.
+- Rank Math SEO és WPS Hide Login (belépés: /pengemedia/) – a telepítő maga telepíti és beállítja; a cím és a meta leírás
+  Rank Math mellett is a Kompasz adataiból jön.
+- WP-CLI: `wp kompasz merge-preview | geocode`; REST: `merge-preview`, `migration-log`, `geocode`; doctor: Rank Math, belépési cím, térkép.
+- Telepítő: a pmdev.hu belépési kapu (`PMDEV_USER`/`PMDEV_PASSWORD`), alapcím: master.ugynoksegek.pmdev.hu.
+
+### Adat-migráció
+- 3: régi toplisták → szolgáltatások (tagság, URL, szövegek, kiemelt ügynökség toplistái); a régi `kompasz_services` meta törlése.
+- 4: megye és munkanyelv szövegből → lista; telefonszám kulcsa a nyelv azonosítója.
+- 5: duplikátumok első köre (iparág: a statikus oldal INDUSTRY_MAP-je alapján, kiegészítve; minősítés; referencia-ügyfél).
+  A változáslista: `GET /wp-json/kompasz/v1/migration-log`.
+
+ – 2026-10-21 (séma: 2)
 
 ### Üzemeltetés
 - Telepítés HTTPS-en, SSH nélkül (`scripts/deploy-https.sh`): WP admin + REST; mentés, feltöltés, kompatibilis CF7, API-kulcs,

@@ -12,7 +12,7 @@ $around = $list ? array_slice($list, max(0, min($pos - 3, count($list) - 5)), 5,
 ?>
 <main>
   <div class="wrap profile-top">
-    <?php echo kompasz_crumbs(array_filter([[kompasz__('Kezdőlap'), home_url('/')], $cat ? [$cat->name, get_term_link($cat)] : null, [$a['name'], null]])); ?>
+    <?php echo kompasz_crumbs(array_filter([[kompasz__('Kezdőlap'), home_url('/')], $cat ? [kompasz_toplist_name($cat), get_term_link($cat)] : null, [$a['name'], null]])); ?>
     <div class="pn">
       <?php if ($prev): ?><a href="<?php echo esc_url($prev['link']); ?>" rel="prev">← <?php echo esc_html($prev['name']); ?></a><?php endif; ?>
       <?php if ($next): ?><a href="<?php echo esc_url($next['link']); ?>" rel="next"><?php echo esc_html($next['name']); ?> →</a><?php endif; ?>
@@ -25,7 +25,7 @@ $around = $list ? array_slice($list, max(0, min($pos - 3, count($list) - 5)), 5,
         <div class="ph-body">
           <div class="ph-kicker"><?php
             if ($is_featured) echo '<span class="fbadge">' . esc_html(kompasz__('KIEMELT ÜGYNÖKSÉG')) . '</span>';
-            elseif ($cat && $pos) echo esc_html(sprintf('#%02d · %s %s', $pos, $cat->name, wp_date('Y')));
+            elseif ($cat && $pos) echo esc_html(sprintf('#%02d · %s %s', $pos, kompasz_toplist_name($cat), wp_date('Y')));
           ?></div>
           <h1><?php echo esc_html($a['name']); ?></h1>
           <?php echo kompasz_rating_html($a, true); ?>
@@ -56,14 +56,17 @@ $around = $list ? array_slice($list, max(0, min($pos - 3, count($list) - 5)), 5,
           <?php endforeach; ?>
         </div>
         <?php
-        // Szolgáltatások (a címkeoldalakra linkelnek) és a toplisták, ahol rangsorolva szerepel
-        if ($a['tags']): ?>
+        // Szolgáltatások – egy lista: a toplistás szolgáltatás a toplistára visz, és mutatja a helyezést; a többi a szolgáltatás oldalára
+        if ($a['tags']):
+          $svc = $a['tags'];
+          usort($svc, function ($x, $y) { return [kompasz_is_toplist($y), $x->name] <=> [kompasz_is_toplist($x), $y->name]; }); ?>
           <h3><?php echo esc_html(kompasz__('Szolgáltatások')); ?></h3>
-          <div class="svc links"><?php foreach ($a['tags'] as $t) printf('<a href="%s">%s →</a>', esc_url(get_term_link($t)), esc_html($t->name)); ?></div>
-        <?php endif; ?>
-        <?php if ($a['cats']): ?>
-          <h3><?php echo esc_html(kompasz__('Ezeken a toplistákon szerepel')); ?></h3>
-          <div class="svc links pills"><?php foreach ($a['cats'] as $c) printf('<a href="%s">%s%s →</a>', esc_url(get_term_link($c)), kompasz_cat_icon($c, 15), esc_html($c->name)); ?></div>
+          <div class="svc links pills"><?php foreach ($svc as $t) {
+            if (kompasz_is_toplist($t)) {
+              $p = 0; foreach (kompasz_list($t) as $x) if ($x['id'] === $a['id']) { $p = $x['pos']; break; }
+              printf('<a href="%s" title="%s">%s%s%s →</a>', esc_url(get_term_link($t)), esc_attr(kompasz_toplist_name($t)), kompasz_cat_icon($t, 15), esc_html($t->name), $p ? ' <small>#' . (int) $p . '</small>' : '');
+            } else printf('<a href="%s">%s →</a>', esc_url(get_term_link($t)), esc_html($t->name));
+          } ?></div>
         <?php endif; ?>
         <?php
         // Minősítés, iparág: saját oldala akkor van, ha legalább két ügynökség megnevezi
@@ -84,6 +87,13 @@ $around = $list ? array_slice($list, max(0, min($pos - 3, count($list) - 5)), 5,
           } ?></div>
         <?php endif; ?>
       </section>
+
+      <?php $map = function_exists('kompasz_map_html') ? kompasz_map_html($a) : ''; if ($map): ?>
+      <section class="pbox" id="helyszin">
+        <h2><?php echo esc_html(kompasz__('Helyszín')); ?></h2>
+        <?php echo $map; ?>
+      </section>
+      <?php endif; ?>
 
       <?php $cf7 = function_exists('kompasz_cf7_html') ? kompasz_cf7_html($a['id']) : ''; if ($cf7): ?>
       <section class="pbox pform" id="ajanlatkeres">

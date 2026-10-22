@@ -1,7 +1,9 @@
 <?php
-// Szolgáltatás-címke oldal: a címkének megfelelő ügynökségek, saját bevezetővel és SEO-szöveggel
-get_header();
+// Szolgáltatás oldal: a szolgáltatást nyújtó ügynökségek, saját bevezetővel és SEO-szöveggel.
+// Ha a szolgáltatásnak van toplista oldala, a toplista sablon jelenik meg (a /cimke/… cím 301-gyel ide irányít).
 $t = get_queried_object();
+if (kompasz_is_toplist($t)) { get_template_part('parts/toplista'); return; }
+get_header();
 $kw = kompasz_term_meta($t, 'kompasz_kw', $t->name);
 $others = get_terms(['taxonomy' => 'szolgaltatas', 'hide_empty' => true, 'orderby' => 'count', 'order' => 'DESC', 'number' => 12, 'exclude' => [$t->term_id]]);
 ?>

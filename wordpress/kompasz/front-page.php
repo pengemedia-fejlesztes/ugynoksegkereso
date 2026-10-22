@@ -7,7 +7,7 @@ $featured = kompasz_featured();
 $tabs = array_slice($cats, 0, 5);
 $om = null;
 $home_tab = get_option('kompasz_home_tab', 'online-marketing-ugynoksegek');
-foreach ($cats as $c) if ($c->slug === $home_tab) $om = $c;
+foreach ($cats as $c) if (kompasz_toplist_slug($c) === $home_tab) $om = $c;
 $active = $om && in_array($om, $tabs, true) ? $om : ($tabs[0] ?? null);
 $home_top = array_values(array_filter(array_map(function ($id) { return get_post_status($id) === 'publish' ? kompasz_agency($id) : null; }, (array) get_option('kompasz_home_top', []))));
 $seo = get_option('kompasz_home_seo', []);
@@ -23,7 +23,7 @@ $seo = get_option('kompasz_home_seo', []);
       <?php foreach ($cats as $i => $c): $list = kompasz_list($c); ?>
         <a class="ctile<?php echo $i === 0 ? ' dark' : ''; ?>" href="<?php echo esc_url(get_term_link($c)); ?>">
           <span class="cti"><?php echo kompasz_cat_icon($c, 18); ?></span>
-          <span class="ctn"><?php echo esc_html($c->name); ?></span>
+          <span class="ctn"><?php echo esc_html(kompasz_toplist_name($c)); ?></span>
           <span class="ctf"><span class="minis"><?php foreach (array_slice($list, 0, 3) as $a) echo kompasz_logo($a, 26, 'mini'); ?></span><span class="ctc"><?php echo esc_html(sprintf(kompasz__('%d cég →'), count($list))); ?></span></span>
         </a>
       <?php endforeach; ?>

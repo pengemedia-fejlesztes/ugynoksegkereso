@@ -1,4 +1,4 @@
-// Ügynökség adatlap (admin): telefonszám-formázás, e-mail ellenőrzés, nyelv ↔ telefonszám, referenciák, szolgáltatás ↔ toplista
+// Ügynökség adatlap (admin): telefonszám-formázás, e-mail ellenőrzés, nyelv ↔ telefonszám, referenciák
 (function () {
   var box = document.querySelector('.kompasz-edit');
   if (!box) return;
@@ -67,11 +67,6 @@
       var tel = t.closest('tr').querySelector('[data-kompasz-phone]');
       tel.disabled = !t.checked;
       if (t.checked) tel.focus();
-    }
-    // Toplistára tett cég a hozzá tartozó szolgáltatást is megkapja
-    if (t.name === 'kompasz_toplists[]' && t.checked) {
-      var tag = t.closest('tr').querySelector('[name="kompasz_tags[]"]');
-      if (tag) tag.checked = true;
     }
   });
   // Mentés előtt a hibás mezőkre figyelmeztet

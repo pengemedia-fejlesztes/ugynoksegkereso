@@ -15,11 +15,11 @@ function kompasz_seo_context() {
     if (is_front_page()) {
         $title = $site . ' – ' . kompasz__('a legjobb magyar ügynökségek egy helyen');
         $desc = kompasz__('Rangsorolt toplisták online marketing, Google Ads, Facebook hirdetés, AI SEO, AI agent fejlesztő, PR, SEO, Amazon, weboldal készítő és tartalomgyártó cégekről.');
-    } elseif (is_tax('toplista')) {
+    } elseif (is_tax('szolgaltatas') && kompasz_is_toplist(get_queried_object())) {
         $t = get_queried_object();
-        $title = kompasz_term_meta($t, 'kompasz_h1', $t->name) . ' | ' . $site;
+        $title = kompasz_term_meta($t, 'kompasz_title', kompasz_term_meta($t, 'kompasz_h1', kompasz_toplist_name($t))) . ' | ' . $site;
         $intro = kompasz_term_meta($t, 'kompasz_intro', '');
-        $desc = $intro ? preg_split('/(?<=\.)\s/u', $intro)[0] : '';
+        $desc = kompasz_term_meta($t, 'kompasz_meta_desc', $intro ? preg_split('/(?<=\.)\s/u', $intro)[0] : '');
     } elseif (is_tax('szolgaltatas')) {
         $t = get_queried_object();
         $title = kompasz_term_meta($t, 'kompasz_title', $t->name) . ' (' . sprintf(kompasz__('%d cég'), count(kompasz_list($t))) . ') | ' . $site;
@@ -27,11 +27,16 @@ function kompasz_seo_context() {
     } elseif (is_singular('ugynokseg')) {
         $a = kompasz_agency(get_queried_object_id());
         $cat = kompasz_primary_context($a)[0];
-        $title = $a['name'] . ($a['city'] ? ' (' . $a['city'] . ')' : '') . ' – ' . ($cat ? $cat->name : kompasz__('ügynökség')) . ', ' . kompasz__('értékelés, elérhetőség') . ' | ' . $site;
+        $title = $a['name'] . ($a['city'] ? ' (' . $a['city'] . ')' : '') . ' – ' . ($cat ? kompasz_toplist_name($cat) : kompasz__('ügynökség')) . ', ' . kompasz__('értékelés, elérhetőség') . ' | ' . $site;
         $desc = wp_html_excerpt($a['desc'], 155, '…');
     }
     return $ctx = [$title, $desc];
 }
+
+// Rank Math mellett: a cím és a meta leírás a Kompasz adataiból (szolgáltatás → Keresőoptimalizálás mezők, ügynökség adatai), hogy egy
+// helyen legyen szerkeszthető; ahol a Kompasz nem ad értéket, a Rank Math sajátja marad. A JSON-LD-t ilyenkor a Rank Math adja.
+add_filter('rank_math/frontend/title', function ($t) { [$title] = kompasz_seo_context(); return $title ?: $t; }, 5);
+add_filter('rank_math/frontend/description', function ($d) { [, $desc] = kompasz_seo_context(); return $desc ?: $d; }, 5);
 
 add_filter('pre_get_document_title', function ($t) {
     if (kompasz_seo_plugin_active()) return $t;
@@ -70,16 +75,16 @@ function kompasz_jsonld() {
     $home = home_url('/');
     $site = ['@type' => 'WebSite', '@id' => $home . '#website', 'name' => get_bloginfo('name'), 'url' => $home, 'inLanguage' => kompasz_locale()['schema']];
     if (is_front_page()) return ['@context' => 'https://schema.org'] + $site;
-    if (is_tax(['toplista', 'szolgaltatas'])) {
+    if (is_tax('szolgaltatas')) {
         $t = get_queried_object();
         $url = get_term_link($t);
         $list = kompasz_list($t);
         [$title, $desc] = kompasz_seo_context();
-        $crumbs = $t->taxonomy === 'toplista'
-            ? [[kompasz__('Kezdőlap'), $home], [$t->name, $url]]
+        $crumbs = kompasz_is_toplist($t)
+            ? [[kompasz__('Kezdőlap'), $home], [kompasz_toplist_name($t), $url]]
             : [[kompasz__('Kezdőlap'), $home], [kompasz__('Szolgáltatások'), kompasz_page_url('cimkek')], [$t->name, $url]];
         return ['@context' => 'https://schema.org', '@graph' => [
-            ['@type' => 'CollectionPage', '@id' => $url, 'url' => $url, 'name' => kompasz_term_meta($t, 'kompasz_h1', $t->name), 'description' => $desc, 'inLanguage' => kompasz_locale()['schema'], 'isPartOf' => ['@id' => $home . '#website'], 'mainEntity' => ['@id' => $url . '#lista']],
+            ['@type' => 'CollectionPage', '@id' => $url, 'url' => $url, 'name' => kompasz_term_meta($t, 'kompasz_h1', kompasz_is_toplist($t) ? kompasz_toplist_name($t) : $t->name), 'description' => $desc, 'inLanguage' => kompasz_locale()['schema'], 'isPartOf' => ['@id' => $home . '#website'], 'mainEntity' => ['@id' => $url . '#lista']],
             kompasz_breadcrumb_ld($crumbs),
             ['@type' => 'ItemList', '@id' => $url . '#lista', 'numberOfItems' => count($list), 'itemListOrder' => 'https://schema.org/ItemListOrderAscending',
                 'itemListElement' => array_map(function ($a, $i) { return ['@type' => 'ListItem', 'position' => $i + 1, 'url' => $a['link'], 'name' => $a['name']]; }, $list, array_keys($list))],
@@ -90,7 +95,7 @@ function kompasz_jsonld() {
         $a = kompasz_agency(get_queried_object_id());
         $cat = kompasz_primary_context($a)[0];
         $crumbs = [[kompasz__('Kezdőlap'), $home]];
-        if ($cat) $crumbs[] = [$cat->name, get_term_link($cat)];
+        if ($cat) $crumbs[] = [kompasz_toplist_name($cat), get_term_link($cat)];
         $crumbs[] = [$a['name'], $a['link']];
         $org = kompasz_org_ld($a);
         $org['@id'] = $a['link'] . '#ceg';

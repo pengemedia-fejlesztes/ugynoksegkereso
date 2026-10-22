@@ -2,29 +2,23 @@
 // Admin mezők: toplista- és címke-szövegek (term meta), közös mező-megjelenítés. Az ügynökség adatlapja: agency-edit.php
 if (!defined('ABSPATH')) exit;
 
-/** Toplista és címke szövegmezői */
-function kompasz_term_fields($taxonomy) {
-    if ($taxonomy === 'toplista') {
-        return [
-            'kompasz_short'    => ['Rövid név (fejléc)', 'text', 'Pl. „Google Ads”.'],
-            'kompasz_icon'     => ['Ikon', 'icon', ''],
-            'kompasz_order'    => ['Sorrend a fejlécben', 'number', ''],
-            'kompasz_ai'       => ['AI & online marketing csoport', 'checkbox', ''],
-            'kompasz_tag'      => ['Hozzá tartozó szolgáltatás', 'tagselect', 'Az ügynökség adatlapján egy sorban szerepel a szolgáltatással; aki a toplistán van, ezt a szolgáltatás-címkét is megkapja.'],
-            'kompasz_card'     => ['Rövid leírás (csempe)', 'text', ''],
-            'kompasz_h1'       => ['Oldalcím (H1)', 'text', ''],
-            'kompasz_question' => ['Bevezető kérdés', 'text', 'Pl. „Mit csinál egy Google Ads ügynökség?”'],
-            'kompasz_intro'    => ['Bevezető szöveg (az oldal tetején)', 'textarea', ''],
-            'kompasz_seo'      => ['SEO-blokkok (az oldal alján)', 'seo', ''],
-        ];
-    }
+/** Szolgáltatás szövegmezői: [címke, típus, súgó, csoport]. A „toplista” csoport csak akkor számít, ha van toplista oldal (URL). */
+function kompasz_term_fields($taxonomy = 'szolgaltatas') {
     return [
-        'kompasz_kw'        => ['Fókusz-kulcsszó', 'text', 'Pl. „SEO ügynökség”.'],
-        'kompasz_h1'        => ['Oldalcím (H1)', 'text', ''],
-        'kompasz_title'     => ['HTML title', 'text', ''],
-        'kompasz_meta_desc' => ['Meta leírás', 'textarea', 'Kb. 150 karakter.'],
-        'kompasz_intro'     => ['Bevezető szöveg (az oldal tetején)', 'textarea', ''],
-        'kompasz_seo'       => ['SEO-blokkok (az oldal alján)', 'seo', ''],
+        'kompasz_toplist_slug' => ['Toplista oldal címe (URL)', 'slug', 'Ha kitöltöd, a szolgáltatásnak saját toplista oldala lesz a gyökérben, pl. „google-ads-ugynoksegek” → /google-ads-ugynoksegek/. Üresen csak szolgáltatás-oldal van (/' . kompasz_slug('cimke') . '/…/). A toplistán minden ügynökség szerepel, akinél ez a szolgáltatás be van pipálva, a „Sorrend” szerint.', 'toplista'],
+        'kompasz_toplist_name' => ['Toplista neve', 'text', 'Pl. „Google Ads ügynökségek” (fejléc, morzsamenü, csempék).', 'toplista'],
+        'kompasz_short'    => ['Rövid név (fejléc)', 'text', 'Pl. „Google Ads”.', 'toplista'],
+        'kompasz_icon'     => ['Ikon', 'icon', '', 'toplista'],
+        'kompasz_order'    => ['Sorrend a fejlécben', 'number', 'Kisebb szám = előrébb.', 'toplista'],
+        'kompasz_ai'       => ['AI & online marketing csoport', 'checkbox', '', 'toplista'],
+        'kompasz_card'     => ['Rövid leírás (csempe)', 'text', '', 'toplista'],
+        'kompasz_question' => ['Bevezető kérdés', 'text', 'Pl. „Mit csinál egy Google Ads ügynökség?”', 'toplista'],
+        'kompasz_h1'       => ['Oldalcím (H1)', 'text', '', 'oldal'],
+        'kompasz_intro'    => ['Bevezető szöveg (az oldal tetején)', 'textarea', '', 'oldal'],
+        'kompasz_kw'       => ['Fókusz-kulcsszó', 'text', 'Pl. „SEO ügynökség”.', 'seo'],
+        'kompasz_title'    => ['HTML title', 'text', 'Üresen: az oldalcím.', 'seo'],
+        'kompasz_meta_desc'=> ['Meta leírás', 'textarea', 'Kb. 150 karakter. Üresen: a bevezető első mondata.', 'seo'],
+        'kompasz_seo'      => ['SEO-blokkok (az oldal alján)', 'seo', '', 'seo'],
     ];
 }
 
@@ -37,6 +31,7 @@ function kompasz_render_field($key, $def, $value, $wrap = 'p') {
     [$label, $type, $help] = $def;
     $id = esc_attr($key);
     $out = '';
+    if ($type === 'slug') $type = 'text';
     switch ($type) {
         case 'textarea':
             $out = sprintf('<textarea id="%s" name="%s" rows="4" class="large-text">%s</textarea>', $id, $id, esc_textarea($value));
@@ -51,11 +46,6 @@ function kompasz_render_field($key, $def, $value, $wrap = 'p') {
         case 'icon':
             $out = sprintf('<select id="%s" name="%s"><option value="">–</option>', $id, $id);
             foreach (kompasz_icon_names() as $k => $n) $out .= sprintf('<option value="%s" %s>%s</option>', esc_attr($k), selected($value, $k, false), esc_html($n));
-            $out .= '</select>';
-            break;
-        case 'tagselect':
-            $out = sprintf('<select id="%s" name="%s"><option value="">– nincs –</option>', $id, $id);
-            foreach (get_terms(['taxonomy' => 'szolgaltatas', 'hide_empty' => false, 'orderby' => 'name']) ?: [] as $t) $out .= sprintf('<option value="%d" %s>%s</option>', $t->term_id, selected((int) $value, $t->term_id, false), esc_html($t->name));
             $out .= '</select>';
             break;
         case 'seo':
@@ -83,7 +73,7 @@ function kompasz_render_field($key, $def, $value, $wrap = 'p') {
 function kompasz_sanitize_field($type, $raw) {
     switch ($type) {
         case 'url': return esc_url_raw(trim((string) $raw));
-        case 'tagselect': return (string) absint($raw) ?: '';
+        case 'slug': return sanitize_title((string) $raw);
         case 'number': return $raw === '' ? '' : (string) intval($raw);
         case 'decimal': return $raw === '' ? '' : (string) max(0, min(5, round((float) str_replace(',', '.', $raw), 1)));
         case 'checkbox': return $raw ? '1' : '';
@@ -100,23 +90,50 @@ function kompasz_sanitize_field($type, $raw) {
     }
 }
 
-// --- Term meta (toplista, szolgáltatás) ---
-foreach (['toplista', 'szolgaltatas'] as $tax) {
-    add_action("{$tax}_add_form_fields", function () use ($tax) {
-        wp_nonce_field('kompasz_term', 'kompasz_term_nonce');
-        foreach (kompasz_term_fields($tax) as $key => $def) echo '<div class="form-field">' . kompasz_render_field($key, $def, '') . '</div>';
-    });
-    add_action("{$tax}_edit_form_fields", function ($term) use ($tax) {
-        wp_nonce_field('kompasz_term', 'kompasz_term_nonce');
-        foreach (kompasz_term_fields($tax) as $key => $def) echo kompasz_render_field($key, $def, get_term_meta($term->term_id, $key, true), 'tr');
-    });
-    $save = function ($term_id) use ($tax) {
-        if (!isset($_POST['kompasz_term_nonce']) || !wp_verify_nonce($_POST['kompasz_term_nonce'], 'kompasz_term')) return;
-        if (!current_user_can('manage_categories')) return;
-        foreach (kompasz_term_fields($tax) as $key => [, $type]) {
-            update_term_meta($term_id, $key, kompasz_sanitize_field($type, wp_unslash($_POST[$key] ?? '')));
+// --- Szolgáltatás term meta: egy űrlap, a toplista-mezők csoportosítva ---
+add_action('szolgaltatas_add_form_fields', function () {
+    wp_nonce_field('kompasz_term', 'kompasz_term_nonce');
+    foreach (kompasz_term_fields() as $key => $def) echo '<div class="form-field">' . kompasz_render_field($key, $def, '') . '</div>';
+});
+add_action('szolgaltatas_edit_form_fields', function ($term) {
+    wp_nonce_field('kompasz_term', 'kompasz_term_nonce');
+    $groups = ['toplista' => 'Toplista oldal', 'oldal' => 'Oldal szövegei', 'seo' => 'Keresőoptimalizálás'];
+    $cur = '';
+    foreach (kompasz_term_fields() as $key => $def) {
+        if ($def[3] !== $cur) { $cur = $def[3]; echo '<tr><th colspan="2"><h2 style="margin:16px 0 0">' . esc_html($groups[$cur]) . '</h2></th></tr>'; }
+        echo kompasz_render_field($key, $def, get_term_meta($term->term_id, $key, true), 'tr');
+    }
+    $n = count(get_objects_in_term($term->term_id, 'szolgaltatas'));
+    $url = get_term_link($term);
+    printf('<tr><th>Nyilvános oldal</th><td><a href="%s" target="_blank">%s</a> · %d ügynökség</td></tr>', esc_url($url), esc_html($url), $n);
+});
+$kompasz_term_save = function ($term_id) {
+    if (!isset($_POST['kompasz_term_nonce']) || !wp_verify_nonce($_POST['kompasz_term_nonce'], 'kompasz_term')) return;
+    if (!current_user_can('manage_categories')) return;
+    foreach (kompasz_term_fields() as $key => [, $type]) {
+        $v = kompasz_sanitize_field($type, wp_unslash($_POST[$key] ?? ''));
+        // A toplista címe nem ütközhet másik toplistával vagy oldallal
+        if ($key === 'kompasz_toplist_slug' && $v !== '') {
+            $taken = get_terms(['taxonomy' => 'szolgaltatas', 'hide_empty' => false, 'fields' => 'ids', 'exclude' => [$term_id], 'meta_query' => [['key' => $key, 'value' => $v]]]);
+            if ($taken || get_page_by_path($v)) { set_transient('kompasz_term_error', 'A toplista címe („' . $v . '”) már foglalt, nem lett mentve.', 60); continue; }
         }
-    };
-    add_action("created_{$tax}", $save);
-    add_action("edited_{$tax}", $save);
-}
+        update_term_meta($term_id, $key, $v);
+    }
+};
+add_action('created_szolgaltatas', $kompasz_term_save);
+add_action('edited_szolgaltatas', $kompasz_term_save);
+add_action('admin_notices', function () {
+    if ($e = get_transient('kompasz_term_error')) { delete_transient('kompasz_term_error'); echo '<div class="notice notice-error"><p>' . esc_html($e) . '</p></div>'; }
+});
+
+// A szolgáltatások listájában látszik, melyiknek van toplistája
+add_filter('manage_edit-szolgaltatas_columns', function ($cols) {
+    $new = [];
+    foreach ($cols as $k => $v) { $new[$k] = $v; if ($k === 'name') $new['kompasz_toplist'] = 'Toplista oldal'; }
+    return $new;
+});
+add_filter('manage_szolgaltatas_custom_column', function ($out, $col, $term_id) {
+    if ($col !== 'kompasz_toplist') return $out;
+    $slug = kompasz_toplist_slug($term_id);
+    return $slug !== '' ? sprintf('<a href="%s" target="_blank">/%s/</a> · %d.', esc_url(home_url('/' . $slug . '/')), esc_html($slug), (int) get_term_meta($term_id, 'kompasz_order', true)) : '–';
+}, 10, 3);

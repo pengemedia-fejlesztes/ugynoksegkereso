@@ -22,6 +22,12 @@ async function copyLogo(file) {
 const slugify = s => s.toLowerCase().replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
   .normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const firstSentence = t => ((t || '').match(/^.{40,220}?[.!?](?=\s|$)/s) || [''])[0].trim();
+// Rangliste → Leistung (in WordPress ist die Rangliste eine Eigenschaft der Leistung; ohne Paar entsteht eine neue Leistung)
+const TOPLIST_TAG = {
+  'amazon-agenturen': 'amazon', 'content-marketing-agenturen': 'content-marketing', 'google-ads-agenturen': 'google-ads',
+  'ki-agenten-entwickler': 'ki-automatisierung', 'ki-seo-agenturen': 'ki-seo-geo', 'meta-ads-agenturen': 'meta-ads',
+  'pr-agenturen': 'pr', 'seo-agenturen': 'seo', 'webdesign-agenturen': 'webdesign',
+};
 const catSlug = Object.fromEntries(CATEGORIES.map(c => [c.name, c.slug]));
 
 await rm(OUT, { recursive: true, force: true });
@@ -62,7 +68,7 @@ const data = {
   ref_pages: { clients: [], certs: certPages, industries: indPages },
   settings: { featured: null, featured_categories: [], featured_pitch: '', home_top: [], home_tab: 'online-marketing-agenturen' },
   home_seo: HOME_SEO,
-  categories: CATEGORIES.map((c, i) => ({ slug: c.slug, name: c.name, short: c.short, icon: c.icon, order: i + 1, ai: !!c.ai, desc: c.desc,
+  categories: CATEGORIES.map((c, i) => ({ slug: c.slug, name: c.name, tag: TOPLIST_TAG[c.slug] || null, short: c.short, icon: c.icon, order: i + 1, ai: !!c.ai, desc: c.desc,
     h1: c.h1, question: c.question, intro: c.intro, seo: c.seo.map(([h, p]) => ({ h, p })) })),
   tags: TAGS.map(t => ({ slug: t.slug, name: t.label, kw: t.kw, h1: t.h1, title: t.title, desc: t.desc, intro: t.intro, seo: t.seo.map(([h, p]) => ({ h, p })) })),
   agencies,

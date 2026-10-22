@@ -6,9 +6,12 @@
 //   POST /wp-json/kompasz/v1/migrate       függőben lévő migrációk
 //   POST /wp-json/kompasz/v1/setup         ajánlatkérő űrlap, ütemezés, URL-szabályok
 //   POST /wp-json/kompasz/v1/smoke         füstteszt minden ügynökségre
-//   POST /wp-json/kompasz/v1/config        {"google_api_key": "…"}
+//   POST /wp-json/kompasz/v1/config        {"google_api_key": "…", "login_slug": "pengemedia"}
 //   POST /wp-json/kompasz/v1/google-sync   Google-értékelések frissítése (háttérben, kötegekben)
 //   POST /wp-json/kompasz/v1/import        {"step": "base" | "agencies" (+ "offset") | "finish"} – adatimport lépésenként
+//   GET  /wp-json/kompasz/v1/merge-preview összevonásra javasolt duplikátumok
+//   GET  /wp-json/kompasz/v1/migration-log a migrációk naplója (változáslistával)
+//   POST /wp-json/kompasz/v1/geocode       {"limit": 30} hiányzó térképpozíciók (Nominatim)
 //   POST /wp-json/kompasz/v1/restore       {"file": "<mentés neve>"} – adatbázis visszaállítása egy korábbi mentésből
 // A HTTPS-es telepítő (scripts/deploy-https.sh) ezeket hívja; SSH nem kell.
 if (!defined('ABSPATH')) exit;
@@ -38,8 +41,23 @@ function kompasz_doctor() {
     $check('Google-szinkron hibák', !$errs, $errs ? count($errs) . ' ügynökség: ' . implode(', ', array_map('get_the_title', array_slice($errs, 0, 5))) : 'nincs', false);
     $check('Jóváhagyásra vár', true, (string) count(kompasz_pending_terms()));
     $check('Ügynökségek', (int) wp_count_posts('ugynokseg')->publish > 0, (string) wp_count_posts('ugynokseg')->publish);
+    $check('Rank Math SEO', defined('RANK_MATH_VERSION'), defined('RANK_MATH_VERSION') ? RANK_MATH_VERSION : 'nincs bekapcsolva', false);
+    $whl = in_array('wps-hide-login/wps-hide-login.php', (array) get_option('active_plugins', []), true);
+    $check('Belépési cím (WPS Hide Login)', $whl && get_option('whl_page'), $whl ? home_url('/' . get_option('whl_page', 'login') . '/') : 'nincs bekapcsolva', false);
+    $geo = count(get_posts(['post_type' => 'ugynokseg', 'post_status' => 'publish', 'fields' => 'ids', 'numberposts' => -1, 'meta_key' => 'kompasz_lat']));
+    $check('Térkép-pozíció', true, $geo . ' / ' . wp_count_posts('ugynokseg')->publish . ' ügynökségnél');
     $check('Keresőrobotok', true, get_option('blog_public') ? 'indexelhető' : 'kitiltva (noindex)');
     return ['ok' => $fail === 0, 'rows' => $rows];
+}
+
+/** Telepítés utáni beállítás (WP-CLI és REST közös): ajánlatkérő űrlap, ütemezés, Rank Math, URL-szabályok. Visszaad: az űrlap azonosítója */
+function kompasz_setup() {
+    $form = kompasz_cf7_ensure_form();
+    if (!wp_next_scheduled(KOMPASZ_GOOGLE_HOOK)) wp_schedule_event(time() + HOUR_IN_SECONDS, 'weekly', KOMPASZ_GOOGLE_HOOK);
+    // Rank Math: fiók-összekapcsolás nélkül csak a regisztráció kihagyásával ír a fejlécbe (= a beállító varázsló „Skip” lépése)
+    if (defined('RANK_MATH_VERSION') && !get_option('rank_math_registration_skip')) update_option('rank_math_registration_skip', true);
+    flush_rewrite_rules();
+    return $form;
 }
 
 /** Füstteszt minden ügynökségre: az admin adatlap és a profiladatok hiba nélkül állnak elő. Visszaad: [count, problems[]] */
@@ -58,14 +76,22 @@ function kompasz_smoke() {
         ob_start();
         kompasz_agency_box(get_post($current));
         $html = ob_get_clean();
-        foreach (['name="kompasz_tags[]"', 'name="kompasz_lang_on[]"', 'kompasz_terms[minosites]', 'kompasz_terms[iparag]', 'krefs', 'kompasz_founded'] as $needle) {
+        foreach (['name="kompasz_tags[]"', 'name="kompasz_lang_on[]"', 'name="kompasz_megye"', 'kmap-edit', 'kompasz_terms[minosites]', 'kompasz_terms[iparag]', 'krefs', 'kompasz_founded'] as $needle) {
             if (strpos($html, $needle) === false) $problems[] = "#$current " . get_the_title($current) . ": hiányzik az adatlapról: $needle";
         }
-        foreach (['kompasz_certs', 'kompasz_industries', 'kompasz_references'] as $old) {
+        if (strpos($html, 'kompasz_toplists') !== false) $problems[] = "#$current " . get_the_title($current) . ': külön toplista-lista maradt az adatlapon';
+        foreach (['kompasz_certs', 'kompasz_industries', 'kompasz_references', 'kompasz_county', 'kompasz_languages', 'kompasz_services'] as $old) {
             if (get_post_meta($current, $old, true) !== '') $problems[] = "#$current " . get_the_title($current) . ": régi mező maradt: $old";
         }
         $a = kompasz_agency($current);
         foreach (['certs', 'industries', 'references', 'phones', 'tags', 'cats'] as $k) if (!is_array($a[$k])) $problems[] = "#$current: $k nem tömb";
+    }
+    // Szerkezet: nincs külön toplista-taxonómia, minden toplistának van címe és neve, a telefonszám kulcsa munkanyelv
+    $old = get_terms(['taxonomy' => 'toplista', 'hide_empty' => false, 'fields' => 'ids']);
+    if (!is_wp_error($old) && $old) $problems[] = count($old) . ' régi toplista-kifejezés maradt (toplista taxonómia)';
+    if (!kompasz_categories()) $problems[] = 'nincs egy toplista oldallal rendelkező szolgáltatás sem';
+    foreach ($ids as $current) {
+        foreach (array_keys(kompasz_agency_phone_map($current)) as $tid) if (!term_exists((int) $tid, 'nyelv')) $problems[] = "#$current: telefonszám ismeretlen nyelvhez ($tid)";
     }
     restore_error_handler();
     wp_set_current_user($prev_user);
@@ -151,10 +177,7 @@ add_action('rest_api_init', function () {
         return ['ok' => true, 'done' => kompasz_run_migrations(), 'schema' => (int) get_option('kompasz_schema', 1)];
     });
     $route('/setup', 'POST', function () {
-        $form = kompasz_cf7_ensure_form();
-        if (!wp_next_scheduled(KOMPASZ_GOOGLE_HOOK)) wp_schedule_event(time() + HOUR_IN_SECONDS, 'weekly', KOMPASZ_GOOGLE_HOOK);
-        flush_rewrite_rules();
-        return ['ok' => true, 'cf7_form' => $form];
+        return ['ok' => true, 'cf7_form' => kompasz_setup()];
     });
     $route('/smoke', 'POST', function () { $s = kompasz_smoke(); return $s + ['ok' => !$s['problems']]; });
     $route('/config', 'POST', function (WP_REST_Request $r) {
@@ -162,6 +185,13 @@ add_action('rest_api_init', function () {
         if ($r->has_param('google_api_key')) {
             update_option('kompasz_google_api_key', sanitize_text_field((string) $r->get_param('google_api_key')), false);
             $set[] = 'google_api_key';
+        }
+        // WPS Hide Login: a belépési oldal címe (pl. pengemedia → /pengemedia/; a wp-login.php és kijelentkezve a /wp-admin/ 404)
+        if ($r->has_param('login_slug')) {
+            $slug = sanitize_title((string) $r->get_param('login_slug'));
+            if ($slug === '' || in_array($slug, ['wp-admin', 'wp-login', 'login', 'admin'], true)) return new WP_Error('config', 'Érvénytelen belépési cím.', ['status' => 400]);
+            update_option('whl_page', $slug);
+            $set[] = 'login_slug';
         }
         return ['ok' => true, 'set' => $set];
     });
@@ -189,6 +219,12 @@ add_action('rest_api_init', function () {
             case 'finish': kompasz_import_finish($data); return ['ok' => true, 'next' => null, 'total' => $total];
         }
         return new WP_Error('import', 'Ismeretlen lépés', ['status' => 400]);
+    });
+    $route('/merge-preview', 'GET', function () { return kompasz_merge_preview(); });
+    $route('/migration-log', 'GET', function () { return (array) get_option('kompasz_migration_log', []); });
+    $route('/geocode', 'POST', function (WP_REST_Request $r) {
+        [$found, $missing, $left] = kompasz_geocode_batch(min(60, absint($r->get_param('limit')) ?: 30));
+        return ['ok' => true, 'found' => $found, 'missing' => $missing, 'remaining' => $left];
     });
     $route('/google-sync', 'POST', function () {
         if (!kompasz_google_key()) return new WP_Error('google', 'Nincs Google API-kulcs.', ['status' => 400]);
