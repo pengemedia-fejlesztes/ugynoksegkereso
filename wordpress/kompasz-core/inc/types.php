@@ -40,8 +40,10 @@ function kompasz_register_types() {
         'label' => 'Toplisták (régi)', 'public' => false, 'show_ui' => false, 'show_in_rest' => false, 'query_var' => false, 'rewrite' => false, 'hierarchical' => true,
     ]);
 
-    // Megyék / tartományok és munkanyelvek: adatbázis-listák, az adminisztrátor bővítheti (Ügynökségek → Megyék / Munkanyelvek)
-    foreach (['megye' => ['Megyék', 'Megye', 'Új megye'], 'nyelv' => ['Munkanyelvek', 'Munkanyelv', 'Új munkanyelv']] as $tax => [$plural, $single, $add]) {
+    // Adatbázis-listák az adatlaphoz (nem saját oldallal): az adminisztrátor bővíti (Ügynökségek → …), vagy az adatlapon „Új érték a listába”
+    $lists = ['varos' => ['Városok', 'Város', 'Új város'], 'megye' => ['Megyék', 'Megye', 'Új megye'], 'nyelv' => ['Munkanyelvek', 'Munkanyelv', 'Új munkanyelv'],
+        'munkavegzes' => ['Munkavégzés', 'Munkavégzési forma', 'Új munkavégzési forma'], 'arazas' => ['Árazási módok', 'Árazási mód', 'Új árazási mód']];
+    foreach ($lists as $tax => [$plural, $single, $add]) {
         register_taxonomy($tax, ['ugynokseg'], [
             'labels' => ['name' => $plural, 'singular_name' => $single, 'add_new_item' => $add, 'edit_item' => $single . ' szerkesztése', 'menu_name' => $plural],
             'hierarchical' => false, 'public' => false, 'show_ui' => true, 'show_in_menu' => true, 'show_in_rest' => false,

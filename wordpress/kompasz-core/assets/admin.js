@@ -1,4 +1,4 @@
-// Ügynökség adatlap (admin): telefonszám-formázás, e-mail ellenőrzés, nyelv ↔ telefonszám, referenciák
+// Ügynökség adatlap (admin): telefonszám-formázás, e-mail ellenőrzés, keresős pipalisták (adatbázis-listák)
 (function () {
   var box = document.querySelector('.kompasz-edit');
   if (!box) return;
@@ -60,14 +60,38 @@
       mark(t, !t.value || /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test(t.value), 'Hibás e-mail cím');
     }
   });
-  // Nyelv bepipálása → telefonszám-mező aktív
-  box.addEventListener('change', function (e) {
-    var t = e.target;
-    if (t.name === 'kompasz_lang_on[]') {
-      var tel = t.closest('tr').querySelector('[data-kompasz-phone]');
-      tel.disabled = !t.checked;
-      if (t.checked) tel.focus();
-    }
+  // Keresős pipalisták (adatbázis-listák): szűrés, darabszám, a sor mezője (telefonszám, link) csak bejelölve aktív
+  function sync(pick) {
+    var n = 0;
+    pick.querySelectorAll('.kpick-row').forEach(function (row) {
+      var i = row.querySelector('input[type=checkbox], input[type=radio]');
+      var on = i && i.checked && i.value !== '0';
+      row.classList.toggle('on', !!on);
+      if (on) n++;
+      var x = row.querySelector('.kpick-extra');
+      if (x) x.disabled = !on;
+    });
+    var c = pick.querySelector('.kpick-count');
+    if (c) c.textContent = n ? n + ' kiválasztva' : '';
+  }
+  box.querySelectorAll('.kpick').forEach(function (pick) {
+    sync(pick);
+    var q = pick.querySelector('.kpick-q'), none = pick.querySelector('.kpick-none');
+    q.addEventListener('input', function () {
+      var v = q.value.trim().toLowerCase(), shown = 0;
+      pick.querySelectorAll('.kpick-row').forEach(function (row) {
+        var hit = !v || row.textContent.toLowerCase().indexOf(v) >= 0;
+        row.hidden = !hit;
+        if (hit) shown++;
+      });
+      none.hidden = shown > 0;
+    });
+    q.addEventListener('keydown', function (e) { if (e.key === 'Enter') e.preventDefault(); });
+    pick.addEventListener('change', function (e) {
+      sync(pick);
+      var x = e.target.closest('.kpick-row') && e.target.closest('.kpick-row').querySelector('.kpick-extra');
+      if (x && e.target.checked && x.type === 'tel' && !x.value) x.focus();
+    });
   });
   // Mentés előtt a hibás mezőkre figyelmeztet
   var form = document.getElementById('post');
@@ -76,33 +100,4 @@
     if (bad && !confirm('Van hibás telefonszám vagy e-mail cím (pirossal jelölve). A hibás értéket a rendszer nem menti. Folytatod?')) { e.preventDefault(); bad.previousElementSibling.focus(); }
   });
 
-  // Referenciák
-  var refs = box.querySelector('.krefs'), add = box.querySelector('.kref-add');
-  var known = {};
-  box.querySelectorAll('#kompasz_clients option').forEach(function (o) { known[o.value.toLowerCase()] = 1; });
-  function row(i) {
-    var d = document.createElement('div');
-    d.className = 'kref';
-    d.innerHTML = '<input type="text" name="kompasz_refs[' + i + '][name]" list="kompasz_clients" class="regular-text" placeholder="Ügyfél neve"> ' +
-      '<input type="url" name="kompasz_refs[' + i + '][url]" placeholder="https://… (nem kötelező)" class="regular-text"> <em class="kpending" hidden></em> ' +
-      '<button type="button" class="button-link kref-del" aria-label="Törlés">✕</button>';
-    return d;
-  }
-  if (add) add.addEventListener('click', function () {
-    var r = row(Date.now());
-    refs.appendChild(r);
-    r.querySelector('input').focus();
-  });
-  if (refs) {
-    refs.addEventListener('click', function (e) { if (e.target.classList.contains('kref-del')) e.target.closest('.kref').remove(); });
-    refs.addEventListener('input', function (e) {
-      if (!e.target.matches('[list="kompasz_clients"]')) return;
-      var em = e.target.closest('.kref').querySelector('.kpending');
-      if (!em) return;
-      var v = e.target.value.trim().toLowerCase();
-      em.hidden = !v || !!known[v];
-      em.textContent = refs.getAttribute('data-pending-label');
-    });
-    refs.addEventListener('keydown', function (e) { if (e.key === 'Enter' && e.target.matches('input')) { e.preventDefault(); add.click(); } });
-  }
 })();

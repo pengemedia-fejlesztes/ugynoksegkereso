@@ -28,6 +28,8 @@ define('DISABLE_WP_CRON', true);
 PHP
 $WP db reset --yes --quiet 2>/dev/null || $WP db create --quiet
 $WP core install --url="http://127.0.0.1:$PORT" --title=Kompasz --admin_user=admin --admin_password=admin --admin_email=admin@example.com --skip-email --quiet
+# A php -S a wp mappát szolgálja ki a gyökérben: a cím ne kapjon /wp/ előtagot
+$WP option update home "http://127.0.0.1:$PORT" --quiet; $WP option update siteurl "http://127.0.0.1:$PORT" --quiet
 
 [ -d wp/wp-content/plugins/contact-form-7 ] || [ -f cf7.zip ] || curl -sSLfo cf7.zip https://downloads.wordpress.org/plugin/contact-form-7.zip
 [ -d wp/wp-content/plugins/contact-form-7 ] || unzip -qo cf7.zip -d wp/wp-content/plugins
@@ -79,6 +81,14 @@ grep -q 'kmap-pub\|id="helyszin"' page.html && echo "OK térkép a profilon" || 
 HOME_URL=$($WP option get home)
 code=$(curl -s -o login.html -w '%{http_code}' "$HOME_URL/pengemedia/")
 [ "$code" = 200 ] && grep -q 'name="log"' login.html && echo "OK belépés: /pengemedia/" || { echo "::error::a /pengemedia/ nem a belépési oldal (HTTP $code)"; fail=1; }
+# Admin adatlap: minden lista középen (keresős pipalista), a jobb oldalon nincs lista-doboz, nincs beírós lista
+curl -s -c jar -b jar -o /dev/null "$HOME_URL/pengemedia/"
+curl -s -c jar -b jar -b 'wordpress_test_cookie=WP%20Cookie%20check' -o /dev/null --data 'log=admin&pwd=admin&testcookie=1' "$HOME_URL/pengemedia/"
+AID=$($WP post list --post_type=ugynokseg --field=ID --posts_per_page=1)
+curl -s -b jar -o edit.html "http://127.0.0.1:$PORT/wp-admin/post.php?post=$AID&action=edit"
+for tax in varos megye munkavegzes arazas nyelv szolgaltatas minosites iparag ugyfel; do grep -q "data-tax=\"$tax\"" edit.html || { echo "::error::admin adatlap: hiányzik a(z) $tax lista"; fail=1; }; done
+BOX='id="(tagsdiv-(toplista|szolgaltatas|ugyfel|minosites|iparag|megye|nyelv|varos|munkavegzes|arazas)|(toplista|szolgaltatas|ugyfel|minosites|iparag|megye|nyelv|varos|munkavegzes|arazas)div)"'
+if grep -qE "$BOX" edit.html; then echo "::error::admin adatlap: lista-doboz a jobb oldalon: $(grep -oE "$BOX" edit.html | head -3 | tr '\n' ' ')"; fail=1; else echo "OK admin adatlap: minden lista középen, jobb oldalon nincs lista-doboz"; fi
 code=$(curl -s -o /dev/null -w '%{http_code}' "http://127.0.0.1:$PORT/wp-login.php")
 [ "$code" = 404 ] && echo "OK wp-login.php → 404" || { echo "::error::a wp-login.php nem rejtett (HTTP $code)"; fail=1; }
 if [ -f wp/wp-content/debug.log ] && grep -E 'PHP (Fatal|Warning|Notice|Deprecated).*kompasz' wp/wp-content/debug.log; then

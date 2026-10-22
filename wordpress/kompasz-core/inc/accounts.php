@@ -58,7 +58,7 @@ add_filter('map_meta_cap', function ($caps, $cap, $user_id, $args) {
 
 // A toplistás szolgáltatásokat a cégfiók nem módosíthatja (agency-edit.php, mentés); a listákat (megye, nyelv) csak a szerkesztőség bővíti
 add_filter('register_taxonomy_args', function ($args, $taxonomy) {
-    if (in_array($taxonomy, ['megye', 'nyelv'], true)) $args['capabilities'] = ['manage_terms' => 'manage_categories', 'edit_terms' => 'manage_categories', 'delete_terms' => 'manage_categories', 'assign_terms' => 'edit_posts'];
+    if (in_array($taxonomy, ['varos', 'megye', 'nyelv', 'munkavegzes', 'arazas'], true)) $args['capabilities'] = ['manage_terms' => 'manage_categories', 'edit_terms' => 'manage_categories', 'delete_terms' => 'manage_categories', 'assign_terms' => 'edit_posts'];
     return $args;
 }, 10, 2);
 

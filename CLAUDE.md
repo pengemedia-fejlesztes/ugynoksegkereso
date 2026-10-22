@@ -4,7 +4,7 @@ Nyelv: a felhasználóval magyarul. Jelszót, tokent soha ne kérj a chatben: k�
 
 ## Szerkezet
 - Egy lista = egy taxonómia: `szolgaltatas` (a toplista a szolgáltatás tulajdonsága: `kompasz_toplist_slug` term meta + szövegek),
-  `megye`, `nyelv`, `minosites`, `iparag`, `ugyfel`. Kódba írt lista nincs; kezdőérték csak egyszeri migrációban.
+  `varos`, `megye`, `munkavegzes`, `arazas`, `nyelv`, `minosites`, `iparag`, `ugyfel`. Kódba írt lista nincs, beírós lista sincs (adatlap: `kompasz_picker`); kezdőérték csak egyszeri migrációban.
 - Duplikátum: `inc/merge.php` (normalizált név, Ügynökségek → Összevonás, `wp kompasz merge-preview`); térkép: `inc/map.php`
   (MapLibre GL JS + OpenFreeMap, címkeresés: Nominatim). Belépés: `/pengemedia/` (WPS Hide Login); SEO: Rank Math + `kompasz/inc/seo.php`.
 - `wordpress/kompasz-core/` bővítmény (adat, admin, import, migráció, REST/CLI üzemeltetés), `wordpress/kompasz/` téma.

@@ -76,11 +76,12 @@ function kompasz_smoke() {
         ob_start();
         kompasz_agency_box(get_post($current));
         $html = ob_get_clean();
-        foreach (['name="kompasz_tags[]"', 'name="kompasz_lang_on[]"', 'name="kompasz_megye"', 'kmap-edit', 'kompasz_terms[minosites]', 'kompasz_terms[iparag]', 'krefs', 'kompasz_founded'] as $needle) {
+        foreach (array_merge(array_map(function ($t) { return 'data-tax="' . $t . '"'; }, array_keys(kompasz_edit_lists())), ['kmap-edit', 'kompasz_founded']) as $needle) {
             if (strpos($html, $needle) === false) $problems[] = "#$current " . get_the_title($current) . ": hiányzik az adatlapról: $needle";
         }
         if (strpos($html, 'kompasz_toplists') !== false) $problems[] = "#$current " . get_the_title($current) . ': külön toplista-lista maradt az adatlapon';
-        foreach (['kompasz_certs', 'kompasz_industries', 'kompasz_references', 'kompasz_county', 'kompasz_languages', 'kompasz_services'] as $old) {
+        if (preg_match('/<(input|textarea)[^>]+name="(kompasz_refs|kompasz_lang_new|kompasz_city|kompasz_work_mode|kompasz_price_model)/', $html)) $problems[] = "#$current " . get_the_title($current) . ': beírós lista maradt az adatlapon';
+        foreach (['kompasz_certs', 'kompasz_industries', 'kompasz_references', 'kompasz_county', 'kompasz_languages', 'kompasz_services', 'kompasz_city', 'kompasz_work_mode', 'kompasz_price_model'] as $old) {
             if (get_post_meta($current, $old, true) !== '') $problems[] = "#$current " . get_the_title($current) . ": régi mező maradt: $old";
         }
         $a = kompasz_agency($current);

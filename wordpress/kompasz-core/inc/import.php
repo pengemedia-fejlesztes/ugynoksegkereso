@@ -136,8 +136,8 @@ function kompasz_import_agencies(array $data, $offset, $limit) {
             'kompasz_founded' => $a['founded'] ?? '', 'kompasz_team' => $a['team'] ?? '',
             'kompasz_phone' => $a['phone'] ?? '', 'kompasz_email' => $a['email'] ?? '', 'kompasz_intro' => $a['intro'] ?? '',
             'kompasz_languages' => $join($a['languages'] ?? []), 'kompasz_work_mode' => $a['work_mode'] ?? ''];
-        // Megye, munkanyelvek: adatbázis-lista; csak ha még nincs beállítva (kompasz_migrate_agency_lists alakítja át)
-        $lists = ['kompasz_county' => 'megye', 'kompasz_languages' => 'nyelv'];
+        // Város, megye, munkanyelv, munkavégzés: adatbázis-lista; csak ha még nincs beállítva (kompasz_migrate_agency_lists alakítja át)
+        $lists = ['kompasz_city' => 'varos', 'kompasz_county' => 'megye', 'kompasz_languages' => 'nyelv', 'kompasz_work_mode' => 'munkavegzes'];
         foreach ($profile as $k => $v) {
             if ((string) $v === '') continue;
             if (isset($lists[$k]) ? !kompasz_post_term_ids($id, $lists[$k]) : (string) get_post_meta($id, $k, true) === '') update_post_meta($id, $k, (string) $v);
@@ -158,6 +158,7 @@ function kompasz_import_agencies(array $data, $offset, $limit) {
         }
         kompasz_migrate_agency($id);
         kompasz_migrate_agency_lists($id);
+        kompasz_migrate_agency_lists_6($id);
         if ($a['logo']) {
             // Új logó, vagy az importált logó tartalma változott (md5): csere; kézzel beállított kiemelt képhez nem nyúl
             $cur = (int) get_post_thumbnail_id($id);

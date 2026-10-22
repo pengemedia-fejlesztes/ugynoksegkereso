@@ -30,7 +30,7 @@ function kompasz_map_admin_html($id) {
     $labels = ['address' => 'cím alapján', 'city' => 'csak a város alapján (pontosítsd!)', 'manual' => 'kézzel beállítva'];
     ob_start(); ?>
     <div class="kmap-edit" data-config="<?php echo esc_attr(wp_json_encode(kompasz_map_config())); ?>">
-        <p><input type="search" class="regular-text kmap-q" placeholder="Cím keresése, pl. Budapest, Váci út 1." value="<?php echo esc_attr(implode(', ', array_filter([get_post_meta($id, 'kompasz_address', true), get_post_meta($id, 'kompasz_city', true)]))); ?>">
+        <p><input type="search" class="regular-text kmap-q" placeholder="Cím keresése, pl. Budapest, Váci út 1." value="<?php echo esc_attr(implode(', ', array_filter([get_post_meta($id, 'kompasz_address', true), implode(', ', kompasz_post_term_names($id, 'varos'))]))); ?>">
             <button type="button" class="button kmap-search">Keresés a térképen</button>
             <button type="button" class="button-link kmap-clear">Pozíció törlése</button></p>
         <ul class="kmap-results" hidden></ul>
@@ -87,11 +87,10 @@ function kompasz_geocode_batch($limit = 30) {
     $ids = get_posts(['post_type' => 'ugynokseg', 'post_status' => 'publish', 'fields' => 'ids', 'numberposts' => -1, 'meta_query' => [
         'relation' => 'AND',
         ['key' => 'kompasz_lat', 'compare' => 'NOT EXISTS'], ['key' => 'kompasz_geo_skip', 'compare' => 'NOT EXISTS'],
-        ['key' => 'kompasz_city', 'value' => '', 'compare' => '!='],
-    ]]);
+    ], 'tax_query' => [['taxonomy' => 'varos', 'operator' => 'EXISTS']]]);
     $found = 0; $missing = 0; $calls = 0;
     foreach (array_slice($ids, 0, $limit) as $id) {
-        $city = trim((string) get_post_meta($id, 'kompasz_city', true));
+        $city = trim(implode(', ', kompasz_post_term_names($id, 'varos')));
         $addr = trim((string) get_post_meta($id, 'kompasz_address', true));
         $hit = null; $geo = 'city';
         foreach (array_filter([$addr !== '' ? "$addr, $city" : '', $city]) as $q) {
@@ -118,10 +117,11 @@ add_action(KOMPASZ_GEO_HOOK, function () { kompasz_geocode_batch(30); });
 register_deactivation_hook(KOMPASZ_CORE_FILE, function () { wp_clear_scheduled_hook(KOMPASZ_GEO_HOOK); });
 
 // A cím vagy a város változásakor (és ha nincs kézi pozíció) a háttérkeresés újra próbálkozhat
-add_action('updated_post_meta', function ($mid, $post_id, $key) {
-    if (!in_array($key, ['kompasz_city', 'kompasz_address'], true) || get_post_type($post_id) !== 'ugynokseg') return;
-    if (get_post_meta($post_id, 'kompasz_geo_skip', true) === 'notfound') delete_post_meta($post_id, 'kompasz_geo_skip');
-}, 10, 3);
+$kompasz_geo_retry = function ($post_id) {
+    if (get_post_type($post_id) === 'ugynokseg' && get_post_meta($post_id, 'kompasz_geo_skip', true) === 'notfound') delete_post_meta($post_id, 'kompasz_geo_skip');
+};
+add_action('updated_post_meta', function ($mid, $post_id, $key) use ($kompasz_geo_retry) { if ($key === 'kompasz_address') $kompasz_geo_retry($post_id); }, 10, 3);
+add_action('set_object_terms', function ($post_id, $terms, $tt, $taxonomy) use ($kompasz_geo_retry) { if ($taxonomy === 'varos') $kompasz_geo_retry($post_id); }, 10, 4);
 
 /** Nyilvános adatlap: térkép-tároló (a téma szkriptje csak akkor tölti be a MapLibre-t, ha a térkép a képernyőre ér) */
 function kompasz_map_html($a) {

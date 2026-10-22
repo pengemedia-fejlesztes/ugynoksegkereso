@@ -52,7 +52,7 @@ function kompasz_google_place_id($post_id) {
     if (preg_match('/[?&]cid=(\d+)/', $dec, $mm)) $cid = $mm[1];
     elseif (preg_match('/!1s0x[0-9a-f]+:0x([0-9a-f]+)/i', $dec, $mm) && function_exists('gmp_init')) $cid = gmp_strval(gmp_init($mm[1], 16));
     elseif (preg_match('/!1s0x[0-9a-f]+:0x([0-9a-f]+)/i', $dec, $mm)) $cid = base_convert($mm[1], 16, 10);
-    $body = ['textQuery' => $name ?: trim(get_the_title($post_id) . ' ' . get_post_meta($post_id, 'kompasz_city', true)), 'languageCode' => kompasz_lang(), 'pageSize' => 5];
+    $body = ['textQuery' => $name ?: trim(get_the_title($post_id) . ' ' . implode(' ', kompasz_post_term_names($post_id, 'varos'))), 'languageCode' => kompasz_lang(), 'pageSize' => 5];
     if (preg_match('/@(-?\d+\.\d+),(-?\d+\.\d+)/', $url, $mm)) $body['locationBias'] = ['circle' => ['center' => ['latitude' => (float) $mm[1], 'longitude' => (float) $mm[2]], 'radius' => 2000.0]];
     $res = kompasz_google_request('POST', 'https://places.googleapis.com/v1/places:searchText', 'places.id,places.displayName,places.googleMapsUri', $body);
     if (is_wp_error($res)) return $res;

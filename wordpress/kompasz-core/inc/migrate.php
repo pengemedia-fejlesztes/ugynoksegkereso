@@ -246,6 +246,43 @@ function kompasz_migrate_agency_lists($id) {
     delete_post_meta($id, 'kompasz_languages');
 }
 
+/** Kezdőértékek a munkavégzés- és árazáslistába (csak egyszer, a 6. migrációban) */
+function kompasz_seed_lists_6() {
+    $de = kompasz_lang() === 'de';
+    $seed = [
+        'munkavegzes' => $de ? ['Vor Ort', 'Remote', 'Auch internationale Kunden'] : ['Helyben (irodában)', 'Távolról', 'Külföldi ügyfelekkel is'],
+        'arazas' => $de ? ['Monatliche Pauschale', 'Projektbasiert', 'Erfolgsbasiert'] : ['Havidíj', 'Projektalapú', 'Teljesítményalapú'],
+    ];
+    foreach ($seed as $tax => $names) foreach ($names as $n) if (!term_exists($n, $tax)) wp_insert_term($n, $tax);
+    return $seed;
+}
+
+/** Egy ügynökség városa, munkavégzése, árazása szövegből → adatbázis-lista (6. migráció; az importer is ezt használja) */
+function kompasz_migrate_agency_lists_6($id) {
+    static $seed = null;
+    $seed = $seed ?? kompasz_seed_lists_6();
+    $city = trim((string) get_post_meta($id, 'kompasz_city', true));
+    if ($city !== '' && ($c = kompasz_ensure_term($city, 'varos'))) wp_set_object_terms($id, [$c], 'varos');
+    // Szövegből a lista elemei: kulcsszó szerint, ami nem illik, az saját elem lesz
+    $map = function ($text, $tax, array $rules) use ($seed) {
+        $f = kompasz_fold($text);
+        $names = [];
+        foreach ($rules as $re => $i) if (preg_match($re, $f)) foreach ((array) $i as $n) $names[] = $seed[$tax][$n];
+        return $names ?: [$text];
+    };
+    $wm = trim((string) get_post_meta($id, 'kompasz_work_mode', true));
+    if ($wm !== '') {
+        $names = $map($wm, 'munkavegzes', ['/mindketto|beide|hybrid/' => [0, 1], '/helyben|iroda|vor ort|personlich/' => 0, '/tavol|remote|online/' => 1, '/kulfold|international|nemzetkozi/' => 2]);
+        wp_set_object_terms($id, array_values(array_filter(array_map(function ($n) { return kompasz_ensure_term($n, 'munkavegzes'); }, array_unique($names)))), 'munkavegzes');
+    }
+    $pm = trim((string) get_post_meta($id, 'kompasz_price_model', true));
+    if ($pm !== '') {
+        $names = $map($pm, 'arazas', ['/havi|havidij|retainer|monat|pauschal/' => 0, '/projekt/' => 1, '/teljesitmeny|jutalek|siker|erfolg|provision/' => 2]);
+        wp_set_object_terms($id, array_values(array_filter(array_map(function ($n) { return kompasz_ensure_term($n, 'arazas'); }, array_unique($names)))), 'arazas');
+    }
+    foreach (['kompasz_city', 'kompasz_work_mode', 'kompasz_price_model'] as $k) delete_post_meta($id, $k);
+}
+
 /**
  * Verziózott adatbázis-migrációk: verzió => [leírás, függvény]. Új szerkezetváltozás = új sor a végén (soha nem írjuk át a régit).
  * A futtatás sorrendben, a tárolt verziótól (kompasz_schema) felfelé; minden lépés után a verzió mentődik, így megszakadt futás folytatható.
@@ -268,6 +305,12 @@ function kompasz_migrations() {
             $changes = [];
             foreach (kompasz_merge_seed_maps() as $tax => $map) $changes = array_merge($changes, kompasz_merge_canonical($tax, $map));
             return array_merge($changes, kompasz_merge_auto());
+        }],
+        6 => ['Város, munkavégzés, árazás módja szövegből → adatbázis-lista (kezdőértékek egyszer); minden lista az adatlap közepén, keresős pipalistával', function () {
+            kompasz_seed_lists_6();
+            foreach (get_posts(['post_type' => 'ugynokseg', 'post_status' => 'any', 'fields' => 'ids', 'numberposts' => -1]) as $id) kompasz_migrate_agency_lists_6($id);
+            $n = []; foreach (['varos', 'munkavegzes', 'arazas'] as $t) $n[] = $t . ': ' . count(get_terms(['taxonomy' => $t, 'hide_empty' => false, 'fields' => 'ids']) ?: []) . ' érték';
+            return ['Adatbázis-listák: ' . implode(', ', $n)];
         }],
     ];
 }

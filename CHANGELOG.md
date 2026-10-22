@@ -4,6 +4,16 @@ A verziószámok a `kompasz-core` bővítményé és a `kompasz` témáé (szema
 (`kompasz_schema` opció, `wordpress/kompasz-core/inc/migrate.php` → `kompasz_migrations()`); a migrációk telepítéskor
 automatikusan futnak (`wp kompasz migrate`), előtte a deploy adatbázis-mentést készít.
 
+## 1.4.0 – 2026-10-22 (séma: 6)
+
+### Minden lista adatbázisból, az adatlap közepén
+- Egységes keresős pipalista minden listához, egyesével választható: város, megye, munkavégzés, árazás módja, munkanyelv
+  (+ telefonszám nyelvenként), szolgáltatás/toplista, minősítés, iparág, referencia-ügyfél (+ nem kötelező link). Beírós lista nincs;
+  új érték a lista alatti mezővel kerül az adatbázisba. A jobb oldalon nincs lista-doboz (egyik taxonómiáé sem).
+- Új adatbázis-listák: Városok, Munkavégzés, Árazási módok (Ügynökségek menü).
+- 6. migráció: város, munkavégzés, árazás szövegből → lista; a régi szöveges mezők törlése.
+- CI: az admin adatlapon mind a 9 lista középen, jobb oldali lista-doboz nincs.
+
 ## 1.3.0 – 2026-10-22 (séma: 5)
 
 ### Egy adat – egy hely
