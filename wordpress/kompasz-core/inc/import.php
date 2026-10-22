@@ -133,7 +133,7 @@ function kompasz_import_agencies(array $data, $offset, $limit) {
         // Profiladatok: csak üres mezőbe írunk, hogy a WP adminban vagy a cégfiókban szerkesztett adat megmaradjon
         $join = function ($v) { return is_array($v) ? implode("\n", $v) : (string) ($v ?? ''); };
         $profile = ['kompasz_website' => $a['website'], 'kompasz_city' => $a['city'] ?? '', 'kompasz_county' => $a['county'] ?? '',
-            'kompasz_founded' => $a['founded'] ?? '', 'kompasz_team' => $a['team'] ?? '',
+            'kompasz_founded' => $a['founded'] ?? '', 'kompasz_team' => kompasz_team_normalize($a['team'] ?? ''),
             'kompasz_phone' => $a['phone'] ?? '', 'kompasz_email' => $a['email'] ?? '', 'kompasz_intro' => $a['intro'] ?? '',
             'kompasz_languages' => $join($a['languages'] ?? []), 'kompasz_work_mode' => $a['work_mode'] ?? ''];
         // Város, megye, munkanyelv, munkavégzés: adatbázis-lista; csak ha még nincs beállítva (kompasz_migrate_agency_lists alakítja át)

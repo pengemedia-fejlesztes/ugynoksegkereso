@@ -20,6 +20,12 @@ function kompasz_meta_lines($id, $key) {
     return array_values(array_filter(array_map('trim', preg_split('/\r?\n/', (string) get_post_meta($id, $key, true)))));
 }
 
+/** Csapatméret megjelenítése: „16” → „16 fő”, „20+” → „20+ fő” (régi szöveges értéknél maga a szöveg) */
+function kompasz_team_label($v) {
+    $v = trim((string) $v);
+    return preg_match('/^\d+\+?$/', $v) ? $v . ' ' . kompasz__('fő') : $v;
+}
+
 /** Csapatméret → szűrőkategória */
 function kompasz_team_bucket($team) {
     // Sávok a LinkedIn céges létszámkategóriáihoz igazítva; tartománynál („11–50”) a felső érték dönt
@@ -76,7 +82,7 @@ function kompasz_agency($post) {
         'domain' => $website ? kompasz_domain($website) : '',
         'city' => implode(', ', kompasz_post_term_names($id, 'varos')),
         'founded' => $m('kompasz_founded'),
-        'team' => $m('kompasz_team'),
+        'team' => kompasz_team_label($m('kompasz_team')),
         'team_bucket' => kompasz_team_bucket($m('kompasz_team')),
         'services' => wp_list_pluck($tags, 'name'),
         'county' => implode(', ', kompasz_post_term_names($id, 'megye')),

@@ -74,21 +74,71 @@
     var c = pick.querySelector('.kpick-count');
     if (c) c.textContent = n ? n + ' kiválasztva' : '';
   }
-  box.querySelectorAll('.kpick').forEach(function (pick) {
-    sync(pick);
-    var q = pick.querySelector('.kpick-q'), none = pick.querySelector('.kpick-none');
-    q.addEventListener('input', function () {
-      var v = q.value.trim().toLowerCase(), shown = 0;
-      pick.querySelectorAll('.kpick-row').forEach(function (row) {
-        var hit = !v || row.textContent.toLowerCase().indexOf(v) >= 0;
-        row.hidden = !hit;
-        if (hit) shown++;
-      });
-      none.hidden = shown > 0;
+  // Ékezet- és kisbetű-független összehasonlítás (a keresőben „bekes” = „Békés”)
+  function fold(t) { return String(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim(); }
+  var megyePick = box.querySelector('.kpick[data-tax="megye"]'), varosPick = box.querySelector('.kpick[data-tax="varos"]');
+  function megye() { var i = megyePick && megyePick.querySelector('input:checked'); return i && i.value !== '0' ? i.value : ''; }
+  // Város: csak a kiválasztott megye városai (és amelyekhez még nincs megye rendelve); a bejelölt mindig látszik
+  function rowVisible(pick, row, v) {
+    var i = row.querySelector('input');
+    if (v && fold(row.querySelector('.kpick-name') ? row.querySelector('.kpick-name').textContent : row.textContent).indexOf(v) < 0) return false;
+    if (pick === varosPick && !v && megye() && row.dataset.megye && row.dataset.megye !== megye() && !(i && i.checked)) return false;
+    return true;
+  }
+  function filter(pick) {
+    var q = pick.querySelector('.kpick-q'), none = pick.querySelector('.kpick-none'), add = pick.querySelector('.kpick-add');
+    var v = fold(q.value), shown = 0, exact = false;
+    pick.querySelectorAll('.kpick-row').forEach(function (row) {
+      var hit = rowVisible(pick, row, v);
+      row.hidden = !hit;
+      if (hit) shown++;
+      var n = row.querySelector('.kpick-name');
+      if (v && n && fold(n.textContent) === v) exact = true;
     });
-    q.addEventListener('keydown', function (e) { if (e.key === 'Enter') e.preventDefault(); });
+    none.hidden = shown > 0;
+    // Nincs pontos egyezés → „hozzáadás” gomb (ha a lista bővíthető)
+    var canAdd = pick.dataset.addName && v && !exact;
+    add.hidden = !canAdd;
+    if (canAdd) add.textContent = '+ „' + q.value.trim() + '” hozzáadása a listához';
+  }
+  function addNew(pick) {
+    var q = pick.querySelector('.kpick-q'), name = q.value.trim();
+    if (!name) return;
+    var single = pick.classList.contains('single');
+    if (single) pick.querySelectorAll('.kpick-row input').forEach(function (i) { i.checked = false; });
+    var row = document.createElement('div');
+    row.className = 'kpick-row on';
+    var input = document.createElement('input');
+    input.type = single ? 'radio' : 'checkbox';
+    input.name = pick.dataset.addName;
+    input.value = single ? 'new:' + name : name;
+    input.checked = true;
+    var label = document.createElement('label'), span = document.createElement('span'), em = document.createElement('em');
+    span.className = 'kpick-name'; span.textContent = name;
+    em.className = 'kpending'; em.textContent = pick.dataset.addNote;
+    label.append(input, ' ', span, ' ', em);
+    row.appendChild(label);
+    pick.querySelector('.kpick-list').prepend(row);
+    q.value = '';
+    filter(pick); sync(pick);
+    if (pick === megyePick && varosPick) filter(varosPick);
+  }
+  box.querySelectorAll('.kpick').forEach(function (pick) {
+    sync(pick); filter(pick);
+    var q = pick.querySelector('.kpick-q');
+    q.addEventListener('input', function () { filter(pick); });
+    q.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter') return;
+      e.preventDefault();
+      // Enter: az egyetlen találat bejelölése, különben új érték
+      var vis = Array.prototype.filter.call(pick.querySelectorAll('.kpick-row'), function (r) { return !r.hidden && r.querySelector('input').value !== '0'; });
+      if (vis.length === 1 && q.value.trim()) { var i = vis[0].querySelector('input'); if (!i.disabled) { i.checked = true; i.dispatchEvent(new Event('change', { bubbles: true })); q.value = ''; filter(pick); } }
+      else if (!pick.querySelector('.kpick-add').hidden) addNew(pick);
+    });
+    pick.querySelector('.kpick-add').addEventListener('click', function () { addNew(pick); });
     pick.addEventListener('change', function (e) {
       sync(pick);
+      if (pick === megyePick && varosPick) filter(varosPick);
       var x = e.target.closest('.kpick-row') && e.target.closest('.kpick-row').querySelector('.kpick-extra');
       if (x && e.target.checked && x.type === 'tel' && !x.value) x.focus();
     });

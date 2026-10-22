@@ -138,4 +138,5 @@ return [
     'Helyszín' => 'Standort',
     '%s helye a térképen' => '%s auf der Karte',
     'Nagyobb térkép' => 'Größere Karte',
+    'fő' => 'Mitarbeitende',
 ];

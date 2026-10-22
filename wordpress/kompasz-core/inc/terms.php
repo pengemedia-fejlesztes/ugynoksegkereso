@@ -4,8 +4,10 @@ if (!defined('ABSPATH')) exit;
 
 const KOMPASZ_PENDING_META = 'kompasz_pending';
 
+/** Az adatlapról bővíthető listák: a nem adminisztrátor által felvett új érték jóváhagyásra vár */
 function kompasz_approval_taxonomies() {
-    return ['ugyfel' => 'Referencia-ügyfél', 'minosites' => 'Minősítés', 'iparag' => 'Iparág'];
+    return ['ugyfel' => 'Referencia-ügyfél', 'minosites' => 'Minősítés', 'iparag' => 'Iparág', 'szolgaltatas' => 'Szolgáltatás', 'varos' => 'Város',
+        'megye' => 'Megye', 'nyelv' => 'Munkanyelv', 'munkavegzes' => 'Munkavégzés', 'arazas' => 'Árazás módja'];
 }
 
 function kompasz_term_is_pending($term) {
@@ -17,7 +19,7 @@ function kompasz_term_is_pending($term) {
  * Nevek → kifejezés-azonosítók. A meglévőt név vagy slug alapján megtalálja; az újat létrehozza.
  * Adminisztrátor által felvett érték azonnal él; másé (cégfiók) jóváhagyásra vár, és az adminisztrátor e-mailt kap róla.
  */
-function kompasz_resolve_terms($taxonomy, array $names, $post_id = 0, $approved = null) {
+function kompasz_resolve_terms($taxonomy, array $names, $post_id = 0, $approved = null, $notify = false) {
     $approved = $approved ?? current_user_can('manage_categories');
     $ids = [];
     foreach ($names as $name) {
@@ -39,22 +41,39 @@ function kompasz_resolve_terms($taxonomy, array $names, $post_id = 0, $approved 
             update_term_meta($id, KOMPASZ_PENDING_META, '1');
             update_term_meta($id, 'kompasz_pending_by', get_current_user_id());
             update_term_meta($id, 'kompasz_pending_post', (int) $post_id);
-            kompasz_notify_pending($id, $taxonomy, $name, $post_id);
         }
+        if ($notify || !$approved) kompasz_notify_queue($id, $taxonomy, $name, $post_id, !$approved);
         $ids[] = $id;
     }
     return array_values(array_unique($ids));
 }
 
-function kompasz_notify_pending($term_id, $taxonomy, $name, $post_id) {
+/** Új érték az adatlapról: gyűjtés, a kérés végén egy e-mail az adminisztrátornak (kompasz_notify_send) */
+function kompasz_notify_queue($term_id, $taxonomy, $name, $post_id, $pending) {
+    $GLOBALS['kompasz_new_terms'][] = compact('term_id', 'taxonomy', 'name', 'post_id', 'pending');
+    if (!has_action('shutdown', 'kompasz_notify_send')) add_action('shutdown', 'kompasz_notify_send');
+}
+
+function kompasz_notify_send() {
+    $items = $GLOBALS['kompasz_new_terms'] ?? [];
+    $GLOBALS['kompasz_new_terms'] = [];
+    if (!$items) return;
     $u = wp_get_current_user();
     $labels = kompasz_approval_taxonomies();
-    $to = get_option('admin_email');
-    $subject = sprintf('[%s] Jóváhagyásra vár: %s – %s', wp_specialchars_decode(get_bloginfo('name'), ENT_QUOTES), $labels[$taxonomy] ?? $taxonomy, $name);
-    $body = sprintf("Új %s érkezett jóváhagyásra.\n\nÉrték: %s\nÜgynökség: %s\nBeküldte: %s (%s)\n\nJóváhagyás vagy elutasítás:\n%s\n",
-        mb_strtolower($labels[$taxonomy] ?? $taxonomy), $name, $post_id ? get_the_title($post_id) : '–', $u->display_name, $u->user_email,
-        admin_url('edit.php?post_type=ugynokseg&page=kompasz-pending'));
-    wp_mail($to, $subject, $body);
+    $post_id = (int) $items[0]['post_id'];
+    $pending = array_filter($items, function ($i) { return $i['pending']; });
+    $site = wp_specialchars_decode(get_bloginfo('name'), ENT_QUOTES);
+    $subject = sprintf('[%s] %s új érték az adatlapról%s: %s', $site, count($items), $pending ? ' (jóváhagyásra vár)' : '', $post_id ? get_the_title($post_id) : '–');
+    $lines = [];
+    foreach ($items as $i) {
+        $lines[] = sprintf("• %s: „%s”%s\n  Lista szerkesztése: %s\n  Az érték szerkesztése: %s", $labels[$i['taxonomy']] ?? $i['taxonomy'], $i['name'], $i['pending'] ? ' – jóváhagyásra vár' : '',
+            admin_url('edit-tags.php?taxonomy=' . $i['taxonomy'] . '&post_type=ugynokseg'), get_edit_term_link($i['term_id'], $i['taxonomy'], 'ugynokseg'));
+    }
+    $body = sprintf("%s (%s) új értéket adott hozzá az alábbi listákhoz:\n\n%s\n\nÜgynökség: %s\nAdatlap szerkesztése: %s\nNyilvános adatlap: %s\n%s",
+        $u->display_name ?: 'Ismeretlen', $u->user_email ?: '–', implode("\n\n", $lines), $post_id ? get_the_title($post_id) : '–',
+        $post_id ? admin_url('post.php?post=' . $post_id . '&action=edit') : '–', $post_id ? get_permalink($post_id) : '–',
+        $pending ? "\nJóváhagyás vagy elutasítás: " . admin_url('edit.php?post_type=ugynokseg&page=kompasz-pending') . "\n" : '');
+    wp_mail(get_option('admin_email'), $subject, $body);
 }
 
 /** Jóváhagyásra váró kifejezések */

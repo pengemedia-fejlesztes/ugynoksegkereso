@@ -11,7 +11,7 @@ function kompasz_agency_fields() {
         'kompasz_website'     => ['Weboldal', 'url', 'A „Kapcsolat” gomb ide visz.'],
         'kompasz_email'       => ['E-mail cím', 'email', 'Nyilvános céges e-mail cím. Mentéskor a rendszer ellenőrzi.'],
         'kompasz_founded'     => ['Alapítás éve', 'year', ''],
-        'kompasz_team'        => ['Csapatméret', 'text', 'Az ügynökség saját adata, pl. „15 fő”.'],
+        'kompasz_team'        => ['Csapatméret (fő)', 'team', 'Pipáld be a „+” jelet, ha ennél többen vannak (pl. 20+ fő).'],
         'kompasz_price_min'   => ['Árszint (minimum)', 'text', 'Az ügynökség saját adata, pl. „havi 150 000 Ft-tól”.'],
         'kompasz_address'     => ['Cím', 'text', 'Utca, házszám (a várost a listából választod). A térképen ez alapján keresheted meg a helyet.'],
         'kompasz_google_url'  => ['Google Cégprofil link', 'url', 'A Google Térképen a cég oldala → Megosztás → link másolása. Az értékelés és a vélemények száma ebből hetente automatikusan frissül.'],
@@ -63,6 +63,13 @@ function kompasz_field_html($key, $value) {
             for ($y = (int) wp_date('Y'); $y >= 1950; $y--) $out .= sprintf('<option value="%d"%s>%d</option>', $y, selected((string) $value, (string) $y, false), $y);
             $out .= '</select>';
             break;
+        case 'team':
+            $plus = substr((string) $value, -1) === '+';
+            $n = (int) $value;
+            $out = sprintf('<select id="%1$s" name="%1$s"><option value="">–</option>', $id);
+            foreach (array_merge(range(1, 100), [120, 150, 200, 250, 300, 400, 500, 750, 1000]) as $v) $out .= sprintf('<option value="%1$d"%2$s>%1$d</option>', $v, selected($n, $v, false));
+            $out .= sprintf('</select> fő <label style="margin-left:10px"><input type="checkbox" name="kompasz_team_plus" value="1"%s> + (ennél több)</label>', checked($plus, true, false));
+            break;
         case 'email':
             $out = sprintf('<input type="email" id="%1$s" name="%1$s" value="%2$s" class="regular-text" data-kompasz-email>', $id, esc_attr($value));
             break;
@@ -79,8 +86,8 @@ function kompasz_field_html($key, $value) {
 function kompasz_edit_lists() {
     $de = kompasz_lang() === 'de';
     return [
+        'megye'        => [$de ? 'Bundesland' : 'Megye', 'single', 'Először a megyét válaszd: a városlista ehhez igazodik.'],
         'varos'        => [$de ? 'Stadt' : 'Város', 'single', ''],
-        'megye'        => [$de ? 'Bundesland' : 'Megye', 'single', ''],
         'munkavegzes'  => ['Munkavégzés', 'multi', 'Hol és hogyan dolgoznak.'],
         'arazas'       => ['Árazás módja', 'multi', ''],
         'nyelv'        => ['Munkanyelvek és telefonszámok', 'multi', 'Nyelvenként egy telefonszám, nemzetközi formában (pl. +36 20 404 4280); a rendszer formázza és ellenőrzi.'],
@@ -91,9 +98,18 @@ function kompasz_edit_lists() {
     ];
 }
 
-/** Ki vehet fel új értéket az adott listába az adatlapról */
+/** Ki vehet fel új értéket az adott listába az adatlapról (adminisztrátor: azonnal; cégfiók: jóváhagyásra) */
 function kompasz_can_add_term($taxonomy) {
     return current_user_can('manage_categories') || isset(kompasz_approval_taxonomies()[$taxonomy]);
+}
+
+/** Az adatlap kereső mezőjéből felvett új értékek: [taxonómia => nevek] (egyválasztósnál „new:Név” érték) */
+function kompasz_posted_new_terms(array $in, $taxonomy, $single) {
+    if ($single) {
+        $v = (string) ($in['kompasz_one'][$taxonomy] ?? '');
+        return strpos($v, 'new:') === 0 ? [sanitize_text_field(substr($v, 4))] : [];
+    }
+    return array_values(array_filter(array_map('sanitize_text_field', (array) ($in['kompasz_newv'][$taxonomy] ?? []))));
 }
 
 /**
@@ -113,19 +129,20 @@ function kompasz_picker($taxonomy, $name, array $selected, $extra = null, $lock 
         $locked = $lock && $lock($t);
         $badge = $taxonomy === 'szolgaltatas' && kompasz_is_toplist($t) ? ' <em class="kbadge" title="' . esc_attr(kompasz_toplist_name($t)) . '">toplista</em>' : '';
         if (kompasz_term_is_pending($t)) $badge .= ' <em class="kpending">jóváhagyásra vár</em>';
-        $rows .= sprintf('<div class="kpick-row%s"><label><input type="%s" name="%s" value="%d"%s%s> <span class="kpick-name">%s</span>%s</label>%s</div>',
-            $on ? ' on' : '', $single ? 'radio' : 'checkbox', esc_attr($name), $t->term_id, checked($on, true, false), $locked ? ' disabled' : '',
+        $parent = $taxonomy === 'varos' ? (int) get_term_meta($t->term_id, 'kompasz_megye', true) : 0;
+        $rows .= sprintf('<div class="kpick-row%s"%s><label><input type="%s" name="%s" value="%d"%s%s> <span class="kpick-name">%s</span>%s</label>%s</div>',
+            $on ? ' on' : '', $parent ? ' data-megye="' . $parent . '"' : '', $single ? 'radio' : 'checkbox', esc_attr($name), $t->term_id, checked($on, true, false), $locked ? ' disabled' : '',
             esc_html($t->name), $badge, $extra ? $extra($t, $on) : '');
     }
     $manage = current_user_can('manage_categories') ? sprintf(' <a href="%s">Lista szerkesztése</a>', esc_url(admin_url('edit-tags.php?taxonomy=' . $taxonomy . '&post_type=ugynokseg'))) : '';
-    $out = sprintf('<div class="kpick%s" data-tax="%s"><div class="kpick-head"><strong>%s</strong><span class="kpick-count"></span>%s</div>', $single ? ' single' : '', esc_attr($taxonomy), esc_html($label), $manage);
+    // Új érték: a keresőbe írva, ha nincs a listában, megjelenik a „hozzáadás” gomb (a szkript a listába teszi bejelölve; mentéskor kerül az adatbázisba)
+    $add = kompasz_can_add_term($taxonomy) ? sprintf(' data-add-name="%s" data-add-note="%s"', esc_attr($single ? $name : 'kompasz_newv[' . $taxonomy . '][]'),
+        esc_attr(current_user_can('manage_categories') ? 'új – mentéskor kerül a listára' : 'új – a szerkesztőség jóváhagyja')) : '';
+    $out = sprintf('<div class="kpick%s" data-tax="%s"%s><div class="kpick-head"><strong>%s</strong><span class="kpick-count"></span>%s</div>', $single ? ' single' : '', esc_attr($taxonomy), $add, esc_html($label), $manage);
     if ($help) $out .= '<p class="description">' . esc_html($help) . '</p>';
-    $out .= sprintf('<input type="search" class="kpick-q" placeholder="Keresés a listában (%d érték)…" autocomplete="off">', count($terms));
-    $out .= '<div class="kpick-list">' . $rows . '<p class="kpick-none" hidden>Nincs találat. Ha hiányzik, add hozzá lent.</p></div>';
-    if (kompasz_can_add_term($taxonomy)) {
-        $out .= sprintf('<p class="kpick-new"><input type="text" name="kompasz_new[%s]" placeholder="Új érték a listába…" class="regular-text"> <span class="description">%s</span></p>', esc_attr($taxonomy),
-            current_user_can('manage_categories') ? 'Felkerül az adatbázis-listára, és ennél az ügynökségnél bejelölve.' . ($single ? '' : ' Több érték vesszővel.') : 'A szerkesztőség jóváhagyja, addig nem látszik az oldalon.');
-    }
+    $out .= sprintf('<input type="search" class="kpick-q" placeholder="Keresés vagy új érték (%d van a listában)…" autocomplete="off">', count($terms));
+    $out .= '<button type="button" class="button kpick-add" hidden></button>';
+    $out .= '<div class="kpick-list">' . $rows . '<p class="kpick-none" hidden>Nincs találat.</p></div>';
     return $out . '</div>';
 }
 
@@ -145,10 +162,10 @@ function kompasz_agency_box($post) {
     echo '</div>';
     echo kompasz_field_html('kompasz_intro', $m('kompasz_intro'));
 
-    // 2. Helyszín: város, megye (listák), cím + térkép (MapLibre GL JS + OpenFreeMap, címkeresés: Nominatim)
+    // 2. Helyszín: megye → város (a megye városai) → utca, házszám → térkép (MapLibre GL JS + OpenFreeMap, címkeresés: Nominatim)
     echo '<h3>Helyszín</h3><div class="kgrid2">';
-    echo kompasz_picker('varos', 'kompasz_one[varos]', $sel('varos'));
     echo kompasz_picker('megye', 'kompasz_one[megye]', $sel('megye'));
+    echo kompasz_picker('varos', 'kompasz_one[varos]', $sel('varos'));
     echo '</div>';
     echo kompasz_field_html('kompasz_address', $m('kompasz_address'));
     echo kompasz_map_admin_html($id);
@@ -231,6 +248,7 @@ add_action('save_post_ugynokseg', function ($post_id) {
             update_post_meta($post_id, $key, $v);
             continue;
         }
+        if ($type === 'team') { $n = absint($raw); update_post_meta($post_id, $key, $n ? $n . (!empty($in['kompasz_team_plus']) ? '+' : '') : ''); continue; }
         if ($type === 'year') { $y = (int) $raw; update_post_meta($post_id, $key, $y >= 1900 && $y <= (int) wp_date('Y') ? (string) $y : ''); continue; }
         if ($key === 'kompasz_google_url' && $raw !== get_post_meta($post_id, $key, true)) delete_post_meta($post_id, 'kompasz_google_place_id');
         update_post_meta($post_id, $key, kompasz_sanitize_field($type, $raw));
@@ -245,11 +263,12 @@ add_action('save_post_ugynokseg', function ($post_id) {
     foreach (kompasz_edit_lists() as $tax => [$label, $mode]) {
         $ids = $mode === 'single' ? [absint($in['kompasz_one'][$tax] ?? 0)] : array_map('absint', (array) ($in['kompasz_terms'][$tax] ?? []));
         $ids = array_values(array_filter($ids, function ($t) use ($tax) { return $t && term_exists($t, $tax); }));
-        $new = trim(sanitize_text_field($in['kompasz_new'][$tax] ?? ''));
-        if ($new !== '' && kompasz_can_add_term($tax)) {
-            $names = $mode === 'single' ? [$new] : array_filter(array_map('trim', explode(',', $new)));
-            $added = kompasz_resolve_terms($tax, $names, $post_id);
+        $names = kompasz_can_add_term($tax) ? kompasz_posted_new_terms($in, $tax, $mode === 'single') : [];
+        if ($names) {
+            $added = kompasz_resolve_terms($tax, $names, $post_id, null, true);
             $ids = $mode === 'single' ? (array_slice($added, 0, 1) ?: $ids) : array_merge($ids, $added);
+            // Új város: a kiválasztott megyéhez tartozik
+            if ($tax === 'varos' && ($m = kompasz_post_term_ids($post_id, 'megye'))) foreach ($added as $v) if (!get_term_meta($v, 'kompasz_megye', true)) update_term_meta($v, 'kompasz_megye', (string) $m[0]);
         }
         // A cégfiók a toplistás szolgáltatásokat nem módosíthatja: azok maradnak, ahogy voltak
         if ($tax === 'szolgaltatas' && !$admin_cats) {

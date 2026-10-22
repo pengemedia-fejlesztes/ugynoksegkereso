@@ -44,3 +44,5 @@
 .kompasz-edit .kpick-extra:disabled { display: none; }
 .kompasz-edit .kpick-none { margin: 6px 10px; color: #8c8f94; }
 .kompasz-edit .kpick-new { margin: 6px 0 0; }
+.kompasz-edit .kpick-add { margin: 0 0 6px; }
+.kompasz-edit .kpick-add[hidden] { display: none; }

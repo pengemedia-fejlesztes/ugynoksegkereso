@@ -283,6 +283,87 @@ function kompasz_migrate_agency_lists_6($id) {
     foreach (['kompasz_city', 'kompasz_work_mode', 'kompasz_price_model'] as $k) delete_post_meta($id, $k);
 }
 
+/** Csapatméret szövegből → szám + „több mint” jelölés („16+”). Tartománynál a felső érték („2–10 fő” → 10). */
+function kompasz_team_normalize($text) {
+    $text = (string) $text;
+    if (!preg_match_all('/\d+/', $text, $m)) return '';
+    $n = (int) end($m[0]);
+    return $n > 0 ? $n . (strpos($text, '+') !== false ? '+' : '') : '';
+}
+
+/**
+ * A 7. migráció egységes nevei (egyszer): az iparágak kb. 20 csoportba, a minősítések a kiadó hivatalos megnevezésére
+ * (HubSpot Solutions Partner, TikTok Marketing Partner, Meta Certified Professional, Criteo Certified Partner, Google CSS Partner …).
+ */
+function kompasz_merge_seed_maps_7() {
+    if (kompasz_lang() !== 'hu') return [];
+    return [
+        'iparag' => [
+            '/^(webaruhaz es e-kereskedelem|dtc|d2c)$/' => 'Webáruház és e-kereskedelem',
+            '/^(egeszsegugy|gyogyszeripar|egeszsegugy es gyogyszeripar)$/' => 'Egészségügy és gyógyszeripar',
+            '/^(vendeglatas es turizmus|rendezvenyszervezes)$/' => 'Vendéglátás, turizmus és rendezvények',
+            '/^(szolgaltato cegek|ugyfelszolgalat|matchmaking szolgaltatas|karszakerto|szakszerviz|szerviz|automento|mosoda|temetkezes|eletmod szolgaltatasok)$/' => 'Szolgáltató cégek',
+            '/^(penzugy es bank|fintech|penzugyi tanacsadas)$/' => 'Pénzügy, bank és biztosítás',
+            '/^(it es technologia|ai|tavkozles|saas es tech startupok)$/' => 'IT, szoftver és távközlés',
+            '/^(kereskedelem|muszaki cikk kereskedelem)$/' => 'Kereskedelem',
+            '/^(nonprofit|allami szektor)$/' => 'Nonprofit és állami szektor',
+            '/^(media|szorakoztatoipar|kulturalis szektor|konyv|marketing ugynoksegek)$/' => 'Média, kultúra és szórakoztatás',
+            '/^(startup|kkv es startup|szemelyes marka)$/' => 'Startupok és kkv-k',
+        ],
+        'minosites' => [
+            '/^hubspot partner$/' => 'HubSpot Solutions Partner',
+            '/^hubspot seo minositett szakerto$/' => 'HubSpot SEO Certification',
+            '/^tiktok partner$/' => 'TikTok Marketing Partner',
+            '/^(meta blueprint certified|messenger marketing expert)$/' => 'Meta Certified Professional',
+            '/^facebook managed agency$/' => 'Meta Business Partner',
+            '/^criteo partner$/' => 'Criteo Certified Partner',
+            '/^google comparison shopping premium partner$/' => 'Google CSS Premium Partner',
+            '/^(google ads tanusitvany|google ads es google analytics minositett szakerto)$/' => 'Google Ads Certification',
+            '/^google analytics tanusitvany$/' => 'Google Analytics Certification',
+            '/^(google analytics 360 partner|google marketing platform certified)$/' => 'Google Marketing Platform Partner',
+            '/^microsoft solution partner$/' => 'Microsoft Solutions Partner',
+            '/^optimonk partner$/' => 'OptiMonk Partner',
+            '/^salesmanago partner$/' => 'SALESmanago Partner',
+            '/^semrush seo akkreditacio$/' => 'Semrush SEO Certification',
+            '/^shopify partner$/' => 'Shopify Partner',
+            '/^shoprenter partner$/' => 'Shoprenter Partner',
+            '/^shoptet partner$/' => 'Shoptet Partner',
+            '/^unas partner$/' => 'UNAS Partner',
+            '/^amazon spn partner$/' => 'Amazon Service Provider Network (SPN)',
+            '/^cloudways gold agency partner$/' => 'Cloudways Agency Partner (Gold)',
+            '/^klaviyo silver partner$/' => 'Klaviyo Partner (Silver)',
+            '/^databox premier partner$/' => 'Databox Partner (Premier)',
+            '/^vwo trusted agency$/' => 'VWO Agency Partner',
+        ],
+    ];
+}
+
+/** 7. migráció: csapatméret, város → megye, iparágak és minősítések egységes, hivatalos nevei. Visszaad: a változások listája */
+function kompasz_migration_7() {
+    $changes = [];
+    $ids = get_posts(['post_type' => 'ugynokseg', 'post_status' => 'any', 'fields' => 'ids', 'numberposts' => -1]);
+    $team = 0;
+    foreach ($ids as $id) {
+        $old = (string) get_post_meta($id, 'kompasz_team', true);
+        $new = kompasz_team_normalize($old);
+        if ($old !== $new) { update_post_meta($id, 'kompasz_team', $new); $team++; }
+    }
+    $changes[] = "Csapatméret számmá alakítva: $team ügynökségnél";
+    // Város → megye: a városnál az a megye, amelyik a legtöbbször szerepel vele együtt
+    $pairs = [];
+    foreach ($ids as $id) foreach (kompasz_post_term_ids($id, 'varos') as $v) foreach (kompasz_post_term_ids($id, 'megye') as $m) $pairs[$v][$m] = ($pairs[$v][$m] ?? 0) + 1;
+    foreach ($pairs as $v => $ms) { arsort($ms); update_term_meta($v, 'kompasz_megye', (string) array_key_first($ms)); }
+    $changes[] = count($pairs) . ' város megyéhez rendelve';
+    // A kombinált Google-tanúsítvány mindkét tanúsítványt jelenti
+    foreach (get_terms(['taxonomy' => 'minosites', 'hide_empty' => false]) ?: [] as $t) {
+        if (kompasz_fold($t->name) !== 'google ads es google analytics minositett szakerto') continue;
+        $ga = kompasz_ensure_term('Google Analytics Certification', 'minosites');
+        foreach (get_objects_in_term($t->term_id, 'minosites') as $pid) wp_add_object_terms((int) $pid, [$ga], 'minosites');
+    }
+    foreach (kompasz_merge_seed_maps_7() as $tax => $map) $changes = array_merge($changes, kompasz_merge_canonical($tax, $map));
+    return $changes;
+}
+
 /**
  * Verziózott adatbázis-migrációk: verzió => [leírás, függvény]. Új szerkezetváltozás = új sor a végén (soha nem írjuk át a régit).
  * A futtatás sorrendben, a tárolt verziótól (kompasz_schema) felfelé; minden lépés után a verzió mentődik, így megszakadt futás folytatható.
@@ -311,6 +392,9 @@ function kompasz_migrations() {
             foreach (get_posts(['post_type' => 'ugynokseg', 'post_status' => 'any', 'fields' => 'ids', 'numberposts' => -1]) as $id) kompasz_migrate_agency_lists_6($id);
             $n = []; foreach (['varos', 'munkavegzes', 'arazas'] as $t) $n[] = $t . ': ' . count(get_terms(['taxonomy' => $t, 'hide_empty' => false, 'fields' => 'ids']) ?: []) . ' érték';
             return ['Adatbázis-listák: ' . implode(', ', $n)];
+        }],
+        7 => ['Csapatméret szám + „+”; város → megye; iparágak összevonása (kb. 20 csoport); minősítések hivatalos neve', function () {
+            return kompasz_migration_7();
         }],
     ];
 }

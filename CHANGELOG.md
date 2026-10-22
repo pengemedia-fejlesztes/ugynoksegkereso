@@ -4,6 +4,22 @@ A verziószámok a `kompasz-core` bővítményé és a `kompasz` témáé (szema
 (`kompasz_schema` opció, `wordpress/kompasz-core/inc/migrate.php` → `kompasz_migrations()`); a migrációk telepítéskor
 automatikusan futnak (`wp kompasz migrate`), előtte a deploy adatbázis-mentést készít.
 
+## 1.5.0 – 2026-10-22 (séma: 7)
+
+### Adatlap
+- Csapatméret: szám legördülő listából (1–100, majd 120 … 1000) + „+” pipa (pl. 20+ fő).
+- Helyszín sorrendje: megye → város (a kiválasztott megye városai) → utca, házszám → térkép.
+- Térkép: a cím, a város vagy a megye megadásakor magától odaugrik; keresés lépcsőzetesen (teljes cím → utca + város →
+  irányítószám + város → város), így elírt utcanévnél is a környékre ugrik, a jelölő húzható.
+- Új érték: a lista keresőjébe írva, ha nincs találat, „+ „…” hozzáadása a listához” gomb (Enter is); a külön „Új érték” mező megszűnt.
+  Minden új értékről e-mail megy az adminisztrátornak (melyik lista, melyik ügynökség, link az adatlapra és a lista szerkesztőjére);
+  cégfióktól jövő új érték jóváhagyásra vár – most már minden listánál.
+
+### Adat-migráció (7)
+- Csapatméret szövegből számmá („2–10 fő” → 10, „16+ fő” → 16+); város → megye hozzárendelés.
+- Iparágak összevonása 46-ról 20 csoportba; minősítések a kiadók hivatalos megnevezésére (HubSpot Solutions Partner, TikTok Marketing
+  Partner, Meta Certified Professional, Criteo Certified Partner, Google CSS Premium Partner, Google Ads / Analytics Certification …).
+
 ## 1.4.0 – 2026-10-22 (séma: 6)
 
 ### Minden lista adatbázisból, az adatlap közepén
