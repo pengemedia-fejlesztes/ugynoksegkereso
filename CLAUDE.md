@@ -17,7 +17,9 @@ Nyelv: a felhasználóval magyarul. Jelszót, tokent soha ne kérj a chatben: k�
    `curl -s -o /dev/null -w '%{http_code}' https://master.ugynoksegek.pmdev.hu/` (401 = a pmdev kapu: `PMDEV_USER`/`PMDEV_PASSWORD` kell).
    Csak a magyar oldal (master) él; a német oldallal most nem foglalkozunk. Ha hiányzik valami: `docs/HOZZAFERES.md` szerint
    pontosan megnevezni a felhasználónak (a környezet beállításaiban adja meg), nem kerülőúton dolgozni.
-2. Csak commitolt + pusholt kód megy ki. Előtte: `bash scripts/ci-wp-test.sh hu|de` (helyben MariaDB-vel) vagy a GitHub CI zöld.
+2. Csak commitolt + pusholt kód megy ki. Előtte: `bash scripts/ci-wp-test.sh hu|de` (friss telepítés) és `bash scripts/ci-wp-upgrade.sh hu|de`
+   (a telepített 1.2.0 → mostani kód, migrációk – az élő oldal útja) helyben MariaDB-vel (`apt-get install mariadb-server`, root/root a 127.0.0.1-en),
+   vagy a GitHub CI zöld.
 3. `bash scripts/deploy-https.sh hu` (és `de`): mentés → feltöltés → CF7 → API-kulcs → migráció → füstteszt → doctor → HTTP;
    hibánál magától visszaáll (kód: előző commit; DB: a mentés). Állapot: `GET /wp-json/kompasz/v1/doctor`.
 4. Német oldal első létrehozása (ha `de.ugynoksegek.pmdev.hu` még nincs): cPanel UAPI (`$CPANEL_URL/execute/...`,

@@ -31,6 +31,8 @@ hibánál visszaállítás). Ehhez és a többi hozzáféréshez: [`docs/HOZZAFE
 
 1. **test** – PHP-szintaxis, majd friss WordPressen (MySQL, HU és DE külön): Contact Form 7, import, `wp kompasz migrate`,
    füstteszt **minden ügynökség** adatlapjára (`scripts/wp/smoke.php`), HTTP-ellenőrzés. Helyben: `bash scripts/ci-wp-test.sh hu`.
+   Frissítési teszt (`scripts/ci-wp-upgrade.sh hu`): a telepített 1.2.0 a saját importjával → a mostani kód → migrációk 2→7, mint az élő
+   oldalon; ellenőrzi a toplista-URL-ek megmaradását, a 301-eket, a füsttesztet, és kiírja a migrációk változáslistáját.
 2. **build** – telepíthető zip-csomagok (Artifacts).
 3. **deploy** – csak sikeres teszt után, SSH-n, oldalanként (`scripts/deploy.sh` → a szerveren `scripts/wp/remote-deploy.sh`):
    adatbázis-mentés (`~/kompasz-backups`, utolsó 20) → új kód a régi mellé, csere → Contact Form 7 telepítése/bekapcsolása →

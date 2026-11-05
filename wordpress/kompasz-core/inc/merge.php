@@ -156,8 +156,10 @@ function kompasz_merge_preview() {
     foreach (kompasz_merge_taxonomies() as $tax => $label) {
         foreach (kompasz_merge_groups($tax) as $g) {
             $keep = $g['terms'][0];
-            $out[] = ['típus' => $label, 'megmarad' => sprintf('%s (%d)', $keep->name, $keep->count),
-                'beolvad' => implode('; ', array_map(function ($t) { return sprintf('%s (%d)', $t->name, $t->count); }, array_slice($g['terms'], 1))),
+            // A WP a nevet HTML-kódolva tárolja („SaaS &amp; Software”): a CLI/REST listában olvashatóan
+            $n = function ($t) { return sprintf('%s (%d)', html_entity_decode($t->name, ENT_QUOTES, 'UTF-8'), $t->count); };
+            $out[] = ['típus' => $label, 'megmarad' => $n($keep),
+                'beolvad' => implode('; ', array_map($n, array_slice($g['terms'], 1))),
                 'biztos' => $g['sure'] ? 'igen' : 'javaslat'];
         }
     }

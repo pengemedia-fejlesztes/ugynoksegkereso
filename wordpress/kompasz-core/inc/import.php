@@ -187,6 +187,11 @@ function kompasz_import_finish(array $data) {
         update_option('kompasz_featured_cats', $cats);
     }
     if (!get_option('kompasz_home_top')) update_option('kompasz_home_top', array_values(array_filter(array_map($id, $data['settings']['home_top']))));
+    // Egységesítés (= az 5. és a 7. migráció a frissülő oldalon): egységes nevek, biztos duplikátumok, város → megye; a változások a naplóba
+    $changes = kompasz_normalize_lists();
+    $log = (array) get_option('kompasz_migration_log', []);
+    $log[] = ['version' => kompasz_schema_version(), 'label' => 'Import (' . $data['version'] . '): egységes nevek, duplikátumok összevonása, város → megye', 'at' => gmdate('c'), 'plugin' => KOMPASZ_CORE_VERSION, 'changes' => $changes];
+    update_option('kompasz_migration_log', array_slice($log, -50), false);
     update_option('kompasz_imported', $data['version']);
     update_option('kompasz_schema', kompasz_schema_version());
     // A nyelvfüggő URL-részek (pl. /agentur/) a következő kérésben, az új nyelvvel regisztrálva frissülnek

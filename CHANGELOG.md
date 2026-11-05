@@ -4,6 +4,19 @@ A verziószámok a `kompasz-core` bővítményé és a `kompasz` témáé (szema
 (`kompasz_schema` opció, `wordpress/kompasz-core/inc/migrate.php` → `kompasz_migrations()`); a migrációk telepítéskor
 automatikusan futnak (`wp kompasz migrate`), előtte a deploy adatbázis-mentést készít.
 
+## 1.5.1 – 2026-11-05 (séma: 7)
+
+### Javítva
+- **Friss import = migrált oldal:** az importáló a végén ugyanazt az egységesítést futtatja, mint a frissülő oldalon az 5. és a 7. migráció
+  (egységes iparág- és minősítésnevek, biztos duplikátumok összevonása, város → megye). Eddig a friss telepítésen (CI, a német oldal
+  első telepítése) 121 iparág maradt összevonatlanul („webáruház” / „Webáruház és e-kereskedelem”, „autóipar” / „autóipari” …).
+  A változáslista a naplóba kerül (`GET /wp-json/kompasz/v1/migration-log`).
+- **Frissítési teszt** (`scripts/ci-wp-upgrade.sh`, a CI-ban is): friss WordPressre a telepített 1.2.0 kerül a saját importjával, majd a
+  mostani kód váltja le és lefutnak a migrációk (2 → 7) – pontosan az élő oldal útja. Ellenőrzi: a régi toplista-kifejezések és a
+  `kompasz_services` meta eltűntek, minden toplista-URL ugyanannyi céggel él tovább, 301 a régi címke- és az összevont kifejezések címéről,
+  füstteszt minden ügynökségre, doctor; a végén kiírja a migrációk változáslistáját.
+- Változásnapló: az 1.2.0 fejléce hiányzott.
+
 ## 1.5.0 – 2026-10-22 (séma: 7)
 
 ### Adatlap
@@ -57,7 +70,7 @@ automatikusan futnak (`wp kompasz migrate`), előtte a deploy adatbázis-mentés
 - 5: duplikátumok első köre (iparág: a statikus oldal INDUSTRY_MAP-je alapján, kiegészítve; minősítés; referencia-ügyfél).
   A változáslista: `GET /wp-json/kompasz/v1/migration-log`.
 
- – 2026-10-21 (séma: 2)
+## 1.2.0 – 2026-10-21 (séma: 2)
 
 ### Üzemeltetés
 - Telepítés HTTPS-en, SSH nélkül (`scripts/deploy-https.sh`): WP admin + REST; mentés, feltöltés, kompatibilis CF7, API-kulcs,

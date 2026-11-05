@@ -1,7 +1,8 @@
 name: WordPress – teszt, csomag, telepítés
 
 # Minden változáskor:
-#   1. test   – PHP szintaxis + integrációs teszt friss WordPressen, MySQL-lel (HU és DE): import, migráció, füstteszt MINDEN ügynökségre, HTTP-ellenőrzés
+#   1. test   – PHP szintaxis + integrációs teszt friss WordPressen, MySQL-lel (HU és DE): import, migráció, füstteszt MINDEN ügynökségre, HTTP-ellenőrzés;
+#               frissítési teszt: a régi (1.2.0) verzió importja → mostani kód → migrációk 2→7, mint az élő oldalon (scripts/ci-wp-upgrade.sh)
 #   2. build  – telepíthető zip-csomagok (Actions → futás → Artifacts)
 #   3. deploy – csak ha a teszt sikeres: SSH-n telepít a HU és a DE oldalra (scripts/deploy.sh → scripts/wp/remote-deploy.sh):
 #               adatbázis-mentés, kódcsere, Contact Form 7, Google API-kulcs, migráció, ellenőrzés, hibánál automatikus visszaállítás.
@@ -20,6 +21,7 @@ on:
       - 'scripts/export-wp-de.mjs'
       - 'scripts/zip-wp.sh'
       - 'scripts/ci-wp-test.sh'
+      - 'scripts/ci-wp-upgrade.sh'
       - 'scripts/deploy.sh'
       - 'scripts/wp/**'
       - 'src/ugynoksegek.json'
@@ -47,6 +49,8 @@ jobs:
         site: [hu, de]
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # a frissítési teszthez a régi (telepített) verzió commitja is kell
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -63,6 +67,8 @@ jobs:
         run: sudo systemctl start mysql && mysqladmin -uroot -proot --silent --wait=30 ping
       - name: Integrációs teszt friss WordPressen
         run: bash scripts/ci-wp-test.sh ${{ matrix.site }}
+      - name: Frissítési teszt (1.2.0 → mostani kód, migrációk, mint az élő oldalon)
+        run: bash scripts/ci-wp-upgrade.sh ${{ matrix.site }}
 
   build:
     needs: test

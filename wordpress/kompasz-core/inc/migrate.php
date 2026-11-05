@@ -364,6 +364,29 @@ function kompasz_migration_7() {
     return $changes;
 }
 
+/** Város → megye hozzárendelés (term meta a városon): az a megye, amelyik a legtöbbször szerepel a várossal együtt. Visszaad: városok száma */
+function kompasz_assign_city_counties() {
+    $pairs = [];
+    foreach (get_posts(['post_type' => 'ugynokseg', 'post_status' => 'any', 'fields' => 'ids', 'numberposts' => -1]) as $id) {
+        foreach (kompasz_post_term_ids($id, 'varos') as $v) foreach (kompasz_post_term_ids($id, 'megye') as $m) $pairs[$v][$m] = ($pairs[$v][$m] ?? 0) + 1;
+    }
+    foreach ($pairs as $v => $ms) { if (get_term_meta($v, 'kompasz_megye', true)) continue; arsort($ms); update_term_meta($v, 'kompasz_megye', (string) array_key_first($ms)); }
+    return count($pairs);
+}
+
+/**
+ * Egységesítés friss importnál (= amit a frissülő oldalon az 5. és a 7. migráció tesz): egységes iparág- és minősítésnevek, biztos
+ * duplikátumok összevonása, város → megye. Az importer hívja a végén, így az új oldal (pl. a német) ugyanazt az adatszerkezetet kapja,
+ * mint a migrált. Visszaad: a változások listája (a migrációs naplóba kerül: GET /wp-json/kompasz/v1/migration-log).
+ */
+function kompasz_normalize_lists() {
+    $changes = [];
+    foreach ([kompasz_merge_seed_maps(), kompasz_merge_seed_maps_7()] as $maps) foreach ($maps as $tax => $map) $changes = array_merge($changes, kompasz_merge_canonical($tax, $map));
+    $changes = array_merge($changes, kompasz_merge_auto());
+    $changes[] = kompasz_assign_city_counties() . ' város megyéhez rendelve';
+    return $changes;
+}
+
 /**
  * Verziózott adatbázis-migrációk: verzió => [leírás, függvény]. Új szerkezetváltozás = új sor a végén (soha nem írjuk át a régit).
  * A futtatás sorrendben, a tárolt verziótól (kompasz_schema) felfelé; minden lépés után a verzió mentődik, így megszakadt futás folytatható.
