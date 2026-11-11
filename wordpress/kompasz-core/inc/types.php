@@ -86,7 +86,7 @@ add_filter('term_link', function ($url, $term, $taxonomy) {
 
 add_action('init', function () {
     foreach (kompasz_categories() as $t) {
-        add_rewrite_rule('^' . preg_quote(kompasz_toplist_slug($t), '#') . '/?$', 'index.php?szolgaltatas=' . $t->slug, 'top');
+        add_rewrite_rule(kompasz_toplist_rule($t), 'index.php?szolgaltatas=' . $t->slug, 'top');
     }
 }, 20);
 
@@ -94,9 +94,25 @@ add_action('init', function () {
 foreach (['created_szolgaltatas', 'edited_szolgaltatas', 'delete_szolgaltatas'] as $hook) {
     add_action($hook, function () { update_option('kompasz_flush_rules', 1); });
 }
+function kompasz_toplist_rule($t) { return '^' . preg_quote(kompasz_toplist_slug($t), '#') . '/?$'; }
+
+// A tárolt URL-szabályokból hiányzó toplista (pl. költöztetés, cache, más bővítmény frissítése után) magától pótlódik
 add_action('init', function () {
-    if (get_option('kompasz_flush_rules')) { delete_option('kompasz_flush_rules'); flush_rewrite_rules(); }
+    if (get_option('kompasz_flush_rules')) { delete_option('kompasz_flush_rules'); flush_rewrite_rules(); return; }
+    $rules = get_option('rewrite_rules');
+    if (!is_array($rules) || !$rules) return;
+    foreach (kompasz_categories() as $t) if (!isset($rules[kompasz_toplist_rule($t)])) { flush_rewrite_rules(false); return; }
 }, 99);
+
+// Tartalék: a toplista címe akkor is a toplistát adja, ha az URL-szabály valamiért nincs meg
+add_filter('request', function ($qv) {
+    if (is_admin() || !empty($qv['szolgaltatas'])) return $qv;
+    $home = trailingslashit((string) wp_parse_url(home_url('/'), PHP_URL_PATH));
+    $path = trim(substr((string) wp_parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH), strlen($home)), '/');
+    if ($path === '' || strpos($path, '/') !== false) return $qv;
+    foreach (kompasz_categories() as $t) if (kompasz_toplist_slug($t) === $path) return ['szolgaltatas' => $t->slug];
+    return $qv;
+});
 
 // 301: a toplistás szolgáltatás régi címke-címe (/cimke/google-ads/) → a toplista (/google-ads-ugynoksegek/);
 // összevont vagy törölt kifejezés régi címe → az új (kompasz_redirects opció: régi útvonal => [taxonómia, kifejezés])

@@ -4,6 +4,13 @@ A verziószámok a `kompasz-core` bővítményé és a `kompasz` témáé (szema
 (`kompasz_schema` opció, `wordpress/kompasz-core/inc/migrate.php` → `kompasz_migrations()`); a migrációk telepítéskor
 automatikusan futnak (`wp kompasz migrate`), előtte a deploy adatbázis-mentést készít.
 
+## 1.5.1 – 2026-11-11 (séma: 7)
+
+### Javítás
+- A toplista-oldalak (pl. /berelheto-webshop-szakertok/) 404-et adtak, ha a WordPress tárolt URL-szabályaiból hiányoztak
+  (költöztetés, cache vagy más bővítmény frissítése után). Most a hiányzó szabály magától pótlódik, és addig is a toplista
+  címe közvetlenül a toplistát adja.
+
 ## 1.5.0 – 2026-10-22 (séma: 7)
 
 ### Adatlap
